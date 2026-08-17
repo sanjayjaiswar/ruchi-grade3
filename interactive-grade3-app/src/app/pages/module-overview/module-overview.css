@@ -178,7 +178,7 @@
   color: var(--module-accent-strong);
   font-size: 13px;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .module-spine-copy div span {
@@ -2852,4 +2852,25 @@
   .lesson-list a strong {
     white-space: normal;
   }
+}
+
+/* Portal-wide heading order: page title > section title > card title. */
+.page-frame h1 {
+  font-size: 38px;
+  line-height: 1.12;
+}
+
+.page-frame h2 {
+  font-size: 28px !important;
+  line-height: 1.2;
+}
+
+.page-frame h3 {
+  font-size: 21px !important;
+  line-height: 1.3;
+}
+
+.page-frame h4 {
+  font-size: 18px;
+  line-height: 1.35;
 }

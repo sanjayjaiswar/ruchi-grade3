@@ -351,7 +351,7 @@
   font-size: 9px;
   font-style: normal;
   font-weight: 900;
-  text-transform: uppercase;
+  text-transform: none;
   animation: lessonAnimationTapeBuild 720ms ease-out both;
 }
 
@@ -726,7 +726,7 @@
   color: var(--color-text-secondary);
   font-size: 7px;
   font-style: normal;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .lesson-animation-unknown-cases article > b,
@@ -1392,7 +1392,7 @@
   color: var(--color-text-secondary);
   font-size: 7px;
   font-weight: 800;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .lesson-animation-measurement-cycle article > b {
@@ -1446,7 +1446,7 @@
   color: #ffffff;
   font-size: 9px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .lesson-animation-pv-row > strong,
@@ -2127,7 +2127,7 @@
 .module-frame-place-value-chart span {
   background: var(--module-accent-soft);
   color: var(--module-strong, var(--module-accent-strong));
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .module-frame-place-value-chart i {
@@ -2162,7 +2162,7 @@
 .module-frame-tally-table > span {
   background: var(--module-accent-soft);
   color: var(--module-strong, var(--module-accent-strong));
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 0;
 }
 
@@ -2220,7 +2220,7 @@
 .module-frame-rdw-card strong {
   color: var(--module-strong, var(--module-accent-strong));
   font-size: 13px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .module-frame-rdw-card span,
@@ -2682,7 +2682,7 @@
   align-self: start;
   color: var(--module-strong, var(--module-accent-strong));
   font-size: 12px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .module-frame-equivalent-number-lines span {

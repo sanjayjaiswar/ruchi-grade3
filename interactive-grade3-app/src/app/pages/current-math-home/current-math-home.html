@@ -17,7 +17,10 @@
       </a>
     </nav>
     <a class="portal-return" routerLink="/ruchika/grade3" aria-label="Return to Grade 3 portal">
-      <span aria-hidden="true">R</span>
+      <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+        <path d="M3.5 10.8 12 3.9l8.5 6.9v8.3a1 1 0 0 1-1 1h-5.1v-5.7H9.6v5.7H4.5a1 1 0 0 1-1-1z"></path>
+      </svg>
+      <span class="portal-return-label">Grade 3</span>
     </a>
   </header>
 
@@ -28,6 +31,7 @@
           <span class="eyebrow">Grade 3 mathematics</span>
           <h1>What is i-Ready Math?</h1>
           <p class="hero-lede"><strong>i-Ready is a connected mathematics system, not one book or test.</strong> It combines a core curriculum, school assessment, and personalized online lessons.</p>
+          <div class="inline-source-links"><a [href]="sources.iReadyFamily.url" target="_blank" rel="noopener">Official i-Ready family explanation ↗</a><a [href]="sources.classroomMathematics.url" target="_blank" rel="noopener">Official core-program page ↗</a></div>
           <div class="hero-actions">
             <a class="primary-button" [href]="sources.classroomMathematics.url" target="_blank" rel="noopener">Open the official i-Ready program ↗</a>
             <a class="secondary-button" routerLink="/ruchika/grade3/iready/syllabus">See the Grade 3 syllabus</a>
@@ -42,6 +46,10 @@
             <div><dt>Student book</dt><dd>2 worktext volumes</dd></div>
             <div><dt>State status</dt><dd>Adopted K–8</dd></div>
           </dl>
+          <div class="inline-source-links">
+            <a [href]="sources.classroomMathematics.url" target="_blank" rel="noopener">Publisher program facts ↗</a>
+            <a [href]="sources.californiaAdoption.url" target="_blank" rel="noopener">California adoption ↗</a>
+          </div>
         </aside>
       </section>
 
@@ -59,21 +67,21 @@
             <span class="component-type">Core curriculum</span>
             <h3>Classroom Mathematics California</h3>
             <p><strong>Teaches the Grade 3 curriculum.</strong> This is the daily printed Student Worktext plus teacher and digital classroom resources.</p>
-            <a routerLink="/ruchika/grade3/iready/curriculum">Program details →</a>
+            <div class="card-link-row"><a routerLink="/ruchika/grade3/iready/curriculum">Program details →</a><a [href]="sources.classroomMathematics.url" target="_blank" rel="noopener">Official source ↗</a></div>
           </article>
           <article class="component-card inform-card">
             <span class="card-number">02</span>
             <span class="component-type">Assessment</span>
             <h3>i-Ready Inform</h3>
             <p><strong>Measures student needs.</strong> The adaptive Diagnostic and reports help teachers identify strengths and priorities. It is not the textbook.</p>
-            <a routerLink="/ruchika/grade3/iready/assessment">Assessment details →</a>
+            <div class="card-link-row"><a routerLink="/ruchika/grade3/iready/assessment">Assessment details →</a><a [href]="sources.iReadyFamily.url" target="_blank" rel="noopener">Official source ↗</a></div>
           </article>
           <article class="component-card path-card">
             <span class="card-number">03</span>
             <span class="component-type">Personalized online learning</span>
             <h3>My Path</h3>
             <p><strong>Provides individualized online lessons.</strong> Content can respond to assessment information and teacher assignments. Availability depends on the school license.</p>
-            <a routerLink="/ruchika/grade3/iready/access">Check access boundaries →</a>
+            <div class="card-link-row"><a routerLink="/ruchika/grade3/iready/access">Check access boundaries →</a><a [href]="sources.iReadyFamily.url" target="_blank" rel="noopener">Official source ↗</a></div>
           </article>
         </div>
       </section>
@@ -127,12 +135,12 @@
           <a [href]="sources.classroomMathematics.url" target="_blank" rel="noopener">Publisher description ↗</a>
         </div>
         <div class="method-grid">
-          <article><strong>Try</strong><p>Students first make sense of a problem and try a strategy.</p></article>
-          <article><strong>Discuss</strong><p>Students compare representations, explain reasoning, and learn from peers.</p></article>
-          <article><strong>Connect</strong><p>The class connects strategies to important mathematical ideas and procedures.</p></article>
-          <article><strong>Big Ideas</strong><p>Lessons are grouped around connected concepts rather than isolated skills.</p></article>
-          <article><strong>Data & language</strong><p>Data investigations, language supports, and multiple ways to participate are built into the program.</p></article>
-          <article><strong>Multi-day sessions</strong><p>A lesson can span multiple sessions; “lesson” does not necessarily mean one school day.</p></article>
+          <article><strong>Start, Try It, Discuss It, Connect It</strong><p>The publisher's public Grade 3 classroom example names these four phases.</p><a [href]="sources.iReadyGrade3InAction.url" target="_blank" rel="noopener">Grade 3 example ↗</a></article>
+          <article><strong>Multiple approaches</strong><p>The publisher says the Try–Discuss–Connect framework affirms multiple ways to approach and solve mathematics problems.</p><a [href]="sources.classroomMathematics.url" target="_blank" rel="noopener">Publisher description ↗</a></article>
+          <article><strong>Partner and class discussion</strong><p>The publisher identifies partner and whole-class discussion as part of the program's mathematical discourse.</p><a [href]="sources.classroomMathematics.url" target="_blank" rel="noopener">Publisher description ↗</a></article>
+          <article><strong>Connected Big Ideas</strong><p>The publisher says lessons and units are designed to build connected mathematical ideas.</p><a [href]="sources.classroomMathematics.url" target="_blank" rel="noopener">Publisher description ↗</a></article>
+          <article><strong>Language and participation supports</strong><p>The program page describes language routines, manipulatives, and multimodal learning.</p><a [href]="sources.classroomMathematics.url" target="_blank" rel="noopener">Publisher description ↗</a></article>
+          <article><strong>Multi-day lesson structure</strong><p>The California sample page explicitly describes a multi-day lesson structure that builds connections across a unit.</p><a [href]="sources.californiaSamples.url" target="_blank" rel="noopener">California sample page ↗</a></article>
         </div>
       </section>
 
@@ -149,42 +157,478 @@
 
     <ng-container *ngIf="pageKind === 'syllabus'">
       <section class="page-title page-title-row">
-        <div>
+        <div *ngIf="syllabusSection === 'overview'">
           <span class="section-kicker">Official California Grade 3 syllabus</span>
-          <h1>What a Grade 3 student is expected to learn</h1>
-          <p>These are California standards domains—not claimed i-Ready unit titles or school pacing.</p>
+          <h1>How Grade 3 mathematical ideas connect and grow</h1>
+          <p>Start with California's nine connected big ideas, then open a domain for its concept progression, visual reasoning, mastery evidence, and official standards.</p>
         </div>
-        <a class="primary-button" [href]="sources.californiaStandards.url" target="_blank" rel="noopener">Open official standards ↗</a>
+        <div *ngIf="selectedSyllabusDomain as domain">
+          <span class="section-kicker">{{ domain.code }} · Official California Grade 3 syllabus</span>
+          <h1>{{ domain.title }}</h1>
+          <p>{{ domain.focus }}</p>
+        </div>
+        <div *ngIf="syllabusSection === 'practices'">
+          <span class="section-kicker">Mathematical Practices · MP1–MP8</span>
+          <h1>How students reason and work mathematically</h1>
+          <p>The eight practices apply across every Grade 3 content domain.</p>
+        </div>
+        <a class="primary-button" [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">Open official standards ↗</a>
       </section>
 
-      <section class="domain-grid" aria-label="California Grade 3 mathematics domains">
-        <article class="domain-card" *ngFor="let domain of domains">
-          <div class="domain-heading">
-            <span class="domain-code">{{ domain.code }}</span>
+      <nav class="syllabus-subnav" aria-label="Grade 3 mathematics syllabus domains">
+        <a
+          *ngFor="let tab of syllabusTabs"
+          [routerLink]="tab.link"
+          [class.active]="syllabusSection === tab.kind"
+          [attr.aria-current]="syllabusSection === tab.kind ? 'page' : null">
+          {{ tab.label }}
+        </a>
+      </nav>
+
+      <ng-container *ngIf="syllabusSection === 'overview'">
+        <section class="framework-map-panel" aria-labelledby="grade3-big-ideas-title">
+          <div class="section-heading">
             <div>
-              <span>{{ domain.shortTitle }}</span>
-              <h2>{{ domain.title }}</h2>
+              <span class="section-kicker">California Mathematics Framework · Grade 3</span>
+              <h2 id="grade3-big-ideas-title">Nine connected big ideas—not five isolated checklists</h2>
+              <p>The standards define what students learn. California's framework also shows how those standards connect across data, operations, fractions, measurement, and geometry.</p>
+            </div>
+            <a [href]="sources.californiaFrameworkGrade3.url" target="_blank" rel="noopener">Official framework · pp. 90–92 ↗</a>
+          </div>
+
+          <div class="framework-snapshot" aria-label="Grade 3 framework snapshot">
+            <article><strong>9</strong><span>Grade 3 big ideas</span></article>
+            <article><strong>4</strong><span>content connections</span></article>
+            <article><strong>5</strong><span>standards domains</span></article>
+            <p>Big ideas deliberately cross domain boundaries. A lesson about square tiles, for example, can connect multiplication, area, and fractions.</p>
+          </div>
+
+          <div class="big-idea-grid">
+            <article *ngFor="let idea of bigIdeas">
+              <span>{{ idea.connection }}</span>
+              <h3>{{ idea.title }}</h3>
+              <p>{{ idea.summary }}</p>
+              <small>{{ idea.standards }}</small>
+              <div class="card-link-row">
+                <a [href]="sources.californiaFrameworkGrade3.url" target="_blank" rel="noopener">Figure 6.54 source ↗</a>
+                <a [href]="sources.californiaFrameworkLongDescriptions.url" target="_blank" rel="noopener">Figure 6.53 connections ↗</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="domain-directory" aria-labelledby="domain-directory-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-kicker">Explore by standards domain</span>
+              <h2 id="domain-directory-title">Choose a concept map</h2>
+              <p>Each page builds from concept meaning to representations, reasoning, mastery evidence, and the official standards reference.</p>
+            </div>
+            <a [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">Official Grade 3 standards ↗</a>
+          </div>
+          <div class="domain-grid" aria-label="California Grade 3 mathematics domains">
+            <article class="domain-card" *ngFor="let domain of domains; let i = index">
+              <div class="domain-heading">
+                <span class="domain-code">{{ domain.code }}</span>
+                <div>
+                  <span>{{ domain.shortTitle }}</span>
+                  <h3>{{ domain.title }}</h3>
+                </div>
+              </div>
+              <p>{{ domain.summary }}</p>
+              <div class="domain-depth-row">
+                <span>{{ detailedDomains[i].conceptSpine.length }} concept stages</span>
+                <span>{{ detailedDomains[i].standards.length }} standards</span>
+              </div>
+              <div class="domain-framework-ideas">
+                <small>California big-idea connections</small>
+                <ul>
+                  <li *ngFor="let idea of detailedDomains[i].frameworkIdeas">{{ idea }}</li>
+                </ul>
+              </div>
+              <div class="card-link-row domain-card-links">
+                <a class="domain-open" [routerLink]="syllabusTabs[i + 1].link">Open {{ domain.code }} concept map →</a>
+                <a [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">Standards source ↗</a>
+                <a [href]="sources.californiaFrameworkGrade3.url" target="_blank" rel="noopener">Framework source ↗</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="practices-panel">
+          <div>
+            <span class="section-kicker">Mathematical Practices · MP1–MP8</span>
+            <h2>Standards for Mathematical Practice</h2>
+            <p>These describe how students should reason and work across every Grade 3 domain.</p>
+          </div>
+          <ol>
+            <li *ngFor="let practice of practices"><span>{{ practice.code }}</span>{{ practice.title }}</li>
+          </ol>
+          <a routerLink="/ruchika/grade3/iready/syllabus/practices">Explore the practices →</a>
+        </section>
+      </ng-container>
+
+      <ng-container *ngIf="selectedSyllabusDomain as domain">
+        <section class="domain-source-ledger" aria-label="Official sources controlling this domain page">
+          <article>
+            <span>What students must learn</span>
+            <strong>California Common Core State Standards · {{ domain.sourcePages }}</strong>
+            <a [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">Open official standards ↗</a>
+          </article>
+          <article>
+            <span>How the ideas connect and develop</span>
+            <strong>California Mathematics Framework · Chapters 3 and 6</strong>
+            <div><a [href]="sources.californiaFrameworkNumberSense.url" target="_blank" rel="noopener">Number sense ↗</a><a [href]="sources.californiaFrameworkGrade3.url" target="_blank" rel="noopener">Grade 3 big ideas ↗</a></div>
+          </article>
+          <article>
+            <span>How i-Ready structures a lesson</span>
+            <strong>Start → Try It → Discuss It → Connect It</strong>
+            <a [href]="sources.iReadyGrade3InAction.url" target="_blank" rel="noopener">Official Grade 3 classroom example ↗</a>
+          </article>
+        </section>
+
+        <section *ngIf="domain.id === 'oa'" class="oa-progression-panel" aria-labelledby="oa-progression-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-kicker">California number-sense progression · Chapter 3, pp. 25–26</span>
+              <h2 id="oa-progression-title">How multiplication and division meaning develops</h2>
+              <p>California moves from equal groups to number-line jumps, arrays, area, inverse relationships, and flexible decomposition. The views below explain that official progression; they are not an i-Ready lesson sequence. Hover or focus a view to replay how the model is built.</p>
+            </div>
+            <a [href]="sources.californiaFrameworkNumberSense.url" target="_blank" rel="noopener">Official progression · pp. 25–26 ↗</a>
+          </div>
+
+          <div class="oa-progression-grid">
+            <article>
+              <span class="progression-step">1 · Equal groups</span>
+              <h3>Four groups of three</h3>
+              <div class="oa-mini-groups" aria-label="Four groups of three dots">
+                <span><i></i><i></i><i></i></span><span><i></i><i></i><i></i></span><span><i></i><i></i><i></i></span><span><i></i><i></i><i></i></span>
+              </div>
+              <strong>4 × 3 = 12</strong>
+              <p>The first factor counts equal groups; the second gives the number in each group.</p>
+              <a [href]="sources.californiaFrameworkNumberSense.url" target="_blank" rel="noopener">California Chapter 3 source ↗</a>
+            </article>
+            <article>
+              <span class="progression-step">2 · Number-line jumps</span>
+              <h3>Four equal jumps of three</h3>
+              <div class="oa-jump-line" aria-label="Number line showing four jumps of three from zero to twelve">
+                <span>0</span><i></i><span>3</span><i></i><span>6</span><i></i><span>9</span><i></i><span>12</span>
+              </div>
+              <strong>3 + 3 + 3 + 3 = 12</strong>
+              <p>The same equal-group structure becomes repeated, equal distances on a number line.</p>
+              <a [href]="sources.californiaFrameworkNumberSense.url" target="_blank" rel="noopener">California Chapter 3 source ↗</a>
+            </article>
+            <article>
+              <span class="progression-step">3 · Array</span>
+              <h3>Four rows of three</h3>
+              <div class="oa-mini-array" aria-label="Four rows of three dots"><i *ngFor="let dot of twelveDots"></i></div>
+              <strong>Rows and columns preserve 4 × 3</strong>
+              <p>An array organizes the groups spatially and makes the factors visible as dimensions.</p>
+              <a [href]="sources.californiaFrameworkNumberSense.url" target="_blank" rel="noopener">California Chapter 3 source ↗</a>
+            </article>
+            <article>
+              <span class="progression-step">4 · Area</span>
+              <h3>Twelve unit squares</h3>
+              <div class="oa-mini-area" aria-label="Four by three rectangle containing twelve unit squares"><i *ngFor="let tile of twelveDots"></i></div>
+              <strong>4 × 3 = 12 square units</strong>
+              <p>The array becomes an area model when each position is a unit square covering a region.</p>
+              <a [href]="sources.californiaFrameworkNumberSense.url" target="_blank" rel="noopener">California Chapter 3 source ↗</a>
+            </article>
+            <article>
+              <span class="progression-step">5 · Inverse relationship</span>
+              <h3>Division finds an unknown factor</h3>
+              <div class="oa-inverse-equations"><b>12 ÷ 4 = 3</b><span>because</span><b>4 × 3 = 12</b></div>
+              <p>Division can ask for the group size or the number of groups; multiplication checks the quotient.</p>
+              <a [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">Standards 3.OA.2 and 3.OA.6 ↗</a>
+            </article>
+            <article>
+              <span class="progression-step">6 · Flexible decomposition</span>
+              <h3>Build a difficult fact from known facts</h3>
+              <div class="oa-decomposition-equation"><b>8 × 7</b><span>=</span><b>(8 × 5) + (8 × 2)</b><span>=</span><b>56</b></div>
+              <p>California gives this example to show how number sense supports the distributive property.</p>
+              <a [href]="sources.californiaFrameworkNumberSense.url" target="_blank" rel="noopener">California Chapter 3 · p. 26 ↗</a>
+            </article>
+          </div>
+
+          <div class="oa-fluency-note">
+            <div><strong>Meaning and flexibility come first.</strong><span>California’s framework calls for arrays, student-generated visual representations, estimation, and number flexibility—not rote fact work alone.</span><a [href]="sources.californiaFrameworkGrade3.url" target="_blank" rel="noopener">Framework · p. 91 ↗</a></div>
+            <div><strong>The Grade 3 fluency outcome still matters.</strong><span>Standard 3.OA.7 requires fluent multiplication and division within 100 and, by year end, memory of all products of two one-digit numbers.</span><a [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">Standard 3.OA.7 ↗</a></div>
+          </div>
+        </section>
+
+        <details class="official-connection-map" aria-labelledby="connection-map-title">
+          <summary class="connection-map-summary">
+            <div>
+              <span class="section-kicker">California Framework · Figures 6.53–6.54</span>
+              <h2 id="connection-map-title">How this domain connects to the rest of Grade 3</h2>
+              <p>{{ selectedFrameworkIdeas.length }} related big ideas with their associated standards, official guidance, and direct cross-domain connections.</p>
+            </div>
+            <span class="connection-map-toggle">Open connections</span>
+          </summary>
+          <div class="connection-map-content">
+            <div class="official-source-links">
+              <a [href]="sources.californiaFrameworkGrade3.url" target="_blank" rel="noopener">Framework pp. 90–92 ↗</a>
+              <a [href]="sources.californiaFrameworkLongDescriptions.url" target="_blank" rel="noopener">Official figure description ↗</a>
+            </div>
+            <div class="framework-evidence-grid">
+              <article *ngFor="let idea of selectedFrameworkIdeas">
+                <div class="framework-evidence-heading">
+                  <span>{{ idea.connection }}</span>
+                  <h3>{{ idea.title }}</h3>
+                </div>
+                <p>{{ idea.guidance }}</p>
+                <div class="framework-standards"><strong>Associated standards</strong><span>{{ idea.standards }}</span></div>
+                <div class="framework-connections"><strong>Direct connections</strong><span *ngFor="let connection of idea.connectedTo">{{ connection }}</span></div>
+                <div class="framework-card-sources">
+                  <a [href]="sources.californiaFrameworkGrade3.url" target="_blank" rel="noopener">Guidance · Figure 6.54 ↗</a>
+                  <a [href]="sources.californiaFrameworkLongDescriptions.url" target="_blank" rel="noopener">Connections · Figure 6.53 ↗</a>
+                </div>
+              </article>
+            </div>
+            <div class="framework-evidence-note">
+              <strong>How California defines a connection:</strong>
+              <span>Two big ideas are connected when they include two or more of the same standards. The relationships above follow the official Figure 6.53 description.</span>
             </div>
           </div>
-          <p>{{ domain.summary }}</p>
-          <ul>
-            <li *ngFor="let item of domain.focus">{{ item }}</li>
-          </ul>
-          <a [href]="sources.californiaStandards.url" target="_blank" rel="noopener">California standards source ↗</a>
-        </article>
-      </section>
+        </details>
 
-      <section class="practices-panel">
-        <div>
-          <span class="section-kicker">Mathematical Practices · MP1–MP8</span>
-          <h2>Standards for Mathematical Practice</h2>
-          <p>These describe how students should reason and work across every Grade 3 domain.</p>
+        <section class="concept-spine-panel" aria-labelledby="concept-spine-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-kicker">Source-linked learning map</span>
+              <h2 id="concept-spine-title">Grade 3 requirements, explained</h2>
+              <p>The cards paraphrase the cited California standards and framework. Their grouping and reading order are portal navigation—not an official California or i-Ready lesson sequence.</p>
+            </div>
+            <div class="framework-idea-stack" aria-label="Related California framework big ideas">
+              <strong>Related California big ideas</strong>
+              <span *ngFor="let idea of domain.frameworkIdeas">{{ idea }}</span>
+            </div>
+          </div>
+          <div class="concept-spine-grid" [class.four-step-grid]="domain.conceptSpine.length === 4">
+            <details *ngFor="let concept of domain.conceptSpine; let i = index">
+              <summary>
+                <span class="concept-step-number">{{ i + 1 }}</span>
+                <div><small>{{ concept.stage }}</small><h3>{{ concept.title }}</h3></div>
+                <div class="concept-summary-standards"><span *ngFor="let standard of concept.standards">{{ standard }}</span></div>
+                <em>Open</em>
+              </summary>
+              <div class="concept-detail-body">
+                <p>{{ concept.explanation }}</p>
+                <div class="concept-evidence"><strong>Official expectation, explained</strong><span>{{ concept.studentEvidence }}</span></div>
+                <div class="concept-card-sources">
+                  <a [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">{{ concept.standards.join(', ') }} source ↗</a>
+                  <a [href]="sources.californiaFrameworkGrade3.url" target="_blank" rel="noopener">California framework ↗</a>
+                </div>
+              </div>
+            </details>
+          </div>
+          <div class="concept-source-line">
+            <span>Source basis</span>
+            <a [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">California standards ↗</a>
+            <a [href]="sources.californiaFrameworkGrade3.url" target="_blank" rel="noopener">Framework Chapter 6 ↗</a>
+            <a [href]="sources.californiaFrameworkNumberSense.url" target="_blank" rel="noopener">Framework Chapter 3 ↗</a>
+          </div>
+        </section>
+
+        <div class="domain-learning-layout">
+          <aside *ngIf="domain.id !== 'oa'" class="visual-teaching-panel" [class.two-example-grid]="domain.id === 'g'" aria-labelledby="visual-teaching-title">
+            <div class="section-heading">
+              <div>
+                <span class="section-kicker supplemental-kicker">California-supported visual teaching</span>
+                <h2 id="visual-teaching-title">Representations required or recommended by the official sources</h2>
+                <p>The models use examples stated in the California standards or representations recommended by the California framework. They are teaching views of those sources—not copied i-Ready pages or invented curriculum. Hover or focus a model to replay its structure.</p>
+              </div>
+            </div>
+
+            <ng-container *ngIf="domain.id === 'nbt'">
+              <article class="visual-example">
+                <span>Aligned to 3.NBT.1</span>
+                <h3>Round using nearby multiples</h3>
+                <div class="rounding-line"><b>lower multiple</b><i></i><em>number</em><i></i><b>upper multiple</b></div>
+                <strong>Locate the number between multiples of 10 or 100.</strong>
+                <p>Standard 3.NBT.1 requires place-value understanding; the framework calls for number sense and rounding rather than an unexplained digit rule.</p>
+                <div class="card-link-row"><a class="visual-source-link" [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">3.NBT.1 source ↗</a><a class="visual-source-link" [href]="sources.californiaFrameworkNumberSense.url" target="_blank" rel="noopener">Framework source ↗</a></div>
+              </article>
+              <article class="visual-example">
+                <span>Aligned to 3.NBT.2 · California Chapter 3</span>
+                <h3>Two flexible paths to the same sum</h3>
+                <div class="strategy-compare" aria-label="Two California framework strategies for adding 67 and 84">
+                  <div><span>Decompose by place value</span><b>67 + 84</b><strong>(60 + 80) + (7 + 4)</strong><em>140 + 11 = 151</em></div>
+                  <div><span>Compensate to a friendly number</span><b>67 + 84</b><strong>70 + 81</strong><em>151</em></div>
+                </div>
+                <strong>Both methods preserve the value of the addends.</strong>
+                <p>California uses these exact strategies to show that fluency within 1,000 depends on composing, decomposing, and using the inverse relationship—not one fixed procedure.</p>
+                <a class="visual-source-link" [href]="sources.californiaFrameworkNumberSense.url" target="_blank" rel="noopener">California Chapter 3 · pp. 19–20 ↗</a>
+              </article>
+              <article class="visual-example">
+                <span>Aligned to 3.NBT.3</span>
+                <h3>Multiply groups of tens</h3>
+                <div class="tens-groups nine-groups"><div *ngFor="let group of nineTensGroups">80</div></div>
+                <strong>9 × 80 = 72 tens = 720</strong>
+                <p>California standard 3.NBT.3 gives 9 × 80 as an example of multiplying a one-digit number by a multiple of 10.</p>
+                <a class="visual-source-link" [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">3.NBT.3 source ↗</a>
+              </article>
+            </ng-container>
+
+            <ng-container *ngIf="domain.id === 'nf'">
+              <article class="visual-example">
+                <span>Aligned to 3.NF.1</span>
+                <h3>Unit fraction</h3>
+                <div class="fraction-strip four" aria-label="One of four equal parts shaded"><i class="filled"></i><i></i><i></i><i></i></div>
+                <strong>One equal part is 1/4 of the whole.</strong>
+                <p>The denominator names how many equal parts form the whole.</p>
+                <a class="visual-source-link" [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">3.NF.1 source ↗</a>
+              </article>
+              <article class="visual-example">
+                <span>Aligned to 3.NF.2</span>
+                <h3>Fractions on a number line</h3>
+                <div class="fraction-line"><b>0</b><i><small>1/4</small></i><i><small>2/4</small></i><i><small>3/4</small></i><b>1</b></div>
+                <strong>Equal lengths locate fraction numbers.</strong>
+                <p>The interval from 0 to 1 is the whole and is partitioned into four equal lengths.</p>
+                <a class="visual-source-link" [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">3.NF.2 source ↗</a>
+              </article>
+              <article class="visual-example">
+                <span>Aligned to 3.NF.3</span>
+                <h3>Equivalent fractions</h3>
+                <div class="equivalent-strips">
+                  <div><i class="filled"></i><i></i></div>
+                  <div><i class="filled"></i><i class="filled"></i><i></i><i></i></div>
+                </div>
+                <strong>1/2 and 2/4 cover the same amount.</strong>
+                <p>Equivalent fractions name the same size when they refer to the same whole.</p>
+                <a class="visual-source-link" [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">3.NF.3 source ↗</a>
+              </article>
+            </ng-container>
+
+            <ng-container *ngIf="domain.id === 'md'">
+              <article class="visual-example">
+                <span>Aligned to 3.MD.1</span>
+                <h3>Elapsed time</h3>
+                <div class="time-jumps"><b>start time</b><span>elapsed minutes</span><b>landmark</b><span>elapsed minutes</span><b>end time</b></div>
+                <strong>Represent the interval on a number-line diagram.</strong>
+                <p>California standard 3.MD.1 explicitly names a number-line diagram as a representation for elapsed-time problems.</p>
+                <a class="visual-source-link" [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">3.MD.1 source ↗</a>
+              </article>
+              <article class="visual-example">
+                <span>Aligned to 3.MD.3</span>
+                <h3>Scaled bar graph</h3>
+                <div class="bar-model official-scale-model">
+                  <span>Category A</span><i style="--bar: 72%"></i><b>□ = 5 pets</b>
+                  <span>Category B</span><i style="--bar: 48%"></i><b>□ = 5 pets</b>
+                  <span>Category C</span><i style="--bar: 24%"></i><b>□ = 5 pets</b>
+                </div>
+                <strong>One square may represent 5 pets.</strong>
+                <p>California standard 3.MD.3 supplies this exact scale example while requiring several data categories.</p>
+                <a class="visual-source-link" [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">3.MD.3 source ↗</a>
+              </article>
+              <article class="visual-example">
+                <span>Aligned to 3.MD.5–8</span>
+                <h3>Area and perimeter</h3>
+                <div class="area-grid" aria-label="Three by four rectangle made of twelve unit squares">
+                  <i></i><i></i><i></i><i></i><i></i><i></i>
+                  <i></i><i></i><i></i><i></i><i></i><i></i>
+                </div>
+                <strong>Area = 3 × 4 = 12 square units; perimeter = 14 units.</strong>
+                <p>Area counts the unit squares inside; perimeter measures the distance around the rectangle.</p>
+                <a class="visual-source-link" [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">3.MD.5–8 source ↗</a>
+              </article>
+            </ng-container>
+
+            <ng-container *ngIf="domain.id === 'g'">
+              <article class="visual-example">
+                <span>Aligned to 3.G.1</span>
+                <h3>Shared attributes</h3>
+                <div class="shape-family">
+                  <div><i class="square-shape"></i><small>Square</small></div>
+                  <div><i class="rectangle-shape"></i><small>Rectangle</small></div>
+                  <div><i class="rhombus-shape"></i><small>Rhombus</small></div>
+                </div>
+                <strong>All three examples have four sides.</strong>
+                <p>The shared attribute places them in the larger category of quadrilaterals.</p>
+                <a class="visual-source-link" [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">3.G.1 source ↗</a>
+              </article>
+              <article class="visual-example">
+                <span>Aligned to 3.G.2</span>
+                <h3>Equal-area partitions</h3>
+                <div class="partition-shape"><i></i><i></i><i></i><i></i></div>
+                <strong>Each equal part is 1/4 of the whole area.</strong>
+                <p>A unit fraction describes one of the equal-area parts.</p>
+                <a class="visual-source-link" [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">3.G.2 source ↗</a>
+              </article>
+            </ng-container>
+          </aside>
+
+          <section class="mastery-panel" aria-labelledby="mastery-title">
+            <div class="mastery-checklist">
+              <span class="section-kicker">Official California expectations · summarized</span>
+              <h2 id="mastery-title">What the standards require a student to show and explain</h2>
+              <ul>
+                <li *ngFor="let item of domain.mastery"><span aria-hidden="true">✓</span><span>{{ item }}</span><a [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">Source ↗</a></li>
+              </ul>
+            </div>
+            <aside class="watch-for-card">
+              <span>Concept to watch</span>
+              <h3>{{ domain.watchFor.title }}</h3>
+              <p>{{ domain.watchFor.explanation }}</p>
+              <a [href]="sources.californiaFrameworkGrade3.url" target="_blank" rel="noopener">California framework source ↗</a>
+            </aside>
+          </section>
+
+          <details class="official-standards-panel standards-reference">
+            <summary>
+              <span><b>Official standards reference</b><small>{{ domain.standards.length }} source-aligned records in {{ domain.code }}, including official subparts</small></span>
+              <em>Open reference</em>
+            </summary>
+            <div class="section-heading">
+              <div>
+                <span class="section-kicker">Official standards, summarized</span>
+                <h2>{{ domain.code }} standards</h2>
+                <p>Each summary stays within the scope of the cited California standard.</p>
+              </div>
+              <a [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">Open official publication ↗</a>
+            </div>
+            <div class="standard-record-list">
+              <article *ngFor="let standard of domain.standards">
+                <div class="standard-record-heading">
+                  <span>{{ standard.code }}</span>
+                  <small>{{ standard.cluster }}</small>
+                </div>
+                <p>{{ standard.summary }}</p>
+                <ul *ngIf="standard.details">
+                  <li *ngFor="let detail of standard.details">{{ detail }}</li>
+                </ul>
+                <a [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">{{ standard.code }} official source ↗</a>
+              </article>
+            </div>
+          </details>
         </div>
-        <ol>
-          <li *ngFor="let practice of practices; let i = index"><span>MP{{ i + 1 }}</span>{{ practice }}</li>
-        </ol>
-        <a [href]="sources.californiaStandards.url" target="_blank" rel="noopener">Official California standards ↗</a>
-      </section>
+
+        <section class="supplemental-boundary">
+          <strong>No invented curriculum</strong>
+          <p>California’s standards and framework control the mathematical content, connections, recommended representations, and cautions. Curriculum Associates controls the Try–Discuss–Connect design and published i-Ready program claims. Eureka contributes only reusable interface and visual-learning patterns; no Eureka lesson order, wording, objectives, problems, or pacing is transferred.</p>
+          <div><a [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">Verify standards ↗</a><a [href]="sources.californiaFrameworkGrade3.url" target="_blank" rel="noopener">Verify framework ↗</a><a [href]="sources.classroomMathematics.url" target="_blank" rel="noopener">Verify i-Ready design ↗</a></div>
+        </section>
+      </ng-container>
+
+      <ng-container *ngIf="syllabusSection === 'practices'">
+        <section class="practice-detail-grid">
+          <article *ngFor="let practice of practices">
+            <span>{{ practice.code }}</span>
+            <h2>{{ practice.title }}</h2>
+            <p>{{ practice.parentView }}</p>
+            <div class="practice-example">
+              <strong>Grade 3 example</strong>
+              <p>{{ practice.grade3Example }}</p>
+            </div>
+            <a [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">{{ practice.code }} official source ↗</a>
+          </article>
+        </section>
+        <section class="supplemental-boundary">
+          <strong>Official practice standards</strong>
+          <p>The card titles reproduce the official practice names. The parent views and Grade 3 examples are original explanations, not publisher lessons or official assessment items.</p>
+          <a [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">Open the official practice standards ↗</a>
+        </section>
+      </ng-container>
     </ng-container>
 
     <ng-container *ngIf="pageKind === 'assessment'">
@@ -240,25 +684,29 @@
     <ng-container *ngIf="pageKind === 'access'">
       <section class="page-title">
         <span class="section-kicker">Student access</span>
-        <h1>A working school login does not automatically mean every i-Ready product is enabled</h1>
-        <p>The school controls the student roster, licensed products, assigned content, and sign-in path.</p>
+        <h1>Student access comes through the school's i-Ready account</h1>
+        <p>Curriculum Associates defines the school or district as the customer that authorizes student access, supplies roster information, and associates students with instructional content and assessments.</p>
+        <div class="inline-source-links"><a [href]="sources.iReadyPrivacy.url" target="_blank" rel="noopener">Official student-access policy ↗</a><a [href]="sources.iReadyAccess.url" target="_blank" rel="noopener">Official licensing answer ↗</a></div>
       </section>
 
       <section class="access-grid">
         <article class="access-card">
           <span class="access-step">1</span>
-          <h2>Use the current school sign-in route</h2>
-          <p>Start through the school’s Clever or district portal, not the publisher’s teacher password-recovery page. Old credentials can still authenticate while the available apps change by school year.</p>
+          <h2>The school account authorizes student access</h2>
+          <p>Curriculum Associates says school customers determine which students are authorized and provide the account and class information used for access.</p>
+          <a [href]="sources.iReadyPrivacy.url" target="_blank" rel="noopener">Official privacy and account policy ↗</a>
         </article>
         <article class="access-card">
           <span class="access-step">2</span>
-          <h2>Check which Math tiles appear</h2>
-          <p>Look for i-Ready Math, Classroom Mathematics California or Student Worktext, My Path / Personalized Instruction, Diagnostic / Inform, and Family Center.</p>
+          <h2>Available components depend on the school's implementation</h2>
+          <p>The official family page distinguishes i-Ready Inform, Personalized Instruction/My Path, and the optional core program, i-Ready Classroom Mathematics.</p>
+          <a [href]="sources.iReadyFamily.url" target="_blank" rel="noopener">Official family explanation ↗</a>
         </article>
         <article class="access-card">
           <span class="access-step">3</span>
-          <h2>Treat missing content as provisioning—not a password conclusion</h2>
-          <p>If the identity works but the Math program is absent, the teacher or school must confirm the correct code, roster, license, or app assignment.</p>
+          <h2>Home-use expectations are school-specific</h2>
+          <p>Curriculum Associates says some schools assign i-Ready at home and others use it only at school; families should ask the teacher what is expected.</p>
+          <a [href]="sources.iReadyFamily.url" target="_blank" rel="noopener">Official home-use guidance ↗</a>
         </article>
       </section>
 
@@ -266,14 +714,14 @@
         <div>
           <span class="section-kicker">Access boundary</span>
           <h2>There is no direct personal or homeschool i-Ready software license</h2>
-          <p>Curriculum Associates says accounts and software access are provided through schools or organizations. Public family resources exist, but they do not unlock a student’s assigned course.</p>
+          <p>Curriculum Associates says it does not offer a personal software license and requires a minimum number of students and teachers to create an i-Ready Connect account. It recommends separately purchasable print products for homeschool or tutoring use.</p>
         </div>
         <a class="primary-button" [href]="sources.iReadyAccess.url" target="_blank" rel="noopener">Official access guidance ↗</a>
       </section>
 
       <section class="known-unknown">
-        <div><span class="known-dot"></span><strong>Known</strong><p>The new printed core book is Classroom Mathematics California, Grade 3.</p></div>
-        <div><span class="pending-dot"></span><strong>Still school-specific</strong><p>The exact QR code, Clever tile, assigned digital components, and home-use expectations.</p></div>
+        <div><span class="known-dot"></span><strong>Publisher-confirmed</strong><p>Classroom Mathematics California includes a digital Student Worktext, Family Center, Diagnostic assessment, digital tools, games, and teacher-assigned practice and assessments.</p><a [href]="sources.classroomMathematics.url" target="_blank" rel="noopener">Official component list ↗</a></div>
+        <div><span class="pending-dot"></span><strong>School-specific</strong><p>The student's sign-in route, enabled products, assignments, and home-use expectations must be confirmed by the school.</p><a [href]="sources.iReadyFamily.url" target="_blank" rel="noopener">Official family guidance ↗</a></div>
       </section>
     </ng-container>
 
@@ -282,19 +730,18 @@
         <div>
           <span class="section-kicker">Source register</span>
           <h1>Official evidence behind this workspace</h1>
-          <p>Primary state, district, and publisher sources only. Each source states exactly what it establishes.</p>
+          <p>Primary state, district, and publisher sources only. Factual sections link to their controlling source inline; this register provides the complete evidence record.</p>
         </div>
         <span class="source-count">{{ sourceList.length }} verified links</span>
       </section>
 
       <section class="source-list">
         <article class="source-row" *ngFor="let source of sourceList">
-          <div class="source-owner">{{ source.owner }}</div>
           <div class="source-copy">
-            <h2>{{ source.label }}</h2>
-            <p>{{ source.establishes }}</p>
+            <span class="source-owner">{{ source.owner }}</span>
+            <h2><a [href]="source.url" target="_blank" rel="noopener">{{ source.label }} ↗</a></h2>
+            <p>{{ source.establishes }} <a class="source-inline-link" [href]="source.url" target="_blank" rel="noopener">Official source ↗</a></p>
           </div>
-          <a [href]="source.url" target="_blank" rel="noopener">Open source ↗</a>
         </article>
       </section>
 

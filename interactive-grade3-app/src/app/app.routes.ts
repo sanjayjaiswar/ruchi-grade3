@@ -22,6 +22,7 @@ export const routes: Routes = [
   { path: 'ruchika/grade3/iready', component: CurrentMathHomePage },
   { path: 'ruchika/grade3/iready/curriculum', component: CurrentMathHomePage },
   { path: 'ruchika/grade3/iready/syllabus', component: CurrentMathHomePage },
+  { path: 'ruchika/grade3/iready/syllabus/:domainId', component: CurrentMathHomePage },
   { path: 'ruchika/grade3/iready/assessment', component: CurrentMathHomePage },
   { path: 'ruchika/grade3/iready/access', component: CurrentMathHomePage },
   { path: 'ruchika/grade3/iready/sources', component: CurrentMathHomePage },

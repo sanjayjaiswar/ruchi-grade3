@@ -264,7 +264,7 @@
   color: var(--color-text-secondary);
   font-size: 13px;
   font-weight: 950;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .topbar-select-field select {
