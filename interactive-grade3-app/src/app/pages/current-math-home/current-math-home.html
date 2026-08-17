@@ -1,0 +1,303 @@
+<main class="iready-page">
+  <header class="iready-header">
+    <div class="brand-lockup">
+      <span class="brand-mark" aria-hidden="true">iR</span>
+      <div>
+        <strong>Ruchika Grade 3 · i-Ready Math</strong>
+        <small>Current mathematics workspace</small>
+      </div>
+    </div>
+    <nav class="iready-tabs" aria-label="i-Ready Math sections">
+      <a
+        *ngFor="let tab of tabs"
+        [routerLink]="tab.link"
+        [class.active]="pageKind === tab.kind"
+        [attr.aria-current]="pageKind === tab.kind ? 'page' : null">
+        {{ tab.label }}
+      </a>
+    </nav>
+    <a class="portal-return" routerLink="/ruchika/grade3" aria-label="Return to Grade 3 portal">
+      <span aria-hidden="true">R</span>
+    </a>
+  </header>
+
+  <div class="iready-content">
+    <ng-container *ngIf="pageKind === 'overview'">
+      <section class="overview-hero">
+        <div class="hero-copy">
+          <span class="eyebrow">Grade 3 mathematics</span>
+          <h1>What is i-Ready Math?</h1>
+          <p class="hero-lede"><strong>i-Ready is a connected mathematics system, not one book or test.</strong> It combines a core curriculum, school assessment, and personalized online lessons.</p>
+          <div class="hero-actions">
+            <a class="primary-button" [href]="sources.classroomMathematics.url" target="_blank" rel="noopener">Open the official i-Ready program ↗</a>
+            <a class="secondary-button" routerLink="/ruchika/grade3/iready/syllabus">See the Grade 3 syllabus</a>
+          </div>
+        </div>
+        <aside class="program-facts" aria-label="Verified program facts">
+          <span class="fact-label">Grade 3 core curriculum</span>
+          <strong>Classroom Mathematics California</strong>
+          <dl>
+            <div><dt>Publisher</dt><dd>Curriculum Associates</dd></div>
+            <div><dt>Edition</dt><dd>California · 2026</dd></div>
+            <div><dt>Student book</dt><dd>2 worktext volumes</dd></div>
+            <div><dt>State status</dt><dd>Adopted K–8</dd></div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="component-section" aria-labelledby="components-title">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">The i-Ready system</span>
+            <h2 id="components-title">What each part does</h2>
+          </div>
+          <a [href]="sources.iReadyFamily.url" target="_blank" rel="noopener">Official family explanation ↗</a>
+        </div>
+        <div class="component-grid">
+          <article class="component-card core-card">
+            <span class="card-number">01</span>
+            <span class="component-type">Core curriculum</span>
+            <h3>Classroom Mathematics California</h3>
+            <p><strong>Teaches the Grade 3 curriculum.</strong> This is the daily printed Student Worktext plus teacher and digital classroom resources.</p>
+            <a routerLink="/ruchika/grade3/iready/curriculum">Program details →</a>
+          </article>
+          <article class="component-card inform-card">
+            <span class="card-number">02</span>
+            <span class="component-type">Assessment</span>
+            <h3>i-Ready Inform</h3>
+            <p><strong>Measures student needs.</strong> The adaptive Diagnostic and reports help teachers identify strengths and priorities. It is not the textbook.</p>
+            <a routerLink="/ruchika/grade3/iready/assessment">Assessment details →</a>
+          </article>
+          <article class="component-card path-card">
+            <span class="card-number">03</span>
+            <span class="component-type">Personalized online learning</span>
+            <h3>My Path</h3>
+            <p><strong>Provides individualized online lessons.</strong> Content can respond to assessment information and teacher assignments. Availability depends on the school license.</p>
+            <a routerLink="/ruchika/grade3/iready/access">Check access boundaries →</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="eureka-context" aria-labelledby="eureka-context-title">
+        <div class="eureka-copy">
+          <span class="section-kicker">Where Eureka Math fits</span>
+          <h2 id="eureka-context-title">Same Grade 3 standards destination; different curriculum path</h2>
+          <p>Eureka Math was the previous curriculum. Classroom Mathematics California is the current core program inside i-Ready. Both can teach California Grade 3 mathematics standards, but they use different books, units, lesson sequences, language, pacing, and digital tools. Eureka remains available here only as a reference and source of extra practice—not as an i-Ready lesson map.</p>
+          <div class="eureka-sources">
+            <a [href]="sources.californiaStandards.url" target="_blank" rel="noopener">Official Grade 3 standards ↗</a>
+            <a [href]="sources.californiaFramework.url" target="_blank" rel="noopener">How California curriculum selection works ↗</a>
+          </div>
+        </div>
+        <div class="eureka-difference" aria-label="Eureka and i-Ready comparison">
+          <div><span class="same-mark">Same</span><strong>California Grade 3 learning standards</strong></div>
+          <div><span class="different-mark">Different</span><strong>Books, units, lessons, pacing, and platform</strong></div>
+          <a class="eureka-reference-link" routerLink="/ruchika/grade3/math">Open the discontinued Eureka reference →</a>
+        </div>
+      </section>
+    </ng-container>
+
+    <ng-container *ngIf="pageKind === 'curriculum'">
+      <section class="page-title">
+        <span class="section-kicker">Official core curriculum</span>
+        <h1>What the Grade 3 program actually contains</h1>
+        <p>Verified publisher and California review information—separate from assumptions about the school’s pacing.</p>
+      </section>
+
+      <section class="curriculum-layout">
+        <article class="feature-panel">
+          <span class="feature-chip">Student materials</span>
+          <h2>Two-volume Grade 3 Student Worktext</h2>
+          <p>The worktext is organized into units, lessons, and multi-day sessions. Digital access can include a digital worktext, Family Center, math tools, learning games, Fluency Flight, assigned practice, and assessments.</p>
+          <a [href]="sources.classroomMathematics.url" target="_blank" rel="noopener">Official program components ↗</a>
+        </article>
+        <article class="feature-panel">
+          <span class="feature-chip">Teacher materials</span>
+          <h2>Teacher Guide Volumes 1 and 2 + digital tools</h2>
+          <p>California’s review identifies the two Teacher Guide volumes, Digital Teacher Toolbox, and Digital Success Central. Publisher materials also describe planning reports, centers, comprehension checks, family letters, and progression videos.</p>
+          <a [href]="sources.californiaFindings.url" target="_blank" rel="noopener">California Report of Findings ↗</a>
+        </article>
+      </section>
+
+      <section class="instruction-panel">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Instructional design</span>
+            <h2>How lessons are designed</h2>
+          </div>
+          <a [href]="sources.classroomMathematics.url" target="_blank" rel="noopener">Publisher description ↗</a>
+        </div>
+        <div class="method-grid">
+          <article><strong>Try</strong><p>Students first make sense of a problem and try a strategy.</p></article>
+          <article><strong>Discuss</strong><p>Students compare representations, explain reasoning, and learn from peers.</p></article>
+          <article><strong>Connect</strong><p>The class connects strategies to important mathematical ideas and procedures.</p></article>
+          <article><strong>Big Ideas</strong><p>Lessons are grouped around connected concepts rather than isolated skills.</p></article>
+          <article><strong>Data & language</strong><p>Data investigations, language supports, and multiple ways to participate are built into the program.</p></article>
+          <article><strong>Multi-day sessions</strong><p>A lesson can span multiple sessions; “lesson” does not necessarily mean one school day.</p></article>
+        </div>
+      </section>
+
+      <section class="boundary-panel">
+        <span class="boundary-mark" aria-hidden="true">!</span>
+        <div>
+          <span class="section-kicker">Important verification limit</span>
+          <h2>The exact Grade 3 unit and lesson order is not publicly verified yet</h2>
+          <p>The publisher’s public page confirms the structure, but its full California samples require a form and the state report does not list every Grade 3 unit title. This portal will not invent a sequence or map Eureka lessons one-to-one. The authoritative next source is the Grade 3 Volume 1 and Volume 2 table of contents or the school-provided digital course.</p>
+          <a [href]="sources.californiaSamples.url" target="_blank" rel="noopener">Publisher sample-access page ↗</a>
+        </div>
+      </section>
+    </ng-container>
+
+    <ng-container *ngIf="pageKind === 'syllabus'">
+      <section class="page-title page-title-row">
+        <div>
+          <span class="section-kicker">Official California Grade 3 syllabus</span>
+          <h1>What a Grade 3 student is expected to learn</h1>
+          <p>These are California standards domains—not claimed i-Ready unit titles or school pacing.</p>
+        </div>
+        <a class="primary-button" [href]="sources.californiaStandards.url" target="_blank" rel="noopener">Open official standards ↗</a>
+      </section>
+
+      <section class="domain-grid" aria-label="California Grade 3 mathematics domains">
+        <article class="domain-card" *ngFor="let domain of domains">
+          <div class="domain-heading">
+            <span class="domain-code">{{ domain.code }}</span>
+            <div>
+              <span>{{ domain.shortTitle }}</span>
+              <h2>{{ domain.title }}</h2>
+            </div>
+          </div>
+          <p>{{ domain.summary }}</p>
+          <ul>
+            <li *ngFor="let item of domain.focus">{{ item }}</li>
+          </ul>
+          <a [href]="sources.californiaStandards.url" target="_blank" rel="noopener">California standards source ↗</a>
+        </article>
+      </section>
+
+      <section class="practices-panel">
+        <div>
+          <span class="section-kicker">Mathematical Practices · MP1–MP8</span>
+          <h2>Standards for Mathematical Practice</h2>
+          <p>These describe how students should reason and work across every Grade 3 domain.</p>
+        </div>
+        <ol>
+          <li *ngFor="let practice of practices; let i = index"><span>MP{{ i + 1 }}</span>{{ practice }}</li>
+        </ol>
+        <a [href]="sources.californiaStandards.url" target="_blank" rel="noopener">Official California standards ↗</a>
+      </section>
+    </ng-container>
+
+    <ng-container *ngIf="pageKind === 'assessment'">
+      <section class="page-title">
+        <span class="section-kicker">How the parts differ</span>
+        <h1>Classroom learning, i-Ready assessment, and the state test</h1>
+        <p>They can use related Grade 3 standards, but they answer different questions and are not interchangeable.</p>
+      </section>
+
+      <section class="comparison-grid">
+        <article class="comparison-card">
+          <span class="comparison-label blue-label">Daily core</span>
+          <h2>Classroom Mathematics California</h2>
+          <strong>What is being taught?</strong>
+          <p>Lessons, discussion, worktext practice, and teacher-planned Grade 3 instruction.</p>
+          <a [href]="sources.classroomMathematics.url" target="_blank" rel="noopener">Publisher source ↗</a>
+        </article>
+        <article class="comparison-card">
+          <span class="comparison-label purple-label">School diagnostic</span>
+          <h2>i-Ready Inform</h2>
+          <strong>What does the student need next?</strong>
+          <p>An adaptive Diagnostic and reports that help educators identify strengths, needs, and instructional priorities.</p>
+          <a [href]="sources.iReadyFamily.url" target="_blank" rel="noopener">Official family source ↗</a>
+        </article>
+        <article class="comparison-card">
+          <span class="comparison-label amber-label">State assessment</span>
+          <h2>Smarter Balanced / CAASPP</h2>
+          <strong>How is the student performing on state expectations?</strong>
+          <p>California’s annual mathematics assessment begins in Grade 3. It is not an i-Ready test and is not tied to one textbook.</p>
+          <a [href]="sources.californiaAssessment.url" target="_blank" rel="noopener">California assessment source ↗</a>
+        </article>
+      </section>
+
+      <section class="path-explainer">
+        <div>
+          <span class="section-kicker">Where My Path fits</span>
+          <h2>Personalized Instruction is online practice, not the printed syllabus</h2>
+          <p>When licensed and assigned by the school, My Path gives individualized online lessons informed by student needs. A student may therefore see work above or below the current classroom lesson without changing the official Grade 3 curriculum.</p>
+          <a [href]="sources.iReadyFamily.url" target="_blank" rel="noopener">Official i-Ready component explanation ↗</a>
+        </div>
+        <div class="path-flow" aria-label="Simplified i-Ready instructional flow">
+          <span>Inform / Diagnostic</span><b>→</b><span>Teacher planning</span><b>→</b><span>Core instruction + My Path</span>
+        </div>
+      </section>
+
+      <section class="local-context">
+        <strong>Moreland context</strong>
+        <p>A Moreland school page documents i-Ready Diagnostic use in Grades 1–8 mathematics and notes that Grades 3–8 also use the state assessment as the third annual assessment.</p>
+        <a [href]="sources.morelandIReady.url" target="_blank" rel="noopener">Moreland source ↗</a>
+      </section>
+    </ng-container>
+
+    <ng-container *ngIf="pageKind === 'access'">
+      <section class="page-title">
+        <span class="section-kicker">Student access</span>
+        <h1>A working school login does not automatically mean every i-Ready product is enabled</h1>
+        <p>The school controls the student roster, licensed products, assigned content, and sign-in path.</p>
+      </section>
+
+      <section class="access-grid">
+        <article class="access-card">
+          <span class="access-step">1</span>
+          <h2>Use the current school sign-in route</h2>
+          <p>Start through the school’s Clever or district portal, not the publisher’s teacher password-recovery page. Old credentials can still authenticate while the available apps change by school year.</p>
+        </article>
+        <article class="access-card">
+          <span class="access-step">2</span>
+          <h2>Check which Math tiles appear</h2>
+          <p>Look for i-Ready Math, Classroom Mathematics California or Student Worktext, My Path / Personalized Instruction, Diagnostic / Inform, and Family Center.</p>
+        </article>
+        <article class="access-card">
+          <span class="access-step">3</span>
+          <h2>Treat missing content as provisioning—not a password conclusion</h2>
+          <p>If the identity works but the Math program is absent, the teacher or school must confirm the correct code, roster, license, or app assignment.</p>
+        </article>
+      </section>
+
+      <section class="license-panel">
+        <div>
+          <span class="section-kicker">Access boundary</span>
+          <h2>There is no direct personal or homeschool i-Ready software license</h2>
+          <p>Curriculum Associates says accounts and software access are provided through schools or organizations. Public family resources exist, but they do not unlock a student’s assigned course.</p>
+        </div>
+        <a class="primary-button" [href]="sources.iReadyAccess.url" target="_blank" rel="noopener">Official access guidance ↗</a>
+      </section>
+
+      <section class="known-unknown">
+        <div><span class="known-dot"></span><strong>Known</strong><p>The new printed core book is Classroom Mathematics California, Grade 3.</p></div>
+        <div><span class="pending-dot"></span><strong>Still school-specific</strong><p>The exact QR code, Clever tile, assigned digital components, and home-use expectations.</p></div>
+      </section>
+    </ng-container>
+
+    <ng-container *ngIf="pageKind === 'sources'">
+      <section class="page-title page-title-row">
+        <div>
+          <span class="section-kicker">Source register</span>
+          <h1>Official evidence behind this workspace</h1>
+          <p>Primary state, district, and publisher sources only. Each source states exactly what it establishes.</p>
+        </div>
+        <span class="source-count">{{ sourceList.length }} verified links</span>
+      </section>
+
+      <section class="source-list">
+        <article class="source-row" *ngFor="let source of sourceList">
+          <div class="source-owner">{{ source.owner }}</div>
+          <div class="source-copy">
+            <h2>{{ source.label }}</h2>
+            <p>{{ source.establishes }}</p>
+          </div>
+          <a [href]="source.url" target="_blank" rel="noopener">Open source ↗</a>
+        </article>
+      </section>
+
+    </ng-container>
+  </div>
+</main>

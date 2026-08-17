@@ -8,37 +8,37 @@
 
   <div class="portal-content">
     <section class="portal-intro" aria-labelledby="portal-title">
-      <h1 id="portal-title">Choose a subject</h1>
-      <p>Continue with Eureka Math or learn through the verified Grade 3 Reading &amp; Language Arts year.</p>
+      <h1 id="portal-title">Choose a learning area</h1>
+      <p>Open the current i-Ready Math workspace, Reading &amp; Language Arts, or the discontinued Eureka Math reference.</p>
     </section>
 
     <section class="subject-section" aria-labelledby="subjects-title">
       <div class="subject-heading">
         <div>
-          <h2 id="subjects-title">Grade 3 subjects</h2>
-          <p>Each subject keeps its own lessons and navigation.</p>
+          <h2 id="subjects-title">Grade 3 learning areas</h2>
+          <p>Current programs come first. Previous material remains available only as a reference.</p>
         </div>
-        <span class="subject-count">2 subjects ready</span>
+        <span class="subject-count">3 learning areas</span>
       </div>
 
       <div class="subject-grid">
-        <article class="subject-card math-card">
+        <article class="subject-card iready-card" aria-labelledby="iready-card-title">
           <div class="subject-card-topline">
-            <span class="subject-icon math-icon" aria-hidden="true">×÷</span>
-            <span class="status-badge ready-status">Ready</span>
+            <span class="subject-icon iready-icon" aria-hidden="true">iR</span>
+            <span class="status-badge current-status">Current</span>
           </div>
           <div class="subject-card-copy">
-            <span class="subject-kicker">Mathematics</span>
-            <h3>Eureka Math</h3>
-            <p>Open the complete Grade 3 curriculum with all 7 modules and 152 interactive lessons.</p>
+            <span class="subject-kicker">Mathematics · current program</span>
+            <h3 id="iready-card-title">i-Ready Math</h3>
+            <p>Understand the Grade 3 core book, California syllabus, assessments, student access, and verified official sources.</p>
           </div>
-          <ul class="subject-details" aria-label="Eureka Math coverage">
-            <li>7 modules</li>
-            <li>152 lessons</li>
-            <li>Blank and solved practice</li>
+          <ul class="subject-details iready-details" aria-label="i-Ready Math workspace coverage">
+            <li>Current math</li>
+            <li>Grade 3 syllabus</li>
+            <li>Official sources</li>
           </ul>
-          <a class="subject-action math-action" routerLink="/ruchika/grade3/math">
-            Open Eureka Math
+          <a class="subject-action iready-action" routerLink="/ruchika/grade3/iready">
+            Open i-Ready Math
             <span aria-hidden="true">→</span>
           </a>
         </article>
@@ -53,13 +53,34 @@
             <h3 id="reading-title">Reading &amp; Language Arts</h3>
             <p>Learn through the verified Benchmark Advance Grade 3 sequence: 10 units, 30 weeks, named school texts, and official text-evidence practice.</p>
           </div>
-          <ul class="subject-details muted-details" aria-label="Reading and Language Arts coverage">
+          <ul class="subject-details reading-details" aria-label="Reading and Language Arts coverage">
             <li>10 publisher units</li>
             <li>70 named selections</li>
             <li>100 official questions</li>
           </ul>
           <a class="subject-action reading-action" routerLink="/ruchika/grade3/reading">
             Open Reading &amp; Language Arts
+            <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="subject-card legacy-card">
+          <div class="subject-card-topline">
+            <span class="subject-icon legacy-icon" aria-hidden="true">×÷</span>
+            <span class="status-badge discontinued-status">Discontinued</span>
+          </div>
+          <div class="subject-card-copy">
+            <span class="subject-kicker">Mathematics · previous curriculum</span>
+            <h3>Eureka Math</h3>
+            <p>Open the complete previous Grade 3 Eureka curriculum for reference and additional practice.</p>
+          </div>
+          <ul class="subject-details legacy-details" aria-label="Eureka Math reference coverage">
+            <li>7 modules</li>
+            <li>152 lessons</li>
+            <li>Blank and solved practice</li>
+          </ul>
+          <a class="subject-action legacy-action" routerLink="/ruchika/grade3/math">
+            Open Eureka Reference
             <span aria-hidden="true">→</span>
           </a>
         </article>

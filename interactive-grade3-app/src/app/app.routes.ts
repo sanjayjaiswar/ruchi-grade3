@@ -3,6 +3,7 @@ import { HomePage } from './pages/home/home';
 import { LessonPage } from './pages/lesson/lesson';
 import { ModuleOverviewPage } from './pages/module-overview/module-overview';
 import { PortalHomePage } from './pages/portal-home/portal-home';
+import { CurrentMathHomePage } from './pages/current-math-home/current-math-home';
 import { ReadingHomePage } from './pages/reading-home/reading-home';
 import { SearchPage } from './pages/search/search';
 
@@ -18,6 +19,13 @@ const grade3Routes: Routes = [
 export const routes: Routes = [
   { path: '', redirectTo: 'ruchika/grade3', pathMatch: 'full' },
   { path: 'ruchika/grade3', component: PortalHomePage },
+  { path: 'ruchika/grade3/iready', component: CurrentMathHomePage },
+  { path: 'ruchika/grade3/iready/curriculum', component: CurrentMathHomePage },
+  { path: 'ruchika/grade3/iready/syllabus', component: CurrentMathHomePage },
+  { path: 'ruchika/grade3/iready/assessment', component: CurrentMathHomePage },
+  { path: 'ruchika/grade3/iready/access', component: CurrentMathHomePage },
+  { path: 'ruchika/grade3/iready/sources', component: CurrentMathHomePage },
+  { path: 'ruchika/grade3/classroom-math', redirectTo: 'ruchika/grade3/iready', pathMatch: 'full' },
   { path: 'ruchika/grade3/reading', component: ReadingHomePage },
   { path: 'ruchika/grade3/reading/sources', component: ReadingHomePage },
   { path: 'ruchika/grade3/reading/standards', component: ReadingHomePage },

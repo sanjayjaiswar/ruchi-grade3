@@ -1,11 +1,12 @@
 # Active Work
 
-Date: 2026-08-13
+Date: 2026-08-16
 
 This is the lightweight index of work that is currently active, paused, or blocked. Detailed decisions, progress, validation, and resume instructions belong in the linked work-item file.
 
 ## Current Work
 
+- [Grade 3 i-Ready Math](work-items/grade3-classroom-mathematics-california.md) — The current Math workspace now separates the Classroom Mathematics California core book, official California Grade 3 syllabus, i-Ready Inform, My Path, CAASPP, access boundaries, and primary sources. Eureka remains unchanged internally but appears last and visibly discontinued; exact publisher lesson authoring remains blocked until the Grade 3 worktext contents or authorized school access are available.
 - [Grade 3 Multi-Subject Learning Portal](work-items/grade3-multi-subject-learning-portal.md) — The Reading source audit verifies the 10-unit/30-week/70-selection year and 100 publisher text-evidence questions. Both governing publisher pages now appear before each Unit learning path; every question launch links to the exact publisher page; and every practice prompt shows its rendered source page beside the separately labeled interactive teaching layer. The learner path is keyboard-free: no digital worksheet inputs or typed answer fields are allowed. All 100 question routes, all 10 Unit routes, representative interaction states, and deep Math Blank/Solved navigation passed live browser review. Complete daily lessons and official assessment practice remain fail-closed until the edition-matched Teacher Resource System, student passages, and assessment/scoring materials are admitted, fingerprinted, page-mapped, and visually reviewed.
 
 ## Tracking Rules

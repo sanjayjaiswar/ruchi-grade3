@@ -349,20 +349,25 @@
 .app-shell:has(app-portal-home-page) .topbar,
 .app-shell:has(app-portal-home-page) .curriculum-drawer,
 .app-shell:has(app-reading-home-page) .topbar,
-.app-shell:has(app-reading-home-page) .curriculum-drawer {
+.app-shell:has(app-reading-home-page) .curriculum-drawer,
+.app-shell:has(app-current-math-home-page) .topbar,
+.app-shell:has(app-current-math-home-page) .curriculum-drawer {
   display: none;
 }
 
 .app-shell:has(app-portal-home-page) .app-layout,
 .app-shell.drawer-is-collapsed:has(app-portal-home-page) .app-layout,
 .app-shell:has(app-reading-home-page) .app-layout,
-.app-shell.drawer-is-collapsed:has(app-reading-home-page) .app-layout {
+.app-shell.drawer-is-collapsed:has(app-reading-home-page) .app-layout,
+.app-shell:has(app-current-math-home-page) .app-layout,
+.app-shell.drawer-is-collapsed:has(app-current-math-home-page) .app-layout {
   display: block;
   min-height: 100vh;
 }
 
 .app-shell:has(app-portal-home-page) .app-content,
-.app-shell:has(app-reading-home-page) .app-content {
+.app-shell:has(app-reading-home-page) .app-content,
+.app-shell:has(app-current-math-home-page) .app-content {
   min-height: 100vh;
 }
 
