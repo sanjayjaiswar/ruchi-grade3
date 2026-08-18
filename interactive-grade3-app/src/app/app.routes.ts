@@ -1,5 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomePage } from './pages/home/home';
+import { HomeworkHomePage } from './pages/homework-home/homework-home';
+import { HomeworkPage } from './pages/homework/homework';
 import { LessonPage } from './pages/lesson/lesson';
 import { ModuleOverviewPage } from './pages/module-overview/module-overview';
 import { PortalHomePage } from './pages/portal-home/portal-home';
@@ -19,6 +21,8 @@ const grade3Routes: Routes = [
 export const routes: Routes = [
   { path: '', redirectTo: 'ruchika/grade3', pathMatch: 'full' },
   { path: 'ruchika/grade3', component: PortalHomePage },
+  { path: 'ruchika/grade3/homework', component: HomeworkHomePage },
+  { path: 'ruchika/grade3/homework/2026-08-17', component: HomeworkPage },
   { path: 'ruchika/grade3/iready', component: CurrentMathHomePage },
   { path: 'ruchika/grade3/iready/curriculum', component: CurrentMathHomePage },
   { path: 'ruchika/grade3/iready/syllabus', component: CurrentMathHomePage },

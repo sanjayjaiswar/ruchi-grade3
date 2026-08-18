@@ -1,0 +1,206 @@
+<main class="homework-page">
+  <header class="homework-header">
+    <a class="back-link" routerLink="/ruchika/grade3/homework">← Homework</a>
+    <div>
+      <span class="eyebrow">Homework</span>
+      <h1>August 17</h1>
+      <p>Words with the short <strong>a</strong> and short <strong>o</strong> sounds</p>
+    </div>
+
+    <div class="mode-switch" aria-label="Choose homework view">
+      <button
+        type="button"
+        [class.is-active]="mode === 'concept'"
+        [attr.aria-pressed]="mode === 'concept'"
+        (click)="setMode('concept')">
+        Concept
+      </button>
+      <button
+        type="button"
+        [class.is-active]="mode === 'blank'"
+        [attr.aria-pressed]="mode === 'blank'"
+        (click)="setMode('blank')">
+        Blank
+      </button>
+      <button
+        type="button"
+        [class.is-active]="mode === 'solved'"
+        [attr.aria-pressed]="mode === 'solved'"
+        (click)="setMode('solved')">
+        Solved
+      </button>
+    </div>
+  </header>
+
+  <aside class="source-strip" aria-label="Homework source">
+    <div>
+      <strong>Publisher source</strong>
+      <span>Spectrum Spelling Grade 3, Lesson 1, pages 6–7</span>
+    </div>
+    <a href="https://images.carsondellosa.com/media/cd/pdfs/Activities/Samplers/704599_sb.pdf" target="_blank" rel="noopener">
+      Open the Carson Dellosa sample ↗
+    </a>
+  </aside>
+
+  <section class="concept-panel" *ngIf="mode === 'concept'" aria-labelledby="concept-title">
+    <div class="concept-heading">
+      <span>Lesson overview</span>
+      <h2 id="concept-title">Hear the vowel, then use the sentence</h2>
+      <p>This lesson combines spelling sounds, context clues, and vocabulary. Learn the idea first, then open Blank to practice and Solved to check the reasoning.</p>
+    </div>
+
+    <div class="sound-grid">
+      <article class="sound-card short-a-card">
+        <div class="sound-mark">a</div>
+        <div>
+          <h3>Short a</h3>
+          <p>Short <strong>a</strong> is the vowel sound heard in <strong>cat</strong>. Keep the sound quick instead of saying the letter name.</p>
+          <div class="example-row">
+            <span>bath</span><span>than</span><span>damp</span><span>trash</span><span>flap</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="sound-card short-o-card">
+        <div class="sound-mark">o</div>
+        <div>
+          <h3>Short o</h3>
+          <p>Short <strong>o</strong> is the vowel sound heard in <strong>hot</strong>. Listen to the first vowel in longer words.</p>
+          <div class="example-row">
+            <span>hobby</span><span>bottle</span><span>lots</span><span>flock</span><span>pocket</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="concept-grid">
+      <article class="concept-card">
+        <h3>How to work out a spelling word</h3>
+        <ol>
+          <li>Say the word slowly and listen to its first vowel sound.</li>
+          <li>Compare that sound with <strong>cat</strong> for short a or <strong>hot</strong> for short o.</li>
+          <li>Write the whole word carefully, including every consonant.</li>
+          <li>Read it again to make sure the written word matches the spoken word.</li>
+        </ol>
+      </article>
+
+      <article class="concept-card">
+        <h3>How context gives the answer</h3>
+        <p>The sentence gives both grammar and meaning clues. In “more ___ any other subject,” a comparison needs <strong>than</strong>. In “___ soil,” a describing word meaning slightly wet needs <strong>damp</strong>.</p>
+        <p>After filling a blank, read the whole sentence aloud. The answer should sound natural and make sense.</p>
+      </article>
+    </div>
+
+    <article class="collective-card">
+      <div>
+        <h3>Animal group words</h3>
+        <p>A collective noun names a group. The worksheet asks for the particular group word commonly paired with each animal.</p>
+      </div>
+      <div class="collective-grid">
+        <span><strong>herd</strong> of cows</span>
+        <span><strong>pod</strong> of whales</span>
+        <span><strong>colony</strong> of ants</span>
+        <span><strong>gaggle</strong> of geese</span>
+        <span><strong>school</strong> of fish</span>
+        <span><strong>swarm</strong> of bees</span>
+        <span><strong>pack</strong> of wolves</span>
+        <span><strong>bed</strong> of clams</span>
+      </div>
+    </article>
+
+    <p class="concept-disclosure">This Concept explanation is supplemental guidance created for this homework page; it is not publisher text.</p>
+  </section>
+
+  <section class="worksheet" *ngIf="mode !== 'concept'" [class.is-solved]="mode === 'solved'" aria-labelledby="page-6-title">
+    <div class="worksheet-title-row">
+      <div>
+        <span class="lesson-label">Lesson 1</span>
+        <h2 id="page-6-title">Spelling Words</h2>
+      </div>
+      <span class="page-number">Page 6</span>
+    </div>
+
+    <p class="directions">Say each word. Listen for the short <strong>a</strong> sound or the short <strong>o</strong> sound. Then, write the word.</p>
+
+    <aside class="spelling-tip">
+      <strong>Spelling tips</strong>
+      <span>The short <strong>a</strong> sound can be spelled <strong>a</strong>. The short <strong>o</strong> sound can be spelled <strong>o</strong>.</span>
+    </aside>
+
+    <p class="supplemental-note" *ngIf="mode === 'solved'">The explanations below are supplemental guidance, not publisher text.</p>
+
+    <div class="spelling-grid">
+      <div class="spelling-row" *ngFor="let item of spellingWords; let index = index">
+        <span class="item-number">{{ index + 1 }}.</span>
+        <span class="prompt-word">{{ item.word }}</span>
+        <span class="answer-line">{{ answer(item.word) }}</span>
+        <p class="answer-explanation" *ngIf="mode === 'solved'"><strong>Why:</strong> {{ item.explanation }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="worksheet" *ngIf="mode !== 'concept'" [class.is-solved]="mode === 'solved'" aria-labelledby="page-7-title">
+    <div class="worksheet-title-row">
+      <div>
+        <span class="lesson-label">Lesson 1</span>
+        <h2 id="page-7-title">Words in Context</h2>
+      </div>
+      <span class="page-number">Page 7</span>
+    </div>
+
+    <p class="directions">Write the missing spelling words.</p>
+    <aside class="challenge-box" *ngIf="mode === 'blank'">
+      <strong>Challenge</strong>
+      <span>Circle the other words in the narrative that have the short <strong>a</strong> or short <strong>o</strong> sound.</span>
+    </aside>
+    <h3>Science Is Everywhere</h3>
+
+    <ng-container *ngIf="mode === 'blank'; else solvedContext">
+      <p class="story">
+        I like science more <span class="inline-answer"></span> any other subject at school.
+        Science is also my <span class="inline-answer"></span>.
+        I always keep a pen and a notebook in my <span class="inline-answer"></span> to record things that I see.
+      </p>
+      <p class="story">
+        Today, I went to the recycling center. I watched as old pieces of glass that once were
+        <span class="inline-answer"></span> were made into a new <span class="inline-answer"></span>.
+        After that, I walked along the river. I noticed <span class="inline-answer"></span> of patches of soft, green moss growing in the
+        <span class="inline-answer"></span> soil. I watched a <span class="inline-answer"></span> of birds looking for worms in the ground.
+        A few birds waded into the river and started to <span class="inline-answer"></span> their wings against the water.
+        The birds were taking a <span class="inline-answer"></span>, as many other animals do.
+      </p>
+    </ng-container>
+
+    <ng-template #solvedContext>
+      <p class="supplemental-note">The explanations below are supplemental guidance, not publisher text.</p>
+      <div class="context-solutions">
+        <article class="context-solution" *ngFor="let item of contextAnswers; let index = index">
+          <div class="solved-sentence">
+            <span class="item-number">{{ index + 1 }}.</span>
+            <span>{{ item.before }} <strong class="solved-answer">{{ item.answer }}</strong>{{ item.after }}</span>
+          </div>
+          <p class="answer-explanation"><strong>Why:</strong> {{ item.explanation }}</p>
+        </article>
+      </div>
+    </ng-template>
+
+    <div class="word-building">
+      <h3>Word Building</h3>
+      <p>A flock is a group of birds. Write the word from the box that describes each group of animals.</p>
+      <div class="word-bank" aria-label="Word bank">
+        <span *ngFor="let word of wordBank">{{ word }}</span>
+      </div>
+      <div class="group-grid">
+        <div class="group-item" *ngFor="let group of animalGroups; let index = index">
+          <div class="group-row">
+            <span class="item-number">{{ index + 1 }}.</span>
+            <span>a</span>
+            <span class="answer-line">{{ answer(group.answer) }}</span>
+            <span>of {{ group.animal }}</span>
+          </div>
+          <p class="answer-explanation" *ngIf="mode === 'solved'"><strong>Why:</strong> {{ group.explanation }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

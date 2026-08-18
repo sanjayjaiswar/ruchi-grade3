@@ -1,0 +1,50 @@
+<main class="homework-home">
+  <header class="homework-nav">
+    <a class="portal-brand" routerLink="/ruchika/grade3" aria-label="Ruchika Learning Portal home">
+      <span>R</span>
+      <strong>Ruchika Learning Portal — Grade 3</strong>
+    </a>
+  </header>
+
+  <div class="homework-content">
+    <section class="homework-intro" aria-labelledby="homework-title">
+      <div>
+        <h1 id="homework-title">Homework</h1>
+        <p>Daily assignments from every subject for the latest school month.</p>
+      </div>
+      <a class="back-link" routerLink="/ruchika/grade3">← All learning areas</a>
+    </section>
+
+    <section class="assignment-section" aria-labelledby="assignments-title">
+      <div class="section-heading">
+        <h2 id="assignments-title">Assignments</h2>
+        <span>Current month</span>
+      </div>
+
+      <section class="month-group" [attr.aria-label]="currentMonth">
+        <div class="month-heading">
+          <h3>{{ currentMonth }}</h3>
+          <span>{{ currentMonthAssignments.length }} assignment</span>
+        </div>
+
+        <div class="assignment-grid">
+          <a class="assignment-card" *ngFor="let assignment of currentMonthAssignments" [routerLink]="assignment.route">
+            <div class="date-block">
+              <strong>{{ assignment.date }}</strong>
+            </div>
+            <span class="subject-tag">{{ assignment.subject }}</span>
+            <div class="assignment-copy">
+              <h4>{{ assignment.title }}</h4>
+              <p>{{ assignment.summary }}</p>
+            </div>
+            <div class="assignment-meta">
+              <span>{{ assignment.pages }} pages</span>
+              <span>Blank + solved</span>
+            </div>
+            <span class="open-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+    </section>
+  </div>
+</main>
