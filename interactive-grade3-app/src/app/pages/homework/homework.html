@@ -182,6 +182,33 @@
           <p class="answer-explanation"><strong>Why:</strong> {{ item.explanation }}</p>
         </article>
       </div>
+
+      <aside class="challenge-solution" aria-labelledby="challenge-solution-title">
+        <div class="challenge-solution-heading">
+          <span>Challenge</span>
+          <div>
+            <h3 id="challenge-solution-title">Other words with short a or short o</h3>
+            <p>The publisher answer key says answers will vary. These are clear possible answers from the narrative.</p>
+          </div>
+        </div>
+
+        <div class="challenge-answer-grid">
+          <div class="challenge-answer-group">
+            <strong>Short a</strong>
+            <div>
+              <span *ngFor="let word of challengeAnswers.shortA">{{ word }}</span>
+            </div>
+          </div>
+          <div class="challenge-answer-group">
+            <strong>Short o</strong>
+            <div>
+              <span *ngFor="let word of challengeAnswers.shortO">{{ word }}</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="challenge-explanation"><strong>Why:</strong> Each word contains the same quick vowel sound heard in <em>cat</em> or <em>hot</em>. The spelling words used to fill the blanks are not repeated because the challenge asks for the <em>other</em> words in the narrative.</p>
+      </aside>
     </ng-template>
 
     <div class="word-building">

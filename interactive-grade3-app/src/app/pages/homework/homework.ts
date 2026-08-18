@@ -102,6 +102,11 @@ export class HomeworkPage {
     }
   ];
 
+  readonly challengeAnswers = {
+    shortA: ['at', 'and', 'that', 'as', 'glass', 'after', 'patches', 'animals'],
+    shortO: ['watched', 'soft', 'moss']
+  };
+
   readonly animalGroups = [
     { animal: 'cows', answer: 'herd', explanation: 'Herd is the usual group word for cows or other cattle.' },
     { animal: 'whales', answer: 'pod', explanation: 'Pod is a common group word for whales.' },
