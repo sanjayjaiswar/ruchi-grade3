@@ -11,6 +11,9 @@
   --purple: #7c3aed;
   --purple-dark: #5b21b6;
   --purple-soft: #f7f3ff;
+  --teal: #0f766e;
+  --teal-dark: #115e59;
+  --teal-soft: #f0fdfa;
   display: block;
   min-height: 100vh;
   font-size: 16px;
@@ -137,7 +140,7 @@
 
 .subject-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -172,6 +175,11 @@
 .homework-card {
   border-top: 5px solid var(--purple);
   background: linear-gradient(160deg, #fff, var(--purple-soft));
+}
+
+.syllabus-card {
+  border-top: 5px solid var(--teal);
+  background: linear-gradient(160deg, #fff, var(--teal-soft));
 }
 
 .subject-card-topline {
@@ -215,6 +223,12 @@
   font-size: 15px;
 }
 
+.syllabus-card-icon {
+  background: #ccfbf1;
+  color: var(--teal-dark);
+  font-size: 16px;
+}
+
 .status-badge {
   padding: 6px 10px;
   border-radius: 999px;
@@ -239,6 +253,11 @@
 .homework-status {
   background: #ede9fe;
   color: var(--purple-dark);
+}
+
+.syllabus-card-status {
+  background: #ccfbf1;
+  color: var(--teal-dark);
 }
 
 .subject-card-copy {
@@ -302,6 +321,11 @@
   color: var(--purple-dark);
 }
 
+.syllabus-card-details li {
+  background: #ccfbf1;
+  color: var(--teal-dark);
+}
+
 .subject-action {
   display: inline-flex;
   align-items: center;
@@ -339,6 +363,12 @@
   border: 1px solid var(--purple);
   background: linear-gradient(135deg, #8b5cf6, var(--purple) 58%, var(--purple-dark));
   box-shadow: 0 8px 18px rgba(124, 58, 237, 0.2);
+}
+
+.syllabus-card-action {
+  border: 1px solid var(--teal);
+  background: linear-gradient(135deg, #14b8a6, var(--teal) 58%, var(--teal-dark));
+  box-shadow: 0 8px 18px rgba(15, 118, 110, 0.2);
 }
 
 .subject-action:hover,

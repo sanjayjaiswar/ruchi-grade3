@@ -1,0 +1,175 @@
+<main class="reference-page">
+  <header class="reference-header">
+    <a class="reference-brand" routerLink="/ruchika/grade3/syllabus-books" aria-label="Classroom Grade 3 Syllabus and Books Reference overview">
+      <span class="reference-mark" aria-hidden="true">Bk</span>
+      <span><strong>Ruchika Classroom Grade 3 Syllabus &amp; Books Reference</strong><small>Verified Math match + separate classroom observations · reference only</small></span>
+    </a>
+
+    <nav class="reference-nav" aria-label="Classroom Grade 3 Syllabus and Books Reference sections">
+      <a routerLink="/ruchika/grade3/syllabus-books" [class.active]="pageKind === 'overview'" [attr.aria-current]="pageKind === 'overview' ? 'page' : null">Overview</a>
+      <a routerLink="/ruchika/grade3/syllabus-books/books" [class.active]="pageKind === 'books'" [attr.aria-current]="pageKind === 'books' ? 'page' : null">Math books</a>
+      <a routerLink="/ruchika/grade3/syllabus-books/curriculum" [class.active]="pageKind === 'curriculum'" [attr.aria-current]="pageKind === 'curriculum' ? 'page' : null">Math sequence</a>
+      <a routerLink="/ruchika/grade3/syllabus-books/classroom-library" [class.active]="pageKind === 'classroom'" [attr.aria-current]="pageKind === 'classroom' ? 'page' : null">Classroom library</a>
+      <a routerLink="/ruchika/grade3/syllabus-books/access" [class.active]="pageKind === 'access'" [attr.aria-current]="pageKind === 'access' ? 'page' : null">Math access</a>
+      <a routerLink="/ruchika/grade3/syllabus-books/sources" [class.active]="pageKind === 'sources'" [attr.aria-current]="pageKind === 'sources' ? 'page' : null">Sources</a>
+    </nav>
+
+    <a class="portal-link" routerLink="/ruchika/grade3" aria-label="Grade 3 home" title="All Grade 3 learning areas">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.2 12 4l9 7.2v8.3a.5.5 0 0 1-.5.5H15v-6H9v6H3.5a.5.5 0 0 1-.5-.5z" /></svg>
+    </a>
+  </header>
+
+  <section *ngIf="pageKind === 'overview'" class="reference-content">
+    <section class="page-hero overview-hero" aria-labelledby="reference-title">
+      <div>
+        <span class="reference-badge">Classroom-photo evidence · explicitly non-official</span>
+        <h1 id="reference-title">Classroom Grade 3 Syllabus &amp; Books Reference</h1>
+        <p>This isolated reference separates the verified Grade 3 i-Ready Math book match from the other photographed classroom and library materials. Nothing here claims that every visible book was assigned, adopted, grade-approved, or part of an official school syllabus.</p>
+        <div class="page-actions">
+          <a class="primary-action" routerLink="/ruchika/grade3/syllabus-books/books">Open verified Math match →</a>
+          <a routerLink="/ruchika/grade3/syllabus-books/classroom-library">Open classroom library →</a>
+        </div>
+      </div>
+      <dl class="hero-summary">
+        <div><dt>1</dt><dd>photographed Math edition verified</dd></div>
+        <div><dt>5</dt><dd>Math publisher components researched</dd></div>
+        <div><dt>3</dt><dd>classroom evidence categories separated</dd></div>
+      </dl>
+    </section>
+
+    <section class="scope-note">
+      <strong>Evidence boundary</strong>
+      <p>The photographed Grade 3 Classroom Mathematics Volume 1 book is the verified curriculum match. The other shelf books and classroom displays are included only as photographed classroom reference material, with no claim of official status.</p>
+    </section>
+
+    <section class="overview-grid" aria-label="Classroom Grade 3 reference sections">
+      <a routerLink="/ruchika/grade3/syllabus-books/books"><span>Verified photographed edition</span><strong>Math books</strong><p>The photographed worktext plus separately labeled publisher companion components, ISBNs, item numbers, and readers.</p><small>Open Math books →</small></a>
+      <a routerLink="/ruchika/grade3/syllabus-books/curriculum"><span>Inside the verified Math edition</span><strong>Math sequence</strong><p>Six units, 33 lesson titles, focus standards, printed pages, and publisher-suggested sessions.</p><small>Open Math sequence →</small></a>
+      <a routerLink="/ruchika/grade3/syllabus-books/classroom-library"><span>Not verified as curriculum</span><strong>Classroom library</strong><p>Readable shelf titles, recurring series, and other classroom materials segregated from the Math curriculum match.</p><small>Open Classroom library →</small></a>
+      <a routerLink="/ruchika/grade3/syllabus-books/access"><span>Verified Math copies and formats</span><strong>Math access</strong><p>Public browser readers, PDF findings, school-licensed access, and physical ordering.</p><small>Open Math access →</small></a>
+      <a routerLink="/ruchika/grade3/syllabus-books/sources"><span>Verification trail</span><strong>Sources</strong><p>The publisher and California sources used only for the Math edition research, plus the classroom-photo boundary.</p><small>Open Sources →</small></a>
+    </section>
+  </section>
+
+  <section *ngIf="pageKind === 'books'" class="reference-content">
+    <section class="page-hero">
+      <div><span class="reference-badge">Publisher matches · not proof of classroom assignment</span><h1>Matching Grade 3 Math books</h1><p>The photographed Student Worktext matches this 2026 California edition. The other cards are companion components listed by the publisher for that same Grade 3 program.</p></div>
+      <div class="heading-actions"><a [href]="sources.californiaSamples.url" target="_blank" rel="noopener">Publisher review library ↗</a><a routerLink="/ruchika/grade3/syllabus-books/access">Copy and PDF facts →</a></div>
+    </section>
+
+    <section class="books-panel">
+      <div class="book-grid">
+        <article *ngFor="let book of books" class="book-card" [class.photo-match]="book.id === 'student-v1'">
+          <div class="book-topline"><span>{{ book.id === 'student-v1' ? 'Photographed Math book match' : 'Publisher companion component' }}</span><small>{{ book.audience }}</small></div>
+          <h2>{{ book.title }}</h2>
+          <p>{{ book.coverage }}</p>
+          <dl>
+            <div><dt>ISBN</dt><dd>{{ book.isbn }}</dd></div>
+            <div><dt>Publisher item</dt><dd>{{ book.itemNumber }}</dd></div>
+            <div><dt>Official online review</dt><dd>{{ book.reviewPages }} viewer pages</dd></div>
+          </dl>
+          <a [href]="book.sourceUrl" target="_blank" rel="noopener">Open publisher review reader ↗</a>
+        </article>
+      </div>
+      <p class="claim-boundary"><strong>Reference boundary:</strong> a publisher companion component is part of the matched program; that does not prove the classroom uses or assigned every component.</p>
+    </section>
+  </section>
+
+  <section *ngIf="pageKind === 'curriculum'" class="reference-content">
+    <section class="page-hero">
+      <div><span class="reference-badge">Contents of the matched publisher edition</span><h1>Math book sequence</h1><p>The unit and lesson information below describes the matching books. It is not presented as the teacher’s calendar or an official school syllabus.</p></div>
+      <div class="heading-actions"><a [href]="sources.grade3TeacherPacing.url" target="_blank" rel="noopener">Publisher pacing table ↗</a><a routerLink="/ruchika/grade3/syllabus-books/books">Book identifiers →</a></div>
+    </section>
+
+    <section class="curriculum-panel">
+      <div class="pacing-note"><strong>{{ unitPacingDays }} publisher-suggested unit days</strong><span>plus separate two-day diagnostic or practice-test windows before Unit 1, after Unit 3, and after Unit 6. No classroom pacing claim is made.</span></div>
+      <div class="unit-list">
+        <details *ngFor="let unit of units" class="unit-card" [attr.open]="unit.number === 1 ? true : null">
+          <summary>
+            <span class="unit-number">{{ unit.number }}</span>
+            <span class="unit-title"><small>Volume {{ unit.volume }} · printed pages {{ unit.printPages }}</small><strong>{{ unit.title }}</strong><em>{{ unit.subtitle }}</em></span>
+            <span class="unit-total"><strong>{{ unit.lessons.length }} lessons</strong><small>{{ unit.pacingDays }} suggested days</small></span>
+          </summary>
+          <div class="unit-body">
+            <div class="unit-context">
+              <p><span>California Big Ideas named in the book</span><strong>{{ unit.bigIdeas.join(' · ') }}</strong></p>
+              <p><span>STEM Stories</span><strong>{{ unit.stemProfile }}</strong></p>
+              <p><span>Performance Task</span><strong>{{ unit.performanceTask }}</strong></p>
+            </div>
+            <div class="lesson-table" role="table" [attr.aria-label]="'Unit ' + unit.number + ' lesson sequence'">
+              <div class="lesson-header" role="row"><span>Lesson</span><span>Publisher title and focus standard</span><span>Printed page</span><span>Sessions</span></div>
+              <div *ngFor="let lesson of unit.lessons" class="lesson-row" role="row">
+                <span class="lesson-number" role="cell">{{ lesson.number }}</span>
+                <span class="lesson-title" role="cell"><strong>{{ lesson.title }}</strong><small>{{ lesson.standards }}</small></span>
+                <span role="cell">{{ lesson.printPage }}</span>
+                <span role="cell">{{ lesson.sessions }}</span>
+              </div>
+            </div>
+            <a class="unit-source" [href]="unit.sourceUrl" target="_blank" rel="noopener">Verify Unit {{ unit.number }} in the publisher reader ↗</a>
+          </div>
+        </details>
+      </div>
+    </section>
+  </section>
+
+  <section *ngIf="pageKind === 'classroom'" class="reference-content">
+    <section class="page-hero">
+      <div><span class="reference-badge">Photographed classroom reference · not official curriculum</span><h1>Classroom library &amp; observed materials</h1><p>This tab records only what can be read with reasonable confidence in the supplied classroom photos. It deliberately keeps shelf books, classroom displays, and the verified Math curriculum match in different evidence categories.</p></div>
+      <div class="heading-actions"><a routerLink="/ruchika/grade3/syllabus-books/books">Verified Math books →</a><a routerLink="/ruchika/grade3/syllabus-books/sources">Evidence rules →</a></div>
+    </section>
+
+    <section class="classroom-boundary" aria-label="Classroom reference limitations">
+      <strong>No official-status claim</strong>
+      <p>A book on a classroom shelf may be a library book, student-choice book, duplicate copy, or temporary classroom material. A photo alone cannot establish assignment, adoption, required reading, grade appropriateness, or exact edition metadata.</p>
+    </section>
+
+    <section class="classroom-grid" aria-label="Photographed classroom materials grouped by evidence type">
+      <article *ngFor="let group of classroomReferenceGroups" class="classroom-card">
+        <div class="classroom-card-heading">
+          <span>Photo-based inventory</span>
+          <h2>{{ group.title }}</h2>
+          <p>{{ group.boundary }}</p>
+          <small>{{ group.evidence }}</small>
+        </div>
+        <ul>
+          <li *ngFor="let item of group.items">{{ item }}</li>
+        </ul>
+      </article>
+    </section>
+
+    <aside class="transcription-note"><strong>Why some spines are not named:</strong><span>Several titles are cropped, angled, blocked, or too blurred to transcribe safely. They are not guessed or given invented authors, ISBNs, editions, or links.</span></aside>
+  </section>
+
+  <section *ngIf="pageKind === 'access'" class="reference-content">
+    <section class="page-hero">
+      <div><span class="reference-badge">Verified Math match · digital, PDF, licensed, and print formats</span><h1>How the matching Math books can be accessed</h1><p>Public review access, school access, and physical-book ordering are separate. This page does not imply that any school license or copy is available to a particular student.</p></div>
+      <a class="heading-link" [href]="sources.californiaSamples.url" target="_blank" rel="noopener">Open publisher review library ↗</a>
+    </section>
+
+    <section class="access-grid">
+      <article><span>Public browser copies</span><h2>Five publisher review readers</h2><p>The publisher lists browser readers for both Student Worktexts, both Teacher Guides, and Fluency and Skills Practice.</p><a [href]="sources.californiaSamples.url" target="_blank" rel="noopener">Open the publisher library ↗</a></article>
+      <article><span>PDF research finding</span><h2>No authorized public full-book PDF found</h2><p>The official readers allow browser viewing and searching, but their current configuration disables download and print. No third-party copy is presented as official or safe.</p><a routerLink="/ruchika/grade3/syllabus-books/books">Use the publisher readers →</a></article>
+      <article><span>School-licensed digital access</span><h2>i-Ready Connect</h2><p>The book describes online worktexts, assignments, checks, videos, games, tools, glossaries, family resources, and accessibility tools. Actual access depends on the school license.</p><div class="card-links"><a [href]="sources.iReadyLogin.url" target="_blank" rel="noopener">Official sign-in ↗</a><a [href]="sources.grade3StudentDigitalResourcesToolkit.url" target="_blank" rel="noopener">Book resource page ↗</a></div></article>
+      <article><span>Physical copies</span><h2>Order by exact identifier</h2><p>Use the ISBN and publisher item number on the Books page to distinguish this edition from older or non-California editions.</p><div class="card-links"><a routerLink="/ruchika/grade3/syllabus-books/books">See identifiers →</a><a [href]="sources.curriculumAssociatesOrdering.url" target="_blank" rel="noopener">Publisher ordering instructions ↗</a></div></article>
+    </section>
+  </section>
+
+  <section *ngIf="pageKind === 'sources'" class="reference-content">
+    <section class="page-hero">
+      <div><span class="reference-badge">Primary-source Math ledger + classroom-photo boundary</span><h1>Sources for this classroom reference</h1><p>The linked primary sources identify and describe only the matched Math publisher edition. The classroom/library inventory comes solely from the supplied photos and does not establish official adoption or assignment.</p></div>
+      <a class="heading-link" routerLink="/ruchika/grade3/syllabus-books/books">Back to book matches →</a>
+    </section>
+
+    <section class="source-list">
+      <article><span>0</span><div><h2>Supplied classroom photographs</h2><p>The worktext cover and identifier photos establish the Math match. Separate shelf and classroom-display photos support only the observational inventory; uncertain or student-written details are omitted.</p><a routerLink="/ruchika/grade3/syllabus-books/classroom-library">Open the classroom inventory →</a></div></article>
+      <article><span>1</span><div><h2>Publisher program page</h2><p>Describes Classroom Mathematics California, its instructional model, formats, and digital components.</p><a [href]="sources.classroomMathematics.url" target="_blank" rel="noopener">Open publisher program ↗</a></div></article>
+      <article><span>2</span><div><h2>Publisher California review library</h2><p>Lists the exact Grade 3 browser readers used to match titles and inspect book identifiers and contents.</p><a [href]="sources.californiaSamples.url" target="_blank" rel="noopener">Open publisher library ↗</a></div></article>
+      <article><span>3</span><div><h2>California adoption list</h2><p>Shows the program on California’s statewide 2025 mathematics instructional-materials adoption list. State listing is not proof of local classroom adoption.</p><a [href]="sources.californiaAdoption.url" target="_blank" rel="noopener">Open CDE list ↗</a></div></article>
+      <article><span>4</span><div><h2>California Report of Findings</h2><p>Records the state review findings and program components reviewed for standards alignment.</p><a [href]="sources.californiaFindings.url" target="_blank" rel="noopener">Open CDE findings ↗</a></div></article>
+      <article><span>5</span><div><h2>California Grade 3 Math standards</h2><p>Provides the official learning-standard codes referenced in the matching books.</p><a [href]="sources.californiaStandardsPdf.url" target="_blank" rel="noopener">Open CDE standards ↗</a></div></article>
+      <article><span>6</span><div><h2>Teacher Guide pacing and resources</h2><p>Provides the session counts, unit totals, diagnostic windows, and publisher resource inventory shown in this reference.</p><div class="card-links"><a [href]="sources.grade3TeacherPacing.url" target="_blank" rel="noopener">Pacing ↗</a><a [href]="sources.grade3TeacherProgramResources.url" target="_blank" rel="noopener">Resources ↗</a></div></div></article>
+    </section>
+
+    <aside class="legacy-boundary"><strong>Separate previous reference:</strong><span>Eureka Math remains in its existing area and was not changed by this work.</span><a routerLink="/ruchika/grade3/math">Open Eureka →</a></aside>
+  </section>
+</main>

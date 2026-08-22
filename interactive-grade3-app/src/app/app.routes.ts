@@ -8,6 +8,7 @@ import { PortalHomePage } from './pages/portal-home/portal-home';
 import { CurrentMathHomePage } from './pages/current-math-home/current-math-home';
 import { ReadingHomePage } from './pages/reading-home/reading-home';
 import { SearchPage } from './pages/search/search';
+import { SyllabusBooksPage } from './pages/syllabus-books/syllabus-books';
 
 const grade3Routes: Routes = [
   { path: '', component: HomePage },
@@ -21,6 +22,12 @@ const grade3Routes: Routes = [
 export const routes: Routes = [
   { path: '', redirectTo: 'ruchika/grade3', pathMatch: 'full' },
   { path: 'ruchika/grade3', component: PortalHomePage },
+  { path: 'ruchika/grade3/syllabus-books', component: SyllabusBooksPage },
+  { path: 'ruchika/grade3/syllabus-books/books', component: SyllabusBooksPage },
+  { path: 'ruchika/grade3/syllabus-books/curriculum', component: SyllabusBooksPage },
+  { path: 'ruchika/grade3/syllabus-books/classroom-library', component: SyllabusBooksPage },
+  { path: 'ruchika/grade3/syllabus-books/access', component: SyllabusBooksPage },
+  { path: 'ruchika/grade3/syllabus-books/sources', component: SyllabusBooksPage },
   { path: 'ruchika/grade3/homework', component: HomeworkHomePage },
   { path: 'ruchika/grade3/homework/2026-08-17', component: HomeworkPage },
   { path: 'ruchika/grade3/iready', component: CurrentMathHomePage },
