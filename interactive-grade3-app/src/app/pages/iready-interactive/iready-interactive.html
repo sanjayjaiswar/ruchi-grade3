@@ -1,0 +1,311 @@
+<main class="interactive-page" [class.lesson-focus]="lessonFocus">
+  <header class="interactive-header">
+    <a class="interactive-brand" routerLink="/ruchika/grade3/iready-interactive" aria-label="i-Ready Interactive home">
+      <span aria-hidden="true">iR+</span>
+      <span><strong>i-Ready Interactive</strong><small>Grade 3 · Official Student Worktext</small></span>
+    </a>
+    <nav aria-label="i-Ready Interactive navigation">
+      <a routerLink="/ruchika/grade3/iready">i-Ready Math</a>
+      <a routerLink="/ruchika/grade3/syllabus-books/books">Book reference</a>
+      <a class="home-link" routerLink="/ruchika/grade3" aria-label="Grade 3 home">R</a>
+    </nav>
+  </header>
+
+  <div class="interactive-content" [class.lesson-focus-content]="lessonFocus" [class.unit-focus-content]="unitFocus">
+    <section *ngIf="!lessonFocus && !unitFocus" class="volume-overview" aria-labelledby="interactive-title">
+      <header class="volume-heading">
+        <div>
+          <span class="eyebrow">Grade 3 Student Worktext</span>
+          <h1 id="interactive-title">Volume 1</h1>
+          <p>Units 1–3 · Lessons 1–19</p>
+        </div>
+        <ol class="compact-hierarchy" aria-label="Learning path">
+          <li><b>1</b><span><strong>Volume</strong><small>Units 1–3</small></span></li>
+          <li><b>2</b><span><strong>Unit</strong><small>Related ideas</small></span></li>
+          <li><b>3</b><span><strong>Lesson</strong><small>Sessions and practice</small></span></li>
+        </ol>
+        <a href="https://online.flippingbook.com/view/336581625/" target="_blank" rel="noopener">Open official Volume 1 ↗</a>
+      </header>
+
+      <section class="volume-units" aria-labelledby="volume-units-title">
+        <header>
+          <div><span>Official table of contents</span><h2 id="volume-units-title">Choose a unit</h2></div>
+          <p>Each unit opens to its official Big Ideas and lesson path.</p>
+        </header>
+        <div class="unit-card-grid">
+          <article *ngFor="let unit of volumeOneUnits" class="unit-card">
+            <div class="unit-card-topline">
+              <span>Unit {{ unit.number }}</span>
+              <a [href]="unit.sourceUrl" target="_blank" rel="noopener" [attr.aria-label]="'Open official Unit ' + unit.number">Official source ↗</a>
+            </div>
+            <h3>{{ unit.title }}</h3>
+            <p>{{ unit.subtitle }}</p>
+            <dl>
+              <div><dt>{{ unit.lessons.length }}</dt><dd>Lessons</dd></div>
+              <div><dt>{{ totalSessions(unit) }}</dt><dd>Sessions</dd></div>
+              <div><dt>{{ unit.bigIdeas.length }}</dt><dd>Big Ideas</dd></div>
+              <div><dt>{{ unit.printPages }}</dt><dd>Printed pages</dd></div>
+            </dl>
+            <a class="open-unit" [routerLink]="['/ruchika/grade3/iready-interactive/units', unit.number]">Explore Unit {{ unit.number }} <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <section *ngIf="unitFocus" class="unit-overview" aria-labelledby="unit-title">
+      <nav class="unit-breadcrumb" aria-label="Unit breadcrumb">
+        <a routerLink="/ruchika/grade3/iready-interactive">Volume 1</a><span aria-hidden="true">/</span><strong>Unit {{ selectedUnit.number }}</strong>
+      </nav>
+
+      <header class="unit-overview-heading">
+        <div class="unit-number" aria-hidden="true">{{ selectedUnit.number }}</div>
+        <div class="unit-heading-content">
+          <span>Volume 1 · Unit {{ selectedUnit.number }}</span>
+          <h1 id="unit-title">{{ selectedUnit.title }}</h1>
+          <p>{{ selectedUnit.subtitle }}</p>
+          <dl class="unit-inline-metrics">
+            <div><dt>{{ selectedUnit.lessons.length }}</dt><dd>Lessons</dd></div>
+            <div><dt>{{ totalSessions(selectedUnit) }}</dt><dd>Sessions</dd></div>
+            <div><dt>{{ selectedUnit.printPages }}</dt><dd>Printed pages</dd></div>
+            <div><dt>{{ selectedUnit.performanceTask }}</dt><dd>Performance Task</dd></div>
+          </dl>
+        </div>
+        <a [href]="selectedUnit.sourceUrl" target="_blank" rel="noopener">Open official unit ↗</a>
+      </header>
+
+      <section class="unit-big-ideas" aria-labelledby="big-ideas-title">
+        <header>
+          <div><span>Official Big Ideas Organizer</span><h2 id="big-ideas-title">Concepts that connect this unit</h2></div>
+          <p>These statements are taken from the unit’s Big Ideas Organizer.</p>
+        </header>
+        <div class="idea-card-grid">
+          <article *ngFor="let idea of unitIdeas(selectedUnit)">
+            <span>Big Idea</span>
+            <h3>{{ idea.title }}</h3>
+            <p>{{ idea.understanding }}</p>
+            <a [href]="unitIdeaSourceUrl(idea)" target="_blank" rel="noopener">Verify in official organizer ↗</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="unit-lessons" aria-labelledby="unit-lessons-title">
+        <header>
+          <div><span>Official lesson path</span><h2 id="unit-lessons-title">Lessons in Unit {{ selectedUnit.number }}</h2></div>
+          <p>Open a lesson for its sessions and source-backed learning activity.</p>
+        </header>
+        <div class="lesson-card-grid">
+          <article *ngFor="let lesson of selectedUnit.lessons" [class.ready]="lessonIsReady(lesson)">
+            <div class="lesson-card-number">Lesson {{ lesson.number }}</div>
+            <h3>{{ lesson.title }}</h3>
+            <p>{{ lesson.standards }}</p>
+            <div class="lesson-card-meta"><span>{{ lesson.sessions }} sessions</span><span>Starts on p. {{ lesson.printPage }}</span></div>
+            <div class="lesson-card-actions">
+              <a *ngIf="lessonIsReady(lesson)" class="open-lesson" [routerLink]="['/ruchika/grade3/iready-interactive/lessons', lesson.number]">Open interactive lesson →</a>
+              <span *ngIf="!lessonIsReady(lesson)" class="mapped-label">Official structure mapped</span>
+              <a [href]="lessonSourceUrl(lesson)" target="_blank" rel="noopener">Official pages ↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <nav *ngIf="lessonFocus" class="focus-lesson-nav" aria-label="Current lesson navigation">
+      <a class="all-lessons-link" [routerLink]="['/ruchika/grade3/iready-interactive/units', selectedUnit.number]">Unit {{ selectedUnit.number }} overview</a>
+      <div class="focus-current-lesson">
+        <span>Volume 1 · Unit {{ selectedUnit.number }}</span>
+        <strong>Lesson {{ selectedLesson.number }} · {{ selectedLesson.title }}</strong>
+      </div>
+      <div class="focus-lesson-actions">
+        <a
+          *ngIf="previousLesson as lesson"
+          [routerLink]="['/ruchika/grade3/iready-interactive/lessons', lesson.number]"
+          [attr.aria-label]="'Previous lesson: ' + lesson.title">Previous</a>
+        <a
+          *ngIf="nextLesson as lesson"
+          [routerLink]="['/ruchika/grade3/iready-interactive/lessons', lesson.number]"
+          [attr.aria-label]="'Next lesson: ' + lesson.title">Next</a>
+      </div>
+    </nav>
+
+    <section *ngIf="lessonFocus" class="learning-workspace focused">
+      <section class="lesson-stage" aria-live="polite">
+        <header class="lesson-heading">
+          <div>
+            <span class="lesson-path">Volume 1 · Unit {{ selectedUnit.number }} · Lesson {{ selectedLesson.number }}</span>
+            <h2>{{ selectedLesson.title }}</h2>
+            <p>{{ selectedLesson.standards }} · starts on printed page {{ selectedLesson.printPage }} · {{ selectedLesson.sessions }} sessions</p>
+          </div>
+          <a [href]="lessonSourceUrl(selectedLesson)" target="_blank" rel="noopener">Open official lesson ↗</a>
+        </header>
+
+        <ng-container *ngIf="lessonIsInteractive; else mappedLesson">
+          <nav class="session-tabs" [attr.aria-label]="'Lesson ' + selectedLesson.number + ' sessions'" [style.--session-count]="activeSessions.length">
+            <button
+              *ngFor="let session of activeSessions"
+              type="button"
+              (click)="selectSession(session.number)"
+              [class.active]="session.number === selectedSessionNumber"
+              [attr.aria-pressed]="session.number === selectedSessionNumber">
+              <span>Session {{ session.number }}</span>
+              <strong>{{ session.phase }}</strong>
+              <small>pp. {{ session.printPages }}</small>
+            </button>
+          </nav>
+
+          <section class="session-panel">
+            <header class="session-heading">
+              <div><span>{{ selectedSession.phase }} · Session {{ selectedSession.number }}</span><h3>{{ selectedSession.title }}</h3></div>
+              <div class="session-source-actions">
+                <div *ngIf="selectedLessonNumber === 1 && selectedSessionNumber === 1" class="teaching-mode" role="group" aria-label="Activity view">
+                  <button type="button" (click)="returnToSessionOneTry()" [class.active]="sessionOneMode === 'try'" [attr.aria-pressed]="sessionOneMode === 'try'">Try it</button>
+                  <button type="button" (click)="showSessionOneSolution()" [class.active]="sessionOneMode === 'solution'" [attr.aria-pressed]="sessionOneMode === 'solution'">Show solution</button>
+                </div>
+                <button
+                  *ngIf="visualAnimationIsVerified"
+                  type="button"
+                  (click)="replayVerifiedVisual()">
+                  Replay visual
+                </button>
+                <a [href]="sessionSourceUrl" target="_blank" rel="noopener">Official pages {{ selectedSession.printPages }} ↗</a>
+              </div>
+            </header>
+
+            <div *ngIf="selectedLessonNumber === 1 && selectedSessionNumber === 1" class="activity-card place-value-activity" [class.animate-solution]="sessionOneAnimationRun">
+              <div class="activity-copy">
+                <span class="activity-label">{{ sessionOneMode === 'solution' ? 'LEARN IT · source-verified teaching' : 'TRY IT · book-based interaction' }}</span>
+                <h4>Place 384 between its neighboring tens and hundreds.</h4>
+                <p>Use the place-value chart first. Then give both intervals that contain the number.</p>
+                <div class="place-value-chart" aria-label="384 shown by place value">
+                  <div><span>Hundreds</span><strong>3</strong></div><div><span>Tens</span><strong>8</strong></div><div><span>Ones</span><strong>4</strong></div>
+                </div>
+
+                <div *ngIf="sessionOneMode === 'solution'" class="interval-visuals" aria-label="384 located between neighboring tens and neighboring hundreds">
+                  <div class="interval-rail tens-interval">
+                    <span class="rail-label">Neighboring tens</span>
+                    <div class="rail-track"><b class="rail-start">380</b><strong class="rail-number">384</strong><b class="rail-end">390</b></div>
+                    <p>380 &lt; 384 &lt; 390</p>
+                  </div>
+                  <div class="interval-rail hundreds-interval">
+                    <span class="rail-label">Neighboring hundreds</span>
+                    <div class="rail-track"><b class="rail-start">300</b><strong class="rail-number">384</strong><b class="rail-end">400</b></div>
+                    <p>300 &lt; 384 &lt; 400</p>
+                  </div>
+                </div>
+              </div>
+              <div *ngIf="sessionOneMode === 'try'; else sessionOneSolution" class="response-board">
+                <label>Between which two tens?<span><input type="number" [(ngModel)]="tensLow" aria-label="Lower ten for 384"><b>and</b><input type="number" [(ngModel)]="tensHigh" aria-label="Upper ten for 384"></span></label>
+                <label>Between which two hundreds?<span><input type="number" [(ngModel)]="hundredsLow" aria-label="Lower hundred for 384"><b>and</b><input type="number" [(ngModel)]="hundredsHigh" aria-label="Upper hundred for 384"></span></label>
+                <button type="button" (click)="checkSessionOne()">Check both intervals</button>
+                <p *ngIf="sessionOneFeedback" class="feedback" [class.correct]="sessionOneFeedback.startsWith('Correct')">{{ sessionOneFeedback }}</p>
+              </div>
+
+              <ng-template #sessionOneSolution>
+                <aside class="session-one-solution" aria-label="Worked solution for 384">
+                  <div class="solution-step"><b>1</b><p><strong>Read the places.</strong><span>384 has 3 hundreds, 8 tens, and 4 ones.</span></p></div>
+                  <div class="solution-step"><b>2</b><p><strong>Locate the neighboring tens.</strong><span>384 comes after 380 and before 390.</span></p></div>
+                  <div class="solution-step"><b>3</b><p><strong>Locate the neighboring hundreds.</strong><span>384 comes after 300 and before 400.</span></p></div>
+                  <div class="solution-answer"><span>Solved</span><strong>380 &lt; 384 &lt; 390</strong><strong>300 &lt; 384 &lt; 400</strong></div>
+                  <div class="solution-source"><span>The values and task come from the official Session 1 pages; the animated interval rails are a portal-built visual rendering.</span><a [href]="sessionSourceUrl" target="_blank" rel="noopener">Official pp. 9–12 ↗</a></div>
+                </aside>
+              </ng-template>
+            </div>
+
+            <div *ngIf="selectedLessonNumber === 1 && selectedSessionNumber === 2" class="activity-card rounding-activity">
+              <div class="activity-copy">
+                <span class="activity-label">TRY IT · book-based interaction</span>
+                <h4>Round 37 minutes to the nearest ten.</h4>
+                <p>Find the halfway point between the two neighboring tens before choosing.</p>
+                <div class="number-line ten-line" aria-label="Number line from 30 to 40 with 35 and 37 marked">
+                  <span class="line"></span><i class="tick start"></i><i class="tick middle"></i><i class="tick marker"></i><i class="tick end"></i>
+                  <b class="label start">30</b><b class="label middle">35</b><b class="label marker">37</b><b class="label end">40</b>
+                </div>
+              </div>
+              <div class="choice-board">
+                <span>37 is closer to…</span>
+                <div><button type="button" (click)="chooseSessionTwo(30)" [class.selected]="sessionTwoChoice === 30">30</button><button type="button" (click)="chooseSessionTwo(40)" [class.selected]="sessionTwoChoice === 40">40</button></div>
+                <p *ngIf="sessionTwoChoice" class="feedback" [class.correct]="sessionTwoChoice === 40">{{ sessionTwoChoice === 40 ? 'Correct. 37 is above 35, so it rounds to 40.' : 'Not yet. Compare the distance from 37 to 30 with the distance from 37 to 40.' }}</p>
+              </div>
+            </div>
+
+            <div *ngIf="selectedLessonNumber === 1 && selectedSessionNumber === 3" class="activity-card rounding-activity">
+              <div class="activity-copy">
+                <span class="activity-label">TRY IT · book-based interaction</span>
+                <h4>Round 236 to the nearest hundred.</h4>
+                <p>The model contains 2 hundreds, 3 tens, and 6 ones. Decide whether the tens have reached the halfway point.</p>
+                <div class="base-ten-model" aria-label="Two hundreds, three tens, and six ones">
+                  <span class="hundred"></span><span class="hundred"></span>
+                  <span class="ten"></span><span class="ten"></span><span class="ten"></span>
+                  <span class="ones"><i *ngFor="let dot of [1,2,3,4,5,6]"></i></span>
+                </div>
+              </div>
+              <div class="choice-board">
+                <span>236 is closer to…</span>
+                <div><button type="button" (click)="chooseSessionThree(200)" [class.selected]="sessionThreeChoice === 200">200</button><button type="button" (click)="chooseSessionThree(300)" [class.selected]="sessionThreeChoice === 300">300</button></div>
+                <p *ngIf="sessionThreeChoice" class="feedback" [class.correct]="sessionThreeChoice === 200">{{ sessionThreeChoice === 200 ? 'Correct. 3 tens is less than the 5-tens halfway point.' : 'Not yet. The halfway point from 200 to 300 is 250. Locate 236 relative to 250.' }}</p>
+              </div>
+            </div>
+
+            <div *ngIf="selectedLessonNumber === 1 && selectedSessionNumber === 4" class="activity-card rounding-activity refine-activity">
+              <div class="activity-copy">
+                <span class="activity-label">APPLY IT · book-based interaction</span>
+                <h4>Round 879 to the nearest hundred.</h4>
+                <p>First identify the neighboring hundreds. Then use the halfway point to make the decision.</p>
+                <div class="number-line hundred-line" aria-label="Number line from 800 to 900 with 850 and 879 marked">
+                  <span class="line"></span><i class="tick start"></i><i class="tick middle"></i><i class="tick marker"></i><i class="tick end"></i>
+                  <b class="label start">800</b><b class="label middle">850</b><b class="label marker">879</b><b class="label end">900</b>
+                </div>
+              </div>
+              <div class="choice-board">
+                <span>879 rounds to…</span>
+                <div><button type="button" (click)="chooseSessionFour(800)" [class.selected]="sessionFourChoice === 800">800</button><button type="button" (click)="chooseSessionFour(900)" [class.selected]="sessionFourChoice === 900">900</button></div>
+                <p *ngIf="sessionFourChoice" class="feedback" [class.correct]="sessionFourChoice === 900">{{ sessionFourChoice === 900 ? 'Correct. 879 is greater than 850 and closer to 900.' : 'Try again. When rounding to the nearest hundred, compare 879 with the halfway number 850.' }}</p>
+              </div>
+            </div>
+
+            <div *ngIf="selectedLessonNumber !== 1 && selectedSession.arithmetic as activity" class="activity-card arithmetic-activity">
+              <div class="activity-copy">
+                <span class="activity-label">{{ selectedSession.phase === 'Refine' ? 'APPLY IT' : 'TRY IT' }} · book-based interaction</span>
+                <h4>{{ activity.prompt }}</h4>
+                <p>Use the session’s place-value strategy. Enter the result, then open the model to compare your reasoning.</p>
+
+                <div class="arithmetic-model" [attr.aria-label]="activity.left + ' ' + activity.operation + ' ' + activity.right">
+                  <div class="vertical-operation"><strong>{{ activity.left }}</strong><span><b>{{ activity.operation }}</b>{{ activity.right }}</span><i></i></div>
+                  <div *ngIf="!activity.jumps" class="digit-model" aria-label="Place-value digits for both numbers">
+                    <div class="digit-headings"><span *ngFor="let label of placeLabels">{{ label }}</span></div>
+                    <div class="digit-row"><b *ngFor="let digit of digits(activity.left)">{{ digit }}</b></div>
+                    <div class="digit-row"><b *ngFor="let digit of digits(activity.right)">{{ digit }}</b></div>
+                  </div>
+                  <div *ngIf="activity.jumps" class="jump-model" aria-label="Add-on jumps to the total">
+                    <span>{{ activity.right }}</span><b *ngFor="let jump of activity.jumps">{{ jump }}</b>
+                  </div>
+                </div>
+              </div>
+
+              <div class="response-board arithmetic-response">
+                <label>Your result<input type="number" [(ngModel)]="arithmeticAnswer" [attr.aria-label]="'Answer for Lesson ' + selectedLessonNumber + ' Session ' + selectedSessionNumber"></label>
+                <button type="button" (click)="checkArithmetic(activity)">Check result</button>
+                <p *ngIf="arithmeticFeedback" class="feedback" [class.correct]="arithmeticCorrect">{{ arithmeticFeedback }}</p>
+                <button type="button" class="model-button" (click)="toggleArithmeticModel()">{{ showArithmeticModel ? 'Hide' : 'Show' }} book strategy</button>
+                <div *ngIf="showArithmeticModel" class="strategy-reveal"><strong>Connect the model</strong><span>{{ activity.strategy }}</span></div>
+              </div>
+            </div>
+
+            <footer class="session-footer">
+              <strong>Source boundary</strong>
+              <span>The lesson, session phase, focus values, and mathematical strategy come from the official book. The clickable controls and feedback are a portal-built interactive rendering.</span>
+            </footer>
+          </section>
+        </ng-container>
+
+        <ng-template #mappedLesson>
+          <section class="mapped-lesson">
+            <span>Official structure verified</span>
+            <h3>{{ selectedLesson.sessions }} sessions are listed for this lesson.</h3>
+            <p>The title, standard, starting page, and session count are mapped from Volume 1. Interactive activities are intentionally withheld until the corresponding book pages have been visually verified and authored.</p>
+            <a [href]="lessonSourceUrl(selectedLesson)" target="_blank" rel="noopener">Review the official lesson pages ↗</a>
+          </section>
+        </ng-template>
+      </section>
+    </section>
+  </div>
+</main>

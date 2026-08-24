@@ -9,7 +9,7 @@
   <div class="portal-content">
     <section class="portal-intro" aria-labelledby="portal-title">
       <h1 id="portal-title">Choose a learning area</h1>
-      <p>Open the current i-Ready Math workspace, Reading &amp; Language Arts, Homework, or the discontinued Eureka Math reference. The classroom Grade 3 syllabus and books reference is a separate area.</p>
+      <p>Open i-Ready Math information, the new book-led i-Ready Interactive workspace, Reading &amp; Language Arts, Homework, or the existing reference areas.</p>
     </section>
 
     <section class="subject-section" aria-labelledby="subjects-title">
@@ -18,7 +18,7 @@
           <h2 id="subjects-title">Grade 3 learning areas</h2>
           <p>Current programs come first. Previous material remains available only as a reference.</p>
         </div>
-        <span class="subject-count">5 learning areas</span>
+        <span class="subject-count">6 learning areas</span>
       </div>
 
       <div class="subject-grid">
@@ -39,6 +39,27 @@
           </ul>
           <a class="subject-action iready-action" routerLink="/ruchika/grade3/iready">
             Open i-Ready Math
+            <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="subject-card interactive-math-card" aria-labelledby="interactive-math-card-title">
+          <div class="subject-card-topline">
+            <span class="subject-icon interactive-math-icon" aria-hidden="true">iR+</span>
+            <span class="status-badge interactive-math-status">Interactive</span>
+          </div>
+          <div class="subject-card-copy">
+            <span class="subject-kicker">Mathematics · official-book learning</span>
+            <h3 id="interactive-math-card-title">i-Ready Interactive</h3>
+            <p>Learn through the verified Grade 3 Volume 1 sequence with book-based models, student attempts, and targeted feedback.</p>
+          </div>
+          <ul class="subject-details interactive-math-details" aria-label="i-Ready Interactive coverage">
+            <li>3 official units</li>
+            <li>19 lessons mapped</li>
+            <li>Unit 1 working</li>
+          </ul>
+          <a class="subject-action interactive-math-action" routerLink="/ruchika/grade3/iready-interactive">
+            Open i-Ready Interactive
             <span aria-hidden="true">→</span>
           </a>
         </article>
@@ -64,23 +85,23 @@
           </a>
         </article>
 
-        <article class="subject-card legacy-card">
+        <article class="subject-card syllabus-card" aria-labelledby="syllabus-card-title">
           <div class="subject-card-topline">
-            <span class="subject-icon legacy-icon" aria-hidden="true">×÷</span>
-            <span class="status-badge discontinued-status">Discontinued</span>
+            <span class="subject-icon syllabus-card-icon" aria-hidden="true">Bk</span>
+            <span class="status-badge syllabus-card-status">Reference</span>
           </div>
           <div class="subject-card-copy">
-            <span class="subject-kicker">Mathematics · previous curriculum</span>
-            <h3>Eureka Math</h3>
-            <p>Open the complete previous Grade 3 Eureka curriculum for reference and additional practice.</p>
+            <span class="subject-kicker">Classroom photos · all-subject reference</span>
+            <h3 id="syllabus-card-title">Classroom Grade 3 Syllabus &amp; Books Reference</h3>
+            <p>Open the verified i-Ready Math book research separately from the photographed classroom and library materials. Shelf presence is reference evidence, not proof of an official syllabus or assignment.</p>
           </div>
-          <ul class="subject-details legacy-details" aria-label="Eureka Math reference coverage">
-            <li>7 modules</li>
-            <li>152 lessons</li>
-            <li>Blank and solved practice</li>
+          <ul class="subject-details syllabus-card-details" aria-label="Classroom Grade 3 syllabus and books reference coverage">
+            <li>Verified Math match</li>
+            <li>Classroom library</li>
+            <li>Not school-official</li>
           </ul>
-          <a class="subject-action legacy-action" routerLink="/ruchika/grade3/math">
-            Open Eureka Reference
+          <a class="subject-action syllabus-card-action" routerLink="/ruchika/grade3/syllabus-books">
+            Open Classroom Reference
             <span aria-hidden="true">→</span>
           </a>
         </article>
@@ -106,23 +127,23 @@
           </a>
         </article>
 
-        <article class="subject-card syllabus-card" aria-labelledby="syllabus-card-title">
+        <article class="subject-card legacy-card">
           <div class="subject-card-topline">
-            <span class="subject-icon syllabus-card-icon" aria-hidden="true">Bk</span>
-            <span class="status-badge syllabus-card-status">Reference</span>
+            <span class="subject-icon legacy-icon" aria-hidden="true">×÷</span>
+            <span class="status-badge discontinued-status">Discontinued</span>
           </div>
           <div class="subject-card-copy">
-            <span class="subject-kicker">Classroom photos · all-subject reference</span>
-            <h3 id="syllabus-card-title">Classroom Grade 3 Syllabus &amp; Books Reference</h3>
-            <p>Open the verified i-Ready Math book research separately from the photographed classroom and library materials. Shelf presence is reference evidence, not proof of an official syllabus or assignment.</p>
+            <span class="subject-kicker">Mathematics · previous curriculum</span>
+            <h3>Eureka Math</h3>
+            <p>Open the complete previous Grade 3 Eureka curriculum for reference and additional practice.</p>
           </div>
-          <ul class="subject-details syllabus-card-details" aria-label="Classroom Grade 3 syllabus and books reference coverage">
-            <li>Verified Math match</li>
-            <li>Classroom library</li>
-            <li>Not school-official</li>
+          <ul class="subject-details legacy-details" aria-label="Eureka Math reference coverage">
+            <li>7 modules</li>
+            <li>152 lessons</li>
+            <li>Blank and solved practice</li>
           </ul>
-          <a class="subject-action syllabus-card-action" routerLink="/ruchika/grade3/syllabus-books">
-            Open Classroom Reference
+          <a class="subject-action legacy-action" routerLink="/ruchika/grade3/math">
+            Open Eureka Reference
             <span aria-hidden="true">→</span>
           </a>
         </article>

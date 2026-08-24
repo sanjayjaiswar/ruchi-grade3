@@ -14,6 +14,9 @@
   --teal: #0f766e;
   --teal-dark: #115e59;
   --teal-soft: #f0fdfa;
+  --cyan: #0891b2;
+  --cyan-dark: #155e75;
+  --cyan-soft: #ecfeff;
   display: block;
   min-height: 100vh;
   font-size: 16px;
@@ -140,7 +143,7 @@
 
 .subject-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -160,6 +163,12 @@
   border-top: 5px solid var(--blue);
   background: linear-gradient(160deg, #fff, var(--blue-soft));
   box-shadow: 0 14px 34px rgba(37, 99, 235, 0.12);
+}
+
+.interactive-math-card {
+  border-top: 5px solid var(--cyan);
+  background: linear-gradient(160deg, #fff, var(--cyan-soft));
+  box-shadow: 0 14px 34px rgba(8, 145, 178, 0.12);
 }
 
 .reading-card {
@@ -206,6 +215,12 @@
   font-size: 16px;
 }
 
+.interactive-math-icon {
+  background: linear-gradient(145deg, #cffafe, #a5f3fc);
+  color: var(--cyan-dark);
+  font-size: 14px;
+}
+
 .reading-icon {
   background: linear-gradient(145deg, #ffedd5, #fdba74);
   color: var(--orange-dark);
@@ -238,6 +253,11 @@
 .current-status {
   background: #dbeafe;
   color: var(--blue-dark);
+}
+
+.interactive-math-status {
+  background: #cffafe;
+  color: var(--cyan-dark);
 }
 
 .ready-status {
@@ -306,6 +326,11 @@
   color: var(--blue-dark);
 }
 
+.interactive-math-details li {
+  background: #cffafe;
+  color: var(--cyan-dark);
+}
+
 .reading-details li {
   background: #ffedd5;
   color: var(--orange-dark);
@@ -345,6 +370,12 @@
   border: 1px solid var(--blue);
   background: linear-gradient(135deg, #3b82f6, var(--blue) 55%, var(--blue-dark));
   box-shadow: 0 8px 18px rgba(37, 99, 235, 0.23);
+}
+
+.interactive-math-action {
+  border: 1px solid var(--cyan);
+  background: linear-gradient(135deg, #22d3ee, var(--cyan) 56%, var(--cyan-dark));
+  box-shadow: 0 8px 18px rgba(8, 145, 178, 0.23);
 }
 
 .reading-action {
