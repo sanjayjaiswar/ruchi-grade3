@@ -26,6 +26,17 @@
 - Creativity is allowed inside clearly labeled supplemental explanations and practice activities. Creativity is not allowed when stating what the official curriculum, syllabus, standards, assessment program, school, district, county, or state requires.
 - Before declaring educational-content work complete, maintain and validate traceability from each displayed factual claim to its exact primary source and implementation location.
 
+## i-Ready Interactive Source Boundary
+
+- For every i-Ready Interactive task, educational content may come only from verified official i-Ready or Curriculum Associates documents supplied or identified by the user.
+- Current approved sources are the original and searchable Grade 3 Volume 1 PDFs under `iReady-Maths/`. Future volumes and Teacher Editions require separate source verification.
+- Eureka Math is never a content source for i-Ready Interactive. Never transfer Eureka curriculum structure, terminology, lessons, problems, values, answers, explanations, strategies, diagrams, standards, or assessments into i-Ready.
+- Eureka references may influence only content-neutral presentation mechanics: layout, typography, navigation, interaction patterns, animation techniques, visual-teaching techniques, libraries, and Blank/Solved behavior.
+- “Copy,” “reuse,” “similar,” or “like Eureka” means presentation mechanics only. It never authorizes educational-content reuse.
+- Every i-Ready interaction and solved explanation must record its official source document, lesson, session, printed pages, viewer page, and approved model type. If exact evidence is missing, withhold the content rather than infer or invent it.
+- Reusable code must remain curriculum-neutral. Never use cross-program educational-content fallbacks.
+- Before completion, verify that all changed learner-facing i-Ready content traces to an approved i-Ready source and contains no Eureka-derived educational content.
+
 ## Agent-Control Policy
 
 - Agent-control files and settings are security-sensitive, including any current or future instruction, policy, configuration, tool, connector, automation, hook, memory, permission, or mechanism that changes agent behavior.
