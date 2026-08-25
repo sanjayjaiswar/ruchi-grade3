@@ -359,7 +359,9 @@
 .app-shell:has(app-syllabus-books-page) .topbar,
 .app-shell:has(app-syllabus-books-page) .curriculum-drawer,
 .app-shell:has(app-iready-interactive-page) .topbar,
-.app-shell:has(app-iready-interactive-page) .curriculum-drawer {
+.app-shell:has(app-iready-interactive-page) .curriculum-drawer,
+.app-shell:has(app-iready-volume2-page) .topbar,
+.app-shell:has(app-iready-volume2-page) .curriculum-drawer {
   display: none;
 }
 
@@ -376,7 +378,9 @@
 .app-shell:has(app-syllabus-books-page) .app-layout,
 .app-shell.drawer-is-collapsed:has(app-syllabus-books-page) .app-layout,
 .app-shell:has(app-iready-interactive-page) .app-layout,
-.app-shell.drawer-is-collapsed:has(app-iready-interactive-page) .app-layout {
+.app-shell.drawer-is-collapsed:has(app-iready-interactive-page) .app-layout,
+.app-shell:has(app-iready-volume2-page) .app-layout,
+.app-shell.drawer-is-collapsed:has(app-iready-volume2-page) .app-layout {
   display: block;
   min-height: 100vh;
 }
@@ -387,7 +391,8 @@
 .app-shell:has(app-homework-home-page) .app-content,
 .app-shell:has(app-homework-page) .app-content,
 .app-shell:has(app-syllabus-books-page) .app-content,
-.app-shell:has(app-iready-interactive-page) .app-content {
+.app-shell:has(app-iready-interactive-page) .app-content,
+.app-shell:has(app-iready-volume2-page) .app-content {
   min-height: 100vh;
 }
 

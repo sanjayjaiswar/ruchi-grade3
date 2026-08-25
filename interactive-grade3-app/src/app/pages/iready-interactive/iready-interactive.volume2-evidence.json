@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "program": "i-ready-classroom-mathematics-california",
+  "publisher": "Curriculum Associates",
+  "grade": 3,
+  "volume": 2,
+  "coverageStatus": "complete-official-volume",
+  "approvedSources": [
+    {
+      "id": "grade3-student-worktext-v2",
+      "kind": "student-worktext",
+      "volume": 2,
+      "usage": "exclusive-learner-content-and-sequence",
+      "title": "Grade 3 Student Worktext - Volume 2",
+      "localPaths": [
+        "iReady-Maths/iready-grade3-volume2-396-pages.pdf",
+        "iReady-Maths/iready-grade3-volume2-396-pages-searchable.pdf"
+      ],
+      "sourceUrl": "https://online.flippingbook.com/view/336471940/"
+    },
+    {
+      "id": "grade3-teacher-guide-v2",
+      "kind": "teacher-guide",
+      "volume": 2,
+      "usage": "exclusive-guidance-and-solved-teaching",
+      "title": "Grade 3 Teacher Guide - Volume 2",
+      "localPaths": [
+        "iReady-Maths/iready-grade3-teacher-guide-volume2-540-pages.pdf",
+        "iReady-Maths/iready-grade3-teacher-guide-volume2-540-pages-searchable.pdf"
+      ]
+    }
+  ],
+  "readerPageMapping": {
+    "frontMatter": "viewer pages 1–12",
+    "instructionalPrintedPages": "467–789",
+    "instructionalViewerOffset": -454,
+    "backMatter": "viewer pages 336–396"
+  },
+  "verifiedCoverage": {
+    "pdfViewerPages": 396,
+    "instructionalPrintedPages": 323,
+    "units": [4, 5, 6],
+    "lessons": 14,
+    "sessions": 52
+  },
+  "unitIdeas": [
+    {
+      "sourceId": "grade3-student-worktext-v2",
+      "unit": 4,
+      "title": "Fractions as Relationships",
+      "understanding": "Fractions show a relationship between the numerator and the denominator. Fractions are equivalent if they show equal amounts of the same whole.",
+      "printedPage": 468,
+      "viewerPage": 14
+    },
+    {
+      "sourceId": "grade3-student-worktext-v2",
+      "unit": 4,
+      "title": "Unit Fraction Models",
+      "understanding": "You can use unit fraction models to compare fractions.",
+      "printedPage": 469,
+      "viewerPage": 15
+    },
+    {
+      "sourceId": "grade3-student-worktext-v2",
+      "unit": 4,
+      "title": "Measuring",
+      "understanding": "You can use line plots to show and compare measurement data.",
+      "printedPage": 469,
+      "viewerPage": 15
+    },
+    {
+      "sourceId": "grade3-student-worktext-v2",
+      "unit": 5,
+      "title": "Number Flexibility to 100 for All Four Operations",
+      "understanding": "You can add, subtract, multiply, and divide to solve problems about time, liquid volume, and mass.",
+      "printedPage": 602,
+      "viewerPage": 148
+    },
+    {
+      "sourceId": "grade3-student-worktext-v2",
+      "unit": 5,
+      "title": "Measuring",
+      "understanding": "Both estimates and exact measurements can be used to solve problems about liquid volume and mass.",
+      "printedPage": 603,
+      "viewerPage": 149
+    },
+    {
+      "sourceId": "grade3-student-worktext-v2",
+      "unit": 6,
+      "title": "Analyze Quadrilaterals",
+      "understanding": "Attributes like sides and angles can be used to describe, analyze, classify, and compare quadrilaterals.",
+      "printedPage": 694,
+      "viewerPage": 240
+    },
+    {
+      "sourceId": "grade3-student-worktext-v2",
+      "unit": 6,
+      "title": "Fractions of Shape and Time",
+      "understanding": "Fractions can describe the area of a shape that has been broken into equal parts.",
+      "printedPage": 695,
+      "viewerPage": 241
+    }
+  ]
+}

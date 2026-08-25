@@ -1,109 +1,82 @@
 # i-Ready Interactive Design QA
 
-- Styling source: `/var/folders/66/d46v0l2s4976zb2_b5y4q1r80000gn/T/codex-clipboard-34fae513-71ed-48b1-811b-88689ea32686.png`
-- Focus-flow reference: `/var/folders/66/d46v0l2s4976zb2_b5y4q1r80000gn/T/codex-clipboard-ae7327c8-3b34-4d96-ba8e-44fc2bd29823.png`
-- Implementation capture: `/Volumes/Data2/Tutorials/Eureka Math Grade 2 - Syllabus Videos Curriculum/Grade3/tmp/iready-interactive-focus-wide-final.jpg`
-- Secondary capture: `/Volumes/Data2/Tutorials/Eureka Math Grade 2 - Syllabus Videos Curriculum/Grade3/tmp/iready-interactive-focus-1440-final.jpg`
-- Verified visual-teaching capture: `/Volumes/Data2/Tutorials/Eureka Math Grade 2 - Syllabus Videos Curriculum/Grade3/tmp/iready-interactive-verified-visual-final.jpg`
-- Volume overview capture: `/Volumes/Data2/Tutorials/Eureka Math Grade 2 - Syllabus Videos Curriculum/Grade3/tmp/iready-interactive-volume-overview-final.jpg`
-- Unit 1 overview capture: `/Volumes/Data2/Tutorials/Eureka Math Grade 2 - Syllabus Videos Curriculum/Grade3/tmp/iready-interactive-unit1-overview-final.jpg`
-- Readable Lesson 1 capture: `/Volumes/Data2/Tutorials/Eureka Math Grade 2 - Syllabus Videos Curriculum/Grade3/tmp/iready-interactive-lesson1-readable-final.jpg`
-- Compact Volume capture: `/Volumes/Data2/Tutorials/Eureka Math Grade 2 - Syllabus Videos Curriculum/Grade3/tmp/iready-interactive-volume-compact-final.jpg`
-- Compact Unit 1 capture: `/Volumes/Data2/Tutorials/Eureka Math Grade 2 - Syllabus Videos Curriculum/Grade3/tmp/iready-interactive-unit1-compact-final.jpg`
-- Compact Lesson 1 capture: `/Volumes/Data2/Tutorials/Eureka Math Grade 2 - Syllabus Videos Curriculum/Grade3/tmp/iready-interactive-lesson1-compact-final.jpg`
-- Official content source: `/Volumes/Data2/Tutorials/Eureka Math Grade 2 - Syllabus Videos Curriculum/Grade3/iReady-Maths/iready-grade3-volume1-548-pages-searchable.pdf`
-- Wide implementation pixels/CSS viewport: 1920 × 940 at device pixel ratio 1.
-- Secondary CSS viewport: 1440 × 900 at device pixel ratio 1.
-- States: Volume 1 overview; Unit 1 overview; Lesson 1 · Session 1.
+## 2026-08-24 visual-teaching-first correction
 
-## Full-view comparison evidence
+### Source truth and comparison boundary
 
-The i-Ready syllabus screenshot was used only for typography, blue tokens, framing, control sizing, and surface treatment. The Eureka lesson screenshot was used only to evaluate instructional focus and above-the-fold density—not content or page cloning. The final i-Ready lesson route now enters directly into the selected lesson and exposes the active interaction within the first viewport.
+- Educational content truth:
+  - `iReady-Maths/iready-grade3-volume1-548-pages-searchable.pdf`
+  - `iReady-Maths/iready-grade3-teacher-guide-volume1-764-pages-searchable.pdf`
+  - `iReady-Maths/iready-grade3-volume2-396-pages-searchable.pdf`
+  - `iReady-Maths/iready-grade3-teacher-guide-volume2-540-pages-searchable.pdf`
+- Presentation baseline: the existing i-Ready syllabus typography, blue tokens, full-width desktop framing, and the prior i-Ready lesson audit captures in `tmp/iready-tryit-audit-20260824/`.
+- The other curriculum was reviewed only for content-neutral learning-focus mechanics. No lesson, model, value, answer, terminology, explanation, or curriculum structure was transferred.
+- Implementation evidence: browser-rendered Volume 1 Lesson 2, Volume 1 Lesson 14, Volume 2 Lesson 20, and Volume 2 Lesson 33 captures emitted during this task. The final live state is `http://127.0.0.1:4220/ruchika/grade3/iready-interactive/lessons/2`.
+- Viewport: 1280 × 720 CSS pixels, device-pixel ratio 1. Source and implementation states were inspected at the same CSS viewport; no density normalization was required.
 
-## Focused comparison evidence
+### Intended experience
 
-- Header: compact 70px lesson-route header with existing i-Ready destinations preserved.
-- Lesson navigation: one route bar exposes the Unit overview, official volume/unit position, full lesson number/title, and Previous/Next controls.
-- Lesson hierarchy: official lesson title, standard, page, session count, source link, and session tabs appear immediately after navigation.
-- Learning area: the compact pass moves the activity from approximately 510px to 469px in the validated 1920px desktop viewport, with no typography reduction.
+The lesson begins with source-backed visual teaching. A learner sees the official model and worked reasoning before being asked to type, draw, or recreate a paper workbook. Practice remains available as a short secondary state. Official Student Worktext and Teacher Guide pages remain inside the lesson as exact evidence rather than occupying permanent teaching space.
 
-## Information architecture
+### Comparison history
 
-- `/iready-interactive` is now a true Volume 1 overview. It explains Volume → Unit → Lesson and shows only the three official Volume 1 units; it renders zero lesson cards.
-- `/iready-interactive/units/:unitNumber` is the intermediate unit layer. It shows the official unit title/subtitle, lesson/session/page totals, performance task, source-linked Big Ideas Organizer statements, and then the official lesson path.
-- `/iready-interactive/lessons/:lessonNumber` remains the focused learning layer. It links back to the correct unit overview and shows only the selected lesson and sessions.
-- The structure is derived from the i-Ready worktext. Reference screenshots influenced hierarchy and density only; no Eureka names, module sequence, concept map, explanatory copy, or lesson data was reused.
+#### Pass 1 — blocked
 
-## Compactness pass
+- P1: both volumes opened in response-entry mode. The primary teaching state was behind `Show solution`.
+- P1: Student Worktext drawing and writing areas were mechanically reproduced as large canvases and textareas. A representative Volume 1 activity reached 4,850 px of document height.
+- P1: Volume 2 permanently reserved a 330 px side column for a source-page screenshot, reducing the space available to the visual model.
+- P2: repeated lesson/session/problem orientation pushed the actual teaching model below the first desktop viewport.
 
-- Merged the separate hierarchy explainer into the Volume header, preserving Volume → Unit → Lesson context while removing an entire panel.
-- Replaced repeated homepage Big Ideas lists with one Big Ideas count; the detailed source-backed statements remain on the appropriate Unit page.
-- Reduced container padding, inter-section gaps, fixed/minimum heights, and repeated headings without reducing any primary typography.
-- Volume units now begin around 277px, each unit card is approximately 274px high, and all three actions are visible well inside the first viewport.
-- Unit 1 lessons now begin around 670px and are visible in the first viewport; the unit title remains 48px and lesson-card titles remain 20px.
-- Lesson typography remains 32px for the lesson title, 18px for session phase, 15px for session/page labels, and 14px for the source boundary.
+#### Fixes
 
-## Findings
+- Both volumes now initialize in `Learn visually`.
+- `Try one` is a separate, secondary practice state; `Check` appears only while practicing.
+- Drawing and writing are inside one collapsed `Optional notes or drawing` disclosure.
+- Open optional tools use a 150 px drawing surface beside a 150 px note area.
+- Volume 2 source screenshots were removed from the permanent lesson grid and remain in the exact-source drawer.
+- Lesson/session/problem navigation was compacted into readable single-line desktop rows without reducing the 32 px Volume 1 lesson title, 25 px session title, 18 px session phase, or equivalent Volume 2 hierarchy.
+- A static visual-teaching contract was added so the first-state and compact-support rules fail closed during validation.
 
-No actionable P0, P1, or P2 differences remain for the requested focus behavior and styling adoption. The lesson route deliberately does not copy Eureka's content, tabs, visuals, or layout; it borrows only the principle that the selected lesson should dominate the first viewport.
+#### Pass 2 — passed
 
-## Verified visual-teaching boundary
+- Volume 1 Lesson 2 visual workspace begins at 532 px and its first teaching section begins at 580 px in the 1280 × 720 viewport.
+- Volume 2 Lesson 20 visual workspace begins at 494 px and its first teaching section begins at 543 px.
+- Volume 1 and Volume 2 both have zero horizontal page overflow at the validated desktop viewport.
+- The previously oversized Volume 1 activity is 1,087 px in the worked-teaching state and no longer renders a paper-sized input surface by default.
+- The expanded optional support is 150 px high for drawing and 150 px high for notes; it remains closed initially.
 
-- Reusable mechanics are limited to animation timing, staged reveal, replay, answer checking, and feedback behavior.
-- Lesson content cannot opt into animation without an explicit evidence record containing the lesson, printed-page range, PDF viewer page, and approved mathematical-model type.
-- The runtime guard checks the active lesson and requires exact page and viewer-page matches before showing the Replay visual control or running an animation.
-- Only the four official Lesson 1 sessions currently satisfy that guard. Lessons 2–19 fail closed and cannot inherit Lesson 1 animation through a default or a broad lesson template.
-- The four approved models are place-value chart (pp. 9–12), nearest-ten number line (pp. 13–18), base-ten blocks (pp. 19–24), and nearest-hundred number line (pp. 25–28).
-- Reduced-motion preferences suppress the animation while leaving the source-backed model and activity usable.
+### Required fidelity surfaces
 
-## Lesson 1 solved-teaching pass
+- Fonts and typography: Inter/system stack; readable optical weights; 32 px Volume 1 lesson title; 25 px Volume 1 session title; 18 px session phases; Volume 2 lesson/session hierarchy remains 28.8 px/20.8 px at 1280 px. No teaching text was reduced to solve spacing.
+- Spacing and layout rhythm: compact sticky headers, 48 px single-line session rows, 46 px source-problem rows, consistent 8–14 px interior gaps, and teaching content visible in the first viewport.
+- Colors and tokens: existing royal-blue active state, blue-soft teaching surface, white content boards, gray-blue metadata, and green only where the verified solution renderer already uses it semantically.
+- Image quality and assets: official page images remain unchanged and confined to evidence drawers. Mathematical visuals use the existing source-mapped renderer; no decorative or curriculum imagery was invented.
+- Copy and content: learner-facing lesson/session/page/model content is unchanged. New copy is limited to content-neutral product guidance such as `Learn visually`, `Try one`, and `Optional notes or drawing`.
 
-- Session 1 now has a compact `Try it` / `Show solution` control; the default state remains an empty, editable activity.
-- `Show solution` keeps the official 384 place-value chart in view and adds only the verified sequence from printed pp. 9–12: read 3 hundreds, 8 tens, and 4 ones; place 384 between 380 and 390; place 384 between 300 and 400.
-- The two interval rails and staged reveal are explicitly identified as portal-built visual renderings. A direct official pp. 9–12 link appears inside the worked solution beside those claims.
-- Replaying the visual restarts the steps, interval rails, and final answer reveal. Reduced-motion users receive the complete solved state without animation.
-- The solved state occupies the same two-column activity footprint as the response form; it does not add a second lesson section or push the teaching target out of the initial desktop viewport.
+### Interaction and accessibility checks
 
-## Required fidelity surfaces
+- `Learn visually`, `Try one`, `Check`, session tabs, problem/page tabs, `Replay teaching`, and exact-source disclosures were exercised in the in-app browser.
+- Active mode controls expose `aria-pressed`; session and page controls retain their existing labels.
+- Optional drawing/writing is a native disclosure and remains keyboard reachable.
+- Browser console errors: 0.
+- Volume 1 sweep: all 77 sessions opened in `Learn visually`, rendered a teaching workspace, showed no horizontal overflow, and contained no forbidden cross-program content.
+- Volume 2 sweep: all 52 sessions opened in `Learn visually`, rendered a teaching workspace, showed no horizontal overflow, contained no forbidden cross-program content, and reserved no permanent screenshot sidebar.
 
-- Fonts and typography: Inter/system stack; 54px Volume title; 48px Unit title; 32px lesson title; 25px session title; 18px session phase; and 15px session/page labels.
-- Spacing and layout rhythm: full-width desktop frame, compact route navigation, 12px lesson gap, 12px panel radius, and no horizontal overflow.
-- Colors and tokens: royal blue selection/action system, white panels, blue-soft session treatment, and subdued gray-blue metadata.
-- Image quality and assets: no new raster assets or decorative imagery were added; existing mathematical models remain code-native interactive content.
-- Copy and content: official book-led lesson, standard, page, session, source, prompt, model, and feedback copy is unchanged.
+### Source and code validation
 
-## Interaction and browser checks
+- TypeScript: `tsc --noEmit -p tsconfig.app.json` passed.
+- Volume 1 source-boundary validation passed.
+- Volume 1 465-page inventory validation passed.
+- Volume 2 official-source, 396-page inventory, 52-session, and Teacher Guide provenance validation passed.
+- New visual-teaching regression contract passed.
+- `git diff --check` passed.
+- No npm build was run; the hot-deployed application was validated directly.
 
-- Volume → Unit → Lesson and Lesson → Unit → Volume routes were clicked in Chrome and resolved to the correct views.
-- The Volume overview renders three unit cards and zero lesson cards.
-- Unit 1 renders 2 verified Big Ideas and 3 lessons; Unit 2 renders 2 verified Big Ideas and 10 lessons; Unit 3 renders 4 verified Big Ideas and 6 lessons.
-- Only Unit 1 exposes the three currently authored interactive lesson links; Units 2 and 3 remain source-mapped without falsely claiming interactivity.
-- Next opens Lesson 2; Previous becomes available and official lesson/session content updates.
-- Lesson 2 Session 2 switches correctly and accepts `410`, returning the correct book-based feedback.
-- Unit overview returns to the correct unit; the unit breadcrumb returns to the Volume overview.
-- Official source links remain present on the focused lesson.
-- Lesson 1 Sessions 1–4 each expose Replay visual, update to the correct official page range, visibly animate the approved model, and settle to the untransformed final state.
-- Lesson 1 Session 1 accepts `380`, `390`, `300`, and `400`, returning the correct source-aligned interval feedback after the animation work.
-- `Show solution` reveals `380 < 384 < 390` and `300 < 384 < 400`; `Try it` returns all four inputs to blank, editable values.
-- Switching to Session 2 removes the Session 1 teaching-mode control; returning to Session 1 restores the blank Try state.
-- The solved teaching state was visually validated at 1920 × 996: all instructions, rails, final answers, and adjacent official-source link are visible in one compact desktop viewport.
-- Lessons 2, 4, and 19 expose zero Replay visual controls, confirming that unregistered lessons do not inherit the visual engine.
-- No console errors were present.
-- The current Volume, Unit, and Lesson views had no horizontal overflow at the validated 1920px desktop viewport. The earlier focus-shell pass also had no overflow at 1440px.
+### Findings
 
-## Comparison history
-
-- Pass 1 finding: cyan/yellow styling, constrained width, undersized menus, and inconsistent hierarchy diverged from the i-Ready syllabus UI.
-- Pass 1 fix: adopted the i-Ready blue system, Inter hierarchy, full-width framing, and consistent header, tab, sidebar, activity, and link styling.
-- Pass 2 finding: the lesson route still placed a source banner, promotional hero, metrics, and long sidebar above the selected lesson, pushing the activity below the useful focus area.
-- Pass 2 fix: separated overview and lesson-route presentation, removed repeated orientation blocks and the permanent sidebar from lesson routes, and added compact official lesson navigation.
-- Post-fix evidence: `iready-interactive-focus-wide-final.jpg` and `iready-interactive-focus-1440-final.jpg`; no actionable P0/P1/P2 issues remain.
-- Visual-teaching pass: added a fail-closed evidence registry and replayable staged animation for the four Lesson 1 sessions only; verified all positive and negative browser states in Chrome.
-- Hierarchy/readability pass: replaced the lesson-heavy landing page with Volume → Unit → Lesson routing, added official source-linked Unit Big Ideas pages, moved all lesson lists into unit views, and raised the previously undersized lesson/session/source typography.
-- Compactness pass: removed repeated and low-value vertical structure, folded hierarchy and metrics into their owning headers, and revalidated navigation, Lesson 1 answers, animation, source guards, overflow, and console output.
-
-## Follow-up polish
-
-- No blocking follow-up. Additional book-authored lessons can reuse the same focused shell without changing the route structure.
+- P0: none.
+- P1: none.
+- P2: none.
+- P3: on narrower desktop widths, long problem titles may wrap to a second line; this is preferable to reducing the type size and does not hide the learning controls.
 
 final result: passed

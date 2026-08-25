@@ -457,12 +457,14 @@ export type ProblemVisualLinePlotSection = {
   values: Array<{
     label: string;
     value?: number;
+    correctValue?: number;
     valueLabel?: string;
     target?: boolean;
   }>;
   axisLabel?: string;
   keyLabel?: string;
   showBlankValues?: boolean;
+  selectableValues?: boolean;
   caption?: string;
 };
 
@@ -491,7 +493,7 @@ export type ProblemVisualGeometryDiagramSection = {
   diagram: 'rectangle' | 'polygon' | 'perimeter' | 'circle-string' | 'robot' | 'one-half' | 'composite';
   shapes: Array<{
     label: string;
-    shape: 'rectangle' | 'square' | 'circle' | 'polygon' | 'l-shape' | 'interlock-left' | 'interlock-right' | 'step-shape' | 'notch-shape' | 'cross-l-shape' | 'pedestal-shape' | 'd-shape' | 'pacman' | 'triangle' | 'right-triangle' | 'parallelogram' | 'trapezoid' | 'rhombus' | 'kite' | 'pentagon' | 'arrow-pentagon' | 'hexagon' | 'octagon' | 'star';
+    shape: 'rectangle' | 'square' | 'circle' | 'polygon' | 'l-shape' | 'interlock-left' | 'interlock-right' | 'step-shape' | 'notch-shape' | 'cross-l-shape' | 'pedestal-shape' | 'd-shape' | 'pacman' | 'triangle' | 'right-triangle' | 'parallelogram' | 'trapezoid' | 'rhombus' | 'kite' | 'pentagon' | 'arrow-pentagon' | 'concave-hexagon' | 'concave-quadrilateral' | 'hexagon' | 'octagon' | 'star';
     x: number;
     y: number;
     width: number;
@@ -527,6 +529,15 @@ export type ProblemVisualArraySection = {
   selectableCells?: boolean;
   caption?: string;
   captionAnswers?: string[];
+};
+
+export type ProblemVisualPlaceValueBlocksSection = {
+  kind: 'place-value-blocks';
+  label?: string;
+  hundreds: number;
+  tens: number;
+  ones: number;
+  caption?: string;
 };
 
 export type ProblemVisualRelatedFactsSection = {
@@ -592,6 +603,9 @@ export type ProblemVisualFractionStripSection = {
   denominator: number;
   unitLabel?: string;
   caption?: string;
+  showGivenShading?: boolean;
+  selectableParts?: boolean;
+  correctSelectedParts?: number;
 };
 
 export type ProblemVisualEquationsSection = {
@@ -617,6 +631,7 @@ export type ProblemVisualSolutionPartsSection = {
 export type ProblemVisualDataTableSection = {
   kind: 'data-table';
   label?: string;
+  variant?: 'standard' | 'place-value-chart' | 'hundred-chart';
   columns: string[];
   rows: string[][];
   cellAnswers?: string[][][];
@@ -624,6 +639,11 @@ export type ProblemVisualDataTableSection = {
   selectableCells?: boolean;
   correctCellKeys?: string[];
   showCorrectSelections?: boolean;
+  toneCellKeys?: {
+    red?: string[];
+    green?: string[];
+    blue?: string[];
+  };
 };
 
 export type ProblemVisualExpressionMatchSection = {
@@ -911,6 +931,94 @@ export type ProblemVisualSourceCropSection = {
   caption?: string;
 };
 
+export type ProblemVisualSourceModelSection = {
+  kind: 'source-model';
+  label?: string;
+  src: string;
+  alt: string;
+  imageWidth: number;
+  imageHeight: number;
+  crop: {
+    x: number;
+    y: number;
+    width: number;
+    height: number;
+  };
+  displayWidth?: number;
+  annotations?: Array<{
+    label?: string;
+    x: number;
+    y: number;
+    width: number;
+    height: number;
+    tone?: 'focus' | 'known' | 'result';
+  }>;
+  reasoning?: Array<{
+    label: string;
+    expression?: string;
+    explanation?: string;
+  }>;
+  caption?: string;
+};
+
+export type ProblemVisualOfficialOrganizerSection = {
+  kind: 'official-organizer';
+  label?: string;
+  displayWidth?: number;
+  variant?: 'six-web' | 'four-quadrant';
+  centerLabel: string;
+  fields: Array<{
+    label?: string;
+    ariaLabel: string;
+    answer: string;
+    x: number;
+    y: number;
+    width: number;
+    height: number;
+  }>;
+  caption?: string;
+};
+
+export type ProblemVisualOfficialHotspotSection = {
+  kind: 'official-hotspot-model';
+  label?: string;
+  src: string;
+  alt: string;
+  imageWidth: number;
+  imageHeight: number;
+  crop: {
+    x: number;
+    y: number;
+    width: number;
+    height: number;
+  };
+  displayWidth?: number;
+  hotspots: Array<{
+    label: string;
+    value: string;
+    x: number;
+    y: number;
+    width: number;
+    height: number;
+  }>;
+  equationPrompt: string;
+  equationAnswer: string;
+  caption?: string;
+};
+
+export type ProblemVisualPerimeterPathSection = {
+  kind: 'perimeter-path';
+  label?: string;
+  contextLabel: string;
+  top: string;
+  right: string;
+  bottom: string;
+  left: string;
+  equationPrompt: string;
+  equationAnswer: string;
+  caption?: string;
+};
+
 export type ProblemVisualUnitFormWorkspaceSection = {
   kind: 'unit-form-workspace';
   label?: string;
@@ -980,6 +1088,7 @@ export type ProblemVisualSourceResponseWorkspaceSection = {
 
 export type ProblemVisualSection =
   | ProblemVisualArraySection
+  | ProblemVisualPlaceValueBlocksSection
   | ProblemVisualFloorPlanSection
   | ProblemVisualLinePlotSection
   | ProblemVisualDataChartSection
@@ -1004,6 +1113,10 @@ export type ProblemVisualSection =
   | ProblemVisualSourceDirectionsSection
   | ProblemVisualEstimateDifferenceWorkbookSection
   | ProblemVisualSourceCropSection
+  | ProblemVisualSourceModelSection
+  | ProblemVisualOfficialOrganizerSection
+  | ProblemVisualOfficialHotspotSection
+  | ProblemVisualPerimeterPathSection
   | ProblemVisualUnitFormWorkspaceSection
   | ProblemVisualUnknownRiddleWorkspaceSection
   | ProblemVisualSourceResponseWorkspaceSection;

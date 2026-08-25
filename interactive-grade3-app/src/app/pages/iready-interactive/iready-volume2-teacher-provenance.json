@@ -1,0 +1,950 @@
+{
+  "schemaVersion": 1,
+  "program": "i-ready-classroom-mathematics-california",
+  "publisher": "Curriculum Associates",
+  "grade": 3,
+  "volume": 2,
+  "studentSourceId": "grade3-student-worktext-v2",
+  "teacherSourceId": "grade3-teacher-guide-v2",
+  "coverageStatus": "complete-lesson-page-to-teacher-spread-map",
+  "spreads": [
+    {
+      "lesson": 20,
+      "studentPages": "473–474",
+      "teacherGuideViewerPages": "48–49",
+      "teacherPdfPage": 25,
+      "sourceTextSha256": "a40e975ded86f9f7f64f03d29ef4c4db6ce37a3b14e0869d3ecaef49f7dc645d"
+    },
+    {
+      "lesson": 20,
+      "studentPages": "475–476",
+      "teacherGuideViewerPages": "50–51",
+      "teacherPdfPage": 26,
+      "sourceTextSha256": "fdc77670abaa1831540ed81f4c9af9e76703588e12c24e00ac3ceb1e7f2a4d78"
+    },
+    {
+      "lesson": 20,
+      "studentPages": "477–478",
+      "teacherGuideViewerPages": "52–53",
+      "teacherPdfPage": 27,
+      "sourceTextSha256": "c3b2a7d77388e4d3e735ed58f1282b3b543a0f008a45bdb51746efcfd2365d77"
+    },
+    {
+      "lesson": 20,
+      "studentPages": "479–480",
+      "teacherGuideViewerPages": "54–55",
+      "teacherPdfPage": 28,
+      "sourceTextSha256": "baae805539c4811993399df3216552783225294e60cf731532a4f876ce76b673"
+    },
+    {
+      "lesson": 20,
+      "studentPages": "481–482",
+      "teacherGuideViewerPages": "56–57",
+      "teacherPdfPage": 29,
+      "sourceTextSha256": "ba22036092b7dd48ea78a84fa87bde322041b08e3c765236efddf0a5ec9588b3"
+    },
+    {
+      "lesson": 20,
+      "studentPages": "483–484",
+      "teacherGuideViewerPages": "58–59",
+      "teacherPdfPage": 30,
+      "sourceTextSha256": "8f3b9adf07263b214e8de3405d7835fbc50da2aa36d383e652d6c008360d18d8"
+    },
+    {
+      "lesson": 21,
+      "studentPages": "485–486",
+      "teacherGuideViewerPages": "64–65",
+      "teacherPdfPage": 33,
+      "sourceTextSha256": "5a121bad32d0e388f657622f8256f77ba51650fd9b04c5f30853e88d3f54e5d9"
+    },
+    {
+      "lesson": 21,
+      "studentPages": "487–488",
+      "teacherGuideViewerPages": "66–67",
+      "teacherPdfPage": 34,
+      "sourceTextSha256": "167b043e46614fa19a63739154f156d5f788d6466782f41e365b075085ad6243"
+    },
+    {
+      "lesson": 21,
+      "studentPages": "489–490",
+      "teacherGuideViewerPages": "68–69",
+      "teacherPdfPage": 35,
+      "sourceTextSha256": "70e664cc82da1e2d31031bfe03293b8805a7ee5f000441d3dc89ac98a88f2849"
+    },
+    {
+      "lesson": 21,
+      "studentPages": "491–492",
+      "teacherGuideViewerPages": "70–71",
+      "teacherPdfPage": 36,
+      "sourceTextSha256": "8a8e444976cb7452604b63b987916fccd911264b99ed3a4f2edbdfa057620727"
+    },
+    {
+      "lesson": 21,
+      "studentPages": "493–494",
+      "teacherGuideViewerPages": "72–73",
+      "teacherPdfPage": 37,
+      "sourceTextSha256": "07685c1b2d6c351bfb0c1b622e613337483840eb3023648dc3f9b9588732f5af"
+    },
+    {
+      "lesson": 21,
+      "studentPages": "495–496",
+      "teacherGuideViewerPages": "74–75",
+      "teacherPdfPage": 38,
+      "sourceTextSha256": "d62e756a63a9662857ac1b6f533a0f1adc6be6535d411952fceeab435e9da915"
+    },
+    {
+      "lesson": 22,
+      "studentPages": "497–498",
+      "teacherGuideViewerPages": "80–81",
+      "teacherPdfPage": 41,
+      "sourceTextSha256": "94c9b3f1081f6bac1b37a8711e13e0100a4c59f11f65414b5670f44dd1865aa9"
+    },
+    {
+      "lesson": 22,
+      "studentPages": "499–500",
+      "teacherGuideViewerPages": "82–83",
+      "teacherPdfPage": 42,
+      "sourceTextSha256": "2ebc6633d4d6f1072747765a63e7588384cd8d7c86bcf64e11560b2704dfe1a7"
+    },
+    {
+      "lesson": 22,
+      "studentPages": "501–502",
+      "teacherGuideViewerPages": "84–85",
+      "teacherPdfPage": 43,
+      "sourceTextSha256": "03050ebe02baa2629c40610b1013ca0ec795707ae43185b66a905d5e8d995249"
+    },
+    {
+      "lesson": 22,
+      "studentPages": "503–504",
+      "teacherGuideViewerPages": "86–87",
+      "teacherPdfPage": 44,
+      "sourceTextSha256": "a02270d3bf913b8befc8a370d661b4fafa66cdac36a26ff24002859a208bb547"
+    },
+    {
+      "lesson": 22,
+      "studentPages": "505–506",
+      "teacherGuideViewerPages": "88–89",
+      "teacherPdfPage": 45,
+      "sourceTextSha256": "ddea2b53f09538f81e449f58fa63ced3599893afb806e6a93c3920f936fb1f59"
+    },
+    {
+      "lesson": 22,
+      "studentPages": "507–508",
+      "teacherGuideViewerPages": "90–91",
+      "teacherPdfPage": 46,
+      "sourceTextSha256": "fe38c28b5a3278b9f6ec76d24a93f67048028b3f325e4cb4ae4eb50c2040532d"
+    },
+    {
+      "lesson": 23,
+      "studentPages": "509–510",
+      "teacherGuideViewerPages": "96–97",
+      "teacherPdfPage": 49,
+      "sourceTextSha256": "e9f9c49e5a7e20ab62ae786a27e71f1adb44bac26c8a9557b964728c8f784c5f"
+    },
+    {
+      "lesson": 23,
+      "studentPages": "511–512",
+      "teacherGuideViewerPages": "98–99",
+      "teacherPdfPage": 50,
+      "sourceTextSha256": "f2c9701b84bf2e4263de88caca63dcc3b342fe470b2321296d46972d89afe74a"
+    },
+    {
+      "lesson": 23,
+      "studentPages": "513–514",
+      "teacherGuideViewerPages": "100–101",
+      "teacherPdfPage": 51,
+      "sourceTextSha256": "214929bc10a6499e87fb1ed7e01c5ca0633e48075ac8fa8d8e5585bb939ffd03"
+    },
+    {
+      "lesson": 23,
+      "studentPages": "515–516",
+      "teacherGuideViewerPages": "102–103",
+      "teacherPdfPage": 52,
+      "sourceTextSha256": "37936ea0de0c70fd7e82ef99c18612980e3fa32658ff37c0073cb7ae38a6cd23"
+    },
+    {
+      "lesson": 23,
+      "studentPages": "517–518",
+      "teacherGuideViewerPages": "104–105",
+      "teacherPdfPage": 53,
+      "sourceTextSha256": "7bf0c3d7af5f55058ce1cc2d37bec4b2e321cf76c88148438b4e533e0f97850f"
+    },
+    {
+      "lesson": 23,
+      "studentPages": "519–520",
+      "teacherGuideViewerPages": "106–107",
+      "teacherPdfPage": 54,
+      "sourceTextSha256": "1397ae021f00eefb653c161cce494f52a93dbe95d6e6e7f60e8bfe31ff026064"
+    },
+    {
+      "lesson": 23,
+      "studentPages": "521–522",
+      "teacherGuideViewerPages": "108–109",
+      "teacherPdfPage": 55,
+      "sourceTextSha256": "d363e5d007c0f160d48054656e9d768a733a242e95baf83be2826d5b950eceb8"
+    },
+    {
+      "lesson": 23,
+      "studentPages": "523–524",
+      "teacherGuideViewerPages": "110–111",
+      "teacherPdfPage": 56,
+      "sourceTextSha256": "dd44ea0ff468d7ffa931a7474e4fa163064d87c0fd85ae1503a4efc6427c1972"
+    },
+    {
+      "lesson": 23,
+      "studentPages": "525–526",
+      "teacherGuideViewerPages": "112–113",
+      "teacherPdfPage": 57,
+      "sourceTextSha256": "4101f5b72f3cca0dc1ee0eb6caa38fc39c08ffcfa0f4822cbbe76310da6386a6"
+    },
+    {
+      "lesson": 23,
+      "studentPages": "527–528",
+      "teacherGuideViewerPages": "114–115",
+      "teacherPdfPage": 58,
+      "sourceTextSha256": "0cdc6408d58364acfc8e0b218ce4bd6faaab22765fcc2eaed37edc4941078dd8"
+    },
+    {
+      "lesson": 23,
+      "studentPages": "529–530",
+      "teacherGuideViewerPages": "116–117",
+      "teacherPdfPage": 59,
+      "sourceTextSha256": "d8989a7a3b06a54459856d734d0fffd1a812600cf289bdaa9043050d96e9b105"
+    },
+    {
+      "lesson": 23,
+      "studentPages": "531–532",
+      "teacherGuideViewerPages": "118–119",
+      "teacherPdfPage": 60,
+      "sourceTextSha256": "533e71c2feca1855e1a182ace8cbd4507e8b1e77daa3b8c885a597a5a7eac81b"
+    },
+    {
+      "lesson": 23,
+      "studentPages": "533–534",
+      "teacherGuideViewerPages": "120–121",
+      "teacherPdfPage": 61,
+      "sourceTextSha256": "c59e51d7d6fec30153ff00ca37d722985c973fd4448a7feb1ff84196e011a432"
+    },
+    {
+      "lesson": 23,
+      "studentPages": "535–536",
+      "teacherGuideViewerPages": "122–123",
+      "teacherPdfPage": 62,
+      "sourceTextSha256": "d56bd6e37a0138cdf9ff0f2d23c9b96707dfd6277f484e8e9836f730147a1be7"
+    },
+    {
+      "lesson": 24,
+      "studentPages": "537–538",
+      "teacherGuideViewerPages": "132–133",
+      "teacherPdfPage": 67,
+      "sourceTextSha256": "b3f7c472bd9d2aad648508b1597c3f7fdc2320401ef01fb91db1a1ab99127969"
+    },
+    {
+      "lesson": 24,
+      "studentPages": "539–540",
+      "teacherGuideViewerPages": "134–135",
+      "teacherPdfPage": 68,
+      "sourceTextSha256": "bf9b28047817b65a94fb8c3f243e8acd7784ebe051d1c7edb95ba0a8178b6ea1"
+    },
+    {
+      "lesson": 24,
+      "studentPages": "541–542",
+      "teacherGuideViewerPages": "136–137",
+      "teacherPdfPage": 69,
+      "sourceTextSha256": "f4d328f40f721d610b8b1f6c709c97be057a7cbb8134349031bca14360633e3b"
+    },
+    {
+      "lesson": 24,
+      "studentPages": "543–544",
+      "teacherGuideViewerPages": "138–139",
+      "teacherPdfPage": 70,
+      "sourceTextSha256": "2e20e44203755c891f4cbd225a858ac1b0d88877aefbd360d09ec73dbfb4a240"
+    },
+    {
+      "lesson": 24,
+      "studentPages": "545–546",
+      "teacherGuideViewerPages": "140–141",
+      "teacherPdfPage": 71,
+      "sourceTextSha256": "4dc8ee4266690a4c7ce64eb1025ab5008241768aa1902db8135c72aed4d553e4"
+    },
+    {
+      "lesson": 24,
+      "studentPages": "547–548",
+      "teacherGuideViewerPages": "142–143",
+      "teacherPdfPage": 72,
+      "sourceTextSha256": "b7cd4cef25752c94e5cb9d7da0bd41305cdbe84137231e0d04d63a0866763061"
+    },
+    {
+      "lesson": 25,
+      "studentPages": "549–550",
+      "teacherGuideViewerPages": "148–149",
+      "teacherPdfPage": 75,
+      "sourceTextSha256": "5c7e94b2a18dd3e7f7b5e19fb5660751dab0e141edf88c0fd04f9dec55c1917b"
+    },
+    {
+      "lesson": 25,
+      "studentPages": "551–552",
+      "teacherGuideViewerPages": "150–151",
+      "teacherPdfPage": 76,
+      "sourceTextSha256": "9029242f8d8ad4c4341b163cf73843b78eb79908e0a0c9e9f6235c621b87af3a"
+    },
+    {
+      "lesson": 25,
+      "studentPages": "553–554",
+      "teacherGuideViewerPages": "152–153",
+      "teacherPdfPage": 77,
+      "sourceTextSha256": "064574b9db6fa6025218ed4c092582e7d7f736679336baafff6c87e3de834745"
+    },
+    {
+      "lesson": 25,
+      "studentPages": "555–556",
+      "teacherGuideViewerPages": "154–155",
+      "teacherPdfPage": 78,
+      "sourceTextSha256": "23ac410af56f0b12ec2da4fafc029a21e74eff454f879d7686e1c350661fae30"
+    },
+    {
+      "lesson": 25,
+      "studentPages": "557–558",
+      "teacherGuideViewerPages": "156–157",
+      "teacherPdfPage": 79,
+      "sourceTextSha256": "60e3970413ebba7415bee5f861efe3688f41b29ae6f481db198efaf99304d5af"
+    },
+    {
+      "lesson": 25,
+      "studentPages": "559–560",
+      "teacherGuideViewerPages": "158–159",
+      "teacherPdfPage": 80,
+      "sourceTextSha256": "db9193bbe16a168a8666a74b708ca03b3e1daddcdeee90e1be49290afa65bf3d"
+    },
+    {
+      "lesson": 25,
+      "studentPages": "561–562",
+      "teacherGuideViewerPages": "160–161",
+      "teacherPdfPage": 81,
+      "sourceTextSha256": "c493f2f23540d56c313dae27bb85f48eb0da214de0f39cb56ccd6b7d23ecc40e"
+    },
+    {
+      "lesson": 25,
+      "studentPages": "563–564",
+      "teacherGuideViewerPages": "162–163",
+      "teacherPdfPage": 82,
+      "sourceTextSha256": "27e9452530880f9e22663ef71728ae93bb36e7b9a011b9078686f308765c7901"
+    },
+    {
+      "lesson": 26,
+      "studentPages": "565–566",
+      "teacherGuideViewerPages": "168–169",
+      "teacherPdfPage": 85,
+      "sourceTextSha256": "d2d93fe34ededdcb09d3aafcb8e41e5e16379c74cdf0dd846afc0d7848e8fb02"
+    },
+    {
+      "lesson": 26,
+      "studentPages": "567–568",
+      "teacherGuideViewerPages": "170–171",
+      "teacherPdfPage": 86,
+      "sourceTextSha256": "6e22ef79e2ed94936fa41d52c37cd1466fdcb5ef1d179a39ca712c45e4e820db"
+    },
+    {
+      "lesson": 26,
+      "studentPages": "569–570",
+      "teacherGuideViewerPages": "172–173",
+      "teacherPdfPage": 87,
+      "sourceTextSha256": "d68ab175e9f04a5abf35b7a037e14fff25a10b0d63d15bcd595b33e15466f003"
+    },
+    {
+      "lesson": 26,
+      "studentPages": "571–572",
+      "teacherGuideViewerPages": "174–175",
+      "teacherPdfPage": 88,
+      "sourceTextSha256": "0af3a620a869545c9655ef8cd0852f62017229c592319e995875aff65a8c62e1"
+    },
+    {
+      "lesson": 26,
+      "studentPages": "573–574",
+      "teacherGuideViewerPages": "176–177",
+      "teacherPdfPage": 89,
+      "sourceTextSha256": "f12d0a7560720af0b8f17e90cb77677611d0a8ceefb480af6d8ac15b37e4f6c0"
+    },
+    {
+      "lesson": 26,
+      "studentPages": "575–576",
+      "teacherGuideViewerPages": "178–179",
+      "teacherPdfPage": 90,
+      "sourceTextSha256": "42e684e1dee86a73be5a6aa8e649b305a2a8db42dfc3e405c3738f46a800c32e"
+    },
+    {
+      "lesson": 26,
+      "studentPages": "577–578",
+      "teacherGuideViewerPages": "180–181",
+      "teacherPdfPage": 91,
+      "sourceTextSha256": "e949c5d2d306ad7fca19bcfc7956ae460d9fb727367f72ce9e6051b88506bde5"
+    },
+    {
+      "lesson": 26,
+      "studentPages": "579–580",
+      "teacherGuideViewerPages": "182–183",
+      "teacherPdfPage": 92,
+      "sourceTextSha256": "1ed7231b3bf28cd73366abb43567f01e9640697508d99f0f83c6ef15d1bda9dc"
+    },
+    {
+      "lesson": 26,
+      "studentPages": "581–582",
+      "teacherGuideViewerPages": "184–185",
+      "teacherPdfPage": 93,
+      "sourceTextSha256": "9a1a94b9970da5c4e4ea99bb8c8983980e5968abaa9988abee0c8c13e5d20492"
+    },
+    {
+      "lesson": 26,
+      "studentPages": "583–584",
+      "teacherGuideViewerPages": "186–187",
+      "teacherPdfPage": 94,
+      "sourceTextSha256": "cb4efe57e08f99ea4ed010cafdf700c73b3e2b1c00fd2dfb49815143e71b4228"
+    },
+    {
+      "lesson": 26,
+      "studentPages": "585–586",
+      "teacherGuideViewerPages": "188–189",
+      "teacherPdfPage": 95,
+      "sourceTextSha256": "c4a851110f04b2c3d34b6055810a2840fb15037088462e3c3fec9b86179648bc"
+    },
+    {
+      "lesson": 27,
+      "studentPages": "607–608",
+      "teacherGuideViewerPages": "238–239",
+      "teacherPdfPage": 120,
+      "sourceTextSha256": "74418073ba038415dd432a2a28df335026b19cf6c8d2e32a9baad26967bc0dfc"
+    },
+    {
+      "lesson": 27,
+      "studentPages": "609–610",
+      "teacherGuideViewerPages": "240–241",
+      "teacherPdfPage": 121,
+      "sourceTextSha256": "282688964954d8342dc8760a9b1508408250853d92deef918048e84df54f3282"
+    },
+    {
+      "lesson": 27,
+      "studentPages": "611–612",
+      "teacherGuideViewerPages": "242–243",
+      "teacherPdfPage": 122,
+      "sourceTextSha256": "ffa7d2b8d7e6984c6830ae4eadabf3a8b1de2067f7aaa8a838ee745c521175f4"
+    },
+    {
+      "lesson": 27,
+      "studentPages": "613–614",
+      "teacherGuideViewerPages": "244–245",
+      "teacherPdfPage": 123,
+      "sourceTextSha256": "d0e47c1bc93e4c4fbc62c45b62901a7d951ec8d6da163d81904371dda54c54fe"
+    },
+    {
+      "lesson": 27,
+      "studentPages": "615–616",
+      "teacherGuideViewerPages": "246–247",
+      "teacherPdfPage": 124,
+      "sourceTextSha256": "1f4bc031dd5c615d358dc39a1a722a8c95396d004dfb23c7c31fa101b1be888b"
+    },
+    {
+      "lesson": 27,
+      "studentPages": "617–618",
+      "teacherGuideViewerPages": "248–249",
+      "teacherPdfPage": 125,
+      "sourceTextSha256": "72c1270b1ae64b17c2b67a329a2ceaf5173aaf55c8a6183c35611b1071dae5a6"
+    },
+    {
+      "lesson": 27,
+      "studentPages": "619–620",
+      "teacherGuideViewerPages": "250–251",
+      "teacherPdfPage": 126,
+      "sourceTextSha256": "127767fd00a15971196338e0dcd9ae0de0a55ca85f8f0d1b76bb146cf96481ed"
+    },
+    {
+      "lesson": 27,
+      "studentPages": "621–622",
+      "teacherGuideViewerPages": "252–253",
+      "teacherPdfPage": 127,
+      "sourceTextSha256": "8bd499dc35750340911183f8c2ef0ae1e92b6bfe3f97f0e63f3fc48df2a9fd65"
+    },
+    {
+      "lesson": 27,
+      "studentPages": "623–624",
+      "teacherGuideViewerPages": "254–255",
+      "teacherPdfPage": 128,
+      "sourceTextSha256": "20166e2a221d7d6d6d1c2488b6aafbddd0c8c9cbb44ec6e1b744df51f20cbea6"
+    },
+    {
+      "lesson": 27,
+      "studentPages": "625–626",
+      "teacherGuideViewerPages": "256–257",
+      "teacherPdfPage": 129,
+      "sourceTextSha256": "8fa697ad20122065e344fcafe3c93ce3ca57d739995685949d786c23cbd5e7b3"
+    },
+    {
+      "lesson": 27,
+      "studentPages": "627–628",
+      "teacherGuideViewerPages": "258–259",
+      "teacherPdfPage": 130,
+      "sourceTextSha256": "16e6633620e52c86396b88fec8251851f21893b8743da905968e0381458ffb42"
+    },
+    {
+      "lesson": 27,
+      "studentPages": "629–630",
+      "teacherGuideViewerPages": "260–261",
+      "teacherPdfPage": 131,
+      "sourceTextSha256": "5344b95e3cbed39819a403608f98f1e74c98c728fcdd2441c74c29731036e3f1"
+    },
+    {
+      "lesson": 27,
+      "studentPages": "631–632",
+      "teacherGuideViewerPages": "262–263",
+      "teacherPdfPage": 132,
+      "sourceTextSha256": "83b7b8ff865224d9145e7de2471a544cf0b68eae41c522bff24442fdd7c6f7ff"
+    },
+    {
+      "lesson": 27,
+      "studentPages": "633–634",
+      "teacherGuideViewerPages": "264–265",
+      "teacherPdfPage": 133,
+      "sourceTextSha256": "21e15de345f19d998a6784b71629fa4e52d3c3a20005c92a94599c0836ee0c44"
+    },
+    {
+      "lesson": 28,
+      "studentPages": "635–636",
+      "teacherGuideViewerPages": "270–271",
+      "teacherPdfPage": 136,
+      "sourceTextSha256": "6e0d7f89aca68e35ff6d244085a5629639c580fbcc56b1949fb76afe84b07159"
+    },
+    {
+      "lesson": 28,
+      "studentPages": "637–638",
+      "teacherGuideViewerPages": "272–273",
+      "teacherPdfPage": 137,
+      "sourceTextSha256": "1f8bdede1283ef6534712de6835b60edba34ed27700cf6e234067071d194b212"
+    },
+    {
+      "lesson": 28,
+      "studentPages": "639–640",
+      "teacherGuideViewerPages": "274–275",
+      "teacherPdfPage": 138,
+      "sourceTextSha256": "702dc557fdca25ba347be068347b8fe9072143b1cff4d7b5c6bf9e4117f54b4b"
+    },
+    {
+      "lesson": 28,
+      "studentPages": "641–642",
+      "teacherGuideViewerPages": "276–277",
+      "teacherPdfPage": 139,
+      "sourceTextSha256": "af90ce42f0c90e89241778cd8cbb712edeaf7240798b1d5d5a64e231b8e2ddd6"
+    },
+    {
+      "lesson": 28,
+      "studentPages": "643–644",
+      "teacherGuideViewerPages": "278–279",
+      "teacherPdfPage": 140,
+      "sourceTextSha256": "e9d1e4cbfb0a3d02a3c5c116cff9fffd56587d297a29c7dee9f336bc60eec002"
+    },
+    {
+      "lesson": 28,
+      "studentPages": "645–646",
+      "teacherGuideViewerPages": "280–281",
+      "teacherPdfPage": 141,
+      "sourceTextSha256": "ad4bc6d0eb31ceec0a144369b6c5ba68a5f7c72c4f318a1eeff984bd599bf389"
+    },
+    {
+      "lesson": 28,
+      "studentPages": "647–648",
+      "teacherGuideViewerPages": "282–283",
+      "teacherPdfPage": 142,
+      "sourceTextSha256": "3da026f8c87eda24b07bf6e2f09938427a6f2eed48d84b37c6a66ac8b8ad45d2"
+    },
+    {
+      "lesson": 28,
+      "studentPages": "649–650",
+      "teacherGuideViewerPages": "284–285",
+      "teacherPdfPage": 143,
+      "sourceTextSha256": "43ac0e06284d5d0ce3286fbb53aec20fc7957a27fc590c35f07b66d525fd1d00"
+    },
+    {
+      "lesson": 28,
+      "studentPages": "651–652",
+      "teacherGuideViewerPages": "286–287",
+      "teacherPdfPage": 144,
+      "sourceTextSha256": "a8b5a428d3c3cdbb23dfad4ca28658a15eaaca8f15e79a87deaa1ca6c0da9128"
+    },
+    {
+      "lesson": 28,
+      "studentPages": "653–654",
+      "teacherGuideViewerPages": "288–289",
+      "teacherPdfPage": 145,
+      "sourceTextSha256": "5f5603d92c35b37df0d29e5e61c280bacf917894941da1d96de3472b24959fde"
+    },
+    {
+      "lesson": 28,
+      "studentPages": "655–656",
+      "teacherGuideViewerPages": "290–291",
+      "teacherPdfPage": 146,
+      "sourceTextSha256": "dbd01057752825db49456ac2981a371f24fca584d41b455d7b8d05be1eda97dd"
+    },
+    {
+      "lesson": 29,
+      "studentPages": "657–658",
+      "teacherGuideViewerPages": "296–297",
+      "teacherPdfPage": 149,
+      "sourceTextSha256": "7ce56c1a29b0b8807103c7f85ebe8ea56109364bff1cbb4c192f745b3074285e"
+    },
+    {
+      "lesson": 29,
+      "studentPages": "659–660",
+      "teacherGuideViewerPages": "298–299",
+      "teacherPdfPage": 150,
+      "sourceTextSha256": "3943cd842ad682cb8c2ba005b0b263fd606e8291b69957257d688ec30cd0cde6"
+    },
+    {
+      "lesson": 29,
+      "studentPages": "661–662",
+      "teacherGuideViewerPages": "300–301",
+      "teacherPdfPage": 151,
+      "sourceTextSha256": "769d055a42936fbb46d0576c659d1b6eca47a025e901db5af091b46d919ee963"
+    },
+    {
+      "lesson": 29,
+      "studentPages": "663–664",
+      "teacherGuideViewerPages": "302–303",
+      "teacherPdfPage": 152,
+      "sourceTextSha256": "f9d2bdccff849852ca5386edb312c7b9dff88393e00a43c0695d227153fdd929"
+    },
+    {
+      "lesson": 29,
+      "studentPages": "665–666",
+      "teacherGuideViewerPages": "304–305",
+      "teacherPdfPage": 153,
+      "sourceTextSha256": "2d8c55106e1ed668f59363179505adf2d27650b10ddc8ad89efc5de611d8d2ed"
+    },
+    {
+      "lesson": 29,
+      "studentPages": "667–668",
+      "teacherGuideViewerPages": "306–307",
+      "teacherPdfPage": 154,
+      "sourceTextSha256": "19bc17764e1bd3228d1517760e77ed83ceab2a575e5abf59f90cef377987cb2f"
+    },
+    {
+      "lesson": 29,
+      "studentPages": "669–670",
+      "teacherGuideViewerPages": "308–309",
+      "teacherPdfPage": 155,
+      "sourceTextSha256": "92bad24211da4f3e1571081b9c551ff396f90eb5fbd9328f0d6f16bc99e34877"
+    },
+    {
+      "lesson": 29,
+      "studentPages": "671–672",
+      "teacherGuideViewerPages": "310–311",
+      "teacherPdfPage": 156,
+      "sourceTextSha256": "3d44da83298355714aa0e643546a83b5c150617e4025d733f94e590c57439400"
+    },
+    {
+      "lesson": 29,
+      "studentPages": "673–674",
+      "teacherGuideViewerPages": "312–313",
+      "teacherPdfPage": 157,
+      "sourceTextSha256": "3c30f262e07a67b26ccee68760ccfa5751ef36ca998e10f4413990af61a78f00"
+    },
+    {
+      "lesson": 29,
+      "studentPages": "675–676",
+      "teacherGuideViewerPages": "314–315",
+      "teacherPdfPage": 158,
+      "sourceTextSha256": "65afbf6ec100c4aa2ef91ec11e52f7e7326a2fcaa317784d97cf5f801b9b49ef"
+    },
+    {
+      "lesson": 29,
+      "studentPages": "677–678",
+      "teacherGuideViewerPages": "316–317",
+      "teacherPdfPage": 159,
+      "sourceTextSha256": "4771845b3e5c23a9ae76224662729d1671e7568a278e6436f8d157aad1207762"
+    },
+    {
+      "lesson": 29,
+      "studentPages": "679–680",
+      "teacherGuideViewerPages": "318–319",
+      "teacherPdfPage": 160,
+      "sourceTextSha256": "4d41a889093a169f78b505fa10fb64a424459ec77225f1560dfd630efa68cd95"
+    },
+    {
+      "lesson": 30,
+      "studentPages": "699–700",
+      "teacherGuideViewerPages": "366–367",
+      "teacherPdfPage": 184,
+      "sourceTextSha256": "ae0526a4e1d37bee759a1071b630762ac05a3badfcb95521d200d6d8a14e3500"
+    },
+    {
+      "lesson": 30,
+      "studentPages": "701–702",
+      "teacherGuideViewerPages": "368–369",
+      "teacherPdfPage": 185,
+      "sourceTextSha256": "6a28add528db81db26d1f5227e02cd7b77488357fe9cdeded99c7553938fb20f"
+    },
+    {
+      "lesson": 30,
+      "studentPages": "703–704",
+      "teacherGuideViewerPages": "370–371",
+      "teacherPdfPage": 186,
+      "sourceTextSha256": "9406ec18343f540cfeab5fff425fe630ebe7bb5ced0cb3f30c8f6798fe08711d"
+    },
+    {
+      "lesson": 30,
+      "studentPages": "705–706",
+      "teacherGuideViewerPages": "372–373",
+      "teacherPdfPage": 187,
+      "sourceTextSha256": "2857a5759362dedde622e292b25bbefd406dd0d35f25179d41336d6ebf88293f"
+    },
+    {
+      "lesson": 30,
+      "studentPages": "707–708",
+      "teacherGuideViewerPages": "374–375",
+      "teacherPdfPage": 188,
+      "sourceTextSha256": "e93a13bd0c41a35fe677ffb5a3ea2000ae269b667d050804a216860871bff9df"
+    },
+    {
+      "lesson": 30,
+      "studentPages": "709–710",
+      "teacherGuideViewerPages": "376–377",
+      "teacherPdfPage": 189,
+      "sourceTextSha256": "0eb6f3bcfed9429a418122549d025fc36add319a20dee2903312cd36a2b8a7b9"
+    },
+    {
+      "lesson": 31,
+      "studentPages": "711–712",
+      "teacherGuideViewerPages": "382–383",
+      "teacherPdfPage": 192,
+      "sourceTextSha256": "ad016f9215521c0c2ea806a3a4577b22c887e3ef326517ae7b903046a87254ec"
+    },
+    {
+      "lesson": 31,
+      "studentPages": "713–714",
+      "teacherGuideViewerPages": "384–385",
+      "teacherPdfPage": 193,
+      "sourceTextSha256": "31ef65cce33fa603ff72775bc4876174d81280791ebebf52fde11f42a7afdfb5"
+    },
+    {
+      "lesson": 31,
+      "studentPages": "715–716",
+      "teacherGuideViewerPages": "386–387",
+      "teacherPdfPage": 194,
+      "sourceTextSha256": "6158f927dcc5bd8e6f87b587da89d8d2cb458e20363592cd65f66a9ea5f8ae4c"
+    },
+    {
+      "lesson": 31,
+      "studentPages": "717–718",
+      "teacherGuideViewerPages": "388–389",
+      "teacherPdfPage": 195,
+      "sourceTextSha256": "61f005a9f581651d85bcece7d2c2a05583aef5871e2d013a998dec680be18259"
+    },
+    {
+      "lesson": 31,
+      "studentPages": "719–720",
+      "teacherGuideViewerPages": "390–391",
+      "teacherPdfPage": 196,
+      "sourceTextSha256": "73269d0bf69ab9342b23a3024ea9cf4ce8a2ac6c57abf40e4599eaa566dceca9"
+    },
+    {
+      "lesson": 31,
+      "studentPages": "721–722",
+      "teacherGuideViewerPages": "392–393",
+      "teacherPdfPage": 197,
+      "sourceTextSha256": "b67c20a1794bbb3e65843ee37bca1bf8a8b409deeb1504954d618a4540b334f4"
+    },
+    {
+      "lesson": 31,
+      "studentPages": "723–724",
+      "teacherGuideViewerPages": "394–395",
+      "teacherPdfPage": 198,
+      "sourceTextSha256": "645937446741dc5b64266471401ce05c0692f589b5dcfdd625574bc08c18383e"
+    },
+    {
+      "lesson": 31,
+      "studentPages": "725–726",
+      "teacherGuideViewerPages": "396–397",
+      "teacherPdfPage": 199,
+      "sourceTextSha256": "e2734f802facb24f37db7451057eb6ead1515d1f31fcd3514acf4ca8468f4f7b"
+    },
+    {
+      "lesson": 31,
+      "studentPages": "727–728",
+      "teacherGuideViewerPages": "398–399",
+      "teacherPdfPage": 200,
+      "sourceTextSha256": "56bbda6dd57b29292dc9652d9b687b8174694b4f1bef2ab8309a0a1f1a1641ed"
+    },
+    {
+      "lesson": 31,
+      "studentPages": "729–730",
+      "teacherGuideViewerPages": "400–401",
+      "teacherPdfPage": 201,
+      "sourceTextSha256": "8e09d6ddb61043b68c7e13726c62238d50efd8936f8a37c0bee79cbe2a658407"
+    },
+    {
+      "lesson": 31,
+      "studentPages": "731–732",
+      "teacherGuideViewerPages": "402–403",
+      "teacherPdfPage": 202,
+      "sourceTextSha256": "4aa06fa7ca613a71d1693d86b88bdb6de0c08b8a4352e19f45e4e9342dc27b07"
+    },
+    {
+      "lesson": 32,
+      "studentPages": "733–734",
+      "teacherGuideViewerPages": "408–409",
+      "teacherPdfPage": 205,
+      "sourceTextSha256": "27adea97146b342b114cd377158bd5ebeec053010ffc30eb36073d0f84b6e834"
+    },
+    {
+      "lesson": 32,
+      "studentPages": "735–736",
+      "teacherGuideViewerPages": "410–411",
+      "teacherPdfPage": 206,
+      "sourceTextSha256": "2a6821248408d9f8f8420045f6fd8d10131ebd40882ef57afc455f338aba9bc9"
+    },
+    {
+      "lesson": 32,
+      "studentPages": "737–738",
+      "teacherGuideViewerPages": "412–413",
+      "teacherPdfPage": 207,
+      "sourceTextSha256": "eaad46a45d300b9b0a455acf2cac7b48e856785f21749726dcfda6e91c79c5e9"
+    },
+    {
+      "lesson": 32,
+      "studentPages": "739–740",
+      "teacherGuideViewerPages": "414–415",
+      "teacherPdfPage": 208,
+      "sourceTextSha256": "a71806af674c7fc7d34df2ca89f289296dbc43c57c4fdfb4f925a9f140a40604"
+    },
+    {
+      "lesson": 32,
+      "studentPages": "741–742",
+      "teacherGuideViewerPages": "416–417",
+      "teacherPdfPage": 209,
+      "sourceTextSha256": "db5a5381cba247599fcd10b9267ec948f8ecd4300e655a1eceb87deb7504e464"
+    },
+    {
+      "lesson": 32,
+      "studentPages": "743–744",
+      "teacherGuideViewerPages": "418–419",
+      "teacherPdfPage": 210,
+      "sourceTextSha256": "5ab0db0651e7edd543419d2b5935e454810114f2ca5d5a5d88f77935ad3c5fe8"
+    },
+    {
+      "lesson": 32,
+      "studentPages": "745–746",
+      "teacherGuideViewerPages": "420–421",
+      "teacherPdfPage": 211,
+      "sourceTextSha256": "f426c5b57261f5c609f4c3cb54da481d00910fce8613215a552bfd2cc882a2b3"
+    },
+    {
+      "lesson": 32,
+      "studentPages": "747–748",
+      "teacherGuideViewerPages": "422–423",
+      "teacherPdfPage": 212,
+      "sourceTextSha256": "e93221ac74f0a8ede36471d57eaf6f7eb0326a449bdbc92bddfe51d1c4b585c5"
+    },
+    {
+      "lesson": 32,
+      "studentPages": "749–750",
+      "teacherGuideViewerPages": "424–425",
+      "teacherPdfPage": 213,
+      "sourceTextSha256": "0688b9a53fc24587151cdfc7820a905eaa1d181dcce2829349ff67ee9a974136"
+    },
+    {
+      "lesson": 32,
+      "studentPages": "751–752",
+      "teacherGuideViewerPages": "426–427",
+      "teacherPdfPage": 214,
+      "sourceTextSha256": "1a7d0393f4fbfbd335e016772ebe4ca03423f3abd5f0727d9b041de8004d228e"
+    },
+    {
+      "lesson": 32,
+      "studentPages": "753–754",
+      "teacherGuideViewerPages": "428–429",
+      "teacherPdfPage": 215,
+      "sourceTextSha256": "0ff6fdc9513020a8c452de8e388473ee768e3c7302cdf2c9ed675a366c4f6bf6"
+    },
+    {
+      "lesson": 32,
+      "studentPages": "755–756",
+      "teacherGuideViewerPages": "430–431",
+      "teacherPdfPage": 216,
+      "sourceTextSha256": "3d28ae9c0012886805587e0b78ea22123450a9abd66a06430f0e1d3f432e0481"
+    },
+    {
+      "lesson": 32,
+      "studentPages": "757–758",
+      "teacherGuideViewerPages": "432–433",
+      "teacherPdfPage": 217,
+      "sourceTextSha256": "e087426d3138502407d97e4bc95830746c060f5a4c93575220845c9b9a39e05e"
+    },
+    {
+      "lesson": 32,
+      "studentPages": "759–760",
+      "teacherGuideViewerPages": "434–435",
+      "teacherPdfPage": 218,
+      "sourceTextSha256": "d336a147154425e63c6bf97ffe5daacf0b07d4f2f68c097a0a3968f7dcb68990"
+    },
+    {
+      "lesson": 33,
+      "studentPages": "761–762",
+      "teacherGuideViewerPages": "440–441",
+      "teacherPdfPage": 221,
+      "sourceTextSha256": "17628dff478960fcf975f818984f6e39eda9a982322f1d5d03d11438d2a6f12f"
+    },
+    {
+      "lesson": 33,
+      "studentPages": "763–764",
+      "teacherGuideViewerPages": "442–443",
+      "teacherPdfPage": 222,
+      "sourceTextSha256": "db7beb1586bf5b3a1482e866db2a6cb8e644e1e0c3b3ec9e7d63d389f8db55ca"
+    },
+    {
+      "lesson": 33,
+      "studentPages": "765–766",
+      "teacherGuideViewerPages": "444–445",
+      "teacherPdfPage": 223,
+      "sourceTextSha256": "9e589a187bbc0644ef7572f8bc76fdf3d743c328172a2dc0342ca4c9d3271f2a"
+    },
+    {
+      "lesson": 33,
+      "studentPages": "767–768",
+      "teacherGuideViewerPages": "446–447",
+      "teacherPdfPage": 224,
+      "sourceTextSha256": "edd6ba358ce3147240ddd4444c2e627231b493532d673882cba023879ca2add1"
+    },
+    {
+      "lesson": 33,
+      "studentPages": "769–770",
+      "teacherGuideViewerPages": "448–449",
+      "teacherPdfPage": 225,
+      "sourceTextSha256": "02f7b495c3791b44817c43040946e36ce6bd4f5176686f9fe50c446dbb4c8ac1"
+    },
+    {
+      "lesson": 33,
+      "studentPages": "771–772",
+      "teacherGuideViewerPages": "450–451",
+      "teacherPdfPage": 226,
+      "sourceTextSha256": "8086b2c17f3f24ddcb9d81b5d644a628e8bc056f75aa15a1e9496f3a180bf966"
+    },
+    {
+      "lesson": 33,
+      "studentPages": "773–774",
+      "teacherGuideViewerPages": "452–453",
+      "teacherPdfPage": 227,
+      "sourceTextSha256": "7b8faa225f907cd8cd369be428bfd95f133dca0a19805288d2661d36158a3926"
+    },
+    {
+      "lesson": 33,
+      "studentPages": "775–776",
+      "teacherGuideViewerPages": "454–455",
+      "teacherPdfPage": 228,
+      "sourceTextSha256": "473c3b2d7cbe6ea5b7f36f519276109fe5e227b05fd6760c8ed2aeb643175a0c"
+    },
+    {
+      "lesson": 33,
+      "studentPages": "777–778",
+      "teacherGuideViewerPages": "456–457",
+      "teacherPdfPage": 229,
+      "sourceTextSha256": "af9f7a09b22d59e0ba3253c04d8097421e54e339cfe7c08173e45b3381c030f1"
+    }
+  ]
+}

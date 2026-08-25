@@ -1,0 +1,534 @@
+{
+  "schemaVersion": 1,
+  "program": "i-ready-classroom-mathematics-california",
+  "publisher": "Curriculum Associates",
+  "grade": 3,
+  "verifiedCoverage": {
+    "volume": 1,
+    "unit": 1,
+    "lessons": [
+      { "lesson": 1, "sessions": 4 },
+      { "lesson": 2, "sessions": 4 },
+      { "lesson": 3, "sessions": 5 }
+    ]
+  },
+  "approvedSources": [
+    {
+      "id": "grade3-student-worktext-v1",
+      "kind": "student-worktext",
+      "volume": 1,
+      "title": "Grade 3 Student Worktext - Volume 1",
+      "localPaths": [
+        "iReady-Maths/iready-grade3-volume1-548-pages.pdf",
+        "iReady-Maths/iready-grade3-volume1-548-pages-searchable.pdf"
+      ],
+      "sourceUrl": "https://online.flippingbook.com/view/336581625/"
+    }
+  ],
+  "approvedSolvedSources": [
+    {
+      "id": "grade3-teacher-guide-v1",
+      "kind": "teacher-guide",
+      "volume": 1,
+      "usage": "solved-teaching-only",
+      "title": "Grade 3 Teacher Guide - Volume 1",
+      "localPaths": [
+        "iReady-Maths/iready-grade3-teacher-guide-volume1-764-pages.pdf",
+        "iReady-Maths/iready-grade3-teacher-guide-volume1-764-pages-searchable.pdf"
+      ]
+    }
+  ],
+  "referenceOnlySources": [
+    {
+      "id": "grade3-student-worktext-v2",
+      "kind": "student-worktext",
+      "volume": 2,
+      "usage": "reference-only",
+      "title": "Grade 3 Student Worktext - Volume 2",
+      "localPaths": [
+        "iReady-Maths/iready-grade3-volume2-396-pages.pdf",
+        "iReady-Maths/iready-grade3-volume2-396-pages-searchable.pdf"
+      ]
+    },
+    {
+      "id": "grade3-teacher-guide-v2",
+      "kind": "teacher-guide",
+      "volume": 2,
+      "usage": "reference-only",
+      "title": "Grade 3 Teacher Guide - Volume 2",
+      "localPaths": [
+        "iReady-Maths/iready-grade3-teacher-guide-volume2-540-pages.pdf",
+        "iReady-Maths/iready-grade3-teacher-guide-volume2-540-pages-searchable.pdf"
+      ]
+    }
+  ],
+  "unitIdeas": [
+    {
+      "sourceId": "grade3-student-worktext-v1",
+      "unit": 1,
+      "title": "Number Flexibility to 100 for All Four Operations",
+      "understanding": "Rounding is a way to think flexibly about numbers and make estimates. Thinking flexibly means you can think about numbers in many ways.",
+      "printedPage": 2,
+      "viewerPage": 14
+    },
+    {
+      "sourceId": "grade3-student-worktext-v1",
+      "unit": 1,
+      "title": "Patterns in Four Operations",
+      "understanding": "Addition and subtraction patterns can support strategies for adding and subtracting multi-digit numbers.",
+      "printedPage": 3,
+      "viewerPage": 15
+    },
+    {
+      "sourceId": "grade3-student-worktext-v1",
+      "unit": 2,
+      "title": "Square Tiles",
+      "understanding": "Arrays of square tiles or other objects can model multiplication.",
+      "printedPage": 94,
+      "viewerPage": 106
+    },
+    {
+      "sourceId": "grade3-student-worktext-v1",
+      "unit": 2,
+      "title": "Number Flexibility to 100 for All Four Operations",
+      "understanding": "Flexibility with numbers and operations supports strategies for multiplying and dividing.",
+      "printedPage": 95,
+      "viewerPage": 107
+    },
+    {
+      "sourceId": "grade3-student-worktext-v1",
+      "unit": 3,
+      "title": "Square Tiles",
+      "understanding": "You can use square tiles to show the areas of rectangles.",
+      "printedPage": 308,
+      "viewerPage": 320
+    },
+    {
+      "sourceId": "grade3-student-worktext-v1",
+      "unit": 3,
+      "title": "Number Flexibility to 100 for All Four Operations",
+      "understanding": "You can think flexibly about multiplying, dividing, adding, and subtracting to solve problems.",
+      "printedPage": 308,
+      "viewerPage": 320
+    },
+    {
+      "sourceId": "grade3-student-worktext-v1",
+      "unit": 3,
+      "title": "Patterns in Four Operations",
+      "understanding": "Many problems involve using more than one operation. You can use a variety of strategies and models to solve these problems.",
+      "printedPage": 309,
+      "viewerPage": 321
+    },
+    {
+      "sourceId": "grade3-student-worktext-v1",
+      "unit": 3,
+      "title": "Represent Multivariable Data",
+      "understanding": "You can use bar graphs and picture graphs to display data. You can use the graphs to solve problems.",
+      "printedPage": 309,
+      "viewerPage": 321
+    }
+  ],
+  "interactions": [
+    {
+      "key": "v1-u1-l1-s1",
+      "sourceId": "grade3-student-worktext-v1",
+      "status": "verified",
+      "volume": 1,
+      "unit": 1,
+      "lesson": 1,
+      "session": 1,
+      "phase": "Explore",
+      "title": "Using Place Value to Round Numbers",
+      "printedPages": "9–12",
+      "viewerPage": 21,
+      "approvedModel": "place-value-chart",
+      "supportsSolvedTeaching": true,
+      "sourceChecks": [
+        { "purpose": "prompt", "printedPages": "9–12", "markers": ["384", "place-value chart", "two tens", "two hundreds"] },
+        { "purpose": "model", "printedPages": "9–12", "markers": ["hundreds", "tens", "ones", "number lines"] }
+      ],
+      "activity": {
+        "kind": "neighbor-intervals",
+        "target": 384,
+        "digits": [3, 8, 4],
+        "tens": [380, 390],
+        "hundreds": [300, 400],
+        "prompt": "Place 384 between its neighboring tens and hundreds.",
+        "instruction": "Use the place-value chart first. Then give both intervals that contain the number.",
+        "correctFeedback": "Correct. 384 lies between 380 and 390, and between 300 and 400.",
+        "tryAgainFeedback": "Look at the tens around 384 first, then the hundreds around it. Keep 384 inside both intervals.",
+        "solutionSteps": [
+          "384 has 3 hundreds, 8 tens, and 4 ones.",
+          "384 comes after 380 and before 390.",
+          "384 comes after 300 and before 400."
+        ]
+      }
+    },
+    {
+      "key": "v1-u1-l1-s2",
+      "sourceId": "grade3-student-worktext-v1",
+      "status": "verified",
+      "volume": 1,
+      "unit": 1,
+      "lesson": 1,
+      "session": 2,
+      "phase": "Develop",
+      "title": "Rounding to the Nearest Ten",
+      "printedPages": "13–18",
+      "viewerPage": 25,
+      "approvedModel": "nearest-ten-line",
+      "supportsSolvedTeaching": true,
+      "sourceChecks": [
+        { "purpose": "prompt", "printedPages": "13–18", "markers": ["37 minutes", "nearest ten", "How does he record this time"] },
+        { "purpose": "model", "printedPages": "13–18", "markers": ["number lines", "halfway number between 30 and 40 is 35", "37 rounds to 40"] }
+      ],
+      "activity": {
+        "kind": "round-choice",
+        "target": 37,
+        "choices": [30, 40],
+        "answer": 40,
+        "prompt": "Round 37 minutes to the nearest ten.",
+        "instruction": "Find the halfway point between the two neighboring tens before choosing.",
+        "choiceLabel": "37 is closer to…",
+        "correctFeedback": "Correct. 37 is above 35, so it rounds to 40.",
+        "tryAgainFeedback": "Compare the distance from 37 to 30 with the distance from 37 to 40.",
+        "strategy": "37 is between 30 and 40. The halfway number is 35. Because 37 is greater than 35, 37 rounds to 40.",
+        "numberLine": { "start": 30, "middle": 35, "marker": 37, "end": 40 }
+      }
+    },
+    {
+      "key": "v1-u1-l1-s3",
+      "sourceId": "grade3-student-worktext-v1",
+      "status": "verified",
+      "volume": 1,
+      "unit": 1,
+      "lesson": 1,
+      "session": 3,
+      "phase": "Develop",
+      "title": "Rounding to the Nearest Hundred",
+      "printedPages": "19–24",
+      "viewerPage": 31,
+      "approvedModel": "base-ten-blocks",
+      "supportsSolvedTeaching": true,
+      "sourceChecks": [
+        { "purpose": "prompt", "printedPages": "19–24", "markers": ["236 bowls", "nearest hundred"] },
+        { "purpose": "model", "printedPages": "19–24", "markers": ["base-ten blocks", "236 has 2 hundreds", "236 rounded to the nearest hundred is 200"] }
+      ],
+      "activity": {
+        "kind": "round-choice",
+        "target": 236,
+        "choices": [200, 300],
+        "answer": 200,
+        "prompt": "Round 236 to the nearest hundred.",
+        "instruction": "The model contains 2 hundreds, 3 tens, and 6 ones. Decide whether the tens have reached the halfway point.",
+        "choiceLabel": "236 is closer to…",
+        "correctFeedback": "Correct. 3 tens is less than the 5-tens halfway point.",
+        "tryAgainFeedback": "The halfway point from 200 to 300 is 250. Locate 236 relative to 250.",
+        "strategy": "236 is between 200 and 300. The halfway number is 250. Because 236 is less than 250, 236 rounds to 200."
+      }
+    },
+    {
+      "key": "v1-u1-l1-s4",
+      "sourceId": "grade3-student-worktext-v1",
+      "status": "verified",
+      "volume": 1,
+      "unit": 1,
+      "lesson": 1,
+      "session": 4,
+      "phase": "Refine",
+      "title": "Using Place Value to Round Numbers",
+      "printedPages": "25–28",
+      "viewerPage": 37,
+      "approvedModel": "nearest-hundred-line",
+      "supportsSolvedTeaching": true,
+      "sourceChecks": [
+        { "purpose": "prompt", "printedPages": "25–28", "markers": ["879", "nearest hundred", "Show your work"] },
+        { "purpose": "model", "printedPages": "9–24", "markers": ["number lines", "Rounding to the Nearest Hundred", "halfway"] }
+      ],
+      "activity": {
+        "kind": "round-choice",
+        "target": 879,
+        "choices": [800, 900],
+        "answer": 900,
+        "prompt": "Round 879 to the nearest hundred.",
+        "instruction": "First identify the neighboring hundreds. Then use the halfway point to make the decision.",
+        "choiceLabel": "879 rounds to…",
+        "correctFeedback": "Correct. 879 is greater than 850 and closer to 900.",
+        "tryAgainFeedback": "When rounding to the nearest hundred, compare 879 with the halfway number 850.",
+        "strategy": "879 is between 800 and 900. The halfway number is 850. Because 879 is greater than 850, 879 rounds to 900.",
+        "numberLine": { "start": 800, "middle": 850, "marker": 879, "end": 900 }
+      }
+    },
+    {
+      "key": "v1-u1-l2-s1",
+      "sourceId": "grade3-student-worktext-v1",
+      "status": "verified",
+      "volume": 1,
+      "unit": 1,
+      "lesson": 2,
+      "session": 1,
+      "phase": "Explore",
+      "title": "Adding Three-Digit Numbers",
+      "printedPages": "31–34",
+      "viewerPage": 43,
+      "approvedModel": "place-value-decomposition",
+      "supportsSolvedTeaching": true,
+      "sourceChecks": [
+        { "purpose": "prompt", "printedPages": "31–34", "markers": ["147 hip hop songs", "212 different hip hop songs", "in all"] },
+        { "purpose": "model", "printedPages": "31–34", "markers": ["Breaking apart numbers", "hundreds, tens, and ones", "Add ones and ones"] }
+      ],
+      "activity": {
+        "kind": "arithmetic",
+        "prompt": "Find the total number of songs represented by 147 and 212.",
+        "instruction": "Break apart both addends into hundreds, tens, and ones. Add matching places, then combine the partial sums.",
+        "left": 147,
+        "right": 212,
+        "operation": "+",
+        "answer": 359,
+        "hint": "Break apart both numbers into hundreds, tens, and ones. Add matching places.",
+        "strategy": "147 + 212 = (100 + 200) + (40 + 10) + (7 + 2) = 300 + 50 + 9 = 359."
+      }
+    },
+    {
+      "key": "v1-u1-l2-s2",
+      "sourceId": "grade3-student-worktext-v1",
+      "status": "verified",
+      "volume": 1,
+      "unit": 1,
+      "lesson": 2,
+      "session": 2,
+      "phase": "Develop",
+      "title": "Using Place-Value Strategies to Add",
+      "printedPages": "35–40",
+      "viewerPage": 47,
+      "approvedModel": "partial-sums",
+      "supportsSolvedTeaching": true,
+      "sourceChecks": [
+        { "purpose": "prompt", "printedPages": "35–40", "markers": ["130 photos", "280 photos", "in all"] },
+        { "purpose": "model", "printedPages": "35–40", "markers": ["partial sums", "11 tens", "1 hundred + 1 ten"] }
+      ],
+      "activity": {
+        "kind": "arithmetic",
+        "prompt": "Combine 130 photos and 280 photos.",
+        "instruction": "Add hundreds, tens, and ones. Regroup when a place has ten or more of the same unit.",
+        "left": 130,
+        "right": 280,
+        "operation": "+",
+        "answer": 410,
+        "hint": "The tens total 11 tens. Regroup 10 of those tens as 1 hundred.",
+        "strategy": "130 + 280 has 0 ones, 11 tens, and 3 hundreds. Regroup 11 tens as 1 hundred and 1 ten: 410."
+      }
+    },
+    {
+      "key": "v1-u1-l2-s3",
+      "sourceId": "grade3-student-worktext-v1",
+      "status": "verified",
+      "volume": 1,
+      "unit": 1,
+      "lesson": 2,
+      "session": 3,
+      "phase": "Develop",
+      "title": "Connecting Place-Value Strategies to an Algorithm",
+      "printedPages": "41–46",
+      "viewerPage": 53,
+      "approvedModel": "addition-algorithm",
+      "supportsSolvedTeaching": true,
+      "sourceChecks": [
+        { "purpose": "prompt", "printedPages": "41–46", "markers": ["225", "229", "place value"] },
+        { "purpose": "model", "printedPages": "41–46", "markers": ["using an algorithm", "Add ones to ones", "showing regrouping above the problem"] }
+      ],
+      "activity": {
+        "kind": "arithmetic",
+        "prompt": "Use place value to find the sum 225 + 229.",
+        "instruction": "Add from ones to hundreds and record each regrouping in the next place.",
+        "left": 225,
+        "right": 229,
+        "operation": "+",
+        "answer": 454,
+        "hint": "Start with 5 ones + 9 ones. Record 4 ones and regroup 1 ten.",
+        "strategy": "5 + 9 = 14, so record 4 ones and regroup 1 ten. Then 2 + 2 + 1 = 5 tens, and 2 + 2 = 4 hundreds: 454."
+      }
+    },
+    {
+      "key": "v1-u1-l2-s4",
+      "sourceId": "grade3-student-worktext-v1",
+      "status": "verified",
+      "volume": 1,
+      "unit": 1,
+      "lesson": 2,
+      "session": 4,
+      "phase": "Refine",
+      "title": "Adding Three-Digit Numbers",
+      "printedPages": "47–50",
+      "viewerPage": 59,
+      "approvedModel": "addition-algorithm",
+      "supportsSolvedTeaching": true,
+      "sourceChecks": [
+        { "purpose": "prompt", "printedPages": "47–50", "markers": ["345", "626", "Find the sum"] },
+        { "purpose": "model", "printedPages": "41–46", "markers": ["using an algorithm", "Add ones to ones", "showing regrouping above the problem"] }
+      ],
+      "activity": {
+        "kind": "arithmetic",
+        "prompt": "Find the sum of 345 and 626.",
+        "instruction": "Use the addition algorithm, beginning with the ones, and show the regrouped ten.",
+        "left": 345,
+        "right": 626,
+        "operation": "+",
+        "answer": 971,
+        "hint": "The ones make 11. Regroup 1 ten before adding the tens column.",
+        "strategy": "5 + 6 = 11 ones. Regroup 1 ten; 4 + 2 + 1 = 7 tens; 3 + 6 = 9 hundreds. The sum is 971."
+      }
+    },
+    {
+      "key": "v1-u1-l3-s1",
+      "sourceId": "grade3-student-worktext-v1",
+      "status": "verified",
+      "volume": 1,
+      "unit": 1,
+      "lesson": 3,
+      "session": 1,
+      "phase": "Explore",
+      "title": "Subtracting Three-Digit Numbers",
+      "printedPages": "53–56",
+      "viewerPage": 65,
+      "approvedModel": "place-value-decomposition",
+      "supportsSolvedTeaching": true,
+      "sourceChecks": [
+        { "purpose": "prompt", "printedPages": "53–56", "markers": ["475 glass beads", "134 beads", "How many beads are left"] },
+        { "purpose": "model", "printedPages": "53–56", "markers": ["Breaking apart numbers", "hundreds, tens, and ones", "Subtract ones from ones"] }
+      ],
+      "activity": {
+        "kind": "arithmetic",
+        "prompt": "Start with 475 beads and subtract the 134 beads used.",
+        "instruction": "Break apart both numbers by place value and subtract matching units.",
+        "left": 475,
+        "right": 134,
+        "operation": "−",
+        "answer": 341,
+        "hint": "Subtract ones from ones, tens from tens, and hundreds from hundreds.",
+        "strategy": "475 − 134 = (400 − 100) + (70 − 30) + (5 − 4) = 300 + 40 + 1 = 341."
+      }
+    },
+    {
+      "key": "v1-u1-l3-s2",
+      "sourceId": "grade3-student-worktext-v1",
+      "status": "verified",
+      "volume": 1,
+      "unit": 1,
+      "lesson": 3,
+      "session": 2,
+      "phase": "Develop",
+      "title": "Using Place-Value Strategies to Subtract",
+      "printedPages": "57–62",
+      "viewerPage": 69,
+      "approvedModel": "place-value-regrouping",
+      "supportsSolvedTeaching": true,
+      "sourceChecks": [
+        { "purpose": "prompt", "printedPages": "57–62", "markers": ["365 flowers", "186", "how many flowers are not lilies"] },
+        { "purpose": "model", "printedPages": "57–62", "markers": ["base-ten blocks", "2 hundreds + 15 tens + 15 ones", "1 hundred + 7 tens + 9 ones"] }
+      ],
+      "activity": {
+        "kind": "arithmetic",
+        "prompt": "Find how many of 365 flowers are not among the 186 lilies.",
+        "instruction": "Regroup hundreds, tens, or ones as needed before subtracting each place.",
+        "left": 365,
+        "right": 186,
+        "operation": "−",
+        "answer": 179,
+        "hint": "Regroup once from the hundreds place and once from the tens place.",
+        "strategy": "Regroup 365 as 2 hundreds, 15 tens, and 15 ones. Then subtract 186 by place value to get 1 hundred, 7 tens, and 9 ones: 179."
+      }
+    },
+    {
+      "key": "v1-u1-l3-s3",
+      "sourceId": "grade3-student-worktext-v1",
+      "status": "verified",
+      "volume": 1,
+      "unit": 1,
+      "lesson": 3,
+      "session": 3,
+      "phase": "Develop",
+      "title": "Adding On to Subtract",
+      "printedPages": "63–68",
+      "viewerPage": 75,
+      "approvedModel": "open-number-line",
+      "supportsSolvedTeaching": true,
+      "sourceChecks": [
+        { "purpose": "prompt", "printedPages": "63–68", "markers": ["205 seeds", "137 seeds", "How many seeds does Malik have left"] },
+        { "purpose": "model", "printedPages": "63–68", "markers": ["number line", "add on", "3 + 60 + 5"] }
+      ],
+      "activity": {
+        "kind": "arithmetic",
+        "prompt": "Start at 137 and add on until you reach 205.",
+        "instruction": "Add on ones to reach the next ten, tens to reach the next hundred, and ones to reach 205. Then add the jumps.",
+        "left": 205,
+        "right": 137,
+        "operation": "−",
+        "answer": 68,
+        "hint": "Add 3 to reach 140, then 60 to reach 200, then 5 to reach 205.",
+        "strategy": "137 + 3 = 140, 140 + 60 = 200, and 200 + 5 = 205. Add the jumps: 3 + 60 + 5 = 68.",
+        "jumps": ["+3 → 140", "+60 → 200", "+5 → 205"]
+      }
+    },
+    {
+      "key": "v1-u1-l3-s4",
+      "sourceId": "grade3-student-worktext-v1",
+      "status": "verified",
+      "volume": 1,
+      "unit": 1,
+      "lesson": 3,
+      "session": 4,
+      "phase": "Develop",
+      "title": "Connecting Place-Value Strategies to an Algorithm",
+      "printedPages": "69–74",
+      "viewerPage": 81,
+      "approvedModel": "subtraction-algorithm",
+      "supportsSolvedTeaching": true,
+      "sourceChecks": [
+        { "purpose": "prompt", "printedPages": "69–74", "markers": ["385", "158", "Use place value to help you subtract"] },
+        { "purpose": "model", "printedPages": "69–74", "markers": ["using an algorithm", "Regroup a ten into the ones place", "15 - 8 = 7"] }
+      ],
+      "activity": {
+        "kind": "arithmetic",
+        "prompt": "Use place value to find the difference 385 − 158.",
+        "instruction": "Subtract from ones to hundreds and record each regrouping before subtracting.",
+        "left": 385,
+        "right": 158,
+        "operation": "−",
+        "answer": 227,
+        "hint": "Regroup 1 ten so that 5 ones becomes 15 ones.",
+        "strategy": "Regroup 385 as 3 hundreds, 7 tens, and 15 ones. Then 15 − 8 = 7, 7 − 5 = 2, and 3 − 1 = 2: 227."
+      }
+    },
+    {
+      "key": "v1-u1-l3-s5",
+      "sourceId": "grade3-student-worktext-v1",
+      "status": "verified",
+      "volume": 1,
+      "unit": 1,
+      "lesson": 3,
+      "session": 5,
+      "phase": "Refine",
+      "title": "Subtracting Three-Digit Numbers",
+      "printedPages": "75–78",
+      "viewerPage": 87,
+      "approvedModel": "subtraction-algorithm",
+      "supportsSolvedTeaching": true,
+      "sourceChecks": [
+        { "purpose": "prompt", "printedPages": "75–78", "markers": ["450", "131", "Show your work"] },
+        { "purpose": "model", "printedPages": "69–74", "markers": ["using an algorithm", "show regrouping above the problem", "Subtract ones from ones"] }
+      ],
+      "activity": {
+        "kind": "arithmetic",
+        "prompt": "Find 450 − 131 using a strategy you can explain.",
+        "instruction": "Use the subtraction algorithm, regrouping one ten as ten ones before subtracting.",
+        "left": 450,
+        "right": 131,
+        "operation": "−",
+        "answer": 319,
+        "hint": "Regroup 1 ten as 10 ones before subtracting the ones column.",
+        "strategy": "Regroup 450 as 4 hundreds, 4 tens, and 10 ones. Then subtract 131 by place value: 3 hundreds, 1 ten, and 9 ones = 319."
+      }
+    }
+  ]
+}

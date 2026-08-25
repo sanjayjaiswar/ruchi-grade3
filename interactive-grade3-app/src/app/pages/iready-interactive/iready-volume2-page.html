@@ -1,0 +1,183 @@
+<main class="v2-page" [class.focused-view]="lessonFocus || libraryFocus">
+  <header class="v2-header">
+    <a class="v2-brand" routerLink="/ruchika/grade3/iready-interactive/volumes/2">
+      <span aria-hidden="true">iR+</span>
+      <span><strong>i-Ready Interactive</strong><small>Grade 3 · Student Worktext Volume 2</small></span>
+    </a>
+    <nav aria-label="i-Ready Interactive navigation">
+      <a routerLink="/ruchika/grade3/iready-interactive">Volume 1</a>
+      <a class="active" routerLink="/ruchika/grade3/iready-interactive/volumes/2">Volume 2</a>
+      <a routerLink="/ruchika/grade3/syllabus-books/books">Book reference</a>
+      <a class="home-link" routerLink="/ruchika/grade3" aria-label="Grade 3 home">R</a>
+    </nav>
+  </header>
+
+  <section *ngIf="!unitFocus && !lessonFocus && !libraryFocus" class="v2-overview">
+    <header class="v2-volume-heading">
+      <div>
+        <span>Official Grade 3 Student Worktext</span>
+        <h1>Volume 2</h1>
+        <p>Units 4–6 · Lessons 20–33 · every official book page available</p>
+      </div>
+      <dl>
+        <div><dt>3</dt><dd>Units</dd></div>
+        <div><dt>14</dt><dd>Lessons</dd></div>
+        <div><dt>52</dt><dd>Sessions</dd></div>
+        <div><dt>396</dt><dd>Book pages inventoried</dd></div>
+      </dl>
+      <a href="https://online.flippingbook.com/view/336471940/" target="_blank" rel="noopener">Open official Volume 2 ↗</a>
+    </header>
+
+    <aside class="source-lock">
+      <strong>Official-source lock</strong>
+      <span>Student Worktext Volume 2 controls learner content and order. Teacher Guide Volume 2 controls guidance and solved teaching. The page registries fail closed if either source identity or page map drifts.</span>
+    </aside>
+
+    <section class="v2-unit-section">
+      <header><div><span>Official contents</span><h2>Choose a unit</h2></div><p>Open the unit map before entering its lessons.</p></header>
+      <div class="v2-unit-grid">
+        <article *ngFor="let unit of units">
+          <div class="unit-top"><b>Unit {{ unit.number }}</b><a [href]="unit.sourceUrl" target="_blank" rel="noopener">Official ↗</a></div>
+          <h3>{{ unit.title }}</h3>
+          <p>{{ unit.subtitle }}</p>
+          <dl>
+            <div><dt>{{ unit.lessons.length }}</dt><dd>Lessons</dd></div>
+            <div><dt>{{ totalSessions(unit) }}</dt><dd>Sessions</dd></div>
+            <div><dt>{{ unit.printPages }}</dt><dd>Printed pages</dd></div>
+          </dl>
+          <a class="primary-link" [routerLink]="['/ruchika/grade3/iready-interactive/volumes/2/units', unit.number]">Explore Unit {{ unit.number }} →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="v2-library-section">
+      <header><div><span>Complete official book</span><h2>Volume 2 page library</h2></div><p>Front matter, unit resources, Data Talks, review, glossary, correlations, and index are included.</p></header>
+      <div class="library-card-grid">
+        <a *ngFor="let group of libraryGroups" [routerLink]="['/ruchika/grade3/iready-interactive/volumes/2/library', group.key]">
+          <span>Book pp. {{ group.viewerStart }}–{{ group.viewerEnd }}</span>
+          <strong>{{ group.title }}</strong>
+          <small>{{ group.detail }}</small>
+        </a>
+      </div>
+    </section>
+  </section>
+
+  <section *ngIf="unitFocus" class="v2-unit-overview">
+    <nav class="crumb"><a routerLink="/ruchika/grade3/iready-interactive/volumes/2">Volume 2</a><span>/</span><strong>Unit {{ selectedUnit.number }}</strong></nav>
+    <header class="unit-heading">
+      <b class="unit-number">{{ selectedUnit.number }}</b>
+      <div><span>Volume 2 · Unit {{ selectedUnit.number }}</span><h1>{{ selectedUnit.title }}</h1><p>{{ selectedUnit.subtitle }}</p></div>
+      <dl>
+        <div><dt>{{ selectedUnit.lessons.length }}</dt><dd>Lessons</dd></div>
+        <div><dt>{{ totalSessions(selectedUnit) }}</dt><dd>Sessions</dd></div>
+        <div><dt>{{ selectedUnit.printPages }}</dt><dd>Printed pages</dd></div>
+      </dl>
+      <a [href]="selectedUnit.sourceUrl" target="_blank" rel="noopener">Official unit ↗</a>
+    </header>
+
+    <section class="unit-ideas">
+      <header><div><span>Official Big Ideas Organizer</span><h2>Concepts that connect this unit</h2></div><p>Exact statements from the Student Worktext organizer.</p></header>
+      <div>
+        <article *ngFor="let idea of unitIdeas(selectedUnit.number)">
+          <span>Big Idea</span><h3>{{ idea.title }}</h3><p>{{ idea.understanding }}</p><a [href]="ideaUrl(idea)" target="_blank" rel="noopener">Verify p. {{ idea.printedPage }} ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="unit-lessons">
+      <header><div><span>Official lesson path</span><h2>Lessons in Unit {{ selectedUnit.number }}</h2></div><p>Every session opens with its exact page sequence, interactive visual, and mapped Teacher Guide spread.</p></header>
+      <div class="lesson-grid">
+        <article *ngFor="let lesson of selectedUnit.lessons">
+          <span>Lesson {{ lesson.number }}</span><h3>{{ lesson.title }}</h3><p>{{ lesson.standards }}</p>
+          <div><b>{{ lesson.sessions }} sessions</b><b>Family pp. {{ familyPages(lesson) }}</b><b>Starts p. {{ lesson.printPage }}</b></div>
+          <footer><a class="primary-link" [routerLink]="['/ruchika/grade3/iready-interactive/volumes/2/lessons', lesson.number]">Open lesson →</a><a [href]="lessonUrl(lesson)" target="_blank" rel="noopener">Official ↗</a></footer>
+        </article>
+      </div>
+    </section>
+
+    <section class="unit-resources">
+      <header><div><span>Official companion sections</span><h2>Open, apply, reflect, and review</h2></div></header>
+      <div>
+        <a *ngFor="let group of unitLibrary(selectedUnit.number)" [routerLink]="['/ruchika/grade3/iready-interactive/volumes/2/library', group.key]">
+          <strong>{{ group.title }}</strong><span>{{ group.detail }}</span><small>Book pp. {{ group.viewerStart }}–{{ group.viewerEnd }} →</small>
+        </a>
+      </div>
+    </section>
+  </section>
+
+  <ng-container *ngIf="lessonFocus">
+    <nav class="focus-nav" aria-label="Current Volume 2 lesson navigation">
+      <a [routerLink]="['/ruchika/grade3/iready-interactive/volumes/2/units', selectedUnit.number]">Unit {{ selectedUnit.number }}</a>
+      <div><span>Volume 2 · Lesson {{ selectedLesson.number }}</span><strong>{{ selectedLesson.title }}</strong></div>
+      <div><a *ngIf="previousLesson as lesson" [routerLink]="['/ruchika/grade3/iready-interactive/volumes/2/lessons', lesson.number]">Previous</a><a *ngIf="nextLesson as lesson" [routerLink]="['/ruchika/grade3/iready-interactive/volumes/2/lessons', lesson.number]">Next</a></div>
+    </nav>
+
+    <section class="lesson-workspace">
+      <header class="lesson-title">
+        <div><span>Volume 2 · Unit {{ selectedUnit.number }} · Lesson {{ selectedLesson.number }}</span><h1>{{ selectedLesson.title }}</h1><p>{{ selectedLesson.standards }} · {{ selectedLesson.sessions }} official sessions · starts on printed p. {{ selectedLesson.printPage }}</p></div>
+        <a [href]="lessonUrl(selectedLesson)" target="_blank" rel="noopener">Official lesson ↗</a>
+      </header>
+
+      <nav class="session-tabs" [style.--session-count]="activeSessions.length" aria-label="Official sessions">
+        <button *ngFor="let session of activeSessions" type="button" (click)="selectSession(session.session)" [class.active]="session.session === selectedSessionNumber" [attr.aria-pressed]="session.session === selectedSessionNumber">
+          <span>Session {{ session.session }}</span><strong>{{ session.phase }}</strong><small>pp. {{ session.printedPages }}</small>
+        </button>
+      </nav>
+
+      <section class="session-stage">
+        <header>
+          <div><span>{{ selectedSession.phase }} · Session {{ selectedSession.session }}</span><h2>{{ selectedSession.title }}</h2></div>
+          <nav aria-label="Lesson controls">
+            <button type="button" (click)="selectLessonMode('teacher')" [class.active]="lessonMode === 'teacher'" [attr.aria-pressed]="lessonMode === 'teacher'">Learn visually</button>
+            <button type="button" (click)="selectLessonMode('learn')" [class.active]="lessonMode === 'learn'" [attr.aria-pressed]="lessonMode === 'learn'">Try one</button>
+            <button *ngIf="lessonMode === 'learn'" type="button" (click)="checkLessonWork()">Check</button>
+            <button type="button" (click)="replayLessonVisual()">Replay teaching</button>
+          </nav>
+        </header>
+
+        <div *ngIf="lessonMode === 'learn'" class="interactive-teaching">
+          <section>
+            <span>Short source-backed practice</span>
+            <app-problem-visual-workspace [spec]="selectedVisual" mode="blank" [showValidation]="showLessonValidation"></app-problem-visual-workspace>
+          </section>
+        </div>
+
+        <section *ngIf="lessonMode === 'teacher'" class="teacher-solution-view">
+          <header><strong>Visual teaching · official Student Worktext + Teacher Guide</strong><span>The complete mathematical model stays visible; replay animates its verified relationships. Source pages remain in the evidence drawer.</span></header>
+          <app-problem-visual-workspace [spec]="selectedVisual" mode="solved"></app-problem-visual-workspace>
+        </section>
+
+        <p class="lesson-feedback" aria-live="polite">{{ lessonFeedback }}</p>
+
+        <details class="exact-source-drawer">
+          <summary><span><strong>Exact official source</strong><small>Student Worktext pp. {{ selectedSession.printedPages }} · Teacher Guide mapping · {{ selectedSession.model }}</small></span><b>Open evidence</b></summary>
+          <div class="source-trace">
+            <span>Volume 2</span><span>Lesson {{ selectedLesson.number }}</span><span>Session {{ selectedSession.session }} · {{ selectedSession.phase }}</span><span>Printed pp. {{ selectedSession.printedPages }}</span><span>Viewer p. {{ viewerPageForPrinted(selectedPrintedPage) }}</span><span>Model: {{ selectedSession.model }}</span>
+          </div>
+          <nav class="page-tabs evidence-page-tabs" aria-label="Official evidence pages in this session">
+            <button *ngFor="let page of selectedSessionPages" type="button" (click)="selectPrintedPage(page)" [class.active]="page === selectedPrintedPage" [attr.aria-pressed]="page === selectedPrintedPage">Student p. {{ page }}</button>
+          </nav>
+          <div class="source-evidence-grid">
+            <figure><a [href]="officialUrlForPrintedPage(selectedPrintedPage)" target="_blank" rel="noopener"><img [src]="studentImage(selectedPrintedPage)" [alt]="'Official Student Worktext Volume 2 printed page ' + selectedPrintedPage"></a><figcaption>Student Worktext · printed p. {{ selectedPrintedPage }}</figcaption></figure>
+            <ng-container *ngIf="selectedTeacherSpread as spread">
+              <figure *ngFor="let viewerPage of selectedTeacherViewerPages"><img [src]="teacherImage(viewerPage)" [alt]="'Official Teacher Guide Volume 2 viewer page ' + viewerPage"><figcaption>Teacher Guide · viewer p. {{ viewerPage }}</figcaption></figure>
+              <p>Mapped Student Worktext pp. {{ spread.studentPages }} · Teacher Guide PDF spread {{ spread.teacherPdfPage }}</p>
+            </ng-container>
+          </div>
+        </details>
+
+        <footer class="hard-boundary"><strong>Hard source boundary</strong><span>Learner page, lesson, session, prompt values, and sequence: official Student Worktext Volume 2. Guidance and solved teaching: official Teacher Guide Volume 2. No other curriculum supplies content.</span></footer>
+      </section>
+    </section>
+  </ng-container>
+
+  <ng-container *ngIf="libraryFocus">
+    <nav class="focus-nav library-nav"><a routerLink="/ruchika/grade3/iready-interactive/volumes/2">Volume 2</a><div><span>Complete official book</span><strong>{{ selectedLibrary.title }}</strong></div><a [href]="officialUrlForViewerPage(selectedViewerPage)" target="_blank" rel="noopener">Official page ↗</a></nav>
+    <section class="library-workspace">
+      <header><div><span>Book pp. {{ selectedLibrary.viewerStart }}–{{ selectedLibrary.viewerEnd }}</span><h1>{{ selectedLibrary.title }}</h1><p>{{ selectedLibrary.detail }}</p></div></header>
+      <nav class="library-page-tabs"><button *ngFor="let page of selectedLibraryPages" type="button" (click)="selectViewerPage(page)" [class.active]="page === selectedViewerPage">{{ page }}</button></nav>
+      <figure><img [src]="studentImageByViewerPage(selectedViewerPage)" [alt]="'Official Student Worktext Volume 2 book page ' + selectedViewerPage"><figcaption>Official Student Worktext Volume 2 · {{ pageLabel(selectedViewerPage) }}</figcaption></figure>
+      <footer class="hard-boundary"><strong>Complete-volume coverage</strong><span>This page is rendered from the official 396-page Student Worktext Volume 2 source and is included in the hashed page inventory.</span></footer>
+    </section>
+  </ng-container>
+</main>

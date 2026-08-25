@@ -39,6 +39,9 @@ testem.log
 /typings
 __screenshots__/
 
+# Generated staging renders; the app serves the reviewed copies in public/assets.
+/src/assets/iready-volume1/
+
 # System files
 .DS_Store
 Thumbs.db

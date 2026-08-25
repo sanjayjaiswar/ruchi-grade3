@@ -1,7 +1,8 @@
-<section class="problem-visual-workspace" *ngIf="spec" [class.is-solved]="mode === 'solved'">
+<div class="problem-visual-shell" *ngIf="spec">
+<section class="problem-visual-workspace" [class.is-solved]="mode === 'solved'">
   <header class="visual-header">
     <strong>{{ spec.title }}</strong>
-    <span>{{ mode === 'solved' ? 'Solved visual' : 'Blank visual' }}</span>
+    <span>{{ mode === 'solved' ? (revealStage === undefined ? 'Visual teaching' : 'Building the model') : 'Short practice' }}</span>
   </header>
 
   <ng-template #sourceResponseTemplate let-response>
@@ -30,7 +31,7 @@
                   *ngIf="token.input"
                   type="text"
                   [attr.inputmode]="inlineInputMode(token.answer)"
-                  [attr.aria-label]="'Response blank ' + (tokenIndex + 1)"
+                  [attr.aria-label]="inlineResponseLabel(part.prompt || part.lead || response.label, lineIndex, token.answerIndex || 0)"
                   [class.is-correct]="inlineState(part, 'line', lineIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
                   [class.is-incorrect]="inlineState(part, 'line', lineIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
                   (input)="setInlineValue(part, 'line', lineIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
@@ -40,30 +41,61 @@
             <ng-template #plainResponseLine>{{ line }}</ng-template>
           </span>
         </div>
-        <div class="source-response-sketch" *ngIf="mode === 'blank' && (part.sketchWorkspace || part.openWorkspace)">
-          <span>Draw or model your work</span>
-          <canvas
-            #sketchpad
-            width="1200"
-            height="420"
-            aria-label="Drawing workspace"
-            (pointerdown)="startSketch($event)"
-            (pointermove)="continueSketch($event)"
-            (pointerup)="finishSketch($event)"
-            (pointercancel)="finishSketch($event)"></canvas>
-          <button type="button" (click)="clearSketchFromControl($event)">Clear drawing</button>
-        </div>
-        <textarea
-          *ngIf="mode === 'blank' && (part.responsePlaceholder || part.openWorkspace)"
-          rows="7"
-          aria-label="Written response"
-          [placeholder]="part.responsePlaceholder || 'Write your equation, answer, or explanation here.'"></textarea>
+        <details
+          class="optional-response-tools"
+          *ngIf="mode === 'blank' && (part.sketchWorkspace || part.openWorkspace || part.responsePlaceholder)">
+          <summary>
+            <span>Optional notes or drawing</span>
+            <small>Open only if it helps you think</small>
+          </summary>
+          <div class="optional-response-grid">
+            <div class="source-response-sketch" *ngIf="part.sketchWorkspace || part.openWorkspace">
+              <span>Draw or model your work</span>
+              <canvas
+                #sketchpad
+                width="1200"
+                height="220"
+                aria-label="Optional drawing workspace"
+                (pointerdown)="startSketch($event)"
+                (pointermove)="continueSketch($event)"
+                (pointerup)="finishSketch($event)"
+                (pointercancel)="finishSketch($event)"></canvas>
+              <button type="button" (click)="clearSketchFromControl($event)">Clear drawing</button>
+            </div>
+            <label *ngIf="part.responsePlaceholder || part.openWorkspace" class="optional-written-response">
+              <span>Optional written thinking</span>
+              <textarea
+                rows="3"
+                aria-label="Optional written response"
+                [placeholder]="part.responsePlaceholder || 'Write a short equation or explanation.'"></textarea>
+            </label>
+          </div>
+        </details>
         <div *ngIf="mode === 'solved' && part.response" class="source-response-solved">{{ part.response }}</div>
       </section>
     </div>
   </ng-template>
 
   <article class="visual-section" *ngFor="let section of visibleSections(spec.sections)">
+    <ng-container *ngIf="placeValueBlocksSection(section) as blocks">
+      <strong *ngIf="blocks.label">{{ blocks.label }}</strong>
+      <div class="visual-place-value-blocks" [attr.aria-label]="blocks.hundreds + (blocks.hundreds === 1 ? ' hundred, ' : ' hundreds, ') + blocks.tens + (blocks.tens === 1 ? ' ten, and ' : ' tens, and ') + blocks.ones + (blocks.ones === 1 ? ' one' : ' ones')">
+        <div class="place-value-block-group hundreds" *ngIf="blocks.hundreds">
+          <span class="hundred-block" *ngFor="let block of range(blocks.hundreds)" aria-hidden="true"></span>
+          <b>{{ blocks.hundreds }} {{ blocks.hundreds === 1 ? 'hundred' : 'hundreds' }}</b>
+        </div>
+        <div class="place-value-block-group tens" *ngIf="blocks.tens">
+          <span class="ten-block" *ngFor="let block of range(blocks.tens)" aria-hidden="true"></span>
+          <b>{{ blocks.tens }} {{ blocks.tens === 1 ? 'ten' : 'tens' }}</b>
+        </div>
+        <div class="place-value-block-group ones" *ngIf="blocks.ones">
+          <span class="one-block" *ngFor="let block of range(blocks.ones)" aria-hidden="true"></span>
+          <b>{{ blocks.ones }} {{ blocks.ones === 1 ? 'one' : 'ones' }}</b>
+        </div>
+      </div>
+      <small *ngIf="blocks.caption" class="visual-place-value-caption">{{ blocks.caption }}</small>
+    </ng-container>
+
     <ng-container *ngIf="unknownRiddleWorkspaceSection(section) as riddle">
       <strong *ngIf="riddle.label">{{ riddle.label }}</strong>
       <div class="visual-unknown-riddle-workspace">
@@ -192,20 +224,31 @@
           <p class="unit-form-workspace-prompt" *ngIf="part.workspacePrompt">
             {{ part.workspacePrompt }}
           </p>
-          <div class="source-response-sketch" *ngIf="mode === 'blank' && part.openWorkspace">
-            <span>Draw or model your work</span>
-            <canvas
-              #unitSketchpad
-              width="1200"
-              height="420"
-              aria-label="Drawing workspace"
-              (pointerdown)="startSketch($event)"
-              (pointermove)="continueSketch($event)"
-              (pointerup)="finishSketch($event)"
-              (pointercancel)="finishSketch($event)"></canvas>
-            <button type="button" (click)="clearSketchFromControl($event)">Clear drawing</button>
-            <textarea rows="5" aria-label="Written response" placeholder="Write your equation, answer, or explanation here."></textarea>
-          </div>
+          <details class="optional-response-tools" *ngIf="mode === 'blank' && part.openWorkspace">
+            <summary>
+              <span>Optional notes or drawing</span>
+              <small>Open only if it helps you think</small>
+            </summary>
+            <div class="optional-response-grid">
+              <div class="source-response-sketch">
+                <span>Draw or model your work</span>
+                <canvas
+                  #unitSketchpad
+                  width="1200"
+                  height="220"
+                  aria-label="Optional drawing workspace"
+                  (pointerdown)="startSketch($event)"
+                  (pointermove)="continueSketch($event)"
+                  (pointerup)="finishSketch($event)"
+                  (pointercancel)="finishSketch($event)"></canvas>
+                <button type="button" (click)="clearSketchFromControl($event)">Clear drawing</button>
+              </div>
+              <label class="optional-written-response">
+                <span>Optional written thinking</span>
+                <textarea rows="3" aria-label="Optional written response" placeholder="Write a short equation or explanation."></textarea>
+              </label>
+            </div>
+          </details>
         </section>
       </div>
     </ng-container>
@@ -232,7 +275,7 @@
                   (input)="setInlineValue(array, 'label', 0, 0, token.answerIndex || 0, $any($event.target).value)" />
                 <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
               </ng-container></strong>
-              <div class="visual-array" [ngClass]="'is-' + array.item" [class.is-dense]="array.columns > 16" [class.is-source-known]="array.mode === 'solved'" [class.is-source-extra]="array.mode === 'blank'" [class.is-selectable]="mode === 'blank' && array.selectableCells" [style.gridTemplateColumns]="arrayColumns(array)">
+              <div class="visual-array" [ngClass]="'is-' + array.item" [class.is-dense]="array.columns > 16" [class.is-tall]="array.rows > 6 && array.columns < 5" [class.is-source-known]="array.mode === 'solved'" [class.is-source-extra]="array.mode === 'blank'" [class.is-selectable]="mode === 'blank' && array.selectableCells" [style.gridTemplateColumns]="arrayColumns(array)">
                 <span
                   *ngFor="let cell of range(array.rows * array.columns); let cellIndex = index"
                   [class.is-after-split]="arrayCellIsAfterSplit(array, cellIndex)"
@@ -276,6 +319,7 @@
                       class="visual-inline-input"
                       type="text"
                       [attr.inputmode]="inlineInputMode(token.answer)"
+                      [attr.aria-label]="inlineResponseLabel(equations.label, lineIndex, token.answerIndex || 0)"
                       [class.is-correct]="inlineState(equations, 'line', lineIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
                       [class.is-incorrect]="inlineState(equations, 'line', lineIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
                       (input)="setInlineValue(equations, 'line', lineIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
@@ -409,8 +453,18 @@
                   <span
                     *ngFor="let part of range(fractionStripCellCount(fractionStrip)); let partIndex = index"
                     [class.is-shaded]="fractionStripIsShaded(fractionStrip, partIndex)"
+                    [class.is-selectable]="mode === 'blank' && fractionStrip.selectableParts"
+                    [class.is-selection-correct]="fractionStripSelectionState(fractionStrip, partIndex) === 'correct'"
+                    [class.is-selection-incorrect]="fractionStripSelectionState(fractionStrip, partIndex) === 'incorrect'"
                     [class.is-row-end]="fractionStripIsRowEnd(fractionStrip, partIndex)"
-                    [class.has-row-below]="fractionStripHasRowBelow(fractionStrip, partIndex)">
+                    [class.has-row-below]="fractionStripHasRowBelow(fractionStrip, partIndex)"
+                    [attr.role]="fractionStrip.selectableParts ? 'button' : null"
+                    [attr.tabindex]="mode === 'blank' && fractionStrip.selectableParts ? 0 : null"
+                    [attr.aria-pressed]="fractionStrip.selectableParts ? fractionStripIsShaded(fractionStrip, partIndex) : null"
+                    [attr.aria-label]="fractionStrip.selectableParts ? 'Part ' + (partIndex + 1) + ' of ' + fractionStripCellCount(fractionStrip) : null"
+                    (click)="toggleFractionStripPart(fractionStrip, partIndex)"
+                    (keydown.enter)="toggleFractionStripPart(fractionStrip, partIndex)"
+                    (keydown.space)="toggleFractionStripPart(fractionStrip, partIndex); $event.preventDefault()">
                     {{ fractionStripCellLabel(fractionStrip, partIndex) }}
                   </span>
                 </div>
@@ -425,16 +479,19 @@
                 [class.is-dense]="line.ticks.length >= 9"
                 [class.is-vertical]="line.orientation === 'vertical'">
                 <div>
-                  <span
-                    *ngFor="let tick of line.ticks"
-                    [class.is-target]="tick.target"
-                    [class.is-rounded]="tick.rounded">
-                    {{ tick.label }}
-                  </span>
+                  <ng-container *ngFor="let tick of line.ticks">
+                    <span
+                      *ngIf="!line.targetMarker || tick.label !== line.targetMarker.label"
+                      [class.is-target]="tick.target"
+                      [class.is-rounded]="tick.rounded">
+                      {{ tick.label }}
+                    </span>
+                  </ng-container>
                   <i
                     *ngIf="line.targetMarker as marker"
                     class="visual-number-line-target"
-                    [style.bottom.%]="marker.position">
+                    [style.left.%]="line.orientation !== 'vertical' ? marker.position : null"
+                    [style.bottom.%]="line.orientation === 'vertical' ? marker.position : null">
                     <b>{{ marker.label }}</b>
                   </i>
                 </div>
@@ -442,9 +499,30 @@
               </div>
             </ng-container>
 
+            <ng-container *ngIf="placeValueBlocksSection(child) as blocks">
+              <strong *ngIf="blocks.label">{{ blocks.label }}</strong>
+              <div class="visual-place-value-blocks" [attr.aria-label]="blocks.hundreds + (blocks.hundreds === 1 ? ' hundred, ' : ' hundreds, ') + blocks.tens + (blocks.tens === 1 ? ' ten, and ' : ' tens, and ') + blocks.ones + (blocks.ones === 1 ? ' one' : ' ones')">
+                <div class="place-value-block-group hundreds" *ngIf="blocks.hundreds">
+                  <span class="hundred-block" *ngFor="let item of range(blocks.hundreds)" aria-hidden="true"></span>
+                  <b>{{ blocks.hundreds }} {{ blocks.hundreds === 1 ? 'hundred' : 'hundreds' }}</b>
+                </div>
+                <div class="place-value-block-group tens" *ngIf="blocks.tens">
+                  <span class="ten-block" *ngFor="let item of range(blocks.tens)" aria-hidden="true"></span>
+                  <b>{{ blocks.tens }} {{ blocks.tens === 1 ? 'ten' : 'tens' }}</b>
+                </div>
+                <div class="place-value-block-group ones" *ngIf="blocks.ones">
+                  <span class="one-block" *ngFor="let item of range(blocks.ones)" aria-hidden="true"></span>
+                  <b>{{ blocks.ones }} {{ blocks.ones === 1 ? 'one' : 'ones' }}</b>
+                </div>
+              </div>
+              <small *ngIf="blocks.caption" class="visual-place-value-caption">{{ blocks.caption }}</small>
+            </ng-container>
+
             <ng-container *ngIf="dataTableSection(child) as table">
               <strong *ngIf="table.label">{{ table.label }}</strong>
-              <div class="visual-data-table" role="table">
+              <div class="visual-data-table" role="table"
+                [class.is-place-value-chart]="table.variant === 'place-value-chart'"
+                [class.is-hundred-chart]="table.variant === 'hundred-chart'">
                 <div
                   class="visual-data-row is-head"
                   role="row"
@@ -460,6 +538,9 @@
                     [class.is-cell-selected]="dataCellSelectionState(table, rowIndex, cellIndex) === 'selected'"
                     [class.is-cell-selection-correct]="dataCellSelectionState(table, rowIndex, cellIndex) === 'correct'"
                     [class.is-cell-selection-incorrect]="dataCellSelectionState(table, rowIndex, cellIndex) === 'incorrect'"
+                    [class.is-tone-red]="dataCellTone(table, rowIndex, cellIndex) === 'red'"
+                    [class.is-tone-green]="dataCellTone(table, rowIndex, cellIndex) === 'green'"
+                    [class.is-tone-blue]="dataCellTone(table, rowIndex, cellIndex) === 'blue'"
                     [attr.tabindex]="table.selectableCells ? 0 : null"
                     (click)="toggleDataCell(table, rowIndex, cellIndex, $event)"
                     (keydown.enter)="toggleDataCell(table, rowIndex, cellIndex, $event)">
@@ -542,7 +623,7 @@
           (input)="setInlineValue(array, 'label', 0, 0, token.answerIndex || 0, $any($event.target).value)" />
         <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
       </ng-container></strong>
-      <div class="visual-array" [ngClass]="'is-' + array.item" [class.is-source-known]="array.mode === 'solved'" [class.is-source-extra]="array.mode === 'blank'" [class.is-selectable]="mode === 'blank' && array.selectableCells" [style.gridTemplateColumns]="arrayColumns(array)">
+      <div class="visual-array" [ngClass]="'is-' + array.item" [class.is-tall]="array.rows > 6 && array.columns < 5" [class.is-source-known]="array.mode === 'solved'" [class.is-source-extra]="array.mode === 'blank'" [class.is-selectable]="mode === 'blank' && array.selectableCells" [style.gridTemplateColumns]="arrayColumns(array)">
         <span
           *ngFor="let cell of range(array.rows * array.columns); let cellIndex = index"
           [class.is-after-split]="arrayCellIsAfterSplit(array, cellIndex)"
@@ -602,12 +683,19 @@
       <div class="visual-line-plot">
         <div class="visual-line-plot-stacks" [style.gridTemplateColumns]="linePlotColumns(plot)">
           <div
-            *ngFor="let item of plot.values"
+            *ngFor="let item of plot.values; let itemIndex = index"
             class="visual-line-plot-stack"
-            [class.is-target]="item.target">
+            [class.is-target]="item.target"
+            [class.is-selection-correct]="linePlotSelectionState(plot, itemIndex) === 'correct'"
+            [class.is-selection-incorrect]="linePlotSelectionState(plot, itemIndex) === 'incorrect'">
             <span class="visual-line-plot-x" *ngFor="let x of linePlotXs(plot, item)">
-              {{ mode === 'blank' && !plot.showBlankValues ? '?' : 'X' }}
+              {{ mode === 'blank' && !plot.showBlankValues && !plot.selectableValues ? '?' : 'X' }}
             </span>
+            <div *ngIf="mode === 'blank' && plot.selectableValues" class="line-plot-adjusters">
+              <button type="button" (click)="adjustLinePlotValue(plot, itemIndex, -1)" [attr.aria-label]="'Remove an X at ' + item.label">−</button>
+              <b>{{ linePlotXs(plot, item).length }}</b>
+              <button type="button" (click)="adjustLinePlotValue(plot, itemIndex, 1)" [attr.aria-label]="'Add an X at ' + item.label">+</button>
+            </div>
           </div>
         </div>
         <div class="visual-line-plot-axis" [style.gridTemplateColumns]="linePlotColumns(plot)">
@@ -812,8 +900,18 @@
           <span
             *ngFor="let part of range(fractionStripCellCount(fractionStrip)); let partIndex = index"
             [class.is-shaded]="fractionStripIsShaded(fractionStrip, partIndex)"
+            [class.is-selectable]="mode === 'blank' && fractionStrip.selectableParts"
+            [class.is-selection-correct]="fractionStripSelectionState(fractionStrip, partIndex) === 'correct'"
+            [class.is-selection-incorrect]="fractionStripSelectionState(fractionStrip, partIndex) === 'incorrect'"
             [class.is-row-end]="fractionStripIsRowEnd(fractionStrip, partIndex)"
-            [class.has-row-below]="fractionStripHasRowBelow(fractionStrip, partIndex)">
+            [class.has-row-below]="fractionStripHasRowBelow(fractionStrip, partIndex)"
+            [attr.role]="fractionStrip.selectableParts ? 'button' : null"
+            [attr.tabindex]="mode === 'blank' && fractionStrip.selectableParts ? 0 : null"
+            [attr.aria-pressed]="fractionStrip.selectableParts ? fractionStripIsShaded(fractionStrip, partIndex) : null"
+            [attr.aria-label]="fractionStrip.selectableParts ? 'Part ' + (partIndex + 1) + ' of ' + fractionStripCellCount(fractionStrip) : null"
+            (click)="toggleFractionStripPart(fractionStrip, partIndex)"
+            (keydown.enter)="toggleFractionStripPart(fractionStrip, partIndex)"
+            (keydown.space)="toggleFractionStripPart(fractionStrip, partIndex); $event.preventDefault()">
             {{ fractionStripCellLabel(fractionStrip, partIndex) }}
           </span>
         </div>
@@ -823,7 +921,9 @@
 
     <ng-container *ngIf="dataTableSection(section) as table">
       <strong *ngIf="table.label">{{ table.label }}</strong>
-      <div class="visual-data-table" role="table">
+      <div class="visual-data-table" role="table"
+        [class.is-place-value-chart]="table.variant === 'place-value-chart'"
+        [class.is-hundred-chart]="table.variant === 'hundred-chart'">
         <div
           class="visual-data-row is-head"
           role="row"
@@ -839,6 +939,9 @@
             [class.is-cell-selected]="dataCellSelectionState(table, rowIndex, cellIndex) === 'selected'"
             [class.is-cell-selection-correct]="dataCellSelectionState(table, rowIndex, cellIndex) === 'correct'"
             [class.is-cell-selection-incorrect]="dataCellSelectionState(table, rowIndex, cellIndex) === 'incorrect'"
+            [class.is-tone-red]="dataCellTone(table, rowIndex, cellIndex) === 'red'"
+            [class.is-tone-green]="dataCellTone(table, rowIndex, cellIndex) === 'green'"
+            [class.is-tone-blue]="dataCellTone(table, rowIndex, cellIndex) === 'blue'"
             [attr.tabindex]="table.selectableCells ? 0 : null"
             (click)="toggleDataCell(table, rowIndex, cellIndex, $event)"
             (keydown.enter)="toggleDataCell(table, rowIndex, cellIndex, $event)">
@@ -1468,6 +1571,121 @@
       </figure>
     </ng-container>
 
+    <ng-container *ngIf="sourceModelSection(section) as sourceModel">
+      <strong *ngIf="sourceModel.label">{{ sourceModel.label }}</strong>
+      <figure class="visual-source-model" [style.maxWidth.px]="sourceModel.displayWidth || null">
+        <div class="visual-source-model-viewport" [style.aspectRatio]="sourceCropAspect(sourceModel)">
+          <img
+            [src]="sourceModel.src"
+            [alt]="sourceModel.alt"
+            [style.width]="sourceCropImageWidth(sourceModel)"
+            [style.left]="sourceCropImageLeft(sourceModel)"
+            [style.top]="sourceCropImageTop(sourceModel)">
+          <span
+            *ngFor="let annotation of sourceModel.annotations"
+            class="visual-source-model-annotation"
+            [ngClass]="'is-' + (annotation.tone || 'focus')"
+            [style.left.%]="annotation.x"
+            [style.top.%]="annotation.y"
+            [style.width.%]="annotation.width"
+            [style.height.%]="annotation.height">
+            <b *ngIf="annotation.label">{{ annotation.label }}</b>
+          </span>
+        </div>
+        <ol class="visual-source-model-reasoning" *ngIf="sourceModel.reasoning?.length">
+          <li *ngFor="let step of sourceModel.reasoning">
+            <span>{{ step.label }}</span>
+            <b *ngIf="step.expression">{{ step.expression }}</b>
+            <small *ngIf="step.explanation">{{ step.explanation }}</small>
+          </li>
+        </ol>
+        <figcaption *ngIf="sourceModel.caption">{{ sourceModel.caption }}</figcaption>
+      </figure>
+    </ng-container>
+
+    <ng-container *ngIf="officialOrganizerSection(section) as organizer">
+      <strong *ngIf="organizer.label">{{ organizer.label }}</strong>
+      <figure class="visual-official-organizer" [style.maxWidth.px]="organizer.displayWidth || null">
+        <div class="visual-official-organizer-viewport" [class.four-quadrant]="organizer.variant === 'four-quadrant'">
+          <span class="official-organizer-connector connector-n"></span>
+          <span class="official-organizer-connector connector-ne"></span>
+          <span class="official-organizer-connector connector-se"></span>
+          <span class="official-organizer-connector connector-s"></span>
+          <span class="official-organizer-connector connector-sw"></span>
+          <span class="official-organizer-connector connector-nw"></span>
+          <strong class="official-organizer-center">{{ organizer.centerLabel }}</strong>
+          <label
+            *ngFor="let field of organizer.fields; let fieldIndex = index"
+            class="official-organizer-field"
+            [style.left.%]="field.x"
+            [style.top.%]="field.y"
+            [style.width.%]="field.width"
+            [style.height.%]="field.height">
+            <span class="official-organizer-example">{{ field.label || 'Examples' }}</span>
+            <textarea
+              *ngIf="mode === 'blank'; else organizerAnswer"
+              rows="5"
+              [attr.aria-label]="field.ariaLabel"
+              [class.is-correct]="inlineState(field, 'organizer', fieldIndex, 0, 0, field.answer) === 'correct'"
+              [class.is-incorrect]="inlineState(field, 'organizer', fieldIndex, 0, 0, field.answer) === 'incorrect'"
+              (input)="setInlineValue(field, 'organizer', fieldIndex, 0, 0, $any($event.target).value)"></textarea>
+            <ng-template #organizerAnswer><b>{{ field.answer }}</b></ng-template>
+          </label>
+        </div>
+        <figcaption *ngIf="organizer.caption">{{ organizer.caption }}</figcaption>
+      </figure>
+    </ng-container>
+
+    <ng-container *ngIf="officialHotspotSection(section) as hotspotModel">
+      <strong *ngIf="hotspotModel.label">{{ hotspotModel.label }}</strong>
+      <figure class="visual-official-hotspot" [style.maxWidth.px]="hotspotModel.displayWidth || null">
+        <div class="visual-official-hotspot-viewport" [style.aspectRatio]="sourceCropAspect(hotspotModel)">
+          <img
+            [src]="hotspotModel.src"
+            [alt]="hotspotModel.alt"
+            [style.width]="sourceCropImageWidth(hotspotModel)"
+            [style.left]="sourceCropImageLeft(hotspotModel)"
+            [style.top]="sourceCropImageTop(hotspotModel)">
+          <button
+            *ngFor="let hotspot of hotspotModel.hotspots; let hotspotIndex = index"
+            type="button"
+            class="official-hotspot-control"
+            [class.is-selected]="officialHotspotSelected(hotspotModel, hotspotIndex)"
+            [style.left.%]="hotspot.x"
+            [style.top.%]="hotspot.y"
+            [style.width.%]="hotspot.width"
+            [style.height.%]="hotspot.height"
+            [attr.aria-pressed]="officialHotspotSelected(hotspotModel, hotspotIndex)"
+            (click)="toggleOfficialHotspot(hotspotModel, hotspotIndex)">
+            <span>{{ hotspot.label }}</span><b>{{ hotspot.value }}</b>
+          </button>
+        </div>
+        <div class="official-hotspot-equation" [class.is-complete]="officialHotspotComplete(hotspotModel)">
+          <span>{{ hotspotModel.equationPrompt }}</span>
+          <strong>{{ officialHotspotComplete(hotspotModel) ? hotspotModel.equationAnswer : 'Select all four sides' }}</strong>
+        </div>
+        <figcaption *ngIf="hotspotModel.caption">{{ hotspotModel.caption }}</figcaption>
+      </figure>
+    </ng-container>
+
+    <ng-container *ngIf="perimeterPathSection(section) as path">
+      <strong *ngIf="path.label">{{ path.label }}</strong>
+      <figure class="visual-perimeter-path">
+        <div class="perimeter-field" [class.is-complete]="perimeterPathComplete(path)">
+          <span class="perimeter-field-center">{{ path.contextLabel }}</span>
+          <button type="button" class="perimeter-side side-top" [class.is-selected]="perimeterSideSelected(path, 'top')" (click)="togglePerimeterSide(path, 'top')"><span>top</span><b>{{ path.top }}</b></button>
+          <button type="button" class="perimeter-side side-right" [class.is-selected]="perimeterSideSelected(path, 'right')" (click)="togglePerimeterSide(path, 'right')"><span>right</span><b>{{ path.right }}</b></button>
+          <button type="button" class="perimeter-side side-bottom" [class.is-selected]="perimeterSideSelected(path, 'bottom')" (click)="togglePerimeterSide(path, 'bottom')"><span>bottom</span><b>{{ path.bottom }}</b></button>
+          <button type="button" class="perimeter-side side-left" [class.is-selected]="perimeterSideSelected(path, 'left')" (click)="togglePerimeterSide(path, 'left')"><span>left</span><b>{{ path.left }}</b></button>
+        </div>
+        <div class="perimeter-equation" [class.is-complete]="perimeterPathComplete(path)">
+          <span>{{ path.equationPrompt }}</span>
+          <strong>{{ perimeterPathComplete(path) ? path.equationAnswer : 'Trace all four sides' }}</strong>
+        </div>
+        <figcaption *ngIf="path.caption">{{ path.caption }}</figcaption>
+      </figure>
+    </ng-container>
+
     <ng-container *ngIf="numberLineSection(section) as line">
       <strong *ngIf="line.label">{{ line.label }}</strong>
       <div
@@ -1475,16 +1693,19 @@
         [class.is-dense]="line.ticks.length >= 9"
         [class.is-vertical]="line.orientation === 'vertical'">
         <div>
-          <span
-            *ngFor="let tick of line.ticks"
-            [class.is-target]="tick.target"
-            [class.is-rounded]="tick.rounded">
-            {{ tick.label }}
-          </span>
+          <ng-container *ngFor="let tick of line.ticks">
+            <span
+              *ngIf="!line.targetMarker || tick.label !== line.targetMarker.label"
+              [class.is-target]="tick.target"
+              [class.is-rounded]="tick.rounded">
+              {{ tick.label }}
+            </span>
+          </ng-container>
           <i
             *ngIf="line.targetMarker as marker"
             class="visual-number-line-target"
-            [style.bottom.%]="marker.position">
+            [style.left.%]="line.orientation !== 'vertical' ? marker.position : null"
+            [style.bottom.%]="line.orientation === 'vertical' ? marker.position : null">
             <b>{{ marker.label }}</b>
           </i>
         </div>
@@ -1545,6 +1766,7 @@
               class="visual-inline-input"
               type="text"
               [attr.inputmode]="inlineInputMode(token.answer)"
+              [attr.aria-label]="inlineResponseLabel(equations.label, lineIndex, token.answerIndex || 0)"
               [class.is-correct]="inlineState(equations, 'line', lineIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
               [class.is-incorrect]="inlineState(equations, 'line', lineIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
               (input)="setInlineValue(equations, 'line', lineIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
@@ -1615,5 +1837,9 @@
     </ng-container>
   </article>
 
-  <footer *ngIf="spec.sourceNote">{{ spec.sourceNote }}</footer>
 </section>
+<aside class="visual-source-note" *ngIf="spec.sourceNote">
+  <strong>About this explanation</strong>
+  <span>{{ spec.sourceNote }}</span>
+</aside>
+</div>

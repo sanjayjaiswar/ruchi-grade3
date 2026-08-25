@@ -1,0 +1,255 @@
+import { NgFor, NgIf } from '@angular/common';
+import { Component, OnDestroy, ViewChild } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { ActivatedRoute, RouterLink } from '@angular/router';
+import { Subscription } from 'rxjs';
+import { ProblemVisualWorkspaceComponent } from '../../shared/problem-visual-workspace/problem-visual-workspace';
+import { Grade3CmcLesson, Grade3CmcUnit, GRADE3_CMC_UNITS } from '../syllabus-books/syllabus-books.data';
+import {
+  IREADY_VOLUME_TWO_LIBRARY,
+  IReadyV2LibraryGroup,
+  IReadyV2Session,
+  IReadyV2TeacherSpread,
+  IReadyV2UnitIdea,
+  v2LibraryForUnit,
+  v2OfficialUrlForPrintedPage,
+  v2OfficialUrlForViewerPage,
+  v2PagesForSession,
+  v2SessionsForLesson,
+  v2StudentImage,
+  v2StudentImageByViewerPage,
+  v2TeacherImage,
+  v2TeacherSpreadForPrintedPage,
+  v2TeacherViewerPages,
+  v2UnitIdeas,
+  v2ViewerPageForPrintedPage,
+  v2ViewerPagesForLibrary,
+  v2VisualForSession
+} from './iready-volume2';
+
+@Component({
+  selector: 'app-iready-volume2-page',
+  imports: [NgFor, NgIf, RouterLink, ProblemVisualWorkspaceComponent],
+  templateUrl: './iready-volume2-page.html',
+  styleUrl: './iready-volume2-page.css'
+})
+export class IReadyVolume2Page implements OnDestroy {
+  @ViewChild(ProblemVisualWorkspaceComponent) private visualWorkspace?: ProblemVisualWorkspaceComponent;
+  readonly units = GRADE3_CMC_UNITS.filter((unit) => unit.volume === 2);
+  readonly lessons = this.units.flatMap((unit) => unit.lessons);
+  readonly libraryGroups = IREADY_VOLUME_TWO_LIBRARY;
+  readonly studentImage = v2StudentImage;
+  readonly studentImageByViewerPage = v2StudentImageByViewerPage;
+  readonly teacherImage = v2TeacherImage;
+  readonly officialUrlForPrintedPage = v2OfficialUrlForPrintedPage;
+  readonly officialUrlForViewerPage = v2OfficialUrlForViewerPage;
+
+  unitFocus = false;
+  lessonFocus = false;
+  libraryFocus = false;
+  selectedUnitNumber = 4;
+  selectedLessonNumber = 20;
+  selectedSessionNumber = 1;
+  selectedPrintedPage = 475;
+  selectedLibraryKey = IREADY_VOLUME_TWO_LIBRARY[0].key;
+  selectedViewerPage = 1;
+  lessonMode: 'learn' | 'teacher' = 'teacher';
+  lessonFeedback = 'Source-backed visual teaching is open. Use Try one afterward for a short check.';
+  showLessonValidation = false;
+  private readonly visualCache = new Map<string, ReturnType<typeof v2VisualForSession>>();
+  private readonly subscriptions = new Subscription();
+
+  constructor(private readonly route: ActivatedRoute, private readonly title: Title) {
+    this.subscriptions.add(this.route.paramMap.subscribe((params) => {
+      const requestedUnit = Number(params.get('unitNumber'));
+      const requestedLesson = Number(params.get('lessonNumber'));
+      const requestedLibrary = params.get('groupKey');
+      this.lessonFocus = params.has('lessonNumber');
+      this.libraryFocus = !this.lessonFocus && params.has('groupKey');
+      this.unitFocus = !this.lessonFocus && !this.libraryFocus && params.has('unitNumber');
+      if (this.lessonFocus) {
+        const lesson = this.findLesson(requestedLesson) ?? this.lessons[0];
+        this.selectedLessonNumber = lesson.number;
+        this.selectedUnitNumber = this.unitForLesson(lesson.number)?.number ?? 4;
+        this.selectedSessionNumber = 1;
+        this.selectedPrintedPage = v2PagesForSession(this.selectedSession)[0];
+      } else if (this.libraryFocus) {
+        const group = IREADY_VOLUME_TWO_LIBRARY.find((candidate) => candidate.key === requestedLibrary) ?? IREADY_VOLUME_TWO_LIBRARY[0];
+        this.selectedLibraryKey = group.key;
+        this.selectedViewerPage = group.viewerStart;
+        this.selectedUnitNumber = group.unit ?? 4;
+      } else if (this.unitFocus) {
+        this.selectedUnitNumber = this.findUnit(requestedUnit)?.number ?? 4;
+        this.selectedLessonNumber = this.selectedUnit.lessons[0].number;
+      }
+      this.lessonMode = 'teacher';
+      this.updateTitle();
+    }));
+  }
+
+  ngOnDestroy(): void {
+    this.subscriptions.unsubscribe();
+  }
+
+  get selectedUnit(): Grade3CmcUnit {
+    return this.findUnit(this.selectedUnitNumber) ?? this.units[0];
+  }
+
+  get selectedLesson(): Grade3CmcLesson {
+    return this.findLesson(this.selectedLessonNumber) ?? this.lessons[0];
+  }
+
+  get activeSessions(): readonly IReadyV2Session[] {
+    return v2SessionsForLesson(this.selectedLessonNumber);
+  }
+
+  get selectedSession(): IReadyV2Session {
+    const session = this.activeSessions.find((candidate) => candidate.session === this.selectedSessionNumber) ?? this.activeSessions[0];
+    if (!session) throw new Error(`No official Volume 2 session for Lesson ${this.selectedLessonNumber}.`);
+    return session;
+  }
+
+  get selectedSessionPages(): readonly number[] {
+    return v2PagesForSession(this.selectedSession);
+  }
+
+  get selectedTeacherSpread(): IReadyV2TeacherSpread | undefined {
+    return v2TeacherSpreadForPrintedPage(this.selectedPrintedPage);
+  }
+
+  get selectedTeacherViewerPages(): readonly number[] {
+    return this.selectedTeacherSpread ? v2TeacherViewerPages(this.selectedTeacherSpread) : [];
+  }
+
+  get selectedVisual() {
+    const solved = this.lessonMode === 'teacher';
+    const key = `${this.selectedSession.lesson}-${this.selectedSession.session}-${solved ? 'solved' : 'blank'}`;
+    const cached = this.visualCache.get(key);
+    if (cached) return cached;
+    const visual = v2VisualForSession(this.selectedSession, solved);
+    this.visualCache.set(key, visual);
+    return visual;
+  }
+
+  get selectedLibrary(): IReadyV2LibraryGroup {
+    return IREADY_VOLUME_TWO_LIBRARY.find((group) => group.key === this.selectedLibraryKey) ?? IREADY_VOLUME_TWO_LIBRARY[0];
+  }
+
+  get selectedLibraryPages(): readonly number[] {
+    return v2ViewerPagesForLibrary(this.selectedLibrary);
+  }
+
+  get previousLesson(): Grade3CmcLesson | undefined {
+    const index = this.lessons.findIndex((lesson) => lesson.number === this.selectedLessonNumber);
+    return index > 0 ? this.lessons[index - 1] : undefined;
+  }
+
+  get nextLesson(): Grade3CmcLesson | undefined {
+    const index = this.lessons.findIndex((lesson) => lesson.number === this.selectedLessonNumber);
+    return index >= 0 && index < this.lessons.length - 1 ? this.lessons[index + 1] : undefined;
+  }
+
+  unitIdeas(unit: number): readonly IReadyV2UnitIdea[] {
+    return v2UnitIdeas(unit);
+  }
+
+  unitLibrary(unit: number): readonly IReadyV2LibraryGroup[] {
+    return v2LibraryForUnit(unit);
+  }
+
+  totalSessions(unit: Grade3CmcUnit): number {
+    return unit.lessons.reduce((sum, lesson) => sum + lesson.sessions, 0);
+  }
+
+  selectSession(sessionNumber: number): void {
+    this.selectedSessionNumber = sessionNumber;
+    this.selectedPrintedPage = v2PagesForSession(this.selectedSession)[0];
+    this.lessonMode = 'teacher';
+    this.showLessonValidation = false;
+    this.lessonFeedback = 'Source-backed visual teaching is open. Use Try one afterward for a short check.';
+  }
+
+  selectPrintedPage(page: number): void {
+    this.selectedPrintedPage = page;
+  }
+
+  selectLessonMode(mode: 'learn' | 'teacher'): void {
+    this.lessonMode = mode;
+    this.showLessonValidation = false;
+    this.lessonFeedback = mode === 'teacher'
+      ? 'Source-backed visual teaching is open. Use Try one afterward for a short check.'
+      : 'Try the focused activity, then check the discrete responses or return to visual teaching.';
+    if (mode === 'teacher') {
+      requestAnimationFrame(() => this.visualWorkspace?.replayAnimation());
+    }
+  }
+
+  checkLessonWork(): void {
+    this.showLessonValidation = true;
+    queueMicrotask(() => {
+      const status = this.visualWorkspace?.responseStatus();
+      if (!status || status.total === 0) {
+        this.lessonFeedback = 'This visual has no discrete response to score. Use the model, then compare with Show solution.';
+      } else if (status.answered === 0) {
+        this.lessonFeedback = 'Start by entering or selecting a response in the visual.';
+      } else if (status.incorrect === 0 && status.answered === status.total) {
+        this.lessonFeedback = `All ${status.total} responses match the official model.`;
+      } else {
+        this.lessonFeedback = `${status.correct} of ${status.total} responses match. Revisit the highlighted response before opening the solution.`;
+      }
+    });
+  }
+
+  replayLessonVisual(): void {
+    this.visualWorkspace?.replayAnimation();
+    this.lessonFeedback = 'The complete visual teaching model has been replayed.';
+  }
+
+  selectViewerPage(viewerPage: number): void {
+    this.selectedViewerPage = viewerPage;
+  }
+
+  printedPageForViewer(viewerPage: number): number | undefined {
+    return viewerPage >= 13 && viewerPage <= 335 ? viewerPage + 454 : undefined;
+  }
+
+  pageLabel(viewerPage: number): string {
+    const printed = this.printedPageForViewer(viewerPage);
+    return printed ? `Printed p. ${printed}` : `Book p. ${viewerPage}`;
+  }
+
+  familyPages(lesson: Grade3CmcLesson): string {
+    return `${lesson.printPage}–${lesson.printPage + 1}`;
+  }
+
+  lessonUrl(lesson: Grade3CmcLesson): string {
+    return v2OfficialUrlForPrintedPage(lesson.printPage);
+  }
+
+  ideaUrl(idea: IReadyV2UnitIdea): string {
+    return v2OfficialUrlForViewerPage(idea.viewerPage);
+  }
+
+  viewerPageForPrinted(printedPage: number): number {
+    return v2ViewerPageForPrintedPage(printedPage);
+  }
+
+  private findUnit(number: number): Grade3CmcUnit | undefined {
+    return this.units.find((unit) => unit.number === number);
+  }
+
+  private findLesson(number: number): Grade3CmcLesson | undefined {
+    return this.lessons.find((lesson) => lesson.number === number);
+  }
+
+  private unitForLesson(lessonNumber: number): Grade3CmcUnit | undefined {
+    return this.units.find((unit) => unit.lessons.some((lesson) => lesson.number === lessonNumber));
+  }
+
+  private updateTitle(): void {
+    if (this.lessonFocus) this.title.setTitle(`Lesson ${this.selectedLessonNumber} · i-Ready Volume 2 | Ruchika Grade 3`);
+    else if (this.unitFocus) this.title.setTitle(`Unit ${this.selectedUnitNumber} · i-Ready Volume 2 | Ruchika Grade 3`);
+    else if (this.libraryFocus) this.title.setTitle(`${this.selectedLibrary.title} · i-Ready Volume 2 | Ruchika Grade 3`);
+    else this.title.setTitle('Volume 2 · i-Ready Interactive | Ruchika Grade 3');
+  }
+}

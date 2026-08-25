@@ -23,12 +23,17 @@ import type {
   ProblemVisualNoteSection,
   ProblemVisualNumberBondSection,
   ProblemVisualNumberLineSection,
+  ProblemVisualOfficialHotspotSection,
+  ProblemVisualOfficialOrganizerSection,
+  ProblemVisualPerimeterPathSection,
+  ProblemVisualPlaceValueBlocksSection,
   ProblemVisualRelatedFactsSection,
   ProblemVisualSection,
   ProblemVisualSolutionPartsSection,
   ProblemVisualSpec,
   ProblemVisualSourceDirectionsSection,
   ProblemVisualSourceCropSection,
+  ProblemVisualSourceModelSection,
   ProblemVisualSourceResponseWorkspaceSection,
   ProblemVisualStopwatchSection,
   ProblemVisualTapeSection,
@@ -46,6 +51,9 @@ import type {
 export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChanges {
   @Input({ required: true }) spec?: ProblemVisualSpec;
   @Input() mode: 'blank' | 'solved' = 'blank';
+  @Input() revealStage?: number;
+  @Input() focusRevealStage = false;
+  @Input() showValidation = false;
   private animationSignature = '';
   private interactionSignature = '';
   private readonly interactiveMatchPairs = new Map<number, number>();
@@ -58,6 +66,10 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
   >();
   private readonly selectedDataCells = new WeakMap<object, Set<string>>();
   private readonly selectedArrayCells = new WeakMap<object, Set<number>>();
+  private readonly selectedFractionCells = new WeakMap<object, Set<number>>();
+  private readonly selectedOfficialHotspots = new WeakMap<object, Set<number>>();
+  private readonly selectedPerimeterSides = new WeakMap<object, Set<string>>();
+  private readonly interactiveLinePlotCounts = new WeakMap<object, number[]>();
   private readonly interactiveOwnerIds = new WeakMap<object, number>();
   private nextInteractiveOwnerId = 1;
   selectedExpressionTopIndex?: number;
@@ -66,11 +78,18 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
   constructor(private readonly elementRef: ElementRef<HTMLElement>) {}
 
   visibleSections(sections: ProblemVisualSection[] = []): ProblemVisualSection[] {
-    return sections;
+    if (this.mode !== 'solved' || this.revealStage === undefined) {
+      return sections;
+    }
+    if (this.focusRevealStage) {
+      const stageIndex = Math.max(0, Math.min(sections.length - 1, this.revealStage - 1));
+      return sections.slice(stageIndex, stageIndex + 1);
+    }
+    return sections.slice(0, Math.max(0, Math.min(sections.length, this.revealStage)));
   }
 
   ngOnChanges(): void {
-    const nextSignature = `${this.mode}|${this.spec?.title ?? ''}|${this.spec?.sections.map((section) => section.kind).join(',') ?? ''}`;
+    const nextSignature = `${this.mode}|${this.revealStage ?? 'all'}|${this.spec?.title ?? ''}|${this.spec?.sections.map((section) => section.kind).join(',') ?? ''}`;
     if (nextSignature === this.interactionSignature) {
       return;
     }
@@ -85,7 +104,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
 
   ngAfterViewChecked(): void {
     this.updateLibraryClocks();
-    const signature = `${this.mode}|${this.spec?.title ?? ''}|${this.spec?.sections.map((section) => section.kind).join(',') ?? ''}`;
+    const signature = `${this.mode}|${this.revealStage ?? 'all'}|${this.spec?.title ?? ''}|${this.spec?.sections.map((section) => section.kind).join(',') ?? ''}`;
     if (signature === this.animationSignature) {
       return;
     }
@@ -96,6 +115,10 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
 
   arraySection(section: ProblemVisualSection): ProblemVisualArraySection | undefined {
     return section.kind === 'array' ? section : undefined;
+  }
+
+  placeValueBlocksSection(section: ProblemVisualSection): ProblemVisualPlaceValueBlocksSection | undefined {
+    return section.kind === 'place-value-blocks' ? section : undefined;
   }
 
   relatedFactsSection(section: ProblemVisualSection): ProblemVisualRelatedFactsSection | undefined {
@@ -214,6 +237,55 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
     return section.kind === 'source-crop' ? section : undefined;
   }
 
+  sourceModelSection(section: ProblemVisualSection): ProblemVisualSourceModelSection | undefined {
+    return section.kind === 'source-model' ? section : undefined;
+  }
+
+  officialOrganizerSection(section: ProblemVisualSection): ProblemVisualOfficialOrganizerSection | undefined {
+    return section.kind === 'official-organizer' ? section : undefined;
+  }
+
+  perimeterPathSection(section: ProblemVisualSection): ProblemVisualPerimeterPathSection | undefined {
+    return section.kind === 'perimeter-path' ? section : undefined;
+  }
+
+  togglePerimeterSide(section: ProblemVisualPerimeterPathSection, side: string): void {
+    if (this.mode === 'solved') return;
+    const selected = this.selectedPerimeterSides.get(section) ?? new Set<string>();
+    selected.has(side) ? selected.delete(side) : selected.add(side);
+    this.selectedPerimeterSides.set(section, selected);
+  }
+
+  perimeterSideSelected(section: ProblemVisualPerimeterPathSection, side: string): boolean {
+    return this.mode === 'solved' || this.selectedPerimeterSides.get(section)?.has(side) === true;
+  }
+
+  perimeterPathComplete(section: ProblemVisualPerimeterPathSection): boolean {
+    return this.mode === 'solved' || this.selectedPerimeterSides.get(section)?.size === 4;
+  }
+
+  officialHotspotSection(section: ProblemVisualSection): ProblemVisualOfficialHotspotSection | undefined {
+    return section.kind === 'official-hotspot-model' ? section : undefined;
+  }
+
+  toggleOfficialHotspot(section: ProblemVisualOfficialHotspotSection, index: number): void {
+    if (this.mode === 'solved') return;
+    let selected = this.selectedOfficialHotspots.get(section);
+    if (!selected) {
+      selected = new Set<number>();
+      this.selectedOfficialHotspots.set(section, selected);
+    }
+    selected.has(index) ? selected.delete(index) : selected.add(index);
+  }
+
+  officialHotspotSelected(section: ProblemVisualOfficialHotspotSection, index: number): boolean {
+    return this.mode === 'solved' || Boolean(this.selectedOfficialHotspots.get(section)?.has(index));
+  }
+
+  officialHotspotComplete(section: ProblemVisualOfficialHotspotSection): boolean {
+    return this.mode === 'solved' || this.selectedOfficialHotspots.get(section)?.size === section.hotspots.length;
+  }
+
   unitFormWorkspaceSection(section: ProblemVisualSection): ProblemVisualUnitFormWorkspaceSection | undefined {
     return section.kind === 'unit-form-workspace' ? section : undefined;
   }
@@ -251,6 +323,18 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
       return 'selected';
     }
     return section.correctCellKeys.includes(key) ? 'correct' : 'incorrect';
+  }
+
+  dataCellTone(
+    section: ProblemVisualDataTableSection,
+    row: number,
+    column: number
+  ): 'red' | 'green' | 'blue' | undefined {
+    const key = `${row}:${column}`;
+    if (section.toneCellKeys?.red?.includes(key)) return 'red';
+    if (section.toneCellKeys?.green?.includes(key)) return 'green';
+    if (section.toneCellKeys?.blue?.includes(key)) return 'blue';
+    return undefined;
   }
 
   dataCellHasDrawingWorkspace(section: ProblemVisualDataTableSection, row: number, column: number): boolean {
@@ -485,11 +569,13 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
     if (!value?.trim()) {
       return 'unanswered';
     }
-    return this.normalizeInlineAnswer(value) === this.normalizeInlineAnswer(answer) ? 'correct' : 'incorrect';
+    const normalizedValue = this.normalizeInlineAnswer(value);
+    const acceptedAnswers = answer.split('||').map((candidate) => this.normalizeInlineAnswer(candidate));
+    return acceptedAnswers.includes(normalizedValue) ? 'correct' : 'incorrect';
   }
 
   inlineInputMode(answer?: string): 'numeric' | 'text' {
-    return answer && /^[$¢]?\s*-?\d+(?:\.\d+)?\s*(?:[$¢]|cm|g|kg|mL|L|minutes?|seconds?)?$/i.test(answer)
+    return answer && answer.split('||').every((candidate) => /^[$¢]?\s*-?\d+(?:\.\d+)?\s*(?:[$¢]|cm|g|kg|mL|L|minutes?|seconds?)?$/i.test(candidate))
       ? 'numeric'
       : 'text';
   }
@@ -521,6 +607,24 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
     return selected;
   }
 
+  private fractionStripSelections(section: ProblemVisualFractionStripSection): Set<number> {
+    let selected = this.selectedFractionCells.get(section);
+    if (!selected) {
+      selected = new Set<number>();
+      this.selectedFractionCells.set(section, selected);
+    }
+    return selected;
+  }
+
+  private linePlotCounts(section: ProblemVisualLinePlotSection): number[] {
+    let counts = this.interactiveLinePlotCounts.get(section);
+    if (!counts) {
+      counts = section.values.map(() => 0);
+      this.interactiveLinePlotCounts.set(section, counts);
+    }
+    return counts;
+  }
+
   private sketchPoint(canvas: HTMLCanvasElement, event: PointerEvent): { x: number; y: number } {
     const bounds = canvas.getBoundingClientRect();
     return {
@@ -541,7 +645,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
       .replace(/\s+/g, ' ');
   }
 
-  sourceCropAspect(section: ProblemVisualSourceCropSection): string {
+  sourceCropAspect(section: ProblemVisualSourceCropSection | ProblemVisualSourceModelSection | ProblemVisualOfficialHotspotSection): string {
     return `${section.crop.width} / ${section.crop.height}`;
   }
 
@@ -549,15 +653,15 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
     return Math.max(180, Math.round(1200 * section.crop.height / section.crop.width));
   }
 
-  sourceCropImageWidth(section: ProblemVisualSourceCropSection): string {
+  sourceCropImageWidth(section: ProblemVisualSourceCropSection | ProblemVisualSourceModelSection | ProblemVisualOfficialHotspotSection): string {
     return `${section.imageWidth / section.crop.width * 100}%`;
   }
 
-  sourceCropImageLeft(section: ProblemVisualSourceCropSection): string {
+  sourceCropImageLeft(section: ProblemVisualSourceCropSection | ProblemVisualSourceModelSection | ProblemVisualOfficialHotspotSection): string {
     return `${-section.crop.x / section.crop.width * 100}%`;
   }
 
-  sourceCropImageTop(section: ProblemVisualSourceCropSection): string {
+  sourceCropImageTop(section: ProblemVisualSourceCropSection | ProblemVisualSourceModelSection | ProblemVisualOfficialHotspotSection): string {
     return `${-section.crop.y / section.crop.height * 100}%`;
   }
 
@@ -717,7 +821,57 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
   }
 
   fractionStripIsShaded(section: ProblemVisualFractionStripSection, index: number): boolean {
-    return this.mode === 'solved' && index < Math.max(0, section.numerator);
+    if (this.mode === 'solved' || section.showGivenShading) return index < Math.max(0, section.numerator);
+    return this.fractionStripSelections(section).has(index);
+  }
+
+  toggleFractionStripPart(section: ProblemVisualFractionStripSection, index: number): void {
+    if (this.mode !== 'blank' || !section.selectableParts) return;
+    const selected = this.fractionStripSelections(section);
+    selected.has(index) ? selected.delete(index) : selected.add(index);
+  }
+
+  fractionStripSelectionState(section: ProblemVisualFractionStripSection, index: number): 'correct' | 'incorrect' | 'selected' | 'unselected' {
+    if (!this.fractionStripSelections(section).has(index)) return 'unselected';
+    if (!this.showValidation || section.correctSelectedParts === undefined) return 'selected';
+    return index < section.correctSelectedParts ? 'correct' : 'incorrect';
+  }
+
+  fractionStripIsComplete(section: ProblemVisualFractionStripSection): boolean {
+    const expected = section.correctSelectedParts;
+    const selected = this.fractionStripSelections(section);
+    return expected !== undefined
+      && selected.size === expected
+      && [...selected].every((index) => index < expected);
+  }
+
+  responseStatus(): { answered: number; correct: number; incorrect: number; total: number } {
+    const inputs = Array.from(this.elementRef.nativeElement.querySelectorAll<HTMLInputElement>('input'));
+    const answeredInputs = inputs.filter((input) => input.value.trim().length > 0);
+    const fractionSections = (this.spec?.sections ?? []).filter(
+      (section): section is ProblemVisualFractionStripSection => section.kind === 'fraction-strip' && Boolean(section.selectableParts)
+    );
+    const answeredFractions = fractionSections.filter((section) => this.fractionStripSelections(section).size > 0);
+    const correctFractions = answeredFractions.filter((section) => this.fractionStripIsComplete(section));
+    const linePlotSections = (this.spec?.sections ?? []).filter(
+      (section): section is ProblemVisualLinePlotSection => section.kind === 'line-plot' && Boolean(section.selectableValues)
+    );
+    const linePlotResponses = linePlotSections.flatMap((section) =>
+      this.linePlotCounts(section).map((count, index) => ({ count, correct: section.values[index]?.correctValue ?? 0 }))
+    );
+    const answeredLinePlots = linePlotResponses.filter((response) => response.count > 0 || response.correct === 0);
+    const correctLinePlots = answeredLinePlots.filter((response) => response.count === response.correct);
+    return {
+      answered: answeredInputs.length + answeredFractions.length + answeredLinePlots.length,
+      correct: answeredInputs.filter((input) => input.classList.contains('is-correct')).length + correctFractions.length + correctLinePlots.length,
+      incorrect: answeredInputs.filter((input) => input.classList.contains('is-incorrect')).length + answeredFractions.length - correctFractions.length + answeredLinePlots.length - correctLinePlots.length,
+      total: inputs.length + fractionSections.length + linePlotResponses.length
+    };
+  }
+
+  replayAnimation(): void {
+    this.animationSignature = '';
+    queueMicrotask(() => this.playWorkspaceAnimation());
   }
 
   fractionStripIsRowEnd(section: ProblemVisualFractionStripSection, index: number): boolean {
@@ -733,6 +887,11 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
       return '';
     }
     return section.unitLabel ?? `1/${section.denominator}`;
+  }
+
+  inlineResponseLabel(context: string | undefined, lineIndex: number, answerIndex: number): string {
+    const label = context?.trim() || 'Response';
+    return `${label}, line ${lineIndex + 1}, blank ${answerIndex + 1}`;
   }
 
 
@@ -784,6 +943,10 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
   }
 
   linePlotXs(section: ProblemVisualLinePlotSection, item: ProblemVisualLinePlotSection['values'][number]): number[] {
+    if (this.mode === 'blank' && section.selectableValues) {
+      const index = section.values.indexOf(item);
+      return this.range(this.linePlotCounts(section)[index] ?? 0, 12);
+    }
     if (this.mode === 'blank' && !section.showBlankValues) {
       return [];
     }
@@ -791,6 +954,17 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
     const scale = scaleLinear().domain([0, maxValue]).range([0, Math.min(maxValue, 12)]);
     const count = Math.round(scale(item.value ?? 0));
     return this.range(Math.max(0, count), 12);
+  }
+
+  adjustLinePlotValue(section: ProblemVisualLinePlotSection, index: number, change: number): void {
+    if (this.mode !== 'blank' || !section.selectableValues) return;
+    const counts = this.linePlotCounts(section);
+    counts[index] = Math.max(0, Math.min(12, (counts[index] ?? 0) + change));
+  }
+
+  linePlotSelectionState(section: ProblemVisualLinePlotSection, index: number): 'correct' | 'incorrect' | 'unvalidated' {
+    if (!this.showValidation) return 'unvalidated';
+    return (this.linePlotCounts(section)[index] ?? 0) === (section.values[index]?.correctValue ?? 0) ? 'correct' : 'incorrect';
   }
 
   chartValueLabel(section: ProblemVisualDataChartSection, item: ProblemVisualDataChartSection['values'][number]): string {
@@ -847,9 +1021,6 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
 
   private playWorkspaceAnimation(): void {
     const host = this.elementRef.nativeElement;
-    const keepTextOpaque = Boolean(host.closest(
-      '.lesson-m2-l6, .lesson-m2-l7, .lesson-m2-l8, .lesson-m2-l9, .lesson-m2-l10, .lesson-m2-l11, .lesson-m2-l12, .lesson-m2-l13, .lesson-m2-l14, .lesson-m2-l15, .lesson-m2-l16, .lesson-m2-l17, .lesson-m2-l18, .lesson-m2-l19, .lesson-m2-l20, .lesson-m2-l21'
-    ));
     const sections = Array.from(host.querySelectorAll<HTMLElement>('.visual-section'));
     const arrayCells = Array.from(host.querySelectorAll<HTMLElement>('.visual-array span'));
     const tapeParts = Array.from(host.querySelectorAll<HTMLElement>('.visual-tape span, .visual-fraction-strip span'));
@@ -865,6 +1036,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
     const decoderSlots = Array.from(host.querySelectorAll<HTMLElement>('.unknown-riddle-decoder span'));
     const responseLines = Array.from(host.querySelectorAll<HTMLElement>('.source-response-lines > span'));
     const instructionalCards = Array.from(host.querySelectorAll<HTMLElement>('.visual-sub-card'));
+    const sourceModelItems = Array.from(host.querySelectorAll<HTMLElement>('.visual-source-model-annotation, .visual-source-model-reasoning li'));
 
     const allAnimatedItems = [
       ...sections,
@@ -881,7 +1053,8 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
       ...riddlePairs,
       ...decoderSlots,
       ...responseLines,
-      ...instructionalCards
+      ...instructionalCards,
+      ...sourceModelItems
     ];
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       allAnimatedItems.forEach((element) => {
@@ -893,7 +1066,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
 
     if (sections.length) {
       animate(sections, {
-        opacity: keepTextOpaque ? 1 : [0, 1],
+        opacity: 1,
         translateY: [10, 0],
         duration: 320,
         delay: stagger(45),
@@ -903,7 +1076,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
 
     if (arrayCells.length) {
       animate(arrayCells, {
-        opacity: keepTextOpaque ? 1 : [0, 1],
+        opacity: 1,
         scale: [0.6, 1],
         duration: 420,
         delay: stagger(16, { from: 'first' }),
@@ -911,9 +1084,20 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
       });
     }
 
+    if (sourceModelItems.length) {
+      animate(sourceModelItems, {
+        opacity: 1,
+        translateY: [8, 0],
+        scale: [0.97, 1],
+        duration: 420,
+        delay: stagger(90),
+        ease: 'out(3)'
+      });
+    }
+
     if (tapeParts.length) {
       animate(tapeParts, {
-        opacity: keepTextOpaque ? 1 : [0, 1],
+        opacity: 1,
         scaleX: [0.72, 1],
         duration: 360,
         delay: stagger(28),
@@ -923,7 +1107,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
 
     if (matchCards.length) {
       animate(matchCards, {
-        opacity: keepTextOpaque ? 1 : [0, 1],
+        opacity: 1,
         translateY: [8, 0],
         duration: 340,
         delay: stagger(24),
@@ -934,7 +1118,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
     const rowItems = [...tableRows, ...equations, ...measurementItems];
     if (rowItems.length) {
       animate(rowItems, {
-        opacity: keepTextOpaque ? 1 : [0, 1],
+        opacity: 1,
         translateX: [-8, 0],
         duration: 320,
         delay: stagger(24),
@@ -944,7 +1128,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
 
     if (numberLineItems.length) {
       animate(numberLineItems, {
-        opacity: keepTextOpaque ? 1 : [0, 1],
+        opacity: 1,
         translateX: [-10, 0],
         scale: [0.88, 1],
         duration: 360,
@@ -955,7 +1139,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
 
     if (diagramItems.length) {
       animate(diagramItems, {
-        opacity: keepTextOpaque ? 1 : [0, 1],
+        opacity: 1,
         scale: [0.82, 1],
         duration: 420,
         delay: stagger(22),
@@ -965,7 +1149,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
 
     if (unitMarkers.length) {
       animate(unitMarkers, {
-        opacity: keepTextOpaque ? 1 : [0, 1],
+        opacity: 1,
         scale: [0.68, 1],
         duration: 360,
         delay: stagger(70),
@@ -975,7 +1159,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
 
     if (unitFormLines.length) {
       animate(unitFormLines, {
-        opacity: keepTextOpaque ? 1 : [0, 1],
+        opacity: 1,
         translateX: [-10, 0],
         duration: 340,
         delay: stagger(85, { start: 180 }),
@@ -985,7 +1169,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
 
     if (riddlePairs.length) {
       animate(riddlePairs, {
-        opacity: keepTextOpaque ? 1 : [0, 1],
+        opacity: 1,
         translateY: [8, 0],
         duration: 330,
         delay: stagger(55),
@@ -995,7 +1179,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
 
     if (decoderSlots.length) {
       animate(decoderSlots, {
-        opacity: keepTextOpaque ? 1 : [0, 1],
+        opacity: 1,
         scale: [0.82, 1],
         duration: 300,
         delay: stagger(45, { start: 300 }),
@@ -1009,7 +1193,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
     ];
     if (workedResponseItems.length) {
       animate(workedResponseItems, {
-        opacity: keepTextOpaque ? 1 : [0, 1],
+        opacity: 1,
         translateY: [8, 0],
         duration: 340,
         delay: stagger(70),
@@ -1025,7 +1209,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
   private updateLibraryClocks(): void {
     this.elementRef.nativeElement.querySelectorAll<HTMLElement>('.workspace-library-clock[data-hour][data-minute]').forEach((host) => {
       if (!host.querySelector('analog-clock')) {
-        host.innerHTML = '<analog-clock aria-hidden="true" indices marker="·" marker-hour="●" numerals="12"></analog-clock>';
+        host.innerHTML = '<analog-clock aria-hidden="true" indices="hours" marker="•" marker-hour="●" numerals="4"></analog-clock>';
       }
       const clock = host.querySelector<HTMLElement>('analog-clock');
       if (!clock) {
@@ -1042,6 +1226,10 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
     clock.style.width = '126px';
     clock.style.height = '126px';
     clock.style.display = 'block';
+    clock.style.boxSizing = 'border-box';
+    clock.style.border = '2px solid #2f69ec';
+    clock.style.borderRadius = '50%';
+    clock.style.boxShadow = '0 4px 12px rgba(47, 105, 236, 0.14)';
     clock.style.colorScheme = 'light';
     clock.style.setProperty('--analog-clock-bg', 'radial-gradient(circle at 50% 50%, #ffffff 0 70%, #f5f5f5 71% 100%)');
     clock.style.setProperty('--analog-clock-c', '#202124');
@@ -1052,7 +1240,9 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
     clock.style.setProperty('--analog-clock-cap-sz', '7cqi');
     clock.style.setProperty('--analog-clock-indices-c', '#5f6368');
     clock.style.setProperty('--analog-clock-indices-hour-c', '#202124');
-    clock.style.setProperty('--analog-clock-indices-fs', '5cqi');
+    clock.style.setProperty('--analog-clock-indices-fs', '4.5cqi');
+    clock.style.setProperty('--analog-clock-indices-p', '7px');
+    clock.style.setProperty('--analog-clock-numerals-m', '8px');
     clock.style.setProperty('--analog-clock-fs', '7cqi');
     clock.style.setProperty('--analog-clock-label-fs', '0');
   }

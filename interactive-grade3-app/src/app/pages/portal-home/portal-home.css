@@ -331,6 +331,10 @@
   color: var(--cyan-dark);
 }
 
+.interactive-math-details a {
+  color: inherit;
+}
+
 .reading-details li {
   background: #ffedd5;
   color: var(--orange-dark);

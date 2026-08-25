@@ -1,105 +1,46 @@
 import { NgFor, NgIf } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, OnDestroy } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, OnDestroy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { animate, stagger } from 'animejs';
 import { Subscription } from 'rxjs';
+import { ProblemVisualWorkspaceComponent } from '../../shared/problem-visual-workspace/problem-visual-workspace';
 import { Grade3CmcLesson, Grade3CmcUnit, GRADE3_CMC_UNITS } from '../syllabus-books/syllabus-books.data';
-
-interface ArithmeticSpec {
-  prompt: string;
-  left: number;
-  right: number;
-  operation: '+' | '−';
-  answer: number;
-  hint: string;
-  strategy: string;
-  jumps?: string[];
-}
-
-interface LessonSession {
-  number: number;
-  phase: 'Explore' | 'Develop' | 'Refine';
-  title: string;
-  printPages: string;
-  viewerPage: number;
-  arithmetic?: ArithmeticSpec;
-}
-
-interface VerifiedVisualEvidence {
-  readonly lessonNumber: number;
-  readonly sessionNumber: number;
-  readonly printPages: string;
-  readonly viewerPage: number;
-  readonly model: 'place-value-chart' | 'nearest-ten-line' | 'base-ten-blocks' | 'nearest-hundred-line';
-}
-
-interface VerifiedUnitIdea {
-  readonly title: string;
-  readonly understanding: string;
-  readonly viewerPage: number;
-}
-
-const VERIFIED_VISUAL_EVIDENCE: Readonly<Record<string, VerifiedVisualEvidence>> = Object.freeze({
-  '1:1': { lessonNumber: 1, sessionNumber: 1, printPages: '9–12', viewerPage: 21, model: 'place-value-chart' },
-  '1:2': { lessonNumber: 1, sessionNumber: 2, printPages: '13–18', viewerPage: 25, model: 'nearest-ten-line' },
-  '1:3': { lessonNumber: 1, sessionNumber: 3, printPages: '19–24', viewerPage: 31, model: 'base-ten-blocks' },
-  '1:4': { lessonNumber: 1, sessionNumber: 4, printPages: '25–28', viewerPage: 37, model: 'nearest-hundred-line' }
-});
-
-const VERIFIED_UNIT_IDEAS: Readonly<Record<number, readonly VerifiedUnitIdea[]>> = Object.freeze({
-  1: [
-    {
-      title: 'Number Flexibility to 100 for All Four Operations',
-      understanding: 'Rounding is a way to think flexibly about numbers and make estimates. Thinking flexibly means you can think about numbers in many ways.',
-      viewerPage: 14
-    },
-    {
-      title: 'Patterns in Four Operations',
-      understanding: 'Addition and subtraction patterns can support strategies for adding and subtracting multi-digit numbers.',
-      viewerPage: 15
-    }
-  ],
-  2: [
-    {
-      title: 'Square Tiles',
-      understanding: 'Arrays of square tiles or other objects can model multiplication.',
-      viewerPage: 106
-    },
-    {
-      title: 'Number Flexibility to 100 for All Four Operations',
-      understanding: 'Flexibility with numbers and operations supports strategies for multiplying and dividing.',
-      viewerPage: 107
-    }
-  ],
-  3: [
-    {
-      title: 'Square Tiles',
-      understanding: 'You can use square tiles to show the areas of rectangles.',
-      viewerPage: 320
-    },
-    {
-      title: 'Number Flexibility to 100 for All Four Operations',
-      understanding: 'You can think flexibly about multiplying, dividing, adding, and subtracting to solve problems.',
-      viewerPage: 320
-    },
-    {
-      title: 'Patterns in Four Operations',
-      understanding: 'Many problems involve using more than one operation. You can use a variety of strategies and models to solve these problems.',
-      viewerPage: 321
-    },
-    {
-      title: 'Represent Multivariable Data',
-      understanding: 'You can use bar graphs and picture graphs to display data. You can use the graphs to solve problems.',
-      viewerPage: 321
-    }
-  ]
-});
+import {
+  ArithmeticActivity,
+  ConceptModelActivity,
+  IReadyApprovedModel,
+  IReadyInteractionEvidence,
+  IReadyUnitIdea,
+  IREADY_UNIT_IDEAS,
+  NeighborIntervalsActivity,
+  RoundChoiceActivity,
+  interactionSourceUrl,
+  unitIdeaSourceUrl as sourceUrlForUnitIdea,
+  verifiedInteraction,
+  verifiedInteractionsForLesson
+} from './iready-interactive.evidence';
+import { IReadySourceProblem, IReadyTeacherGuideProvenance, lessonHasCompleteSourceProblemCoverage, sourceProblemsForSession, teacherGuideProvenanceForProblem } from './iready-volume1-problems';
+import {
+  IREADY_VOLUME_ONE_SUPPORT,
+  IReadySupportTeacherProvenance,
+  IReadyVolumeOneSupportResource,
+  familyResourceForLesson,
+  supportResourceUrl,
+  supportResourcesForUnit,
+  supportStudentImage,
+  supportStudentPages,
+  supportTeacherImage,
+  supportTeacherPrintedPages,
+  supportTeacherProvenance,
+  supportTeacherSourceUrl,
+  supportWorkspaceSpec
+} from './iready-volume1-support';
 
 @Component({
   selector: 'app-iready-interactive-page',
-  imports: [FormsModule, NgFor, NgIf, RouterLink],
+  imports: [FormsModule, NgFor, NgIf, RouterLink, ProblemVisualWorkspaceComponent],
   templateUrl: './iready-interactive.html',
   styleUrl: './iready-interactive.css'
 })
@@ -107,221 +48,76 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
   readonly volumeOneUnits = GRADE3_CMC_UNITS.filter((unit) => unit.volume === 1);
   readonly volumeOneLessons = this.volumeOneUnits.flatMap((unit) => unit.lessons);
   readonly placeLabels = ['Hundreds', 'Tens', 'Ones'];
-  readonly lessonOneSessions: LessonSession[] = [
-    {
-      number: 1,
-      phase: 'Explore',
-      title: 'Using Place Value to Round Numbers',
-      printPages: '9–12',
-      viewerPage: 21
-    },
-    {
-      number: 2,
-      phase: 'Develop',
-      title: 'Rounding to the Nearest Ten',
-      printPages: '13–18',
-      viewerPage: 25
-    },
-    {
-      number: 3,
-      phase: 'Develop',
-      title: 'Rounding to the Nearest Hundred',
-      printPages: '19–24',
-      viewerPage: 31
-    },
-    {
-      number: 4,
-      phase: 'Refine',
-      title: 'Using Place Value to Round Numbers',
-      printPages: '25–28',
-      viewerPage: 37
-    }
-  ];
-  readonly lessonTwoSessions: LessonSession[] = [
-    {
-      number: 1,
-      phase: 'Explore',
-      title: 'Adding Three-Digit Numbers',
-      printPages: '31–34',
-      viewerPage: 43,
-      arithmetic: {
-        prompt: 'Find the total number of songs represented by 147 and 212.',
-        left: 147,
-        right: 212,
-        operation: '+',
-        answer: 359,
-        hint: 'Break apart both numbers into hundreds, tens, and ones. Add matching places.',
-        strategy: '147 + 212 = (100 + 200) + (40 + 10) + (7 + 2) = 300 + 50 + 9 = 359.'
-      }
-    },
-    {
-      number: 2,
-      phase: 'Develop',
-      title: 'Using Place-Value Strategies to Add',
-      printPages: '35–40',
-      viewerPage: 47,
-      arithmetic: {
-        prompt: 'Combine 130 photos and 280 photos.',
-        left: 130,
-        right: 280,
-        operation: '+',
-        answer: 410,
-        hint: 'The tens total 11 tens. Regroup 10 of those tens as 1 hundred.',
-        strategy: '130 + 280 has 0 ones, 11 tens, and 3 hundreds. Regroup 11 tens as 1 hundred and 1 ten: 410.'
-      }
-    },
-    {
-      number: 3,
-      phase: 'Develop',
-      title: 'Connecting Place-Value Strategies to an Algorithm',
-      printPages: '41–46',
-      viewerPage: 53,
-      arithmetic: {
-        prompt: 'Use place value to find the sum 225 + 229.',
-        left: 225,
-        right: 229,
-        operation: '+',
-        answer: 454,
-        hint: 'Start with 5 ones + 9 ones. Record 4 ones and regroup 1 ten.',
-        strategy: '5 + 9 = 14, so record 4 ones and regroup 1 ten. Then 2 + 2 + 1 = 5 tens, and 2 + 2 = 4 hundreds: 454.'
-      }
-    },
-    {
-      number: 4,
-      phase: 'Refine',
-      title: 'Adding Three-Digit Numbers',
-      printPages: '47–50',
-      viewerPage: 59,
-      arithmetic: {
-        prompt: 'Find the sum of 345 and 626.',
-        left: 345,
-        right: 626,
-        operation: '+',
-        answer: 971,
-        hint: 'The ones make 11. Regroup 1 ten before adding the tens column.',
-        strategy: '5 + 6 = 11 ones. Regroup 1 ten; 4 + 2 + 1 = 7 tens; 3 + 6 = 9 hundreds. The sum is 971.'
-      }
-    }
-  ];
-  readonly lessonThreeSessions: LessonSession[] = [
-    {
-      number: 1,
-      phase: 'Explore',
-      title: 'Subtracting Three-Digit Numbers',
-      printPages: '53–56',
-      viewerPage: 65,
-      arithmetic: {
-        prompt: 'Start with 475 beads and subtract the 134 beads used.',
-        left: 475,
-        right: 134,
-        operation: '−',
-        answer: 341,
-        hint: 'Subtract ones from ones, tens from tens, and hundreds from hundreds.',
-        strategy: '475 − 134 = (400 − 100) + (70 − 30) + (5 − 4) = 300 + 40 + 1 = 341.'
-      }
-    },
-    {
-      number: 2,
-      phase: 'Develop',
-      title: 'Using Place-Value Strategies to Subtract',
-      printPages: '57–62',
-      viewerPage: 69,
-      arithmetic: {
-        prompt: 'Find how many of 365 flowers are not among the 186 lilies.',
-        left: 365,
-        right: 186,
-        operation: '−',
-        answer: 179,
-        hint: 'Regroup once from the hundreds place and once from the tens place.',
-        strategy: 'Regroup 365 as 2 hundreds, 15 tens, and 15 ones. Then subtract 186 by place value to get 1 hundred, 7 tens, and 9 ones: 179.'
-      }
-    },
-    {
-      number: 3,
-      phase: 'Develop',
-      title: 'Adding On to Subtract',
-      printPages: '63–68',
-      viewerPage: 75,
-      arithmetic: {
-        prompt: 'Start at 137 and add on until you reach 205.',
-        left: 205,
-        right: 137,
-        operation: '−',
-        answer: 68,
-        hint: 'Add 3 to reach 140, then 60 to reach 200, then 5 to reach 205.',
-        strategy: '137 + 3 = 140, 140 + 60 = 200, and 200 + 5 = 205. Add the jumps: 3 + 60 + 5 = 68.',
-        jumps: ['+3 → 140', '+60 → 200', '+5 → 205']
-      }
-    },
-    {
-      number: 4,
-      phase: 'Develop',
-      title: 'Connecting Place-Value Strategies to an Algorithm',
-      printPages: '69–74',
-      viewerPage: 81,
-      arithmetic: {
-        prompt: 'Use place value to find the difference 385 − 158.',
-        left: 385,
-        right: 158,
-        operation: '−',
-        answer: 227,
-        hint: 'Regroup 1 ten so that 5 ones becomes 15 ones.',
-        strategy: 'Regroup 385 as 3 hundreds, 7 tens, and 15 ones. Then 15 − 8 = 7, 7 − 5 = 2, and 3 − 1 = 2: 227.'
-      }
-    },
-    {
-      number: 5,
-      phase: 'Refine',
-      title: 'Subtracting Three-Digit Numbers',
-      printPages: '75–78',
-      viewerPage: 87,
-      arithmetic: {
-        prompt: 'Find 450 − 131 using a strategy you can explain.',
-        left: 450,
-        right: 131,
-        operation: '−',
-        answer: 319,
-        hint: 'Regroup 1 ten as 10 ones before subtracting the ones column.',
-        strategy: 'Regroup 450 as 4 hundreds, 4 tens, and 10 ones. Then subtract 131 by place value: 3 hundreds, 1 ten, and 9 ones = 319.'
-      }
-    }
-  ];
+  readonly unitIdeaSourceUrl = sourceUrlForUnitIdea;
+  readonly supportResourceUrl = supportResourceUrl;
+  readonly supportStudentImage = supportStudentImage;
+  readonly supportTeacherImage = supportTeacherImage;
+  readonly supportTeacherPrintedPages = supportTeacherPrintedPages;
+  readonly supportTeacherSourceUrl = supportTeacherSourceUrl;
 
   selectedLessonNumber = 1;
   selectedSessionNumber = 1;
+  selectedSourceProblemIndex = 0;
   selectedUnitNumber = 1;
   unitFocus = false;
   lessonFocus = false;
+  resourceFocus = false;
+  selectedResourceKey = IREADY_VOLUME_ONE_SUPPORT[0].key;
+  resourceMode: 'student' | 'work' | 'teacher' = 'student';
+  readonly selfCheckSkills = [
+    {
+      statement: 'Use place value to round numbers to the nearest ten and to the nearest hundred, for example:',
+      examples: ['315 rounded to the nearest ten is 320.', '826 rounded to the nearest hundred is 800.']
+    },
+    { statement: 'Use place value to add and subtract.', examples: [] },
+    { statement: 'Solve word problems by adding and subtracting using place value.', examples: [] },
+    { statement: 'Explain strategies by telling what you noticed about the numbers and what you decided to do.', examples: [] }
+  ] as const;
+  selfCheckBefore = this.selfCheckSkills.map(() => false);
+  selfCheckAfter = this.selfCheckSkills.map(() => false);
   tensLow = '';
   tensHigh = '';
   hundredsLow = '';
   hundredsHigh = '';
   sessionOneFeedback = '';
-  sessionOneMode: 'try' | 'solution' = 'try';
-  sessionOneAnimationRun = false;
-  sessionTwoChoice?: number;
-  sessionThreeChoice?: number;
-  sessionFourChoice?: number;
+  activityMode: 'try' | 'solution' = 'solution';
+  guidedStage: 'try' | 'check' | 'model' | 'solution' = 'solution';
+  solutionRevealCount = 0;
+  lessonStageAnnouncement = 'Source-backed visual teaching is open.';
+  solutionAnimationRun = false;
+  roundChoice?: number;
   arithmeticAnswer = '';
   arithmeticFeedback = '';
   arithmeticCorrect = false;
   showArithmeticModel = false;
+  conceptAnswer = '';
+  conceptFeedback = '';
+  conceptCorrect = false;
   private readonly subscriptions = new Subscription();
+  private sourceRevealTimers: Array<ReturnType<typeof setTimeout>> = [];
 
   constructor(
     private readonly route: ActivatedRoute,
     private readonly title: Title,
-    private readonly elementRef: ElementRef<HTMLElement>
+    private readonly elementRef: ElementRef<HTMLElement>,
+    private readonly changeDetector: ChangeDetectorRef
   ) {
     this.subscriptions.add(
       this.route.paramMap.subscribe((params) => {
         const requestedLesson = Number(params.get('lessonNumber'));
         const requestedUnit = Number(params.get('unitNumber'));
+        const requestedResource = params.get('resourceKey');
         this.lessonFocus = params.has('lessonNumber');
-        this.unitFocus = !this.lessonFocus && params.has('unitNumber');
+        this.resourceFocus = !this.lessonFocus && params.has('resourceKey');
+        this.unitFocus = !this.lessonFocus && !this.resourceFocus && params.has('unitNumber');
         if (this.lessonFocus) {
           this.selectedLessonNumber = this.findLesson(requestedLesson) ? requestedLesson : 1;
           this.selectedUnitNumber = this.unitForLesson(this.selectedLessonNumber)?.number ?? 1;
+        } else if (this.resourceFocus) {
+          const resource = IREADY_VOLUME_ONE_SUPPORT.find((candidate) => candidate.key === requestedResource) ?? IREADY_VOLUME_ONE_SUPPORT[0];
+          this.selectedResourceKey = resource.key;
+          this.selectedUnitNumber = resource.unit;
+          this.selectedLessonNumber = resource.lesson ?? this.selectedUnit.lessons[0].number;
         } else if (this.unitFocus) {
           this.selectedUnitNumber = this.findUnit(requestedUnit)?.number ?? 1;
           this.selectedLessonNumber = this.selectedUnit.lessons[0].number;
@@ -330,10 +126,11 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
           this.selectedLessonNumber = 1;
         }
         this.selectedSessionNumber = 1;
-        this.resetSessionOne();
-        this.resetArithmetic();
+        this.selectedSourceProblemIndex = 0;
+        this.resourceMode = this.resourceFocus && this.selectedResourceKey === 'v1-u1-self-check' ? 'work' : 'student';
+        this.resetActivity();
+        this.openVisualTeaching();
         this.updateTitle();
-        this.scheduleVerifiedVisual();
       })
     );
   }
@@ -343,6 +140,7 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
+    this.clearSourceRevealTimers();
     this.subscriptions.unsubscribe();
   }
 
@@ -354,18 +152,127 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
     return this.findLesson(this.selectedLessonNumber) ?? this.volumeOneUnits[0].lessons[0];
   }
 
-  get activeSessions(): LessonSession[] {
-    if (this.selectedLessonNumber === 2) return this.lessonTwoSessions;
-    if (this.selectedLessonNumber === 3) return this.lessonThreeSessions;
-    return this.lessonOneSessions;
+  get selectedResource(): IReadyVolumeOneSupportResource {
+    return IREADY_VOLUME_ONE_SUPPORT.find((resource) => resource.key === this.selectedResourceKey) ?? IREADY_VOLUME_ONE_SUPPORT[0];
   }
 
-  get selectedSession(): LessonSession {
-    return this.activeSessions.find((session) => session.number === this.selectedSessionNumber) ?? this.activeSessions[0];
+  get selectedResourceTeacher(): IReadySupportTeacherProvenance {
+    return supportTeacherProvenance(this.selectedResource);
+  }
+
+  get selectedResourceStudentPages(): readonly number[] {
+    return supportStudentPages(this.selectedResource);
+  }
+
+  get selectedResourceWorkspace() {
+    return supportWorkspaceSpec(this.selectedResource);
+  }
+
+  get previousResource(): IReadyVolumeOneSupportResource | undefined {
+    const index = IREADY_VOLUME_ONE_SUPPORT.findIndex((resource) => resource.key === this.selectedResourceKey);
+    return index > 0 ? IREADY_VOLUME_ONE_SUPPORT[index - 1] : undefined;
+  }
+
+  get nextResource(): IReadyVolumeOneSupportResource | undefined {
+    const index = IREADY_VOLUME_ONE_SUPPORT.findIndex((resource) => resource.key === this.selectedResourceKey);
+    return index >= 0 && index < IREADY_VOLUME_ONE_SUPPORT.length - 1 ? IREADY_VOLUME_ONE_SUPPORT[index + 1] : undefined;
+  }
+
+  get resourceTeacherLabel(): string {
+    if (this.selectedResourceTeacher.teacherRole === 'solved') return 'Official solutions';
+    if (this.selectedResourceTeacher.teacherRole === 'teaching') return 'Official teaching';
+    return 'Teacher guidance';
+  }
+
+  get isSelfCheckResource(): boolean {
+    return this.selectedResource.key === 'v1-u1-self-check';
+  }
+
+  get activeSessions(): readonly IReadyInteractionEvidence[] {
+    return verifiedInteractionsForLesson(this.selectedLessonNumber);
+  }
+
+  get selectedSession(): IReadyInteractionEvidence {
+    const session = this.activeSessions.find((candidate) => candidate.session === this.selectedSessionNumber) ?? this.activeSessions[0];
+    if (!session) {
+      throw new Error(`No verified i-Ready session is available for Lesson ${this.selectedLessonNumber}.`);
+    }
+    return session;
+  }
+
+  get sourceProblems(): readonly IReadySourceProblem[] {
+    return sourceProblemsForSession(this.selectedLessonNumber, this.selectedSessionNumber);
+  }
+
+  get selectedSourceProblem(): IReadySourceProblem | undefined {
+    return this.sourceProblems[this.selectedSourceProblemIndex];
+  }
+
+  get selectedProblemTraceability() {
+    return this.selectedSourceProblem?.traceability;
+  }
+
+  get selectedSourceProblemUrl(): string {
+    const problem = this.selectedSourceProblem;
+    return problem
+      ? `https://online.flippingbook.com/view/336581625/${problem.viewerPage}/`
+      : this.sessionSourceUrl;
+  }
+
+  get selectedTeacherGuideProvenance(): IReadyTeacherGuideProvenance | undefined {
+    return this.selectedSourceProblem ? teacherGuideProvenanceForProblem(this.selectedSourceProblem) : undefined;
+  }
+
+  get selectedProblemStudentPages(): readonly number[] {
+    const printedPages = this.selectedSourceProblem?.printedPages;
+    if (!printedPages) return [];
+    const pages = [...printedPages.matchAll(/\d+/g)].map((match) => Number(match[0]));
+    const start = pages[0];
+    const end = pages[1] ?? start;
+    return Array.from({ length: end - start + 1 }, (_, offset) => start + offset);
+  }
+
+  get selectedProblemTeacherPages(): readonly number[] {
+    const page = this.selectedTeacherGuideProvenance?.teacherPdfPage;
+    return page ? [page] : [];
+  }
+
+  get selectedProblemHasInlineSourceImages(): boolean {
+    const studentPages = this.selectedProblemStudentPages;
+    const teacherPages = this.selectedProblemTeacherPages;
+    return this.selectedLessonNumber === 1
+      && studentPages.length > 0
+      && studentPages.every((page) => page >= 9 && page <= 28)
+      && teacherPages.length > 0
+      && teacherPages.every((page) => page >= 52 && page <= 61);
+  }
+
+  get neighborActivity(): NeighborIntervalsActivity | undefined {
+    const activity = this.lessonIsInteractive ? this.selectedSession.activity : undefined;
+    return activity?.kind === 'neighbor-intervals' ? activity : undefined;
+  }
+
+  get roundActivity(): RoundChoiceActivity | undefined {
+    const activity = this.lessonIsInteractive ? this.selectedSession.activity : undefined;
+    return activity?.kind === 'round-choice' ? activity : undefined;
+  }
+
+  get arithmeticActivity(): ArithmeticActivity | undefined {
+    const activity = this.lessonIsInteractive ? this.selectedSession.activity : undefined;
+    return activity?.kind === 'arithmetic' ? activity : undefined;
+  }
+
+  get conceptActivity(): ConceptModelActivity | undefined {
+    const activity = this.lessonIsInteractive ? this.selectedSession.activity : undefined;
+    return activity?.kind === 'concept-model' ? activity : undefined;
   }
 
   get lessonIsInteractive(): boolean {
-    return this.selectedLessonNumber >= 1 && this.selectedLessonNumber <= 3;
+    const sessions = this.activeSessions;
+    return this.selectedLesson.number <= 11
+      && lessonHasCompleteSourceProblemCoverage(this.selectedLesson.number)
+      && sessions.length === this.selectedLesson.sessions
+      && sessions.every((session) => session.unit === this.selectedUnit.number && session.lesson === this.selectedLesson.number);
   }
 
   get previousLesson(): Grade3CmcLesson | undefined {
@@ -379,18 +286,25 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
   }
 
   get sessionSourceUrl(): string {
-    return `https://online.flippingbook.com/view/336581625/${this.selectedSession.viewerPage}/`;
+    return interactionSourceUrl(this.selectedSession);
   }
 
-  private get verifiedVisualEvidence(): VerifiedVisualEvidence | undefined {
+  private get verifiedEvidence(): IReadyInteractionEvidence | undefined {
+    if (!this.lessonIsInteractive) {
+      return undefined;
+    }
     const session = this.selectedSession;
-    const evidence = VERIFIED_VISUAL_EVIDENCE[`${this.selectedLessonNumber}:${session.number}`];
+    const evidence = verifiedInteraction(this.selectedLessonNumber, this.selectedSessionNumber);
     if (
       !evidence
-      || evidence.lessonNumber !== this.selectedLessonNumber
-      || evidence.sessionNumber !== session.number
-      || evidence.printPages !== session.printPages
+      || evidence.key !== session.key
+      || evidence.unit !== this.selectedUnit.number
+      || evidence.lesson !== this.selectedLessonNumber
+      || evidence.session !== this.selectedSessionNumber
+      || evidence.printedPages !== session.printedPages
       || evidence.viewerPage !== session.viewerPage
+      || evidence.sourceId !== session.sourceId
+      || evidence.approvedModel !== session.approvedModel
     ) {
       return undefined;
     }
@@ -398,19 +312,27 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
   }
 
   get visualAnimationIsVerified(): boolean {
-    return Boolean(this.verifiedVisualEvidence);
+    return Boolean(this.verifiedEvidence);
   }
 
-  unitIdeas(unit: Grade3CmcUnit): readonly VerifiedUnitIdea[] {
-    return VERIFIED_UNIT_IDEAS[unit.number] ?? [];
+  unitIdeas(unit: Grade3CmcUnit): readonly IReadyUnitIdea[] {
+    return IREADY_UNIT_IDEAS.filter((idea) => idea.unit === unit.number);
+  }
+
+  unitSupportResources(unit: Grade3CmcUnit): readonly IReadyVolumeOneSupportResource[] {
+    return supportResourcesForUnit(unit.number);
+  }
+
+  lessonFamilyResource(lesson: Grade3CmcLesson): IReadyVolumeOneSupportResource | undefined {
+    return familyResourceForLesson(lesson.number);
+  }
+
+  selectResourceMode(mode: 'student' | 'work' | 'teacher'): void {
+    this.resourceMode = mode;
   }
 
   totalSessions(unit: Grade3CmcUnit): number {
     return unit.lessons.reduce((total, lesson) => total + lesson.sessions, 0);
-  }
-
-  unitIdeaSourceUrl(idea: VerifiedUnitIdea): string {
-    return `https://online.flippingbook.com/view/336581625/${idea.viewerPage}/`;
   }
 
   lessonSourceUrl(lesson: Grade3CmcLesson): string {
@@ -418,70 +340,158 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
   }
 
   lessonIsReady(lesson: Grade3CmcLesson): boolean {
-    return lesson.number <= 3;
+    return lesson.number <= 6
+      && lessonHasCompleteSourceProblemCoverage(lesson.number)
+      && verifiedInteractionsForLesson(lesson.number).length === lesson.sessions;
   }
 
   digits(value: number): number[] {
     return [Math.floor(value / 100), Math.floor(value / 10) % 10, value % 10];
   }
 
+  range(count: number): number[] {
+    return Array.from({ length: count }, (_, index) => index);
+  }
+
+  conceptBarWidth(activity: ConceptModelActivity, value: number): number {
+    const maximum = Math.max(...(activity.visual.bars ?? []).map((bar) => bar.value), 1);
+    return Math.max(12, (value / maximum) * 100);
+  }
+
+  conceptPartLabel(index: number): string {
+    return `Part ${String.fromCharCode(65 + index)}`;
+  }
+
+  conceptSequenceValue(activity: ConceptModelActivity, value: number): number | '?' {
+    return this.activityMode === 'try' && value === activity.answer ? '?' : value;
+  }
+
   selectSession(sessionNumber: number): void {
     this.selectedSessionNumber = sessionNumber;
-    this.resetSessionOne();
-    this.resetArithmetic();
-    this.scheduleVerifiedVisual();
+    this.selectedSourceProblemIndex = 0;
+    this.resetActivity();
+    this.openVisualTeaching();
+  }
+
+  selectSourceProblem(index: number): void {
+    if (index < 0 || index >= this.sourceProblems.length) return;
+    this.selectedSourceProblemIndex = index;
+    this.resetActivity();
+    this.openVisualTeaching();
+  }
+
+  checkGuidedProblem(): void {
+    if (!this.selectedSourceProblem || this.activityMode === 'solution') return;
+    this.guidedStage = 'check';
+    this.lessonStageAnnouncement = 'Check your entries. A source-aligned hint is now available without revealing the answer.';
   }
 
   replayVerifiedVisual(): void {
-    if (this.sessionOneMode === 'solution' && this.selectedLessonNumber === 1 && this.selectedSessionNumber === 1) {
-      this.playSessionOneSolution();
+    if (this.selectedSourceProblem) {
+      this.beginSourceProblemSolution();
+      return;
+    }
+    if (this.activityMode === 'solution') {
+      this.playVerifiedSolution();
       return;
     }
     this.playVerifiedVisual();
   }
 
-  showSessionOneSolution(): void {
-    if (!this.visualAnimationIsVerified || this.selectedLessonNumber !== 1 || this.selectedSessionNumber !== 1) {
-      return;
-    }
-    this.sessionOneMode = 'solution';
-    this.sessionOneAnimationRun = true;
-    this.tensLow = '380';
-    this.tensHigh = '390';
-    this.hundredsLow = '300';
-    this.hundredsHigh = '400';
-    this.sessionOneFeedback = '';
-    requestAnimationFrame(() => requestAnimationFrame(() => this.playSessionOneSolution()));
+  get sourceTeachingStepCount(): number {
+    return this.selectedSourceProblem?.solvedVisual.sections.length ?? 0;
   }
 
-  returnToSessionOneTry(): void {
-    this.resetSessionOne();
+  previousSourceTeachingStep(): void {
+    if (!this.selectedSourceProblem || this.activityMode !== 'solution') return;
+    this.clearSourceRevealTimers();
+    this.solutionRevealCount = Math.max(1, this.solutionRevealCount - 1);
+    this.guidedStage = this.solutionRevealCount === this.sourceTeachingStepCount ? 'solution' : 'model';
+    this.lessonStageAnnouncement = `Worked model step ${this.solutionRevealCount} of ${this.sourceTeachingStepCount}.`;
+  }
+
+  nextSourceTeachingStep(): void {
+    if (!this.selectedSourceProblem || this.activityMode !== 'solution') return;
+    this.clearSourceRevealTimers();
+    this.solutionRevealCount = Math.min(this.sourceTeachingStepCount, this.solutionRevealCount + 1);
+    this.guidedStage = this.solutionRevealCount === this.sourceTeachingStepCount ? 'solution' : 'model';
+    this.lessonStageAnnouncement = this.guidedStage === 'solution'
+      ? 'Worked solution complete.'
+      : `Worked model step ${this.solutionRevealCount} of ${this.sourceTeachingStepCount}.`;
+  }
+
+  showVerifiedSolution(): void {
+    const evidence = this.verifiedEvidence;
+    if (!evidence?.supportsSolvedTeaching) {
+      return;
+    }
+    if (this.selectedSourceProblem) {
+      this.beginSourceProblemSolution();
+      return;
+    }
+    this.activityMode = 'solution';
+    this.solutionAnimationRun = true;
+    const activity = evidence.activity;
+    if (activity.kind === 'neighbor-intervals') {
+      this.tensLow = String(activity.tens[0]);
+      this.tensHigh = String(activity.tens[1]);
+      this.hundredsLow = String(activity.hundreds[0]);
+      this.hundredsHigh = String(activity.hundreds[1]);
+      this.sessionOneFeedback = '';
+    } else if (activity.kind === 'round-choice') {
+      this.roundChoice = activity.answer;
+    } else if (activity.kind === 'arithmetic') {
+      this.arithmeticAnswer = String(activity.answer);
+      this.arithmeticCorrect = true;
+      this.arithmeticFeedback = `Correct. ${activity.left} ${activity.operation} ${activity.right} = ${activity.answer}.`;
+      this.showArithmeticModel = true;
+    } else {
+      this.conceptAnswer = String(activity.answer);
+      this.conceptCorrect = true;
+      this.conceptFeedback = `Correct. The source-backed result is ${activity.answer}.`;
+    }
+    requestAnimationFrame(() => requestAnimationFrame(() => this.playVerifiedSolution()));
+  }
+
+  openVisualTeaching(): void {
+    this.showVerifiedSolution();
+  }
+
+  returnToTry(): void {
+    this.clearSourceRevealTimers();
+    this.resetActivity();
     this.scheduleVerifiedVisual();
   }
 
   checkSessionOne(): void {
+    const activity = this.verifiedEvidence?.activity;
+    if (activity?.kind !== 'neighbor-intervals') {
+      return;
+    }
     const answers = [this.tensLow, this.tensHigh, this.hundredsLow, this.hundredsHigh].map(Number);
-    this.sessionOneFeedback = answers.every((answer, index) => answer === [380, 390, 300, 400][index])
-      ? 'Correct. 384 lies between 380 and 390, and between 300 and 400.'
-      : 'Look at the tens around 384 first, then the hundreds around it. Keep 384 inside both intervals.';
+    const expected = [...activity.tens, ...activity.hundreds];
+    this.sessionOneFeedback = answers.every((answer, index) => answer === expected[index])
+      ? activity.correctFeedback
+      : activity.tryAgainFeedback;
   }
 
-  chooseSessionTwo(value: number): void {
-    this.sessionTwoChoice = value;
+  chooseRound(value: number): void {
+    if (this.activityMode === 'try') {
+      this.roundChoice = value;
+    }
   }
 
-  chooseSessionThree(value: number): void {
-    this.sessionThreeChoice = value;
-  }
-
-  chooseSessionFour(value: number): void {
-    this.sessionFourChoice = value;
-  }
-
-  checkArithmetic(activity: ArithmeticSpec): void {
+  checkArithmetic(activity: ArithmeticActivity): void {
     this.arithmeticCorrect = Number(this.arithmeticAnswer) === activity.answer;
     this.arithmeticFeedback = this.arithmeticCorrect
       ? `Correct. ${activity.left} ${activity.operation} ${activity.right} = ${activity.answer}.`
+      : activity.hint;
+  }
+
+  checkConcept(activity: ConceptModelActivity): void {
+    this.conceptCorrect = Number(this.conceptAnswer) === activity.answer;
+    this.conceptFeedback = this.conceptCorrect
+      ? `Correct. The result is ${activity.answer}.`
       : activity.hint;
   }
 
@@ -489,21 +499,58 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
     this.showArithmeticModel = !this.showArithmeticModel;
   }
 
-  private resetArithmetic(): void {
+  private resetActivity(): void {
+    this.clearSourceRevealTimers();
+    this.activityMode = 'try';
+    this.guidedStage = 'try';
+    this.solutionRevealCount = 0;
+    this.lessonStageAnnouncement = 'Try the official activity.';
+    this.solutionAnimationRun = false;
+    this.roundChoice = undefined;
     this.arithmeticAnswer = '';
     this.arithmeticFeedback = '';
     this.arithmeticCorrect = false;
     this.showArithmeticModel = false;
-  }
-
-  private resetSessionOne(): void {
-    this.sessionOneMode = 'try';
-    this.sessionOneAnimationRun = false;
+    this.conceptAnswer = '';
+    this.conceptFeedback = '';
+    this.conceptCorrect = false;
     this.tensLow = '';
     this.tensHigh = '';
     this.hundredsLow = '';
     this.hundredsHigh = '';
     this.sessionOneFeedback = '';
+  }
+
+  private beginSourceProblemSolution(): void {
+    const problem = this.selectedSourceProblem;
+    const evidence = this.verifiedEvidence;
+    if (!problem || !evidence?.supportsSolvedTeaching || !this.selectedTeacherGuideProvenance) return;
+
+    this.clearSourceRevealTimers();
+    this.activityMode = 'solution';
+    this.guidedStage = 'model';
+    this.solutionRevealCount = Math.min(1, problem.solvedVisual.sections.length);
+    this.lessonStageAnnouncement = `Worked model step 1 of ${problem.solvedVisual.sections.length}.`;
+    const sectionCount = problem.solvedVisual.sections.length;
+    if (sectionCount <= 1) {
+      this.guidedStage = 'solution';
+      this.lessonStageAnnouncement = 'Worked solution displayed.';
+      return;
+    }
+
+    this.sourceRevealTimers = Array.from({ length: sectionCount - 1 }, (_, index) => setTimeout(() => {
+      this.solutionRevealCount = index + 2;
+      this.guidedStage = this.solutionRevealCount === sectionCount ? 'solution' : 'model';
+      this.lessonStageAnnouncement = this.guidedStage === 'solution'
+        ? 'Worked solution complete.'
+        : `Worked model step ${this.solutionRevealCount} of ${sectionCount}.`;
+      this.changeDetector.detectChanges();
+    }, (index + 1) * 850));
+  }
+
+  private clearSourceRevealTimers(): void {
+    this.sourceRevealTimers.forEach((timer) => clearTimeout(timer));
+    this.sourceRevealTimers = [];
   }
 
   private scheduleVerifiedVisual(): void {
@@ -522,16 +569,33 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
     }
 
     const activity = this.elementRef.nativeElement.querySelector<HTMLElement>('.activity-card');
-    const model = this.verifiedVisualEvidence?.model;
+    const model = this.verifiedEvidence?.approvedModel;
     if (!activity || !model) {
       return;
     }
 
-    const selectorByModel: Record<VerifiedVisualEvidence['model'], string> = {
+    const selectorByModel: Record<IReadyApprovedModel, string> = {
       'place-value-chart': '.place-value-chart div',
       'nearest-ten-line': '.number-line .line, .number-line .tick, .number-line .label',
       'base-ten-blocks': '.base-ten-model > span, .base-ten-model .ones i',
-      'nearest-hundred-line': '.number-line .line, .number-line .tick, .number-line .label'
+      'nearest-hundred-line': '.number-line .line, .number-line .tick, .number-line .label',
+      'place-value-decomposition': '.vertical-operation, .digit-model > *',
+      'partial-sums': '.vertical-operation, .digit-model > *',
+      'addition-algorithm': '.vertical-operation, .digit-model > *',
+      'place-value-regrouping': '.vertical-operation, .digit-model > *',
+      'open-number-line': '.vertical-operation, .jump-model > *',
+      'subtraction-algorithm': '.vertical-operation, .digit-model > *',
+      'equal-groups': '.concept-group',
+      array: '.concept-tile',
+      'factor-break-apart': '.concept-step',
+      'fact-family': '.concept-step',
+      'equation-flow': '.concept-step',
+      'place-value-groups': '.concept-step',
+      'division-groups': '.concept-step',
+      'pattern-strip': '.concept-sequence span',
+      'area-grid': '.concept-tile',
+      'composite-area': '.concept-step',
+      'scaled-graph': '.concept-bar'
     };
     const prompt = Array.from(activity.querySelectorAll<HTMLElement>('.activity-label, .activity-copy h4, .activity-copy > p'));
     const visual = Array.from(activity.querySelectorAll<HTMLElement>(selectorByModel[model]));
@@ -556,18 +620,16 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
     });
   }
 
-  private playSessionOneSolution(): void {
+  private playVerifiedSolution(): void {
     if (
       !this.visualAnimationIsVerified
-      || this.selectedLessonNumber !== 1
-      || this.selectedSessionNumber !== 1
-      || this.sessionOneMode !== 'solution'
+      || this.activityMode !== 'solution'
     ) {
       return;
     }
 
-    this.sessionOneAnimationRun = true;
-    const activity = this.elementRef.nativeElement.querySelector<HTMLElement>('.place-value-activity');
+    this.solutionAnimationRun = true;
+    const activity = this.elementRef.nativeElement.querySelector<HTMLElement>('.activity-card');
     if (!activity) {
       return;
     }
@@ -591,6 +653,10 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
   private updateTitle(): void {
     if (this.lessonFocus) {
       this.title.setTitle(`Lesson ${this.selectedLessonNumber} · i-Ready Interactive | Ruchika Grade 3`);
+      return;
+    }
+    if (this.resourceFocus) {
+      this.title.setTitle(`${this.selectedResource.title} · i-Ready Interactive | Ruchika Grade 3`);
       return;
     }
     if (this.unitFocus) {

@@ -1,0 +1,630 @@
+{
+  "schemaVersion": 1,
+  "program": "i-ready-classroom-mathematics-california",
+  "publisher": "Curriculum Associates",
+  "grade": 3,
+  "volume": 1,
+  "sourceId": "grade3-student-worktext-v1",
+  "solvedSourceId": "grade3-teacher-guide-v1",
+  "coverageStatus": "complete-lesson-session-sequence",
+  "completedLessons": [
+    { "lesson": 1, "printedPages": "9–28", "sessions": [1, 2, 3, 4] },
+    { "lesson": 2, "printedPages": "31–50", "sessions": [1, 2, 3, 4] },
+    { "lesson": 3, "printedPages": "53–78", "sessions": [1, 2, 3, 4, 5] },
+    { "lesson": 4, "printedPages": "101–110", "sessions": [1, 2, 3] },
+    { "lesson": 5, "printedPages": "113–132", "sessions": [1, 2, 3, 4] },
+    { "lesson": 6, "printedPages": "135–160", "sessions": [1, 2, 3, 4, 5] },
+    { "lesson": 7, "printedPages": "163–188", "sessions": [1, 2, 3, 4, 5] },
+    { "lesson": 8, "printedPages": "191–216", "sessions": [1, 2, 3, 4, 5] },
+    { "lesson": 9, "printedPages": "219–232", "sessions": [1, 2, 3] },
+    { "lesson": 10, "printedPages": "235–244", "sessions": [1, 2, 3] },
+    { "lesson": 11, "printedPages": "247–256", "sessions": [1, 2, 3] },
+    { "lesson": 12, "printedPages": "259–278", "sessions": [1, 2, 3, 4] },
+    { "lesson": 13, "printedPages": "281–290", "sessions": [1, 2, 3] },
+    { "lesson": 14, "printedPages": "315–324", "sessions": [1, 2, 3] },
+    { "lesson": 15, "printedPages": "327–346", "sessions": [1, 2, 3, 4] },
+    { "lesson": 16, "printedPages": "349–368", "sessions": [1, 2, 3, 4] },
+    { "lesson": 17, "printedPages": "371–396", "sessions": [1, 2, 3, 4, 5] },
+    { "lesson": 18, "printedPages": "399–424", "sessions": [1, 2, 3, 4, 5] },
+    { "lesson": 19, "printedPages": "427–452", "sessions": [1, 2, 3, 4, 5] }
+  ],
+  "problems": [
+    {
+      "key": "v1-u1-l1-s1-try-it",
+      "unit": 1,
+      "lesson": 1,
+      "session": 1,
+      "order": 1,
+      "printedPages": "9",
+      "viewerPage": 21,
+      "sourceMarkers": ["Look at the number 384 in the place-value chart", "Between which two tens", "Between which two hundreds"]
+    },
+    {
+      "key": "v1-u1-l1-s1-connect-look-back",
+      "unit": 1,
+      "lesson": 1,
+      "session": 1,
+      "order": 2,
+      "printedPages": "10",
+      "viewerPage": 22,
+      "sourceMarkers": ["Between which two tens is 384", "Between which two hundreds is 384"]
+    },
+    {
+      "key": "v1-u1-l1-s1-connect-look-ahead",
+      "unit": 1,
+      "lesson": 1,
+      "session": 1,
+      "order": 3,
+      "printedPages": "10",
+      "viewerPage": 22,
+      "sourceMarkers": ["Rounding to the Nearest Ten", "8 rounds", "14 rounds", "175 rounds"]
+    },
+    {
+      "key": "v1-u1-l1-s1-prepare",
+      "unit": 1,
+      "lesson": 1,
+      "session": 1,
+      "order": 4,
+      "printedPages": "11",
+      "viewerPage": 23,
+      "sourceMarkers": ["Prepare for Using Place Value to Round Numbers", "Think about what you know about rounding", "451"]
+    },
+    {
+      "key": "v1-u1-l1-s1-practice",
+      "unit": 1,
+      "lesson": 1,
+      "session": 1,
+      "order": 5,
+      "printedPages": "12",
+      "viewerPage": 24,
+      "sourceMarkers": ["Look at the number 253 in the place-value chart", "Solve the problem another way"]
+    },
+    {
+      "key": "v1-u1-l1-s2-try-model", "unit": 1, "lesson": 1, "session": 2, "order": 1,
+      "printedPages": "13–14", "viewerPage": 25,
+      "sourceMarkers": ["Dario spends 37 minutes", "nearest ten minutes", "halfway number between 30 and 40 is 35"]
+    },
+    {
+      "key": "v1-u1-l1-s2-connect", "unit": 1, "lesson": 1, "session": 2, "order": 2,
+      "printedPages": "15", "viewerPage": 27,
+      "sourceMarkers": ["Which other whole numbers between 30 and 40 round to 40", "rounding 237", "943 rounded"]
+    },
+    {
+      "key": "v1-u1-l1-s2-apply", "unit": 1, "lesson": 1, "session": 2, "order": 3,
+      "printedPages": "16", "viewerPage": 28,
+      "sourceMarkers": ["106 rounded to the nearest ten", "number less than 180", "numbers round to 640"]
+    },
+    {
+      "key": "v1-u1-l1-s2-practice-1-3", "unit": 1, "lesson": 1, "session": 2, "order": 4,
+      "printedPages": "17", "viewerPage": 29,
+      "sourceMarkers": ["scores 88 points", "number 157 is between which two tens", "nearest ten"]
+    },
+    {
+      "key": "v1-u1-l1-s2-practice-4-8", "unit": 1, "lesson": 1, "session": 2, "order": 5,
+      "printedPages": "18", "viewerPage": 30,
+      "sourceMarkers": ["Kimi pulls weeds", "number 767", "number 342", "number less than 930"]
+    },
+    {
+      "key": "v1-u1-l1-s3-try-model", "unit": 1, "lesson": 1, "session": 3, "order": 1,
+      "printedPages": "19–20", "viewerPage": 31,
+      "sourceMarkers": ["restaurant sells 236 bowls of okra stew", "Use base-ten blocks", "236 rounded to the nearest hundred is 200"]
+    },
+    {
+      "key": "v1-u1-l1-s3-connect", "unit": 1, "lesson": 1, "session": 3, "order": 2,
+      "printedPages": "21", "viewerPage": 33,
+      "sourceMarkers": ["Why is it not 300", "least three-digit number", "rounding a number to the nearest hundred"]
+    },
+    {
+      "key": "v1-u1-l1-s3-apply", "unit": 1, "lesson": 1, "session": 3, "order": 3,
+      "printedPages": "22", "viewerPage": 34,
+      "sourceMarkers": ["476 rounded to the nearest hundred", "numbers less than 100", "round to 300"]
+    },
+    {
+      "key": "v1-u1-l1-s3-practice-1-6", "unit": 1, "lesson": 1, "session": 3, "order": 4,
+      "printedPages": "23", "viewerPage": 35,
+      "sourceMarkers": ["number 684 is between which two hundreds", "halfway number", "694 rounded"]
+    },
+    {
+      "key": "v1-u1-l1-s3-practice-7-10", "unit": 1, "lesson": 1, "session": 3, "order": 5,
+      "printedPages": "24", "viewerPage": 36,
+      "sourceMarkers": ["round 377 to the nearest hundred", "999 rounded", "table below shows the miles"]
+    },
+    {
+      "key": "v1-u1-l1-s4-example-1", "unit": 1, "lesson": 1, "session": 4, "order": 1,
+      "printedPages": "25", "viewerPage": 37,
+      "sourceMarkers": ["Julio uses the Bay Area Rapid Transit system 362 times", "879 rounded to the nearest hundred"]
+    },
+    {
+      "key": "v1-u1-l1-s4-problems-2-3", "unit": 1, "lesson": 1, "session": 4, "order": 2,
+      "printedPages": "26", "viewerPage": 38,
+      "sourceMarkers": ["large rain barrel for $279", "416 third grade students", "Shani chose"]
+    },
+    {
+      "key": "v1-u1-l1-s4-problems-4-6", "unit": 1, "lesson": 1, "session": 4, "order": 3,
+      "printedPages": "27", "viewerPage": 39,
+      "sourceMarkers": ["Su-Fen scored 194 points", "round to 590", "True orFalse"]
+    },
+    {
+      "key": "v1-u1-l1-s4-problems-7-9", "unit": 1, "lesson": 1, "session": 4, "order": 4,
+      "printedPages": "28", "viewerPage": 40,
+      "sourceMarkers": ["Which numbers will round to 250", "total of 778 people", "Round 465 to the nearest hundred"]
+    },
+    {
+      "key": "v1-u1-l2-s1-try-it", "unit": 1, "lesson": 2, "session": 1, "order": 1,
+      "printedPages": "31", "viewerPage": 43,
+      "sourceMarkers": ["Daren has 147 hip hop songs", "Rosa has 212 different hip hop songs", "in all"]
+    },
+    {
+      "key": "v1-u1-l2-s1-connect", "unit": 1, "lesson": 2, "session": 1, "order": 2,
+      "printedPages": "32", "viewerPage": 44,
+      "sourceMarkers": ["Explain how to find the number of songs", "addition problem 374 + 122", "Check your answer by estimating"]
+    },
+    {
+      "key": "v1-u1-l2-s1-prepare", "unit": 1, "lesson": 2, "session": 1, "order": 3,
+      "printedPages": "33", "viewerPage": 45,
+      "sourceMarkers": ["Prepare", "breaking apart numbers", "break apart 247"]
+    },
+    {
+      "key": "v1-u1-l2-s1-practice", "unit": 1, "lesson": 2, "session": 1, "order": 4,
+      "printedPages": "34", "viewerPage": 46,
+      "sourceMarkers": ["spend 215 hours", "next year they spend 173 hours", "another way"]
+    },
+    {
+      "key": "v1-u1-l2-s2-try-model", "unit": 1, "lesson": 2, "session": 2, "order": 1,
+      "printedPages": "35–36", "viewerPage": 47,
+      "sourceMarkers": ["Greg takes 130 photos", "Mora takes 280 photos", "11 tens"]
+    },
+    {
+      "key": "v1-u1-l2-s2-connect", "unit": 1, "lesson": 2, "session": 2, "order": 2,
+      "printedPages": "37", "viewerPage": 49,
+      "sourceMarkers": ["partial sums in Model It", "11 tens", "need to regroup"]
+    },
+    {
+      "key": "v1-u1-l2-s2-apply", "unit": 1, "lesson": 2, "session": 2, "order": 3,
+      "printedPages": "38", "viewerPage": 50,
+      "sourceMarkers": ["275", "185 more dairy cows", "649 + 184"]
+    },
+    {
+      "key": "v1-u1-l2-s2-practice-1-2", "unit": 1, "lesson": 2, "session": 2, "order": 4,
+      "printedPages": "39", "viewerPage": 51,
+      "sourceMarkers": ["Practice Using Place-Value Strategies to Add", "total number of train stations", "Fill in the blanks to add"]
+    },
+    {
+      "key": "v1-u1-l2-s2-practice-3-6", "unit": 1, "lesson": 2, "session": 2, "order": 5,
+      "printedPages": "40", "viewerPage": 52,
+      "sourceMarkers": ["157 + 291", "142 pounds of trash", "greatest possible sum"]
+    },
+    {
+      "key": "v1-u1-l2-s3-try-model", "unit": 1, "lesson": 2, "session": 3, "order": 1,
+      "printedPages": "41–42", "viewerPage": 53,
+      "sourceMarkers": ["What is the sum", "225", "229", "using an algorithm"]
+    },
+    {
+      "key": "v1-u1-l2-s3-connect", "unit": 1, "lesson": 2, "session": 3, "order": 2,
+      "printedPages": "43", "viewerPage": 55,
+      "sourceMarkers": ["sum of the ones is 14", "regroup once", "158 + 363"]
+    },
+    {
+      "key": "v1-u1-l2-s3-apply", "unit": 1, "lesson": 2, "session": 3, "order": 3,
+      "printedPages": "44", "viewerPage": 56,
+      "sourceMarkers": ["245", "Olympic athletes", "Brazil", "Japan", "284", "258"]
+    },
+    {
+      "key": "v1-u1-l2-s3-practice-1-2", "unit": 1, "lesson": 2, "session": 3, "order": 4,
+      "printedPages": "45", "viewerPage": 57,
+      "sourceMarkers": ["Practice Connecting Place-Value Strategies to an Algorithm", "Fill in the blanks or boxes to add", "377"]
+    },
+    {
+      "key": "v1-u1-l2-s3-practice-3-7", "unit": 1, "lesson": 2, "session": 3, "order": 5,
+      "printedPages": "46", "viewerPage": 58,
+      "sourceMarkers": ["Fill in the blanks or boxes to add", "245"]
+    },
+    {
+      "key": "v1-u1-l2-s4-example-1", "unit": 1, "lesson": 2, "session": 4, "order": 1,
+      "printedPages": "47", "viewerPage": 59,
+      "sourceMarkers": ["317 mangoes and 179 avocados", "Maria has 109 aluminum cans", "stepbrother has 56 more", "aluminum cans than Maria"]
+    },
+    {
+      "key": "v1-u1-l2-s4-problems-2-3", "unit": 1, "lesson": 2, "session": 4, "order": 2,
+      "printedPages": "48", "viewerPage": 60,
+      "sourceMarkers": ["sum of 345 and 626", "149 + 293", "Sara chose"]
+    },
+    {
+      "key": "v1-u1-l2-s4-problems-4-6", "unit": 1, "lesson": 2, "session": 4, "order": 3,
+      "printedPages": "49", "viewerPage": 61,
+      "sourceMarkers": ["129 miles on Tuesday", "258 and 436", "68 + 16"]
+    },
+    {
+      "key": "v1-u1-l2-s4-problems-7-9", "unit": 1, "lesson": 2, "session": 4, "order": 4,
+      "printedPages": "50", "viewerPage": 62,
+      "sourceMarkers": ["147 + 123", "number 746", "379 + 284"]
+    },
+    {
+      "key": "v1-u1-l3-s1-try-connect", "unit": 1, "lesson": 3, "session": 1, "order": 1,
+      "printedPages": "53–54", "viewerPage": 65,
+      "sourceMarkers": ["475 glass beads", "134 beads", "how many beads Jasmine has left"]
+    },
+    {
+      "key": "v1-u1-l3-s1-prepare", "unit": 1, "lesson": 3, "session": 1, "order": 2,
+      "printedPages": "55", "viewerPage": 67,
+      "sourceMarkers": ["Prepare", "Subtracting Three-Digit Number", "194", "187"]
+    },
+    {
+      "key": "v1-u1-l3-s1-practice", "unit": 1, "lesson": 3, "session": 1, "order": 3,
+      "printedPages": "56", "viewerPage": 68,
+      "sourceMarkers": ["355 bowls", "223 bowls", "still need to paint"]
+    },
+    {
+      "key": "v1-u1-l3-s2-try-model", "unit": 1, "lesson": 3, "session": 2, "order": 1,
+      "printedPages": "57–58", "viewerPage": 69,
+      "sourceMarkers": ["Mateo uses 365 flowers", "186 of the flowers are lilies", "How many flowers are not lilies"]
+    },
+    {
+      "key": "v1-u1-l3-s2-connect-apply", "unit": 1, "lesson": 3, "session": 2, "order": 2,
+      "printedPages": "59–60", "viewerPage": 71,
+      "sourceMarkers": ["Why is 365 broken apart", "362", "125", "853", "146", "425", "289"]
+    },
+    {
+      "key": "v1-u1-l3-s2-practice-1-2", "unit": 1, "lesson": 3, "session": 2, "order": 3,
+      "printedPages": "61", "viewerPage": 73,
+      "sourceMarkers": ["352", "147", "459", "260"]
+    },
+    {
+      "key": "v1-u1-l3-s2-practice-3-5", "unit": 1, "lesson": 3, "session": 2, "order": 4,
+      "printedPages": "62", "viewerPage": 74,
+      "sourceMarkers": ["905", "425", "252", "136", "636", "158"]
+    },
+    {
+      "key": "v1-u1-l3-s3-try-model", "unit": 1, "lesson": 3, "session": 3, "order": 1,
+      "printedPages": "63–64", "viewerPage": 75,
+      "sourceMarkers": ["205 seeds", "137 seeds", "How many seeds does Malik have left"]
+    },
+    {
+      "key": "v1-u1-l3-s3-connect-apply", "unit": 1, "lesson": 3, "session": 3, "order": 2,
+      "printedPages": "65–66", "viewerPage": 77,
+      "sourceMarkers": ["202", "195", "$200", "$34", "430", "182", "800", "379"]
+    },
+    {
+      "key": "v1-u1-l3-s3-practice-1-4", "unit": 1, "lesson": 3, "session": 3, "order": 3,
+      "printedPages": "67", "viewerPage": 79,
+      "sourceMarkers": ["Practice Adding On to Subtract", "310 students", "solve problems 1-8"]
+    },
+    {
+      "key": "v1-u1-l3-s3-practice-5-8", "unit": 1, "lesson": 3, "session": 3, "order": 4,
+      "printedPages": "68", "viewerPage": 80,
+      "sourceMarkers": ["100 − 78", "200 − 96", "305 − 212", "303 − 196"]
+    },
+    {
+      "key": "v1-u1-l3-s4-try-model", "unit": 1, "lesson": 3, "session": 4, "order": 1,
+      "printedPages": "69–70", "viewerPage": 81,
+      "sourceMarkers": ["Connecting Place-Value Strategies to an Algorithm", "385", "158"]
+    },
+    {
+      "key": "v1-u1-l3-s4-connect-apply", "unit": 1, "lesson": 3, "session": 4, "order": 2,
+      "printedPages": "71–72", "viewerPage": 83,
+      "sourceMarkers": ["500", "219", "Use this page to deepen your understanding", "days of school", "365 days"]
+    },
+    {
+      "key": "v1-u1-l3-s4-practice-1-2", "unit": 1, "lesson": 3, "session": 4, "order": 3,
+      "printedPages": "73", "viewerPage": 85,
+      "sourceMarkers": ["Practice Connecting Place-Value Strategies to an Algorithm", "seaweed sheets", "subtract 849 from 960"]
+    },
+    {
+      "key": "v1-u1-l3-s4-practice-3-9", "unit": 1, "lesson": 3, "session": 4, "order": 4,
+      "printedPages": "74", "viewerPage": 86,
+      "sourceMarkers": ["Subtract", "657", "328", "382", "195", "153", "1,000", "595"]
+    },
+    {
+      "key": "v1-u1-l3-s5-example-1", "unit": 1, "lesson": 3, "session": 5, "order": 1,
+      "printedPages": "75", "viewerPage": 87,
+      "sourceMarkers": ["805", "279", "450", "131"]
+    },
+    {
+      "key": "v1-u1-l3-s5-problems-2-3", "unit": 1, "lesson": 3, "session": 5, "order": 2,
+      "printedPages": "76", "viewerPage": 88,
+      "sourceMarkers": ["144 teams", "72 teams", "205", "110", "Reth chose"]
+    },
+    {
+      "key": "v1-u1-l3-s5-problems-4-5", "unit": 1, "lesson": 3, "session": 5, "order": 3,
+      "printedPages": "77", "viewerPage": 89,
+      "sourceMarkers": ["354 − 298", "Choose all that apply", "400 cucumbers", "155 cucumbers"]
+    },
+    {
+      "key": "v1-u1-l3-s5-problems-6-8", "unit": 1, "lesson": 3, "session": 5, "order": 4,
+      "printedPages": "78", "viewerPage": 90,
+      "sourceMarkers": ["907 − 199", "Tam has 308 craft sticks", "package of 625 craft sticks", "uses 245 craft sticks", "379 − 284"]
+    },
+    {
+      "key": "v1-u2-l4-s1-model-1-3", "unit": 2, "lesson": 4, "session": 1, "order": 1,
+      "printedPages": "101", "viewerPage": 113,
+      "sourceMarkers": ["Three pairs of players are flying kites", "3 equal groups of 2 kites", "multiplication equation"]
+    },
+    {
+      "key": "v1-u2-l4-s1-model-4-6", "unit": 2, "lesson": 4, "session": 1, "order": 2,
+      "printedPages": "102", "viewerPage": 114,
+      "sourceMarkers": ["3 equal groups of 4 flowers", "3 X 4 = 12", "model multiplication with an array"]
+    },
+    {
+      "key": "v1-u2-l4-s1-prepare", "unit": 2, "lesson": 4, "session": 1, "order": 3,
+      "printedPages": "103", "viewerPage": 115,
+      "sourceMarkers": ["Prepare for Multiplication", "what you know about multiplication", "write a multiplication equation"]
+    },
+    {
+      "key": "v1-u2-l4-s1-practice", "unit": 2, "lesson": 4, "session": 1, "order": 4,
+      "printedPages": "104", "viewerPage": 116,
+      "sourceMarkers": ["Dakota visits a farm museum", "4 tractors with 3 wheels each", "addition equation"]
+    },
+    {
+      "key": "v1-u2-l4-s2-model-1-2", "unit": 2, "lesson": 4, "session": 2, "order": 1,
+      "printedPages": "105", "viewerPage": 117,
+      "sourceMarkers": ["expression 4 x 5", "using equal groups", "using an array"]
+    },
+    {
+      "key": "v1-u2-l4-s2-model-connect", "unit": 2, "lesson": 4, "session": 2, "order": 2,
+      "printedPages": "106", "viewerPage": 118,
+      "sourceMarkers": ["square tiles to model multiplication", "5 X 3 = 15", "show and find 4 x 7"]
+    },
+    {
+      "key": "v1-u2-l4-s2-practice-1-4", "unit": 2, "lesson": 4, "session": 2, "order": 3,
+      "printedPages": "107", "viewerPage": 119,
+      "sourceMarkers": ["Practice Using Multiplication Models", "How many equal groups are there", "multiplication equation that matches"]
+    },
+    {
+      "key": "v1-u2-l4-s2-practice-5-9", "unit": 2, "lesson": 4, "session": 2, "order": 4,
+      "printedPages": "108", "viewerPage": 120,
+      "sourceMarkers": ["basketball cart has 3 shelves", "expression 3 x 5", "represents 3 x 6", "Alex says"]
+    },
+    {
+      "key": "v1-u2-l4-s3-apply-1-3", "unit": 2, "lesson": 4, "session": 3, "order": 1,
+      "printedPages": "109", "viewerPage": 121,
+      "sourceMarkers": ["Robert painted and arranged the eggs", "9 x 4 = 36", "Fola draws the array"]
+    },
+    {
+      "key": "v1-u2-l4-s3-problem-4-journal", "unit": 2, "lesson": 4, "session": 3, "order": 2,
+      "printedPages": "110", "viewerPage": 122,
+      "sourceMarkers": ["Ravi", "cousins send him coins", "5 x 8", "story problem for 3 X 4"]
+    },
+    {
+      "key": "v1-u2-l5-s1-try", "unit": 2, "lesson": 5, "session": 1, "order": 1,
+      "printedPages": "113", "viewerPage": 125,
+      "sourceMarkers": ["Jade sees 6 black crabs", "Each crab has 10 legs", "How many legs"]
+    },
+    {
+      "key": "v1-u2-l5-s1-connect", "unit": 2, "lesson": 5, "session": 1, "order": 2,
+      "printedPages": "114", "viewerPage": 126,
+      "sourceMarkers": ["Marco sees 8 black crabs", "10 legs each", "Elisa sees 7 crabs"]
+    },
+    {
+      "key": "v1-u2-l5-s1-prepare", "unit": 2, "lesson": 5, "session": 1, "order": 3,
+      "printedPages": "115", "viewerPage": 127,
+      "sourceMarkers": ["Prepare for Multiplying with 0, 1", "what you know about multiplication", "multiplication fact is shown"]
+    },
+    {
+      "key": "v1-u2-l5-s1-practice", "unit": 2, "lesson": 5, "session": 1, "order": 4,
+      "printedPages": "116", "viewerPage": 128,
+      "sourceMarkers": ["5 weeks in the summer", "Each week has 7 days", "How many days"]
+    },
+    {
+      "key": "v1-u2-l5-s2-try-model", "unit": 2, "lesson": 5, "session": 2, "order": 1,
+      "printedPages": "117–118", "viewerPage": 129,
+      "sourceMarkers": ["toy robot that has 2 antennas", "5 buttons", "needed for 6 robots"]
+    },
+    {
+      "key": "v1-u2-l5-s2-connect", "unit": 2, "lesson": 5, "session": 2, "order": 2,
+      "printedPages": "119", "viewerPage": 131,
+      "sourceMarkers": ["multiplication equations", "turn it", "doubles fact"]
+    },
+    {
+      "key": "v1-u2-l5-s2-apply", "unit": 2, "lesson": 5, "session": 2, "order": 3,
+      "printedPages": "120", "viewerPage": 132,
+      "sourceMarkers": ["5 groups of 10", "10 groups of 5", "airport bus", "Each row has"]
+    },
+    {
+      "key": "v1-u2-l5-s2-practice-1-2", "unit": 2, "lesson": 5, "session": 2, "order": 4,
+      "printedPages": "121", "viewerPage": 133,
+      "sourceMarkers": ["Study the Example showing how to multiply with 5", "equal groups of 2", "plates of tortillas"]
+    },
+    {
+      "key": "v1-u2-l5-s2-practice-3-5", "unit": 2, "lesson": 5, "session": 2, "order": 5,
+      "printedPages": "122", "viewerPage": 134,
+      "sourceMarkers": ["starfruit", "multiplication fact for each array", "facts for 2", "facts for 5"]
+    },
+    {
+      "key": "v1-u2-l5-s3-try-model", "unit": 2, "lesson": 5, "session": 3, "order": 1,
+      "printedPages": "123–124", "viewerPage": 135,
+      "sourceMarkers": ["Meena says 6 X 1 = 6", "Rene says 6 X 0 = 6", "6 groups with 1", "6 groups with 0"]
+    },
+    {
+      "key": "v1-u2-l5-s3-connect-apply", "unit": 2, "lesson": 5, "session": 3, "order": 2,
+      "printedPages": "125–126", "viewerPage": 137,
+      "sourceMarkers": ["7 x 1", "7 X 0", "product of any number multiplied by 1", "product of 0", "model to show 4 x 0"]
+    },
+    {
+      "key": "v1-u2-l5-s3-practice-1", "unit": 2, "lesson": 5, "session": 3, "order": 3,
+      "printedPages": "127", "viewerPage": 139,
+      "sourceMarkers": ["Study the Example showing how to multiply with 1", "7 x 1 and 1 x 7", "How are they different"]
+    },
+    {
+      "key": "v1-u2-l5-s3-practice-2-4", "unit": 2, "lesson": 5, "session": 3, "order": 4,
+      "printedPages": "128", "viewerPage": 140,
+      "sourceMarkers": ["school supplies", "multiplication fact correct", "Kelvin starts"]
+    },
+    {
+      "key": "v1-u2-l5-s4-example-1", "unit": 2, "lesson": 5, "session": 4, "order": 1,
+      "printedPages": "129", "viewerPage": 141,
+      "sourceMarkers": ["Jamal says 2 x 5", "5 x 2", "Find 7 x 2", "8 x 2", "9 x 2"]
+    },
+    {
+      "key": "v1-u2-l5-s4-problems-2-3", "unit": 2, "lesson": 5, "session": 4, "order": 2,
+      "printedPages": "130", "viewerPage": 142,
+      "sourceMarkers": ["1 bag with 7 apricots", "8 bags with 0 plums", "3 bags", "Which of the following equals 10"]
+    },
+    {
+      "key": "v1-u2-l5-s4-problems-4-6", "unit": 2, "lesson": 5, "session": 4, "order": 3,
+      "printedPages": "131", "viewerPage": 143,
+      "sourceMarkers": ["Which factor will correctly complete", "facts for 10", "True or False"]
+    },
+    {
+      "key": "v1-u2-l5-s4-problems-7-9", "unit": 2, "lesson": 5, "session": 4, "order": 4,
+      "printedPages": "132", "viewerPage": 144,
+      "sourceMarkers": ["5 different friends", "10 school days", "4 packs of shirts", "8 pairs of slippers"]
+    },
+    { "key": "v1-u2-l6-s1-try-connect", "unit": 2, "lesson": 6, "session": 1, "order": 1, "printedPages": "135–136", "viewerPage": 147, "sourceMarkers": ["3 pupusas with a meal", "6 meals", "6 X 3", "break apart"] },
+    { "key": "v1-u2-l6-s1-prepare", "unit": 2, "lesson": 6, "session": 1, "order": 2, "printedPages": "137", "viewerPage": 149, "sourceMarkers": ["Prepare for Multiplying with 3, 4, and 6", "Ramona makes an array", "3 x 4"] },
+    { "key": "v1-u2-l6-s1-practice", "unit": 2, "lesson": 6, "session": 1, "order": 3, "printedPages": "138", "viewerPage": 150, "sourceMarkers": ["4 butter bean pods", "6 beans", "How many butter beans"] },
+    { "key": "v1-u2-l6-s2-try-model", "unit": 2, "lesson": 6, "session": 2, "order": 1, "printedPages": "139–140", "viewerPage": 151, "sourceMarkers": ["konane game board", "4 rows", "3 holes", "break the array"] },
+    { "key": "v1-u2-l6-s2-connect-apply", "unit": 2, "lesson": 6, "session": 2, "order": 2, "printedPages": "141–142", "viewerPage": 153, "sourceMarkers": ["8 x 3", "equal 24", "Linda has a party", "9 tables with 3 chairs", "expressions can be used"] },
+    { "key": "v1-u2-l6-s2-practice-1-4", "unit": 2, "lesson": 6, "session": 2, "order": 3, "printedPages": "143", "viewerPage": 155, "sourceMarkers": ["Practice Multiplying with 3", "5 X 3", "rows and", "columns"] },
+    { "key": "v1-u2-l6-s2-practice-5-6", "unit": 2, "lesson": 6, "session": 2, "order": 4, "printedPages": "144", "viewerPage": 156, "sourceMarkers": ["pair of multiplication equations", "4 trees", "3 bird feeders"] },
+    { "key": "v1-u2-l6-s3-try-model", "unit": 2, "lesson": 6, "session": 3, "order": 1, "printedPages": "145–146", "viewerPage": 157, "sourceMarkers": ["Jenna is making a quilt", "5 rows", "4 squares"] },
+    { "key": "v1-u2-l6-s3-connect-apply", "unit": 2, "lesson": 6, "session": 3, "order": 2, "printedPages": "147–148", "viewerPage": 159, "sourceMarkers": ["5 X 4", "7 X 2", "equal 28", "3 x 4", "9 x 4", "8 x 4"] },
+    { "key": "v1-u2-l6-s3-practice-1-2", "unit": 2, "lesson": 6, "session": 3, "order": 3, "printedPages": "149", "viewerPage": 161, "sourceMarkers": ["Practice Multiplying", "solar panels", "3 x 4"] },
+    { "key": "v1-u2-l6-s3-practice-3-6", "unit": 2, "lesson": 6, "session": 3, "order": 4, "printedPages": "150", "viewerPage": 162, "sourceMarkers": ["Complete these 4s facts", "Moses drew the array", "break apart the same array"] },
+    { "key": "v1-u2-l6-s4-try-model", "unit": 2, "lesson": 6, "session": 4, "order": 1, "printedPages": "151–152", "viewerPage": 163, "sourceMarkers": ["Felipe has 4 vases", "6 flowers", "Break apart"] },
+    { "key": "v1-u2-l6-s4-connect-apply", "unit": 2, "lesson": 6, "session": 4, "order": 2, "printedPages": "153–154", "viewerPage": 165, "sourceMarkers": ["break apart the first or the second factor", "3 x 6", "two different ways", "8 x 6"] },
+    { "key": "v1-u2-l6-s4-practice-1-3", "unit": 2, "lesson": 6, "session": 4, "order": 3, "printedPages": "155", "viewerPage": 167, "sourceMarkers": ["Practice Multiplying", "4 x 6", "smaller arrays", "Add the two products"] },
+    { "key": "v1-u2-l6-s4-practice-4-5", "unit": 2, "lesson": 6, "session": 4, "order": 4, "printedPages": "156", "viewerPage": 168, "sourceMarkers": ["pair of multiplication equations", "3 floors", "6 apartments"] },
+    { "key": "v1-u2-l6-s5-example", "unit": 2, "lesson": 6, "session": 5, "order": 1, "printedPages": "157", "viewerPage": 169, "sourceMarkers": ["Toya is making 7 cowrie shell bracelets", "uses 4 shells", "break apart 4"] },
+    { "key": "v1-u2-l6-s5-problems-1-2", "unit": 2, "lesson": 6, "session": 5, "order": 2, "printedPages": "158", "viewerPage": 170, "sourceMarkers": ["3 pens", "6 goats", "8 x 6", "Which expression correctly shows"] },
+    { "key": "v1-u2-l6-s5-problems-3-5", "unit": 2, "lesson": 6, "session": 5, "order": 3, "printedPages": "159", "viewerPage": 171, "sourceMarkers": ["Winona finds 8 x 4", "Decide if each equation is true", "expressions can be used to find 7 x 4"] },
+    { "key": "v1-u2-l6-s5-problems-6-journal", "unit": 2, "lesson": 6, "session": 5, "order": 4, "printedPages": "160", "viewerPage": 172, "sourceMarkers": ["Big Bear Lake for 5 days", "6 hours each day", "9 x 6"] },
+    { "key": "v1-u2-l7-s1-try-connect", "unit": 2, "lesson": 7, "session": 1, "order": 1, "printedPages": "163–164", "viewerPage": 175, "sourceMarkers": ["Tameka and Seth are both finding 6 x 7", "two different ways", "7 X 7"] },
+    { "key": "v1-u2-l7-s1-prepare", "unit": 2, "lesson": 7, "session": 1, "order": 2, "printedPages": "165", "viewerPage": 177, "sourceMarkers": ["Think about what you know about multiplication", "40", "16"] },
+    { "key": "v1-u2-l7-s1-practice", "unit": 2, "lesson": 7, "session": 1, "order": 3, "printedPages": "166", "viewerPage": 178, "sourceMarkers": ["Aponi and Galeno are both finding 6 x 9", "two different ways", "Check your answer"] },
+    { "key": "v1-u2-l7-s2-try-model", "unit": 2, "lesson": 7, "session": 2, "order": 1, "printedPages": "167–168", "viewerPage": 179, "sourceMarkers": ["family sees", "7 cones", "8 groups"] },
+    { "key": "v1-u2-l7-s2-connect-apply", "unit": 2, "lesson": 7, "session": 2, "order": 2, "printedPages": "169–170", "viewerPage": 181, "sourceMarkers": ["parentheses around", "knowing the answer to 2 x 7", "find 3 X 7", "Which expressions can be used"] },
+    { "key": "v1-u2-l7-s2-practice", "unit": 2, "lesson": 7, "session": 2, "order": 3, "printedPages": "171–172", "viewerPage": 183, "sourceMarkers": ["Practice Multiplying with 7", "rows and", "6 x 7", "4 starfish", "3 starfish"] },
+    { "key": "v1-u2-l7-s3-try-model", "unit": 2, "lesson": 7, "session": 3, "order": 1, "printedPages": "173–174", "viewerPage": 185, "sourceMarkers": ["6 rows of pumpkins", "8 pumpkins", "break the columns of the array", "further break the columns"] },
+    { "key": "v1-u2-l7-s3-connect-apply", "unit": 2, "lesson": 7, "session": 3, "order": 2, "printedPages": "175–176", "viewerPage": 187, "sourceMarkers": ["factor 8 be broken apart", "find 6 x 8", "7 x 8", "5 x 8", "checker board"] },
+    { "key": "v1-u2-l7-s3-practice", "unit": 2, "lesson": 7, "session": 3, "order": 3, "printedPages": "177–178", "viewerPage": 189, "sourceMarkers": ["6 boxes of toy cars", "Use the array at the right", "break apart 3 x 8"] },
+    { "key": "v1-u2-l7-s4-try-model", "unit": 2, "lesson": 7, "session": 4, "order": 1, "printedPages": "179–180", "viewerPage": 191, "sourceMarkers": ["8 boxes of oranges", "9 oranges", "break apart the columns", "break apart the rows"] },
+    { "key": "v1-u2-l7-s4-connect-apply", "unit": 2, "lesson": 7, "session": 4, "order": 2, "printedPages": "181–182", "viewerPage": 193, "sourceMarkers": ["multiplication facts are used", "break apart one of the factors in 8 X 9", "find 7 X 9", "packs of batteries"] },
+    { "key": "v1-u2-l7-s4-practice", "unit": 2, "lesson": 7, "session": 4, "order": 3, "printedPages": "183–184", "viewerPage": 195, "sourceMarkers": ["Practice Multiplying with 9", "6 groups of 9", "pair of multiplication equations", "find 9 X 9"] },
+    { "key": "v1-u2-l7-s5-example-problems", "unit": 2, "lesson": 7, "session": 5, "order": 1, "printedPages": "185–186", "viewerPage": 197, "sourceMarkers": ["7 teams", "8 players", "8 rows of 9 tires", "5 x 8", "9 x 7"] },
+    { "key": "v1-u2-l7-s5-problems-4-5", "unit": 2, "lesson": 7, "session": 5, "order": 2, "printedPages": "187", "viewerPage": 199, "sourceMarkers": ["finds 5 x 7", "number belongs in the blank", "5 packs of pencils", "8 pencils"] },
+    { "key": "v1-u2-l7-s5-problems-6-journal", "unit": 2, "lesson": 7, "session": 5, "order": 3, "printedPages": "188", "viewerPage": 200, "sourceMarkers": ["break the array into two groups", "6 X3", "6x4", "rooftop garden", "9 plants"] },
+    { "key": "v1-u2-l8-s1-try-connect", "unit": 2, "lesson": 8, "session": 1, "order": 1, "printedPages": "191–192", "viewerPage": 203, "sourceMarkers": ["Jess sells 2 bags of 3 ears of corn", "3 bags of 2 ears of corn", "4 sets of sidewalk chalk", "first find how many boxes there are"] },
+    { "key": "v1-u2-l8-s1-prepare", "unit": 2, "lesson": 8, "session": 1, "order": 2, "printedPages": "193", "viewerPage": 205, "sourceMarkers": ["Prepare for Using Order and Grouping to Multiply", "Manny says", "3 x 2", "2 x 4"] },
+    { "key": "v1-u2-l8-s1-practice", "unit": 2, "lesson": 8, "session": 1, "order": 3, "printedPages": "194", "viewerPage": 206, "sourceMarkers": ["tamale cart", "4 packages of 2 tamales", "2 packages of 4 tamales", "Check your answer"] },
+    { "key": "v1-u2-l8-s2-try-model", "unit": 2, "lesson": 8, "session": 2, "order": 1, "printedPages": "195–196", "viewerPage": 207, "sourceMarkers": ["Ajay and his dog", "6 weeks", "3 days each week", "Nina and her dog", "arrays"] },
+    { "key": "v1-u2-l8-s2-connect-apply", "unit": 2, "lesson": 8, "session": 2, "order": 2, "printedPages": "197–198", "viewerPage": 209, "sourceMarkers": ["8 X 9 = 72", "Rico's bus makes", "rock collection", "5 x 8 = 40"] },
+    { "key": "v1-u2-l8-s2-practice", "unit": 2, "lesson": 8, "session": 2, "order": 3, "printedPages": "199–200", "viewerPage": 211, "sourceMarkers": ["Practice Using Order to Multiply", "3 x 9 = 27", "4 x 6 = 24", "3 piles with 9 skipping stones"] },
+    { "key": "v1-u2-l8-s3-try-model", "unit": 2, "lesson": 8, "session": 3, "order": 1, "printedPages": "201–202", "viewerPage": 213, "sourceMarkers": ["pair of gloves", "3 jewels onto each finger", "5 fingers with 3 jewels", "15 jewels on each glove"] },
+    { "key": "v1-u2-l8-s3-connect-apply", "unit": 2, "lesson": 8, "session": 3, "order": 2, "printedPages": "203–204", "viewerPage": 215, "sourceMarkers": ["parentheses mean", "7 x 2", "finding the product", "possible next step to finding 3 x 2 x 9"] },
+    { "key": "v1-u2-l8-s3-practice", "unit": 2, "lesson": 8, "session": 3, "order": 3, "printedPages": "205–206", "viewerPage": 217, "sourceMarkers": ["Practice Using Grouping to Multiply", "Deon makes the fruit snack sticks", "7 x 2 x 4", "4 x 5 X 3", "8 X 2 x 3"] },
+    { "key": "v1-u2-l8-s4-try-model", "unit": 2, "lesson": 8, "session": 4, "order": 1, "printedPages": "207–208", "viewerPage": 219, "sourceMarkers": ["2 boxes of sandwich rolls", "8 packages in each box", "5 sandwich rolls", "8 X 10 = 80"] },
+    { "key": "v1-u2-l8-s4-connect-apply", "unit": 2, "lesson": 8, "session": 4, "order": 2, "printedPages": "209–210", "viewerPage": 221, "sourceMarkers": ["change the order of the 2 and 8", "find 3 x 7 x 3", "find 4 x 9 X 2", "same product as 8 x"] },
+    { "key": "v1-u2-l8-s4-practice", "unit": 2, "lesson": 8, "session": 4, "order": 3, "printedPages": "211–212", "viewerPage": 223, "sourceMarkers": ["Practice Using Order and Grouping to Multiply", "numbers 2, 3, and 4", "numbers 3, 5, and 2", "factors 9, 2, and 2", "factors 4, 2, and 5"] },
+    { "key": "v1-u2-l8-s5-problems-1-3", "unit": 2, "lesson": 8, "session": 5, "order": 1, "printedPages": "213–214", "viewerPage": 225, "sourceMarkers": ["5 rows of cherry trees", "2 cities with wind turbines", "3 x 8 X 2", "4 x 6 = 24"] },
+    { "key": "v1-u2-l8-s5-problems-4-6", "unit": 2, "lesson": 8, "session": 5, "order": 2, "printedPages": "215", "viewerPage": 227, "sourceMarkers": ["Lamont knows 9 x 7 = 63", "equations are true", "2 photo albums", "8 pages", "4 pictures"] },
+    { "key": "v1-u2-l8-s5-problems-7-journal", "unit": 2, "lesson": 8, "session": 5, "order": 3, "printedPages": "216", "viewerPage": 228, "sourceMarkers": ["3 rows of pictures", "7 pictures in each row", "3 x 2", "Math Journal"] },
+    { "key": "v1-u2-l9-s1-try-connect", "unit": 2, "lesson": 9, "session": 1, "order": 1, "printedPages": "219–220", "viewerPage": 231, "sourceMarkers": ["4 stacks of books", "20 books", "skip-count by ten 8 times", "skip-count by twenty"] },
+    { "key": "v1-u2-l9-s1-prepare", "unit": 2, "lesson": 9, "session": 1, "order": 2, "printedPages": "221", "viewerPage": 233, "sourceMarkers": ["Prepare for Using Place Value to Multiply", "skip-counting to find 6 x 50"] },
+    { "key": "v1-u2-l9-s1-practice", "unit": 2, "lesson": 9, "session": 1, "order": 3, "printedPages": "222", "viewerPage": 234, "sourceMarkers": ["Ming fills 6 gift bags", "30 prizes", "Check your answer"] },
+    { "key": "v1-u2-l9-s2-try-model", "unit": 2, "lesson": 9, "session": 2, "order": 1, "printedPages": "223–224", "viewerPage": 235, "sourceMarkers": ["4 racks of dashikis", "40 dashikis", "4 groups of 4 tens", "16 tens is 160"] },
+    { "key": "v1-u2-l9-s2-connect-apply", "unit": 2, "lesson": 9, "session": 2, "order": 2, "printedPages": "225–226", "viewerPage": 237, "sourceMarkers": ["three multiplication expressions", "16 X 10", "Find 60 x 8", "7 rolls of quarters", "7 x 30"] },
+    { "key": "v1-u2-l9-s2-practice", "unit": 2, "lesson": 9, "session": 2, "order": 3, "printedPages": "227–228", "viewerPage": 239, "sourceMarkers": ["Practice Multiplying with Tens", "3 jars of pickles", "50 pickles", "match each problem", "find 4 x 70"] },
+    { "key": "v1-u2-l9-s3-problems-1-3", "unit": 2, "lesson": 9, "session": 3, "order": 1, "printedPages": "229–230", "viewerPage": 241, "sourceMarkers": ["9 firefighters in each row", "30 rows", "50 miles each day", "rewrite", "8 plantains", "40 chips"] },
+    { "key": "v1-u2-l9-s3-problems-4-6", "unit": 2, "lesson": 9, "session": 3, "order": 2, "printedPages": "231", "viewerPage": 243, "sourceMarkers": ["product 6 x 30", "60 bulbs", "2 boxes of string lights", "equal to 240"] },
+    { "key": "v1-u2-l9-s3-problems-7-journal", "unit": 2, "lesson": 9, "session": 3, "order": 3, "printedPages": "232", "viewerPage": 244, "sourceMarkers": ["80 sheets of paper", "7 such notebooks", "8 dolls", "20 sets", "multiplication facts and place value"] },
+    { "key": "v1-u3-l10-s1-models", "unit": 3, "lesson": 10, "session": 1, "order": 1, "printedPages": "235–236", "viewerPage": 247, "sourceMarkers": ["8 slices of halloumi cheese", "2 equal groups", "10 slices of halloumi cheese", "2 slices on each plate"] },
+    { "key": "v1-u3-l10-s1-prepare", "unit": 3, "lesson": 10, "session": 1, "order": 2, "printedPages": "237", "viewerPage": 249, "sourceMarkers": ["Prepare for Exploring", "Troy draws a diagram", "12", "3"] },
+    { "key": "v1-u3-l10-s1-practice", "unit": 3, "lesson": 10, "session": 1, "order": 3, "printedPages": "238", "viewerPage": 250, "sourceMarkers": ["Savanna makes 12 stuffed grape leaves", "4 grape leaves on each plate", "How many plates"] },
+    { "key": "v1-u3-l10-s2-equal-groups", "unit": 3, "lesson": 10, "session": 2, "order": 1, "printedPages": "239", "viewerPage": 251, "sourceMarkers": ["24 oranges", "6 oranges in each bag", "24 oranges in 6 bags", "division equation"] },
+    { "key": "v1-u3-l10-s2-arrays-connect", "unit": 3, "lesson": 10, "session": 2, "order": 2, "printedPages": "240", "viewerPage": 252, "sourceMarkers": ["array to show 20", "different array", "42", "division equation"] },
+    { "key": "v1-u3-l10-s2-practice", "unit": 3, "lesson": 10, "session": 2, "order": 3, "printedPages": "241–242", "viewerPage": 253, "sourceMarkers": ["Practice Using Division Models", "8 frogs", "20 students", "array of 18 rectangles", "30"] },
+    { "key": "v1-u3-l10-s3-apply", "unit": 3, "lesson": 10, "session": 3, "order": 1, "printedPages": "243", "viewerPage": 255, "sourceMarkers": ["Yuko draws this array of stars", "story problem", "16", "prickly pears", "equal groups"] },
+    { "key": "v1-u3-l10-s3-problem-journal", "unit": 3, "lesson": 10, "session": 3, "order": 2, "printedPages": "244", "viewerPage": 256, "sourceMarkers": ["20 almonds", "same number of almonds", "45", "9", "equal groups"] },
+    { "key": "v1-u3-l11-s1-models", "unit": 3, "lesson": 11, "session": 1, "order": 1, "printedPages": "247–248", "viewerPage": 259, "sourceMarkers": ["pennies in the space", "break your array into 4 equal groups", "20 stickers on 5 pages", "division equation"] },
+    { "key": "v1-u3-l11-s1-prepare", "unit": 3, "lesson": 11, "session": 1, "order": 2, "printedPages": "249", "viewerPage": 261, "sourceMarkers": ["Think about what you know about division", "multiplication equation and a division equation", "array"] },
+    { "key": "v1-u3-l11-s1-practice", "unit": 3, "lesson": 11, "session": 1, "order": 3, "printedPages": "250", "viewerPage": 262, "sourceMarkers": ["Amber collects flower stickers", "21 stickers", "7 pages", "multiplication doing the reverse"] },
+    { "key": "v1-u3-l11-s2-situation-facts", "unit": 3, "lesson": 11, "session": 2, "order": 1, "printedPages": "251–252", "viewerPage": 263, "sourceMarkers": ["18 strings of worry beads", "3 strings", "division equation", "24", "54", "numbers 7, 8, and 56"] },
+    { "key": "v1-u3-l11-s2-practice", "unit": 3, "lesson": 11, "session": 2, "order": 2, "printedPages": "253–254", "viewerPage": 265, "sourceMarkers": ["Practice How Multiplication", "15 guavas", "3 baskets", "18 fish", "6 x 7 = 42"] },
+    { "key": "v1-u3-l11-s3-apply", "unit": 3, "lesson": 11, "session": 3, "order": 1, "printedPages": "255", "viewerPage": 267, "sourceMarkers": ["Hopi plants", "63", "7", "Hass avocados", "4 bags", "6 Hass avocados"] },
+    { "key": "v1-u3-l11-s3-problem-journal", "unit": 3, "lesson": 11, "session": 3, "order": 2, "printedPages": "256", "viewerPage": 268, "sourceMarkers": ["division equation 15", "multiplication equation", "35", "7", "story problem"] },
+    { "key": "v1-u3-l12-s1-try-connect", "unit": 3, "lesson": 12, "session": 1, "order": 1, "printedPages": "259–260", "viewerPage": 271, "sourceMarkers": ["24 sepak takraw balls", "3 bags", "Fact families for multiplication and division", "same three numbers"] },
+    { "key": "v1-u3-l12-s1-prepare", "unit": 3, "lesson": 12, "session": 1, "order": 2, "printedPages": "261", "viewerPage": 273, "sourceMarkers": ["Prepare for Multiplication and Division Facts", "fact families to help find 32"] },
+    { "key": "v1-u3-l12-s1-practice", "unit": 3, "lesson": 12, "session": 1, "order": 3, "printedPages": "262", "viewerPage": 274, "sourceMarkers": ["28 bikes at the playground", "4 bike racks", "How many bikes"] },
+    { "key": "v1-u3-l12-s2-try-model", "unit": 3, "lesson": 12, "session": 2, "order": 1, "printedPages": "263–264", "viewerPage": 275, "sourceMarkers": ["5 sled dog teams", "40 sled dogs", "Skip-count by fives", "multiplication facts for 5"] },
+    { "key": "v1-u3-l12-s2-connect-apply", "unit": 3, "lesson": 12, "session": 2, "order": 2, "printedPages": "265–266", "viewerPage": 277, "sourceMarkers": ["same fact family as 8 x 5 = 40", "number line to solve 24", "Write the unknown product", "Enrico"] },
+    { "key": "v1-u3-l12-s2-practice", "unit": 3, "lesson": 12, "session": 2, "order": 3, "printedPages": "267–268", "viewerPage": 279, "sourceMarkers": ["Practice Working with Division Facts", "15 fish", "4 x 9 = 36", "18 squares", "24 trading cards"] },
+    { "key": "v1-u3-l12-s3-table-model", "unit": 3, "lesson": 12, "session": 3, "order": 1, "printedPages": "269–270", "viewerPage": 281, "sourceMarkers": ["Complete the facts", "multiplication table", "row for", "fact family"] },
+    { "key": "v1-u3-l12-s3-connect-apply", "unit": 3, "lesson": 12, "session": 3, "order": 2, "printedPages": "271–272", "viewerPage": 283, "sourceMarkers": ["numbers in the shaded row", "fact family that includes", "56", "California poppies"] },
+    { "key": "v1-u3-l12-s3-practice", "unit": 3, "lesson": 12, "session": 3, "order": 3, "printedPages": "273–274", "viewerPage": 285, "sourceMarkers": ["Practice Using a Multiplication Table", "6, 4, and 24", "Find 21", "28", "42"] },
+    { "key": "v1-u3-l12-s4-problems-1-3", "unit": 3, "lesson": 12, "session": 4, "order": 1, "printedPages": "275–276", "viewerPage": 287, "sourceMarkers": ["speeches done in 15 minutes", "35", "4 x 9", "30 players", "6 players"] },
+    { "key": "v1-u3-l12-s4-problems-4-6", "unit": 3, "lesson": 12, "session": 4, "order": 2, "printedPages": "277", "viewerPage": 289, "sourceMarkers": ["same fact family as 12", "fact can you use", "Does putting", "make each equation true"] },
+    { "key": "v1-u3-l12-s4-problems-7-journal", "unit": 3, "lesson": 12, "session": 4, "order": 3, "printedPages": "278", "viewerPage": 290, "sourceMarkers": ["fact families have only one multiplication equation", "32 pita breads", "4 pita breads", "MATH JOURNAL"] },
+    { "key": "v1-u3-l13-s1-models", "unit": 3, "lesson": 13, "session": 1, "order": 1, "printedPages": "281–282", "viewerPage": 293, "sourceMarkers": ["pattern of hair clips", "numbers under the shapes", "number chart", "numbers 9, 18, and 27"] },
+    { "key": "v1-u3-l13-s1-prepare-practice", "unit": 3, "lesson": 13, "session": 1, "order": 2, "printedPages": "283–284", "viewerPage": 295, "sourceMarkers": ["Prepare for Exploring Patterns", "pattern of shapes", "pattern 2, 4", "numbers 8, 16, and 24"] },
+    { "key": "v1-u3-l13-s2-table-models", "unit": 3, "lesson": 13, "session": 2, "order": 1, "printedPages": "285–286", "viewerPage": 297, "sourceMarkers": ["odd sums in the table", "even sums in the table", "even products", "multiplication and addition patterns"] },
+    { "key": "v1-u3-l13-s2-practice", "unit": 3, "lesson": 13, "session": 2, "order": 2, "printedPages": "287–288", "viewerPage": 299, "sourceMarkers": ["Practice Finding Patterns", "583 small mailboxes", "sum of the two end numbers", "row and column for 0", "6 logs of wood"] },
+    { "key": "v1-u3-l13-s3-apply", "unit": 3, "lesson": 13, "session": 3, "order": 1, "printedPages": "289", "viewerPage": 301, "sourceMarkers": ["diagonal has all 4s", "counts to 50 by fives", "counts to 50 by 10s", "odd factor times an odd factor"] },
+    { "key": "v1-u3-l13-s3-table-journal", "unit": 3, "lesson": 13, "session": 3, "order": 2, "printedPages": "290", "viewerPage": 302, "sourceMarkers": ["multiplication table below", "missing numbers", "shaded products", "MATH JOURNAL"] },
+    { "key": "v1-u3-l14-s1-model-area", "unit": 3, "lesson": 14, "session": 1, "order": 1, "printedPages": "315–316", "viewerPage": 327, "sourceMarkers": ["How can you measure the area of a shape", "square units", "measure its area", "area of the rug"] },
+    { "key": "v1-u3-l14-s1-prepare-practice", "unit": 3, "lesson": 14, "session": 1, "order": 2, "printedPages": "317–318", "viewerPage": 329, "sourceMarkers": ["Prepare for Finding Area", "measure the area of the rug in square units", "Circle the rug", "recycled"] },
+    { "key": "v1-u3-l14-s2-models", "unit": 3, "lesson": 14, "session": 2, "order": 1, "printedPages": "319–320", "viewerPage": 331, "sourceMarkers": ["MODEL IT: RECTANGULAR SHAPES", "square A", "rectangle B", "NON-RECTANGULAR SHAPES", "find the area"] },
+    { "key": "v1-u3-l14-s2-practice-1-2", "unit": 3, "lesson": 14, "session": 2, "order": 2, "printedPages": "321", "viewerPage": 333, "sourceMarkers": ["Practice Finding Area", "Count to find each area", "deck", "square inches"] },
+    { "key": "v1-u3-l14-s2-practice-3-7", "unit": 3, "lesson": 14, "session": 2, "order": 3, "printedPages": "322", "viewerPage": 334, "sourceMarkers": ["Lila says", "Rectangle B has", "skip-count", "rectangle C"] },
+    { "key": "v1-u3-l14-s3-apply", "unit": 3, "lesson": 14, "session": 3, "order": 1, "printedPages": "323", "viewerPage": 335, "sourceMarkers": ["Find the area of each shape", "Tyler says", "dot grid", "number the square units"] },
+    { "key": "v1-u3-l14-s3-grid-journal", "unit": 3, "lesson": 14, "session": 3, "order": 2, "printedPages": "324", "viewerPage": 336, "sourceMarkers": ["rectangle with an area of 8 square units", "greater than 8 square", "MATH JOURNAL", "rectangle drawn on a dot grid"] },
+    { "key": "v1-u3-l15-s1-try-connect", "unit": 3, "lesson": 15, "session": 1, "order": 1, "printedPages": "327–328", "viewerPage": 339, "sourceMarkers": ["Dakota", "paint", "cannot count", "5 squares long", "3 squares wide"] },
+    { "key": "v1-u3-l15-s1-prepare-practice", "unit": 3, "lesson": 15, "session": 1, "order": 2, "printedPages": "329–330", "viewerPage": 341, "sourceMarkers": ["Prepare for Multiplying to Find Area", "skip-counts by fours", "Lupita", "area of her apartment"] },
+    { "key": "v1-u3-l15-s2-try-model", "unit": 3, "lesson": 15, "session": 2, "order": 1, "printedPages": "331–332", "viewerPage": 343, "sourceMarkers": ["What is the area of the rectangle", "centimeters", "square tiles", "multiplication equation"] },
+    { "key": "v1-u3-l15-s2-connect-apply", "unit": 3, "lesson": 15, "session": 2, "order": 2, "printedPages": "333–334", "viewerPage": 345, "sourceMarkers": ["length and width", "square centimeters", "area of the square", "Mato", "mola fabric"] },
+    { "key": "v1-u3-l15-s2-practice", "unit": 3, "lesson": 15, "session": 2, "order": 3, "printedPages": "335–336", "viewerPage": 347, "sourceMarkers": ["Practice Multiplying to Find Area", "8 inches", "Rectangle A", "Rectangle B", "unknown side length"] },
+    { "key": "v1-u3-l15-s3-compare-paintings", "unit": 3, "lesson": 15, "session": 3, "order": 1, "printedPages": "337–338", "viewerPage": 349, "sourceMarkers": ["Narsrin paints two paintings", "9 inches wide", "10 inches long", "greater area"] },
+    { "key": "v1-u3-l15-s3-connect-apply", "unit": 3, "lesson": 15, "session": 3, "order": 2, "printedPages": "339–340", "viewerPage": 351, "sourceMarkers": ["square inches", "ping pong table", "same area as", "rectangular photo"] },
+    { "key": "v1-u3-l15-s3-practice", "unit": 3, "lesson": 15, "session": 3, "order": 3, "printedPages": "341–342", "viewerPage": 353, "sourceMarkers": ["Roberto", "area of this rug", "Yasmin", "Salim", "flag", "wall"] },
+    { "key": "v1-u3-l15-s4-problems-1-3", "unit": 3, "lesson": 15, "session": 4, "order": 1, "printedPages": "343–344", "viewerPage": 355, "sourceMarkers": ["Mr. Tallbull", "four square court", "rooftop garden", "Yoshi"] },
+    { "key": "v1-u3-l15-s4-problems-4-journal", "unit": 3, "lesson": 15, "session": 4, "order": 2, "printedPages": "345–346", "viewerPage": 357, "sourceMarkers": ["bathroom wall", "area of 12 square", "rectangular deck", "fabric squares", "MATH JOURNAL"] },
+    { "key": "v1-u3-l16-s1-try-connect", "unit": 3, "lesson": 16, "session": 1, "order": 1, "printedPages": "349–350", "viewerPage": 361, "sourceMarkers": ["Noma and Jordan make posters", "wall covered by both posters", "combined rectangle", "Rectangle A"] },
+    { "key": "v1-u3-l16-s1-prepare-practice", "unit": 3, "lesson": 16, "session": 1, "order": 2, "printedPages": "351–352", "viewerPage": 363, "sourceMarkers": ["Prepare for Adding Areas", "Nuru and José", "Tara and Ashur", "total area of the floor"] },
+    { "key": "v1-u3-l16-s2-garden-model", "unit": 3, "lesson": 16, "session": 2, "order": 1, "printedPages": "353–354", "viewerPage": 365, "sourceMarkers": ["Mrs. Chang's vegetable garden", "tomatoes", "corn", "15 square units", "width of the rectangle"] },
+    { "key": "v1-u3-l16-s2-connect-apply", "unit": 3, "lesson": 16, "session": 2, "order": 2, "printedPages": "355–356", "viewerPage": 367, "sourceMarkers": ["SHOW WHAT YOU KNOW", "two parts of the garden", "How many 1-meter-square tiles", "area of this figure"] },
+    { "key": "v1-u3-l16-s2-practice", "unit": 3, "lesson": 16, "session": 2, "order": 3, "printedPages": "357–358", "viewerPage": 369, "sourceMarkers": ["Practice Finding Areas of Combined Rectangles", "Ajay and his dad", "Clay", "Evan"] },
+    { "key": "v1-u3-l16-s3-lupe-model", "unit": 3, "lesson": 16, "session": 3, "order": 1, "printedPages": "359–360", "viewerPage": 371, "sourceMarkers": ["Lupe uses 1-inch-square tiles", "area of Lupe's shape", "There are 10 square units", "break apart"] },
+    { "key": "v1-u3-l16-s3-connect-apply", "unit": 3, "lesson": 16, "session": 3, "order": 2, "printedPages": "361–362", "viewerPage": 373, "sourceMarkers": ["Amari breaks apart a shape", "total area of this shape", "Opal draws this model", "picnic table"] },
+    { "key": "v1-u3-l16-s3-practice", "unit": 3, "lesson": 16, "session": 3, "order": 3, "printedPages": "363–364", "viewerPage": 375, "sourceMarkers": ["Practice Finding Areas of Non-Rectangular Shapes", "Sam's Way", "Carla's Way", "gray rectangle"] },
+    { "key": "v1-u3-l16-s4-example-problems", "unit": 3, "lesson": 16, "session": 4, "order": 1, "printedPages": "365–366", "viewerPage": 377, "sourceMarkers": ["Adding Areas", "science night", "Seth uses 1-inch-square tiles", "birdhouse", "Jenna chose"] },
+    { "key": "v1-u3-l16-s4-final-journal", "unit": 3, "lesson": 16, "session": 4, "order": 2, "printedPages": "367–368", "viewerPage": 379, "sourceMarkers": ["porch and garden", "area of 98 square feet", "unknown measurements", "MATH JOURNAL"] },
+    { "key": "v1-u3-l17-s1-try-connect", "unit": 3, "lesson": 17, "session": 1, "order": 1, "printedPages": "371–372", "viewerPage": 383, "sourceMarkers": ["Write a word problem about this array", "array of baseballs", "Two bunches", "12 bananas"] },
+    { "key": "v1-u3-l17-s1-prepare-practice", "unit": 3, "lesson": 17, "session": 1, "order": 2, "printedPages": "373–374", "viewerPage": 385, "sourceMarkers": ["Prepare for Solving One-Step Word Problems", "24 dragon fruits", "3 boxes", "Solve the problem"] },
+    { "key": "v1-u3-l17-s2-try-model", "unit": 3, "lesson": 17, "session": 2, "order": 1, "printedPages": "375–376", "viewerPage": 387, "sourceMarkers": ["scientist places 24 corals", "4 tanks", "equal number of corals", "Make 4 groups"] },
+    { "key": "v1-u3-l17-s2-connect-apply", "unit": 3, "lesson": 17, "session": 2, "order": 2, "printedPages": "377–378", "viewerPage": 389, "sourceMarkers": ["number of corals in each group", "Muna has 30 photos", "9 drawing kits", "21 apples"] },
+    { "key": "v1-u3-l17-s2-practice", "unit": 3, "lesson": 17, "session": 2, "order": 3, "printedPages": "379–380", "viewerPage": 391, "sourceMarkers": ["Practice Solving Problems About Equal Groups", "hula dance classes", "Mexican folk dance", "modern dance"] },
+    { "key": "v1-u3-l17-s3-try-model", "unit": 3, "lesson": 17, "session": 3, "order": 1, "printedPages": "381–382", "viewerPage": 393, "sourceMarkers": ["42 people in a marching band", "6 people in each row", "How many rows", "Use an array"] },
+    { "key": "v1-u3-l17-s3-connect-apply", "unit": 3, "lesson": 17, "session": 3, "order": 2, "printedPages": "383–384", "viewerPage": 395, "sourceMarkers": ["24 crayons in a box", "20 shirts", "tomato plants", "54 flowers"] },
+    { "key": "v1-u3-l17-s3-practice", "unit": 3, "lesson": 17, "session": 3, "order": 3, "printedPages": "385–386", "viewerPage": 397, "sourceMarkers": ["Practice Solving Problems About Arrays", "20 baskets", "paint jars", "54 frames", "30 drawing pads"] },
+    { "key": "v1-u3-l17-s4-try-model", "unit": 3, "lesson": 17, "session": 4, "order": 1, "printedPages": "387–388", "viewerPage": 399, "sourceMarkers": ["Salam uses colored squares", "area of 48 square inches", "6 rows", "How long is the rectangle"] },
+    { "key": "v1-u3-l17-s4-connect-apply", "unit": 3, "lesson": 17, "session": 4, "order": 2, "printedPages": "389–390", "viewerPage": 401, "sourceMarkers": ["Salam's rectangle", "56 square inches", "sidewalk", "Takoda", "calendar"] },
+    { "key": "v1-u3-l17-s4-practice", "unit": 3, "lesson": 17, "session": 4, "order": 3, "printedPages": "391–392", "viewerPage": 403, "sourceMarkers": ["Practice Solving Problems About Area", "Mr. Crow", "rectangular quilt", "game board"] },
+    { "key": "v1-u3-l17-s5-example-3", "unit": 3, "lesson": 17, "session": 5, "order": 1, "printedPages": "393–394", "viewerPage": 405, "sourceMarkers": ["Deyvi has 18 homework problems", "Mr. Takata", "54 students", "Aba eats 3 servings"] },
+    { "key": "v1-u3-l17-s5-final-journal", "unit": 3, "lesson": 17, "session": 5, "order": 2, "printedPages": "395–396", "viewerPage": 407, "sourceMarkers": ["10 socks in a dryer", "Bree cuts a tray", "fiddlehead ferns", "bocce balls", "MATH JOURNAL"] },
+    { "key": "v1-u3-l18-s1-try-connect", "unit": 3, "lesson": 18, "session": 1, "order": 1, "printedPages": "399–400", "viewerPage": 411, "sourceMarkers": ["438 shirts", "4 different colors", "8 shirts of each color", "45 kufi caps", "5 shelves"] },
+    { "key": "v1-u3-l18-s1-prepare-practice", "unit": 3, "lesson": 18, "session": 1, "order": 2, "printedPages": "401–402", "viewerPage": 413, "sourceMarkers": ["40 suits", "16 suits", "4 racks", "Ade has 356 beads", "6 different colors"] },
+    { "key": "v1-u3-l18-s2-try-model", "unit": 3, "lesson": 18, "session": 2, "order": 1, "printedPages": "403–404", "viewerPage": 415, "sourceMarkers": ["Pablo paints a mural", "12 small cans", "3 other cans", "rows of 5"] },
+    { "key": "v1-u3-l18-s2-connect-apply", "unit": 3, "lesson": 18, "session": 2, "order": 2, "printedPages": "405–406", "viewerPage": 417, "sourceMarkers": ["two equations", "Yasmin has 4 five-dollar bills", "48 water bottles", "Vegetable plants"] },
+    { "key": "v1-u3-l18-s2-practice", "unit": 3, "lesson": 18, "session": 2, "order": 3, "printedPages": "407–408", "viewerPage": 419, "sourceMarkers": ["Practice Solving Two-Step Word Problems Using Two Equations", "red apples", "office building", "boxes of potatoes"] },
+    { "key": "v1-u3-l18-s3-try-model", "unit": 3, "lesson": 18, "session": 3, "order": 1, "printedPages": "409–410", "viewerPage": 421, "sourceMarkers": ["Spring Elementary School", "raise $250", "$9 each day", "8 days"] },
+    { "key": "v1-u3-l18-s3-connect-apply", "unit": 3, "lesson": 18, "session": 3, "order": 2, "printedPages": "411–412", "viewerPage": 423, "sourceMarkers": ["value of m", "Savanna has 24", "176 miles", "surfboard that costs"] },
+    { "key": "v1-u3-l18-s3-practice", "unit": 3, "lesson": 18, "session": 3, "order": 3, "printedPages": "413–414", "viewerPage": 425, "sourceMarkers": ["Practice Solving Two-Step Word Problems Using One Equation", "50 tickets", "banner that costs", "100 bags", "paintbrushes", "number puzzles"] },
+    { "key": "v1-u3-l18-s4-try-model", "unit": 3, "lesson": 18, "session": 4, "order": 1, "printedPages": "415–416", "viewerPage": 427, "sourceMarkers": ["Adela races", "152 steps", "12 more steps", "Estimate to check", "nearest hundred"] },
+    { "key": "v1-u3-l18-s4-connect-apply", "unit": 3, "lesson": 18, "session": 4, "order": 2, "printedPages": "417–418", "viewerPage": 429, "sourceMarkers": ["152 + (152 + 12)", "tulip farm", "Evan earned", "650 copies"] },
+    { "key": "v1-u3-l18-s4-practice", "unit": 3, "lesson": 18, "session": 4, "order": 3, "printedPages": "419–420", "viewerPage": 431, "sourceMarkers": ["Practice Estimating Solutions to Word Problems", "Castle Crags State Park", "school parking lot", "Kacy reads"] },
+    { "key": "v1-u3-l18-s5-example-3", "unit": 3, "lesson": 18, "session": 5, "order": 1, "printedPages": "421–422", "viewerPage": 433, "sourceMarkers": ["Kashi is packing strawberries", "300 points", "243 stamps", "134 books"] },
+    { "key": "v1-u3-l18-s5-final-journal", "unit": 3, "lesson": 18, "session": 5, "order": 2, "printedPages": "423–424", "viewerPage": 435, "sourceMarkers": ["314 votes", "800 people", "108 jicamas", "book order", "three bills", "MATH JOURNAL"] },
+    { "key": "v1-u3-l19-s1-try-connect", "unit": 3, "lesson": 19, "session": 1, "order": 1, "printedPages": "427–428", "viewerPage": 439, "sourceMarkers": ["Points Scored During the Game", "represents 2 points", "How many points", "scale of this bar graph"] },
+    { "key": "v1-u3-l19-s1-prepare-practice", "unit": 3, "lesson": 19, "session": 1, "order": 2, "printedPages": "429–430", "viewerPage": 441, "sourceMarkers": ["Prepare for Scaled Graphs", "Do You Play Soccer", "3 votes", "Jamila keeps track", "Monday", "Thursday"] },
+    { "key": "v1-u3-l19-s2-try-model", "unit": 3, "lesson": 19, "session": 2, "order": 1, "printedPages": "431–432", "viewerPage": 443, "sourceMarkers": ["Kashi asks students", "favorite season", "represents 5 students", "summer", "winter"] },
+    { "key": "v1-u3-l19-s2-connect-apply", "unit": 3, "lesson": 19, "session": 2, "order": 2, "printedPages": "433–434", "viewerPage": 445, "sourceMarkers": ["Did 4 or 20", "winter or fall", "number line", "spring or fall", "summer"] },
+    { "key": "v1-u3-l19-s2-practice", "unit": 3, "lesson": 19, "session": 2, "order": 3, "printedPages": "435–436", "viewerPage": 447, "sourceMarkers": ["Practice Reading and Interpreting Picture Graphs", "Anana visits family", "favorite flower", "represents 6 students"] },
+    { "key": "v1-u3-l19-s3-try-model", "unit": 3, "lesson": 19, "session": 3, "order": 1, "printedPages": "437–438", "viewerPage": 449, "sourceMarkers": ["Hart School", "wind turbine", "Grade 3", "Grade 4", "$300"] },
+    { "key": "v1-u3-l19-s3-connect-apply", "unit": 3, "lesson": 19, "session": 3, "order": 2, "printedPages": "439–440", "viewerPage": 451, "sourceMarkers": ["scale numbers", "Money Raised for the Wind Turbine", "How much money", "Which statements are true"] },
+    { "key": "v1-u3-l19-s3-practice", "unit": 3, "lesson": 19, "session": 3, "order": 3, "printedPages": "441–442", "viewerPage": 453, "sourceMarkers": ["Practice Reading", "Pints of Goat Milk", "Monday = 60", "National Park"] },
+    { "key": "v1-u3-l19-s4-try-model", "unit": 3, "lesson": 19, "session": 4, "order": 1, "printedPages": "443–444", "viewerPage": 455, "sourceMarkers": ["Alo is learning", "bullroarer", "Week 2", "30 minutes", "picture graph", "bar graph"] },
+    { "key": "v1-u3-l19-s4-connect-apply", "unit": 3, "lesson": 19, "session": 4, "order": 2, "printedPages": "445–446", "viewerPage": 457, "sourceMarkers": ["scale of 10", "insects in an orchard", "complete the picture graph", "complete the bar graph"] },
+    { "key": "v1-u3-l19-s4-practice", "unit": 3, "lesson": 19, "session": 4, "order": 3, "printedPages": "447–448", "viewerPage": 459, "sourceMarkers": ["Practice Drawing a Scaled Graph", "Adela asks some students", "Pilot", "sport they like best", "Game"] },
+    { "key": "v1-u3-l19-s5-example-3", "unit": 3, "lesson": 19, "session": 5, "order": 1, "printedPages": "449–450", "viewerPage": 461, "sourceMarkers": ["Fernando records", "favorite bike colors", "Snowfall in New York City", "February and March", "Yasmin chose"] },
+    { "key": "v1-u3-l19-s5-final-journal", "unit": 3, "lesson": 19, "session": 5, "order": 2, "printedPages": "451–452", "viewerPage": 463, "sourceMarkers": ["Adan picks cloudberries", "True or False", "Soccer Goals Scored This Season", "MATH JOURNAL"] }
+  ]
+}

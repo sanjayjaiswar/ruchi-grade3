@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "program": "i-ready-classroom-mathematics-california",
+  "publisher": "Curriculum Associates",
+  "grade": 3,
+  "volume": 2,
+  "studentSourceId": "grade3-student-worktext-v2",
+  "teacherSourceId": "grade3-teacher-guide-v2",
+  "coverageStatus": "complete-official-session-sequence",
+  "sessions": [
+    { "unit": 4, "lesson": 20, "session": 1, "phase": "Explore", "title": "What a Fraction Is", "printedPages": "475–478", "model": "fraction-parts" },
+    { "unit": 4, "lesson": 20, "session": 2, "phase": "Develop", "title": "Describing Parts of a Whole with Fractions", "printedPages": "479–482", "model": "fraction-parts" },
+    { "unit": 4, "lesson": 20, "session": 3, "phase": "Refine", "title": "Ideas About What a Fraction Is", "printedPages": "483–484", "model": "fraction-parts" },
+
+    { "unit": 4, "lesson": 21, "session": 1, "phase": "Explore", "title": "Fractions on a Number Line", "printedPages": "487–490", "model": "fraction-number-line" },
+    { "unit": 4, "lesson": 21, "session": 2, "phase": "Develop", "title": "Understanding Fractions on a Number Line", "printedPages": "491–494", "model": "fraction-number-line" },
+    { "unit": 4, "lesson": 21, "session": 3, "phase": "Refine", "title": "Ideas About Fractions on a Number Line", "printedPages": "495–496", "model": "fraction-number-line" },
+
+    { "unit": 4, "lesson": 22, "session": 1, "phase": "Explore", "title": "Equivalent Fractions", "printedPages": "499–502", "model": "equivalent-fractions" },
+    { "unit": 4, "lesson": 22, "session": 2, "phase": "Develop", "title": "Understanding Equivalent Fractions", "printedPages": "503–506", "model": "equivalent-fractions" },
+    { "unit": 4, "lesson": 22, "session": 3, "phase": "Refine", "title": "Ideas About Equivalent Fractions", "printedPages": "507–508", "model": "equivalent-fractions" },
+
+    { "unit": 4, "lesson": 23, "session": 1, "phase": "Explore", "title": "Finding Equivalent Fractions", "printedPages": "511–514", "model": "equivalent-fractions" },
+    { "unit": 4, "lesson": 23, "session": 2, "phase": "Develop", "title": "Finding Equivalent Fractions", "printedPages": "515–520", "model": "equivalent-fractions" },
+    { "unit": 4, "lesson": 23, "session": 3, "phase": "Develop", "title": "Writing a Whole Number as a Fraction", "printedPages": "521–526", "model": "whole-as-fraction" },
+    { "unit": 4, "lesson": 23, "session": 4, "phase": "Develop", "title": "Writing a Whole Number as a Fraction with a Denominator of 1", "printedPages": "527–532", "model": "whole-as-fraction" },
+    { "unit": 4, "lesson": 23, "session": 5, "phase": "Refine", "title": "Equivalent Fractions", "printedPages": "533–536", "model": "equivalent-fractions" },
+
+    { "unit": 4, "lesson": 24, "session": 1, "phase": "Explore", "title": "Comparing Fractions", "printedPages": "539–542", "model": "compare-fractions" },
+    { "unit": 4, "lesson": 24, "session": 2, "phase": "Develop", "title": "Understanding Comparing Fractions", "printedPages": "543–546", "model": "compare-fractions" },
+    { "unit": 4, "lesson": 24, "session": 3, "phase": "Refine", "title": "Ideas About Comparing Fractions", "printedPages": "547–548", "model": "compare-fractions" },
+
+    { "unit": 4, "lesson": 25, "session": 1, "phase": "Explore", "title": "Using Symbols to Compare Fractions", "printedPages": "551–554", "model": "compare-symbols" },
+    { "unit": 4, "lesson": 25, "session": 2, "phase": "Develop", "title": "Comparing Fractions Using Symbols", "printedPages": "555–560", "model": "compare-symbols" },
+    { "unit": 4, "lesson": 25, "session": 3, "phase": "Refine", "title": "Using Symbols to Compare Fractions", "printedPages": "561–564", "model": "compare-symbols" },
+
+    { "unit": 4, "lesson": 26, "session": 1, "phase": "Explore", "title": "Measuring Length and Plotting Data on Line Plots", "printedPages": "567–570", "model": "line-plot" },
+    { "unit": 4, "lesson": 26, "session": 2, "phase": "Develop", "title": "Measuring Length", "printedPages": "571–576", "model": "line-plot" },
+    { "unit": 4, "lesson": 26, "session": 3, "phase": "Develop", "title": "Displaying Data in a Line Plot", "printedPages": "577–582", "model": "line-plot" },
+    { "unit": 4, "lesson": 26, "session": 4, "phase": "Refine", "title": "Length and Line Plots", "printedPages": "583–586", "model": "line-plot" },
+
+    { "unit": 5, "lesson": 27, "session": 1, "phase": "Explore", "title": "Working with Time", "printedPages": "609–612", "model": "clock" },
+    { "unit": 5, "lesson": 27, "session": 2, "phase": "Develop", "title": "Telling Time to the Minute", "printedPages": "613–618", "model": "clock" },
+    { "unit": 5, "lesson": 27, "session": 3, "phase": "Develop", "title": "Finding the End Time in Word Problems", "printedPages": "619–624", "model": "elapsed-time" },
+    { "unit": 5, "lesson": 27, "session": 4, "phase": "Develop", "title": "Finding the Start Time in Word Problems", "printedPages": "625–630", "model": "elapsed-time" },
+    { "unit": 5, "lesson": 27, "session": 5, "phase": "Refine", "title": "Time", "printedPages": "631–634", "model": "clock" },
+
+    { "unit": 5, "lesson": 28, "session": 1, "phase": "Explore", "title": "Working with Liquid Volume", "printedPages": "637–640", "model": "liquid-volume" },
+    { "unit": 5, "lesson": 28, "session": 2, "phase": "Develop", "title": "Estimating Liquid Volume", "printedPages": "641–646", "model": "liquid-volume" },
+    { "unit": 5, "lesson": 28, "session": 3, "phase": "Develop", "title": "Solving Word Problems About Liquid Volume", "printedPages": "647–652", "model": "liquid-volume" },
+    { "unit": 5, "lesson": 28, "session": 4, "phase": "Refine", "title": "Liquid Volume", "printedPages": "653–656", "model": "liquid-volume" },
+
+    { "unit": 5, "lesson": 29, "session": 1, "phase": "Explore", "title": "Working with Mass", "printedPages": "659–662", "model": "mass" },
+    { "unit": 5, "lesson": 29, "session": 2, "phase": "Develop", "title": "Estimating Mass", "printedPages": "663–668", "model": "mass" },
+    { "unit": 5, "lesson": 29, "session": 3, "phase": "Develop", "title": "Solving Word Problems About Mass", "printedPages": "669–674", "model": "mass" },
+    { "unit": 5, "lesson": 29, "session": 4, "phase": "Refine", "title": "Mass", "printedPages": "675–680", "model": "mass" },
+
+    { "unit": 6, "lesson": 30, "session": 1, "phase": "Explore", "title": "Categories of Shapes", "printedPages": "701–704", "model": "shape-attributes" },
+    { "unit": 6, "lesson": 30, "session": 2, "phase": "Develop", "title": "Understanding Comparing Shapes", "printedPages": "705–708", "model": "shape-attributes" },
+    { "unit": 6, "lesson": 30, "session": 3, "phase": "Refine", "title": "Ideas About Comparing Shapes", "printedPages": "709–710", "model": "shape-attributes" },
+
+    { "unit": 6, "lesson": 31, "session": 1, "phase": "Explore", "title": "Classifying Quadrilaterals", "printedPages": "713–716", "model": "quadrilaterals" },
+    { "unit": 6, "lesson": 31, "session": 2, "phase": "Develop", "title": "Comparing Quadrilaterals", "printedPages": "717–722", "model": "quadrilaterals" },
+    { "unit": 6, "lesson": 31, "session": 3, "phase": "Develop", "title": "Naming and Drawing Quadrilaterals", "printedPages": "723–728", "model": "quadrilaterals" },
+    { "unit": 6, "lesson": 31, "session": 4, "phase": "Refine", "title": "Classifying Quadrilaterals", "printedPages": "729–732", "model": "quadrilaterals" },
+
+    { "unit": 6, "lesson": 32, "session": 1, "phase": "Explore", "title": "Area and Perimeter of Shapes", "printedPages": "735–738", "model": "area-perimeter" },
+    { "unit": 6, "lesson": 32, "session": 2, "phase": "Develop", "title": "Finding an Unknown Side Length", "printedPages": "739–744", "model": "area-perimeter" },
+    { "unit": 6, "lesson": 32, "session": 3, "phase": "Develop", "title": "Finding Same Area with Different Perimeter", "printedPages": "745–750", "model": "area-perimeter" },
+    { "unit": 6, "lesson": 32, "session": 4, "phase": "Develop", "title": "Finding Same Perimeter with Different Area", "printedPages": "751–756", "model": "area-perimeter" },
+    { "unit": 6, "lesson": 32, "session": 5, "phase": "Refine", "title": "Area and Perimeter", "printedPages": "757–760", "model": "area-perimeter" },
+
+    { "unit": 6, "lesson": 33, "session": 1, "phase": "Explore", "title": "Partitioning Shapes into Parts with Equal Areas", "printedPages": "763–766", "model": "partition-shapes" },
+    { "unit": 6, "lesson": 33, "session": 2, "phase": "Develop", "title": "Partitioning Shapes into Equal Parts", "printedPages": "767–772", "model": "partition-shapes" },
+    { "unit": 6, "lesson": 33, "session": 3, "phase": "Refine", "title": "Partitioning Shapes into Equal Areas", "printedPages": "773–778", "model": "partition-shapes" }
+  ]
+}
