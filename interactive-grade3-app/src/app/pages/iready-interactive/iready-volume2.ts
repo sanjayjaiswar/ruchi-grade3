@@ -295,7 +295,7 @@ function v2SessionSourceTeaching(session: IReadyV2Session, solved: boolean): Pro
   const key = `${session.lesson}-${session.session}`;
   const crop = V2_SESSION_SOURCE_CROPS[key];
   const trace = IREADY_V2_TEACHING_TRACE[key];
-  if (!crop || !trace) reject(`lesson ${session.lesson}, session ${session.session} has no reviewed source crop and teaching trace`);
+  if (!trace) reject(`lesson ${session.lesson}, session ${session.session} has no reviewed teaching trace`);
   const reasoning: ProblemVisualSection = {
     kind: 'source-directions',
     label: 'Reason through this exact i-Ready model',
@@ -305,6 +305,7 @@ function v2SessionSourceTeaching(session: IReadyV2Session, solved: boolean): Pro
       { lead: 'Explain', text: solved ? trace.moves[2] : 'Use the model to complete the final explanation.' }
     ]
   };
+  if (!crop) return [reasoning];
   if (!V2_SOURCE_FIGURE_REQUIRED.has(key)) return [reasoning];
 
   return [
@@ -1254,12 +1255,13 @@ function v2ReviewedVisual(session: IReadyV2Session, solved: boolean, base: Probl
   let reviewedSections = firstSemanticIndex > 0
     ? [interactiveSections[firstSemanticIndex], ...interactiveSections.slice(0, firstSemanticIndex), ...interactiveSections.slice(firstSemanticIndex + 1)]
     : interactiveSections;
+  const sourceTeaching = v2SessionSourceTeaching(session, solved)
+    .filter((section) => !sourceImageKinds.has(section.kind));
   if (!reviewedSections.length) {
-    reject(`lesson ${session.lesson}, session ${session.session} has no interactive rendering after source images are moved to evidence`);
+    reviewedSections = sourceTeaching;
   }
+  if (!reviewedSections.length) reject(`lesson ${session.lesson}, session ${session.session} has no interactive rendering after source images are moved to evidence`);
   if (session.lesson >= 20 && session.lesson <= 27) {
-    const sourceTeaching = v2SessionSourceTeaching(session, solved)
-      .filter((section) => !sourceImageKinds.has(section.kind));
     reviewedSections = [reviewedSections[0], ...sourceTeaching, ...reviewedSections.slice(1)];
   }
 

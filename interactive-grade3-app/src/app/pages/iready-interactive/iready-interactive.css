@@ -1,3 +1,5 @@
+@import './iready-visual-system.css';
+
 :host {
   --ink: #172033;
   --muted: #5f6b82;
@@ -843,6 +845,10 @@
 .resource-source-strip { display: grid; max-height: calc(100vh - 248px); gap: 9px; overflow: auto; padding-right: 3px; }
 .resource-source-strip figure { flex: 0 0 auto; }
 .resource-work-panel app-problem-visual-workspace { display: block; min-width: 0; }
+.resource-work-panel app-problem-visual-workspace ::ng-deep .visual-header span {
+  font-size: 15px;
+  line-height: 1.4;
+}
 
 .self-check-workspace { padding: 14px 18px 18px; background: #f7faff; }
 .self-check-workspace > header { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; margin-bottom: 12px; }
@@ -861,7 +867,7 @@
 .self-check-skill { padding: 12px 14px; }
 .self-check-row p { margin: 0; color: #1d2940; font-size: 17px; font-weight: 680; line-height: 1.4; }
 .self-check-row ul { display: grid; gap: 2px; margin: 6px 0 0; padding-left: 22px; color: #46556d; font-size: 15px; line-height: 1.4; }
-.self-check-row label { display: grid; min-height: 70px; place-items: center; gap: 2px; padding: 8px; border-left: 1px solid #d8e2f1; color: #526078; font-size: 13px; font-weight: 750; cursor: pointer; }
+.self-check-row label { display: grid; min-height: 70px; place-items: center; gap: 2px; padding: 8px; border-left: 1px solid #d8e2f1; color: #526078; font-size: 15px; font-weight: 750; cursor: pointer; }
 .self-check-row input { width: 24px; height: 24px; accent-color: var(--blue); }
 .self-check-row label:focus-within { background: #edf4ff; outline: 3px solid #bfd2ff; outline-offset: -3px; }
 
@@ -2001,6 +2007,107 @@
   font-size: 18px !important;
   line-height: 1.5;
 }
+.learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep .visual-source-directions b,
+.learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep .visual-source-directions span {
+  color: #334155;
+  font-size: 17px !important;
+  font-weight: 500;
+  line-height: 1.45;
+}
+.learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep .visual-source-model-reasoning span {
+  color: #334155;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep .visual-source-model-reasoning small,
+.learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep .visual-source-model figcaption {
+  color: var(--lesson-caption);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep .optional-response-tools > summary {
+  color: var(--lesson-ink);
+  font-size: 16px;
+  line-height: 1.45;
+}
+.learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep :is(
+  .optional-response-tools > summary small,
+  .source-response-sketch > span,
+  .optional-written-response > span
+) {
+  color: var(--lesson-caption);
+  font-size: 15px;
+  line-height: 1.45;
+}
+.learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep .source-response-sketch button {
+  min-height: 38px;
+  color: var(--lesson-ink);
+  font-size: 15px;
+}
+.learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep .visual-data-row span {
+  font-size: 16px !important;
+  line-height: 1.45;
+}
+.learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep .visual-data-row.is-head span {
+  color: var(--lesson-ink);
+  background: var(--lesson-blue-soft);
+  font-size: 16px !important;
+  font-weight: 600;
+}
+.learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep .visual-place-value-addition .visual-pv-head > * {
+  padding: 9px;
+  font-size: 15px !important;
+  line-height: 1.3;
+}
+.learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep :is(
+  .visual-pv-addend > strong,
+  .visual-pv-sum > strong
+) {
+  font-size: 15px !important;
+  line-height: 1.35;
+}
+.learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep .visual-place-value-addition .visual-pv-addend > span small {
+  font-size: 14px !important;
+  line-height: 1;
+}
+.learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep .visual-pv-regroupings span {
+  font-size: 15px !important;
+  line-height: 1.4;
+}
+.learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep .visual-tape span.is-emphasis {
+  color: var(--lesson-ink);
+}
+.learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep .visual-line-plot-x {
+  width: 28px;
+  height: 28px;
+  font-size: 15px !important;
+}
+.learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep .visual-line-plot-axis span {
+  font-size: 16px !important;
+}
+.learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep .visual-clock {
+  grid-template-columns: 210px minmax(180px, 1fr);
+  width: min(100%, 760px);
+}
+.learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep :is(
+  .workspace-library-clock,
+  .workspace-library-clock analog-clock,
+  .workspace-blank-clock
+) {
+  width: 200px;
+  height: 200px;
+}
+.learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep .workspace-library-clock analog-clock {
+  width: 200px !important;
+  height: 200px !important;
+}
+.learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep .visual-clock small {
+  grid-column: 1 / -1;
+  font-size: 17px;
+  line-height: 1.5;
+}
 .learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep .official-organizer-field b {
   font-size: 18px !important;
   font-weight: 500;
@@ -2086,4 +2193,153 @@
     border-bottom-color: #cbd9ee;
   }
   .learning-workspace.focused .source-boundary-groups { grid-template-columns: 1fr; }
+}
+
+/* Shared portal shell outside the protected Lesson 1 stage ---------------- */
+:host { background: var(--iready-page); }
+
+.interactive-content:not(.lesson-focus-content) {
+  width: calc(100% - 24px);
+}
+
+.volume-heading,
+.volume-units,
+.unit-overview-heading,
+.unit-big-ideas,
+.unit-support,
+.unit-lessons,
+.resource-learning-page {
+  border-color: var(--iready-line);
+  background: var(--iready-surface);
+  box-shadow: var(--iready-shadow);
+}
+
+.volume-units > header span,
+.unit-big-ideas > header span,
+.unit-support > header span,
+.unit-lessons > header span,
+.unit-overview-heading > div:nth-child(2) > span,
+.unit-card-topline > span,
+.lesson-card-number,
+.support-resource-grid span,
+.resource-learning-heading span,
+.self-check-workspace > header span {
+  color: var(--iready-caption);
+}
+
+.unit-card dd,
+.unit-inline-metrics dd,
+.lesson-card-meta span,
+.mapped-label,
+.support-resource-grid span,
+.support-resource-grid small,
+.lesson-card-grid article > p {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.support-resource-grid > article,
+.idea-card-grid article {
+  background: #fff;
+}
+
+.volume-overview .volume-choice small {
+  color: var(--iready-muted);
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.volume-overview :is(.coverage-complete strong, .volume-heading .eyebrow),
+.unit-overview .idea-card-grid article > span {
+  color: var(--iready-ink);
+}
+
+.resource-learning-heading span,
+.resource-learning-heading p,
+.student-page-grid figcaption,
+.teacher-page-panel figcaption,
+.resource-source-strip figcaption,
+.embedded-source-pages figcaption,
+.embedded-source-drawer summary strong {
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.resource-learning-heading p,
+.teacher-page-panel > aside span,
+.source-boundary-copy,
+.resource-source-boundary {
+  color: var(--iready-caption);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.source-boundary-copy {
+  grid-template-columns: 1fr;
+  gap: 6px;
+  padding: 12px 14px;
+  background: #fff;
+}
+
+.resource-source-boundary.iready-source-boundary {
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 14px 16px 16px;
+  background: #f5f8fc;
+}
+
+.resource-source-boundary .iready-source-boundary-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.resource-focus-nav span,
+.resource-source-boundary :is(
+  .iready-source-boundary-heading,
+  .iready-source-boundary-groups strong
+) {
+  color: var(--iready-ink);
+}
+
+.resource-focus-nav span {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.teacher-page-panel > aside strong {
+  color: var(--iready-ink);
+}
+
+.resource-work-panel app-problem-visual-workspace ::ng-deep .visual-source-note {
+  display: none;
+}
+
+.resource-work-panel app-problem-visual-workspace ::ng-deep .optional-response-tools > summary {
+  color: var(--iready-ink);
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.resource-work-panel app-problem-visual-workspace ::ng-deep :is(
+  .optional-response-tools > summary small,
+  .source-response-sketch > span,
+  .optional-written-response > span
+) {
+  color: var(--iready-caption);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.learning-workspace.focused .source-problem-stage > app-problem-visual-workspace ::ng-deep .problem-visual-workspace .visual-section {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+}
+
+.official-page-panel,
+.teacher-page-panel,
+.resource-work-panel { background: #f5f8fc; }
+
+@media (max-width: 900px) {
+  .resource-source-boundary .iready-source-boundary-groups { grid-template-columns: 1fr; }
 }

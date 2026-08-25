@@ -62,7 +62,7 @@ const learnerProblemSource = problemSourceCode.split('const problemEvidence')[0]
 if (/eureka|\bmodule\b/i.test(learnerProblemSource)) {
   fail('problem-level learner content contains cross-program terminology');
 }
-for (const match of learnerProblemSource.matchAll(/(?<![\d+])((?:\d{1,4}\s*\+\s*)+\d{1,4})\s*=\s*([\d,]+)/g)) {
+for (const match of learnerProblemSource.matchAll(/(?<![\d+])((?:\d{1,4}\s*\+\s*)+\d{1,4})\s*=\s*([\d,]+)(?![\d,]|\s*[×÷+\-=])/g)) {
   const [, expression, resultText] = match;
   const terms = expression.split('+').map((term) => Number(term.trim()));
   const result = Number(resultText.replaceAll(',', ''));
@@ -70,7 +70,7 @@ for (const match of learnerProblemSource.matchAll(/(?<![\d+])((?:\d{1,4}\s*\+\s*
     fail(`problem-level arithmetic claim is incorrect: ${match[0]}`);
   }
 }
-for (const match of learnerProblemSource.matchAll(/(?<![\d×÷-])(\d{1,4})\s*([×÷-])\s*(\d{1,4})\s*=\s*([\d,]+)/g)) {
+for (const match of learnerProblemSource.matchAll(/(?<![\d×÷-])(\d{1,4})\s*([×÷-])\s*(\d{1,4})\s*=\s*([\d,]+)(?![\d,]|\s*[×÷+\-=])/g)) {
   const [, leftText, operator, rightText, resultText] = match;
   const left = Number(leftText);
   const right = Number(rightText);

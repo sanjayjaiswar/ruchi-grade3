@@ -1,0 +1,72 @@
+:host {
+  --iready-ink: #172033;
+  --iready-muted: #5f6b82;
+  --iready-caption: #475569;
+  --iready-meta: #52647f;
+  --iready-blue: #2f68eb;
+  --iready-blue-dark: #155eef;
+  --iready-blue-soft: #edf4ff;
+  --iready-line: #c9d5e8;
+  --iready-line-strong: #b8cdec;
+  --iready-page: #f5f7fa;
+  --iready-surface: #fff;
+  --iready-surface-subtle: #f8fafc;
+  --iready-surface-navigation: #f4f8fd;
+  --iready-radius: 15px;
+  --iready-radius-control: 8px;
+  --iready-shadow: 0 10px 24px rgba(30, 41, 59, .065);
+  --iready-body-size: 17px;
+  --iready-caption-size: 15px;
+  --iready-body-leading: 1.55;
+}
+
+.iready-source-boundary {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 14px 16px 16px;
+  border-top: 1px solid #d3deeb;
+  background: #f5f8fc;
+  color: var(--iready-caption);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.iready-source-boundary-heading {
+  color: var(--iready-ink);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.iready-source-boundary-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.iready-source-boundary-groups section {
+  display: grid;
+  gap: 3px;
+  padding: 11px 13px;
+  border: 1px solid #d3deeb;
+  border-radius: 9px;
+  background: var(--iready-surface);
+}
+
+.iready-source-boundary-groups strong {
+  color: #334155;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.iready-source-boundary-groups span {
+  color: var(--iready-caption);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media (max-width: 900px) {
+  .iready-source-boundary-groups { grid-template-columns: 1fr; }
+}

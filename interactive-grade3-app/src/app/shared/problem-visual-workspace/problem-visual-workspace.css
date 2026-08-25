@@ -1132,7 +1132,7 @@
   transition: background .18s ease, color .18s ease, transform .18s ease;
 }
 
-.perimeter-side span { color: #68758a; font-size: 12px; text-transform: uppercase; }
+.perimeter-side span { color: #68758a; font-size: 14px; line-height: 1.2; text-transform: uppercase; }
 .perimeter-side b { font-size: 18px; }
 .perimeter-side:hover,
 .perimeter-side:focus-visible { transform: scale(1.04); outline: 3px solid rgb(242 140 40 / 24%); }
@@ -7020,8 +7020,9 @@
   border-radius: 999px;
   background: #ffffff;
   color: #3c4043;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
+  line-height: 1.35;
 }
 
 .measurement-mass {

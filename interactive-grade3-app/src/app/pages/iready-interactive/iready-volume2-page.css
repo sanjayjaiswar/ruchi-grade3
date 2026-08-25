@@ -1,3 +1,5 @@
+@import './iready-visual-system.css';
+
 :host {
   display: block;
   color: #17233a;
@@ -177,4 +179,793 @@ figcaption { padding: 7px 9px; color: #586a84; font-size: .78rem; font-weight: 7
   .library-card-grid { grid-template-columns: 1fr 1fr; }
   .interactive-teaching { grid-template-columns: 1fr; }
   .interactive-teaching aside { position: static; }
+}
+
+/* Lesson 1-aligned portal system ----------------------------------------- */
+:host {
+  min-height: 100vh;
+  color: var(--iready-ink);
+  font-size: 16px;
+  line-height: var(--iready-body-leading);
+  background: var(--iready-page);
+}
+
+.v2-page {
+  min-width: 0;
+  min-height: 100vh;
+  background: var(--iready-page);
+}
+
+.v2-header {
+  min-height: 64px;
+  padding: 7px 12px;
+  border-bottom: 1px solid #cbd9ee;
+  background: rgba(255, 255, 255, .98);
+  box-shadow: 0 3px 12px rgba(23, 32, 51, .09);
+}
+
+.v2-brand { color: var(--iready-ink); }
+.v2-brand > span:first-child {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #3b82f6, #174ea6);
+  box-shadow: 0 8px 18px rgba(31, 96, 220, .22);
+  font-size: 15px;
+}
+.v2-brand strong { font-size: 17px; }
+.v2-brand small {
+  margin-top: 3px;
+  color: #62718b;
+  font-size: 14px;
+  line-height: 1.3;
+}
+.v2-header nav a {
+  display: grid;
+  min-height: 44px;
+  place-items: center;
+  padding: 8px 13px;
+  border-color: #b9cff2;
+  border-radius: 9px;
+  background: #fff;
+  color: var(--iready-blue-dark);
+  font-size: 15px;
+  line-height: 1;
+}
+.v2-header nav a:hover,
+.v2-header nav a:focus-visible {
+  border-color: #7aa5fb;
+  background: var(--iready-blue-soft);
+  outline: 3px solid #c4d7ff;
+  outline-offset: 2px;
+}
+.v2-header nav a.active {
+  border-color: var(--iready-blue);
+  background: var(--iready-blue);
+  color: #fff;
+}
+
+.v2-overview,
+.v2-unit-overview {
+  width: calc(100% - 24px);
+  margin: 0 auto;
+  padding: 24px 0 56px;
+}
+
+.v2-volume-heading,
+.unit-heading,
+.v2-unit-section,
+.v2-library-section,
+.unit-ideas,
+.unit-resources,
+.unit-lessons,
+.lesson-workspace,
+.library-workspace {
+  border-color: var(--iready-line);
+  border-radius: var(--iready-radius);
+  background: var(--iready-surface);
+  box-shadow: var(--iready-shadow);
+}
+
+.v2-volume-heading {
+  grid-template-columns: minmax(360px, .8fr) minmax(620px, 1.2fr) auto;
+  gap: 24px;
+  padding: 18px 24px;
+  border-top-color: var(--iready-blue);
+}
+.v2-volume-heading span,
+section > header span,
+.unit-heading span,
+.lesson-title span,
+.session-stage > header span,
+.interactive-teaching > section > span {
+  color: var(--iready-caption);
+  font-size: var(--iready-caption-size);
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.v2-volume-heading h1 {
+  margin: 2px 0 0;
+  color: var(--iready-ink);
+  font-size: clamp(42px, 3vw, 54px);
+  font-weight: 780;
+  line-height: 1.03;
+  letter-spacing: -.035em;
+}
+.v2-volume-heading p {
+  margin: 8px 0 0;
+  color: var(--iready-muted);
+  font-size: 19px;
+  font-weight: 650;
+}
+.v2-volume-heading > dl {
+  border-color: #cbd9eb;
+  border-radius: 9px;
+  background: #f8fbff;
+}
+.v2-volume-heading > dl div {
+  padding: 10px 12px;
+  border-color: #d4dfed;
+}
+dt {
+  color: var(--iready-ink);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+dd {
+  margin-top: 3px;
+  color: var(--iready-muted);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.v2-volume-heading > a,
+.unit-heading > a {
+  min-height: 48px;
+  padding: 10px 17px;
+  border-color: #91b5fb;
+  color: var(--iready-blue-dark);
+  font-size: 16px;
+  font-weight: 760;
+}
+
+.source-lock {
+  margin: 12px 0;
+  padding: 13px 16px;
+  border-color: #cbd9ee;
+  border-left-color: #7b8ca8;
+  background: #fff;
+  color: var(--iready-caption);
+  font-size: 16px;
+  line-height: 1.5;
+}
+.source-lock strong { color: #334155; }
+
+.v2-unit-section,
+.v2-library-section,
+.unit-ideas,
+.unit-resources,
+.unit-lessons {
+  margin-top: 12px;
+  padding: 18px;
+}
+section > header { margin-bottom: 12px; }
+section > header h2 {
+  margin: 3px 0 0;
+  color: var(--iready-ink);
+  font-size: 29px;
+  font-weight: 770;
+  line-height: 1.18;
+  letter-spacing: -.02em;
+}
+section > header p {
+  max-width: 700px;
+  color: var(--iready-muted);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.v2-unit-grid { gap: 14px; }
+.v2-unit-grid > article {
+  min-height: 0;
+  padding: 18px;
+  border-color: #bfd0e6;
+  border-top: 5px solid var(--iready-blue);
+  border-radius: 12px;
+  background: #fff;
+}
+.unit-top b {
+  color: var(--iready-ink);
+  font-size: 17px;
+  font-weight: 800;
+}
+.unit-top a { color: var(--iready-blue-dark); font-size: 15px; }
+.v2-unit-grid h3 {
+  margin: 12px 0 3px;
+  color: var(--iready-ink);
+  font-size: 28px;
+  font-weight: 780;
+  line-height: 1.13;
+  letter-spacing: -.022em;
+}
+.v2-unit-grid p {
+  min-height: 0;
+  margin: 0;
+  color: var(--iready-muted);
+  font-size: 17px;
+  line-height: 1.45;
+}
+.v2-unit-grid dl {
+  margin: 14px 0;
+  border-color: #d3deed;
+  background: #f8fbff;
+}
+.v2-unit-grid dl div { border-color: #d3deed; }
+.v2-unit-grid dl dt { font-size: 18px; }
+.primary-link {
+  min-height: 46px;
+  align-items: center;
+  padding: 9px 14px;
+  border-radius: 9px;
+  background: var(--iready-blue);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 780;
+}
+
+.library-card-grid { gap: 12px; }
+.library-card-grid a {
+  min-height: 132px;
+  padding: 15px;
+  border-color: #cbd9ee;
+  border-radius: 11px;
+  background: #fff;
+  color: var(--iready-ink);
+}
+.library-card-grid a:hover,
+.library-card-grid a:focus-visible {
+  border-color: var(--iready-blue);
+  box-shadow: 0 8px 18px rgba(37, 91, 185, .1);
+  outline: 3px solid #c9dcff;
+}
+.library-card-grid span { color: var(--iready-caption); font-size: 15px; }
+.library-card-grid strong { font-size: 17px; line-height: 1.35; }
+.library-card-grid small { color: var(--iready-muted); font-size: 15px; line-height: 1.45; }
+
+.crumb {
+  margin-bottom: 10px;
+  color: var(--iready-muted);
+  font-size: 16px;
+}
+.crumb a { color: var(--iready-blue-dark); }
+.unit-heading {
+  min-height: 0;
+  grid-template-columns: auto minmax(350px, 1fr) auto auto;
+  align-items: start;
+  padding: 18px 20px;
+  border-top: 5px solid var(--iready-blue);
+}
+.unit-number {
+  width: 60px;
+  height: 60px;
+  background: var(--iready-blue);
+  font-size: 32px;
+}
+.unit-heading h1 {
+  margin: 3px 0;
+  color: var(--iready-ink);
+  font-size: clamp(36px, 2.8vw, 48px);
+  font-weight: 790;
+  line-height: 1.08;
+  letter-spacing: -.03em;
+}
+.unit-heading p { color: var(--iready-muted); font-size: 19px; }
+.unit-heading dl { border-color: #cbd9eb; background: #f8fbff; }
+.unit-heading dl div { border-color: #d4dfed; }
+
+.unit-ideas > div { gap: 12px; }
+.unit-ideas article {
+  padding: 15px 16px;
+  border-color: #bfd0e6;
+  border-left-color: #7b8ca8;
+  background: #fff;
+}
+.unit-ideas article > span { color: var(--iready-caption); font-size: 15px; }
+.unit-ideas h3 { margin: 5px 0 6px; font-size: 21px; line-height: 1.25; }
+.unit-ideas p { color: #46546d; font-size: 16px; line-height: 1.52; }
+.unit-ideas a { color: var(--iready-blue-dark); font-size: 15px; }
+
+.lesson-grid { gap: 12px; }
+.lesson-grid article {
+  min-height: 0;
+  padding: 19px;
+  border-color: #cad6e6;
+  border-top-color: var(--iready-blue);
+  border-radius: 11px;
+  background: #fff;
+}
+.lesson-grid article > span { color: var(--iready-caption); font-size: 15px; }
+.lesson-grid h3 { margin: 7px 0 5px; font-size: 20px; line-height: 1.3; }
+.lesson-grid p { color: var(--iready-muted); font-size: 16px; line-height: 1.45; }
+.lesson-grid article > div b {
+  padding: 5px 9px;
+  background: #eef3f9;
+  color: #526078;
+  font-size: 14px;
+  font-weight: 700;
+}
+.lesson-grid footer a:not(.primary-link) { color: var(--iready-blue-dark); font-size: 15px; }
+
+.unit-resources > div { gap: 12px; }
+.unit-resources a {
+  padding: 15px 16px;
+  border-color: #c8d8ee;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--iready-ink);
+}
+.unit-resources a strong { font-size: 17px; }
+.unit-resources a span,
+.unit-resources a small { color: var(--iready-caption); font-size: 15px; line-height: 1.45; }
+
+.focus-nav {
+  top: 64px;
+  min-height: 52px;
+  padding: 5px 12px;
+  border-bottom-color: #bed0e9;
+  background: #f8fbff;
+}
+.focus-nav > a:first-child {
+  min-height: 40px;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--iready-blue);
+  color: #fff;
+  font-size: 14px;
+}
+.focus-nav div span { color: var(--iready-caption); font-size: 14px; line-height: 20px; }
+.focus-nav div strong { color: var(--iready-ink); font-size: 16px; line-height: 22px; }
+.focus-nav > div:last-child a,
+.library-nav > a:last-child {
+  min-height: 40px;
+  padding: 8px 12px;
+  border-color: #a9c1e7;
+  background: #fff;
+  color: var(--iready-blue-dark);
+  font-size: 14px;
+}
+
+.lesson-workspace,
+.library-workspace {
+  width: calc(100% - 24px);
+  margin: 8px auto 12px;
+  background: #fff;
+}
+.lesson-title {
+  min-height: 108px;
+  padding: 14px 18px;
+  border-bottom-color: #cad9ee;
+  background: #fff;
+}
+.lesson-title h1 {
+  margin: 3px 0 2px;
+  color: var(--iready-ink);
+  font-size: clamp(28px, 2.1vw, 34px);
+  font-weight: 780;
+  line-height: 1.14;
+  letter-spacing: -.022em;
+}
+.lesson-title > div > p {
+  color: var(--iready-muted);
+  font-size: 17px;
+  font-weight: 650;
+  line-height: 1.5;
+}
+.lesson-title > a { color: var(--iready-blue-dark); font-size: 15px; }
+
+.session-tabs {
+  gap: 8px;
+  padding: 7px 12px;
+  border-bottom-color: #cbd9ee;
+  background: var(--iready-surface-navigation);
+}
+.session-tabs button {
+  min-height: 48px;
+  gap: 9px;
+  padding: 7px 12px;
+  border-color: var(--iready-line-strong);
+  border-radius: 9px;
+  background: #fff;
+  color: #40516d;
+}
+.session-tabs button span,
+.session-tabs button small {
+  color: var(--iready-meta);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.session-tabs button strong {
+  color: var(--iready-ink);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.session-tabs button.active {
+  border-color: var(--iready-blue);
+  background: var(--iready-blue);
+  color: #fff;
+}
+.session-tabs button.active span,
+.session-tabs button.active strong,
+.session-tabs button.active small { color: #fff; }
+
+.session-stage { background: #fff; }
+.session-stage > header {
+  min-height: 64px;
+  padding: 9px 16px;
+  margin: 0;
+  border-bottom-color: #c3d4ed;
+  background: #eef5ff;
+}
+.session-stage > header > div:first-child { min-width: 0; }
+.session-stage > header h2 {
+  margin: 2px 0 0;
+  color: var(--iready-ink);
+  font-size: 22px;
+  font-weight: 780;
+  line-height: 1.3;
+  letter-spacing: -.018em;
+}
+.session-stage > header nav { flex-wrap: wrap; justify-content: flex-end; }
+.session-stage > header button {
+  min-height: 42px;
+  padding: 8px 11px;
+  border-color: #9dbbed;
+  background: #fff;
+  color: var(--iready-blue-dark);
+  font-size: 15px;
+  font-weight: 780;
+}
+.session-stage > header button.active {
+  border-color: var(--iready-blue);
+  background: var(--iready-blue);
+  color: #fff;
+}
+
+.interactive-teaching,
+.teacher-solution-view {
+  padding: 18px 22px 22px;
+  gap: 14px;
+  background: #fff;
+}
+.interactive-teaching > section > span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--iready-caption);
+  font-size: 17px;
+}
+.teacher-solution-view > header {
+  min-height: 52px;
+  align-items: center;
+  padding: 9px 12px;
+  border: 1px solid #eed88d;
+  border-left: 4px solid #fbbc04;
+  border-radius: 9px;
+  background: #fffbea;
+}
+.teacher-solution-view > header strong {
+  color: #8a5a00;
+  font-size: 16px;
+  line-height: 24px;
+}
+.teacher-solution-view > header span {
+  color: #4d607e;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .problem-visual-workspace {
+  --visual-label-size: 17px;
+  --visual-body-size: 18px;
+  --visual-heading-size: 20px;
+  --visual-math-size: 20px;
+  min-height: 310px;
+  gap: 18px;
+  padding: clamp(18px, 2vw, 28px);
+  border-color: #cbd9ee;
+  border-radius: 11px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(35, 61, 99, .07);
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-header {
+  align-items: center;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #d8e2f0;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-header strong {
+  padding-left: 12px;
+  border-left: 4px solid var(--iready-blue);
+  color: var(--iready-ink);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-header span {
+  color: var(--iready-caption);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-section {
+  width: min(100%, 1320px);
+  margin-inline: auto;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .problem-visual-workspace.is-solved .visual-section {
+  padding: 16px 18px;
+  border: 1px solid #d8e2f0;
+  border-radius: 10px;
+  background: #fbfdff;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-section > strong {
+  color: var(--iready-ink);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace :is(
+  .visual-array-caption,
+  .visual-place-value-caption,
+  .visual-note,
+  .visual-number-line small,
+  .visual-tape small,
+  .visual-fraction-strip small,
+  .visual-number-bond > small,
+  .visual-line-plot small,
+  .visual-data-chart small,
+  .visual-source-crop figcaption
+) {
+  color: var(--iready-caption);
+  font-size: 18px !important;
+  font-weight: 500;
+  line-height: 1.5;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace :is(
+  .visual-equations span,
+  .visual-tape span,
+  .visual-number-bond-whole,
+  .visual-number-bond-parts span,
+  .visual-fraction-strip > b,
+  .visual-fraction-strip span,
+  .visual-number-line span,
+  .visual-number-line b,
+  .visual-related-facts span,
+  .source-response-lines > span.is-fillable
+) {
+  font-size: 20px !important;
+  font-weight: 500;
+  line-height: 1.4;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace :is(
+  .source-response-prompt p,
+  .source-response-lines > span,
+  .visual-sub-card > strong,
+  .visual-data-row span,
+  .visual-solution-parts p,
+  .visual-source-directions li
+) {
+  font-size: 18px !important;
+  line-height: 1.5;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-source-directions b,
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-source-directions span {
+  color: #334155;
+  font-size: 17px !important;
+  font-weight: 500;
+  line-height: 1.45;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-source-model-reasoning span {
+  color: #334155;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-source-model-reasoning small,
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-source-model figcaption {
+  color: var(--iready-caption);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .optional-response-tools > summary {
+  color: var(--iready-ink);
+  font-size: 16px;
+  line-height: 1.45;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace :is(
+  .optional-response-tools > summary small,
+  .source-response-sketch > span,
+  .optional-written-response > span
+) {
+  color: var(--iready-caption);
+  font-size: 15px;
+  line-height: 1.45;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .source-response-sketch button {
+  min-height: 38px;
+  color: var(--iready-ink);
+  font-size: 15px;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-data-row span {
+  font-size: 16px !important;
+  line-height: 1.45;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-data-row.is-head span {
+  color: var(--iready-ink);
+  background: var(--iready-blue-soft);
+  font-size: 16px !important;
+  font-weight: 600;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-place-value-addition .visual-pv-head > * {
+  padding: 9px;
+  font-size: 15px !important;
+  line-height: 1.3;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace :is(
+  .visual-pv-addend > strong,
+  .visual-pv-sum > strong
+) {
+  font-size: 15px !important;
+  line-height: 1.35;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-place-value-addition .visual-pv-addend > span small {
+  font-size: 14px !important;
+  line-height: 1;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-pv-regroupings span {
+  font-size: 15px !important;
+  line-height: 1.4;
+}
+
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .problem-visual-workspace .visual-section {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-tape span.is-emphasis {
+  color: var(--iready-ink);
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-line-plot-x {
+  width: 28px;
+  height: 28px;
+  font-size: 15px !important;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-line-plot-axis span {
+  font-size: 16px !important;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-line-plot p {
+  font-size: 17px !important;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-clock {
+  grid-template-columns: 210px minmax(180px, 1fr);
+  width: min(100%, 760px);
+  gap: 16px 24px;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace :is(
+  .workspace-library-clock,
+  .workspace-library-clock analog-clock,
+  .workspace-blank-clock
+) {
+  width: 200px;
+  height: 200px;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .workspace-library-clock analog-clock {
+  width: 200px !important;
+  height: 200px !important;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-clock p {
+  font-size: 20px;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-clock small {
+  grid-column: 1 / -1;
+  color: var(--iready-caption);
+  font-size: 17px;
+  line-height: 1.5;
+}
+:host ::ng-deep .lesson-workspace app-problem-visual-workspace .visual-source-note { display: none; }
+
+.lesson-feedback {
+  padding: 11px 18px;
+  color: #4d607e;
+  background: #fffbea;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.exact-source-drawer {
+  margin: 12px 18px 16px;
+  border-color: #b9cdea;
+  background: #fff;
+}
+.exact-source-drawer summary {
+  min-height: 58px;
+  padding: 10px 14px;
+  background: #f5f9ff;
+  color: #334155;
+}
+.exact-source-drawer summary strong { color: #334155; font-size: 16px; }
+.exact-source-drawer summary small { color: var(--iready-caption); font-size: 15px; line-height: 1.45; }
+.exact-source-drawer summary > b { color: var(--iready-blue-dark); font-size: 15px; }
+.source-trace {
+  gap: 8px;
+  padding: 10px 12px;
+  background: #fff;
+}
+.source-trace span {
+  padding: 5px 9px;
+  background: #eef3f9;
+  color: #526078;
+  font-size: 14px;
+}
+.page-tabs { padding: 8px 12px; background: #f7faff; }
+.page-tabs button,
+.library-page-tabs button {
+  min-height: 40px;
+  padding: 7px 11px;
+  color: var(--iready-blue-dark);
+  border-color: #b6cbed;
+  background: #fff;
+  font-size: 15px;
+}
+.page-tabs button.active,
+.library-page-tabs button.active {
+  border-color: var(--iready-blue);
+  background: var(--iready-blue);
+  color: #fff;
+}
+.source-evidence-grid { gap: 12px; padding: 12px; background: #f6f9fd; }
+.source-evidence-grid figure { border-color: #c4d5eb; border-radius: 8px; overflow: hidden; }
+.source-evidence-grid img { max-height: 680px; }
+.source-evidence-grid figcaption,
+.source-evidence-grid > p {
+  color: var(--iready-caption);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.library-workspace > header {
+  min-height: 108px;
+  padding: 18px;
+  margin: 0;
+  align-items: center;
+  background: #fff;
+}
+.library-workspace > header h1 {
+  margin: 3px 0 2px;
+  color: var(--iready-ink);
+  font-size: clamp(28px, 2.1vw, 34px);
+  line-height: 1.14;
+}
+.library-workspace > header p { color: var(--iready-muted); font-size: 17px; }
+.library-page-tabs { padding: 10px 18px; background: #f6f9fd; }
+.library-workspace figure { max-width: 1320px; padding: 18px; }
+.library-workspace figcaption { color: var(--iready-caption); font-size: 15px; }
+
+@media (max-width: 1250px) {
+  .v2-volume-heading { grid-template-columns: 1fr; }
+  .unit-heading { grid-template-columns: auto minmax(0, 1fr) auto; }
+  .unit-heading dl { grid-column: 2 / 3; }
+}
+
+@media (max-width: 900px) {
+  .v2-overview,
+  .v2-unit-overview,
+  .lesson-workspace,
+  .library-workspace { width: calc(100% - 24px); }
+  .session-stage > header { align-items: flex-start; flex-direction: column; }
+  .session-stage > header nav { width: 100%; justify-content: flex-start; }
+  .teacher-solution-view > header { align-items: flex-start; flex-direction: column; }
+  .source-evidence-grid { grid-template-columns: 1fr; }
 }

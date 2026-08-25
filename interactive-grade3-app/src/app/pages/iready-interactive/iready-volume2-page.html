@@ -166,7 +166,13 @@
           </div>
         </details>
 
-        <footer class="hard-boundary"><strong>Hard source boundary</strong><span>Learner page, lesson, session, prompt values, and sequence: official Student Worktext Volume 2. Guidance and solved teaching: official Teacher Guide Volume 2. No other curriculum supplies content.</span></footer>
+        <footer class="iready-source-boundary">
+          <strong class="iready-source-boundary-heading">How this lesson is sourced</strong>
+          <div class="iready-source-boundary-groups">
+            <section><strong>Official book</strong><span>The official book supplies the lesson structure, task values, answer, and mathematical model. Learner content comes from the Student Worktext Volume 2; guidance comes from the Teacher Guide Volume 2.</span></section>
+            <section><strong>Interactive portal</strong><span>The portal supplies explanatory wording, controls, feedback, and animation without adding curriculum claims. No other curriculum supplies content.</span></section>
+          </div>
+        </footer>
       </section>
     </section>
   </ng-container>
@@ -177,7 +183,13 @@
       <header><div><span>Book pp. {{ selectedLibrary.viewerStart }}–{{ selectedLibrary.viewerEnd }}</span><h1>{{ selectedLibrary.title }}</h1><p>{{ selectedLibrary.detail }}</p></div></header>
       <nav class="library-page-tabs"><button *ngFor="let page of selectedLibraryPages" type="button" (click)="selectViewerPage(page)" [class.active]="page === selectedViewerPage">{{ page }}</button></nav>
       <figure><img [src]="studentImageByViewerPage(selectedViewerPage)" [alt]="'Official Student Worktext Volume 2 book page ' + selectedViewerPage"><figcaption>Official Student Worktext Volume 2 · {{ pageLabel(selectedViewerPage) }}</figcaption></figure>
-      <footer class="hard-boundary"><strong>Complete-volume coverage</strong><span>This page is rendered from the official 396-page Student Worktext Volume 2 source and is included in the hashed page inventory.</span></footer>
+      <footer class="iready-source-boundary">
+        <strong class="iready-source-boundary-heading">Complete-volume coverage</strong>
+        <div class="iready-source-boundary-groups">
+          <section><strong>Official book</strong><span>This page is rendered from the official 396-page Student Worktext Volume 2 source and is included in the hashed page inventory.</span></section>
+          <section><strong>Interactive portal</strong><span>The portal adds page navigation and viewing controls only. It does not alter the official page.</span></section>
+        </div>
+      </footer>
     </section>
   </ng-container>
 </main>

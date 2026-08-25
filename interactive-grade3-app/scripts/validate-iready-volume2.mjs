@@ -152,7 +152,12 @@ const teacherFiles = existsSync(teacherAssets) ? readdirSync(teacherAssets).filt
 if (studentFiles.length !== 396) fail(`expected 396 rendered student pages; found ${studentFiles.length}`);
 if (teacherFiles.length !== 540) fail(`expected 540 rendered Teacher Guide pages; found ${teacherFiles.length}`);
 if (!routes.includes("iready-interactive/volumes/2/lessons/:lessonNumber") || !routes.includes("iready-interactive/volumes/2/library/:groupKey")) fail('Volume 2 lesson or complete-book route is missing');
-if (!template.includes('Hard source boundary') || !template.includes('No other curriculum supplies content')) fail('learner-facing hard source boundary is missing');
+if (
+  !template.includes('How this lesson is sourced')
+  || !template.includes('<strong>Official book</strong>')
+  || !template.includes('<strong>Interactive portal</strong>')
+  || !template.includes('No other curriculum supplies content')
+) fail('learner-facing hard source boundary is missing');
 if (!template.includes('Exact official source') || !template.includes('(click)="checkLessonWork()"') || !template.includes('(click)="replayLessonVisual()"')) fail('interactive teaching or embedded source evidence controls are missing');
 if (!visualWorkspace.includes('toggleFractionStripPart') || !visualTemplate.includes('aria-pressed') || !runtime.includes('correctSelectedParts')) fail('fraction tasks have regressed to non-interactive page transcription');
 if (template.includes("selectLessonMode('source')") || template.includes('lessonMode === \'source\'')) fail('official pages must remain embedded evidence, not replace the lesson');
