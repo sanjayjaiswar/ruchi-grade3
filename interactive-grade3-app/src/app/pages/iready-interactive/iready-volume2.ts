@@ -60,6 +60,24 @@ export interface IReadyV2LibraryGroup {
   readonly unit?: number;
 }
 
+export interface IReadyV2Activity {
+  readonly key: string;
+  readonly unit: number;
+  readonly lesson: number;
+  readonly session: number;
+  readonly order: number;
+  readonly title: string;
+  readonly printedPage: number;
+  readonly viewerPage: number;
+  readonly teacherViewerPage: number;
+  readonly sourceTextSha256: string;
+  readonly modelType: IReadyV2Model;
+  readonly studentDocument: 'iready-grade3-volume2-396-pages-searchable.pdf';
+  readonly teacherDocument: 'iready-grade3-teacher-guide-volume2-540-pages-searchable.pdf';
+  readonly verificationStatus: 'verified-student-and-teacher';
+  readonly implementationLocation: 'src/app/pages/iready-interactive/iready-volume2.ts';
+}
+
 type V2Evidence = typeof evidenceJson;
 type V2Inventory = Omit<typeof inventoryJson, 'pages'> & { pages: IReadyV2Page[] };
 type V2Sessions = Omit<typeof sessionsJson, 'sessions'> & { sessions: IReadyV2Session[] };
@@ -85,8 +103,8 @@ function validateBoundary(): void {
   if (evidence.coverageStatus !== 'complete-official-volume' || inventory.coverageStatus !== 'complete-official-volume-inventory' || sessionRegistry.coverageStatus !== 'complete-official-session-sequence' || teacherRegistry.coverageStatus !== 'complete-lesson-page-to-teacher-spread-map') {
     reject('a Volume 2 registry is not marked complete');
   }
-  if (inventory.pages.length !== 396 || sessionRegistry.sessions.length !== 52 || teacherRegistry.spreads.length !== 134) {
-    reject('expected 396 viewer pages, 52 sessions, and 134 mapped Teacher Guide spreads');
+  if (inventory.pages.length !== 396 || sessionRegistry.sessions.length !== 52 || teacherRegistry.spreads.length !== 132) {
+    reject('expected 396 viewer pages, 52 sessions, and 132 mapped Teacher Guide spreads');
   }
   const sources = evidence.approvedSources;
   if (sources.length !== 2 || sources.some((source) => source.volume !== 2 || source.localPaths.some((path) => !path.startsWith('iReady-Maths/') || /eureka/i.test(path)))) {
@@ -109,9 +127,9 @@ export const IREADY_VOLUME_TWO_LIBRARY: readonly IReadyV2LibraryGroup[] = [
   { key: 'unit4-opening', title: 'Unit 4 opening', detail: 'Self Check, Big Ideas Organizer, STEM story, and vocabulary', viewerStart: 13, viewerEnd: 18, unit: 4 },
   { key: 'unit4-application', title: 'Unit 4 application and review', detail: 'Self Reflection, Math in Action, unit review, and vocabulary', viewerStart: 133, viewerEnd: 146, unit: 4 },
   { key: 'unit5-opening', title: 'Unit 5 opening', detail: 'Self Check, Big Ideas Organizer, STEM story, and vocabulary', viewerStart: 147, viewerEnd: 152, unit: 5 },
-  { key: 'unit5-application', title: 'Unit 5 application and review', detail: 'Math in Action, unit review, and vocabulary', viewerStart: 227, viewerEnd: 238, unit: 5 },
+  { key: 'unit5-application', title: 'Unit 5 reflection, application, and review', detail: 'Self Reflection, Math in Action, unit review, and vocabulary', viewerStart: 225, viewerEnd: 238, unit: 5 },
   { key: 'unit6-opening', title: 'Unit 6 opening', detail: 'Self Check, Big Ideas Organizer, STEM story, and vocabulary', viewerStart: 239, viewerEnd: 244, unit: 6 },
-  { key: 'unit6-application', title: 'Unit 6 application and review', detail: 'Math in Action, unit review, and vocabulary', viewerStart: 325, viewerEnd: 336, unit: 6 },
+  { key: 'unit6-application', title: 'Unit 6 reflection, application, and review', detail: 'Self Reflection, Math in Action, unit review, and vocabulary', viewerStart: 323, viewerEnd: 336, unit: 6 },
   { key: 'data-talks', title: 'Data Talks', detail: 'Official Volume 2 Data Talks', viewerStart: 337, viewerEnd: 340 },
   { key: 'review-practice', title: 'Review & Practice', detail: 'Unit 4, Unit 5, and Unit 6 review sets', viewerStart: 341, viewerEnd: 352 },
   { key: 'glossary', title: 'Glossary / Glosario', detail: 'Official bilingual mathematics glossary', viewerStart: 353, viewerEnd: 372 },
@@ -178,6 +196,114 @@ export function v2TeacherSpreadForPrintedPage(printedPage: number): IReadyV2Teac
 
 export function v2TeacherViewerPages(spread: IReadyV2TeacherSpread): readonly number[] {
   return pagesInRange(spread.teacherGuideViewerPages);
+}
+
+function v2TeacherViewerPageForPrintedPage(printedPage: number): number {
+  const spread = v2TeacherSpreadForPrintedPage(printedPage);
+  if (!spread) reject(`printed page ${printedPage} has no mapped Teacher Guide spread`);
+  const studentPages = pagesInRange(spread.studentPages);
+  const teacherPages = v2TeacherViewerPages(spread);
+  const pageIndex = studentPages.indexOf(printedPage);
+  const teacherViewerPage = teacherPages[pageIndex];
+  if (!teacherViewerPage) reject(`printed page ${printedPage} has no exact Teacher Guide viewer page`);
+  return teacherViewerPage;
+}
+
+function v2OfficialActivityTitle(session: IReadyV2Session, pageIndex: number, pageCount: number): string {
+  if (session.phase === 'Explore') {
+    if (new Set([20, 21, 22, 24, 30]).has(session.lesson)) {
+      return [
+        'Model It: page 1',
+        'Model It: page 2 and Reflect',
+        'Prepare',
+        'Practice'
+      ][pageIndex] ?? reject(`unsupported model-first Explore page ${pageIndex + 1} of ${pageCount}`);
+    }
+    return [
+      'Try It',
+      'Connect It: Look Back and Look Ahead',
+      'Prepare',
+      'Practice'
+    ][pageIndex] ?? reject(`unsupported Explore page ${pageIndex + 1} of ${pageCount}`);
+  }
+
+  if (session.phase === 'Develop' && pageCount === 4) {
+    return [
+      'Model It: page 1',
+      'Model It: page 2 and Connect It',
+      'Practice: page 1',
+      'Practice: page 2'
+    ][pageIndex] ?? reject(`unsupported four-page Develop page ${pageIndex + 1}`);
+  }
+
+  if (session.phase === 'Develop' && pageCount === 6) {
+    return [
+      'Try It',
+      'Picture It and Model It',
+      'Connect It',
+      'Apply It',
+      'Practice: page 1',
+      'Practice: page 2'
+    ][pageIndex] ?? reject(`unsupported six-page Develop page ${pageIndex + 1}`);
+  }
+
+  if (session.phase === 'Refine' && pageCount === 2) {
+    return [
+      'Apply It',
+      'Math Journal'
+    ][pageIndex] ?? reject(`unsupported two-page Refine page ${pageIndex + 1}`);
+  }
+
+  if (session.phase === 'Refine' && pageCount === 4) {
+    return [
+      'Example and Problem 1',
+      'Problems 2-3',
+      'Problems 4-6',
+      'Problems 7-9 and Math Journal'
+    ][pageIndex] ?? reject(`unsupported Refine page ${pageIndex + 1} of ${pageCount}`);
+  }
+
+  return reject(`lesson ${session.lesson}, session ${session.session} has an unsupported official page sequence`);
+}
+
+function v2BuildActivities(session: IReadyV2Session): readonly IReadyV2Activity[] {
+  const printedPages = v2PagesForSession(session);
+  return printedPages.map((printedPage, pageIndex) => {
+    const viewerPage = v2ViewerPageForPrintedPage(printedPage);
+    const inventoryPage = IREADY_VOLUME_TWO_PAGES[viewerPage - 1];
+    if (!inventoryPage || inventoryPage.printedPage !== printedPage || inventoryPage.lesson !== session.lesson || inventoryPage.session !== session.session) {
+      reject(`printed page ${printedPage} does not match its official lesson-session inventory`);
+    }
+    return {
+      key: `v2-u${session.unit}-l${session.lesson}-s${session.session}-p${printedPage}`,
+      unit: session.unit,
+      lesson: session.lesson,
+      session: session.session,
+      order: pageIndex + 1,
+      title: v2OfficialActivityTitle(session, pageIndex, printedPages.length),
+      printedPage,
+      viewerPage,
+      teacherViewerPage: v2TeacherViewerPageForPrintedPage(printedPage),
+      sourceTextSha256: inventoryPage.sourceTextSha256,
+      modelType: session.model,
+      studentDocument: 'iready-grade3-volume2-396-pages-searchable.pdf',
+      teacherDocument: 'iready-grade3-teacher-guide-volume2-540-pages-searchable.pdf',
+      verificationStatus: 'verified-student-and-teacher',
+      implementationLocation: 'src/app/pages/iready-interactive/iready-volume2.ts'
+    };
+  });
+}
+
+export const IREADY_VOLUME_TWO_ACTIVITIES: readonly IReadyV2Activity[] = Object.freeze(
+  IREADY_VOLUME_TWO_SESSIONS.flatMap((session) => v2BuildActivities(session))
+);
+
+if (IREADY_VOLUME_TWO_ACTIVITIES.length !== 236 || new Set(IREADY_VOLUME_TWO_ACTIVITIES.map((activity) => activity.key)).size !== 236) {
+  reject('expected 236 unique, source-traceable Volume 2 instructional activities');
+}
+
+export function v2ActivitiesForSession(session: IReadyV2Session): readonly IReadyV2Activity[] {
+  return IREADY_VOLUME_TWO_ACTIVITIES.filter((activity) => activity.lesson === session.lesson && activity.session === session.session);
 }
 
 const exactSourceNote = 'The values and mathematical focus in this visual come from this session’s cited Student Worktext Volume 2 pages. The portal supplies only the interactive rendering; the mapped Teacher Guide Volume 2 spread supplies the solved-teaching evidence.';
@@ -516,6 +642,20 @@ function v2AreaPerimeterSections(session: IReadyV2Session, solved: boolean): Pro
   if (session.session === 1) {
     return [
       {
+        kind: 'tape',
+        label: 'Compose the full boundary from the four official side lengths',
+        totalLabel: answer('perimeter', '200 yards'),
+        parts: [
+          { label: '60 yd', emphasize: true },
+          { label: '40 yd' },
+          { label: '60 yd', emphasize: true },
+          { label: '40 yd' }
+        ],
+        equations: [answer('60 + 40 + 60 + 40 = ___ yards', '60 + 40 + 60 + 40 = 200 yards')],
+        equationAnswers: solved ? undefined : [['200']],
+        caption: 'The four tape parts represent the complete outside boundary of Kala\'s official soccer-field model.'
+      },
+      {
         kind: 'perimeter-path',
         label: 'Trace Kala’s complete route around the soccer field · official Student Worktext p. 735',
         contextLabel: 'soccer field',
@@ -684,200 +824,162 @@ function v2AreaPerimeterSections(session: IReadyV2Session, solved: boolean): Pro
   ];
 }
 
-function v2Lesson28Visual(session: IReadyV2Session, solved: boolean): ProblemVisualSpec {
+function v2Lesson28ExactPageVisual(activity: IReadyV2Activity, solved: boolean): ProblemVisualSpec {
   const answer = (blank: string, complete: string) => solved ? complete : blank;
-  const sourceCrop = (
-    printedPage: number,
-    label: string,
-    alt: string,
-    crop: { x: number; y: number; width: number; height: number },
-    caption: string,
-    displayWidth = 820
-  ) => v2SourceModel(
-    printedPage,
+  const input = (blank: string, complete: string, values: string[]): { text: string; textAnswers?: string[] } =>
+    solved ? { text: complete } : { text: blank, textAnswers: values };
+  const equations = (label: string, lines: Array<{ blank: string; solved: string; answers: string[] }>): ProblemVisualSection => ({
+    kind: 'equations',
     label,
-    alt,
-    crop,
-    [],
-    [{ label: 'Read the exact official model', explanation: caption }],
-    caption,
-    displayWidth
-  );
+    lines: lines.map((line) => answer(line.blank, line.solved)),
+    lineAnswers: solved ? undefined : lines.map((line) => line.answers)
+  });
+  const exact = (sections: ProblemVisualSection[], sourceNote: string): ProblemVisualSpec => ({
+    title: activity.title,
+    sourceNote: `Student Worktext Volume 2 printed p. ${activity.printedPage} and mapped Teacher Guide viewer p. ${activity.teacherViewerPage}: ${sourceNote}`,
+    sections
+  });
 
-  if (session.session === 1) {
-    return {
-      title: session.title,
-      sourceNote: 'Student Worktext Volume 2 pp. 637–640 and Teacher Guide Volume 2 pp. 637–640: select a one-liter measuring tool, use repeated units, and compare containers with a one-liter benchmark.',
-      sections: [
-        sourceCrop(
-          637,
-          '1. Choose a tool that measures liquid volume · official p. 637',
-          'Official i-Ready model showing a ruler, a one-liter measuring cup, and a bucket',
-          { x: 46, y: 188, width: 590, height: 260 },
-          'The ruler measures length. The one-liter cup supplies the repeatable liquid-volume unit.'
-        ),
-        {
-          kind: 'source-directions',
-          label: '2. Measure the bucket with repeated one-liter units',
-          items: solved ? [
-            { lead: 'Strategy A', text: 'Fill the one-liter cup, pour it into the empty bucket, and count each full cup until the bucket is full.' },
-            { lead: 'Strategy B', text: 'Fill the bucket first, remove water with the one-liter cup, and count the full cups removed.' },
-            { lead: 'Why both work', text: 'Each count represents one equal liter, so either direction measures the same capacity.' }
-          ] : [
-            { lead: 'Choose', text: 'Select the tool that measures liquid volume rather than length.' },
-            { lead: 'Repeat', text: 'Use the same one-liter unit again and again.' },
-            { lead: 'Count', text: 'Record how many full one-liter units the bucket holds.' }
-          ]
-        },
-        {
-          kind: 'card-grid',
-          label: '3. Use one liter as a benchmark · official p. 638',
-          cards: [
-            { label: 'Less than 1 liter', sections: [{ kind: 'note', text: answer('Which official example belongs here?', 'A soup can holds less than 1 liter.') }] },
-            { label: 'About 1 liter', sections: [{ kind: 'note', text: answer('Which official example belongs here?', 'A milk carton holds about 1 liter.') }] },
-            { label: 'More than 1 liter', sections: [{ kind: 'note', text: answer('Which official example belongs here?', 'A swimming pool holds more than 1 liter.') }] }
-          ]
-        },
-        {
-          kind: 'note',
-          label: 'Teaching conclusion',
-          text: answer(
-            'A liter is a unit for measuring ___.',
-            'A liter is a standard unit for liquid volume. Capacity is found by repeating and counting equal one-liter units—not by measuring container height.'
-          ),
-          textAnswers: solved ? undefined : ['liquid volume']
-        }
-      ]
-    };
+  switch (activity.printedPage) {
+    case 637:
+      return exact([
+        { kind: 'measurement-model', label: 'Choose the tool that measures the bucket\'s liquid volume', model: 'liquid', unitLabel: 'liters', referenceLabel: '1-liter measuring cup', maxValue: 4, values: [{ label: 'repeatable measuring unit', value: 1, valueLabel: '1 L', tone: 'benchmark' }, { label: 'bucket', valueLabel: 'capacity = ?', tone: 'target' }], equation: 'bucket capacity = number of full 1-liter cups', steps: solved ? ['Choose the 1-liter measuring cup; the ruler measures length.', 'Fill the cup and pour it into the bucket repeatedly.', 'Count the full cups. The count is the bucket capacity in liters.'] : ['Choose the liquid-volume tool.', 'Repeat the same 1-liter unit.', 'Record the number of full units.'] },
+        { kind: 'note', label: 'Why the unit works', ...input('Each full cup represents ___ liter.', 'Each full cup represents 1 liter.', ['1']) }
+      ], 'choose and repeat a one-liter measuring unit; no numerical bucket capacity is supplied.');
+    case 638:
+      return exact([
+        { kind: 'card-grid', label: 'Sort the official container benchmarks', cards: [
+          { label: 'Less than 1 liter', sections: [{ kind: 'note', text: answer('Which pictured container belongs here?', 'The tablespoon holds less than 1 liter.') }] },
+          { label: 'About 1 liter', sections: [{ kind: 'note', text: answer('Which pictured container belongs here?', 'The milk carton holds about 1 liter.') }] },
+          { label: 'More than 1 liter', sections: [{ kind: 'note', text: answer('Which pictured container belongs here?', 'The bathtub holds more than 1 liter.') }] }
+        ] },
+        { kind: 'source-directions', label: 'Use the one-liter benchmark', items: [{ lead: 'About one liter', text: 'A large water bottle, four small milk cartons, and one fourth of a gallon are the official reference amounts.' }, { lead: 'Measure the larger container', text: 'Repeat a 1-liter container and count the number of full units.' }] }
+      ], 'classify containers as less than, about, or more than one liter.');
+    case 639:
+      return exact([
+        { kind: 'card-grid', label: 'Build the two official vocabulary ideas', cards: [
+          { label: 'liquid volume', sections: [{ kind: 'note', text: answer('Describe this in your own words.', 'The amount of space a liquid takes up.') }] },
+          { label: 'liter', sections: [{ kind: 'note', text: answer('Describe this in your own words.', 'A standard unit used to measure liquid volume.') }] }
+        ] },
+        { kind: 'measurement-model', label: 'Place each pictured container around the one-liter benchmark', model: 'liquid', unitLabel: 'liter', referenceLabel: '1 liter', maxValue: 3, values: [{ label: 'eye dropper', value: 0.2, valueLabel: 'less than 1 L', tone: 'estimate' }, { label: 'plastic bottle', value: 1, valueLabel: 'about 1 L', tone: 'benchmark' }, { label: 'wading pool', value: 3, valueLabel: 'more than 1 L', tone: 'target' }] }
+      ], 'define liquid volume and liter, then compare pictured containers with one liter.');
+    case 640:
+      return exact([
+        { kind: 'measurement-model', label: 'Measure the pitcher with the official one-liter tool', model: 'liquid', unitLabel: 'liters', referenceLabel: '1-liter measuring cup', maxValue: 4, values: [{ label: 'measuring cup', value: 1, valueLabel: '1 L', tone: 'benchmark' }, { label: 'pitcher', valueLabel: 'capacity = ?', tone: 'target' }], equation: 'pitcher capacity = number of 1-liter fills', steps: solved ? ['Use the measuring cup, not the ruler.', 'Either fill the pitcher one liter at a time or remove water one liter at a time.', 'Count the cups; using the opposite direction checks the result.'] : ['Choose the correct tool.', 'Measure in repeated 1-liter units.', 'Use the reverse process to check.'] }
+      ], 'measure a pitcher and describe a second way to check; no numerical capacity is supplied.');
+    case 641:
+      return exact([
+        { kind: 'measurement-model', label: 'Estimate the fish tank from a known one-liter carton', model: 'liquid', unitLabel: 'liters', referenceLabel: '1-liter carton', maxValue: 8, values: [{ label: 'benchmark carton', value: 1, valueLabel: '1 L', tone: 'benchmark' }, { label: 'full fish tank', value: solved ? 8 : undefined, valueLabel: answer('estimate = ?', 'about 8 L'), tone: 'target' }], equation: answer('How many carton-size parts fill the tank?', 'About 8 carton-size parts fill the tank.'), steps: solved ? ['Picture four cartons across the front.', 'Picture two rows from front to back.', '4 × 2 = 8, so the tank holds about 8 liters.'] : ['Use the 1-liter carton as the unit.', 'Estimate the number across and the number of rows.', 'Combine the equal one-liter parts.'] }
+      ], 'estimate the fish tank by iterating a one-liter carton; the mapped Teacher Guide verifies about eight liters.');
+    case 642:
+      return exact([
+        { kind: 'array', label: 'Picture It: carton-size parts in the fish tank', rows: 2, columns: 4, item: 'square', placeholder: '1 L', caption: answer('___ equal carton-size parts', '8 equal carton-size parts'), captionAnswers: solved ? undefined : ['8'] },
+        { kind: 'fraction-strip', label: 'Model It: one liter as a fraction of the tank', wholeLabel: 'full fish tank', numerator: 1, denominator: 8, showGivenShading: true, caption: answer('1 liter is about ___ of the tank.', '1 liter is about 1/8 of the tank.') }
+      ], 'show the official eight-carton estimate in front/top views and as one eighth of the tank.');
+    case 643:
+      return exact([
+        { kind: 'fraction-strip', label: 'Use the filled fraction to scale to the whole tank', wholeLabel: 'full fish tank', numerator: 1, denominator: 8, showGivenShading: true, caption: 'One shaded part represents the given 1 liter.' },
+        equations('Connect the fraction and the estimate', [
+          { blank: '1 liter = ___ of the tank', solved: '1 liter = 1/8 of the tank', answers: ['1/8'] },
+          { blank: '8 × 1 liter = ___ liters', solved: '8 × 1 liter = 8 liters', answers: ['8'] }
+        ])
+      ], 'connect the one-eighth model to the estimate of eight liters.');
+    case 644:
+      return exact([
+        { kind: 'array', label: 'Red container: repeat the one-liter carton side by side', rows: 1, columns: 4, item: 'block', placeholder: '1 L', caption: answer('Estimated capacity: ___ liters', 'Estimated capacity: about 4 liters'), captionAnswers: solved ? undefined : ['4'] },
+        { kind: 'measurement-model', label: 'Metal pan: compare height and width with the same carton', model: 'liquid', unitLabel: 'liters', referenceLabel: '1-liter carton', maxValue: 4, values: [{ label: 'carton', value: 1, valueLabel: '1 L', tone: 'benchmark' }, { label: 'metal pan', value: 1, valueLabel: answer('estimate = ?', 'about 1 L'), tone: 'target' }] },
+        { kind: 'card-grid', label: 'Which container could hold about 10 liters?', cards: [{ label: answer('Choose from the official four options', 'Bathroom sink'), sections: [{ kind: 'note', text: answer('Compare each option with 10 one-liter units.', 'A teapot and water glass hold much less; a bathtub holds much more; a bathroom sink is reasonable.') }] }] }
+      ], 'estimate the red container, metal pan, and a reasonable ten-liter container.');
+    case 645:
+      return exact([
+        { kind: 'array', label: 'Example: six one-liter bottles fill the picnic cooler', rows: 2, columns: 3, item: 'block', placeholder: '1 L', caption: answer('Cooler estimate: ___ liters', 'Cooler estimate: about 6 liters'), captionAnswers: solved ? undefined : ['6'] },
+        { kind: 'measurement-model', label: 'Problem 1: estimate the pitcher with the one-liter bottle', model: 'liquid', unitLabel: 'liters', referenceLabel: '1-liter bottle', maxValue: 6, values: [{ label: 'bottle', value: 1, valueLabel: '1 L', tone: 'benchmark' }, { label: 'pitcher', value: solved ? 5 : undefined, valueLabel: answer('estimate = ?', 'about 5 L'), tone: 'target' }], note: 'The mapped Teacher Guide accepts a reasonable estimate from 4 to 7 liters.' },
+        { kind: 'card-grid', label: 'Problems 2-3: reason from the one-liter benchmark', cards: [
+          { label: 'About 1 liter', sections: [{ kind: 'note', text: answer('Choose all reasonable items.', 'Coffee pot and flower vase.') }] },
+          { label: 'More than 40 liters', sections: [{ kind: 'note', text: answer('Choose the reasonable item.', 'Bathtub.') }] }
+        ] }
+      ], 'model the cooler example and the exact three practice prompts.');
+    case 646:
+      return exact([
+        { kind: 'measurement-model', label: 'Problem 4: scale 3 liters from a half-full container', model: 'liquid', unitLabel: 'liters', referenceLabel: '3 liters shown', maxValue: 6, values: [{ label: 'shown amount', value: 3, valueLabel: '3 L', tone: 'benchmark' }, { label: 'full container', value: solved ? 6 : undefined, valueLabel: answer('capacity = ?', 'about 6 L'), tone: 'target' }], equation: answer('3 L × ___ = ___ L', '3 L × 2 = 6 L') },
+        equations('Complete the scale-up equation', [
+          { blank: '3 liters × ___ equal halves = ___ liters', solved: '3 liters × 2 equal halves = 6 liters', answers: ['2', '6'] }
+        ]),
+        { kind: 'measurement-model', label: 'Problem 5: iterate the one-liter bottle inside the watering can', model: 'liquid', unitLabel: 'liters', referenceLabel: '1-liter bottle', maxValue: 5, values: [{ label: 'bottle', value: 1, valueLabel: '1 L', tone: 'benchmark' }, { label: 'watering can', value: solved ? 5 : undefined, valueLabel: answer('estimate = ?', 'about 5 L'), tone: 'target' }] },
+        equations('Record the watering-can estimate', [
+          { blank: 'about ___ one-liter bottles = ___ liters', solved: 'about 5 one-liter bottles = 5 liters', answers: ['5', '5'] }
+        ]),
+        { kind: 'fraction-strip', label: 'Problem 7: select the fraction filled by one liter', wholeLabel: 'full watering can ≈ 5 liters', numerator: 1, denominator: 5, showGivenShading: solved, selectableParts: true, correctSelectedParts: 1, caption: answer('Select the part that represents 1 liter, then name its fraction.', '1 liter fills about 1/5 of the can.') }
+      ], 'solve the exact half-full container and watering-can estimates; the Teacher Guide verifies 6 liters, about 5 liters, and one fifth.');
+    case 647:
+      return exact([
+        { kind: 'tape', label: 'Split the 8 liters of blue paint into 2-liter cans', totalLabel: '8 liters of blue paint', parts: Array.from({ length: 4 }, () => ({ label: '2 L', emphasize: true })), equations: [answer('8 ÷ 2 = ___ cans', '8 ÷ 2 = 4 cans')], equationAnswers: solved ? undefined : [['4']], caption: answer('How many equal 2-liter groups?', 'Four equal 2-liter groups fill four cans.') }
+      ], 'represent the selected Try It problem as equal two-liter groups, not as a publisher-page image.');
+    case 648:
+      return exact([
+        { kind: 'measurement-model', label: 'Picture It: read the marked paint bucket', model: 'liquid', unitLabel: 'liters', referenceLabel: 'each short mark = 1 liter', maxValue: 8, values: [{ label: 'blue-paint bucket', value: 8, valueLabel: '8 L', tone: 'given' }], equation: 'Full lines group the scale into 2-liter sections.' },
+        { kind: 'tape', label: 'Model It: four cans hold the same 8 liters', totalLabel: '8 liters in all', parts: Array.from({ length: 4 }, () => ({ label: '2 L' })), equations: [answer('4 × 2 = ___ liters', '4 × 2 = 8 liters')], equationAnswers: solved ? undefined : [['8']] }
+      ], 'render both official representations: a marked eight-liter bucket and four equal two-liter cans.');
+    case 649:
+      return exact([
+        { kind: 'related-facts', label: 'Connect division and multiplication', rows: [
+          { left: answer('8 ÷ 2 = p', '8 ÷ 2 = 4'), right: answer('2 × p = 8', '2 × 4 = 8') },
+          { left: answer('p = ___', 'p = 4'), right: answer('label: ___', 'label: cans') }
+        ] },
+        { kind: 'note', label: 'Why the label matters', text: answer('The answer counts ___.', 'The answer counts cans, not liters or the size of the bucket.'), textAnswers: solved ? undefined : ['cans'] }
+      ], 'connect the exact related equations and identify what the unknown counts.');
+    case 650:
+      return exact([
+        { kind: 'measurement-model', label: 'Problem 1: compare the two marked containers', model: 'liquid', unitLabel: 'liters', maxValue: 200, values: [{ label: 'first container', value: 150, valueLabel: '150 L', tone: 'given' }, { label: 'second container', value: 115, valueLabel: '115 L', tone: 'given' }, { label: 'difference', value: solved ? 35 : undefined, valueLabel: answer('?', '35 L'), tone: 'answer' }], equation: answer('150 - 115 = ___ liters', '150 - 115 = 35 liters') },
+        { kind: 'tape', label: 'Problem 2: seven pitchers with 3 liters each', totalLabel: answer('total water = ?', '21 liters'), parts: Array.from({ length: 7 }, () => ({ label: '3 L' })), equations: [answer('7 × 3 = ___ liters', '7 × 3 = 21 liters')], equationAnswers: solved ? undefined : [['21']] },
+        { kind: 'tape', label: 'Problem 3: sell 12 liters at 2 liters each hour', totalLabel: '12 liters of gumbo', parts: Array.from({ length: 6 }, () => ({ label: '2 L', sublabel: '1 hour' })), equations: [answer('12 ÷ 2 = ___ hours', '12 ÷ 2 = 6 hours')], equationAnswers: solved ? undefined : [['6']] }
+      ], 'solve the three exact Apply It relationships: compare, multiply equal groups, and divide by a rate.');
+    case 651:
+      return exact([
+        { kind: 'tape', label: 'Example: seven water coolers with 9 liters each', totalLabel: answer('water in all = ?', '63 liters'), parts: Array.from({ length: 7 }, () => ({ label: '9 L' })), equations: [answer('7 × 9 = ___ liters', '7 × 9 = 63 liters')], equationAnswers: solved ? undefined : [['63']] },
+        equations('Problems 1-3', [
+          { blank: '25 L - 1 L = ___ L left', solved: '25 L - 1 L = 24 L left', answers: ['24'] },
+          { blank: '24 L ÷ 3 days = ___ L each day', solved: '24 L ÷ 3 days = 8 L each day', answers: ['8'] },
+          { blank: '24 ÷ 3 = w; w = ___ liters', solved: '24 ÷ 3 = w; w = 8 liters', answers: ['8'] }
+        ])
+      ], 'model the cooler example and exact subtraction/division practice problems.');
+    case 652:
+      return exact([
+        { kind: 'tape', label: 'Problems 4-5: five 9-liter coolers, then three empty', totalLabel: answer('before the game = ?', '45 liters'), parts: Array.from({ length: 5 }, (_, index) => ({ label: '9 L', muted: solved && index < 3, sublabel: solved && index < 3 ? 'empty after game' : 'still full' })), equations: [answer('5 × 9 = ___ L', '5 × 9 = 45 L'), answer('(5 - 3) × 9 = ___ L left', '(5 - 3) × 9 = 18 L left')], equationAnswers: solved ? undefined : [['45'], ['18']] },
+        equations('Problems 6-7', [
+          { blank: '60 L - 20 L = ___ L needed', solved: '60 L - 20 L = 40 L needed', answers: ['40'] },
+          { blank: '32 L ÷ 4 L per bucket = ___ buckets', solved: '32 L ÷ 4 L per bucket = 8 buckets', answers: ['8'] }
+        ]),
+        { kind: 'tape', label: 'Problem 8: measure exactly 3 liters with 5-liter and 2-liter pitchers', totalLabel: '5-liter pitcher filled', parts: [{ label: '2 L', muted: solved }, { label: answer('remainder = ?', '3 L'), emphasize: true }], caption: answer('Pour from the 5-liter pitcher into the 2-liter pitcher.', '5 L - 2 L = 3 L remains in the larger pitcher.') }
+      ], 'solve the exact five practice prompts with their verified quantities and units.');
+    case 653:
+      return exact([
+        { kind: 'tape', label: 'Example: seven equal science-class containers', totalLabel: answer('water in all = ?', '70 liters'), parts: Array.from({ length: 7 }, () => ({ label: '10 L' })), equations: [answer('7 × 10 = ___ liters', '7 × 10 = 70 liters')], equationAnswers: solved ? undefined : [['70']] },
+        { kind: 'number-bond', label: 'Problem 1: combine the three rain barrels', whole: answer('total = ?', '579 L'), parts: [{ label: '186 L' }, { label: '203 L' }, { label: '190 L' }], equations: [answer('186 + 203 + 190 = ___ liters', '186 + 203 + 190 = 579 liters')], equationAnswers: solved ? undefined : [['579']] }
+      ], 'show only the exact p.653 example and Problem 1.');
+    case 654:
+      return exact([
+        { kind: 'measurement-model', label: 'Problem 2: estimate the tomato-sauce jar from 1 liter shown', model: 'liquid', unitLabel: 'liters', referenceLabel: '1 liter shown', maxValue: 6, values: [{ label: 'shown sauce', value: 1, valueLabel: '1 L', tone: 'benchmark' }, { label: 'full jar', value: solved ? 5.5 : undefined, valueLabel: answer('estimate = ?', 'about 5-6 L'), tone: 'target' }], note: 'The mapped Teacher Guide accepts an estimate around 5 or 6 liters.' },
+        { kind: 'tape', label: 'Problem 3: compare the turtle and frog tanks', totalLabel: 'turtle tank: 20 L', parts: [{ label: 'frog tank: 10 L', muted: true }, { label: answer('difference = ?', 'difference = 10 L'), emphasize: true }], equations: [answer('20 - 10 = ___ liters', '20 - 10 = 10 liters')], equationAnswers: solved ? undefined : [['10']], caption: answer('Salim chose 30 liters. Test addition against “how much greater.”', 'Salim added 20 + 10. “How much greater” asks for the difference, so subtract.') }
+      ], 'render only the jar estimate and tank-comparison problems selected on p.654.');
+    case 655:
+      return exact([
+        { kind: 'fraction-strip', label: 'Problem 4: 1 liter fills about one third of the mole pot', wholeLabel: 'full pot', numerator: 1, denominator: 3, showGivenShading: true, caption: answer('Best full-pot estimate: ___ liters', 'Best full-pot estimate: 3 liters') },
+        { kind: 'tape', label: 'Problem 5: share 8 liters equally among 4 flower beds', totalLabel: '8 liters of water', parts: Array.from({ length: 4 }, () => ({ label: answer('? L', '2 L'), emphasize: true })), equations: [answer('8 ÷ 4 = ___ liters per bed', '8 ÷ 4 = 2 liters per bed')], equationAnswers: solved ? undefined : [['2']] },
+        { kind: 'measurement-model', label: 'Problem 6: add the two marked container amounts', model: 'liquid', unitLabel: 'liters', maxValue: 200, values: [{ label: 'dishes', value: 130, valueLabel: '130 L', tone: 'given' }, { label: 'brushing teeth', value: 150, valueLabel: '150 L', tone: 'given' }, { label: 'total saved', value: solved ? 280 : undefined, valueLabel: answer('?', '280 L'), tone: 'answer' }], equation: answer('130 + 150 = ___ liters', '130 + 150 = 280 liters') }
+      ], 'render exactly Problems 4-6 from p.655; no p.653 example or source screenshot is substituted.');
+    case 656:
+      return exact([
+        { kind: 'card-grid', label: 'Problem 7: choose containers that hold less than one liter', cards: [
+          { label: 'Less than 1 liter', sections: [{ kind: 'note', text: answer('Choose all that apply.', 'Baby food jar and paper cup.') }] },
+          { label: 'Not less than 1 liter', sections: [{ kind: 'note', text: answer('Check the remaining choices.', 'A milk carton is about 1 liter; a kitchen sink and bathtub hold more.') }] }
+        ] },
+        { kind: 'tape', label: 'Problem 8: six 4-liter buckets', totalLabel: answer('water used = ?', '24 liters'), parts: Array.from({ length: 6 }, () => ({ label: '4 L' })), equations: [answer('6 × 4 = ___ liters', '6 × 4 = 24 liters')], equationAnswers: solved ? undefined : [['24']] },
+        { kind: 'number-bond', label: 'Math Journal: combine the two fire-engine amounts', whole: answer('total = ?', '781 L'), parts: [{ label: '456 L' }, { label: '325 L' }], equations: [answer('456 + 325 = ___ liters', '456 + 325 = 781 liters')], equationAnswers: solved ? undefined : [['781']] }
+      ], 'solve only Problems 7-9 and the Math Journal selected on p.656.');
+    default:
+      reject(`lesson 28 activity ${activity.key} is outside the reviewed page-specific range`);
   }
-
-  if (session.session === 2) {
-    return {
-      title: session.title,
-      sourceNote: 'Student Worktext Volume 2 pp. 641–646 and Teacher Guide Volume 2 pp. 641–646: estimate a container’s capacity by comparing it with a known one-liter amount and reasoning about how many equal portions fit.',
-      sections: [
-        sourceCrop(
-          641,
-          '1. Compare the fish tank with a one-liter carton · official p. 641',
-          'Official i-Ready model showing a one-liter carton next to a small fish tank',
-          { x: 48, y: 178, width: 590, height: 185 },
-          'The one-liter carton is the known benchmark; the fish tank is the unknown capacity.'
-        ),
-        {
-          kind: 'fraction-strip',
-          label: '2. Model one liter as one of eight equal tank portions · official p. 642',
-          wholeLabel: 'full fish tank',
-          numerator: 1,
-          denominator: 8,
-          showGivenShading: true,
-          caption: answer('1 liter is about ___ of the tank.', '1 liter is about 1/8 of the tank, so about eight one-liter portions fill it.')
-        },
-        {
-          kind: 'equations',
-          label: '3. Scale the benchmark to the whole tank',
-          lines: [
-            answer('1 liter × ___ equal portions ≈ ___ liters', '1 liter × 8 equal portions ≈ 8 liters'),
-            answer('Estimated tank capacity: ___ liters', 'Estimated tank capacity: about 8 liters')
-          ],
-          lineAnswers: solved ? undefined : [['8', '8'], ['8']]
-        },
-        {
-          kind: 'card-grid',
-          label: '4. Check whether an estimate is reasonable · official pp. 645–646',
-          cards: [
-            { label: 'Picnic cooler', sections: [{ kind: 'note', text: answer('Compare with 1-liter bottles.', 'Six one-liter bottles fit, so the cooler is estimated at about 6 liters.') }] },
-            { label: 'Container choice', sections: [{ kind: 'note', text: answer('Use familiar one-liter benchmarks.', 'A coffee pot or flower vase can reasonably hold about 1 liter; a bathtub or trash can holds much more, and a teaspoon or paper cup holds much less.') }] },
-            { label: '40-liter sink', sections: [{ kind: 'note', text: answer('Choose a similar-capacity object.', 'A bathtub is the reasonable comparison for more than 40 liters.') }] }
-          ]
-        }
-      ]
-    };
-  }
-
-  if (session.session === 3) {
-    return {
-      title: session.title,
-      sourceNote: 'Student Worktext Volume 2 pp. 647–652 and Teacher Guide Volume 2 pp. 647–652: solve liquid-volume word problems with equal groups, related multiplication and division equations, and labeled answers.',
-      sections: [
-        sourceCrop(
-          648,
-          '1. Read the two official models · official p. 648',
-          'Official i-Ready bucket scale and four equal two-liter paint cans',
-          { x: 0, y: 196, width: 486, height: 610 },
-          'The bucket scale and the equal cans show the same 8 liters in two different ways.',
-          500
-        ),
-        {
-          kind: 'tape',
-          label: '2. Decompose 8 liters into equal 2-liter cans',
-          totalLabel: '8 liters of blue paint',
-          parts: [
-            { label: '2 L', emphasize: true },
-            { label: '2 L', emphasize: true },
-            { label: '2 L', emphasize: true },
-            { label: '2 L', emphasize: true }
-          ],
-          equations: [answer('8 ÷ 2 = ___ cans', '8 ÷ 2 = 4 cans')],
-          equationAnswers: solved ? undefined : [['4']],
-          caption: answer('Count equal 2-liter groups until the total reaches 8 liters.', 'Four equal groups of 2 liters compose the 8-liter bucket.')
-        },
-        {
-          kind: 'related-facts',
-          label: '3. Connect division to multiplication · official p. 649',
-          rows: [
-            { left: answer('8 ÷ 2 = ___', '8 ÷ 2 = 4'), right: answer('2 × ___ = 8', '2 × 4 = 8') },
-            { left: answer('p = ___ cans', 'p = 4 cans'), right: 'The label tells what the 4 counts.' }
-          ]
-        },
-        {
-          kind: 'source-directions',
-          label: '4. Decide what operation the story describes',
-          items: [
-            { lead: 'Equal-size groups', text: 'Use division when a total number of liters is split into containers with the same capacity.' },
-            { lead: 'Equal groups combined', text: 'Use multiplication when the number of containers and liters per container are known.' },
-            { lead: 'Complete answer', text: 'Keep the unit label—liters, cans, coolers, or days—attached to the result.' }
-          ]
-        }
-      ]
-    };
-  }
-
-  return {
-    title: session.title,
-    sourceNote: 'Student Worktext Volume 2 pp. 653–656 and Teacher Guide Volume 2 pp. 653–656: apply liter benchmarks and choose addition, subtraction, multiplication, or division from the quantities and relationships in each problem.',
-    sections: [
-      sourceCrop(
-        653,
-        '1. Read a marked container and scale to seven containers · official p. 653',
-        'Official i-Ready example showing 10 liters in one container and seven equal containers',
-        { x: 48, y: 184, width: 630, height: 342 },
-        'The marked container shows 10 liters in each of seven equal containers.'
-      ),
-      {
-        kind: 'tape',
-        label: '2. Represent the seven equal containers',
-        totalLabel: answer('total water', '70 liters'),
-        parts: Array.from({ length: 7 }, () => ({ label: '10 L' })),
-        equations: [answer('7 × 10 = ___ liters', '7 × 10 = 70 liters')],
-        equationAnswers: solved ? undefined : [['70']],
-        caption: answer('Seven equal groups of 10 liters.', 'Seven 10-liter groups compose 70 liters.')
-      },
-      {
-        kind: 'equations',
-        label: '3. Match each official relationship to its operation · pp. 653–655',
-        lines: [
-          answer('186 L + 203 L + 190 L = ___ L', '186 L + 203 L + 190 L = 579 L'),
-          answer('8 L ÷ 4 beds = ___ L per bed', '8 L ÷ 4 beds = 2 L per bed')
-        ],
-        lineAnswers: solved ? undefined : [['579'], ['2']]
-      },
-      {
-        kind: 'note',
-        label: 'Teaching conclusion',
-        text: 'The unit is liters in every problem, but the operation changes with the relationship: combine totals, compare amounts, make equal groups, or share equally.'
-      }
-    ]
-  };
 }
 
 function v2BaseVisualForSession(session: IReadyV2Session, solved: boolean): ProblemVisualSpec {
@@ -1248,22 +1350,23 @@ function v2ReviewedVisual(session: IReadyV2Session, solved: boolean, base: Probl
   if (!teacherViewerPage) reject(`lesson ${session.lesson}, session ${session.session} has no Teacher Guide viewer page`);
   if (!base.sections.length) reject(`lesson ${session.lesson}, session ${session.session} has no source-backed mathematical model`);
 
-  const sourceImageKinds = new Set(['source-model', 'source-crop']);
   const sourceOnlyKinds = new Set(['source-model', 'source-crop', 'source-directions', 'note', 'equations']);
-  const interactiveSections = base.sections.filter((section) => !sourceImageKinds.has(section.kind));
-  const firstSemanticIndex = interactiveSections.findIndex((section) => !sourceOnlyKinds.has(section.kind));
-  let reviewedSections = firstSemanticIndex > 0
-    ? [interactiveSections[firstSemanticIndex], ...interactiveSections.slice(0, firstSemanticIndex), ...interactiveSections.slice(firstSemanticIndex + 1)]
-    : interactiveSections;
-  const sourceTeaching = v2SessionSourceTeaching(session, solved)
-    .filter((section) => !sourceImageKinds.has(section.kind));
-  if (!reviewedSections.length) {
-    reviewedSections = sourceTeaching;
+  const firstSemanticIndex = base.sections.findIndex((section) => session.lesson === 32
+    ? section.kind === 'tape' || section.kind === 'array'
+    : !sourceOnlyKinds.has(section.kind));
+  if (firstSemanticIndex > 0) {
+    base = {
+      ...base,
+      sections: [
+        base.sections[firstSemanticIndex],
+        ...base.sections.slice(0, firstSemanticIndex),
+        ...base.sections.slice(firstSemanticIndex + 1)
+      ]
+    };
   }
-  if (!reviewedSections.length) reject(`lesson ${session.lesson}, session ${session.session} has no interactive rendering after source images are moved to evidence`);
-  if (session.lesson >= 20 && session.lesson <= 27) {
-    reviewedSections = [reviewedSections[0], ...sourceTeaching, ...reviewedSections.slice(1)];
-  }
+  const sourceTeaching = v2SessionSourceTeaching(session, solved);
+  const reviewedSections = [base.sections[0], ...sourceTeaching, ...base.sections.slice(1)];
+  if (!reviewedSections.length) reject(`lesson ${session.lesson}, session ${session.session} has no interactive rendering after source figures are positioned as supporting evidence`);
 
   return {
     ...base,
@@ -1273,18 +1376,34 @@ function v2ReviewedVisual(session: IReadyV2Session, solved: boolean, base: Probl
 }
 
 export function v2VisualForSession(session: IReadyV2Session, solved: boolean): ProblemVisualSpec {
-  if (session.lesson === 28) {
-    const sourcePage = [637, 641, 648, 653][session.session - 1];
-    const teacherSpread = v2TeacherSpreadForPrintedPage(sourcePage);
-    if (!teacherSpread) reject(`lesson 28, session ${session.session} has no mapped Teacher Guide spread for printed page ${sourcePage}`);
-    const teacherViewerPage = v2TeacherViewerPages(teacherSpread)[0];
-    if (!teacherViewerPage) reject(`lesson 28, session ${session.session} has no Teacher Guide viewer page`);
-    const visual = v2Lesson28Visual(session, solved);
-    if (!visual.sections.length) reject(`lesson 28, session ${session.session} has no source-backed liquid-volume model`);
-    return {
-      ...visual,
-      sourceNote: `Student Worktext Volume 2 pp. ${session.printedPages} and mapped Teacher Guide Volume 2 viewer p. ${teacherViewerPage} control this liquid-volume model. Full publisher pages remain in the evidence drawer.`
-    };
-  }
   return v2ReviewedVisual(session, solved, v2BaseVisualForSession(session, solved));
+}
+
+export function v2HasExactActivityVisual(activity: IReadyV2Activity): boolean {
+  return activity.lesson === 28 && activity.printedPage >= 637 && activity.printedPage <= 656;
+}
+
+function v2WithheldActivityVisual(activity: IReadyV2Activity): ProblemVisualSpec {
+  return {
+    title: activity.title,
+    sourceNote: `Student Worktext Volume 2 printed p. ${activity.printedPage} and mapped Teacher Guide viewer p. ${activity.teacherViewerPage}. No page-specific code-native visual has passed source review for this activity yet.`,
+    sections: [{
+      kind: 'note',
+      label: 'Exact visual teaching withheld',
+      text: `This selected activity does not yet have an approved page-specific interactive model. The portal will not substitute a neighboring activity, a session-wide model, or a publisher-page screenshot. Open the evidence drawer to review the exact official pages.`
+    }]
+  };
+}
+
+export function v2VisualForActivity(
+  session: IReadyV2Session,
+  activity: IReadyV2Activity,
+  solved: boolean
+): ProblemVisualSpec {
+  if (activity.lesson !== session.lesson || activity.session !== session.session || !v2PagesForSession(session).includes(activity.printedPage)) {
+    reject(`activity ${activity.key} crosses its official lesson-session boundary`);
+  }
+
+  if (v2HasExactActivityVisual(activity)) return v2Lesson28ExactPageVisual(activity, solved);
+  return v2WithheldActivityVisual(activity);
 }

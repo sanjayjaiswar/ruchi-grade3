@@ -29,6 +29,19 @@ for (const source of sources) {
   mkdirSync(sourceOutput, { recursive: true });
 
   const physicalPages = Math.ceil((source.logicalPages + 1) / 2);
+  const spreadWidth = 1920;
+  const spreadHeight = 1012;
+  const writeLogicalPage = (viewerPage, cropX, spreadPath) => {
+    const webp = resolve(sourceOutput, `viewer-${String(viewerPage).padStart(3, '0')}.webp`);
+    execFileSync('cwebp', [
+      '-quiet',
+      '-q', '60',
+      '-m', '6',
+      '-crop', String(cropX), '0', String(spreadWidth / 2), String(spreadHeight),
+      spreadPath,
+      '-o', webp
+    ]);
+  };
   for (let physicalPage = 1; physicalPage <= physicalPages; physicalPage += 1) {
     const prefix = resolve(sourceScratch, `spread-${String(physicalPage).padStart(3, '0')}`);
     const spreadPath = `${prefix}.jpg`;
@@ -43,30 +56,18 @@ for (const source of sources) {
       prefix
     ], { stdio: 'ignore' });
 
-    const spreadWidth = 1920;
-    const spreadHeight = 1012;
     if (physicalPage === 1) {
-      const destination = resolve(sourceScratch, 'viewer-001.jpg');
-      const webp = resolve(sourceOutput, 'viewer-001.webp');
-      execFileSync('sips', ['--cropToHeightWidth', String(spreadHeight), String(spreadWidth / 2), '--cropOffset', '0', '0', spreadPath, '--out', destination], { stdio: 'ignore' });
-      execFileSync('cwebp', ['-quiet', '-q', '60', '-m', '6', destination, '-o', webp]);
-      rmSync(destination, { force: true });
+      // The publisher centers the single cover page on the first physical
+      // canvas. A centered half-width crop preserves the complete cover.
+      writeLogicalPage(1, spreadWidth / 4, spreadPath);
     } else {
       const leftViewerPage = physicalPage * 2 - 2;
       const rightViewerPage = physicalPage * 2 - 1;
       if (leftViewerPage <= source.logicalPages) {
-        const destination = resolve(sourceScratch, `viewer-${String(leftViewerPage).padStart(3, '0')}.jpg`);
-        const webp = resolve(sourceOutput, `viewer-${String(leftViewerPage).padStart(3, '0')}.webp`);
-        execFileSync('sips', ['--cropToHeightWidth', String(spreadHeight), String(spreadWidth / 2), '--cropOffset', '0', '0', spreadPath, '--out', destination], { stdio: 'ignore' });
-        execFileSync('cwebp', ['-quiet', '-q', '60', '-m', '6', destination, '-o', webp]);
-        rmSync(destination, { force: true });
+        writeLogicalPage(leftViewerPage, 0, spreadPath);
       }
       if (rightViewerPage <= source.logicalPages) {
-        const destination = resolve(sourceScratch, `viewer-${String(rightViewerPage).padStart(3, '0')}.jpg`);
-        const webp = resolve(sourceOutput, `viewer-${String(rightViewerPage).padStart(3, '0')}.webp`);
-        execFileSync('sips', ['--cropToHeightWidth', String(spreadHeight), String(spreadWidth / 2), '--cropOffset', '0', String(spreadWidth / 2), spreadPath, '--out', destination], { stdio: 'ignore' });
-        execFileSync('cwebp', ['-quiet', '-q', '60', '-m', '6', destination, '-o', webp]);
-        rmSync(destination, { force: true });
+        writeLogicalPage(rightViewerPage, spreadWidth / 2, spreadPath);
       }
     }
     rmSync(spreadPath, { force: true });

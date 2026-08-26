@@ -7,6 +7,7 @@ import { animate, stagger } from 'animejs';
 import { Subscription } from 'rxjs';
 import { ProblemVisualWorkspaceComponent } from '../../shared/problem-visual-workspace/problem-visual-workspace';
 import { Grade3CmcLesson, Grade3CmcUnit, GRADE3_CMC_UNITS } from '../syllabus-books/syllabus-books.data';
+import { IReadyFamilyRoundingComponent } from './iready-family-rounding';
 import {
   ArithmeticActivity,
   ConceptModelActivity,
@@ -40,7 +41,7 @@ import {
 
 @Component({
   selector: 'app-iready-interactive-page',
-  imports: [FormsModule, NgFor, NgIf, RouterLink, ProblemVisualWorkspaceComponent],
+  imports: [FormsModule, NgFor, NgIf, RouterLink, ProblemVisualWorkspaceComponent, IReadyFamilyRoundingComponent],
   templateUrl: './iready-interactive.html',
   styleUrl: './iready-interactive.css'
 })
@@ -186,6 +187,10 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
 
   get isSelfCheckResource(): boolean {
     return this.selectedResource.key === 'v1-u1-self-check';
+  }
+
+  get isLessonOneFamilyResource(): boolean {
+    return this.selectedResource.key === 'v1-u1-l1-family';
   }
 
   get activeSessions(): readonly IReadyInteractionEvidence[] {

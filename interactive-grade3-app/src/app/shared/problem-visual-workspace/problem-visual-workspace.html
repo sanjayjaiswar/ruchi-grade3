@@ -2,7 +2,7 @@
 <section class="problem-visual-workspace" [class.is-solved]="mode === 'solved'">
   <header class="visual-header">
     <strong>{{ spec.title }}</strong>
-    <span>{{ mode === 'solved' ? (revealStage === undefined ? 'Visual teaching' : 'Building the model') : 'Short practice' }}</span>
+    <span>{{ stageLabel || (mode === 'solved' ? (revealStage === undefined ? 'Visual teaching' : 'Building the model') : 'Short practice') }}</span>
   </header>
 
   <ng-template #sourceResponseTemplate let-response>

@@ -53,7 +53,7 @@
     { "unit": 5, "lesson": 29, "session": 1, "phase": "Explore", "title": "Working with Mass", "printedPages": "659–662", "model": "mass" },
     { "unit": 5, "lesson": 29, "session": 2, "phase": "Develop", "title": "Estimating Mass", "printedPages": "663–668", "model": "mass" },
     { "unit": 5, "lesson": 29, "session": 3, "phase": "Develop", "title": "Solving Word Problems About Mass", "printedPages": "669–674", "model": "mass" },
-    { "unit": 5, "lesson": 29, "session": 4, "phase": "Refine", "title": "Mass", "printedPages": "675–680", "model": "mass" },
+    { "unit": 5, "lesson": 29, "session": 4, "phase": "Refine", "title": "Mass", "printedPages": "675–678", "model": "mass" },
 
     { "unit": 6, "lesson": 30, "session": 1, "phase": "Explore", "title": "Categories of Shapes", "printedPages": "701–704", "model": "shape-attributes" },
     { "unit": 6, "lesson": 30, "session": 2, "phase": "Develop", "title": "Understanding Comparing Shapes", "printedPages": "705–708", "model": "shape-attributes" },
@@ -72,6 +72,6 @@
 
     { "unit": 6, "lesson": 33, "session": 1, "phase": "Explore", "title": "Partitioning Shapes into Parts with Equal Areas", "printedPages": "763–766", "model": "partition-shapes" },
     { "unit": 6, "lesson": 33, "session": 2, "phase": "Develop", "title": "Partitioning Shapes into Equal Parts", "printedPages": "767–772", "model": "partition-shapes" },
-    { "unit": 6, "lesson": 33, "session": 3, "phase": "Refine", "title": "Partitioning Shapes into Equal Areas", "printedPages": "773–778", "model": "partition-shapes" }
+    { "unit": 6, "lesson": 33, "session": 3, "phase": "Refine", "title": "Partitioning Shapes into Equal Areas", "printedPages": "773–776", "model": "partition-shapes" }
   ]
 }

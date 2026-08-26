@@ -60,10 +60,34 @@ for (const session of sessions) {
   }
 }
 
+const v2Activities = v2.IREADY_VOLUME_TWO_ACTIVITIES ?? [];
+if (v2Activities.length !== 236) failures.push(`Volume 2 must expose all 236 lesson-session page activities; found ${v2Activities.length}.`);
+if (new Set(v2Activities.map((activity) => activity.key)).size !== 236) failures.push('Volume 2 activity keys are not unique.');
+for (const activity of v2Activities) {
+  const session = sessions.find((candidate) => candidate.lesson === activity.lesson && candidate.session === activity.session);
+  if (!session) {
+    failures.push(`Volume 2 ${activity.key} has no official session.`);
+    continue;
+  }
+  const blank = v2.v2VisualForActivity(session, activity, false);
+  const solved = v2.v2VisualForActivity(session, activity, true);
+  const expectedStudentAsset = `viewer-${String(activity.viewerPage).padStart(3, '0')}.webp`;
+  const expectedTeacherAsset = `viewer-${String(activity.teacherViewerPage).padStart(3, '0')}.webp`;
+  if (blank.sections.length !== 1 || blank.sections[0].kind !== 'source-crop' || !blank.sections[0].src.endsWith(expectedStudentAsset) || blank.sections[0].sketchOverlay !== true) {
+    failures.push(`Volume 2 ${activity.key} does not open the exact writable Student Worktext page.`);
+  }
+  if (solved.sections.length < 2 || !solved.sections.some((section) => section.kind === 'source-crop' && section.src.endsWith(expectedTeacherAsset))) {
+    failures.push(`Volume 2 ${activity.key} does not include its exact mapped Teacher Guide page.`);
+  }
+  if (!/^[a-f0-9]{64}$/.test(activity.sourceTextSha256) || activity.verificationStatus !== 'verified-student-and-teacher') {
+    failures.push(`Volume 2 ${activity.key} is missing fail-closed source traceability.`);
+  }
+}
+
 if (failures.length) {
   console.error('i-Ready teaching-quality audit failed:');
   failures.forEach((failure) => console.error(`- ${failure}`));
   process.exit(1);
 }
 
-console.log('i-Ready teaching-quality audit passed: 240 Volume 1 activities and 52 Volume 2 sessions are source-bounded and model-first.');
+console.log('i-Ready teaching-quality audit passed: 240 Volume 1 activities, 52 Volume 2 sessions, and 236 exact Volume 2 lesson-page activities are source-bounded and model-first.');

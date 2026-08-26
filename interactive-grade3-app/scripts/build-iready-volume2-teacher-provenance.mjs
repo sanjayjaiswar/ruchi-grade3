@@ -20,11 +20,11 @@ const lessons = [
   { lesson: 26, start: 565, end: 586, teacherPdfStart: 85 },
   { lesson: 27, start: 607, end: 634, teacherPdfStart: 120 },
   { lesson: 28, start: 635, end: 656, teacherPdfStart: 136 },
-  { lesson: 29, start: 657, end: 680, teacherPdfStart: 149 },
+  { lesson: 29, start: 657, end: 678, teacherPdfStart: 149 },
   { lesson: 30, start: 699, end: 710, teacherPdfStart: 184 },
   { lesson: 31, start: 711, end: 732, teacherPdfStart: 192 },
   { lesson: 32, start: 733, end: 760, teacherPdfStart: 205 },
-  { lesson: 33, start: 761, end: 778, teacherPdfStart: 221 }
+  { lesson: 33, start: 761, end: 776, teacherPdfStart: 221 }
 ];
 
 const normalize = (value) => String(value).normalize('NFKD').replace(/[−–—]/g, '-').replace(/\s+/g, ' ').trim();

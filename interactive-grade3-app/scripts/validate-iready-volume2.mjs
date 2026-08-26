@@ -17,6 +17,7 @@ const pageComponent = readFileSync(resolve(root, 'iready-volume2-page.ts'), 'utf
 const template = readFileSync(resolve(root, 'iready-volume2-page.html'), 'utf8');
 const visualWorkspace = readFileSync(resolve(appRoot, 'src/app/shared/problem-visual-workspace/problem-visual-workspace.ts'), 'utf8');
 const visualTemplate = readFileSync(resolve(appRoot, 'src/app/shared/problem-visual-workspace/problem-visual-workspace.html'), 'utf8');
+const assetBuilder = readFileSync(resolve(appRoot, 'scripts/build-iready-volume2-assets.mjs'), 'utf8');
 const routes = readFileSync(resolve(appRoot, 'src/app/app.routes.ts'), 'utf8');
 const studentPdf = resolve(workspaceRoot, 'iReady-Maths/iready-grade3-volume2-396-pages-searchable.pdf');
 const teacherPdf = resolve(workspaceRoot, 'iReady-Maths/iready-grade3-teacher-guide-volume2-540-pages-searchable.pdf');
@@ -63,17 +64,17 @@ const exactSessionRanges = [
   '26-1:567–570', '26-2:571–576', '26-3:577–582', '26-4:583–586',
   '27-1:609–612', '27-2:613–618', '27-3:619–624', '27-4:625–630', '27-5:631–634',
   '28-1:637–640', '28-2:641–646', '28-3:647–652', '28-4:653–656',
-  '29-1:659–662', '29-2:663–668', '29-3:669–674', '29-4:675–680',
+  '29-1:659–662', '29-2:663–668', '29-3:669–674', '29-4:675–678',
   '30-1:701–704', '30-2:705–708', '30-3:709–710',
   '31-1:713–716', '31-2:717–722', '31-3:723–728', '31-4:729–732',
   '32-1:735–738', '32-2:739–744', '32-3:745–750', '32-4:751–756', '32-5:757–760',
-  '33-1:763–766', '33-2:767–772', '33-3:773–778'
+  '33-1:763–766', '33-2:767–772', '33-3:773–776'
 ];
 const actualSessionRanges = (sessions.sessions ?? []).map((session) => `${session.lesson}-${session.session}:${session.printedPages}`);
 if (JSON.stringify(actualSessionRanges) !== JSON.stringify(exactSessionRanges)) fail('official Volume 2 session boundaries drifted from the audited Student Worktext headers');
 if (inventory.pages?.length !== 396) fail(`expected 396 official book pages; found ${inventory.pages?.length ?? 0}`);
 if (inventory.lessons?.length !== 14) fail(`expected 14 lessons; found ${inventory.lessons?.length ?? 0}`);
-if (teacher.spreads?.length !== 134) fail(`expected 134 Teacher Guide mappings; found ${teacher.spreads?.length ?? 0}`);
+if (teacher.spreads?.length !== 132) fail(`expected 132 Teacher Guide mappings; found ${teacher.spreads?.length ?? 0}`);
 
 const sessionPages = new Set();
 const sessionKeys = new Set();
@@ -110,7 +111,7 @@ for (const session of sessions.sessions ?? []) {
   }
   for (const marker of modelMarkers[session.model] ?? []) if (!normalize(sourceText).includes(normalize(marker))) fail(`${key} does not contain its model marker: ${marker}`);
 }
-if (sessionPages.size !== 240) fail(`expected 240 lesson-session printed pages; found ${sessionPages.size}`);
+if (sessionPages.size !== 236) fail(`expected 236 lesson-session printed pages; found ${sessionPages.size}`);
 
 const viewerPages = new Set();
 for (const page of inventory.pages ?? []) {
@@ -126,6 +127,15 @@ for (const page of inventory.pages ?? []) {
   if (hash(normalizeForHash(sourceText)) !== page.sourceTextSha256) fail(`viewer page ${page.viewerPage} source hash drifted`);
 }
 for (let page = 1; page <= 396; page += 1) if (!viewerPages.has(page)) fail(`official book page ${page} is absent`);
+for (const printedPage of [679, 680, 777, 778]) {
+  const page = inventory.pages?.find((candidate) => candidate.printedPage === printedPage);
+  if (!page || page.lesson !== null || page.session !== null || page.kind === 'lesson-session') {
+    fail(`official unit companion p. ${printedPage} is incorrectly assigned to a lesson session`);
+  }
+}
+if (!runtime.includes("viewerStart: 225, viewerEnd: 238") || !runtime.includes("viewerStart: 323, viewerEnd: 336")) {
+  fail('Unit 5 and Unit 6 reflection pages are missing from their official companion libraries');
+}
 
 for (const idea of evidence.unitIdeas ?? []) {
   const page = inventory.pages?.[idea.viewerPage - 1];
@@ -151,6 +161,12 @@ const studentFiles = existsSync(studentAssets) ? readdirSync(studentAssets).filt
 const teacherFiles = existsSync(teacherAssets) ? readdirSync(teacherAssets).filter((file) => /viewer-\d{3}\.webp$/.test(file)) : [];
 if (studentFiles.length !== 396) fail(`expected 396 rendered student pages; found ${studentFiles.length}`);
 if (teacherFiles.length !== 540) fail(`expected 540 rendered Teacher Guide pages; found ${teacherFiles.length}`);
+if (!assetBuilder.includes("'-crop', String(cropX), '0', String(spreadWidth / 2), String(spreadHeight)") || assetBuilder.includes('--cropOffset')) {
+  fail('Volume 2 page assets must crop explicit left/right logical pages, not centered half-spreads');
+}
+if (!assetBuilder.includes('writeLogicalPage(1, spreadWidth / 4, spreadPath)')) {
+  fail('Volume 2 cover assets must preserve the publisher-centered first logical page');
+}
 if (!routes.includes("iready-interactive/volumes/2/lessons/:lessonNumber") || !routes.includes("iready-interactive/volumes/2/library/:groupKey")) fail('Volume 2 lesson or complete-book route is missing');
 if (
   !template.includes('How this lesson is sourced')
@@ -158,7 +174,50 @@ if (
   || !template.includes('<strong>Interactive portal</strong>')
   || !template.includes('No other curriculum supplies content')
 ) fail('learner-facing hard source boundary is missing');
-if (!template.includes('Exact official source') || !template.includes('(click)="checkLessonWork()"') || !template.includes('(click)="replayLessonVisual()"')) fail('interactive teaching or embedded source evidence controls are missing');
+if (!template.includes('Exact official source') || !template.includes('Exact official activity') || !template.includes('(click)="replayLessonVisual()"')) fail('exact official activity teaching or embedded source evidence controls are missing');
+if (!pageComponent.includes('v2ActivitiesForSession(this.selectedSession)') || !pageComponent.includes('v2VisualForActivity') || !template.includes('[spec]="selectedActivityVisual"')) {
+  fail('Volume 2 sidebar entries must select exact source-traceable page activities');
+}
+if (pageComponent.includes("label: 'Official activity page'") || pageComponent.includes('this.selectedSessionPages.map((printedPage)')) {
+  fail('Volume 2 has regressed to fake one-button-per-page activity coverage');
+}
+if (
+  !runtime.includes('IREADY_VOLUME_TWO_ACTIVITIES.length !== 236')
+  || !runtime.includes("verificationStatus: 'verified-student-and-teacher'")
+  || !runtime.includes('sourceTextSha256: inventoryPage.sourceTextSha256')
+  || !runtime.includes('teacherViewerPage: v2TeacherViewerPageForPrintedPage(printedPage)')
+) {
+  fail('Volume 2 must expose 236 unique activities with exact Student Worktext hashes and Teacher Guide mappings');
+}
+if (
+  !runtime.includes('export function v2VisualForActivity')
+  || !runtime.includes('export function v2HasExactActivityVisual')
+  || !runtime.includes('v2WithheldActivityVisual(activity)')
+) {
+  fail('Volume 2 activities must use an explicit exact-page gate and fail closed when a visual is unreviewed');
+}
+const activityVisualBody = runtime.slice(runtime.indexOf('export function v2VisualForActivity'));
+if (/source-crop|source-model|v2StudentImage\(|v2TeacherImage\(|v2VisualForSession\(/.test(activityVisualBody)) {
+  fail('activity teaching may not render publisher pages or inherit a session-wide visual');
+}
+if (
+  !template.includes('Page-specific visual workspace')
+  || !template.includes('Build and explain only the selected activity')
+  || !template.includes('No neighboring activity, session-wide model, or publisher-page screenshot is substituted.')
+) {
+  fail('Volume 2 must explain the page-specific visual boundary in both Blank and Solved states');
+}
+if (runtime.includes('Math.floor(((activity.order - 1) * candidates.length)')) {
+  fail('Volume 2 activity teaching may not mechanically assign session models by page order');
+}
+if (template.includes('(click)="checkLessonWork()"')) fail('Volume 2 may not show a fake scoring control for a free-drawing official page activity');
+const lesson28Body = runtime.slice(runtime.indexOf('function v2Lesson28ExactPageVisual'), runtime.indexOf('function v2BaseVisualForSession'));
+for (let printedPage = 637; printedPage <= 656; printedPage += 1) {
+  if (!lesson28Body.includes(`case ${printedPage}:`)) fail(`Lesson 28 is missing a page-specific code-native visual for printed p. ${printedPage}`);
+}
+if (/source-crop|source-model|v2SourceModel|v2TeacherSourceModel|\.webp/.test(lesson28Body)) {
+  fail('Lesson 28 page-specific teaching may not contain publisher-page screenshots');
+}
 if (!visualWorkspace.includes('toggleFractionStripPart') || !visualTemplate.includes('aria-pressed') || !runtime.includes('correctSelectedParts')) fail('fraction tasks have regressed to non-interactive page transcription');
 if (template.includes("selectLessonMode('source')") || template.includes('lessonMode === \'source\'')) fail('official pages must remain embedded evidence, not replace the lesson');
 if (runtime.includes('.jpg')) fail('Volume 2 runtime must use compressed official page assets');
@@ -172,4 +231,4 @@ if (errors.length) {
   for (const error of errors) console.error(`- ${error}`);
   process.exit(1);
 }
-console.log('i-Ready Volume 2 passed: 396/396 official book pages, 14 lessons, 52 sessions, 240 session pages, 134 mapped Teacher Guide spreads, and exclusive-source guardrails.');
+console.log('i-Ready Volume 2 passed: 396/396 official book pages, 14 lessons, 52 sessions, 236 lesson-session pages, 4 unit-reflection pages kept out of lessons, 132 mapped Teacher Guide spreads, and exclusive-source guardrails.');

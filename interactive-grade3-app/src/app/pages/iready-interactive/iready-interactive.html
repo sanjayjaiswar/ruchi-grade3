@@ -162,9 +162,9 @@
         </header>
 
         <nav *ngIf="!isSelfCheckResource" class="resource-mode-tabs" aria-label="Companion page view">
-          <button type="button" (click)="selectResourceMode('student')" [class.active]="resourceMode === 'student'" [attr.aria-pressed]="resourceMode === 'student'">Official student pages</button>
-          <button type="button" (click)="selectResourceMode('work')" [class.active]="resourceMode === 'work'" [attr.aria-pressed]="resourceMode === 'work'">Work interactively</button>
-          <button type="button" (click)="selectResourceMode('teacher')" [class.active]="resourceMode === 'teacher'" [attr.aria-pressed]="resourceMode === 'teacher'">{{ resourceTeacherLabel }}</button>
+          <button type="button" (click)="selectResourceMode('student')" [class.active]="resourceMode === 'student'" [attr.aria-pressed]="resourceMode === 'student'"><strong>1. Read official pages</strong><small>Student family letter and activity</small></button>
+          <button type="button" (click)="selectResourceMode('work')" [class.active]="resourceMode === 'work'" [attr.aria-pressed]="resourceMode === 'work'"><strong>2. Learn visually and play</strong><small>Understand, solve, record, and shade</small></button>
+          <button type="button" (click)="selectResourceMode('teacher')" [class.active]="resourceMode === 'teacher'" [attr.aria-pressed]="resourceMode === 'teacher'"><strong>3. {{ resourceTeacherLabel }}</strong><small>Teacher Guide notes—not another activity</small></button>
         </nav>
 
         <section *ngIf="isSelfCheckResource" class="self-check-workspace" aria-labelledby="self-check-title">
@@ -200,6 +200,10 @@
         </section>
 
         <section *ngIf="resourceMode === 'student'" class="official-page-panel" aria-label="Official Student Worktext pages">
+          <aside class="resource-mode-explainer">
+            <strong>Read</strong>
+            <span>These are the exact official Student Worktext pages. Page 7 explains rounding; page 8 gives the family game.</span>
+          </aside>
           <div class="student-page-grid" [class.single-page]="selectedResourceStudentPages.length === 1">
             <figure *ngFor="let page of selectedResourceStudentPages">
               <img [src]="supportStudentImage(page)" [alt]="'Official Student Worktext Volume 1 printed page ' + page">
@@ -210,12 +214,16 @@
 
         <section *ngIf="resourceMode === 'work' && !isSelfCheckResource" class="resource-work-panel" aria-label="Interactive workspace for official pages">
           <aside class="resource-source-strip">
+            <header><strong>Read-only source reference</strong><span>Use these official pages while working in the interactive panel.</span></header>
             <figure *ngFor="let page of selectedResourceStudentPages">
               <img [src]="supportStudentImage(page)" [alt]="'Official source page ' + page">
               <figcaption>Official p. {{ page }}</figcaption>
             </figure>
           </aside>
-          <app-problem-visual-workspace [spec]="selectedResourceWorkspace" mode="blank"></app-problem-visual-workspace>
+          <app-iready-family-rounding *ngIf="isLessonOneFamilyResource; else genericResourceWorkspace"></app-iready-family-rounding>
+          <ng-template #genericResourceWorkspace>
+            <app-problem-visual-workspace [spec]="selectedResourceWorkspace" mode="blank"></app-problem-visual-workspace>
+          </ng-template>
         </section>
 
         <section *ngIf="resourceMode === 'teacher'" class="teacher-page-panel" aria-label="Official Teacher Guide pages">
@@ -223,6 +231,10 @@
             <strong>{{ resourceTeacherLabel }}</strong>
             <span>The images below are rendered directly from the official Grade 3 Teacher Guide, Volume 1. No answer or teaching statement is supplied by another curriculum.</span>
             <a [href]="supportTeacherSourceUrl()" target="_blank" rel="noopener">Open official Teacher Guide ↗</a>
+          </aside>
+          <aside *ngIf="isLessonOneFamilyResource" class="teacher-view-explainer">
+            <strong>Why this looks familiar</strong>
+            <span>The Teacher Guide reproduces small images of Student Worktext pages 7–8 beside teacher-facing “Connect to Family,” culture, language-development, and engagement notes. It is a different source page with a different purpose.</span>
           </aside>
           <figure *ngFor="let page of selectedResourceTeacher.teacherPdfPages">
             <img [src]="supportTeacherImage(page)" [alt]="'Official Teacher Guide Volume 1 PDF page ' + page">

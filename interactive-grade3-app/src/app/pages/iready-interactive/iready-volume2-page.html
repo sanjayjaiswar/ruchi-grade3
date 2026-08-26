@@ -115,7 +115,10 @@
     <section class="lesson-workspace">
       <header class="lesson-title">
         <div><span>Volume 2 · Unit {{ selectedUnit.number }} · Lesson {{ selectedLesson.number }}</span><h1>{{ selectedLesson.title }}</h1><p>{{ selectedLesson.standards }} · {{ selectedLesson.sessions }} official sessions · starts on printed p. {{ selectedLesson.printPage }}</p></div>
-        <a [href]="lessonUrl(selectedLesson)" target="_blank" rel="noopener">Official lesson ↗</a>
+        <div class="lesson-title-links">
+          <a [href]="lessonUrl(selectedLesson)" target="_blank" rel="noopener">Family pages {{ familyPages(selectedLesson) }} →</a>
+          <a [href]="officialUrlForPrintedPage(selectedSessionPages[0])" target="_blank" rel="noopener">Open official lesson ↗</a>
+        </div>
       </header>
 
       <nav class="session-tabs" [style.--session-count]="activeSessions.length" aria-label="Official sessions">
@@ -130,49 +133,74 @@
           <nav aria-label="Lesson controls">
             <button type="button" (click)="selectLessonMode('teacher')" [class.active]="lessonMode === 'teacher'" [attr.aria-pressed]="lessonMode === 'teacher'">Learn visually</button>
             <button type="button" (click)="selectLessonMode('learn')" [class.active]="lessonMode === 'learn'" [attr.aria-pressed]="lessonMode === 'learn'">Try one</button>
-            <button *ngIf="lessonMode === 'learn'" type="button" (click)="checkLessonWork()">Check</button>
             <button type="button" (click)="replayLessonVisual()">Replay teaching</button>
+            <a [href]="officialUrlForPrintedPage(selectedActivity.printedPage)" target="_blank" rel="noopener">Official p. {{ selectedActivity.printedPage }} ↗</a>
           </nav>
         </header>
 
-        <div *ngIf="lessonMode === 'learn'" class="interactive-teaching">
-          <section>
-            <span>Short source-backed practice</span>
-            <app-problem-visual-workspace [spec]="selectedVisual" mode="blank" [showValidation]="showLessonValidation"></app-problem-visual-workspace>
-          </section>
+        <div class="session-learning-layout">
+          <aside class="activity-rail" aria-label="Session activities">
+            <strong>Session activities</strong>
+            <button *ngFor="let activity of activeActivities; let activityIndex = index" type="button" (click)="selectActivity(activityIndex)" [class.active]="activityIndex === selectedActivityIndex" [attr.aria-pressed]="activityIndex === selectedActivityIndex">
+              <span>Student Worktext</span>
+              <small>p. {{ activity.printedPage }}</small>
+              <b>{{ activity.title }}</b>
+            </button>
+          </aside>
+
+          <div class="activity-stage">
+            <header class="activity-heading">
+              <div><span>Exact official activity · Student Worktext p. {{ selectedActivity.printedPage }}</span><h3>{{ selectedActivity.title }}</h3></div>
+              <a [href]="officialUrlForPrintedPage(selectedActivity.printedPage)" target="_blank" rel="noopener">Verify official page ↗</a>
+            </header>
+
+            <div *ngIf="lessonMode === 'learn'" class="interactive-teaching">
+              <section>
+                <span>{{ hasExactActivityVisual ? 'Page-specific visual workspace · Blank state' : 'Page-specific visual pending source review' }}</span>
+                <app-problem-visual-workspace [spec]="selectedActivityVisual" mode="blank" stageLabel="Try the verified model" [showValidation]="showLessonValidation"></app-problem-visual-workspace>
+              </section>
+            </div>
+
+            <section *ngIf="lessonMode === 'teacher'" class="teacher-solution-view">
+              <header>
+                <div><strong>Learn visually</strong><span>{{ hasExactActivityVisual ? 'Build and explain only the selected activity with its verified code-native model.' : 'No neighboring activity, session-wide model, or publisher-page screenshot is substituted.' }}</span></div>
+                <div class="teaching-steps" *ngIf="teachingStepCount > 1">
+                  <button type="button" (click)="previousTeachingStep()" [disabled]="solutionRevealCount <= 1">Previous</button>
+                  <span>Step {{ solutionRevealCount }} of {{ teachingStepCount }}</span>
+                  <button type="button" (click)="nextTeachingStep()" [disabled]="solutionRevealCount >= teachingStepCount">Next</button>
+                </div>
+              </header>
+              <app-problem-visual-workspace [spec]="selectedActivityVisual" mode="solved" stageLabel="Selected activity teaching" [revealStage]="solutionRevealCount"></app-problem-visual-workspace>
+            </section>
+
+            <p class="lesson-feedback" aria-live="polite">{{ lessonFeedback }}</p>
+
+            <details class="exact-source-drawer">
+              <summary><span><strong>Exact official source</strong><small>Student Worktext pp. {{ selectedSession.printedPages }} · Teacher Guide mapping · {{ selectedSession.model }}</small></span><b>Open evidence</b></summary>
+              <div class="source-trace">
+                <span>Volume 2</span><span>Lesson {{ selectedLesson.number }}</span><span>Session {{ selectedSession.session }} · {{ selectedSession.phase }}</span><span>Printed pp. {{ selectedSession.printedPages }}</span><span>Viewer p. {{ viewerPageForPrinted(selectedPrintedPage) }}</span><span>Model: {{ selectedSession.model }}</span>
+              </div>
+              <nav class="page-tabs evidence-page-tabs" aria-label="Official evidence pages in this session">
+                <button *ngFor="let page of selectedSessionPages" type="button" (click)="selectPrintedPage(page)" [class.active]="page === selectedPrintedPage" [attr.aria-pressed]="page === selectedPrintedPage">Student p. {{ page }}</button>
+              </nav>
+              <div class="source-evidence-grid">
+                <figure><a [href]="officialUrlForPrintedPage(selectedPrintedPage)" target="_blank" rel="noopener"><img [src]="studentImage(selectedPrintedPage)" [alt]="'Official Student Worktext Volume 2 printed page ' + selectedPrintedPage"></a><figcaption>Student Worktext · printed p. {{ selectedPrintedPage }}</figcaption></figure>
+                <ng-container *ngIf="selectedTeacherSpread as spread">
+                  <figure *ngFor="let viewerPage of selectedTeacherViewerPages"><img [src]="teacherImage(viewerPage)" [alt]="'Official Teacher Guide Volume 2 viewer page ' + viewerPage"><figcaption>Mapped Teacher Guide evidence · viewer p. {{ viewerPage }}</figcaption></figure>
+                  <p>Mapped Student Worktext pp. {{ spread.studentPages }} · Teacher Guide PDF spread {{ spread.teacherPdfPage }}</p>
+                </ng-container>
+              </div>
+            </details>
+
+            <footer class="iready-source-boundary">
+              <strong class="iready-source-boundary-heading">How this lesson is sourced</strong>
+              <div class="iready-source-boundary-groups">
+                <section><strong>Official book</strong><span>The official book supplies the lesson structure, task values, answer, and mathematical model. Learner content comes from the Student Worktext Volume 2; guidance comes from the Teacher Guide Volume 2.</span></section>
+                <section><strong>Interactive portal</strong><span>The portal supplies explanatory wording, controls, feedback, and animation without adding curriculum claims. No other curriculum supplies content.</span></section>
+              </div>
+            </footer>
+          </div>
         </div>
-
-        <section *ngIf="lessonMode === 'teacher'" class="teacher-solution-view">
-          <header><strong>Visual teaching · official Student Worktext + Teacher Guide</strong><span>The complete mathematical model stays visible; replay animates its verified relationships. Source pages remain in the evidence drawer.</span></header>
-          <app-problem-visual-workspace [spec]="selectedVisual" mode="solved"></app-problem-visual-workspace>
-        </section>
-
-        <p class="lesson-feedback" aria-live="polite">{{ lessonFeedback }}</p>
-
-        <details class="exact-source-drawer">
-          <summary><span><strong>Exact official source</strong><small>Student Worktext pp. {{ selectedSession.printedPages }} · Teacher Guide mapping · {{ selectedSession.model }}</small></span><b>Open evidence</b></summary>
-          <div class="source-trace">
-            <span>Volume 2</span><span>Lesson {{ selectedLesson.number }}</span><span>Session {{ selectedSession.session }} · {{ selectedSession.phase }}</span><span>Printed pp. {{ selectedSession.printedPages }}</span><span>Viewer p. {{ viewerPageForPrinted(selectedPrintedPage) }}</span><span>Model: {{ selectedSession.model }}</span>
-          </div>
-          <nav class="page-tabs evidence-page-tabs" aria-label="Official evidence pages in this session">
-            <button *ngFor="let page of selectedSessionPages" type="button" (click)="selectPrintedPage(page)" [class.active]="page === selectedPrintedPage" [attr.aria-pressed]="page === selectedPrintedPage">Student p. {{ page }}</button>
-          </nav>
-          <div class="source-evidence-grid">
-            <figure><a [href]="officialUrlForPrintedPage(selectedPrintedPage)" target="_blank" rel="noopener"><img [src]="studentImage(selectedPrintedPage)" [alt]="'Official Student Worktext Volume 2 printed page ' + selectedPrintedPage"></a><figcaption>Student Worktext · printed p. {{ selectedPrintedPage }}</figcaption></figure>
-            <ng-container *ngIf="selectedTeacherSpread as spread">
-              <figure *ngFor="let viewerPage of selectedTeacherViewerPages"><img [src]="teacherImage(viewerPage)" [alt]="'Official Teacher Guide Volume 2 viewer page ' + viewerPage"><figcaption>Teacher Guide · viewer p. {{ viewerPage }}</figcaption></figure>
-              <p>Mapped Student Worktext pp. {{ spread.studentPages }} · Teacher Guide PDF spread {{ spread.teacherPdfPage }}</p>
-            </ng-container>
-          </div>
-        </details>
-
-        <footer class="iready-source-boundary">
-          <strong class="iready-source-boundary-heading">How this lesson is sourced</strong>
-          <div class="iready-source-boundary-groups">
-            <section><strong>Official book</strong><span>The official book supplies the lesson structure, task values, answer, and mathematical model. Learner content comes from the Student Worktext Volume 2; guidance comes from the Teacher Guide Volume 2.</span></section>
-            <section><strong>Interactive portal</strong><span>The portal supplies explanatory wording, controls, feedback, and animation without adding curriculum claims. No other curriculum supplies content.</span></section>
-          </div>
-        </footer>
       </section>
     </section>
   </ng-container>

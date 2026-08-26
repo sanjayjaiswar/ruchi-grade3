@@ -51,6 +51,7 @@ import type {
 export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChanges {
   @Input({ required: true }) spec?: ProblemVisualSpec;
   @Input() mode: 'blank' | 'solved' = 'blank';
+  @Input() stageLabel?: string;
   @Input() revealStage?: number;
   @Input() focusRevealStage = false;
   @Input() showValidation = false;

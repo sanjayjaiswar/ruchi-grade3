@@ -68,7 +68,7 @@
       "unit": 5,
       "number": 29,
       "startPrintedPage": 657,
-      "endPrintedPage": 680
+      "endPrintedPage": 678
     },
     {
       "unit": 6,
@@ -92,7 +92,7 @@
       "unit": 6,
       "number": 33,
       "startPrintedPage": 761,
-      "endPrintedPage": 778
+      "endPrintedPage": 776
     }
   ],
   "sessions": [
@@ -426,7 +426,7 @@
       "session": 4,
       "phase": "Refine",
       "title": "Mass",
-      "printedPages": "675–680",
+      "printedPages": "675–678",
       "model": "mass"
     },
     {
@@ -561,7 +561,7 @@
       "session": 3,
       "phase": "Refine",
       "title": "Partitioning Shapes into Equal Areas",
-      "printedPages": "773–778",
+      "printedPages": "773–776",
       "model": "partition-shapes"
     }
   ],
@@ -3484,10 +3484,10 @@
       "physicalPdfPage": 113,
       "side": "right",
       "unit": 5,
-      "lesson": 29,
-      "session": 4,
-      "phase": "Refine",
-      "kind": "lesson-session",
+      "lesson": null,
+      "session": null,
+      "phase": null,
+      "kind": "unit-self-reflection",
       "sourceTextSha256": "7571adf2a93958cde7952e832bbe547ce75191b35a6a52c2f2ffbb74561e7345",
       "extraction": "pdftotext-cropped-dual-page"
     },
@@ -3497,10 +3497,10 @@
       "physicalPdfPage": 114,
       "side": "left",
       "unit": 5,
-      "lesson": 29,
-      "session": 4,
-      "phase": "Refine",
-      "kind": "lesson-session",
+      "lesson": null,
+      "session": null,
+      "phase": null,
+      "kind": "math-in-action-and-unit-review",
       "sourceTextSha256": "1c0c5b752752b938885237e4f4e9d284004d32bc7f85400d9f861b87aea37d2b",
       "extraction": "pdftotext-cropped-dual-page"
     },
@@ -4758,10 +4758,10 @@
       "physicalPdfPage": 162,
       "side": "right",
       "unit": 6,
-      "lesson": 33,
-      "session": 3,
-      "phase": "Refine",
-      "kind": "lesson-session",
+      "lesson": null,
+      "session": null,
+      "phase": null,
+      "kind": "unit-self-reflection",
       "sourceTextSha256": "75ad4c8269c04eee6fc80094d5bcdf251bf4b342834202e25bd8c89f2c238f99",
       "extraction": "pdftotext-cropped-dual-page"
     },
@@ -4771,10 +4771,10 @@
       "physicalPdfPage": 163,
       "side": "left",
       "unit": 6,
-      "lesson": 33,
-      "session": 3,
-      "phase": "Refine",
-      "kind": "lesson-session",
+      "lesson": null,
+      "session": null,
+      "phase": null,
+      "kind": "math-in-action-and-unit-review",
       "sourceTextSha256": "2c6d1b1d8dce22deb4253b0a103d4316e33515ee657823147c5e0de9b2eb08ef",
       "extraction": "pdftotext-cropped-dual-page"
     },

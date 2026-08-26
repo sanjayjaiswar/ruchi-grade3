@@ -1,0 +1,148 @@
+<section class="family-rounding" aria-labelledby="family-rounding-title">
+  <header class="family-rounding-header">
+    <div>
+      <span>Official Student Worktext Volume 1 · pp. 7–8</span>
+      <h2 id="family-rounding-title">Understand the rounding, then play the activity</h2>
+      <p>The visual example uses 217 from the official family letter. The game follows the official digit-card activity.</p>
+    </div>
+    <nav aria-label="Rounding activity sections">
+      <button type="button" (click)="selectView('learn')" [class.active]="viewMode === 'learn'" [attr.aria-pressed]="viewMode === 'learn'">Learn visually</button>
+      <button type="button" (click)="selectView('play')" [class.active]="viewMode === 'play'" [attr.aria-pressed]="viewMode === 'play'">Play and solve</button>
+    </nav>
+  </header>
+
+  <section *ngIf="viewMode === 'learn'" class="rounding-teaching" aria-labelledby="rounding-teaching-title">
+    <header>
+      <div><span>Worked visual · official p. 7</span><h3 id="rounding-teaching-title">How does 217 round to the nearest hundred?</h3></div>
+      <button type="button" (click)="replayTeaching()">Replay teaching</button>
+    </header>
+
+    <ol class="teaching-progress" aria-label="Visual teaching steps">
+      <li *ngFor="let step of teachingSteps; let index = index" [class.active]="teachingStep === index + 1" [class.complete]="teachingStep > index + 1">
+        <span>{{ index + 1 }}</span><strong>{{ step }}</strong>
+      </li>
+    </ol>
+
+    <div class="teaching-stage" aria-live="polite">
+      <section class="base-ten-visual" [class.revealed]="teachingStep >= 1">
+        <div class="hundreds-blocks" aria-label="2 hundreds">
+          <i></i><i></i>
+        </div>
+        <div class="tens-block" aria-label="1 ten"><i *ngFor="let item of [1,2,3,4,5,6,7,8,9,10]"></i></div>
+        <div class="ones-blocks" aria-label="7 ones"><i *ngFor="let item of [1,2,3,4,5,6,7]"></i></div>
+        <p><strong>217</strong> = 2 hundreds + 1 ten + 7 ones</p>
+      </section>
+
+      <section *ngIf="teachingStep >= 2" class="teaching-number-line" aria-label="217 on a number line from 200 to 300">
+        <div class="line-track">
+          <span class="endpoint low">200</span>
+          <span class="midpoint">250<small>halfway</small></span>
+          <span class="endpoint high">300</span>
+          <i class="number-marker" style="left: 17%"><strong>217</strong></i>
+        </div>
+      </section>
+
+      <section *ngIf="teachingStep >= 3" class="rounding-decision">
+        <div><span>Tens digit</span><strong class="digit-focus">1</strong></div>
+        <p><strong>1 is less than 5.</strong> That places 217 before the halfway point, so it is closer to 200 than to 300.</p>
+      </section>
+
+      <section *ngIf="teachingStep >= 4" class="rounding-result">
+        <span>217 rounded to the nearest hundred is</span>
+        <strong>200</strong>
+      </section>
+    </div>
+
+    <footer class="teaching-actions">
+      <button *ngIf="teachingStep < teachingSteps.length" type="button" (click)="nextTeachingStep()">Next visual step</button>
+      <button *ngIf="teachingStep === teachingSteps.length" type="button" class="primary" (click)="startGame()">I understand—play the game</button>
+    </footer>
+  </section>
+
+  <section *ngIf="viewMode === 'play'" class="rounding-game" aria-labelledby="rounding-game-title">
+    <header class="game-heading">
+      <div><span>Official activity · p. 8</span><h3 id="rounding-game-title">Draw, arrange, round, and shade</h3></div>
+      <button type="button" (click)="newGame()">New game</button>
+    </header>
+
+    <div class="player-scoreboards">
+      <article *ngFor="let player of players" [class.active]="activePlayer === player && winner === undefined" [class.winner]="winner === player">
+        <header><strong>Player {{ player + 1 }}</strong><span>{{ shadedHundreds[player].size }} of 5 shaded</span></header>
+        <div class="hundred-board" [attr.aria-label]="'Player ' + (player + 1) + ' rounding board'">
+          <span *ngFor="let hundred of hundreds" [class.shaded]="hasShaded(player, hundred)">{{ hundred }}</span>
+        </div>
+      </article>
+    </div>
+
+    <section class="turn-workspace" [class.finished]="winner !== undefined">
+      <header>
+        <span *ngIf="winner === undefined">Player {{ activePlayer + 1 }}'s turn</span>
+        <span *ngIf="winner !== undefined">Game complete</span>
+        <strong>{{ feedback }}</strong>
+      </header>
+
+      <div class="turn-steps">
+        <section class="turn-step draw-step" [class.current]="turnDigits.length === 0 && winner === undefined">
+          <span>1</span>
+          <div><h4>Draw three digit cards</h4><p>The cards are drawn from 0–8 without repeats.</p></div>
+          <button type="button" (click)="drawDigits()" [disabled]="turnDigits.length > 0 || winner !== undefined">Draw 3 cards</button>
+        </section>
+
+        <section class="turn-step arrange-step" [class.current]="turnDigits.length > 0 && arrangedDigits.length < 3">
+          <span>2</span>
+          <div class="arrange-copy"><h4>Make a three-digit number</h4><p>Select the cards in the order you want. Select a placed digit to return it.</p></div>
+          <div class="digit-arranger">
+            <div class="drawn-cards" aria-label="Digit cards to place">
+              <button *ngFor="let digit of unplacedDigits" type="button" (click)="placeDigit(digit)">{{ digit }}</button>
+              <em *ngIf="turnDigits.length === 0">Draw cards first</em>
+            </div>
+            <div class="number-slots" aria-label="Three-digit number">
+              <button *ngFor="let digit of arrangedDigits; let index = index" type="button" (click)="returnDigit(index)">{{ digit }}</button>
+              <i *ngFor="let slot of remainingDigitSlots"></i>
+            </div>
+          </div>
+        </section>
+
+        <section class="turn-step round-step" [class.current]="builtNumber !== undefined && selectedHundred === undefined">
+          <span>3</span>
+          <div><h4>Round to the nearest hundred</h4><p *ngIf="builtNumber === undefined">Finish arranging the number first.</p><p *ngIf="builtNumber !== undefined">Use the midpoint to decide which hundred is nearer.</p></div>
+          <div *ngIf="builtNumber !== undefined" class="live-rounding-model">
+            <strong>{{ builtNumber }}</strong>
+            <div class="mini-number-line">
+              <span>{{ lowerHundred }}</span><i class="mid">{{ midpoint }}</i><span>{{ upperHundred }}</span>
+              <b [style.left.%]="markerPosition">{{ builtNumber }}</b>
+            </div>
+            <div class="rounding-choices" role="group" aria-label="Choose the nearest hundred">
+              <button type="button" (click)="chooseHundred(lowerHundred!)" [class.selected]="selectedHundred === lowerHundred">{{ lowerHundred }}</button>
+              <button type="button" (click)="chooseHundred(upperHundred!)" [class.selected]="selectedHundred === upperHundred">{{ upperHundred }}</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="turn-step check-step" [class.current]="selectedHundred !== undefined">
+          <span>4</span>
+          <div><h4>Check, record, and shade</h4><p>A correct answer is recorded below and shades the matching hundred.</p></div>
+          <button type="button" class="check-button" (click)="checkRound()" [disabled]="!canCheckRound">Check answer</button>
+        </section>
+      </div>
+    </section>
+
+    <section class="recording-tables" aria-label="Player recording tables">
+      <article *ngFor="let player of players">
+        <h4>Player {{ player + 1 }} recording table</h4>
+        <table>
+          <thead><tr><th>Digits</th><th>3-digit number</th><th>Rounded to nearest hundred</th></tr></thead>
+          <tbody>
+            <tr *ngFor="let record of records[player]"><td>{{ record.digits.join(', ') }}</td><td>{{ record.value }}</td><td>{{ record.rounded }}</td></tr>
+            <tr *ngFor="let row of emptyRows(player)" class="empty-row"><td>&nbsp;</td><td></td><td></td></tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+  </section>
+
+  <footer class="family-source-note">
+    <strong>Source boundary</strong>
+    <span>Teaching example: official Student Worktext Volume 1 p. 7. Game directions, digit cards, game boards, and recording columns: official p. 8.</span>
+  </footer>
+</section>

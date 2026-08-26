@@ -660,13 +660,6 @@
       "sourceTextSha256": "4771845b3e5c23a9ae76224662729d1671e7568a278e6436f8d157aad1207762"
     },
     {
-      "lesson": 29,
-      "studentPages": "679–680",
-      "teacherGuideViewerPages": "318–319",
-      "teacherPdfPage": 160,
-      "sourceTextSha256": "4d41a889093a169f78b505fa10fb64a424459ec77225f1560dfd630efa68cd95"
-    },
-    {
       "lesson": 30,
       "studentPages": "699–700",
       "teacherGuideViewerPages": "366–367",
@@ -938,13 +931,6 @@
       "teacherGuideViewerPages": "454–455",
       "teacherPdfPage": 228,
       "sourceTextSha256": "473c3b2d7cbe6ea5b7f36f519276109fe5e227b05fd6760c8ed2aeb643175a0c"
-    },
-    {
-      "lesson": 33,
-      "studentPages": "777–778",
-      "teacherGuideViewerPages": "456–457",
-      "teacherPdfPage": 229,
-      "sourceTextSha256": "af9f7a09b22d59e0ba3253c04d8097421e54e339cfe7c08173e45b3381c030f1"
     }
   ]
 }

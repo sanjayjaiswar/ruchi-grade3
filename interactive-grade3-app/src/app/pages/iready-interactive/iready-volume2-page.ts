@@ -7,11 +7,14 @@ import { ProblemVisualWorkspaceComponent } from '../../shared/problem-visual-wor
 import { Grade3CmcLesson, Grade3CmcUnit, GRADE3_CMC_UNITS } from '../syllabus-books/syllabus-books.data';
 import {
   IREADY_VOLUME_TWO_LIBRARY,
+  IReadyV2Activity,
   IReadyV2LibraryGroup,
   IReadyV2Session,
   IReadyV2TeacherSpread,
   IReadyV2UnitIdea,
   v2LibraryForUnit,
+  v2ActivitiesForSession,
+  v2HasExactActivityVisual,
   v2OfficialUrlForPrintedPage,
   v2OfficialUrlForViewerPage,
   v2PagesForSession,
@@ -20,11 +23,10 @@ import {
   v2StudentImageByViewerPage,
   v2TeacherImage,
   v2TeacherSpreadForPrintedPage,
-  v2TeacherViewerPages,
   v2UnitIdeas,
   v2ViewerPageForPrintedPage,
   v2ViewerPagesForLibrary,
-  v2VisualForSession
+  v2VisualForActivity
 } from './iready-volume2';
 
 @Component({
@@ -50,13 +52,15 @@ export class IReadyVolume2Page implements OnDestroy {
   selectedUnitNumber = 4;
   selectedLessonNumber = 20;
   selectedSessionNumber = 1;
+  selectedActivityIndex = 0;
   selectedPrintedPage = 475;
   selectedLibraryKey = IREADY_VOLUME_TWO_LIBRARY[0].key;
   selectedViewerPage = 1;
   lessonMode: 'learn' | 'teacher' = 'teacher';
-  lessonFeedback = 'Source-backed visual teaching is open. Use Try one afterward for a short check.';
+  lessonFeedback = 'Page-specific visual teaching is open for this activity.';
   showLessonValidation = false;
-  private readonly visualCache = new Map<string, ReturnType<typeof v2VisualForSession>>();
+  solutionRevealCount = 1;
+  private readonly visualCache = new Map<string, ReturnType<typeof v2VisualForActivity>>();
   private readonly subscriptions = new Subscription();
 
   constructor(private readonly route: ActivatedRoute, private readonly title: Title) {
@@ -72,7 +76,9 @@ export class IReadyVolume2Page implements OnDestroy {
         this.selectedLessonNumber = lesson.number;
         this.selectedUnitNumber = this.unitForLesson(lesson.number)?.number ?? 4;
         this.selectedSessionNumber = 1;
+        this.selectedActivityIndex = 0;
         this.selectedPrintedPage = v2PagesForSession(this.selectedSession)[0];
+        this.resetTeachingStage();
       } else if (this.libraryFocus) {
         const group = IREADY_VOLUME_TWO_LIBRARY.find((candidate) => candidate.key === requestedLibrary) ?? IREADY_VOLUME_TWO_LIBRARY[0];
         this.selectedLibraryKey = group.key;
@@ -113,22 +119,40 @@ export class IReadyVolume2Page implements OnDestroy {
     return v2PagesForSession(this.selectedSession);
   }
 
+  get activeActivities(): readonly IReadyV2Activity[] {
+    return v2ActivitiesForSession(this.selectedSession);
+  }
+
+  get selectedActivity(): IReadyV2Activity {
+    const activity = this.activeActivities[this.selectedActivityIndex] ?? this.activeActivities[0];
+    if (!activity) throw new Error(`No exact official activity for Lesson ${this.selectedLessonNumber}, Session ${this.selectedSessionNumber}.`);
+    return activity;
+  }
+
   get selectedTeacherSpread(): IReadyV2TeacherSpread | undefined {
     return v2TeacherSpreadForPrintedPage(this.selectedPrintedPage);
   }
 
   get selectedTeacherViewerPages(): readonly number[] {
-    return this.selectedTeacherSpread ? v2TeacherViewerPages(this.selectedTeacherSpread) : [];
+    return [this.selectedActivity.teacherViewerPage];
   }
 
-  get selectedVisual() {
+  get hasExactActivityVisual(): boolean {
+    return v2HasExactActivityVisual(this.selectedActivity);
+  }
+
+  get selectedActivityVisual() {
     const solved = this.lessonMode === 'teacher';
-    const key = `${this.selectedSession.lesson}-${this.selectedSession.session}-${solved ? 'solved' : 'blank'}`;
+    const key = `${this.selectedActivity.key}-${solved ? 'solved' : 'blank'}`;
     const cached = this.visualCache.get(key);
     if (cached) return cached;
-    const visual = v2VisualForSession(this.selectedSession, solved);
+    const visual = v2VisualForActivity(this.selectedSession, this.selectedActivity, solved);
     this.visualCache.set(key, visual);
     return visual;
+  }
+
+  get teachingStepCount(): number {
+    return Math.max(1, this.selectedActivityVisual.sections.length);
   }
 
   get selectedLibrary(): IReadyV2LibraryGroup {
@@ -163,25 +187,52 @@ export class IReadyVolume2Page implements OnDestroy {
 
   selectSession(sessionNumber: number): void {
     this.selectedSessionNumber = sessionNumber;
+    this.selectedActivityIndex = 0;
     this.selectedPrintedPage = v2PagesForSession(this.selectedSession)[0];
     this.lessonMode = 'teacher';
     this.showLessonValidation = false;
-    this.lessonFeedback = 'Source-backed visual teaching is open. Use Try one afterward for a short check.';
+    this.lessonFeedback = v2HasExactActivityVisual(this.selectedActivity)
+      ? 'Page-specific visual teaching is open for this activity.'
+      : 'No page-specific visual has passed source review; no substitute is shown.';
+    this.resetTeachingStage();
+  }
+
+  selectActivity(activityIndex: number): void {
+    const activity = this.activeActivities[activityIndex];
+    if (!activity) return;
+    this.selectedActivityIndex = activityIndex;
+    this.selectedPrintedPage = activity.printedPage;
+    this.showLessonValidation = false;
+    this.lessonFeedback = v2HasExactActivityVisual(activity)
+      ? `${this.lessonMode === 'teacher' ? 'Solved' : 'Blank'} page-specific visual is open for Student Worktext p. ${activity.printedPage}.`
+      : 'No page-specific visual has passed source review; no substitute is shown.';
+    this.resetTeachingStage();
   }
 
   selectPrintedPage(page: number): void {
     this.selectedPrintedPage = page;
+    const activityIndex = this.activeActivities.findIndex((activity) => activity.printedPage === page);
+    if (activityIndex >= 0) this.selectedActivityIndex = activityIndex;
   }
 
   selectLessonMode(mode: 'learn' | 'teacher'): void {
     this.lessonMode = mode;
     this.showLessonValidation = false;
-    this.lessonFeedback = mode === 'teacher'
-      ? 'Source-backed visual teaching is open. Use Try one afterward for a short check.'
-      : 'Try the focused activity, then check the discrete responses or return to visual teaching.';
+    this.lessonFeedback = this.hasExactActivityVisual
+      ? `${mode === 'teacher' ? 'Solved' : 'Blank'} page-specific visual is open for Student Worktext p. ${this.selectedActivity.printedPage}.`
+      : 'No page-specific visual has passed source review; no substitute is shown.';
     if (mode === 'teacher') {
+      this.solutionRevealCount = this.teachingStepCount;
       requestAnimationFrame(() => this.visualWorkspace?.replayAnimation());
     }
+  }
+
+  previousTeachingStep(): void {
+    this.solutionRevealCount = Math.max(1, this.solutionRevealCount - 1);
+  }
+
+  nextTeachingStep(): void {
+    this.solutionRevealCount = Math.min(this.teachingStepCount, this.solutionRevealCount + 1);
   }
 
   checkLessonWork(): void {
@@ -201,6 +252,7 @@ export class IReadyVolume2Page implements OnDestroy {
   }
 
   replayLessonVisual(): void {
+    this.solutionRevealCount = this.teachingStepCount;
     this.visualWorkspace?.replayAnimation();
     this.lessonFeedback = 'The complete visual teaching model has been replayed.';
   }
@@ -251,5 +303,11 @@ export class IReadyVolume2Page implements OnDestroy {
     else if (this.unitFocus) this.title.setTitle(`Unit ${this.selectedUnitNumber} · i-Ready Volume 2 | Ruchika Grade 3`);
     else if (this.libraryFocus) this.title.setTitle(`${this.selectedLibrary.title} · i-Ready Volume 2 | Ruchika Grade 3`);
     else this.title.setTitle('Volume 2 · i-Ready Interactive | Ruchika Grade 3');
+  }
+
+  private resetTeachingStage(): void {
+    queueMicrotask(() => {
+      this.solutionRevealCount = this.teachingStepCount;
+    });
   }
 }

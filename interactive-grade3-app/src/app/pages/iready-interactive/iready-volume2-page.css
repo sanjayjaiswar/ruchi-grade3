@@ -564,7 +564,18 @@ section > header p {
   font-weight: 650;
   line-height: 1.5;
 }
-.lesson-title > a { color: var(--iready-blue-dark); font-size: 15px; }
+.lesson-title-links {
+  display: flex;
+  flex: 0 0 auto !important;
+  align-items: center;
+  gap: 18px;
+}
+.lesson-title-links a {
+  color: var(--iready-blue-dark);
+  font-size: 15px;
+  font-weight: 760;
+  white-space: nowrap;
+}
 
 .session-tabs {
   gap: 8px;
@@ -635,6 +646,128 @@ section > header p {
   background: var(--iready-blue);
   color: #fff;
 }
+.session-stage > header nav > a {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 11px;
+  border: 1px solid #9dbbed;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--iready-blue-dark);
+  font-size: 15px;
+  font-weight: 780;
+  text-decoration: none;
+}
+
+.session-learning-layout {
+  display: grid;
+  grid-template-columns: 292px minmax(0, 1fr);
+  align-items: stretch;
+  background: #fff;
+}
+.activity-rail {
+  min-width: 0;
+  padding: 12px;
+  border-right: 1px solid #cbd9ee;
+  background: #f4f8fd;
+}
+.activity-rail > strong {
+  display: block;
+  min-height: 46px;
+  padding: 11px 12px;
+  border: 1px solid #cbd9ee;
+  border-radius: 9px;
+  background: #fff;
+  color: var(--iready-ink);
+  font-size: 17px;
+  line-height: 22px;
+}
+.activity-rail button {
+  width: 100%;
+  min-height: 96px;
+  margin-top: 8px;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 6px 10px;
+  text-align: left;
+  border: 1px solid #cbd9ee;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--iready-ink);
+  cursor: pointer;
+}
+.activity-rail button:hover,
+.activity-rail button:focus-visible {
+  border-color: #7aa5fb;
+  outline: 3px solid #d8e5ff;
+  outline-offset: 1px;
+}
+.activity-rail button.active {
+  padding-left: 9px;
+  border-color: #79a7ff;
+  border-left: 4px solid var(--iready-blue);
+  box-shadow: 0 7px 16px rgba(47, 105, 236, .12);
+}
+.activity-rail button span {
+  width: fit-content;
+  padding: 3px 7px;
+  border: 1px solid #d5e0ef;
+  border-radius: 6px;
+  background: #f2f6fb;
+  color: #4d607e;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+.activity-rail button small {
+  color: #718198;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.activity-rail button b {
+  grid-column: 1 / -1;
+  color: var(--iready-ink);
+  font-size: 16px;
+  font-weight: 760;
+  line-height: 1.35;
+}
+.activity-stage { min-width: 0; background: #fff; }
+.activity-heading {
+  min-height: 80px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  border-bottom: 1px solid #d4dfed;
+  background: #fff;
+}
+.activity-heading > div { min-width: 0; }
+.activity-heading span {
+  display: block;
+  color: var(--iready-caption);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.activity-heading h3 {
+  margin: 3px 0 0;
+  color: var(--iready-ink);
+  font-size: 24px;
+  font-weight: 780;
+  line-height: 1.25;
+  letter-spacing: -.018em;
+}
+.activity-heading > a {
+  flex: 0 0 auto;
+  color: var(--iready-blue-dark);
+  font-size: 15px;
+  font-weight: 760;
+  white-space: nowrap;
+}
 
 .interactive-teaching,
 .teacher-solution-view {
@@ -667,6 +800,28 @@ section > header p {
   font-size: 16px;
   line-height: 24px;
 }
+.teacher-solution-view > header > div:first-child {
+  display: grid;
+  gap: 1px;
+}
+.teaching-steps {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.teaching-steps button {
+  min-height: 38px;
+  padding: 7px 10px;
+  border: 1px solid #b7cbed;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--iready-blue-dark);
+  font-size: 14px;
+  font-weight: 760;
+  cursor: pointer;
+}
+.teaching-steps button:disabled { opacity: .45; cursor: not-allowed; }
+.teaching-steps span { min-width: 82px; text-align: center; white-space: nowrap; }
 
 :host ::ng-deep .lesson-workspace app-problem-visual-workspace .problem-visual-workspace {
   --visual-label-size: 17px;
@@ -957,6 +1112,7 @@ section > header p {
   .v2-volume-heading { grid-template-columns: 1fr; }
   .unit-heading { grid-template-columns: auto minmax(0, 1fr) auto; }
   .unit-heading dl { grid-column: 2 / 3; }
+  .session-learning-layout { grid-template-columns: 260px minmax(0, 1fr); }
 }
 
 @media (max-width: 900px) {
@@ -966,6 +1122,19 @@ section > header p {
   .library-workspace { width: calc(100% - 24px); }
   .session-stage > header { align-items: flex-start; flex-direction: column; }
   .session-stage > header nav { width: 100%; justify-content: flex-start; }
+  .lesson-title { align-items: flex-start; flex-direction: column; }
+  .lesson-title-links { flex-wrap: wrap; }
+  .session-learning-layout { grid-template-columns: 1fr; }
+  .activity-rail {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    border-right: 0;
+    border-bottom: 1px solid #cbd9ee;
+  }
+  .activity-rail > strong { grid-column: 1 / -1; }
+  .activity-rail button { margin-top: 0; }
+  .activity-heading { align-items: flex-start; flex-direction: column; }
   .teacher-solution-view > header { align-items: flex-start; flex-direction: column; }
   .source-evidence-grid { grid-template-columns: 1fr; }
 }

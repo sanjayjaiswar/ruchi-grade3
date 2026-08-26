@@ -24,11 +24,11 @@ const lessons = [
   { unit: 4, number: 26, startPrintedPage: 565, endPrintedPage: 586 },
   { unit: 5, number: 27, startPrintedPage: 607, endPrintedPage: 634 },
   { unit: 5, number: 28, startPrintedPage: 635, endPrintedPage: 656 },
-  { unit: 5, number: 29, startPrintedPage: 657, endPrintedPage: 680 },
+  { unit: 5, number: 29, startPrintedPage: 657, endPrintedPage: 678 },
   { unit: 6, number: 30, startPrintedPage: 699, endPrintedPage: 710 },
   { unit: 6, number: 31, startPrintedPage: 711, endPrintedPage: 732 },
   { unit: 6, number: 32, startPrintedPage: 733, endPrintedPage: 760 },
-  { unit: 6, number: 33, startPrintedPage: 761, endPrintedPage: 778 }
+  { unit: 6, number: 33, startPrintedPage: 761, endPrintedPage: 776 }
 ];
 
 const normalize = (value) => String(value)
