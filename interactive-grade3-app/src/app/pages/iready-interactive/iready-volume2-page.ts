@@ -16,6 +16,7 @@ import {
   v2ActivitiesForSession,
   v2HasExactActivityVisual,
   v2OfficialUrlForPrintedPage,
+  v2OfficialTeacherUrlForViewerPage,
   v2OfficialUrlForViewerPage,
   v2PagesForSession,
   v2SessionsForLesson,
@@ -44,6 +45,7 @@ export class IReadyVolume2Page implements OnDestroy {
   readonly studentImageByViewerPage = v2StudentImageByViewerPage;
   readonly teacherImage = v2TeacherImage;
   readonly officialUrlForPrintedPage = v2OfficialUrlForPrintedPage;
+  readonly officialTeacherUrlForViewerPage = v2OfficialTeacherUrlForViewerPage;
   readonly officialUrlForViewerPage = v2OfficialUrlForViewerPage;
 
   unitFocus = false;

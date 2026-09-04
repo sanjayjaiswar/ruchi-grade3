@@ -170,12 +170,30 @@
             </section>
 
             <section *ngIf="lessonView === 'student'" class="v2-edition-panel" role="tabpanel" aria-label="Official Student Worktext page">
-              <header><strong>Official Student Worktext</strong><span>Printed p. {{ selectedActivity.printedPage }} · viewer p. {{ viewerPageForPrinted(selectedActivity.printedPage) }}</span></header>
+              <header>
+                <div class="edition-source-heading">
+                  <strong>Official Student Worktext</strong>
+                  <span class="edition-source-actions">
+                    <a [href]="officialUrlForPrintedPage(selectedActivity.printedPage)" target="_blank" rel="noopener" aria-label="Open Official Student Worktext online in a new tab">Online version ↗</a>
+                    <a [href]="studentImage(selectedActivity.printedPage)" target="_blank" rel="noopener" aria-label="Open Student Worktext image in a new tab">Open image ↗</a>
+                  </span>
+                </div>
+                <span>Printed p. {{ selectedActivity.printedPage }} · viewer p. {{ viewerPageForPrinted(selectedActivity.printedPage) }}</span>
+              </header>
               <figure><img [src]="studentImage(selectedActivity.printedPage)" [alt]="'Official Student Worktext Volume 2 printed page ' + selectedActivity.printedPage"><figcaption>Student Worktext · printed p. {{ selectedActivity.printedPage }}</figcaption></figure>
             </section>
 
             <section *ngIf="lessonView === 'teacher'" class="v2-edition-panel teacher-edition" role="tabpanel" aria-label="Official Teacher Guide page">
-              <header><strong>Official Teacher Guide</strong><span>Viewer p. {{ selectedActivity.teacherViewerPage }}</span></header>
+              <header>
+                <div class="edition-source-heading">
+                  <strong>Official Teacher Guide</strong>
+                  <span class="edition-source-actions">
+                    <a [href]="officialTeacherUrlForViewerPage(selectedActivity.teacherViewerPage)" target="_blank" rel="noopener" aria-label="Open Official Teacher Guide online in a new tab">Online version ↗</a>
+                    <a [href]="teacherImage(selectedActivity.teacherViewerPage)" target="_blank" rel="noopener" aria-label="Open Teacher Guide image in a new tab">Open image ↗</a>
+                  </span>
+                </div>
+                <span>Viewer p. {{ selectedActivity.teacherViewerPage }}</span>
+              </header>
               <figure><img [src]="teacherImage(selectedActivity.teacherViewerPage)" [alt]="'Official Teacher Guide Volume 2 viewer page ' + selectedActivity.teacherViewerPage"><figcaption>Teacher Guide · viewer p. {{ selectedActivity.teacherViewerPage }}</figcaption></figure>
               <p *ngIf="selectedTeacherSpread as spread">Mapped to Student Worktext pp. {{ spread.studentPages }} · Teacher Guide PDF spread {{ spread.teacherPdfPage }}.</p>
             </section>

@@ -340,7 +340,36 @@
                 <ng-container *ngIf="lessonWorkspaceView === 'student' || lessonWorkspaceView === 'teacher'; else activityWorkspace">
                   <section class="top-edition-panel" role="tabpanel" [attr.aria-label]="lessonWorkspaceView === 'student' ? 'Official Student Worktext page' : 'Official Teacher Guide pages'">
                     <div class="edition-source-identity">
-                      <strong>{{ lessonWorkspaceView === 'student' ? 'Official Student Worktext' : 'Official Teacher Guide' }}</strong>
+                      <div class="edition-source-heading">
+                        <strong>{{ lessonWorkspaceView === 'student' ? 'Official Student Worktext' : 'Official Teacher Guide' }}</strong>
+                        <span class="edition-source-actions">
+                          <a
+                            [href]="lessonWorkspaceView === 'student' ? selectedSourceProblemUrl : selectedTeacherGuideSourceUrl"
+                            target="_blank"
+                            rel="noopener"
+                            [attr.aria-label]="'Open ' + (lessonWorkspaceView === 'student' ? 'Official Student Worktext' : 'Official Teacher Guide') + ' online in a new tab'"
+                          >Online version ↗</a>
+                          <ng-container *ngIf="selectedProblemHasInlineSourceImages">
+                            <ng-container *ngIf="lessonWorkspaceView === 'student'; else teacherImageLink">
+                              <a
+                                *ngFor="let page of selectedProblemStudentPages"
+                                [href]="supportStudentImage(page)"
+                                target="_blank"
+                                rel="noopener"
+                                [attr.aria-label]="'Open Student Worktext page ' + page + ' image in a new tab'"
+                              >{{ selectedProblemStudentPages.length > 1 ? 'Image p. ' + page + ' ↗' : 'Open image ↗' }}</a>
+                            </ng-container>
+                            <ng-template #teacherImageLink>
+                              <a
+                                [href]="supportTeacherImage(selectedProblemTeacherPages[0])"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="Open Teacher Guide spread image in a new tab"
+                              >Open image ↗</a>
+                            </ng-template>
+                          </ng-container>
+                        </span>
+                      </div>
                       <span>{{ lessonWorkspaceView === 'student' ? printedPagesLabel(problem.printedPages) : 'Reader pp. ' + selectedTeacherGuideReaderPages }}</span>
                     </div>
 

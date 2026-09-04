@@ -175,6 +175,10 @@ export function v2OfficialUrlForPrintedPage(printedPage: number): string {
   return v2OfficialUrlForViewerPage(v2ViewerPageForPrintedPage(printedPage));
 }
 
+export function v2OfficialTeacherUrlForViewerPage(viewerPage: number): string {
+  return `https://online.flippingbook.com/view/336020956/${viewerPage}/`;
+}
+
 export function v2UnitIdeas(unit: number): readonly IReadyV2UnitIdea[] {
   return IREADY_VOLUME_TWO_UNIT_IDEAS.filter((idea) => idea.unit === unit);
 }

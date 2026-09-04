@@ -1222,6 +1222,11 @@ section > header p {
 
 .v2-edition-panel > header strong { color: var(--iready-ink); font-size: 17px; }
 .v2-edition-panel > header span { color: var(--iready-caption); font-size: 14px; font-weight: 700; }
+.v2-edition-panel .edition-source-heading { display: flex; min-width: 0; align-items: baseline; gap: 10px; }
+.v2-edition-panel .edition-source-actions { display: inline-flex; align-items: baseline; gap: 9px; }
+.v2-edition-panel .edition-source-heading a { color: #0759d9; font-size: 13px; font-weight: 760; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; white-space: nowrap; }
+.v2-edition-panel .edition-source-heading a:hover,
+.v2-edition-panel .edition-source-heading a:focus-visible { color: #003b9e; outline: 2px solid #8bb7ff; outline-offset: 3px; }
 .v2-edition-panel figure { margin: 0; padding: 12px; background: #eef3fa; }
 .v2-edition-panel img { display: block; width: 100%; max-height: 780px; object-fit: contain; object-position: top center; }
 .v2-edition-panel figcaption { padding: 8px; color: var(--iready-caption); font-size: 14px; font-weight: 700; text-align: center; }

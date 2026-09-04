@@ -2468,6 +2468,36 @@
   font-size: 14px;
 }
 
+.edition-source-heading {
+  display: flex;
+  min-width: 0;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.edition-source-actions {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 9px;
+}
+
+.edition-source-heading a {
+  color: #0759d9;
+  font-size: 13px;
+  font-weight: 760;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+}
+
+.edition-source-heading a:hover,
+.edition-source-heading a:focus-visible {
+  color: #003b9e;
+  outline: 2px solid #8bb7ff;
+  outline-offset: 3px;
+}
+
 .top-edition-panel .embedded-source-pages {
   padding: 12px;
   background: #eef3fa;

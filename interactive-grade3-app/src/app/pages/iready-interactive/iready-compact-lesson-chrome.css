@@ -16,6 +16,7 @@
   --compact-coral: #ffe0dc;
   --compact-lilac: #eee7ff;
   --compact-line: #d7dceb;
+  --compact-gutter: #e8ecf4;
   --compact-page: #f5f7fb;
   --compact-surface: #fffdfa;
   --compact-selected: #2f62c9;
@@ -74,9 +75,10 @@
   align-items: center;
   gap: 8px !important;
   padding: 4px 10px !important;
-  border-color: var(--compact-line) !important;
+  border: 1px solid #cfd5e4 !important;
+  border-radius: 11px;
   background: #fbfaff !important;
-  box-shadow: none !important;
+  box-shadow: 0 3px 9px rgba(55, 48, 112, .08) !important;
 }
 
 .interactive-page.lesson-focus .compact-lesson-navigation .all-lessons-link,
@@ -234,9 +236,10 @@
 .learning-workspace.focused .lesson-stage,
 .v2-page.focused-view .lesson-workspace {
   overflow: hidden;
-  border-color: var(--compact-line);
+  border: 1px solid #cfd5e4;
+  border-radius: 12px;
   background: #fff;
-  box-shadow: 0 8px 20px rgba(69, 61, 145, .08);
+  box-shadow: 0 8px 20px rgba(55, 48, 112, .09);
 }
 
 .compact-lesson-command {
@@ -244,8 +247,9 @@
   display: grid;
   grid-template-columns: minmax(760px, 1.3fr) minmax(600px, 1.3fr);
   align-items: stretch;
-  border-bottom: 1px solid var(--compact-line);
+  border-bottom: 5px solid var(--compact-gutter);
   background: var(--compact-surface);
+  box-shadow: inset 0 -1px 0 #cfd5e4;
 }
 
 .compact-lesson-command > .compact-lesson-identity,
@@ -514,9 +518,19 @@
   grid-template-areas:
     "activities stage"
     "footer footer";
+  column-gap: 5px;
+  background: var(--compact-gutter) !important;
 }
 
-.v2-page.focused-view .compact-session-content { background: #fff; }
+.v2-page.focused-view .compact-session-content {
+  border-top: 0;
+  background: #fff;
+}
+
+.v2-page.focused-view .compact-session-content .session-learning-layout {
+  column-gap: 5px;
+  background: var(--compact-gutter);
+}
 
 
 @media (max-width: 1320px) {
