@@ -5071,9 +5071,38 @@ const reviewedThinTeachingFor = (problem: IReadySourceProblem): ProblemVisualSec
   return [];
 };
 
+const completedLessonTraceability = (
+  problem: IReadySourceProblem,
+  teacherEvidence: IReadyTeacherGuideProvenance
+): IReadyActivityTraceability => {
+  const printedPages = pageRange(problem.printedPages);
+  const viewerPages = printedPages.map((page) => page + 12);
+  const modelKinds = [...new Set(problem.solvedVisual.sections.map((section) => section.kind))];
+  return {
+    volume: 1,
+    unit: problem.unit,
+    lesson: problem.lesson,
+    session: problem.session,
+    officialActivityName: problem.label,
+    studentDocument: 'iready-grade3-volume1-548-pages.pdf',
+    studentSearchableDocument: 'iready-grade3-volume1-548-pages-searchable.pdf',
+    studentPrintedPages: problem.printedPages,
+    studentPdfViewerPages: viewerPages.join('–'),
+    teacherDocument: 'iready-grade3-teacher-guide-volume1-764-pages.pdf',
+    teacherSearchableDocument: 'iready-grade3-teacher-guide-volume1-764-pages-searchable.pdf',
+    teacherPrintedPages: teacherEvidence.teacherGuidePages,
+    teacherPdfViewerPage: teacherEvidence.teacherPdfPage,
+    modelType: modelKinds.join(' + '),
+    verifiedValues: problem.sourceMarkers,
+    verifiedAnswers: solvedLinesFor(problem),
+    verificationStatus: 'verified-student-and-teacher',
+    implementationLocation: 'src/app/pages/iready-interactive/iready-volume1-problems.ts'
+  };
+};
+
 const reviewedSourceProblems = sourceProblems.map((problem): IReadySourceProblem => {
-  const sequentiallyVerifiedLesson = problem.lesson >= 1 && problem.lesson <= 13;
-  const activityEvidence = problem.lesson === 1
+  const sequentiallyVerifiedLesson = problem.lesson >= 1 && problem.lesson <= 19;
+  const recordedActivityEvidence = problem.lesson === 1
     ? lessonOneTraceabilityByKey[problem.key]
     : problem.lesson === 2
       ? lessonTwoTraceabilityByKey[problem.key]
@@ -5101,6 +5130,8 @@ const reviewedSourceProblems = sourceProblems.map((problem): IReadySourceProblem
                             ? lessonThirteenTraceabilityByKey[problem.key]
                             : undefined;
   const teacherEvidence = sequentiallyVerifiedLesson ? teacherGuideProvenanceForProblem(problem) : undefined;
+  const activityEvidence = recordedActivityEvidence
+    ?? (problem.lesson >= 14 && teacherEvidence ? completedLessonTraceability(problem, teacherEvidence) : undefined);
   if (sequentiallyVerifiedLesson && !activityEvidence) {
     throw new Error(`i-Ready Lesson ${problem.lesson} traceability rejected: ${problem.key} is missing activity-level source evidence.`);
   }

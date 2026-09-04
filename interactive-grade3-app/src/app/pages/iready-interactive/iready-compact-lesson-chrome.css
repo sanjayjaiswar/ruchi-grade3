@@ -281,13 +281,15 @@
 .learning-workspace.focused .compact-lesson-command .lesson-heading h2,
 .v2-page.focused-view .compact-lesson-command .lesson-title h1 {
   margin: 0;
+  display: -webkit-box;
   overflow: hidden;
   color: var(--compact-ink);
   font-size: clamp(20px, 1.35vw, 24px);
   font-weight: 780;
   line-height: 1.16;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  white-space: normal;
 }
 
 .learning-workspace.focused .compact-lesson-command .lesson-heading p,

@@ -7,7 +7,7 @@ const appRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const workspaceRoot = resolve(appRoot, '..');
 const interactiveRoot = resolve(appRoot, 'src/app/pages/iready-interactive');
 const studentAssetRoot = resolve(appRoot, 'public/assets/iready-volume1/student');
-const teacherAssetRoot = resolve(appRoot, 'public/assets/iready-volume1/teacher');
+const teacherAssetRoot = resolve(appRoot, 'public/assets/iready-volume1/teacher-pages');
 
 const sessions = JSON.parse(readFileSync(resolve(interactiveRoot, 'iready-interactive.volume1-sessions.json'), 'utf8')).sessions;
 const problemEvidence = JSON.parse(readFileSync(resolve(interactiveRoot, 'iready-volume1-problems.evidence.json'), 'utf8')).problems;
@@ -76,14 +76,16 @@ for (const [lessonText, contract] of Object.entries(expected)) {
     if (!existsSync(resolve(studentAssetRoot, `p-${String(page).padStart(3, '0')}.jpg`))) fail(`Lesson ${lesson}: missing Student Worktext asset p. ${page}`);
   }
   for (let page = contract.teacher[0]; page <= contract.teacher[1]; page += 1) {
-    if (!existsSync(resolve(teacherAssetRoot, `t-${String(page).padStart(3, '0')}.jpg`))) fail(`Lesson ${lesson}: missing Teacher Guide spread ${page}`);
+    for (const readerPage of [page * 2 - 2, page * 2 - 1]) {
+      if (!existsSync(resolve(teacherAssetRoot, `reader-${String(readerPage).padStart(3, '0')}.webp`))) fail(`Lesson ${lesson}: missing Teacher Guide reader page ${readerPage}`);
+    }
   }
 }
 
 if (totalSessions !== 26) fail(`expected 26 sessions across Lessons 7–13; found ${totalSessions}`);
 if (totalActivities !== 72) fail(`expected 72 activity groups across Lessons 7–13; found ${totalActivities}`);
-if (!problemsCode.includes('problem.lesson >= 1 && problem.lesson <= 13')) fail('runtime traceability gate does not include Lessons 12–13');
-if (!componentCode.includes('this.selectedLesson.number <= 13') || !componentCode.includes('lesson.number <= 13')) fail('interactive and overview readiness gates do not include Lessons 7–13');
+if (!problemsCode.includes('problem.lesson >= 1 && problem.lesson <= 19')) fail('runtime traceability gate does not include Lessons 12–13');
+if (!componentCode.includes('this.selectedLesson.number <= 19') || !componentCode.includes('lesson.number <= 19')) fail('interactive and overview readiness gates do not include Lessons 7–13');
 if (!template.includes('Visual Teaching') || !template.includes('Try It') || !template.includes('Student Worktext') || !template.includes('Teacher Guide')) fail('top lesson tabs are incomplete');
 if (!template.includes("activityMode === 'solution' ? problem.solvedVisual : problem.blankVisual")) fail('Blank/Solved isolation is missing');
 

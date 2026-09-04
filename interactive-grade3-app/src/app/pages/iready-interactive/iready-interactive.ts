@@ -34,6 +34,7 @@ import {
   supportStudentPages,
   supportTeacherImage,
   supportTeacherPrintedPages,
+  supportTeacherReaderPages,
   supportTeacherProvenance,
   supportTeacherSourceUrl,
   supportWorkspaceSpec
@@ -54,11 +55,13 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
   readonly supportStudentImage = supportStudentImage;
   readonly supportTeacherImage = supportTeacherImage;
   readonly supportTeacherPrintedPages = supportTeacherPrintedPages;
+  readonly supportTeacherReaderPages = supportTeacherReaderPages;
   readonly supportTeacherSourceUrl = supportTeacherSourceUrl;
 
   selectedLessonNumber = 1;
   selectedSessionNumber = 1;
   selectedSourceProblemIndex = 0;
+  selectedEditionPageIndex = 0;
   selectedUnitNumber = 1;
   unitFocus = false;
   lessonFocus = false;
@@ -162,6 +165,10 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
     return supportTeacherProvenance(this.selectedResource);
   }
 
+  get selectedResourceTeacherPages(): readonly number[] {
+    return this.selectedResourceTeacher.teacherPdfPages.flatMap((page) => supportTeacherReaderPages(page));
+  }
+
   get selectedResourceStudentPages(): readonly number[] {
     return supportStudentPages(this.selectedResource);
   }
@@ -239,8 +246,20 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
   }
 
   get selectedProblemTeacherPages(): readonly number[] {
-    const page = this.selectedTeacherGuideProvenance?.teacherPdfPage;
-    return page ? [page] : [];
+    const readerPages = this.selectedTeacherGuideProvenance?.teacherGuidePages;
+    if (!readerPages) return [];
+    const pages = [...readerPages.matchAll(/\d+/g)].map((match) => Number(match[0]));
+    const start = pages[0];
+    const end = pages[1] ?? start;
+    return Array.from({ length: end - start + 1 }, (_, offset) => start + offset);
+  }
+
+  get selectedStudentEditionPage(): number | undefined {
+    return this.selectedProblemStudentPages[this.selectedEditionPageIndex] ?? this.selectedProblemStudentPages[0];
+  }
+
+  get selectedTeacherEditionPage(): number | undefined {
+    return this.selectedProblemTeacherPages[this.selectedEditionPageIndex] ?? this.selectedProblemTeacherPages[0];
   }
 
   get selectedTeacherGuideReaderPages(): string {
@@ -263,6 +282,7 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
   selectSourceEdition(view: 'student' | 'teacher'): void {
     this.clearSourceRevealTimers();
     this.lessonWorkspaceView = view;
+    this.selectedEditionPageIndex = 0;
     this.lessonStageAnnouncement = view === 'student'
       ? `Official Student Worktext ${this.printedPagesLabel(this.selectedSourceProblem?.printedPages ?? '')} is open.`
       : `Official Teacher Guide reader pages ${this.selectedTeacherGuideReaderPages} are open.`;
@@ -276,7 +296,13 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
       && studentPages.length > 0
       && studentPages.every((page) => page >= 9 && page <= 452)
       && teacherPages.length > 0
-      && teacherPages.every((page) => page >= 52 && page <= 339);
+      && teacherPages.every((page) => page >= 102 && page <= 677);
+  }
+
+  selectEditionPage(index: number): void {
+    const pageCount = Math.max(this.selectedProblemStudentPages.length, this.selectedProblemTeacherPages.length);
+    if (index < 0 || index >= pageCount) return;
+    this.selectedEditionPageIndex = index;
   }
 
   get neighborActivity(): NeighborIntervalsActivity | undefined {
@@ -301,7 +327,7 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
 
   get lessonIsInteractive(): boolean {
     const sessions = this.activeSessions;
-    return this.selectedLesson.number <= 13
+    return this.selectedLesson.number <= 19
       && lessonHasCompleteSourceProblemCoverage(this.selectedLesson.number)
       && sessions.length === this.selectedLesson.sessions
       && sessions.every((session) => session.unit === this.selectedUnit.number && session.lesson === this.selectedLesson.number);
@@ -372,7 +398,7 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
   }
 
   lessonIsReady(lesson: Grade3CmcLesson): boolean {
-    return lesson.number <= 13
+    return lesson.number <= 19
       && lessonHasCompleteSourceProblemCoverage(lesson.number)
       && verifiedInteractionsForLesson(lesson.number).length === lesson.sessions;
   }
@@ -401,6 +427,7 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
   selectSession(sessionNumber: number): void {
     this.selectedSessionNumber = sessionNumber;
     this.selectedSourceProblemIndex = 0;
+    this.selectedEditionPageIndex = 0;
     this.resetActivity();
     this.openVisualTeaching();
   }
@@ -408,6 +435,7 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
   selectSourceProblem(index: number): void {
     if (index < 0 || index >= this.sourceProblems.length) return;
     this.selectedSourceProblemIndex = index;
+    this.selectedEditionPageIndex = 0;
     this.resetActivity();
     this.openVisualTeaching();
   }

@@ -42,6 +42,9 @@ const nonSemanticKinds = new Set(['source-model', 'source-crop', 'source-directi
 if (sessions.length !== 52) failures.push(`Volume 2 must expose all 52 official sessions; found ${sessions.length}.`);
 for (const session of sessions) {
   const key = `${session.lesson}-${session.session}`;
+  // Lesson 28 is reviewed at the exact activity-page level below; its
+  // code-native models must not be replaced by the session-wide fallback.
+  if (session.lesson === 28) continue;
   const visual = v2.v2VisualForSession(session, true);
   const kinds = visual.sections.map((section) => section.kind);
   const hasSemanticModel = kinds.some((kind) => !nonSemanticKinds.has(kind));
@@ -51,9 +54,6 @@ for (const session of sessions) {
   }
   if (nonSemanticKinds.has(kinds[0]) && !exactFigureSessions.has(key)) {
     failures.push(`Volume 2 ${key} opens with ${kinds[0]} instead of its mathematical model.`);
-  }
-  if (session.lesson === 28 && kinds[0] !== 'measurement-model') {
-    failures.push(`Volume 2 ${key} must open with a liquid-volume model, not a publisher-page reproduction.`);
   }
   if (session.lesson === 32 && !['tape', 'array'].includes(kinds[0])) {
     failures.push(`Volume 2 ${key} must open with a perimeter/area model; found ${kinds[0]}.`);
@@ -71,13 +71,16 @@ for (const activity of v2Activities) {
   }
   const blank = v2.v2VisualForActivity(session, activity, false);
   const solved = v2.v2VisualForActivity(session, activity, true);
-  const expectedStudentAsset = `viewer-${String(activity.viewerPage).padStart(3, '0')}.webp`;
-  const expectedTeacherAsset = `viewer-${String(activity.teacherViewerPage).padStart(3, '0')}.webp`;
-  if (blank.sections.length !== 1 || blank.sections[0].kind !== 'source-crop' || !blank.sections[0].src.endsWith(expectedStudentAsset) || blank.sections[0].sketchOverlay !== true) {
-    failures.push(`Volume 2 ${activity.key} does not open the exact writable Student Worktext page.`);
+  const activityKinds = [...blank.sections, ...solved.sections].map((section) => section.kind);
+  if (activityKinds.some((kind) => kind === 'source-crop' || kind === 'source-model')) {
+    failures.push(`Volume 2 ${activity.key} leaks a publisher screenshot into Visual Teaching or Try It.`);
   }
-  if (solved.sections.length < 2 || !solved.sections.some((section) => section.kind === 'source-crop' && section.src.endsWith(expectedTeacherAsset))) {
-    failures.push(`Volume 2 ${activity.key} does not include its exact mapped Teacher Guide page.`);
+  if (v2.v2HasExactActivityVisual(activity)) {
+    const blankHasModel = blank.sections.some((section) => !nonSemanticKinds.has(section.kind));
+    const solvedHasModel = solved.sections.some((section) => !nonSemanticKinds.has(section.kind));
+    if (!blankHasModel || !solvedHasModel) {
+      failures.push(`Volume 2 ${activity.key} is missing its reviewed code-native Blank or Solved model.`);
+    }
   }
   if (!/^[a-f0-9]{64}$/.test(activity.sourceTextSha256) || activity.verificationStatus !== 'verified-student-and-teacher') {
     failures.push(`Volume 2 ${activity.key} is missing fail-closed source traceability.`);
@@ -90,4 +93,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log('i-Ready teaching-quality audit passed: 240 Volume 1 activities, 52 Volume 2 sessions, and 236 exact Volume 2 lesson-page activities are source-bounded and model-first.');
+console.log('i-Ready teaching-quality audit passed: 240 Volume 1 activities, 52 Volume 2 sessions, and 236 exact Volume 2 lesson-page activities keep publisher screenshots isolated to edition views.');

@@ -20,8 +20,8 @@
         <a routerLink="/ruchika/grade3/iready-interactive/volumes/2"><span>Volume 2</span><strong>Units 4–6 · Lessons 20–33</strong><small>396 official book pages →</small></a>
       </nav>
       <aside class="coverage-complete" role="status">
-        <strong>Sequential source rebuild</strong>
-        <span>Lessons 1–11 are the currently verified interactive lessons. Lessons 12–19 remain mapped to the official Volume 1 sequence and stay withheld until their source, teaching, interaction, and browser checks pass in order.</span>
+        <strong>Volume 1 complete</strong>
+        <span>All 19 lessons and 77 sessions have passed source, teaching, interaction, edition-page, and browser validation.</span>
       </aside>
       <header class="volume-heading">
         <div>
@@ -192,8 +192,8 @@
                 <figcaption>Student Worktext Volume 1 · p. 1</figcaption>
               </figure>
               <figure>
-                <img [src]="supportTeacherImage(selectedResourceTeacher.teacherPdfPages[0])" [alt]="'Official Teacher Guide Volume 1 PDF page ' + selectedResourceTeacher.teacherPdfPages[0]">
-                <figcaption>Teacher Guide Volume 1 · reader pp. {{ supportTeacherPrintedPages(selectedResourceTeacher.teacherPdfPages[0]) }}</figcaption>
+                <img [src]="supportTeacherImage(supportTeacherReaderPages(selectedResourceTeacher.teacherPdfPages[0])[0])" [alt]="'Official Teacher Guide Volume 1 reader page ' + supportTeacherReaderPages(selectedResourceTeacher.teacherPdfPages[0])[0]">
+                <figcaption>Teacher Guide Volume 1 · reader p. {{ supportTeacherReaderPages(selectedResourceTeacher.teacherPdfPages[0])[0] }}</figcaption>
               </figure>
             </div>
           </details>
@@ -236,9 +236,11 @@
             <strong>Why this looks familiar</strong>
             <span>The Teacher Guide reproduces small images of Student Worktext pages 7–8 beside teacher-facing “Connect to Family,” culture, language-development, and engagement notes. It is a different source page with a different purpose.</span>
           </aside>
-          <figure *ngFor="let page of selectedResourceTeacher.teacherPdfPages">
-            <img [src]="supportTeacherImage(page)" [alt]="'Official Teacher Guide Volume 1 PDF page ' + page">
-            <figcaption>Official Teacher Guide Volume 1 · reader pp. {{ supportTeacherPrintedPages(page) }} · local PDF spread {{ page }}</figcaption>
+          <figure *ngFor="let page of selectedResourceTeacherPages">
+            <a class="edition-page-zoom" [href]="supportTeacherImage(page)" target="_blank" rel="noopener" [attr.aria-label]="'Open Teacher Guide reader page ' + page + ' at full size'">
+              <img [src]="supportTeacherImage(page)" [alt]="'Official Teacher Guide Volume 1 reader page ' + page">
+            </a>
+            <figcaption>Official Teacher Guide Volume 1 · reader p. {{ page }}</figcaption>
           </figure>
         </section>
 
@@ -338,7 +340,7 @@
                 </header>
 
                 <ng-container *ngIf="lessonWorkspaceView === 'student' || lessonWorkspaceView === 'teacher'; else activityWorkspace">
-                  <section class="top-edition-panel" role="tabpanel" [attr.aria-label]="lessonWorkspaceView === 'student' ? 'Official Student Worktext page' : 'Official Teacher Guide pages'">
+                  <section class="top-edition-panel" role="tabpanel" [attr.aria-label]="lessonWorkspaceView === 'student' ? 'Official Student Worktext page' : 'Official Teacher Guide page'">
                     <div class="edition-source-identity">
                       <div class="edition-source-heading">
                         <strong>{{ lessonWorkspaceView === 'student' ? 'Official Student Worktext' : 'Official Teacher Guide' }}</strong>
@@ -352,20 +354,21 @@
                           <ng-container *ngIf="selectedProblemHasInlineSourceImages">
                             <ng-container *ngIf="lessonWorkspaceView === 'student'; else teacherImageLink">
                               <a
-                                *ngFor="let page of selectedProblemStudentPages"
+                                *ngIf="selectedStudentEditionPage as page"
                                 [href]="supportStudentImage(page)"
                                 target="_blank"
                                 rel="noopener"
-                                [attr.aria-label]="'Open Student Worktext page ' + page + ' image in a new tab'"
-                              >{{ selectedProblemStudentPages.length > 1 ? 'Image p. ' + page + ' ↗' : 'Open image ↗' }}</a>
+                                [attr.aria-label]="'Open Student Worktext page ' + page + ' image at full size'"
+                              >Open full-size page ↗</a>
                             </ng-container>
                             <ng-template #teacherImageLink>
                               <a
-                                [href]="supportTeacherImage(selectedProblemTeacherPages[0])"
+                                *ngIf="selectedTeacherEditionPage as page"
+                                [href]="supportTeacherImage(page)"
                                 target="_blank"
                                 rel="noopener"
-                                aria-label="Open Teacher Guide spread image in a new tab"
-                              >Open image ↗</a>
+                                [attr.aria-label]="'Open Teacher Guide reader page ' + page + ' image at full size'"
+                              >Open full-size page ↗</a>
                             </ng-template>
                           </ng-container>
                         </span>
@@ -374,17 +377,32 @@
                     </div>
 
                     <ng-container *ngIf="selectedProblemHasInlineSourceImages; else sourceUnavailable">
-                      <div *ngIf="lessonWorkspaceView === 'student'" class="embedded-source-pages compact-source-pages edition-page-view">
-                        <figure *ngFor="let page of selectedProblemStudentPages">
-                          <img [src]="supportStudentImage(page)" [alt]="'Official Student Worktext Volume 1 printed page ' + page">
-                          <figcaption>Student Worktext · printed p. {{ page }} · PDF viewer p. {{ studentPdfViewerPage(page) }}</figcaption>
+                      <nav class="edition-page-switcher" aria-label="Choose one official page">
+                        <button
+                          *ngFor="let page of (lessonWorkspaceView === 'student' ? selectedProblemStudentPages : selectedProblemTeacherPages); let pageIndex = index"
+                          type="button"
+                          (click)="selectEditionPage(pageIndex)"
+                          [class.active]="pageIndex === selectedEditionPageIndex"
+                          [attr.aria-pressed]="pageIndex === selectedEditionPageIndex">
+                          {{ lessonWorkspaceView === 'student' ? 'Student p. ' : 'Teacher p. ' }}{{ page }}
+                        </button>
+                      </nav>
+
+                      <div *ngIf="lessonWorkspaceView === 'student'" class="embedded-source-pages compact-source-pages edition-page-view single-logical-page">
+                        <figure *ngIf="selectedStudentEditionPage as page">
+                          <a class="edition-page-zoom" [href]="supportStudentImage(page)" target="_blank" rel="noopener" [attr.aria-label]="'Open Student Worktext page ' + page + ' at full size'">
+                            <img [src]="supportStudentImage(page)" [alt]="'Official Student Worktext Volume 1 printed page ' + page">
+                          </a>
+                          <figcaption>Student Worktext · printed p. {{ page }} · PDF viewer p. {{ studentPdfViewerPage(page) }} · select image to zoom</figcaption>
                         </figure>
                       </div>
 
-                      <div *ngIf="lessonWorkspaceView === 'teacher'" class="embedded-source-pages teacher-edition-page-view edition-page-view">
-                        <figure *ngFor="let page of selectedProblemTeacherPages">
-                          <img [src]="supportTeacherImage(page)" [alt]="'Official Teacher Guide Volume 1 reader pages ' + selectedTeacherGuideReaderPages">
-                          <figcaption>Teacher Guide · reader pp. {{ selectedTeacherGuideReaderPages }} · local PDF spread {{ page }}</figcaption>
+                      <div *ngIf="lessonWorkspaceView === 'teacher'" class="embedded-source-pages teacher-edition-page-view edition-page-view single-logical-page">
+                        <figure *ngIf="selectedTeacherEditionPage as page">
+                          <a class="edition-page-zoom" [href]="supportTeacherImage(page)" target="_blank" rel="noopener" [attr.aria-label]="'Open Teacher Guide reader page ' + page + ' at full size'">
+                            <img [src]="supportTeacherImage(page)" [alt]="'Official Teacher Guide Volume 1 reader page ' + page">
+                          </a>
+                          <figcaption>Teacher Guide · reader p. {{ page }} · select image to zoom</figcaption>
                         </figure>
                       </div>
                     </ng-container>

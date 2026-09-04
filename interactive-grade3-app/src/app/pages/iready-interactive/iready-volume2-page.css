@@ -1228,7 +1228,9 @@ section > header p {
 .v2-edition-panel .edition-source-heading a:hover,
 .v2-edition-panel .edition-source-heading a:focus-visible { color: #003b9e; outline: 2px solid #8bb7ff; outline-offset: 3px; }
 .v2-edition-panel figure { margin: 0; padding: 12px; background: #eef3fa; }
-.v2-edition-panel img { display: block; width: 100%; max-height: 780px; object-fit: contain; object-position: top center; }
+.v2-edition-panel .edition-page-zoom { display: flex; justify-content: center; background: #fff; cursor: zoom-in; }
+.v2-edition-panel .edition-page-zoom:focus-visible { outline: 3px solid #0759d9; outline-offset: -3px; }
+.v2-edition-panel img { display: block; width: auto; max-width: 100%; height: auto; max-height: 900px; object-fit: contain; object-position: top center; }
 .v2-edition-panel figcaption { padding: 8px; color: var(--iready-caption); font-size: 14px; font-weight: 700; text-align: center; }
 .v2-edition-panel > p { margin: 0; padding: 10px 14px; border-top: 1px solid #d5e0ef; color: var(--iready-caption); font-size: 14px; text-align: center; }
 

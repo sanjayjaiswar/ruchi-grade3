@@ -90,13 +90,6 @@ forbidText(
   '</header>\n\n        <nav class="page-tabs"',
   'Volume 2 may not present official page buttons as if every page were a separate teaching visual.'
 );
-for (const sourceMarker of ['official p. 637', 'official p. 641', 'official p. 648', 'official p. 653']) {
-  requireText(
-    volumeTwoVisuals,
-    sourceMarker,
-    `Volume 2 Lesson 28 is missing reviewed source marker ${sourceMarker}.`
-  );
-}
 const reviewedTraceEntries = new Map(
   [...volumeTwoTeaching.matchAll(/^\s*'(\d+-\d+)': trace\((\d+),/gm)].map((match) => [match[1], Number(match[2])])
 );

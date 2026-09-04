@@ -180,7 +180,12 @@
                 </div>
                 <span>Printed p. {{ selectedActivity.printedPage }} · viewer p. {{ viewerPageForPrinted(selectedActivity.printedPage) }}</span>
               </header>
-              <figure><img [src]="studentImage(selectedActivity.printedPage)" [alt]="'Official Student Worktext Volume 2 printed page ' + selectedActivity.printedPage"><figcaption>Student Worktext · printed p. {{ selectedActivity.printedPage }}</figcaption></figure>
+              <figure>
+                <a class="edition-page-zoom" [href]="studentImage(selectedActivity.printedPage)" target="_blank" rel="noopener" [attr.aria-label]="'Open Student Worktext printed page ' + selectedActivity.printedPage + ' at full size'">
+                  <img [src]="studentImage(selectedActivity.printedPage)" [alt]="'Official Student Worktext Volume 2 printed page ' + selectedActivity.printedPage">
+                </a>
+                <figcaption>Student Worktext · printed p. {{ selectedActivity.printedPage }} · select image to zoom</figcaption>
+              </figure>
             </section>
 
             <section *ngIf="lessonView === 'teacher'" class="v2-edition-panel teacher-edition" role="tabpanel" aria-label="Official Teacher Guide page">
@@ -194,7 +199,12 @@
                 </div>
                 <span>Viewer p. {{ selectedActivity.teacherViewerPage }}</span>
               </header>
-              <figure><img [src]="teacherImage(selectedActivity.teacherViewerPage)" [alt]="'Official Teacher Guide Volume 2 viewer page ' + selectedActivity.teacherViewerPage"><figcaption>Teacher Guide · viewer p. {{ selectedActivity.teacherViewerPage }}</figcaption></figure>
+              <figure>
+                <a class="edition-page-zoom" [href]="teacherImage(selectedActivity.teacherViewerPage)" target="_blank" rel="noopener" [attr.aria-label]="'Open Teacher Guide viewer page ' + selectedActivity.teacherViewerPage + ' at full size'">
+                  <img [src]="teacherImage(selectedActivity.teacherViewerPage)" [alt]="'Official Teacher Guide Volume 2 viewer page ' + selectedActivity.teacherViewerPage">
+                </a>
+                <figcaption>Teacher Guide · viewer p. {{ selectedActivity.teacherViewerPage }} · select image to zoom</figcaption>
+              </figure>
               <p *ngIf="selectedTeacherSpread as spread">Mapped to Student Worktext pp. {{ spread.studentPages }} · Teacher Guide PDF spread {{ spread.teacherPdfPage }}.</p>
             </section>
 

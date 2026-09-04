@@ -161,11 +161,21 @@ const studentFiles = existsSync(studentAssets) ? readdirSync(studentAssets).filt
 const teacherFiles = existsSync(teacherAssets) ? readdirSync(teacherAssets).filter((file) => /viewer-\d{3}\.webp$/.test(file)) : [];
 if (studentFiles.length !== 396) fail(`expected 396 rendered student pages; found ${studentFiles.length}`);
 if (teacherFiles.length !== 540) fail(`expected 540 rendered Teacher Guide pages; found ${teacherFiles.length}`);
-if (!assetBuilder.includes("'-crop', String(cropX), '0', String(spreadWidth / 2), String(spreadHeight)") || assetBuilder.includes('--cropOffset')) {
-  fail('Volume 2 page assets must crop explicit left/right logical pages, not centered half-spreads');
+if (
+  !assetBuilder.includes('const PAGE_TOP = 101')
+  || !assetBuilder.includes('const PAGE_HEIGHT = 1628')
+  || !assetBuilder.includes("left: 460")
+  || !assetBuilder.includes('pageWidth: 1268')
+  || !assetBuilder.includes("left: 342")
+  || !assetBuilder.includes('pageWidth: 1386')
+  || !assetBuilder.includes("'-q', '90'")
+  || !assetBuilder.includes("'-r', '72'")
+  || assetBuilder.includes("'-q', '60'")
+) {
+  fail('Volume 2 page assets must use the audited native-resolution single-page crop contract');
 }
-if (!assetBuilder.includes('writeLogicalPage(1, spreadWidth / 4, spreadPath)')) {
-  fail('Volume 2 cover assets must preserve the publisher-centered first logical page');
+if (!assetBuilder.includes('writeLogicalPage(1, PAGE_SEAM - source.pageWidth / 2, spreadPath)')) {
+  fail('Volume 2 cover assets must preserve the publisher-centered single logical page');
 }
 if (!routes.includes("iready-interactive/volumes/2/lessons/:lessonNumber") || !routes.includes("iready-interactive/volumes/2/library/:groupKey")) fail('Volume 2 lesson or complete-book route is missing');
 if (
@@ -206,14 +216,14 @@ if (
 }
 const activityVisualBody = runtime.slice(runtime.indexOf('export function v2VisualForActivity'));
 if (/source-crop|source-model|v2StudentImage\(|v2TeacherImage\(|v2VisualForSession\(/.test(activityVisualBody)) {
-  fail('activity teaching may not render publisher pages or inherit a session-wide visual');
+  fail('Visual Teaching and Try It may not render publisher screenshots or inherit a session-wide visual');
 }
 if (
   !template.includes('Page-specific visual workspace')
   || !template.includes('Build and explain only the selected activity')
   || !template.includes('No neighboring activity, session-wide model, or publisher-page screenshot is substituted.')
 ) {
-  fail('Volume 2 must explain the page-specific visual boundary in both Blank and Solved states');
+  fail('Volume 2 must keep publisher screenshots out of Visual Teaching and Try It');
 }
 if (runtime.includes('Math.floor(((activity.order - 1) * candidates.length)')) {
   fail('Volume 2 activity teaching may not mechanically assign session models by page order');

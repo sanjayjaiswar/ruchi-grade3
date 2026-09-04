@@ -100,6 +100,11 @@ export const supportTeacherPrintedPages = (teacherPdfPage: number): string => {
   return `${start}\u2013${start + 1}`;
 };
 
+export const supportTeacherReaderPages = (teacherPdfPage: number): readonly number[] => {
+  const start = teacherPdfPage * 2 - 2;
+  return [start, start + 1];
+};
+
 export const supportStudentPages = (resource: IReadyVolumeOneSupportResource): readonly number[] => {
   const pages = [...resource.printedPages.matchAll(/\d+/g)].map((match) => Number(match[0]));
   const start = pages[0];
@@ -110,8 +115,8 @@ export const supportStudentPages = (resource: IReadyVolumeOneSupportResource): r
 export const supportStudentImage = (printedPage: number): string =>
   `/assets/iready-volume1/student/p-${String(printedPage).padStart(3, '0')}.jpg`;
 
-export const supportTeacherImage = (teacherPdfPage: number): string =>
-  `/assets/iready-volume1/teacher/t-${String(teacherPdfPage).padStart(3, '0')}.jpg`;
+export const supportTeacherImage = (readerPage: number): string =>
+  `/assets/iready-volume1/teacher-pages/reader-${String(readerPage).padStart(3, '0')}.webp`;
 
 export const supportWorkspaceSpec = (resource: IReadyVolumeOneSupportResource): ProblemVisualSpec => ({
   title: `${resource.title} - response workspace`,

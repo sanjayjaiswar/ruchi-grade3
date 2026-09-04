@@ -7,7 +7,7 @@ const appRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const workspaceRoot = resolve(appRoot, '..');
 const interactiveRoot = resolve(appRoot, 'src/app/pages/iready-interactive');
 const studentAssetRoot = resolve(appRoot, 'public/assets/iready-volume1/student');
-const teacherAssetRoot = resolve(appRoot, 'public/assets/iready-volume1/teacher');
+const teacherAssetRoot = resolve(appRoot, 'public/assets/iready-volume1/teacher-pages');
 
 const sessions = JSON.parse(readFileSync(resolve(interactiveRoot, 'iready-interactive.evidence.json'), 'utf8')).interactions;
 const problemEvidence = JSON.parse(readFileSync(resolve(interactiveRoot, 'iready-volume1-problems.evidence.json'), 'utf8'));
@@ -90,7 +90,9 @@ for (const page of expectedPages) {
   if (!existsSync(resolve(studentAssetRoot, `p-${String(page).padStart(3, '0')}.jpg`))) fail(`missing Student Worktext asset p. ${page}`);
 }
 for (let page = 78; page <= 90; page += 1) {
-  if (!existsSync(resolve(teacherAssetRoot, `t-${String(page).padStart(3, '0')}.jpg`))) fail(`missing Teacher Guide local spread ${page}`);
+  for (const readerPage of [page * 2 - 2, page * 2 - 1]) {
+    if (!existsSync(resolve(teacherAssetRoot, `reader-${String(readerPage).padStart(3, '0')}.webp`))) fail(`missing Teacher Guide reader page ${readerPage}`);
+  }
 }
 
 const lessonThreeStart = problemsCode.indexOf("key: 'v1-u1-l3-s1-try-connect'");
@@ -117,7 +119,7 @@ if (
   !componentCode.includes("lessonWorkspaceView: 'teaching' | 'try' | 'student' | 'teacher'")
   || !componentCode.includes('this.selectedLessonNumber <= 19')
   || !componentCode.includes('page >= 9 && page <= 452')
-  || !componentCode.includes('page >= 52 && page <= 339')
+  || !componentCode.includes('page >= 102 && page <= 677')
   || !template.includes('lesson-view-tabs')
   || !template.includes("selectSourceEdition('student')")
   || !template.includes("selectSourceEdition('teacher')")

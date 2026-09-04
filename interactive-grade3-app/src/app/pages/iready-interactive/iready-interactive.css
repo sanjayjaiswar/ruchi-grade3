@@ -2503,12 +2503,60 @@
   background: #eef3fa;
 }
 
+.edition-page-switcher {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-top: 1px solid #d5e0ef;
+  background: #f8fbff;
+}
+
+.edition-page-switcher button {
+  min-height: 36px;
+  padding: 6px 12px;
+  border: 1px solid #9dbbed;
+  border-radius: 8px;
+  background: #fff;
+  color: #0759d9;
+  font-size: 14px;
+  font-weight: 760;
+}
+
+.edition-page-switcher button.active {
+  border-color: #0759d9;
+  background: #0759d9;
+  color: #fff;
+}
+
 .top-edition-panel .compact-source-pages {
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
 }
 
-.top-edition-panel .compact-source-pages img { max-height: 760px; }
-.top-edition-panel .teacher-edition-page-view img { max-height: 760px; }
+.top-edition-panel .single-logical-page { grid-template-columns: minmax(0, 1fr); }
+.top-edition-panel .single-logical-page figure { width: min(100%, 920px); margin-inline: auto; }
+.top-edition-panel .compact-source-pages img { max-height: 900px; }
+.top-edition-panel .teacher-edition-page-view img { max-height: 900px; }
+
+.edition-page-zoom {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  cursor: zoom-in;
+}
+
+.edition-page-zoom img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: top center;
+}
+
+.edition-page-zoom:focus-visible {
+  outline: 3px solid #0759d9;
+  outline-offset: -3px;
+}
 
 .top-edition-panel .source-boundary-copy {
   grid-template-columns: auto repeat(3, minmax(0, 1fr));

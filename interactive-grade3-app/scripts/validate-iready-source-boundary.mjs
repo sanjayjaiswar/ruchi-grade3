@@ -19,7 +19,7 @@ const componentPath = resolve(interactiveRoot, 'iready-interactive.ts');
 const templatePath = resolve(interactiveRoot, 'iready-interactive.html');
 const routesPath = resolve(appRoot, 'src/app/app.routes.ts');
 const studentCompanionAssetRoot = resolve(appRoot, 'public/assets/iready-volume1/student');
-const teacherCompanionAssetRoot = resolve(appRoot, 'public/assets/iready-volume1/teacher');
+const teacherCompanionAssetRoot = resolve(appRoot, 'public/assets/iready-volume1/teacher-pages');
 const registry = JSON.parse(readFileSync(evidencePath, 'utf8'));
 const expandedRegistry = JSON.parse(readFileSync(expandedEvidencePath, 'utf8'));
 const problemRegistry = JSON.parse(readFileSync(problemEvidencePath, 'utf8'));
@@ -312,9 +312,11 @@ for (const resource of supportRegistry.resources ?? []) {
   }
   for (const page of companionTeacher.teacherPdfPages) {
     companionTeacherPages.add(page);
-    const imagePath = resolve(teacherCompanionAssetRoot, `t-${String(page).padStart(3, '0')}.jpg`);
-    if (!existsSync(imagePath) || readFileSync(imagePath).byteLength < 10_000) {
-      fail(`${resource.key} is missing its rendered official Teacher Guide asset for local PDF page ${page}`);
+    for (const readerPage of [page * 2 - 2, page * 2 - 1]) {
+      const imagePath = resolve(teacherCompanionAssetRoot, `reader-${String(readerPage).padStart(3, '0')}.webp`);
+      if (!existsSync(imagePath) || readFileSync(imagePath).byteLength < 10_000) {
+        fail(`${resource.key} is missing its rendered official Teacher Guide reader page ${readerPage}`);
+      }
     }
   }
   let teacherText;
@@ -339,7 +341,7 @@ const renderedStudentAssets = existsSync(studentCompanionAssetRoot)
   ? readdirSync(studentCompanionAssetRoot).filter((name) => /^p-\d{3}\.jpg$/.test(name))
   : [];
 const renderedTeacherAssets = existsSync(teacherCompanionAssetRoot)
-  ? readdirSync(teacherCompanionAssetRoot).filter((name) => /^t-\d{3}\.jpg$/.test(name))
+  ? readdirSync(teacherCompanionAssetRoot).filter((name) => /^reader-\d{3}\.webp$/.test(name))
   : [];
 const expectedStudentAssetPages = new Set([
   ...supportCoveredPages,
@@ -351,10 +353,11 @@ const unexpectedStudentAssets = [...renderedStudentAssetPages].filter((page) => 
 if (missingStudentAssets.length || unexpectedStudentAssets.length) {
   fail(`official Student Worktext assets drifted; missing [${missingStudentAssets.join(', ')}], unexpected [${unexpectedStudentAssets.join(', ')}]`);
 }
-const expectedTeacherAssetPages = new Set([
+const expectedTeacherPdfPages = new Set([
   ...companionTeacherPages,
   ...(teacherProvenance.spreads ?? []).map((spread) => spread.teacherPdfPage)
 ]);
+const expectedTeacherAssetPages = new Set([...expectedTeacherPdfPages].flatMap((page) => [page * 2 - 2, page * 2 - 1]));
 const renderedTeacherAssetPages = new Set(renderedTeacherAssets.map((name) => Number(name.match(/\d+/)?.[0])));
 const missingTeacherAssets = [...expectedTeacherAssetPages].filter((page) => !renderedTeacherAssetPages.has(page));
 if (missingTeacherAssets.length) {
@@ -681,4 +684,4 @@ if (errors.length) {
 }
 
 const sourceCheckCount = interactions.reduce((total, interaction) => total + (interaction.sourceChecks?.length ?? 0), 0);
-console.log(`i-Ready source boundary passed: 1 Student Worktext source, 1 Teacher Guide source, 2 reference-only sources; all 465 official Volume 1 instructional pages implemented and available inline (366 lesson-session + 99 companion); ${keys.size} sessions across 3 units and 19 lessons; ${problemKeys.size} exact-page problem groups; ${expectedTeacherAssetPages.size} exact Teacher Guide spreads; ${unitIdeas.length} exact-page Big Ideas; ${sourceCheckCount} page-scoped prompt/model checks; verified inline arithmetic; zero cross-program content fallbacks.`);
+console.log(`i-Ready source boundary passed: 1 Student Worktext source, 1 Teacher Guide source, 2 reference-only sources; all 465 official Volume 1 instructional pages implemented and available inline (366 lesson-session + 99 companion); ${keys.size} sessions across 3 units and 19 lessons; ${problemKeys.size} exact-page problem groups; ${expectedTeacherAssetPages.size} exact Teacher Guide reader pages; ${unitIdeas.length} exact-page Big Ideas; ${sourceCheckCount} page-scoped prompt/model checks; verified inline arithmetic; zero cross-program content fallbacks.`);
