@@ -174,7 +174,15 @@ if (
   || !template.includes('<strong>Interactive portal</strong>')
   || !template.includes('No other curriculum supplies content')
 ) fail('learner-facing hard source boundary is missing');
-if (!template.includes('Exact official source') || !template.includes('Exact official activity') || !template.includes('(click)="replayLessonVisual()"')) fail('exact official activity teaching or embedded source evidence controls are missing');
+if (
+  !template.includes('Exact official activity')
+  || !template.includes('v2-lesson-view-tabs')
+  || !template.includes("selectLessonView('student')")
+  || !template.includes("selectLessonView('teacher')")
+  || !template.includes('(click)="replayLessonVisual()"')
+  || !template.includes('[src]="studentImage(selectedActivity.printedPage)"')
+  || !template.includes('[src]="teacherImage(selectedActivity.teacherViewerPage)"')
+) fail('Volume 2 is missing the shared top-level teaching and exact Student/Teacher edition views');
 if (!pageComponent.includes('v2ActivitiesForSession(this.selectedSession)') || !pageComponent.includes('v2VisualForActivity') || !template.includes('[spec]="selectedActivityVisual"')) {
   fail('Volume 2 sidebar entries must select exact source-traceable page activities');
 }
@@ -219,7 +227,9 @@ if (/source-crop|source-model|v2SourceModel|v2TeacherSourceModel|\.webp/.test(le
   fail('Lesson 28 page-specific teaching may not contain publisher-page screenshots');
 }
 if (!visualWorkspace.includes('toggleFractionStripPart') || !visualTemplate.includes('aria-pressed') || !runtime.includes('correctSelectedParts')) fail('fraction tasks have regressed to non-interactive page transcription');
-if (template.includes("selectLessonMode('source')") || template.includes('lessonMode === \'source\'')) fail('official pages must remain embedded evidence, not replace the lesson');
+if (template.includes('Open official lesson') || template.includes('Verify official page') || template.includes('Official p. {{ selectedActivity.printedPage }} ↗')) {
+  fail('Volume 2 regressed to redundant official-page links instead of the four clear top-level views');
+}
 if (runtime.includes('.jpg')) fail('Volume 2 runtime must use compressed official page assets');
 if (/bucket', value: solved \?|eyeglasses', value: solved \?/.test(runtime)) fail('an open measurement task contains an invented solved quantity');
 const shapeVisualBody = runtime.slice(runtime.indexOf('function v2ShapeAttributeSections'), runtime.indexOf('function v2AreaPerimeterSections'));

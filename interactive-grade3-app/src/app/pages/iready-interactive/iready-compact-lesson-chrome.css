@@ -1,0 +1,545 @@
+/* Shared compact lesson chrome for i-Ready Volumes 1 and 2.
+   Keep curriculum content below this shell untouched. */
+
+.interactive-page.lesson-focus,
+.v2-page.focused-view {
+  --compact-ink: #25243a;
+  --compact-muted: #62667c;
+  --compact-primary: #6957c8;
+  --compact-primary-dark: #45358f;
+  --compact-primary-soft: #eeeaff;
+  --compact-sky: #dff3ff;
+  --compact-mint: #def5e8;
+  --compact-sun: #ffe083;
+  --compact-sun-dark: #624b00;
+  --compact-peach: #ffe7d7;
+  --compact-coral: #ffe0dc;
+  --compact-lilac: #eee7ff;
+  --compact-line: #d7dceb;
+  --compact-page: #f5f7fb;
+  --compact-surface: #fffdfa;
+  --compact-selected: #2f62c9;
+  --lesson-accent: var(--compact-primary);
+  --lesson-accent-dark: var(--compact-primary-dark);
+  --lesson-accent-soft: var(--compact-primary-soft);
+  background: var(--compact-page);
+  color: var(--compact-ink);
+}
+
+.interactive-page.lesson-focus .interactive-header,
+.v2-page.focused-view .v2-header {
+  min-height: 52px;
+  padding: 4px 10px;
+  border-bottom-color: var(--compact-line);
+  background: var(--compact-surface);
+  box-shadow: 0 2px 10px rgba(69, 61, 145, .08);
+}
+
+.interactive-page.lesson-focus .interactive-brand > span:first-child,
+.v2-page.focused-view .v2-brand > span:first-child {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  background: linear-gradient(135deg, #7a5ad8, #4d83df) !important;
+  box-shadow: 0 5px 12px rgba(88, 74, 178, .2);
+}
+
+.interactive-page.lesson-focus .interactive-brand strong,
+.v2-page.focused-view .v2-brand strong { color: var(--compact-ink); }
+
+.interactive-page.lesson-focus .interactive-brand small,
+.v2-page.focused-view .v2-brand small { color: var(--compact-muted); }
+
+.interactive-page.lesson-focus .interactive-header nav a,
+.v2-page.focused-view .v2-header nav a {
+  min-height: 42px;
+  border-color: var(--compact-line);
+  background: #fff;
+  color: var(--compact-primary-dark);
+}
+
+.interactive-page.lesson-focus .interactive-header nav a.active,
+.v2-page.focused-view .v2-header nav a.active {
+  border-color: var(--compact-primary) !important;
+  background: linear-gradient(135deg, #755bd6, #557be0) !important;
+  color: #fff !important;
+}
+
+.interactive-page.lesson-focus .compact-lesson-navigation,
+.v2-page.focused-view .compact-lesson-navigation {
+  min-height: 52px !important;
+  height: auto !important;
+  display: grid;
+  grid-template-columns: auto minmax(190px, .7fr) minmax(540px, 2.3fr) auto;
+  align-items: center;
+  gap: 8px !important;
+  padding: 4px 10px !important;
+  border-color: var(--compact-line) !important;
+  background: #fbfaff !important;
+  box-shadow: none !important;
+}
+
+.interactive-page.lesson-focus .compact-lesson-navigation .all-lessons-link,
+.v2-page.focused-view .compact-lesson-navigation > a:first-child {
+  min-height: 38px !important;
+  padding-block: 4px !important;
+  display: inline-flex;
+  align-items: center;
+  border-color: var(--compact-sun) !important;
+  background: var(--compact-sun) !important;
+  color: var(--compact-sun-dark) !important;
+  box-shadow: 0 3px 8px rgba(98, 75, 0, .13);
+  white-space: nowrap;
+}
+
+.compact-lesson-navigation > div:nth-of-type(1) {
+  min-width: 0;
+  line-height: 1.2;
+}
+
+.compact-lesson-navigation > div:nth-of-type(1) span {
+  color: var(--compact-muted) !important;
+  font-size: 13px !important;
+}
+
+.compact-lesson-navigation > div:nth-of-type(1) strong {
+  display: block;
+  overflow: hidden;
+  color: var(--compact-ink) !important;
+  font-size: 15px !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.compact-lesson-navigation .compact-session-tabs {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(var(--session-count), minmax(0, 1fr));
+  gap: 6px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0;
+  background: transparent;
+}
+
+.compact-lesson-navigation .compact-session-tabs button {
+  --session-color: #4d91d8;
+  --session-soft: #e5f4ff;
+  --session-dark: #205d91;
+  min-width: 0;
+  height: 38px !important;
+  min-height: 38px !important;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  padding: 3px 8px !important;
+  border: 1px solid var(--compact-line);
+  border-top: 3px solid var(--session-color);
+  border-radius: 9px;
+  background: var(--session-soft) !important;
+  color: var(--compact-ink);
+  box-shadow: none;
+}
+
+.compact-lesson-navigation .compact-session-tabs button:nth-child(1) {
+  --session-color: #4195d3;
+  --session-soft: #e1f4ff;
+  --session-dark: #1d648f;
+}
+
+.compact-lesson-navigation .compact-session-tabs button:nth-child(2) {
+  --session-color: #3ca875;
+  --session-soft: #e1f6e9;
+  --session-dark: #1c714a;
+}
+
+.compact-lesson-navigation .compact-session-tabs button:nth-child(3) {
+  --session-color: #e1a52e;
+  --session-soft: #fff3cf;
+  --session-dark: #7a5600;
+}
+
+.compact-lesson-navigation .compact-session-tabs button:nth-child(4) {
+  --session-color: #df715f;
+  --session-soft: #ffe6e0;
+  --session-dark: #914033;
+}
+
+.compact-lesson-navigation .compact-session-tabs button:nth-child(5) {
+  --session-color: #8b68d4;
+  --session-soft: #eee7ff;
+  --session-dark: #57409b;
+}
+
+.compact-lesson-navigation .compact-session-tabs button span,
+.compact-lesson-navigation .compact-session-tabs button small {
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  background: transparent;
+  color: var(--compact-muted);
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.compact-lesson-navigation .compact-session-tabs button strong {
+  overflow: hidden;
+  color: var(--compact-ink);
+  font-size: 14px;
+  font-weight: 750;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.compact-lesson-navigation .compact-session-tabs button.active {
+  border: 2px solid var(--compact-selected) !important;
+  background: var(--session-soft) !important;
+  color: var(--session-dark) !important;
+  box-shadow:
+    inset 0 -4px 0 var(--compact-selected),
+    0 3px 8px rgba(47, 98, 201, .16);
+  transform: none;
+}
+
+.compact-lesson-navigation .compact-session-tabs button.active :is(span, strong, small) {
+  background: transparent;
+  color: var(--session-dark) !important;
+}
+
+.compact-lesson-navigation > div:last-child {
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.compact-lesson-navigation > div:last-child a {
+  min-height: 38px !important;
+  display: inline-flex;
+  align-items: center;
+  padding-block: 4px !important;
+  border-color: var(--compact-line) !important;
+  background: #fff !important;
+  color: var(--compact-primary-dark) !important;
+}
+
+.learning-workspace.focused,
+.v2-page.focused-view .lesson-workspace { margin-top: 8px; }
+
+.learning-workspace.focused .lesson-stage,
+.v2-page.focused-view .lesson-workspace {
+  overflow: hidden;
+  border-color: var(--compact-line);
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(69, 61, 145, .08);
+}
+
+.compact-lesson-command {
+  min-height: 50px;
+  display: grid;
+  grid-template-columns: minmax(760px, 1.3fr) minmax(600px, 1.3fr);
+  align-items: stretch;
+  border-bottom: 1px solid var(--compact-line);
+  background: var(--compact-surface);
+}
+
+.compact-lesson-command > .compact-lesson-identity,
+.compact-lesson-command .lesson-heading,
+.compact-lesson-command .compact-session-heading,
+.compact-lesson-command .compact-view-tabs { grid-area: auto !important; }
+
+.compact-lesson-identity {
+  min-width: 0;
+  display: grid;
+  grid-template-rows: auto;
+  align-content: center;
+  border-right: 1px solid var(--compact-line);
+  background: linear-gradient(120deg, #fffdf8, #fff4ea);
+}
+
+.learning-workspace.focused .compact-lesson-command .lesson-heading,
+.v2-page.focused-view .compact-lesson-command .lesson-title {
+  min-height: 0 !important;
+  height: auto !important;
+  padding: 4px 14px 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+
+.learning-workspace.focused .compact-lesson-command .lesson-path,
+.v2-page.focused-view .compact-lesson-command .lesson-title span { display: none; }
+
+.learning-workspace.focused .compact-lesson-command .lesson-heading h2,
+.v2-page.focused-view .compact-lesson-command .lesson-title h1 {
+  margin: 0;
+  overflow: hidden;
+  color: var(--compact-ink);
+  font-size: clamp(20px, 1.35vw, 24px);
+  font-weight: 780;
+  line-height: 1.16;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.learning-workspace.focused .compact-lesson-command .lesson-heading p,
+.v2-page.focused-view .compact-lesson-command .lesson-title p {
+  margin: 0;
+  overflow: hidden;
+  color: var(--compact-muted);
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.compact-lesson-command .compact-session-heading,
+.learning-workspace.focused .compact-lesson-command .compact-session-heading {
+  min-height: 0 !important;
+  height: auto !important;
+  display: block !important;
+  padding: 0 14px 4px !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+
+.compact-session-heading > div {
+  min-width: 0;
+  display: flex !important;
+  align-items: baseline;
+  flex-flow: row nowrap !important;
+  gap: 7px;
+}
+
+.compact-session-heading span,
+.learning-workspace.focused .compact-session-heading span {
+  flex: 0 0 auto;
+  color: #b15d35;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 15px;
+}
+
+.compact-session-heading :is(h2, h3),
+.learning-workspace.focused .compact-session-heading h3 {
+  min-width: 0;
+  width: auto !important;
+  flex: 1 1 auto;
+  display: block !important;
+  margin: 0;
+  overflow: hidden;
+  color: var(--compact-ink);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 17px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.compact-lesson-command .compact-view-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: center;
+  gap: 5px;
+  padding: 3px 6px !important;
+  border: 0;
+  background: linear-gradient(135deg, #eef8ff, #f7f2ff);
+}
+
+.compact-lesson-command .compact-view-tabs button {
+  --view-color: #df715f;
+  --view-soft: #ffe5df;
+  --view-dark: #8d3e33;
+  min-width: 0;
+  min-height: 36px !important;
+  display: flex !important;
+  align-items: center !important;
+  flex-flow: column nowrap !important;
+  justify-content: center !important;
+  gap: 0;
+  padding: 2px 8px !important;
+  border-color: color-mix(in srgb, var(--view-color) 42%, var(--compact-line));
+  border-top: 3px solid var(--view-color);
+  border-radius: 9px;
+  background: var(--view-soft) !important;
+  color: var(--view-dark);
+  box-shadow: none;
+}
+
+.compact-lesson-command .compact-view-tabs button:nth-child(1) {
+  --view-color: #e06f5c;
+  --view-soft: #ffe4de;
+  --view-dark: #8f3c30;
+}
+
+.compact-lesson-command .compact-view-tabs button:nth-child(2) {
+  --view-color: #dfa52c;
+  --view-soft: #fff1c9;
+  --view-dark: #775300;
+}
+
+.compact-lesson-command .compact-view-tabs button:nth-child(3) {
+  --view-color: #37a56f;
+  --view-soft: #def5e7;
+  --view-dark: #176c45;
+}
+
+.compact-lesson-command .compact-view-tabs button:nth-child(4) {
+  --view-color: #8264d4;
+  --view-soft: #eee7ff;
+  --view-dark: #523a9b;
+}
+
+.compact-lesson-command .compact-view-tabs button strong {
+  flex: 0 1 auto;
+  display: inline-block !important;
+  width: auto !important;
+  font-size: 14px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.compact-lesson-command .compact-view-tabs button small {
+  display: block !important;
+  width: 100% !important;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  color: var(--compact-muted);
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.compact-lesson-command .compact-view-tabs button.active {
+  border: 2px solid var(--compact-selected) !important;
+  background: var(--view-soft) !important;
+  color: var(--view-dark) !important;
+  box-shadow:
+    inset 0 -4px 0 var(--compact-selected),
+    0 3px 8px rgba(47, 98, 201, .16);
+  transform: none;
+}
+
+.compact-lesson-command .compact-view-tabs button.active small {
+  border-left-color: color-mix(in srgb, var(--view-dark) 55%, transparent);
+  color: var(--view-dark) !important;
+  opacity: .78;
+}
+
+/* The color map is role-based, so it stays consistent in every lesson:
+   session position = journey color, workspace tab = tool color. */
+.v2-page.focused-view .activity-rail,
+.learning-workspace.focused .source-problem-tabs {
+  background: linear-gradient(180deg, #fffaf0, #f4f9ff) !important;
+}
+
+.v2-page.focused-view .activity-rail > strong,
+.learning-workspace.focused .source-problem-tabs::before {
+  border-color: #e8dcae !important;
+  background: #fff5cf !important;
+  color: #624b00 !important;
+}
+
+.v2-page.focused-view .activity-rail button,
+.learning-workspace.focused .source-problem-tabs button {
+  --activity-color: #4195d3;
+  --activity-soft: #e4f4ff;
+  --activity-dark: #1d648f;
+  border-left: 4px solid var(--activity-color) !important;
+  background: linear-gradient(100deg, var(--activity-soft), #fff 48%) !important;
+}
+
+.v2-page.focused-view .activity-rail button:nth-of-type(2),
+.learning-workspace.focused .source-problem-tabs button:nth-of-type(2) {
+  --activity-color: #3ca875;
+  --activity-soft: #e2f6e9;
+  --activity-dark: #1c714a;
+}
+
+.v2-page.focused-view .activity-rail button:nth-of-type(3),
+.learning-workspace.focused .source-problem-tabs button:nth-of-type(3) {
+  --activity-color: #dfa52c;
+  --activity-soft: #fff2cf;
+  --activity-dark: #765300;
+}
+
+.v2-page.focused-view .activity-rail button:nth-of-type(4),
+.learning-workspace.focused .source-problem-tabs button:nth-of-type(4) {
+  --activity-color: #df715f;
+  --activity-soft: #ffe6e0;
+  --activity-dark: #914033;
+}
+
+.v2-page.focused-view .activity-rail button:nth-of-type(5),
+.learning-workspace.focused .source-problem-tabs button:nth-of-type(5) {
+  --activity-color: #8b68d4;
+  --activity-soft: #eee7ff;
+  --activity-dark: #57409b;
+}
+
+.v2-page.focused-view .activity-rail button:nth-of-type(6),
+.learning-workspace.focused .source-problem-tabs button:nth-of-type(6) {
+  --activity-color: #d8658a;
+  --activity-soft: #ffe7ef;
+  --activity-dark: #8c3452;
+}
+
+.v2-page.focused-view .activity-rail button.active,
+.learning-workspace.focused .source-problem-tabs button.active {
+  border: 2px solid var(--compact-selected) !important;
+  border-left-width: 5px !important;
+  background: linear-gradient(100deg, var(--activity-soft), #fff 66%) !important;
+  color: var(--activity-dark) !important;
+  box-shadow:
+    inset 3px 0 0 var(--compact-selected),
+    0 3px 8px rgba(47, 98, 201, .14) !important;
+}
+
+.v2-page.focused-view .activity-rail button span,
+.learning-workspace.focused .source-problem-tabs button span {
+  border-color: color-mix(in srgb, var(--activity-color) 38%, #d7dceb) !important;
+  background: var(--activity-soft) !important;
+  color: var(--activity-dark) !important;
+}
+
+.interactive-page.lesson-focus .compact-session-content {
+  grid-template-areas:
+    "activities stage"
+    "footer footer";
+}
+
+.v2-page.focused-view .compact-session-content { background: #fff; }
+
+
+@media (max-width: 1320px) {
+  .interactive-page.lesson-focus .compact-lesson-navigation,
+  .v2-page.focused-view .compact-lesson-navigation {
+    grid-template-columns: auto minmax(155px, .55fr) minmax(460px, 2.4fr) auto;
+  }
+
+  .compact-lesson-navigation .compact-session-tabs button { grid-template-columns: auto minmax(0, 1fr); }
+  .compact-lesson-navigation .compact-session-tabs button small { display: none; }
+  .compact-lesson-command { grid-template-columns: minmax(620px, 1.15fr) minmax(500px, 1.25fr); }
+}
+
+@media (max-width: 1120px) {
+  .interactive-page.lesson-focus .compact-lesson-navigation,
+  .v2-page.focused-view .compact-lesson-navigation { grid-template-columns: auto minmax(0, 1fr) auto; }
+  .compact-lesson-navigation .compact-session-tabs { grid-column: 1 / -1; grid-row: 2; }
+  .compact-lesson-command { grid-template-columns: 1fr; }
+  .compact-lesson-identity { border-right: 0; border-bottom: 1px solid var(--compact-line); }
+}
+
+@media (max-width: 900px) {
+  .compact-lesson-navigation .compact-session-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .compact-lesson-command .compact-view-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .compact-session-heading > div { align-items: flex-start; flex-direction: column; gap: 1px; }
+}

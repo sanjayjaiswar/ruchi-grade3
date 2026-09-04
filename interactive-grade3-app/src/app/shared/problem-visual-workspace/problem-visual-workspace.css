@@ -427,6 +427,9 @@
 
 .source-response-lines input {
   width: 82px;
+  min-width: 82px;
+  max-width: min(100%, 320px);
+  field-sizing: content;
   min-height: 38px;
   padding: 4px 6px;
   border: 0;
@@ -443,6 +446,9 @@
 .unknown-riddle-answer input,
 .unknown-riddle-decoder input {
   width: clamp(58px, 5vw, 92px);
+  min-width: clamp(58px, 5vw, 92px);
+  max-width: min(100%, 320px);
+  field-sizing: content;
   min-height: 36px;
   margin: 2px 5px;
   padding: 4px 7px;

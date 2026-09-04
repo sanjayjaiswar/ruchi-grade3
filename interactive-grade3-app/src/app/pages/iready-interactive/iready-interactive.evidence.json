@@ -365,7 +365,7 @@
       "supportsSolvedTeaching": true,
       "sourceChecks": [
         { "purpose": "prompt", "printedPages": "47–50", "markers": ["345", "626", "Find the sum"] },
-        { "purpose": "model", "printedPages": "41–46", "markers": ["using an algorithm", "Add ones to ones", "showing regrouping above the problem"] }
+        { "purpose": "model", "printedPages": "47–50", "markers": ["breaking apart", "regroup", "Show your work"] }
       ],
       "activity": {
         "kind": "arithmetic",

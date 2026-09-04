@@ -144,12 +144,12 @@ const lessonTwoTraceabilityByKey: Readonly<Record<string, IReadyActivityTraceabi
   'v1-u1-l2-s2-practice-3-6': lessonTwoTraceability(2, 'Practice 3–6', '40', '52', '136–137', 69, 'place-value addition + estimation + extrema', ['157 + 291', '142 + 382', '348', '256', '289', '361'], ['448', '524', '500', '709', '545']),
   'v1-u1-l2-s3-try-model': lessonTwoTraceability(3, 'Try It + Model It', '41–42', '53–54', '138–139', 70, 'partial sums + vertical algorithm with regrouping', ['225', '229', '14 ones'], ['454']),
   'v1-u1-l2-s3-connect': lessonTwoTraceability(3, 'Connect It', '43', '55', '140–141', 71, 'regrouping explanation + vertical algorithm', ['158', '363'], ['521']),
-  'v1-u1-l2-s3-apply': lessonTwoTraceability(3, 'Apply It', '44', '56', '140–141', 71, 'vertical algorithms + nearest-ten estimate', ['245 + 114 + 328', '614 + 319', '284 + 258'], ['687', '933', '542']),
+  'v1-u1-l2-s3-apply': lessonTwoTraceability(3, 'Apply It', '44', '56', '140–141', 71, 'vertical algorithms + nearest-ten estimate', ['245 + 114 + 328', '614 + 319', '284 + 258'], ['687', '933', '610 + 320 = 930', '542']),
   'v1-u1-l2-s3-practice-1-2': lessonTwoTraceability(3, 'Practice 1–2', '45', '57', '142–143', 72, 'partial sums + vertical algorithm', ['124 + 253', '459 + 260'], ['377', '719']),
   'v1-u1-l2-s3-practice-3-7': lessonTwoTraceability(3, 'Practice 3–7', '46', '58', '142–143', 72, 'vertical algorithms + partial sums', ['228 + 136', '251 + 254', '151 + 154', '368 + 245', '418 + 254 + 328'], ['364', '505', '305', '613', '1,000']),
   'v1-u1-l2-s4-example-1': lessonTwoTraceability(4, 'Example + Problem 1', '47', '59', '144–145', 73, 'expanded form + two-step relationship', ['317 + 179', '109 + 56'], ['496', '165', '274']),
   'v1-u1-l2-s4-problems-2-3': lessonTwoTraceability(4, 'Problems 2–3', '48', '60', '144–145', 73, 'vertical algorithm + error analysis', ['345 + 626', '149 + 293', '342'], ['971', '442']),
-  'v1-u1-l2-s4-problems-4-6': lessonTwoTraceability(4, 'Problems 4–6', '49', '61', '146–147', 74, 'two-step addition + estimate + place-value renaming', ['129', '78', '258 + 436', '68 + 16'], ['336', '694', '700', '8 tens and 4 ones']),
+  'v1-u1-l2-s4-problems-4-6': lessonTwoTraceability(4, 'Problems 4–6', '49', '61', '146–147', 74, 'two-step addition + estimate + place-value renaming', ['129', '78', '258 + 436', '68 + 16'], ['336', '694', '700', '7 tens and 14 ones', '8 tens and 4 ones']),
   'v1-u1-l2-s4-problems-7-9': lessonTwoTraceability(4, 'Problems 7–9', '50', '62', '146–147', 74, 'vertical addition + place-value table + strategy explanation', ['147 + 123', '746', '379 + 284'], ['270', '7 hundreds, 4 tens, 6 ones', '4, 5, 6, 7, 8, or 9', '663'])
 };
 
@@ -321,8 +321,8 @@ const lessonSixTraceabilityByKey: Readonly<Record<string, IReadyActivityTraceabi
   'v1-u2-l6-s4-connect-apply': lessonSixTraceability(4, 'Connect It + Apply It', '153–154', '165–166', '296–297', 149, 'split either factor + ×6 choice analysis', ['3 × 6', '5 × 6', '8 × 6'], ['18', '30', 'A, C, and E']),
   'v1-u2-l6-s4-practice-1-3': lessonSixTraceability(4, 'Practice 1–3', '155', '167', '298–299', 150, '4-by-6 split array', ['4 × 6'], ['24']),
   'v1-u2-l6-s4-practice-4-5': lessonSixTraceability(4, 'Practice 4–5', '156', '168', '298–299', 150, 'matched ×6 decompositions + apartment context', ['5 × 6', '9 × 6', '7 × 6', '6 × 6', '8 × 6', '3 × 6'], ['30', '54', '42', '36', '48', '18']),
-  'v1-u2-l6-s5-example': lessonSixTraceability(5, 'Example', '157', '169', '300–301', 151, '7-by-4 array split into two ×2 facts', ['7 × 4'], ['28']),
-  'v1-u2-l6-s5-problems-1-2': lessonSixTraceability(5, 'Problems 1–2', '158', '170', '300–301', 151, '3-by-6 goat model + 8-by-6 error analysis', ['3 × 6', '8 × 6'], ['18', 'D', '48']),
+  'v1-u2-l6-s5-example': lessonSixTraceability(5, 'Example + Problem 1', '157', '169', '300–301', 151, '7-by-4 split into two ×2 facts + 6-by-6 split into ×5 and ×1 facts', ['7 × 4', '6 × 6', '5 × 6', '1 × 6'], ['28', '36', '30', '6']),
+  'v1-u2-l6-s5-problems-1-2': lessonSixTraceability(5, 'Problems 2–3', '158', '170', '300–301', 151, '3-by-6 goat model + 8-by-6 error analysis', ['3 × 6', '8 × 6'], ['18', 'D', '48']),
   'v1-u2-l6-s5-problems-3-5': lessonSixTraceability(5, 'Problems 4–6', '159', '171', '302–303', 152, 'missing factor + true/false table + ×4 choice analysis', ['8 × 4', '8 × 3', '7 × 4'], ['2', 'No, Yes, Yes, No, Yes', 'A, D, and E']),
   'v1-u2-l6-s5-problems-6-journal': lessonSixTraceability(5, 'Problem 7 + Math Journal 8', '160', '172', '302–303', 152, 'two 5-by-6 strategies + 9-by-6 journal decomposition', ['5 × 6', '9 × 6'], ['30', '54'])
 };
@@ -419,7 +419,7 @@ const lessonTenTraceability = (
   teacherPrintedPages: string, teacherPdfViewerPage: number, modelType: string,
   verifiedValues: readonly string[], verifiedAnswers: readonly string[]
 ): IReadyActivityTraceability => ({
-  volume: 1, unit: 3, lesson: 10, session, officialActivityName,
+  volume: 1, unit: 2, lesson: 10, session, officialActivityName,
   studentDocument: 'iready-grade3-volume1-548-pages.pdf', studentSearchableDocument: 'iready-grade3-volume1-548-pages-searchable.pdf',
   studentPrintedPages, studentPdfViewerPages,
   teacherDocument: 'iready-grade3-teacher-guide-volume1-764-pages.pdf', teacherSearchableDocument: 'iready-grade3-teacher-guide-volume1-764-pages-searchable.pdf',
@@ -428,14 +428,14 @@ const lessonTenTraceability = (
 });
 
 const lessonTenTraceabilityByKey: Readonly<Record<string, IReadyActivityTraceability>> = {
-  'v1-u3-l10-s1-models': lessonTenTraceability(1, 'Model It 1–6 + Reflect', '235–236', '247–248', '398–399', 200, 'equal-group plate models for two division meanings', ['8 ÷ 2', '10 ÷ 2'], ['4', '5']),
-  'v1-u3-l10-s1-prepare': lessonTenTraceability(1, 'Prepare', '237', '249', '400–401', 201, 'four-quadrant divide organizer + 4 groups of 3 diagram', ['15 ÷ 5', '15 ÷ 3', '10 ÷ 5', '10 ÷ 2', '12 ÷ 3'], ['3', '5', '2', '5', '4']),
-  'v1-u3-l10-s1-practice': lessonTenTraceability(1, 'Practice 3–5', '238', '250', '400–401', 201, 'three plates with four leaves each + division equation', ['12 ÷ 4'], ['3']),
-  'v1-u3-l10-s2-equal-groups': lessonTenTraceability(2, 'Model It · Equal Groups 1–2', '239', '251', '402–403', 202, '24 oranges modeled by group size and group count', ['24 ÷ 6'], ['4 bags', '4 oranges per bag']),
-  'v1-u3-l10-s2-arrays-connect': lessonTenTraceability(2, 'Model It · Arrays 3–4 + Connect It 5–6', '240', '252', '402–403', 202, 'turned division arrays + open model', ['20 ÷ 5', '42 ÷ 7'], ['4', '6']),
-  'v1-u3-l10-s2-practice': lessonTenTraceability(2, 'Practice 1–7', '241–242', '253–254', '404–405', 203, 'frog/log model + equal groups + array error analysis', ['8 ÷ 4', '20 ÷ 4', '18 ÷ 3', '30 ÷ 5'], ['2', '5', '6', '6']),
-  'v1-u3-l10-s3-apply': lessonTenTraceability(3, 'Apply It 1–3', '243', '255', '406–407', 204, 'array error analysis + division story + paired prickly-pear groupings', ['8 ÷ 4', '16 ÷ 2', '21 pears'], ['2', '8', '3 groups of 7 and 7 groups of 3']),
-  'v1-u3-l10-s3-problem-journal': lessonTenTraceability(3, 'Problem 4 + Math Journal 5', '244', '256', '406–407', 204, 'student-created division model + two equal-group meanings', ['20 almonds', '45 ÷ 9'], ['answers vary', '5'])
+  'v1-u2-l10-s1-models': lessonTenTraceability(1, 'Model It 1–6 + Reflect', '235–236', '247–248', '398–399', 200, 'equal-group plate models for two division meanings', ['8 ÷ 2', '10 ÷ 2'], ['4', '5']),
+  'v1-u2-l10-s1-prepare': lessonTenTraceability(1, 'Prepare', '237', '249', '400–401', 201, 'four-quadrant divide organizer + 4 groups of 3 diagram', ['15 ÷ 5', '15 ÷ 3', '10 ÷ 5', '10 ÷ 2', '12 ÷ 3'], ['3', '5', '2', '5', '4']),
+  'v1-u2-l10-s1-practice': lessonTenTraceability(1, 'Practice 3–5', '238', '250', '400–401', 201, 'three plates with four leaves each + division equation', ['12 ÷ 4'], ['3']),
+  'v1-u2-l10-s2-equal-groups': lessonTenTraceability(2, 'Model It · Equal Groups 1–2', '239', '251', '402–403', 202, '24 oranges modeled by group size and group count', ['24 ÷ 6'], ['4 bags', '4 oranges per bag']),
+  'v1-u2-l10-s2-arrays-connect': lessonTenTraceability(2, 'Model It · Arrays 3–4 + Connect It 5–6', '240', '252', '402–403', 202, 'turned division arrays + open model', ['20 ÷ 5', '42 ÷ 7'], ['4', '6']),
+  'v1-u2-l10-s2-practice': lessonTenTraceability(2, 'Practice 1–7', '241–242', '253–254', '404–405', 203, 'frog/log model + equal groups + array error analysis', ['8 ÷ 4', '20 ÷ 4', '18 ÷ 3', '30 ÷ 5'], ['2', '5', '6', '6']),
+  'v1-u2-l10-s3-apply': lessonTenTraceability(3, 'Apply It 1–3', '243', '255', '406–407', 204, 'array error analysis + division story + paired prickly-pear groupings', ['8 ÷ 4', '16 ÷ 2', '21 pears'], ['2', '8', '3 groups of 7 and 7 groups of 3']),
+  'v1-u2-l10-s3-problem-journal': lessonTenTraceability(3, 'Problem 4 + Math Journal 5', '244', '256', '406–407', 204, 'student-created division model + two equal-group meanings', ['20 almonds', '45 ÷ 9'], ['answers vary', '5'])
 };
 
 const lessonElevenTraceability = (
@@ -443,20 +443,66 @@ const lessonElevenTraceability = (
   teacherPrintedPages: string, teacherPdfViewerPage: number, modelType: string,
   verifiedValues: readonly string[], verifiedAnswers: readonly string[]
 ): IReadyActivityTraceability => ({
-  volume: 1, unit: 3, lesson: 11, session, officialActivityName,
+  volume: 1, unit: 2, lesson: 11, session, officialActivityName,
   studentDocument: 'iready-grade3-volume1-548-pages.pdf', studentSearchableDocument: 'iready-grade3-volume1-548-pages-searchable.pdf', studentPrintedPages, studentPdfViewerPages,
   teacherDocument: 'iready-grade3-teacher-guide-volume1-764-pages.pdf', teacherSearchableDocument: 'iready-grade3-teacher-guide-volume1-764-pages-searchable.pdf', teacherPrintedPages, teacherPdfViewerPage,
   modelType, verifiedValues, verifiedAnswers, verificationStatus: 'verified-student-and-teacher', implementationLocation: 'src/app/pages/iready-interactive/iready-volume1-problems.ts'
 });
 
 const lessonElevenTraceabilityByKey: Readonly<Record<string, IReadyActivityTraceability>> = {
-  'v1-u3-l11-s1-models': lessonElevenTraceability(1, 'Model It 1–4 + Reflect', '247–248', '259–260', '414–415', 208, 'related multiplication and division arrays', ['4 × 3', '12 ÷ 4', '20 ÷ 5'], ['12', '3', '4']),
-  'v1-u3-l11-s1-prepare': lessonElevenTraceability(1, 'Prepare', '249', '261', '416–417', 209, 'five-field quotient organizer + 3-by-6 array', ['8 ÷ 2', '6 ÷ 3', '3 × 6', '18 ÷ 3'], ['4', '2', '18', '6']),
-  'v1-u3-l11-s1-practice': lessonElevenTraceability(1, 'Practice 3–5', '250', '262', '416–417', 209, 'seven pages of three stickers + related equations', ['21 ÷ 7', '7 × 3'], ['3', '21']),
-  'v1-u3-l11-s2-situation-facts': lessonElevenTraceability(2, 'Model It 1–5 + Connect It 6–7', '251–252', '263–264', '418–419', 210, 'equal groups + related fact families', ['18 ÷ 3', '24 ÷ 3', '9 × 6', '7, 8, 56'], ['6', '8', '54', 'complete fact family']),
-  'v1-u3-l11-s2-practice': lessonElevenTraceability(2, 'Practice 1–12', '253–254', '265–266', '420–421', 211, 'guava array + fish situations + 6/7/42 fact family', ['15 ÷ 3', '18 ÷ 6', '18 ÷ 3', '6 × 7'], ['5', '3', '6', '42']),
-  'v1-u3-l11-s3-apply': lessonElevenTraceability(3, 'Apply It 1–3', '255', '267', '422–423', 212, 'Hopi-flower array + unknown divisor + avocado fact family', ['4 × 3', '63 ÷ 9', '4 × 6'], ['12', '7', '24']),
-  'v1-u3-l11-s3-problem-journal': lessonElevenTraceability(3, 'Problem 4 + Math Journal 5', '256', '268', '422–423', 212, 'related multiplication array + student-created division story', ['15 ÷ 5', '35 ÷ 7'], ['3', '5'])
+  'v1-u2-l11-s1-models': lessonElevenTraceability(1, 'Model It 1–4 + Reflect', '247–248', '259–260', '414–415', 208, 'related multiplication and division arrays', ['4 × 3', '12 ÷ 4', '20 ÷ 5'], ['12', '3', '4']),
+  'v1-u2-l11-s1-prepare': lessonElevenTraceability(1, 'Prepare', '249', '261', '416–417', 209, 'five-field quotient organizer + 3-by-6 array', ['8 ÷ 2', '6 ÷ 3', '3 × 6', '18 ÷ 3'], ['4', '2', '18', '6']),
+  'v1-u2-l11-s1-practice': lessonElevenTraceability(1, 'Practice 3–5', '250', '262', '416–417', 209, 'seven pages of three stickers + related equations', ['21 ÷ 7', '7 × 3'], ['3', '21']),
+  'v1-u2-l11-s2-situation-facts': lessonElevenTraceability(2, 'Model It 1–5 + Connect It 6–7', '251–252', '263–264', '418–419', 210, 'equal groups + related fact families', ['18 ÷ 3', '24 ÷ 3', '9 × 6', '7, 8, 56'], ['6', '8', '54', 'complete fact family']),
+  'v1-u2-l11-s2-practice': lessonElevenTraceability(2, 'Practice 1–12', '253–254', '265–266', '420–421', 211, 'guava array + fish situations + 6/7/42 fact family', ['15 ÷ 3', '18 ÷ 6', '18 ÷ 3', '6 × 7'], ['5', '3', '6', '42']),
+  'v1-u2-l11-s3-apply': lessonElevenTraceability(3, 'Apply It 1–3', '255', '267', '422–423', 212, 'Hopi-flower array + unknown divisor + avocado fact family', ['4 × 3', '63 ÷ 9', '4 × 6'], ['12', '7', '24']),
+  'v1-u2-l11-s3-problem-journal': lessonElevenTraceability(3, 'Problem 4 + Math Journal 5', '256', '268', '422–423', 212, 'related multiplication array + student-created division story', ['15 ÷ 5', '35 ÷ 7'], ['3', '5'])
+};
+
+const lessonTwelveTraceability = (
+  session: number, officialActivityName: string, studentPrintedPages: string, studentPdfViewerPages: string,
+  teacherPrintedPages: string, teacherPdfViewerPage: number, modelType: string,
+  verifiedValues: readonly string[], verifiedAnswers: readonly string[]
+): IReadyActivityTraceability => ({
+  volume: 1, unit: 2, lesson: 12, session, officialActivityName,
+  studentDocument: 'iready-grade3-volume1-548-pages.pdf', studentSearchableDocument: 'iready-grade3-volume1-548-pages-searchable.pdf', studentPrintedPages, studentPdfViewerPages,
+  teacherDocument: 'iready-grade3-teacher-guide-volume1-764-pages.pdf', teacherSearchableDocument: 'iready-grade3-teacher-guide-volume1-764-pages-searchable.pdf', teacherPrintedPages, teacherPdfViewerPage,
+  modelType, verifiedValues, verifiedAnswers, verificationStatus: 'verified-student-and-teacher', implementationLocation: 'src/app/pages/iready-interactive/iready-volume1-problems.ts'
+});
+
+const lessonTwelveTraceabilityByKey: Readonly<Record<string, IReadyActivityTraceability>> = {
+  'v1-u2-l12-s1-try-connect': lessonTwelveTraceability(1, 'Try It + Connect It', '259–260', '271–272', '430–431', 216, '3-by-8 and 6-by-9 arrays + related fact families', ['24 ÷ 3', '3 × 8', '6 × 9', '54 ÷ 6', '54 ÷ 9'], ['8', '24', '54', '9', '6']),
+  'v1-u2-l12-s1-prepare': lessonTwelveTraceability(1, 'Prepare', '261', '273', '432–433', 217, '8-by-4 array + multiplication and division fact family', ['8 × 4', '32 ÷ 8'], ['32', '4']),
+  'v1-u2-l12-s1-practice': lessonTwelveTraceability(1, 'Practice 3–5', '262', '274', '432–433', 217, 'four equal groups of seven + related multiplication fact', ['28 ÷ 4', '4 × 7'], ['7', '28']),
+  'v1-u2-l12-s2-try-model': lessonTwelveTraceability(2, 'Try It + Model It', '263–264', '275–276', '434–435', 218, 'skip-count-by-five number line + complete fact family', ['40 ÷ 5', '5 × 8'], ['8', '40']),
+  'v1-u2-l12-s2-connect-apply': lessonTwelveTraceability(2, 'Connect It + Apply It', '265–266', '277–278', '436–437', 219, 'number-line quotient + complete fact families', ['8 × 5', '40 ÷ 5', '24 ÷ 4', '2 × 3', '6 ÷ 2', '3 × 7'], ['40', '8', '6', '6', '3', '21']),
+  'v1-u2-l12-s2-practice': lessonTwelveTraceability(2, 'Practice 1–9', '267–268', '279–280', '438–439', 220, 'arrays and equal groups + related multiplication and division facts', ['3 × 5', '15 ÷ 3', '4 × 9', '36 ÷ 4', '18 ÷ 2', '24 ÷ 8'], ['15', '5', '36', '9', '9', '3']),
+  'v1-u2-l12-s3-table-model': lessonTwelveTraceability(3, 'Try It + Model It', '269–270', '281–282', '440–441', 221, 'multiplication-table row, column, and product lookup', ['2 × 5', '24 ÷ 6', '8 × 6', '8 ÷ 1'], ['10', '4', '48', '8']),
+  'v1-u2-l12-s3-connect-apply': lessonTwelveTraceability(3, 'Connect It + Apply It', '271–272', '283–284', '442–443', 222, 'multiplication-table fact-family lookup', ['6 × 7', '42 ÷ 6', '56 ÷ 7', '2 × 8', '16 ÷ 2'], ['42', '7', '8', '16', '8', 'B, C, and E']),
+  'v1-u2-l12-s3-practice': lessonTwelveTraceability(3, 'Practice 1–6', '273–274', '285–286', '444–445', 223, 'multiplication-table complete fact families', ['6 × 4', '24 ÷ 6', '7 × 3', '21 ÷ 7', '28 ÷ 4', '6 × 7', '48 ÷ 6'], ['24', '4', '21', '3', '7', '42', '8']),
+  'v1-u2-l12-s4-problems-1-3': lessonTwelveTraceability(4, 'Example + Problems 1–3', '275–276', '287–288', '446–447', 224, 'number-line and related-fact solutions', ['15 ÷ 3', '35 ÷ 7', '4 × 9', '30 ÷ 6'], ['5', '5', '36', '5', 'B']),
+  'v1-u2-l12-s4-problems-4-6': lessonTwelveTraceability(4, 'Problems 4–6', '277', '289', '448–449', 225, 'fact-family choices + yes/no equation table', ['12 ÷ 3', '20 ÷ 5', '9 × 8', '6 × 8', '56 ÷ 8', '32 ÷ 8'], ['4', '4', 'No, Yes, No, Yes']),
+  'v1-u2-l12-s4-problems-7-journal': lessonTwelveTraceability(4, 'Problems 7–9', '278', '290', '448–449', 225, 'repeated-factor array + pita-bread fact family', ['4 × 4', '16 ÷ 4', '32 ÷ 4', '4 × 8'], ['16', '4', '8', '32'])
+};
+
+const lessonThirteenTraceability = (
+  session: number, officialActivityName: string, studentPrintedPages: string, studentPdfViewerPages: string,
+  teacherPrintedPages: string, teacherPdfViewerPage: number, modelType: string,
+  verifiedValues: readonly string[], verifiedAnswers: readonly string[]
+): IReadyActivityTraceability => ({
+  volume: 1, unit: 2, lesson: 13, session, officialActivityName,
+  studentDocument: 'iready-grade3-volume1-548-pages.pdf', studentSearchableDocument: 'iready-grade3-volume1-548-pages-searchable.pdf', studentPrintedPages, studentPdfViewerPages,
+  teacherDocument: 'iready-grade3-teacher-guide-volume1-764-pages.pdf', teacherSearchableDocument: 'iready-grade3-teacher-guide-volume1-764-pages-searchable.pdf', teacherPrintedPages, teacherPdfViewerPage,
+  modelType, verifiedValues, verifiedAnswers, verificationStatus: 'verified-student-and-teacher', implementationLocation: 'src/app/pages/iready-interactive/iready-volume1-problems.ts'
+});
+
+const lessonThirteenTraceabilityByKey: Readonly<Record<string, IReadyActivityTraceability>> = {
+  'v1-u2-l13-s1-models': lessonThirteenTraceability(1, 'Model It 1–4', '281–282', '293–294', '456–457', 229, 'repeating object positions + hundred-chart additive patterns', ['3, 6, 9', '9, 18, 27'], ['12', '36', 'add 3', 'add 9']),
+  'v1-u2-l13-s1-prepare-practice': lessonThirteenTraceability(1, 'Prepare + Practice 3–6', '283–284', '295–296', '458–459', 230, 'concept organizer + repeating shapes + add-two and add-eight patterns', ['2, 4, 6, 8, 10', '8, 16, 24'], ['circle', '12', '32', 'yes']),
+  'v1-u2-l13-s2-table-models': lessonThirteenTraceability(2, 'Model It + Connect It', '285–286', '297–298', '460–461', 231, 'addition and multiplication parity tables', ['odd + even', 'even + even', 'odd + odd', 'even factor', 'sum 11'], ['odd', 'even', 'even', 'even product', 'commutative pairs']),
+  'v1-u2-l13-s2-practice': lessonThirteenTraceability(2, 'Practice 1–5', '287–288', '299–300', '462–463', 232, 'addition-table diagonals + parity and identity patterns', ['583 + 118', '8 × 6', 'multiply by 0', 'multiply by 1'], ['odd', 'even', '0', 'same factor']),
+  'v1-u2-l13-s3-apply': lessonThirteenTraceability(3, 'Apply It 1–3', '289', '301', '464–465', 233, 'constant-sum table + shared multiples + odd-product counterexample', ['1 + 3', '2 + 2', '3 + 1', '5s and 10s', '3 × 5'], ['4', '4', '4', '10, 20, 30, 40, 50', 'incorrect']),
+  'v1-u2-l13-s3-table-journal': lessonThirteenTraceability(3, 'Problem 4 + Math Journal', '290', '302', '464–465', 233, 'completed multiplication table + commutative factor-pair symmetry', ['factor pairs', 'multiplication table'], ['same product', 'different order', 'mirror symmetry', 'skip-counting rows'])
 };
 
 const placeValueChart = (value: number, label = `Place-value chart for ${value}`): ProblemVisualSection => ({
@@ -497,7 +543,7 @@ const responseWorkspace = (
   title,
   sections: [{
     kind: 'source-response-workspace',
-    label: 'Official problem workspace',
+    label: 'Interactive response workspace',
     wide: true,
     columns: 1,
     parts: parts.map((part) => ({
@@ -539,6 +585,13 @@ const additionModelSection = (task: { lead: string; prompt: string; equation: st
   const total = addends.reduce((sum, value) => sum + value, 0);
   const width = Math.max(3, String(total).length, ...addends.map((value) => String(value).length));
   const addendDigits = addends.map((value) => digitsFor(value, width));
+  const trimmedAnswer = task.answer.trim();
+  const numericAnswer = /^\d[\d,]*$/.test(trimmedAnswer) ? Number(trimmedAnswer.replaceAll(',', '')) : undefined;
+  const resultText = numericAnswer === total
+    ? `${addends.join(' + ')} = ${total}`
+    : numericAnswer !== undefined
+      ? `${addends.join(' + ')} = ${total}. Final answer: ${trimmedAnswer}.`
+      : `${addends.join(' + ')} = ${total}. ${trimmedAnswer}`;
   const regroupings: Array<{ fromColumn: number; toColumn: number; label: string }> = [];
   let carry = 0;
   for (let column = width - 1; column > 0; column -= 1) {
@@ -564,9 +617,32 @@ const additionModelSection = (task: { lead: string; prompt: string; equation: st
       addends: addendDigits.map((digits, index) => ({ label: index === 0 ? 'start' : `add ${addends[index]}`, digits })),
       resultDigits: digitsFor(total, width).map(String),
       regroupings,
-      result: `${addends.join(' + ')} = ${total}. ${task.answer}`
+      result: resultText
     }
   };
+};
+
+const additionModelSections = (task: { lead: string; prompt: string; equation: string; answer: string }): ProblemVisualSection[] => {
+  const statements = task.equation.split(';').map((statement) => statement.trim()).filter(Boolean);
+  const sections = statements.map((statement, index) => {
+    const expression = statement.match(/((?:\d[\d,]*\s*\+\s*)+\d[\d,]*)(?:\s*=\s*([\d,]+))?/);
+    if (!expression) return undefined;
+    const terms = expression[1].split('+').map((term) => Number(term.replaceAll(',', '').trim()));
+    if (terms.some((term) => !Number.isFinite(term))) return undefined;
+    const total = terms.reduce((sum, term) => sum + term, 0);
+    const statedTotal = expression[2] ? Number(expression[2].replaceAll(',', '')) : total;
+    if (statedTotal !== total) return undefined;
+    const isEstimate = /estimate|round/i.test(statement);
+    return additionModelSection({
+      lead: statements.length === 1 ? task.lead : `${task.lead} · ${isEstimate ? 'estimate check' : `step ${index + 1}`}`,
+      prompt: isEstimate ? 'Use the verified rounded addends to check the exact sum.' : task.prompt,
+      equation: `${terms.join(' + ')} = ${total}`,
+      answer: index === statements.length - 1
+        ? (isEstimate ? `Exact sum: ${task.answer}` : task.answer)
+        : 'Continue to the next verified step.'
+    });
+  }).filter((section): section is ProblemVisualSection => Boolean(section));
+  return sections.length ? sections : [{ kind: 'equations', label: task.lead, lines: [`${task.equation}. ${task.answer}`] }];
 };
 
 const verifiedAdditionModelSection = (
@@ -787,7 +863,7 @@ const additionVisual = (
   : {
       title,
       sourceNote: supplementalVisualNote,
-      sections: tasks.map(additionModelSection).filter((section): section is ProblemVisualSection => Boolean(section))
+      sections: tasks.flatMap(additionModelSections)
     };
 
 type SubtractionTask = {
@@ -1554,12 +1630,12 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     sourceMarkers: ['245', 'Olympic athletes', 'Brazil', 'Japan', '284', '258'],
     blankVisual: additionVisual('Apply the addition algorithm', [
       { lead: '4.', prompt: 'Find 245 + 114 + 328.', blankLines: ['245 + 114 + 328 = ___'], answers: [['687']], equation: '245 + 114 + 328 = 687', answer: '687' },
-      { lead: '5.', prompt: 'Find the total for Japan (614) and Brazil (319), then estimate.', blankLines: ['614 + 319 = ___', 'estimate: ___ + ___ = ___'], answers: [['933'], ['600', '300', '900']], equation: '614 + 319 = 933; estimate 600 + 300 = 900', answer: '933 athletes; the estimate supports the answer.' },
+      { lead: '5.', prompt: 'Find the total for Japan (614) and Brazil (319), then estimate to the nearest ten.', blankLines: ['614 + 319 = ___', 'estimate: ___ + ___ = ___'], answers: [['933'], ['610', '320', '930']], equation: '614 + 319 = 933; estimate 610 + 320 = 930', answer: '933 athletes; the nearest-ten estimate supports the answer.' },
       { lead: '6.', prompt: 'Find 284 + 258.', blankLines: ['284 + 258 = ___'], answers: [['542']], equation: '284 + 258 = 542', answer: '542' }
     ], 'blank'),
     solvedVisual: additionVisual('Apply It solutions', [
       { lead: '4.', prompt: '245 + 114 + 328', blankLines: [], answers: [], equation: '245 + 114 = 359; 359 + 328 = 687', answer: '687' },
-      { lead: '5.', prompt: 'Japan and Brazil', blankLines: [], answers: [], equation: '614 + 319 = 933; 600 + 300 = 900', answer: '933 athletes' },
+      { lead: '5.', prompt: 'Japan and Brazil', blankLines: [], answers: [], equation: '614 + 319 = 933; estimate 610 + 320 = 930', answer: '933 athletes' },
       { lead: '6.', prompt: '284 + 258', blankLines: [], answers: [], equation: '284 + 258 = 542', answer: '542' }
     ], 'solved')
   },
@@ -1628,12 +1704,12 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     blankVisual: additionVisual('Problems 4–6', [
       { lead: '4.', prompt: 'Tuesday is 129 miles. Wednesday is 78 more than Tuesday. Find the two-day total.', blankLines: ['Wednesday: 129 + 78 = ___', 'total: 129 + ___ = ___'], answers: [['207'], ['207', '336']], equation: '129 + 78 = 207; 129 + 207 = 336', answer: '336 miles' },
       { lead: '5.', prompt: 'Find 258 + 436 and estimate to check.', blankLines: ['258 + 436 = ___', 'estimate: ___ + ___ = ___'], answers: [['694'], ['300', '400', '700']], equation: '258 + 436 = 694; estimate 300 + 400 = 700', answer: '694; the estimate supports it.' },
-      { lead: '6.', prompt: 'Write 68 + 16 using tens and ones.', blankLines: ['68 + 16 = ___ tens and ___ ones'], answers: [['8', '4']], equation: '68 + 16 = 84', answer: '8 tens and 4 ones' }
+      { lead: '6.', prompt: 'Choose one official equivalent form for 68 + 16.', blankLines: ['68 + 16 = ___'], answers: [['7 tens and 14 ones||8 tens and 4 ones']], equation: '68 + 16 = 84', answer: '7 tens and 14 ones or 8 tens and 4 ones' }
     ], 'blank'),
     solvedVisual: additionVisual('Problems 4–6 solutions', [
       { lead: '4.', prompt: 'Two-day trip', blankLines: [], answers: [], equation: '129 + 78 = 207; 129 + 207 = 336', answer: '336 miles' },
-      { lead: '5.', prompt: '258 + 436', blankLines: [], answers: [], equation: '258 + 436 = 694; estimate 700', answer: '694' },
-      { lead: '6.', prompt: '68 + 16', blankLines: [], answers: [], equation: '68 + 16 = 84', answer: '8 tens and 4 ones' }
+      { lead: '5.', prompt: '258 + 436', blankLines: [], answers: [], equation: '258 + 436 = 694; estimate 300 + 400 = 700', answer: '694' },
+      { lead: '6.', prompt: '68 + 16', blankLines: [], answers: [], equation: '68 + 16 = 84', answer: 'The Teacher Guide accepts 7 tens and 14 ones or 8 tens and 4 ones.' }
     ], 'solved')
   },
   {
@@ -1748,7 +1824,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ], 'blank'),
     solvedVisual: subtractionVisual('Regroup 365 and subtract', [
       { lead: 'Model It', prompt: 'Regroup one hundred and one ten.', equation: '365 = 2 hundreds + 15 tens + 15 ones', answer: 'Equivalent regrouped form', model: { hundreds: 2, tens: 15, ones: 15, caption: 'The regrouped model still totals 365.' } },
-      { lead: 'Subtract', prompt: 'Subtract 186 by place.', equation: '15 − 6 = 9 ones; 15 − 8 = 7 tens; 2 − 1 = 1 hundred', answer: '179 flowers' }
+      { lead: 'Subtract', prompt: 'Subtract 186 by place.', equation: '365 − 186 = 179', answer: '15 − 6 = 9 ones; 15 − 8 = 7 tens; 2 − 1 = 1 hundred, so 179 flowers remain.' }
     ], 'solved')
   },
   {
@@ -1788,8 +1864,8 @@ const sourceProblems: readonly IReadySourceProblem[] = [
       { lead: '2.', prompt: 'Break apart and subtract 459 − 260.', lines: ['459 = ___ hundreds + ___ tens + ___ ones', 'or ___ hundreds + ___ tens + ___ ones', '260 = ___ hundreds + ___ tens + ___ ones', 'difference = ___'], answers: [['4', '5', '9'], ['3', '15', '9'], ['2', '6', '0'], ['199']] }
     ]),
     solvedVisual: subtractionVisual('Practice 1–2 solutions', [
-      { lead: '1.', prompt: '352 − 147', equation: '12 − 7 = 5; 4 − 4 = 0; 3 − 1 = 2', answer: '205' },
-      { lead: '2.', prompt: '459 − 260', equation: '459 = 3 hundreds + 15 tens + 9 ones; subtract 2 hundreds + 6 tens + 0 ones', answer: '1 hundred + 9 tens + 9 ones = 199' }
+      { lead: '1.', prompt: '352 − 147', equation: '352 − 147 = 205', answer: 'Regroup to 3 hundreds, 4 tens, and 12 ones; then subtract to get 205.' },
+      { lead: '2.', prompt: '459 − 260', equation: '459 − 260 = 199', answer: 'Regroup 459 as 3 hundreds, 15 tens, and 9 ones; subtract 2 hundreds, 6 tens, and 0 ones.' }
     ], 'solved')
   },
   {
@@ -1803,8 +1879,8 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ]),
     solvedVisual: subtractionVisual('Practice 3–5 solutions', [
       { lead: '3.', prompt: '905 − 425', equation: '905 − 425 = 480', answer: 'Rename 905 as 800, 100, and 5; subtract by place to leave 400, 80, and 0.' },
-      { lead: '4.', prompt: '252 − 136', equation: '12 − 6 = 6; 4 − 3 = 1; 2 − 1 = 1', answer: '116' },
-      { lead: '5.', prompt: '636 − 158', equation: '16 − 8 = 8; 12 − 5 = 7; 5 − 1 = 4', answer: '478' }
+      { lead: '4.', prompt: '252 − 136', equation: '252 − 136 = 116', answer: 'Regroup 1 ten as 10 ones; 12 − 6 = 6, 4 − 3 = 1, and 2 − 1 = 1.' },
+      { lead: '5.', prompt: '636 − 158', equation: '636 − 158 = 478', answer: 'Regroup twice; 16 − 8 = 8, 12 − 5 = 7, and 5 − 1 = 4.' }
     ], 'solved')
   },
   {
@@ -1891,7 +1967,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ], 'blank'),
     solvedVisual: subtractionVisual('Algorithm connected to place value', [
       { lead: 'Model It', prompt: 'Regroup one ten.', equation: '385 = 3 hundreds + 7 tens + 15 ones', answer: 'The total stays 385.', model: { hundreds: 3, tens: 7, ones: 15, caption: 'One ten becomes 10 ones before subtracting.' } },
-      { lead: 'Subtract', prompt: 'Subtract each place.', equation: '15 − 8 = 7; 7 − 5 = 2; 3 − 1 = 2', answer: '227' }
+      { lead: 'Subtract', prompt: 'Subtract each place.', equation: '385 − 158 = 227', answer: '15 − 8 = 7, 7 − 5 = 2, and 3 − 1 = 2.' }
     ], 'solved')
   },
   {
@@ -1932,8 +2008,8 @@ const sourceProblems: readonly IReadySourceProblem[] = [
       { lead: '2.', prompt: 'Complete the subtraction algorithm for 649 − 366.', lines: ['649 − 366 = ___'], answers: [['283']], openWorkspace: true }
     ]),
     solvedVisual: subtractionVisual('Practice 1–2 solutions', [
-      { lead: '1.', prompt: '960 − 849', equation: '10 − 9 = 1; 15 − 4 = 11 tens; 8 − 8 = 0 hundreds', answer: '111' },
-      { lead: '2.', prompt: '649 − 366', equation: '9 − 6 = 3 ones; regroup 1 hundred so 14 − 6 = 8 tens; 5 − 3 = 2 hundreds', answer: '283' }
+      { lead: '1.', prompt: '960 − 849', equation: '960 − 849 = 111', answer: 'Regroup 1 ten as 10 ones; 10 − 9 = 1, 5 − 4 = 1, and 9 − 8 = 1.' },
+      { lead: '2.', prompt: '649 − 366', equation: '649 − 366 = 283', answer: '9 − 6 = 3 ones; regroup 1 hundred so 14 − 6 = 8 tens; then 5 − 3 = 2 hundreds.' }
     ], 'solved')
   },
   {
@@ -1950,13 +2026,13 @@ const sourceProblems: readonly IReadySourceProblem[] = [
       { lead: '9.', prompt: 'Find 1,000 − 595.', equation: '1,000 − 595 = 405', answer: '405', answers: [['405']] }
     ], 'blank'),
     solvedVisual: subtractionVisual('Practice 3–9 solutions', [
-      { lead: '3.', prompt: '286 − 199', equation: '286 − 200 = 86; 86 + 1 = 87', answer: '87' },
+      { lead: '3.', prompt: '286 − 199', equation: '286 − 199 = 87', answer: 'Subtract 200 to get 86, then add 1 back to get 87.' },
       { lead: '4.', prompt: '800 − 512', equation: '800 − 500 − 12 = 300 − 12', answer: '288' },
-      { lead: '5.', prompt: '998 − 657', equation: '8 − 7 = 1; 9 − 5 = 4; 9 − 6 = 3', answer: '341' },
-      { lead: '6.', prompt: '865 − 328', equation: '15 − 8 = 7; 5 − 2 = 3; 8 − 3 = 5', answer: '537' },
-      { lead: '7.', prompt: '382 − 195', equation: '12 − 5 = 7; 17 − 9 = 8; 2 − 1 = 1', answer: '187' },
-      { lead: '8.', prompt: '280 − 153', equation: '10 − 3 = 7; 7 − 5 = 2; 2 − 1 = 1', answer: '127' },
-      { lead: '9.', prompt: '1,000 − 595', equation: '1,000 − 600 = 400; 400 + 5 = 405', answer: '405' }
+      { lead: '5.', prompt: '998 − 657', equation: '998 − 657 = 341', answer: 'Subtract each place without regrouping: 8 − 7 = 1, 9 − 5 = 4, and 9 − 6 = 3.' },
+      { lead: '6.', prompt: '865 − 328', equation: '865 − 328 = 537', answer: 'Regroup 1 ten; 15 − 8 = 7, 5 − 2 = 3, and 8 − 3 = 5.' },
+      { lead: '7.', prompt: '382 − 195', equation: '382 − 195 = 187', answer: 'Regroup twice; 12 − 5 = 7, 17 − 9 = 8, and 2 − 1 = 1.' },
+      { lead: '8.', prompt: '280 − 153', equation: '280 − 153 = 127', answer: 'Regroup 1 ten; 10 − 3 = 7, 7 − 5 = 2, and 2 − 1 = 1.' },
+      { lead: '9.', prompt: '1,000 − 595', equation: '1,000 − 595 = 405', answer: 'Subtract 600 to get 400, then add 5 back to get 405.' }
     ], 'solved')
   },
   {
@@ -1968,8 +2044,8 @@ const sourceProblems: readonly IReadySourceProblem[] = [
       { lead: '1.', prompt: 'Find 450 − 131.', equation: '450 − 131 = 319', answer: '319', answers: [['319']] }
     ], 'blank'),
     solvedVisual: subtractionVisual('Example and Problem 1 solutions', [
-      { lead: 'Example', prompt: '805 − 279', equation: '15 − 9 = 6; 9 − 7 = 2; 7 − 2 = 5', answer: '526' },
-      { lead: '1.', prompt: '450 − 131', equation: '10 − 1 = 9; 4 − 3 = 1; 4 − 1 = 3', answer: '319' }
+      { lead: 'Example', prompt: '805 − 279', equation: '805 − 279 = 526', answer: 'Regroup across the zero; 15 − 9 = 6, 9 − 7 = 2, and 7 − 2 = 5.' },
+      { lead: '1.', prompt: '450 − 131', equation: '450 − 131 = 319', answer: 'Regroup 1 ten; 10 − 1 = 9, 4 − 3 = 1, and 4 − 1 = 3.' }
     ], 'solved')
   },
   {
@@ -1981,7 +2057,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
       { lead: '3.', prompt: 'Find 205 − 110, then explain how Reth could have chosen 315.', equation: '205 − 110 = 95', answer: '95', answers: [['95']] }
     ], 'blank'),
     solvedVisual: subtractionVisual('Problems 2–3 solutions', [
-      { lead: '2.', prompt: '144 − 72', equation: '14 − 2 = 12 ones; 13 − 7 = 6 tens', answer: '72 teams' },
+      { lead: '2.', prompt: '144 − 72', equation: '144 − 72 = 72', answer: 'Regroup to subtract 2 ones and 7 tens; 72 teams still need to perform.' },
       { lead: '3.', prompt: '205 − 110', equation: '205 − 110 = 95; 205 + 110 = 315', answer: '95. Reth added 110 instead of subtracting it.' }
     ], 'solved')
   },
@@ -1994,9 +2070,9 @@ const sourceProblems: readonly IReadySourceProblem[] = [
       sourceNote: supplementalVisualNote,
       sections: [
         { kind: 'card-grid', label: '4. Compare all five official representations', cards: [
-          { label: 'A · crossed-out base-ten blocks', sections: [{ kind: 'place-value-blocks', hundreds: 0, tens: 5, ones: 6, caption: 'The correctly regrouped and crossed-out blocks leave 5 tens and 6 ones.' }] },
-          { label: 'B · incorrect base-ten trade', sections: [{ kind: 'place-value-blocks', hundreds: 0, tens: 6, ones: 6, caption: 'This incorrect trade leaves 6 tens and 6 ones.' }] },
-          { label: 'C · add on from 298', sections: [{ kind: 'number-line', ticks: [{ label: '290' }, { label: '298' }, { label: '300' }, { label: '350' }, { label: '354', target: true }, { label: '360' }], caption: 'The jumps are 2, 50, and 4; their sum is 56.' }] },
+          { label: 'A · base-ten block representation', sections: [{ kind: 'place-value-blocks', hundreds: 0, tens: 5, ones: 6, caption: 'Read the regrouped and crossed-out blocks, then decide whether this representation matches the difference.' }] },
+          { label: 'B · base-ten block representation', sections: [{ kind: 'equations', lines: ['Compare the regrouping in this candidate model with the value 354.'] }] },
+          { label: 'C · add on from 298', sections: [{ kind: 'number-line', ticks: [{ label: '290' }, { label: '298' }, { label: '300' }, { label: '350' }, { label: '354', target: true }, { label: '360' }], caption: 'Read the jumps from 298 to 354, then decide whether they represent the difference.' }] },
           { label: 'D · place-value equations', sections: [{ kind: 'equations', lines: ['2 hundreds − 2 hundreds = 0 hundreds', '15 tens − 9 tens = 6 tens', '14 ones − 8 ones = 6 ones'] }] },
           { label: 'E · vertical algorithm', sections: [{ kind: 'data-table', variant: 'place-value-chart', columns: ['Hundreds', 'Tens', 'Ones'], rows: [['2', '14', '14'], ['−2', '−9', '−8'], ['0', '5', '6']], label: 'Regrouped subtraction' }] }
         ] },
@@ -2010,7 +2086,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
       title: 'Representations and cucumber solution', sourceNote: supplementalVisualNote, sections: [
         { kind: 'card-grid', label: '4. A, C, and E represent 354 − 298 = 56', cards: [
           { label: 'A · correct ✓', sections: [{ kind: 'place-value-blocks', hundreds: 0, tens: 5, ones: 6, caption: 'The correctly regrouped blocks leave 56.' }] },
-          { label: 'B · not selected', sections: [{ kind: 'place-value-blocks', hundreds: 0, tens: 6, ones: 6, caption: 'The trade is incorrect because it leaves 9 tens after regrouping through the tens place.' }] },
+          { label: 'B · not selected', sections: [{ kind: 'equations', lines: ['The displayed block model does not preserve the value 354 while regrouping, so it cannot represent 354 − 298.'] }] },
           { label: 'C · correct ✓', sections: [{ kind: 'number-line', ticks: [{ label: '298' }, { label: '300' }, { label: '350' }, { label: '354', target: true }], caption: 'Add 2, then 50, then 4; total 56.' }] },
           { label: 'D · not selected', sections: [{ kind: 'equations', lines: ['The displayed place-value differences total 66, not 56.'] }] },
           { label: 'E · correct ✓', sections: [{ kind: 'data-table', variant: 'place-value-chart', columns: ['Hundreds', 'Tens', 'Ones'], rows: [['2', '14', '14'], ['−2', '−9', '−8'], ['0', '5', '6']], label: 'Regrouped subtraction' }] }
@@ -2028,11 +2104,24 @@ const sourceProblems: readonly IReadySourceProblem[] = [
       { lead: '7.', prompt: 'Find 308 + 625 − 245.', equation: '308 + 625 − 245 = 688', answer: '688', answers: [['688']] },
       { lead: '8. Math Journal', prompt: 'Explain how to find 379 − 284.', equation: '379 − 284 = 95', answer: '95', answers: [['95']] }
     ], 'blank'),
-    solvedVisual: subtractionVisual('Problems 6–8 solutions', [
-      { lead: '6.', prompt: '907 − 199', equation: '907 − 200 = 707; 707 + 1 = 708', answer: '708' },
-      { lead: '7.', prompt: '308 + 625 − 245', equation: '308 + 625 = 933; 933 − 245 = 688', answer: '688' },
-      { lead: '8. Math Journal', prompt: '379 − 284', equation: '9 − 4 = 5; 17 − 8 = 9; 2 − 2 = 0', answer: '95' }
-    ], 'solved')
+    solvedVisual: {
+      title: 'Problems 6–8 solutions',
+      sourceNote: supplementalVisualNote,
+      sections: [
+        ...subtractionVisual('Problem 6', [
+          { lead: '6.', prompt: '907 − 199', equation: '907 − 199 = 708', answer: 'Subtract 200 to get 707, then add 1 back to get 708.' }
+        ], 'solved').sections,
+        ...additionVisual('Problem 7 · first find the new total', [
+          { lead: '7. Step 1', prompt: 'Combine the craft sticks Tam has and buys.', blankLines: [], answers: [], equation: '308 + 625 = 933', answer: '933 craft sticks before the project' }
+        ], 'solved').sections,
+        ...subtractionVisual('Problem 7 · then subtract the sticks used', [
+          { lead: '7. Step 2', prompt: 'Subtract the 245 craft sticks used.', equation: '933 − 245 = 688', answer: '688 craft sticks remain.' }
+        ], 'solved').sections,
+        ...subtractionVisual('Problem 8 · Math Journal', [
+          { lead: '8. Math Journal', prompt: '379 − 284', equation: '379 − 284 = 95', answer: 'Regroup 1 hundred; 9 − 4 = 5, 17 − 8 = 9, and 2 − 2 = 0.' }
+        ], 'solved').sections
+      ]
+    }
   },
   {
     key: 'v1-u2-l4-s1-model-1-3', unit: 2, lesson: 4, session: 1, order: 1,
@@ -2041,8 +2130,8 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     blankVisual: {
       title: 'Model three groups of two kites',
       sections: [
-        { kind: 'array', label: '1. Draw 3 equal groups of 2 kites', rows: 3, columns: 2, item: 'triangle', caption: 'Use the open workspace to sketch three separate pairs.' },
-        { kind: 'source-response-workspace', label: '2–3. Connect the same model to equations', wide: true, columns: 1, parts: [
+        { kind: 'source-response-workspace', label: '1–3. Draw, add, and multiply', wide: true, columns: 1, parts: [
+          { lead: '1.', prompt: 'Draw 3 separate equal groups of 2 kites.', lines: [], printedLineCount: 7, openWorkspace: true },
           { lead: '2.', prompt: 'Write an addition equation for the total number of kites.', lines: ['___ + ___ + ___ = ___'], lineAnswers: [['2', '2', '2', '6']], printedLineCount: 3, interactiveLines: true, openWorkspace: true },
           { lead: '3.', prompt: 'Complete the equal-groups sentence and multiplication equation.', lines: ['___ equal groups of ___ is ___ kites in all.', '___ × ___ = ___'], lineAnswers: [['3', '2', '6'], ['3', '2', '6']], printedLineCount: 4, interactiveLines: true }
         ] }
@@ -2050,7 +2139,11 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     },
     solvedVisual: {
       title: 'Three pairs of kites', sourceNote: supplementalVisualNote, sections: [
-        { kind: 'array', label: '1. Three equal groups', rows: 3, columns: 2, item: 'triangle', caption: 'Three pairs show 3 equal groups of 2 kites.' },
+        { kind: 'card-grid', label: '1. Three equal groups', cards: [
+          { label: 'Pair 1', sections: [{ kind: 'array', rows: 1, columns: 2, item: 'triangle' }] },
+          { label: 'Pair 2', sections: [{ kind: 'array', rows: 1, columns: 2, item: 'triangle' }] },
+          { label: 'Pair 3', sections: [{ kind: 'array', rows: 1, columns: 2, item: 'triangle' }] }
+        ] },
         { kind: 'equations', label: '2–3. Read the model two ways', lines: ['2 + 2 + 2 = 6', '3 equal groups of 2 is 6 kites in all.', '3 × 2 = 6'] }
       ]
     }
@@ -2075,7 +2168,11 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     solvedVisual: {
       title: 'Factors and product shown two ways', sourceNote: supplementalVisualNote, sections: [
         { kind: 'card-grid', label: '4 and 6. Equal groups and an array', cards: [
-          { label: '3 equal groups of 4', sections: [{ kind: 'array', rows: 3, columns: 4, item: 'circle', caption: '3 groups with 4 flowers in each group' }] },
+          { label: '3 equal groups of 4', sections: [{ kind: 'card-grid', cards: [
+            { label: 'Group 1', sections: [{ kind: 'array', rows: 1, columns: 4, item: 'circle' }] },
+            { label: 'Group 2', sections: [{ kind: 'array', rows: 1, columns: 4, item: 'circle' }] },
+            { label: 'Group 3', sections: [{ kind: 'array', rows: 1, columns: 4, item: 'circle' }] }
+          ] }] },
           { label: '3 rows of 4', sections: [{ kind: 'array', rows: 3, columns: 4, item: 'square', caption: '3 rows, 4 columns, and 12 flowers in all' }] }
         ] },
         { kind: 'equations', label: '5. Meaning of the equation', lines: ['3 is a factor that tells how many equal groups.', 'The × means multiply.', '4 is a factor that tells how many are in each group.', '12 is the product; it tells how many are in all.', '3 × 4 = 12'] },
@@ -2126,8 +2223,8 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     sourceMarkers: ['Dakota visits a farm museum', '4 tractors with 3 wheels each', 'addition equation'],
     blankVisual: {
       title: 'Model the tractor wheels', sections: [
-        { kind: 'array', label: '3. Four equal groups of three wheels', rows: 4, columns: 3, item: 'circle', caption: 'Use the open workspace to draw four separate groups.' },
-        { kind: 'source-response-workspace', label: '4–5. Connect the drawing to equations', wide: true, columns: 1, parts: [
+        { kind: 'source-response-workspace', label: '3–5. Draw, add, and multiply', wide: true, columns: 1, parts: [
+          { lead: '3.', prompt: 'Draw 4 separate equal groups of 3 tractor wheels.', lines: [], printedLineCount: 7, openWorkspace: true },
           { lead: '4.', prompt: 'Write an addition equation for all the wheels.', lines: ['___ + ___ + ___ + ___ = ___'], lineAnswers: [['3', '3', '3', '3', '12']], printedLineCount: 3, interactiveLines: true },
           { lead: '5.', prompt: 'Complete the equal-groups sentence and multiplication equation.', lines: ['___ equal groups of ___ is ___ wheels in all.', '___ × ___ = ___'], lineAnswers: [['4', '3', '12'], ['4', '3', '12']], printedLineCount: 4, interactiveLines: true, openWorkspace: true }
         ] }
@@ -2135,7 +2232,12 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     },
     solvedVisual: {
       title: 'Tractor wheel solution', sourceNote: supplementalVisualNote, sections: [
-        { kind: 'array', label: '3. Four tractors with three wheels each', rows: 4, columns: 3, item: 'circle', caption: '4 equal groups of 3 wheels' },
+        { kind: 'card-grid', label: '3. Four tractors with three wheels each', cards: [
+          { label: 'Tractor 1', sections: [{ kind: 'array', rows: 1, columns: 3, item: 'circle' }] },
+          { label: 'Tractor 2', sections: [{ kind: 'array', rows: 1, columns: 3, item: 'circle' }] },
+          { label: 'Tractor 3', sections: [{ kind: 'array', rows: 1, columns: 3, item: 'circle' }] },
+          { label: 'Tractor 4', sections: [{ kind: 'array', rows: 1, columns: 3, item: 'circle' }] }
+        ] },
         { kind: 'equations', label: '4–5. Repeated addition and multiplication', lines: ['3 + 3 + 3 + 3 = 12', '4 equal groups of 3 is 12 wheels in all.', '4 × 3 = 12'] }
       ]
     }
@@ -2146,20 +2248,21 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     sourceMarkers: ['expression 4 x 5', 'using equal groups', 'using an array'],
     blankVisual: {
       title: 'Compare two models of 4 × 5', sections: [
-        { kind: 'card-grid', label: 'Draw both official model types', cards: [
-          { label: '1a. Equal groups', sections: [{ kind: 'array', rows: 4, columns: 5, item: 'circle', caption: 'Show 4 separate equal groups of 5.' }] },
-          { label: '2a. Array', sections: [{ kind: 'array', rows: 4, columns: 5, item: 'square', caption: 'Show 4 rows of 5.' }] }
-        ] },
         { kind: 'source-response-workspace', label: 'Describe each model and find the product', wide: true, columns: 2, parts: [
-          { lead: '1b–c.', prompt: 'Describe the equal-groups drawing and write the product.', lines: ['___ groups of ___', '4 × 5 = ___'], lineAnswers: [['4', '5'], ['20']], printedLineCount: 4, interactiveLines: true, openWorkspace: true },
-          { lead: '2b–c.', prompt: 'Describe the array and write the product.', lines: ['___ rows of ___', '4 × 5 = ___'], lineAnswers: [['4', '5'], ['20']], printedLineCount: 4, interactiveLines: true, openWorkspace: true }
+          { lead: '1a–c.', prompt: 'Draw equal groups to show 4 × 5. Describe the drawing and write the product.', lines: ['___ groups of ___', '4 × 5 = ___'], lineAnswers: [['4', '5'], ['20']], printedLineCount: 7, interactiveLines: true, openWorkspace: true },
+          { lead: '2a–c.', prompt: 'Draw an array to show 4 × 5. Describe the array and write the product.', lines: ['___ rows of ___', '4 × 5 = ___'], lineAnswers: [['4', '5'], ['20']], printedLineCount: 7, interactiveLines: true, openWorkspace: true }
         ] }
       ]
     },
     solvedVisual: {
       title: 'Equal groups and arrays show the same product', sourceNote: supplementalVisualNote, sections: [
         { kind: 'card-grid', label: 'Two models for 4 × 5', cards: [
-          { label: '1. Equal groups', sections: [{ kind: 'array', rows: 4, columns: 5, item: 'circle', caption: '4 equal groups of 5 apples' }] },
+          { label: '1. Equal groups', sections: [{ kind: 'card-grid', cards: [
+            { label: 'Group 1', sections: [{ kind: 'array', rows: 1, columns: 5, item: 'circle' }] },
+            { label: 'Group 2', sections: [{ kind: 'array', rows: 1, columns: 5, item: 'circle' }] },
+            { label: 'Group 3', sections: [{ kind: 'array', rows: 1, columns: 5, item: 'circle' }] },
+            { label: 'Group 4', sections: [{ kind: 'array', rows: 1, columns: 5, item: 'circle' }] }
+          ] }] },
           { label: '2. Array', sections: [{ kind: 'array', rows: 4, columns: 5, item: 'square', caption: '4 rows of 5 apples' }] }
         ] },
         { kind: 'equations', label: 'The product is the same', lines: ['5 + 5 + 5 + 5 = 20', '4 × 5 = 20'] }
@@ -2168,7 +2271,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
   },
   {
     key: 'v1-u2-l4-s2-model-connect', unit: 2, lesson: 4, session: 2, order: 2,
-    label: 'Model It 3–4 + Connect It 5–6', title: 'Use square tiles and explain the shared meaning', printedPages: '106', viewerPage: 118,
+    label: 'Model + Connect 3–6', title: 'Use square tiles and explain the shared meaning', printedPages: '106', viewerPage: 118,
     sourceMarkers: ['square tiles to model multiplication', '5 X 3 = 15', 'show and find 4 x 7'],
     blankVisual: {
       title: 'Use rectangles of square tiles', sections: [
@@ -2212,7 +2315,11 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     },
     solvedVisual: {
       title: 'Ladybug model solution', sourceNote: supplementalVisualNote, sections: [
-        { kind: 'array', label: 'Three equal groups of four ladybugs', rows: 3, columns: 4, item: 'circle', caption: '3 groups; 4 ladybugs in each group; 12 ladybugs in all.' },
+        { kind: 'card-grid', label: 'Three equal groups of four ladybugs', cards: [
+          { label: 'Leaf 1', sections: [{ kind: 'array', rows: 1, columns: 4, item: 'circle' }] },
+          { label: 'Leaf 2', sections: [{ kind: 'array', rows: 1, columns: 4, item: 'circle' }] },
+          { label: 'Leaf 3', sections: [{ kind: 'array', rows: 1, columns: 4, item: 'circle' }] }
+        ] },
         { kind: 'equations', label: 'Problems 1–4', lines: ['3 groups', '4 ladybugs in each group', '12 ladybugs in all', '3 × 4 = 12'] }
       ]
     }
@@ -2223,13 +2330,13 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     sourceMarkers: ['basketball cart has 3 shelves', 'expression 3 x 5', 'represents 3 x 6', 'Alex says'],
     blankVisual: {
       title: 'Practice problems 5–9', sections: [
-        { kind: 'array', label: '5–7. Basketball cart', rows: 3, columns: 5, item: 'circle', caption: 'Complete 3 shelves so each row has 5 basketballs.' },
+        { kind: 'array', label: '5–7. Basketball cart before you complete it', rows: 3, columns: 1, item: 'circle', caption: 'The official picture starts with 1 basketball on each of 3 shelves. Draw the rest to show 3 × 5.' },
         { kind: 'card-grid', label: '8. Compare all five official choices for 3 × 6', cards: [
-          { label: 'A', sections: [{ kind: 'equations', lines: ['3 + 3 + 3 + 3 + 3 + 3'] }] },
+          { label: 'A', sections: [{ kind: 'equations', lines: ['3 + 3 + 3 + 3 + 3'] }] },
           { label: 'B', sections: [{ kind: 'note', text: '3 groups of 6' }] },
           { label: 'C', sections: [{ kind: 'array', rows: 3, columns: 6, item: 'square', caption: '3 rows of 6' }] },
           { label: 'D', sections: [{ kind: 'note', text: 'One group of 3 and one group of 6' }] },
-          { label: 'E', sections: [{ kind: 'array', rows: 6, columns: 3, item: 'square', caption: '6 groups of 3' }] }
+          { label: 'E', sections: [{ kind: 'note', text: 'Six outlined groups with different numbers of dots' }] }
         ] },
         { kind: 'source-response-workspace', label: 'Finish problems 5–9', wide: true, columns: 1, parts: [
           { lead: '5–7.', prompt: 'Complete the basketball array labels and equation.', lines: ['rows: ___', 'basketballs in each row: ___', 'basketballs in all: ___', '___ × ___ = ___'], lineAnswers: [['3'], ['5'], ['15'], ['3', '5', '15']], printedLineCount: 5, interactiveLines: true, openWorkspace: true },
@@ -2242,11 +2349,11 @@ const sourceProblems: readonly IReadySourceProblem[] = [
       title: 'Basketball array and representation solutions', sourceNote: supplementalVisualNote, sections: [
         { kind: 'array', label: 'Problems 5–7', rows: 3, columns: 5, item: 'circle', caption: '3 rows, 5 basketballs in each row, and 15 in all; 3 × 5 = 15.' },
         { kind: 'card-grid', label: '8. B and C represent 3 × 6', cards: [
-          { label: 'A · not selected', sections: [{ kind: 'equations', lines: ['3 + 3 + 3 + 3 + 3 + 3 = 18', 'This is 6 groups of 3.'] }] },
+          { label: 'A · not selected', sections: [{ kind: 'equations', lines: ['3 + 3 + 3 + 3 + 3 = 15', 'This is 5 groups of 3.'] }] },
           { label: 'B · correct ✓', sections: [{ kind: 'note', text: '3 groups of 6' }] },
           { label: 'C · correct ✓', sections: [{ kind: 'array', rows: 3, columns: 6, item: 'square', caption: '3 rows of 6' }] },
           { label: 'D · not selected', sections: [{ kind: 'note', text: 'One group of 3 and one group of 6 are not equal groups.' }] },
-          { label: 'E · not selected', sections: [{ kind: 'array', rows: 6, columns: 3, item: 'square', caption: 'This is 6 groups of 3.' }] }
+          { label: 'E · not selected', sections: [{ kind: 'note', text: 'The six outlined groups do not all contain the same number of dots.' }] }
         ] },
         { kind: 'note', label: '9. Teacher Guide possible explanation', text: 'No. Alex’s drawing shows 4 + 6. To show 4 × 6, Alex should draw 4 equal groups or rows of 6 objects.' }
       ]
@@ -2259,7 +2366,12 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     blankVisual: {
       title: 'Apply It problems 1–3', sections: [
         { kind: 'card-grid', label: 'Read the official visual structures', cards: [
-          { label: '1. Robert’s unequal model', sections: [{ kind: 'array', rows: 4, columns: 7, item: 'circle', caption: 'Robert made 4 groups of 7 eggs, not 4 groups of 6.' }] },
+          { label: '1. Robert’s four groups', sections: [
+            { kind: 'array', rows: 1, columns: 7, item: 'circle', caption: 'Group 1' },
+            { kind: 'array', rows: 1, columns: 7, item: 'circle', caption: 'Group 2' },
+            { kind: 'array', rows: 1, columns: 7, item: 'circle', caption: 'Group 3' },
+            { kind: 'array', rows: 1, columns: 6, item: 'circle', caption: 'Group 4' }
+          ] },
           { label: '3. Fola’s original array', sections: [{ kind: 'array', rows: 3, columns: 2, item: 'triangle', caption: '3 × 2 = 6' }] }
         ] },
         { kind: 'source-response-workspace', label: 'Explain, write, and analyze', wide: true, columns: 1, parts: [
@@ -2291,12 +2403,8 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     sourceMarkers: ['Ravi', 'cousins send him coins', '5 x 8', 'story problem for 3 X 4'],
     blankVisual: {
       title: 'Refine the meaning of multiplication', sections: [
-        { kind: 'card-grid', label: '4 Part A. Choose a correct code-native model for 5 × 8', cards: [
-          { label: 'Equal groups', sections: [{ kind: 'array', rows: 5, columns: 8, item: 'circle', caption: '5 separate groups of 8 coins' }] },
-          { label: 'Array', sections: [{ kind: 'array', rows: 5, columns: 8, item: 'square', caption: '5 rows of 8 coins' }] }
-        ] },
         { kind: 'source-response-workspace', label: 'Write the official responses', wide: true, columns: 1, parts: [
-          { lead: '4 Part A.', prompt: 'Explain what each number in 5 × 8 means and find the total.', lines: ['___ × ___ = ___ coins'], lineAnswers: [['5', '8', '40']], printedLineCount: 5, interactiveLines: true, openWorkspace: true },
+          { lead: '4 Part A.', prompt: 'Draw a model for 5 × 8. Explain what each number means and find the total.', lines: ['___ × ___ = ___ coins'], lineAnswers: [['5', '8', '40']], printedLineCount: 8, interactiveLines: true, openWorkspace: true },
           { lead: '4 Part B.', prompt: 'Write a story problem about Ravi’s coins that matches your model. Tell how many coins he has in all.', lines: ['coins in all: ___'], lineAnswers: [['40']], printedLineCount: 6, interactiveLines: true, openWorkspace: true },
           { lead: 'Math Journal', prompt: 'Write and solve a story problem for 3 × 4. Explain each number.', lines: ['___ × ___ = ___'], lineAnswers: [['3', '4', '12']], printedLineCount: 7, interactiveLines: true, openWorkspace: true }
         ] }
@@ -2320,7 +2428,19 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     label: 'Try It', title: 'Find the legs on six crabs', printedPages: '113', viewerPage: 125,
     sourceMarkers: ['Jade sees 6 black crabs', 'Each crab has 10 legs', 'How many legs'],
     blankVisual: multiplicationVisual('Model six groups of ten legs', [{ lead: 'Try It', prompt: 'Six crabs have 10 legs each. How many legs does Jade see?', rows: 6, columns: 10, equation: '6 × 10 = 60', answer: '60 legs', item: 'dot' }], 'blank'),
-    solvedVisual: multiplicationVisual('Six groups of ten', [{ lead: 'Try It', prompt: 'Skip-count six tens.', rows: 6, columns: 10, equation: '10, 20, 30, 40, 50, 60; 6 × 10 = 60', answer: '60 legs', item: 'dot' }], 'solved')
+    solvedVisual: {
+      title: 'Six equal groups of ten', sourceNote: supplementalVisualNote, sections: [
+        { kind: 'card-grid', label: 'One group for each crab', cards: [
+          { label: 'Crab 1 · 10 legs', sections: [{ kind: 'array', rows: 2, columns: 5, item: 'dot' }] },
+          { label: 'Crab 2 · 10 legs', sections: [{ kind: 'array', rows: 2, columns: 5, item: 'dot' }] },
+          { label: 'Crab 3 · 10 legs', sections: [{ kind: 'array', rows: 2, columns: 5, item: 'dot' }] },
+          { label: 'Crab 4 · 10 legs', sections: [{ kind: 'array', rows: 2, columns: 5, item: 'dot' }] },
+          { label: 'Crab 5 · 10 legs', sections: [{ kind: 'array', rows: 2, columns: 5, item: 'dot' }] },
+          { label: 'Crab 6 · 10 legs', sections: [{ kind: 'array', rows: 2, columns: 5, item: 'dot' }] }
+        ] },
+        { kind: 'equations', label: 'Skip-count the six equal groups', lines: ['10, 20, 30, 40, 50, 60', '10 + 10 + 10 + 10 + 10 + 10 = 60', '6 × 10 = 60 legs'] }
+      ]
+    }
   },
   {
     key: 'v1-u2-l5-s1-connect', unit: 2, lesson: 5, session: 1, order: 2,
@@ -2340,7 +2460,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
   },
   {
     key: 'v1-u2-l5-s1-prepare', unit: 2, lesson: 5, session: 1, order: 3,
-    label: 'Prepare', title: 'Organize multiplication with 0, 1, and 10', printedPages: '115', viewerPage: 127,
+    label: 'Prepare', title: 'Organize multiplication with 0, 1, 2, 5, and 10', printedPages: '115', viewerPage: 127,
     sourceMarkers: ['Prepare for Multiplying with 0, 1', 'what you know about multiplication', 'multiplication fact is shown'],
     blankVisual: {
       title: 'Prepare for multiplying with 0, 1, 2, 5, and 10', sections: [
@@ -2375,10 +2495,22 @@ const sourceProblems: readonly IReadySourceProblem[] = [
   },
   {
     key: 'v1-u2-l5-s1-practice', unit: 2, lesson: 5, session: 1, order: 4,
-    label: 'Practice', title: 'Find the days in five weeks', printedPages: '116', viewerPage: 128,
+    label: 'Practice 3–4', title: 'Find the days in five weeks', printedPages: '116', viewerPage: 128,
     sourceMarkers: ['5 weeks in the summer', 'Each week has 7 days', 'How many days'],
     blankVisual: multiplicationVisual('Five weeks of seven days', [{ lead: '3–4.', prompt: 'Hugo stays for 5 weeks, with 7 days in each week. Solve and check.', rows: 5, columns: 7, equation: '5 × 7 = 35', answer: '35 days', item: 'square' }], 'blank'),
-    solvedVisual: multiplicationVisual('Week model and check', [{ lead: '3–4.', prompt: 'Five equal groups of seven', rows: 5, columns: 7, equation: '7 + 7 + 7 + 7 + 7 = 35; 5 × 7 = 35', answer: '35 days', item: 'square' }], 'solved')
+    solvedVisual: {
+      title: 'Five equal groups of seven days', sourceNote: supplementalVisualNote, sections: [
+        { kind: 'card-grid', label: 'One group for each week', cards: [
+          { label: 'Week 1', sections: [{ kind: 'array', rows: 1, columns: 7, item: 'square' }] },
+          { label: 'Week 2', sections: [{ kind: 'array', rows: 1, columns: 7, item: 'square' }] },
+          { label: 'Week 3', sections: [{ kind: 'array', rows: 1, columns: 7, item: 'square' }] },
+          { label: 'Week 4', sections: [{ kind: 'array', rows: 1, columns: 7, item: 'square' }] },
+          { label: 'Week 5', sections: [{ kind: 'array', rows: 1, columns: 7, item: 'square' }] }
+        ] },
+        { kind: 'equations', label: 'Solve and check', lines: ['7 + 7 + 7 + 7 + 7 = 35', '5 × 7 = 35', '5, 10, 15, 20, 25, 30, 35'] },
+        { kind: 'note', label: 'Answer', text: 'Hugo is at his mom’s house for 35 days.' }
+      ]
+    }
   },
   {
     key: 'v1-u2-l5-s2-try-model', unit: 2, lesson: 5, session: 2, order: 1,
@@ -2410,7 +2542,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
   },
   {
     key: 'v1-u2-l5-s2-apply', unit: 2, lesson: 5, session: 2, order: 3,
-    label: 'Apply It', title: 'Compare 5 × 10 and 10 × 5 and solve 8 × 5', printedPages: '120', viewerPage: 132,
+    label: 'Apply It 4–6', title: 'Compare 5 × 10 and 10 × 5 and solve 8 × 5', printedPages: '120', viewerPage: 132,
     sourceMarkers: ['5 groups of 10', '10 groups of 5', 'airport bus', 'Each row has'],
     blankVisual: multiplicationVisual('Apply 5s and 10s facts', [
       { lead: '4.', prompt: 'How much is 5 groups of 10?', rows: 5, columns: 10, equation: '5 × 10 = 50', answer: '50' },
@@ -2465,8 +2597,12 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ]),
     solvedVisual: {
       title: 'One item per group versus empty groups', sourceNote: supplementalVisualNote, sections: [
-        { kind: 'array', label: '6 × 1', rows: 6, columns: 1, item: 'dot', caption: 'Six groups with one in each group total 6. Meena is right.' },
-        { kind: 'note', label: '6 × 0', text: 'Six empty groups contain 0 objects, so 6 × 0 = 0. Rene’s stated product of 6 is not correct.' }
+        { kind: 'card-grid', label: 'Compare the same six groups', cards: [
+          { label: '6 × 1 · one in every group', sections: [{ kind: 'array', rows: 6, columns: 1, item: 'dot', caption: 'Six groups with one in each group total 6.' }] },
+          { label: '6 × 0 · every group is empty', sections: [{ kind: 'equations', lines: ['Group 1: 0', 'Group 2: 0', 'Group 3: 0', 'Group 4: 0', 'Group 5: 0', 'Group 6: 0'] }] }
+        ] },
+        { kind: 'equations', label: 'Read the models', lines: ['6 × 1 = 6', '6 × 0 = 0'] },
+        { kind: 'note', label: 'Who is right?', text: 'Meena is right. Rene’s stated product of 6 is not correct because six empty groups contain 0 objects.' }
       ]
     }
   },
@@ -2629,14 +2765,19 @@ const sourceProblems: readonly IReadySourceProblem[] = [
   },
   {
     key: 'v1-u2-l6-s1-practice', unit: 2, lesson: 6, session: 1, order: 3,
-    label: 'Practice', title: 'Count four pods with six beans each', printedPages: '138', viewerPage: 150,
+    label: 'Practice 3–4', title: 'Count four pods with six beans each', printedPages: '138', viewerPage: 150,
     sourceMarkers: ['4 butter bean pods', '6 beans', 'How many butter beans'],
     blankVisual: multiplicationVisual('Butter bean model', [{ lead: '3–4.', prompt: 'Four pods have 6 beans each. Solve and check.', rows: 4, columns: 6, equation: '4 × 6 = 24', answer: '24 beans', item: 'circle' }], 'blank'),
-    solvedVisual: multiplicationVisual('Butter bean solution', [{ lead: '3–4.', prompt: 'Break four groups into two pairs.', rows: 4, columns: 6, equation: '(2 × 6) + (2 × 6) = 12 + 12 = 24', answer: '24 beans', item: 'circle' }], 'solved')
+    solvedVisual: {
+      title: 'Butter bean solution', sourceNote: supplementalVisualNote, sections: [
+        { kind: 'array', label: '4 × 6', rows: 4, columns: 6, item: 'circle', splitAfterColumns: 1, caption: 'Break 6 into 1 and 5.' },
+        { kind: 'equations', label: 'Multiply, add, and check', lines: ['(4 × 1) + (4 × 5) = 4 + 20 = 24', '4 × 6 = 24 beans'] }
+      ]
+    }
   },
   {
     key: 'v1-u2-l6-s2-try-model', unit: 2, lesson: 6, session: 2, order: 1,
-    label: 'Try It + Model It', title: 'Find holes on a 4-by-3 konane board', printedPages: '139–140', viewerPage: 151,
+    label: 'Try It + Picture It + Model It', title: 'Find holes on a 4-by-3 konane board', printedPages: '139–140', viewerPage: 151,
     sourceMarkers: ['konane game board', '4 rows', '3 holes', 'break the array'],
     blankVisual: multiplicationVisual('Model four rows of three', [{ lead: 'Try It', prompt: 'A konane board has 4 rows with 3 holes in each row.', rows: 4, columns: 3, equation: '4 × 3 = 12', answer: '12 holes', item: 'circle' }], 'blank'),
     solvedVisual: { title: 'Break 3 into 1 and 2', sourceNote: supplementalVisualNote, sections: [
@@ -2674,10 +2815,13 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     label: 'Practice 5–6', title: 'Match ×3 decompositions and solve a bird-feeder context', printedPages: '144', viewerPage: 156,
     sourceMarkers: ['pair of multiplication equations', '4 trees', '3 bird feeders'],
     blankVisual: responseWorkspace('Practice problems 5–6', [
-      { lead: '5.', prompt: 'Complete the five official ×3 facts.', lines: ['5×3=___', '6×3=___', '7×3=___', '8×3=___', '9×3=___'], answers: [['15'], ['18'], ['21'], ['24'], ['27']] },
+      { lead: '5.', prompt: 'Match each ×3 fact to its ×2 and ×1 partial facts.', lines: ['5×3=___; 5×2=___; 5×1=___', '(6×1)+(6×2)=___; 6×1=___; 6×2=___', '7×3=___; 7×2=___; 7×1=___', '(8×2)+(8×1)=___; 8×2=___; 8×1=___', '9×3=___; 9×1=___; 9×2=___'], answers: [['15', '10', '5'], ['18', '6', '12'], ['21', '14', '7'], ['24', '16', '8'], ['27', '9', '18']] },
       { lead: '6.', prompt: 'Four trees have 3 feeders each.', lines: ['4 × 3 = ___'], answers: [['12']], openWorkspace: true }
     ]),
-    solvedVisual: { title: '×3 fact solutions', sourceNote: supplementalVisualNote, sections: [{ kind: 'equations', label: 'Break apart 3 as 1+2', lines: ['5+10=15', '6+12=18', '7+14=21', '8+16=24', '9+18=27', '4×3=12 feeders'] }] }
+    solvedVisual: { title: '×3 fact matches and bird-feeder solution', sourceNote: supplementalVisualNote, sections: [
+      { kind: 'equations', label: 'Problem 5 · match each ×3 fact', lines: ['5×3=15 ↔ 5×2=10 and 5×1=5', '(6×1)+(6×2)=18 ↔ 6×1=6 and 6×2=12', '7×3=21 ↔ 7×2=14 and 7×1=7', '(8×2)+(8×1)=24 ↔ 8×2=16 and 8×1=8', '9×3=27 ↔ 9×1=9 and 9×2=18'] },
+      { kind: 'array', label: 'Problem 6 · 4 trees with 3 feeders each', rows: 4, columns: 3, item: 'dot', splitAfterColumns: 2, caption: '(4×2)+(4×1)=8+4=12 bird feeders.' }
+    ] }
   },
   {
     key: 'v1-u2-l6-s3-try-model', unit: 2, lesson: 6, session: 3, order: 1,
@@ -2709,7 +2853,10 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     label: 'Practice 1–2', title: 'Find three groups of four', printedPages: '149', viewerPage: 161,
     sourceMarkers: ['Practice Multiplying', 'solar panels', '3 x 4'],
     blankVisual: multiplicationVisual('Practice 3 × 4', [{ lead: '1–2.', prompt: 'Use the official array to find 3 groups of 4 and explain the strategy.', rows: 3, columns: 4, equation: '3 × 4 = 12', answer: '12', item: 'dot' }], 'blank'),
-    solvedVisual: multiplicationVisual('Three groups of four', [{ lead: '1–2.', prompt: 'Break 4 as 2+2.', rows: 3, columns: 4, equation: '(3×2)+(3×2)=6+6=12', answer: '12', item: 'dot' }], 'solved')
+    solvedVisual: { title: 'Three groups of four', sourceNote: supplementalVisualNote, sections: [
+      { kind: 'array', label: '3 × 4', rows: 3, columns: 4, item: 'dot', splitAfterColumns: 2, caption: 'Break 4 into 2 and 2.' },
+      { kind: 'equations', label: 'Double a known fact', lines: ['(3×2)+(3×2)=6+6=12', '3×4=12'] }
+    ] }
   },
   {
     key: 'v1-u2-l6-s3-practice-3-6', unit: 2, lesson: 6, session: 3, order: 4,
@@ -2717,20 +2864,23 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     sourceMarkers: ['Complete these 4s facts', 'Moses drew the array', 'break apart the same array'],
     blankVisual: responseWorkspace('Practice problems 3–6', [
       { lead: '3.', prompt: 'Complete the six official 4s facts.', lines: ['1×4=___', '7×4=___', '6×4=___', '10×4=___', '8×4=___', '5×4=___'], answers: [['4'], ['28'], ['24'], ['40'], ['32'], ['20']] },
-      { lead: '4–6.', prompt: 'Name and break apart the 9-by-4 array.', lines: ['9 × 4 = ___', '(9×2)+(9×2)=___+___=___'], answers: [['36'], ['18', '18', '36']], openWorkspace: true }
+      { lead: '4.', prompt: 'Name the array Moses drew.', lines: ['9 × 4 = ___'], answers: [['36']] },
+      { lead: '5.', prompt: 'Break 4 into 3 and 1.', lines: ['(9×3)+(9×1)=___+___=___'], answers: [['27', '9', '36']] },
+      { lead: '6.', prompt: 'Describe another way to break apart the same array.', lines: ['(9×2)+(9×2)=___+___=___'], answers: [['18', '18', '36']], openWorkspace: true }
     ]),
     solvedVisual: { title: '4s facts and Moses’s array', sourceNote: supplementalVisualNote, sections: [
       { kind: 'equations', label: '4s facts', lines: ['4, 28, 24, 40, 32, 20'] },
-      { kind: 'array', label: '9 × 4', rows: 9, columns: 4, item: 'square', splitAfterColumns: 2, caption: '(9×2)+(9×2)=18+18=36.' }
+      { kind: 'array', label: 'Problems 4–5 · break 4 into 3 and 1', rows: 9, columns: 4, item: 'square', splitAfterColumns: 3, caption: '(9×3)+(9×1)=27+9=36.' },
+      { kind: 'equations', label: 'Problem 6 · another way', lines: ['(9×2)+(9×2)=18+18=36', '9×4=36'] }
     ] }
   },
   {
     key: 'v1-u2-l6-s4-try-model', unit: 2, lesson: 6, session: 4, order: 1,
-    label: 'Try It + Model It', title: 'Break four groups of six flowers into known facts', printedPages: '151–152', viewerPage: 163,
+    label: 'Try It + Model It + Picture It', title: 'Break four groups of six flowers into known facts', printedPages: '151–152', viewerPage: 163,
     sourceMarkers: ['Felipe has 4 vases', '6 flowers', 'Break apart'],
     blankVisual: multiplicationVisual('Flowers in four vases', [{ lead: 'Try It', prompt: 'Four vases hold 6 flowers each.', rows: 4, columns: 6, equation: '4 × 6 = 24', answer: '24 flowers', item: 'circle' }], 'blank'),
     solvedVisual: { title: 'Two ways to break 4 × 6', sourceNote: supplementalVisualNote, sections: [
-      { kind: 'array', label: 'Break columns', rows: 4, columns: 6, item: 'circle', splitAfterColumns: 3, caption: '(4×3)+(4×3)=12+12=24.' },
+      { kind: 'array', label: 'Model It · break 6 into 5 and 1', rows: 4, columns: 6, item: 'circle', splitAfterColumns: 5, caption: '(4×5)+(4×1)=20+4=24.' },
       { kind: 'array', label: 'Break groups', rows: 4, columns: 6, item: 'circle', splitAfterRows: 2, caption: '(2×6)+(2×6)=12+12=24.' }
     ] }
   },
@@ -2740,12 +2890,12 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     sourceMarkers: ['break apart the first or the second factor', '3 x 6', 'two different ways', '8 x 6'],
     blankVisual: responseWorkspace('Connect and apply multiplying by 6', [
       { lead: '4.', prompt: 'Show two ways to break apart 3×6.', lines: ['(3×3)+(3×3)=___+___=___', '(1×6)+(2×6)=___+___=___'], answers: [['9', '9', '18'], ['6', '12', '18']] },
-      { lead: '5.', prompt: 'Find 5×6 by breaking 6 apart.', lines: ['(5×3)+(5×3)=___+___=___'], answers: [['15', '15', '30']] },
+      { lead: '5.', prompt: 'Find 5×6 by breaking 6 into 4 and 2.', lines: ['(5×4)+(5×2)=___+___=___'], answers: [['20', '10', '30']] },
       { lead: '6.', prompt: 'Choose the expressions that find 8×6.', lines: ['Correct choices: ___, ___, ___'], answers: [['A', 'C', 'E']] }
     ]),
     solvedVisual: { title: '×6 decomposition solutions', sourceNote: supplementalVisualNote, sections: [
       { kind: 'array', label: '3 × 6', rows: 3, columns: 6, item: 'dot', splitAfterColumns: 3, caption: '9+9=18; splitting the rows gives 6+12=18.' },
-      { kind: 'array', label: '5 × 6', rows: 5, columns: 6, item: 'dot', splitAfterColumns: 3, caption: '15+15=30.' },
+      { kind: 'array', label: '5 × 6', rows: 5, columns: 6, item: 'dot', splitAfterColumns: 4, caption: '(5×4)+(5×2)=20+10=30.' },
       { kind: 'equations', label: 'Problem 6', lines: ['A, C, and E each total 48.'] }
     ] }
   },
@@ -2753,52 +2903,63 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     key: 'v1-u2-l6-s4-practice-1-3', unit: 2, lesson: 6, session: 4, order: 3,
     label: 'Practice 1–3', title: 'Break a 4-by-6 array', printedPages: '155', viewerPage: 167,
     sourceMarkers: ['Practice Multiplying', '4 x 6', 'smaller arrays', 'Add the two products'],
-    blankVisual: multiplicationVisual('Practice 4 × 6', [{ lead: '1–3.', prompt: 'Draw, split, and solve 4 × 6.', rows: 4, columns: 6, equation: '(4×3)+(4×3)=12+12=24', answer: '24', item: 'dot' }], 'blank'),
-    solvedVisual: multiplicationVisual('Four rows of six', [{ lead: '1–3.', prompt: 'Split six columns into 3 and 3.', rows: 4, columns: 6, equation: '(4×3)+(4×3)=12+12=24', answer: '24', item: 'dot' }], 'solved')
+    blankVisual: responseWorkspace('Practice 4 × 6', [
+      { lead: '1–3.', prompt: 'Draw a 4-by-6 array, split it into two smaller arrays, write each smaller fact, and add the products.', lines: ['4×___=___', '4×___=___', '4×6=___'], answers: [['2', '8'], ['4', '16'], ['24']], openWorkspace: true }
+    ]),
+    solvedVisual: { title: 'Four rows of six', sourceNote: supplementalVisualNote, sections: [
+      { kind: 'array', label: 'Break 6 into 2 and 4', rows: 4, columns: 6, item: 'dot', splitAfterColumns: 2, caption: 'The smaller arrays show 4×2 and 4×4.' },
+      { kind: 'equations', label: 'Add the products', lines: ['4×2=8', '4×4=16', '8+16=24', '4×6=24'] }
+    ] }
   },
   {
     key: 'v1-u2-l6-s4-practice-4-5', unit: 2, lesson: 6, session: 4, order: 4,
     label: 'Practice 4–5', title: 'Match ×6 decompositions and solve an apartment context', printedPages: '156', viewerPage: 168,
     sourceMarkers: ['pair of multiplication equations', '3 floors', '6 apartments'],
     blankVisual: responseWorkspace('Practice problems 4–5', [
-      { lead: '4.', prompt: 'Complete the official ×6 facts.', lines: ['5×6=___', '9×6=___', '7×6=___', '6×6=___', '8×6=___'], answers: [['30'], ['54'], ['42'], ['36'], ['48']] },
+      { lead: '4.', prompt: 'Match each ×6 fact to its two partial facts.', lines: ['5×6=___; 5×3=___; 5×3=___', '(9×5)+(9×1)=___; 9×5=___; 9×1=___', '7×6=___; 7×2=___; 7×4=___', '(6×4)+(6×2)=___; 6×4=___; 6×2=___', '8×6=___; 4×6=___; 4×6=___'], answers: [['30', '15', '15'], ['54', '45', '9'], ['42', '14', '28'], ['36', '24', '12'], ['48', '24', '24']] },
       { lead: '5.', prompt: 'Three floors have 6 apartments each.', lines: ['3 × 6 = ___'], answers: [['18']], openWorkspace: true }
     ]),
-    solvedVisual: { title: '×6 fact matches', sourceNote: supplementalVisualNote, sections: [{ kind: 'equations', label: 'Completed products', lines: ['5×6=30', '9×6=54', '7×6=42', '6×6=36', '8×6=48', '3×6=18 apartments'] }] }
+    solvedVisual: { title: '×6 fact matches and apartment solution', sourceNote: supplementalVisualNote, sections: [
+      { kind: 'equations', label: 'Problem 4 · match each ×6 fact', lines: ['5×6=30 matches 5×3=15 and 5×3=15', '(9×5)+(9×1)=54 matches 9×5=45 and 9×1=9', '7×6=42 matches 7×2=14 and 7×4=28', '(6×4)+(6×2)=36 matches 6×4=24 and 6×2=12', '8×6=48 matches 4×6=24 and 4×6=24'] },
+      { kind: 'array', label: 'Problem 5 · 3 floors with 6 apartments each', rows: 3, columns: 6, item: 'dot', splitAfterColumns: 3, caption: '(3×3)+(3×3)=9+9=18 apartments.' }
+    ] }
   },
   {
     key: 'v1-u2-l6-s5-example', unit: 2, lesson: 6, session: 5, order: 1,
-    label: 'Example', title: 'Break apart seven groups of four shells', printedPages: '157', viewerPage: 169,
-    sourceMarkers: ['Toya is making 7 cowrie shell bracelets', 'uses 4 shells', 'break apart 4'],
-    blankVisual: multiplicationVisual('Cowrie shell bracelets', [{ lead: 'Example', prompt: 'Seven bracelets use 4 shells each.', rows: 7, columns: 4, equation: '7 × 4 = 28', answer: '28 shells', item: 'circle' }], 'blank'),
-    solvedVisual: { title: 'Break 4 into 2 + 2', sourceNote: supplementalVisualNote, sections: [
-      { kind: 'array', label: '7 × 4', rows: 7, columns: 4, item: 'circle', splitAfterColumns: 2, caption: 'Split 4 columns into 2 columns and 2 columns.' },
-      { kind: 'equations', label: 'Add the two products', lines: ['(7 × 2) + (7 × 2) = 14 + 14 = 28', '7 × 4 = 28 shells'] }
+    label: 'Example + Problem 1', title: 'Break apart shell and apple arrays', printedPages: '157', viewerPage: 169,
+    sourceMarkers: ['Toya is making 7 cowrie shell bracelets', 'uses 4 shells', 'break apart 4', '6 bowls of apples', '6 apples in each bowl'],
+    blankVisual: responseWorkspace('Example and Problem 1', [
+      { lead: 'Example', prompt: 'Seven bracelets use 4 shells each. Break 4 into 2 and 2.', lines: ['(7×2)+(7×2)=___+___=___'], answers: [['14', '14', '28']] },
+      { lead: '1.', prompt: 'Six bowls have 6 apples each. Break the number 6 into 5 and 1.', lines: ['(5×6)+(1×6)=___+___=___'], answers: [['30', '6', '36']], openWorkspace: true }
+    ]),
+    solvedVisual: { title: 'Break apart the shell and apple arrays', sourceNote: supplementalVisualNote, sections: [
+      { kind: 'array', label: 'Example · 7 × 4', rows: 7, columns: 4, item: 'circle', splitAfterColumns: 2, caption: '(7×2)+(7×2)=14+14=28 cowrie shells.' },
+      { kind: 'array', label: 'Problem 1 · 6 × 6', rows: 6, columns: 6, item: 'dot', splitAfterRows: 5, caption: '(5×6)+(1×6)=30+6=36 apples.' }
     ] }
   },
   {
     key: 'v1-u2-l6-s5-problems-1-2', unit: 2, lesson: 6, session: 5, order: 2,
-    label: 'Problems 1–2', title: 'Solve 3 × 6 and diagnose an 8 × 6 decomposition', printedPages: '158', viewerPage: 170,
+    label: 'Problems 2–3', title: 'Solve 3 × 6 and diagnose an 8 × 6 decomposition', printedPages: '158', viewerPage: 170,
     sourceMarkers: ['3 pens', '6 goats', '8 x 6', 'Which expression correctly shows'],
-    blankVisual: responseWorkspace('Problems 1–2', [
-      { lead: '1.', prompt: 'Three pens have 6 goats each.', lines: ['3 × 6 = ___'], answers: [['18']], openWorkspace: true },
-      { lead: '2.', prompt: 'Choose the correct next step after breaking 8×6 into 4+2.', lines: ['Correct choice: ___', '(8×4)+(8×2)=___+___=___'], answers: [['D'], ['32', '16', '48']], openWorkspace: true }
+    blankVisual: responseWorkspace('Problems 2–3', [
+      { lead: '2.', prompt: 'Three pens have 6 goats each.', lines: ['3 × 6 = ___'], answers: [['18']], openWorkspace: true },
+      { lead: '3.', prompt: 'Choose the correct next step after breaking 8×6 into 4+2.', lines: ['Correct choice: ___', '(8×4)+(8×2)=___+___=___'], answers: [['D'], ['32', '16', '48']], openWorkspace: true }
     ]),
-    solvedVisual: { title: 'Problems 1–2 solutions', sourceNote: supplementalVisualNote, sections: [
-      { kind: 'array', label: '3 × 6', rows: 3, columns: 6, item: 'dot', splitAfterColumns: 3, caption: '9+9=18 goats.' },
-      { kind: 'array', label: '8 × 6', rows: 8, columns: 6, item: 'dot', splitAfterColumns: 4, caption: 'Choice D: (8×4)+(8×2)=32+16=48.' }
+    solvedVisual: { title: 'Problems 2–3 solutions', sourceNote: supplementalVisualNote, sections: [
+      { kind: 'array', label: 'Problem 2 · 3 × 6', rows: 3, columns: 6, item: 'dot', splitAfterRows: 2, caption: '(2×6)+(1×6)=12+6=18 goats.' },
+      { kind: 'array', label: 'Problem 3 · 8 × 6', rows: 8, columns: 6, item: 'dot', splitAfterColumns: 4, caption: 'Choice D: (8×4)+(8×2)=32+16=48.' }
     ] }
   },
   {
     key: 'v1-u2-l6-s5-problems-3-5', unit: 2, lesson: 6, session: 5, order: 3,
     label: 'Problems 4–6', title: 'Complete a factor, classify equations, and choose ×4 strategies', printedPages: '159', viewerPage: 171,
     sourceMarkers: ['Winona finds 8 x 4', 'Decide if each equation is true', 'expressions can be used to find 7 x 4'],
-    blankVisual: responseWorkspace('Problems 3–5', [
+    blankVisual: responseWorkspace('Problems 4–6', [
       { lead: '4.', prompt: 'Complete (8×2)+(8×?) for 8×4.', lines: ['missing factor = ___'], answers: [['2']] },
       { lead: '5.', prompt: 'Classify the five official equations in order.', lines: ['Claim A: 8 times 3 is stated as 22 — ___', '4×3=12 ___', '2×6=12 ___', 'Claim D: 6 times 2 is stated as 13 — ___', '4×4=16 ___'], answers: [['no'], ['yes'], ['yes'], ['no'], ['yes']] },
       { lead: '6.', prompt: 'Choose the expressions that find 7×4.', lines: ['Correct choices: ___, ___, ___'], answers: [['A', 'D', 'E']] }
     ]),
-    solvedVisual: { title: 'Problems 3–5 solutions', sourceNote: supplementalVisualNote, sections: [
+    solvedVisual: { title: 'Problems 4–6 solutions', sourceNote: supplementalVisualNote, sections: [
       { kind: 'equations', label: 'Problem 4', lines: ['(8×2)+(8×2)=16+16=32'] },
       { kind: 'equations', label: 'Problem 5', lines: ['No, Yes, Yes, No, Yes'] },
       { kind: 'array', label: 'Problem 6', rows: 7, columns: 4, item: 'dot', splitAfterColumns: 2, caption: 'A breaks 4 into 2+2, D breaks 7 into 5+2, and E repeats 4 seven times.' }
@@ -3217,6 +3378,9 @@ const sourceProblems: readonly IReadySourceProblem[] = [
       { label: '4', prompt: 'Make 3×3 first.', equation: '7×(3×3) = 7×9', answer: '63' },
       { label: '5', prompt: 'Make 4×2 first.', equation: '9×(4×2) = 9×8', answer: '72' },
       { label: '6', prompt: 'Compare each choice with 8×(2×4).', equation: '8×8', answer: '64; choices A, B, and D' }
+    ], [
+      { kind: 'array', label: '7 × (3 × 3)', rows: 7, columns: 9, item: 'dot', groupEveryColumns: 3, caption: 'Seven rows show three groups of 3 in each row: 7×9=63.' },
+      { kind: 'array', label: '9 × (4 × 2)', rows: 9, columns: 8, item: 'dot', groupEveryColumns: 4, caption: 'Nine rows show two groups of 4 in each row: 9×8=72.' }
     ])
   },
   {
@@ -3234,6 +3398,9 @@ const sourceProblems: readonly IReadySourceProblem[] = [
       { label: '2', prompt: 'Make a factor of 10.', equation: '3×(5×2) = 3×10', answer: '30' },
       { label: '3', prompt: 'Group the two 2s.', equation: '9×(2×2) = 9×4', answer: '36' },
       { label: '4', prompt: 'Make a factor of 10.', equation: '4×(2×5) = 4×10', answer: '40' }
+    ], [
+      { kind: 'array', label: '2 × (3 × 4)', rows: 2, columns: 12, item: 'dot', groupEveryColumns: 4, caption: 'Two rows show three groups of 4 in each row: 2×12=24.' },
+      { kind: 'array', label: '3 × (5 × 2)', rows: 3, columns: 10, item: 'dot', groupEveryColumns: 2, caption: 'Three rows show five groups of 2 in each row: 3×10=30.' }
     ])
   },
   {
@@ -3404,7 +3571,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ])
   },
   {
-    key: 'v1-u3-l10-s1-models', unit: 3, lesson: 10, session: 1, order: 1,
+    key: 'v1-u2-l10-s1-models', unit: 2, lesson: 10, session: 1, order: 1,
     label: 'Model It', title: 'Interpret division as groups and items in each group', printedPages: '235–236', viewerPage: 247,
     sourceMarkers: ['8 slices of halloumi cheese', '2 equal groups', '10 slices of halloumi cheese', '2 slices on each plate'],
     blankVisual: responseWorkspace('Two meanings of division', [
@@ -3417,7 +3584,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ] }
   },
   {
-    key: 'v1-u3-l10-s1-prepare', unit: 3, lesson: 10, session: 1, order: 2,
+    key: 'v1-u2-l10-s1-prepare', unit: 2, lesson: 10, session: 1, order: 2,
     label: 'Prepare', title: 'Explain a model for 12 ÷ 3', printedPages: '237', viewerPage: 249,
     sourceMarkers: ['Prepare for Exploring', 'Troy draws a diagram', '12', '3'],
     blankVisual: { title: 'Prepare for Exploring the Meaning of Division', sections: [
@@ -3442,7 +3609,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ] }
   },
   {
-    key: 'v1-u3-l10-s1-practice', unit: 3, lesson: 10, session: 1, order: 3,
+    key: 'v1-u2-l10-s1-practice', unit: 2, lesson: 10, session: 1, order: 3,
     label: 'Practice', title: 'Group twelve grape leaves by four', printedPages: '238', viewerPage: 250,
     sourceMarkers: ['Savanna makes 12 stuffed grape leaves', '4 grape leaves on each plate', 'How many plates'],
     blankVisual: responseWorkspace('Stuffed grape leaves', [{ lead: '3–5.', prompt: 'Put 12 leaves in groups of 4.', lines: ['12÷4=___ plates'], answers: [['3']], openWorkspace: true }]),
@@ -3452,7 +3619,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ] }
   },
   {
-    key: 'v1-u3-l10-s2-equal-groups', unit: 3, lesson: 10, session: 2, order: 1,
+    key: 'v1-u2-l10-s2-equal-groups', unit: 2, lesson: 10, session: 2, order: 1,
     label: 'Model It · Equal Groups', title: 'Interpret 24 ÷ 6 in two ways', printedPages: '239', viewerPage: 251,
     sourceMarkers: ['24 oranges', '6 oranges in each bag', '24 oranges in 6 bags', 'division equation'],
     blankVisual: responseWorkspace('Two models for 24÷6', [
@@ -3465,7 +3632,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ] }
   },
   {
-    key: 'v1-u3-l10-s2-arrays-connect', unit: 3, lesson: 10, session: 2, order: 2,
+    key: 'v1-u2-l10-s2-arrays-connect', unit: 2, lesson: 10, session: 2, order: 2,
     label: 'Model It · Arrays + Connect It', title: 'Use arrays to model division', printedPages: '240', viewerPage: 252,
     sourceMarkers: ['array to show 20', 'different array', '42', 'division equation'],
     blankVisual: responseWorkspace('Array models for division', [
@@ -3478,7 +3645,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ] }
   },
   {
-    key: 'v1-u3-l10-s2-practice', unit: 3, lesson: 10, session: 2, order: 3,
+    key: 'v1-u2-l10-s2-practice', unit: 2, lesson: 10, session: 2, order: 3,
     label: 'Practice 1–7', title: 'Read and create division models', printedPages: '241–242', viewerPage: 253,
     sourceMarkers: ['Practice Using Division Models', '8 frogs', '20 students', 'array of 18 rectangles', '30'],
     blankVisual: responseWorkspace('Practice division models', [
@@ -3494,7 +3661,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ] }
   },
   {
-    key: 'v1-u3-l10-s3-apply', unit: 3, lesson: 10, session: 3, order: 1,
+    key: 'v1-u2-l10-s3-apply', unit: 2, lesson: 10, session: 3, order: 1,
     label: 'Apply It 1–3', title: 'Explain, write, and compare division situations', printedPages: '243', viewerPage: 255,
     sourceMarkers: ['Yuko draws this array of stars', 'story problem', '16', 'prickly pears', 'equal groups'],
     blankVisual: responseWorkspace('Apply ideas about division', [
@@ -3509,7 +3676,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ] }
   },
   {
-    key: 'v1-u3-l10-s3-problem-journal', unit: 3, lesson: 10, session: 3, order: 2,
+    key: 'v1-u2-l10-s3-problem-journal', unit: 2, lesson: 10, session: 3, order: 2,
     label: 'Problem 4 + Math Journal', title: 'Create a division situation and model 45 ÷ 9', printedPages: '244', viewerPage: 256,
     sourceMarkers: ['20 almonds', 'same number of almonds', '45', '9', 'equal groups'],
     blankVisual: responseWorkspace('Refine division meaning', [
@@ -3522,7 +3689,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ] }
   },
   {
-    key: 'v1-u3-l11-s1-models', unit: 3, lesson: 11, session: 1, order: 1,
+    key: 'v1-u2-l11-s1-models', unit: 2, lesson: 11, session: 1, order: 1,
     label: 'Model It', title: 'Write related equations for arrays', printedPages: '247–248', viewerPage: 259,
     sourceMarkers: ['pennies in the space', 'break your array into 4 equal groups', '20 stickers on 5 pages', 'division equation'],
     blankVisual: responseWorkspace('Connect multiplication and division', [
@@ -3535,7 +3702,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ] }
   },
   {
-    key: 'v1-u3-l11-s1-prepare', unit: 3, lesson: 11, session: 1, order: 2,
+    key: 'v1-u2-l11-s1-prepare', unit: 2, lesson: 11, session: 1, order: 2,
     label: 'Prepare', title: 'Write related equations for an official array', printedPages: '249', viewerPage: 261,
     sourceMarkers: ['Think about what you know about division', 'multiplication equation and a division equation', 'array'],
     blankVisual: { title: 'Prepare for Exploring How Multiplication and Division Are Connected', sections: [
@@ -3562,7 +3729,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ] }
   },
   {
-    key: 'v1-u3-l11-s1-practice', unit: 3, lesson: 11, session: 1, order: 3,
+    key: 'v1-u2-l11-s1-practice', unit: 2, lesson: 11, session: 1, order: 3,
     label: 'Practice', title: 'Relate equations for twenty-one stickers', printedPages: '250', viewerPage: 262,
     sourceMarkers: ['Amber collects flower stickers', '21 stickers', '7 pages', 'multiplication doing the reverse'],
     blankVisual: responseWorkspace('Twenty-one stickers on seven pages', [{ lead: '3–5.', prompt: 'Share 21 stickers equally across 7 pages and write both equations.', lines: ['21÷7=___', '7×___=21'], answers: [['3'], ['3']], openWorkspace: true }]),
@@ -3572,7 +3739,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ] }
   },
   {
-    key: 'v1-u3-l11-s2-situation-facts', unit: 3, lesson: 11, session: 2, order: 1,
+    key: 'v1-u2-l11-s2-situation-facts', unit: 2, lesson: 11, session: 2, order: 1,
     label: 'Model It', title: 'Use multiplication to solve division', printedPages: '251–252', viewerPage: 263,
     sourceMarkers: ['18 strings of worry beads', '3 strings', 'division equation', '24', '54', 'numbers 7, 8, and 56'],
     blankVisual: responseWorkspace('Related multiplication and division facts', [
@@ -3586,7 +3753,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ] }
   },
   {
-    key: 'v1-u3-l11-s2-practice', unit: 3, lesson: 11, session: 2, order: 2,
+    key: 'v1-u2-l11-s2-practice', unit: 2, lesson: 11, session: 2, order: 2,
     label: 'Practice 1–12', title: 'Complete related multiplication and division equations', printedPages: '253–254', viewerPage: 265,
     sourceMarkers: ['Practice How Multiplication', '15 guavas', '3 baskets', '18 fish', '6 x 7 = 42'],
     blankVisual: responseWorkspace('Practice related facts', [
@@ -3600,7 +3767,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ] }
   },
   {
-    key: 'v1-u3-l11-s3-apply', unit: 3, lesson: 11, session: 3, order: 1,
+    key: 'v1-u2-l11-s3-apply', unit: 2, lesson: 11, session: 3, order: 1,
     label: 'Apply It 1–3', title: 'Identify and analyze related equations', printedPages: '255', viewerPage: 267,
     sourceMarkers: ['Hopi plants', '63', '7', 'Hass avocados', '4 bags', '6 Hass avocados'],
     blankVisual: responseWorkspace('Apply multiplication and division connections', [
@@ -3615,7 +3782,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ] }
   },
   {
-    key: 'v1-u3-l11-s3-problem-journal', unit: 3, lesson: 11, session: 3, order: 2,
+    key: 'v1-u2-l11-s3-problem-journal', unit: 2, lesson: 11, session: 3, order: 2,
     label: 'Problem 4 + Math Journal', title: 'Model and solve related division equations', printedPages: '256', viewerPage: 268,
     sourceMarkers: ['division equation 15', 'multiplication equation', '35', '7', 'story problem'],
     blankVisual: responseWorkspace('Refine operation connections', [
@@ -3628,7 +3795,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ] }
   },
   {
-    key: 'v1-u3-l12-s1-try-connect', unit: 3, lesson: 12, session: 1, order: 1,
+    key: 'v1-u2-l12-s1-try-connect', unit: 2, lesson: 12, session: 1, order: 1,
     label: 'Try It + Connect It', title: 'Build multiplication and division fact families', printedPages: '259–260', viewerPage: 271,
     sourceMarkers: ['24 sepak takraw balls', '3 bags', 'Fact families for multiplication and division', 'same three numbers'],
     blankVisual: responseWorkspace('Use one fact to find the whole family', [
@@ -3641,21 +3808,21 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ] }
   },
   {
-    key: 'v1-u3-l12-s1-prepare', unit: 3, lesson: 12, session: 1, order: 2,
+    key: 'v1-u2-l12-s1-prepare', unit: 2, lesson: 12, session: 1, order: 2,
     label: 'Prepare', title: 'Use a fact family to find 32 ÷ 8', printedPages: '261', viewerPage: 273,
     sourceMarkers: ['Prepare for Multiplication and Division Facts', 'fact families to help find 32'],
     blankVisual: responseWorkspace('Prepare with a known multiplication fact', [{ lead: '2.', prompt: 'Use a fact family to find 32÷8.', lines: ['8×___=32', '32÷8=___'], answers: [['4'], ['4']], openWorkspace: true }]),
     solvedVisual: { title: 'The known factor is the quotient', sourceNote: supplementalVisualNote, sections: [{ kind: 'array', label: '32 ÷ 8', rows: 8, columns: 4, item: 'dot', caption: '8×4=32, so 32÷8=4.' }] }
   },
   {
-    key: 'v1-u3-l12-s1-practice', unit: 3, lesson: 12, session: 1, order: 3,
+    key: 'v1-u2-l12-s1-practice', unit: 2, lesson: 12, session: 1, order: 3,
     label: 'Practice', title: 'Share twenty-eight bikes among four racks', printedPages: '262', viewerPage: 274,
     sourceMarkers: ['28 bikes at the playground', '4 bike racks', 'How many bikes'],
     blankVisual: responseWorkspace('Bikes in equal racks', [{ lead: '3–4.', prompt: 'Share 28 bikes equally among 4 racks.', lines: ['28÷4=___'], answers: [['7']], openWorkspace: true }]),
     solvedVisual: { title: 'Four racks of seven', sourceNote: supplementalVisualNote, sections: [{ kind: 'array', label: '28 ÷ 4', rows: 4, columns: 7, item: 'circle', caption: '4×7=28, so 28÷4=7 bikes per rack.' }] }
   },
   {
-    key: 'v1-u3-l12-s2-try-model', unit: 3, lesson: 12, session: 2, order: 1,
+    key: 'v1-u2-l12-s2-try-model', unit: 2, lesson: 12, session: 2, order: 1,
     label: 'Try It + Model It', title: 'Find an unknown team size', printedPages: '263–264', viewerPage: 275,
     sourceMarkers: ['5 sled dog teams', '40 sled dogs', 'Skip-count by fives', 'multiplication facts for 5'],
     blankVisual: responseWorkspace('Forty dogs in five equal teams', [{ lead: 'Try It', prompt: 'Share 40 sled dogs among 5 teams.', lines: ['40÷5=___'], answers: [['8']], openWorkspace: true }]),
@@ -3665,7 +3832,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ] }
   },
   {
-    key: 'v1-u3-l12-s2-connect-apply', unit: 3, lesson: 12, session: 2, order: 2,
+    key: 'v1-u2-l12-s2-connect-apply', unit: 2, lesson: 12, session: 2, order: 2,
     label: 'Connect It + Apply It', title: 'Complete unknown division facts', printedPages: '265–266', viewerPage: 277,
     sourceMarkers: ['same fact family as 8 x 5 = 40', 'number line to solve 24', 'Write the unknown product', 'Enrico'],
     blankVisual: responseWorkspace('Connect and apply fact families', [
@@ -3677,7 +3844,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     solvedVisual: { title: 'Unknown facts completed', sourceNote: supplementalVisualNote, sections: [{ kind: 'equations', label: 'Answers', lines: ['8×5=40; 5×8=40; 40÷5=8; 40÷8=5', '24÷4=6', '2×3=6; 3×2=6; 6÷2=3; 6÷3=2', '3×7=21 and 7×3=21, so 21÷3=7'] }] }
   },
   {
-    key: 'v1-u3-l12-s2-practice', unit: 3, lesson: 12, session: 2, order: 3,
+    key: 'v1-u2-l12-s2-practice', unit: 2, lesson: 12, session: 2, order: 3,
     label: 'Practice 1–9', title: 'Write and use complete fact families', printedPages: '267–268', viewerPage: 279,
     sourceMarkers: ['Practice Working with Division Facts', '15 fish', '4 x 9 = 36', '18 squares', '24 trading cards'],
     blankVisual: responseWorkspace('Practice division fact families', [
@@ -3690,7 +3857,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ] }
   },
   {
-    key: 'v1-u3-l12-s3-table-model', unit: 3, lesson: 12, session: 3, order: 1,
+    key: 'v1-u2-l12-s3-table-model', unit: 2, lesson: 12, session: 3, order: 1,
     label: 'Try It + Model It', title: 'Use a multiplication table to find unknowns', printedPages: '269–270', viewerPage: 281,
     sourceMarkers: ['Complete the facts', 'multiplication table', 'row for', 'fact family'],
     blankVisual: responseWorkspace('Read products and factors from the table', [{ lead: 'Try It', prompt: 'Complete the four official facts.', lines: ['2×___=10', '24÷6=___', '___×6=48', '___÷1=8'], answers: [['5'], ['4'], ['8'], ['8']] }]),
@@ -3702,7 +3869,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ], [multiplicationTableSection([10, 24, 48, 8])])
   },
   {
-    key: 'v1-u3-l12-s3-connect-apply', unit: 3, lesson: 12, session: 3, order: 2,
+    key: 'v1-u2-l12-s3-connect-apply', unit: 2, lesson: 12, session: 3, order: 2,
     label: 'Connect It + Apply It', title: 'Use the table for fact families and sharing', printedPages: '271–272', viewerPage: 283,
     sourceMarkers: ['numbers in the shaded row', 'fact family that includes', '56', 'California poppies'],
     blankVisual: responseWorkspace('Connect and apply table lookup', [
@@ -3717,7 +3884,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ], [multiplicationTableSection([42, 56, 16])])
   },
   {
-    key: 'v1-u3-l12-s3-practice', unit: 3, lesson: 12, session: 3, order: 3,
+    key: 'v1-u2-l12-s3-practice', unit: 2, lesson: 12, session: 3, order: 3,
     label: 'Practice 1–6', title: 'Find complete families in the multiplication table', printedPages: '273–274', viewerPage: 285,
     sourceMarkers: ['Practice Using a Multiplication Table', '6, 4, and 24', 'Find 21', '28', '42'],
     blankVisual: responseWorkspace('Practice multiplication-table families', [
@@ -3731,7 +3898,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ], [multiplicationTableSection([24, 21, 28, 42, 48])])
   },
   {
-    key: 'v1-u3-l12-s4-problems-1-3', unit: 3, lesson: 12, session: 4, order: 1,
+    key: 'v1-u2-l12-s4-problems-1-3', unit: 2, lesson: 12, session: 4, order: 1,
     label: 'Example + Problems 1–3', title: 'Solve unknown products, factors, and quotients', printedPages: '275–276', viewerPage: 287,
     sourceMarkers: ['speeches done in 15 minutes', '35', '4 x 9', '30 players', '6 players'],
     blankVisual: responseWorkspace('Refine multiplication and division facts', [
@@ -3743,7 +3910,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     solvedVisual: { title: 'Problems 1–3 solutions', sourceNote: supplementalVisualNote, sections: [{ kind: 'equations', label: 'Answers', lines: ['3×5=15, so 15÷3=5', '5×7=35, so 35÷7=5', '4×9=36', '30÷6=5 teams; choice B'] }] }
   },
   {
-    key: 'v1-u3-l12-s4-problems-4-6', unit: 3, lesson: 12, session: 4, order: 2,
+    key: 'v1-u2-l12-s4-problems-4-6', unit: 2, lesson: 12, session: 4, order: 2,
     label: 'Problems 4–6', title: 'Select related facts and test the number eight', printedPages: '277', viewerPage: 289,
     sourceMarkers: ['same fact family as 12', 'fact can you use', 'Does putting', 'make each equation true'],
     blankVisual: responseWorkspace('Problems 4–6', [
@@ -3754,7 +3921,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     solvedVisual: { title: 'Problems 4–6 solutions', sourceNote: supplementalVisualNote, sections: [{ kind: 'equations', label: 'Answers', lines: ['C: 3×4=12', 'B: 4×5=20', '9×8 is not 64', '6×8=48', '56÷8 is not 8', '32÷8=4'] }] }
   },
   {
-    key: 'v1-u3-l12-s4-problems-7-journal', unit: 3, lesson: 12, session: 4, order: 3,
+    key: 'v1-u2-l12-s4-problems-7-journal', unit: 2, lesson: 12, session: 4, order: 3,
     label: 'Problems 7–9', title: 'Use repeated factors and solve the pita-bread context', printedPages: '278', viewerPage: 290,
     sourceMarkers: ['fact families have only one multiplication equation', '32 pita breads', '4 pita breads', 'MATH JOURNAL'],
     blankVisual: responseWorkspace('Final Lesson 12 problems', [
@@ -3768,7 +3935,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ] }
   },
   {
-    key: 'v1-u3-l13-s1-models', unit: 3, lesson: 13, session: 1, order: 1,
+    key: 'v1-u2-l13-s1-models', unit: 2, lesson: 13, session: 1, order: 1,
     label: 'Model It', title: 'Find repeating shape and number patterns', printedPages: '281–282', viewerPage: 293,
     sourceMarkers: ['pattern of hair clips', 'numbers under the shapes', 'number chart', 'numbers 9, 18, and 27'],
     blankVisual: responseWorkspace('Connect repeating shapes to number rules', [
@@ -3777,12 +3944,13 @@ const sourceProblems: readonly IReadySourceProblem[] = [
       { lead: '4.', prompt: 'Continue 9,18,27.', lines: ['next number = ___'], answers: [['36']], openWorkspace: true }
     ]),
     solvedVisual: { title: 'Two linked multiples patterns', sourceNote: supplementalVisualNote, sections: [
+      { kind: 'data-table', label: 'Two clips, then one bead', columns: ['Position', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'], rows: [['Object', 'clip', 'clip', 'bead', 'clip', 'clip', 'bead', 'clip', 'clip', 'bead', 'clip', 'clip', 'bead']] },
       { kind: 'equations', label: 'Hair beads', lines: ['3, 6, 9, 12, … · add 3'] },
       { kind: 'equations', label: 'Circled numbers', lines: ['9, 18, 27, 36, … · add 9', 'Every multiple of 9 is also a multiple of 3, so it belongs to both patterns.'] }
     ] }
   },
   {
-    key: 'v1-u3-l13-s1-prepare-practice', unit: 3, lesson: 13, session: 1, order: 2,
+    key: 'v1-u2-l13-s1-prepare-practice', unit: 2, lesson: 13, session: 1, order: 2,
     label: 'Prepare + Practice', title: 'Continue shape and even-number patterns', printedPages: '283–284', viewerPage: 295,
     sourceMarkers: ['Prepare for Exploring Patterns', 'pattern of shapes', 'pattern 2, 4', 'numbers 8, 16, and 24'],
     blankVisual: responseWorkspace('Prepare and practice pattern rules', [
@@ -3793,7 +3961,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     solvedVisual: { title: 'Even-number patterns', sourceNote: supplementalVisualNote, sections: [{ kind: 'equations', label: 'Rules', lines: ['2,4,6,8,10,12,… · add 2', '8,16,24,32,… · add 8', 'Every multiple of 8 is even, so it appears in the first pattern too.'] }] }
   },
   {
-    key: 'v1-u3-l13-s2-table-models', unit: 3, lesson: 13, session: 2, order: 1,
+    key: 'v1-u2-l13-s2-table-models', unit: 2, lesson: 13, session: 2, order: 1,
     label: 'Model It + Connect It', title: 'Explain parity patterns in operation tables', printedPages: '285–286', viewerPage: 297,
     sourceMarkers: ['odd sums in the table', 'even sums in the table', 'even products', 'multiplication and addition patterns'],
     blankVisual: responseWorkspace('Addition and multiplication table patterns', [
@@ -3805,7 +3973,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     solvedVisual: { title: 'Parity rules visible in tables', sourceNote: supplementalVisualNote, sections: [{ kind: 'equations', label: 'Verified patterns', lines: ['odd + even = odd', 'even + even = even', 'odd + odd = even', 'A product is even when at least one factor is even.', 'The addends for a fixed sum change by +1 and −1.'] }] }
   },
   {
-    key: 'v1-u3-l13-s2-practice', unit: 3, lesson: 13, session: 2, order: 2,
+    key: 'v1-u2-l13-s2-practice', unit: 2, lesson: 13, session: 2, order: 2,
     label: 'Practice 1–5', title: 'Analyze number-table patterns and parity', printedPages: '287–288', viewerPage: 299,
     sourceMarkers: ['Practice Finding Patterns', '583 small mailboxes', 'sum of the two end numbers', 'row and column for 0', '6 logs of wood'],
     blankVisual: responseWorkspace('Practice table patterns', [
@@ -3818,7 +3986,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     solvedVisual: { title: 'Practice pattern explanations', sourceNote: supplementalVisualNote, sections: [{ kind: 'equations', label: 'Patterns', lines: ['583 is odd and 118 is even, so their sum is odd.', 'In equally spaced triples, the two end values add to twice the middle value.', 'Multiplying by 0 gives 0; multiplying by 1 gives the other factor.', '8×6 is even because both factors are even.'] }] }
   },
   {
-    key: 'v1-u3-l13-s3-apply', unit: 3, lesson: 13, session: 3, order: 1,
+    key: 'v1-u2-l13-s3-apply', unit: 2, lesson: 13, session: 3, order: 1,
     label: 'Apply It 1–3', title: 'Explain constant sums, shared multiples, and odd products', printedPages: '289', viewerPage: 301,
     sourceMarkers: ['diagonal has all 4s', 'counts to 50 by fives', 'counts to 50 by 10s', 'odd factor times an odd factor'],
     blankVisual: responseWorkspace('Apply ideas about patterns', [
@@ -3829,7 +3997,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     solvedVisual: { title: 'Apply pattern rules', sourceNote: supplementalVisualNote, sections: [{ kind: 'equations', label: 'Answers', lines: ['1+3=4; 2+2=4; 3+1=4', 'Common values: 10,20,30,40,50', 'Odd×odd is odd, so Parker is incorrect.'] }] }
   },
   {
-    key: 'v1-u3-l13-s3-table-journal', unit: 3, lesson: 13, session: 3, order: 2,
+    key: 'v1-u2-l13-s3-table-journal', unit: 2, lesson: 13, session: 3, order: 2,
     label: 'Problem 4 + Math Journal', title: 'Complete and explain multiplication-table patterns', printedPages: '290', viewerPage: 302,
     sourceMarkers: ['multiplication table below', 'missing numbers', 'shaded products', 'MATH JOURNAL'],
     blankVisual: responseWorkspace('Refine table-pattern reasoning', [
@@ -3837,6 +4005,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
       { lead: 'Math Journal', prompt: 'Find and describe two more multiplication-table patterns.', lines: [], openWorkspace: true }
     ]),
     solvedVisual: { title: 'How to verify table patterns', sourceNote: supplementalVisualNote, sections: [
+      { kind: 'data-table', label: 'Equal products mirror across the table', columns: ['Product', 'First factor pair', 'Turned factor pair'], rows: [['6', '2×3', '3×2'], ['12', '3×4', '4×3'], ['20', '4×5', '5×4']] },
       { kind: 'note', label: 'Problem 4', text: 'Each product is determined by its row factor and column factor. Equal shaded products identify different factor pairs for the same number.' },
       { kind: 'equations', label: 'Two valid table patterns', lines: ['Rows and columns mirror because a×b and b×a have the same product.', 'Each row is a skip-counting sequence using its row factor.'] }
     ] }
@@ -4852,10 +5021,10 @@ const relatedFactsModelFor = (problem: IReadySourceProblem): ProblemVisualSectio
 };
 
 const reviewedPatternModels: Readonly<Record<string, ProblemVisualSection[]>> = {
-  'v1-u3-l13-s1-prepare-practice': [{ kind: 'data-table', label: 'Compare the two official growing patterns', columns: ['Step', '1', '2', '3', '4', '5', '6'], rows: [['Add 2', '2', '4', '6', '8', '10', '12'], ['Add 8', '8', '16', '24', '32', '40', '48']] }],
-  'v1-u3-l13-s2-table-models': [{ kind: 'data-table', label: 'Test parity with official cases', columns: ['First', 'Second', 'Sum', 'Pattern'], rows: [['odd', 'even', 'odd', 'odd + even'], ['even', 'even', 'even', 'even + even'], ['odd', 'odd', 'even', 'odd + odd']] }],
-  'v1-u3-l13-s2-practice': [{ kind: 'data-table', label: 'Apply each verified pattern to its official case', columns: ['Case', 'What the pattern shows'], rows: [['583 + 118', 'odd + even = odd'], ['equally spaced triple', 'ends sum to twice the middle'], ['factor 0 or 1', '0 gives 0; 1 preserves the factor'], ['8×6', 'even factor gives an even product']] }],
-  'v1-u3-l13-s3-apply': [{ kind: 'data-table', label: 'Build and compare the official patterns', columns: ['Relationship', 'Values'], rows: [['pairs that total 4', '1+3, 2+2, 3+1'], ['common multiples', '10, 20, 30, 40, 50'], ['odd × odd', 'odd']] }]
+  'v1-u2-l13-s1-prepare-practice': [{ kind: 'data-table', label: 'Compare the two official growing patterns', columns: ['Step', '1', '2', '3', '4', '5', '6'], rows: [['Add 2', '2', '4', '6', '8', '10', '12'], ['Add 8', '8', '16', '24', '32', '40', '48']] }],
+  'v1-u2-l13-s2-table-models': [{ kind: 'data-table', label: 'Test parity with official cases', columns: ['First', 'Second', 'Sum', 'Pattern'], rows: [['odd', 'even', 'odd', 'odd + even'], ['even', 'even', 'even', 'even + even'], ['odd', 'odd', 'even', 'odd + odd']] }],
+  'v1-u2-l13-s2-practice': [{ kind: 'data-table', label: 'Apply each verified pattern to its official case', columns: ['Case', 'What the pattern shows'], rows: [['583 + 118', 'odd + even = odd'], ['equally spaced triple', 'ends sum to twice the middle'], ['factor 0 or 1', '0 gives 0; 1 preserves the factor'], ['8×6', 'even factor gives an even product']] }],
+  'v1-u2-l13-s3-apply': [{ kind: 'data-table', label: 'Build and compare the official patterns', columns: ['Relationship', 'Values'], rows: [['pairs that total 4', '1+3, 2+2, 3+1'], ['common multiples', '10, 20, 30, 40, 50'], ['odd × odd', 'odd']] }]
 };
 
 const reviewedTensModels: Readonly<Record<string, ProblemVisualSection[]>> = {
@@ -4866,7 +5035,7 @@ const reviewedTensModels: Readonly<Record<string, ProblemVisualSection[]>> = {
 };
 
 const reviewedAreaCountModels: Readonly<Record<string, ProblemVisualSection[]>> = {
-  'v1-u3-l11-s1-prepare': [{ kind: 'source-directions', label: 'Read the official array without inventing values', items: [{ lead: 'Notice', text: 'Count the rows in the printed array.' }, { lead: 'Represent', text: 'Count the equal number of objects in each row and multiply to find the total.' }, { lead: 'Connect', text: 'Use the same three values to write the related division equation.' }] }],
+  'v1-u2-l11-s1-prepare': [{ kind: 'source-directions', label: 'Read the official array without inventing values', items: [{ lead: 'Notice', text: 'Count the rows in the printed array.' }, { lead: 'Represent', text: 'Count the equal number of objects in each row and multiply to find the total.' }, { lead: 'Connect', text: 'Use the same three values to write the related division equation.' }] }],
   'v1-u3-l14-s2-practice-1-2': [{ kind: 'data-table', label: 'Count each same-size square once', columns: ['Official figure', 'Area', 'Unit'], rows: [['1', '14', 'square units'], ['2', '10', 'square units'], ['3', '6', 'square inches']] }],
   'v1-u3-l16-s3-connect-apply': [
     { kind: 'number-bond', label: 'Decompose shape 4 into nonoverlapping rectangles', whole: '110 m²', parts: [{ label: '90 m²' }, { label: '20 m²' }], equations: ['90 + 20 = 110'] },
@@ -4903,7 +5072,7 @@ const reviewedThinTeachingFor = (problem: IReadySourceProblem): ProblemVisualSec
 };
 
 const reviewedSourceProblems = sourceProblems.map((problem): IReadySourceProblem => {
-  const sequentiallyVerifiedLesson = problem.lesson >= 1 && problem.lesson <= 11;
+  const sequentiallyVerifiedLesson = problem.lesson >= 1 && problem.lesson <= 13;
   const activityEvidence = problem.lesson === 1
     ? lessonOneTraceabilityByKey[problem.key]
     : problem.lesson === 2
@@ -4926,7 +5095,11 @@ const reviewedSourceProblems = sourceProblems.map((problem): IReadySourceProblem
                       ? lessonTenTraceabilityByKey[problem.key]
                       : problem.lesson === 11
                         ? lessonElevenTraceabilityByKey[problem.key]
-                        : undefined;
+                        : problem.lesson === 12
+                          ? lessonTwelveTraceabilityByKey[problem.key]
+                          : problem.lesson === 13
+                            ? lessonThirteenTraceabilityByKey[problem.key]
+                            : undefined;
   const teacherEvidence = sequentiallyVerifiedLesson ? teacherGuideProvenanceForProblem(problem) : undefined;
   if (sequentiallyVerifiedLesson && !activityEvidence) {
     throw new Error(`i-Ready Lesson ${problem.lesson} traceability rejected: ${problem.key} is missing activity-level source evidence.`);

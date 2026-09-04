@@ -92,8 +92,8 @@ export const supportTeacherProvenance = (resource: IReadyVolumeOneSupportResourc
   return provenance;
 };
 
-export const supportTeacherSourceUrl = (): string =>
-  'https://online.flippingbook.com/view/336223898/';
+export const supportTeacherSourceUrl = (readerPage?: number): string =>
+  `https://online.flippingbook.com/view/336223898/${readerPage ? `${readerPage}/` : ''}`;
 
 export const supportTeacherPrintedPages = (teacherPdfPage: number): string => {
   const start = teacherPdfPage * 2 - 2;

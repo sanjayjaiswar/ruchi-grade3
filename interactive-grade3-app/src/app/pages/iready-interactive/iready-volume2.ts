@@ -1370,7 +1370,7 @@ function v2ReviewedVisual(session: IReadyV2Session, solved: boolean, base: Probl
 
   return {
     ...base,
-    sourceNote: `Student Worktext Volume 2 pp. ${session.printedPages} and the mapped Teacher Guide Volume 2 spreads control this teaching sequence. Full publisher pages remain in the evidence drawer; the lesson itself is an interactive rendering of the verified model.`,
+    sourceNote: `Student Worktext Volume 2 pp. ${session.printedPages} and the mapped Teacher Guide Volume 2 spreads control this teaching sequence. The exact publisher pages are available from the Student Worktext and Teacher Guide tabs; the lesson itself is an interactive rendering of the verified model.`,
     sections: reviewedSections
   };
 }
@@ -1390,7 +1390,7 @@ function v2WithheldActivityVisual(activity: IReadyV2Activity): ProblemVisualSpec
     sections: [{
       kind: 'note',
       label: 'Exact visual teaching withheld',
-      text: `This selected activity does not yet have an approved page-specific interactive model. The portal will not substitute a neighboring activity, a session-wide model, or a publisher-page screenshot. Open the evidence drawer to review the exact official pages.`
+      text: `This selected activity does not yet have an approved page-specific interactive model. The portal will not substitute a neighboring activity, a session-wide model, or a publisher-page screenshot. Use the Student Worktext and Teacher Guide tabs above to review the exact official pages.`
     }]
   };
 }

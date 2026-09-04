@@ -56,7 +56,7 @@ export class IReadyVolume2Page implements OnDestroy {
   selectedPrintedPage = 475;
   selectedLibraryKey = IREADY_VOLUME_TWO_LIBRARY[0].key;
   selectedViewerPage = 1;
-  lessonMode: 'learn' | 'teacher' = 'teacher';
+  lessonView: 'teaching' | 'try' | 'student' | 'teacher' = 'teaching';
   lessonFeedback = 'Page-specific visual teaching is open for this activity.';
   showLessonValidation = false;
   solutionRevealCount = 1;
@@ -88,7 +88,7 @@ export class IReadyVolume2Page implements OnDestroy {
         this.selectedUnitNumber = this.findUnit(requestedUnit)?.number ?? 4;
         this.selectedLessonNumber = this.selectedUnit.lessons[0].number;
       }
-      this.lessonMode = 'teacher';
+      this.lessonView = 'teaching';
       this.updateTitle();
     }));
   }
@@ -142,7 +142,7 @@ export class IReadyVolume2Page implements OnDestroy {
   }
 
   get selectedActivityVisual() {
-    const solved = this.lessonMode === 'teacher';
+    const solved = this.lessonView === 'teaching';
     const key = `${this.selectedActivity.key}-${solved ? 'solved' : 'blank'}`;
     const cached = this.visualCache.get(key);
     if (cached) return cached;
@@ -189,7 +189,7 @@ export class IReadyVolume2Page implements OnDestroy {
     this.selectedSessionNumber = sessionNumber;
     this.selectedActivityIndex = 0;
     this.selectedPrintedPage = v2PagesForSession(this.selectedSession)[0];
-    this.lessonMode = 'teacher';
+    this.lessonView = 'teaching';
     this.showLessonValidation = false;
     this.lessonFeedback = v2HasExactActivityVisual(this.selectedActivity)
       ? 'Page-specific visual teaching is open for this activity.'
@@ -204,7 +204,7 @@ export class IReadyVolume2Page implements OnDestroy {
     this.selectedPrintedPage = activity.printedPage;
     this.showLessonValidation = false;
     this.lessonFeedback = v2HasExactActivityVisual(activity)
-      ? `${this.lessonMode === 'teacher' ? 'Solved' : 'Blank'} page-specific visual is open for Student Worktext p. ${activity.printedPage}.`
+      ? `${this.lessonView === 'teaching' ? 'Solved' : 'Blank'} page-specific visual is open for Student Worktext p. ${activity.printedPage}.`
       : 'No page-specific visual has passed source review; no substitute is shown.';
     this.resetTeachingStage();
   }
@@ -215,13 +215,21 @@ export class IReadyVolume2Page implements OnDestroy {
     if (activityIndex >= 0) this.selectedActivityIndex = activityIndex;
   }
 
-  selectLessonMode(mode: 'learn' | 'teacher'): void {
-    this.lessonMode = mode;
+  selectLessonView(view: 'teaching' | 'try' | 'student' | 'teacher'): void {
+    this.lessonView = view;
     this.showLessonValidation = false;
+    if (view === 'student') {
+      this.lessonFeedback = `Official Student Worktext p. ${this.selectedActivity.printedPage} is open.`;
+      return;
+    }
+    if (view === 'teacher') {
+      this.lessonFeedback = `Official Teacher Guide viewer p. ${this.selectedActivity.teacherViewerPage} is open.`;
+      return;
+    }
     this.lessonFeedback = this.hasExactActivityVisual
-      ? `${mode === 'teacher' ? 'Solved' : 'Blank'} page-specific visual is open for Student Worktext p. ${this.selectedActivity.printedPage}.`
+      ? `${view === 'teaching' ? 'Solved' : 'Blank'} page-specific visual is open for Student Worktext p. ${this.selectedActivity.printedPage}.`
       : 'No page-specific visual has passed source review; no substitute is shown.';
-    if (mode === 'teacher') {
+    if (view === 'teaching') {
       this.solutionRevealCount = this.teachingStepCount;
       requestAnimationFrame(() => this.visualWorkspace?.replayAnimation());
     }

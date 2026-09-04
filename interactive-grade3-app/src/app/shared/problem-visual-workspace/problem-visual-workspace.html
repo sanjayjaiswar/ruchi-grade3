@@ -1390,7 +1390,7 @@
 
         <div class="visual-place-value-addition" *ngIf="lab.placeValueAddition as addition">
           <div class="visual-pv-head" [style.gridTemplateColumns]="'minmax(76px, auto) repeat(' + addition.columns.length + ', minmax(64px, 1fr))'">
-            <span>measurement</span>
+            <span>step</span>
             <b *ngFor="let column of addition.columns">{{ column }}</b>
           </div>
           <div

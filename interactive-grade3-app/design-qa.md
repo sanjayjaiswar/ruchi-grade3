@@ -80,3 +80,133 @@ The lesson begins with source-backed visual teaching. A learner sees the officia
 - P3: on narrower desktop widths, long problem titles may wrap to a second line; this is preferable to reducing the type size and does not hide the learning controls.
 
 final result: passed
+
+## 2026-09-03 compact multicolor lesson-page theme
+
+### Source truth and comparison boundary
+
+- Before-state screenshot: `/var/folders/66/d46v0l2s4976zb2_b5y4q1r80000gn/T/codex-clipboard-ab3000f2-9b9a-4fb0-a87f-946f5c7fda11.png`.
+- Selected-state issue screenshot: `/var/folders/66/d46v0l2s4976zb2_b5y4q1r80000gn/T/codex-clipboard-887b16ae-aa21-42c2-878f-f469371a310f.png` (1904 × 943 px).
+- Spacing issue screenshot: `/var/folders/66/d46v0l2s4976zb2_b5y4q1r80000gn/T/codex-clipboard-60414bd7-11d7-41d7-93b6-ad1d34bcdc92.png`.
+- Congestion/highlight screenshots: `/var/folders/66/d46v0l2s4976zb2_b5y4q1r80000gn/T/codex-clipboard-ff97c8c7-5c84-4bb6-bbca-dd39f9ce8634.png` and `/var/folders/66/d46v0l2s4976zb2_b5y4q1r80000gn/T/codex-clipboard-a0ebffbb-ab70-4783-a843-933a9fd091a3.png`.
+- Repetition screenshots: `/var/folders/66/d46v0l2s4976zb2_b5y4q1r80000gn/T/codex-clipboard-d71860e9-39bf-4914-b5fe-3fa5d7cda15f.png`, `/var/folders/66/d46v0l2s4976zb2_b5y4q1r80000gn/T/codex-clipboard-5915449a-aafb-426d-a254-5b48afd6a818.png`, and `/var/folders/66/d46v0l2s4976zb2_b5y4q1r80000gn/T/codex-clipboard-16525f82-a57f-4045-9b57-1416a15ecb6a.png`.
+- Presentation references: `/var/folders/66/d46v0l2s4976zb2_b5y4q1r80000gn/T/codex-clipboard-2e41cfc5-ba9f-4fc0-a391-6b1cb4f37419.png` and `/var/folders/66/d46v0l2s4976zb2_b5y4q1r80000gn/T/codex-clipboard-f01744d9-11c7-4bcb-b76b-300532160978.png`. These were used for hierarchy and palette inspiration, not cloned.
+- Implementation screenshot: `tmp/theme-multicolor.jpg` (1920 × 940 browser capture).
+- Revised selected-state screenshot: `tmp/theme-selected-state.jpg` (1920 × 940 browser capture, CSS viewport 1920 × 940, device scale 1).
+- Revised compact-control screenshot: `tmp/theme-compact-controls.jpg` (1920 × 940 browser capture, CSS viewport 1920 × 940, device scale 1).
+- Final balanced-header screenshot: `tmp/theme-balanced-header.jpg` (1920 × 940 browser capture, CSS viewport 1920 × 940, device scale 1).
+- Final de-duplicated header screenshot: `tmp/theme-deduplicated-header.jpg` (1920 × 940 browser capture, CSS viewport 1920 × 940, device scale 1).
+- Normalized comparison: `tmp/theme-multicolor-comparison.jpg`; the before and after lesson headers were scaled to 1600 px wide and stacked in one inspection image.
+- State: Volume 1, Lesson 1, Session 1, Visual Teaching selected. Volume 2 Lesson 28 was also inspected in Visual Teaching and Try It states.
+
+### Comparison history
+
+#### Pass 1 — blocked
+
+- P1: one periwinkle accent was repeated across the brand, selected volume, selected session, and selected workspace tab. The result was coherent but visually flat and did not satisfy the requested colorful lesson-page experience.
+- P2: inactive session and workspace controls remained nearly white, so the page showed color only on the current selection.
+
+#### Fixes
+
+- Introduced one stable, role-based page palette shared by both volumes.
+- Sessions now follow the same journey colors everywhere: sky, mint, sunshine, coral, then lilac for a fifth session.
+- Workspace buttons have fixed tool colors: coral Visual Teaching, sunshine Try It, mint Student Worktext, and lilac Teacher Guide.
+- Every session and workspace button keeps its soft role color when inactive; the current selection deepens that same color instead of switching to a generic accent.
+- The Unit control remains a sunshine context badge, lesson identity uses a warm paper surface, and the workspace band uses a soft sky-to-lilac surface.
+- Activity navigation uses matching sky, mint, sunshine, coral, lilac, and rose rails so the page continues the theme below the header without recoloring lesson content.
+
+#### Pass 2 — passed
+
+- The compact three-row layout remains unchanged.
+- The page visibly contains a coordinated range of sky, mint, sunshine, coral, lilac, and rose rather than one dominant color.
+- Color meaning is consistent across Volume 1 and Volume 2 and across selected/unselected states.
+- The teaching model, official page imagery, PDF mapping, lesson copy, and curriculum data remain unchanged.
+
+#### Pass 3 — blocked
+
+- P1: after distributing color across every control, the selected session, selected workspace view, and selected activity were differentiated mainly by a modest increase in saturation. The current choice still blended into the surrounding palette.
+
+#### Fixes
+
+- Selected sessions and workspace views now use a substantially deeper version of their existing role color.
+- Every selected session and workspace control now has a two-pixel dark companion-color border, an inset highlight, a strong lower edge, elevation, and a two-pixel lift.
+- The selected activity now has a six-pixel dark left edge, full dark border, deeper color wash, inset highlight, and elevation.
+- `aria-pressed` and `aria-selected` behavior remains unchanged, so the visual correction preserves the existing accessible state contract.
+
+#### Pass 4 — passed
+
+- Focused comparison: `tmp/theme-selected-state-comparison.jpg` stacks the supplied difficult-to-read state above the revised state at the same 1600 px normalized width.
+- Selected Session 1, Visual Teaching, and the first activity are now recognizable through saturation, border weight, depth, and position—not color alone.
+- Try It was also exercised: the yellow selection uses the same dark outline and elevation while preserving readable dark text.
+
+#### Pass 5 — blocked
+
+- P2: the four workspace controls used their wide horizontal area inefficiently. Each subtitle occupied a second line, the controls retained large internal padding, and the lesson/session identity wrapped to four lines beside them.
+
+#### Fixes
+
+- Workspace labels and metadata now share one line, separated by a subtle vertical divider.
+- Workspace controls were reduced to a 40 px minimum height with 3–8 px internal padding and 6 px inter-control gaps.
+- The command-row padding, lesson type scale, metadata line height, and session-heading spacing were tightened.
+- Phase/session identity and the session title now share one non-wrapping line, reducing the lesson identity from four lines to three.
+
+#### Pass 6 — passed
+
+- Focused comparison: `tmp/theme-compact-controls-comparison.jpg` stacks the supplied two-line control state above the revised single-line state at the same 1600 px normalized width.
+- All four controls remain readable with their page metadata visible, while teaching content begins higher in the viewport.
+- The revised layout was visually inspected in Volume 1 Lesson 1 and Volume 2 Lesson 28 at a 1920 × 940 desktop viewport.
+
+#### Pass 7 — blocked
+
+- P1: darkening each role color to show selection made the chosen control look visually unrelated to the other pastel controls.
+- P2: forcing label and page metadata onto one line made source text compete with the control label, introduced vertical divider artifacts, and still left the lesson identity too narrow.
+- P2: the session navigation retained the original 76 px component minimum height despite the compact shell intent.
+
+#### Fixes
+
+- All selected controls now keep their original light role surface and use one universal blue two-pixel border, four-pixel lower selection edge, and restrained shadow.
+- Workspace labels and metadata return to two compact lines; the second line uses 10/12 px metadata type and no divider.
+- The lesson identity receives half of the command-row width at wide desktop sizes.
+- Lesson metadata is shortened from `starts on printed page` to `starts p.` and reordered so the session count remains visible.
+- The session navigation minimum height is now enforced at 52 px; session buttons and adjacent navigation actions are enforced at 38 px.
+
+#### Pass 8 — passed
+
+- Focused comparison: `tmp/theme-balanced-header-comparison.jpg` stacks the supplied one-line/dark-selected state above the revised two-line/light-selected state at the same 1600 px normalized width.
+- Page metadata is fully visible in all four controls, and lesson metadata no longer truncates.
+- The selected Student Worktext control remains mint and is identified by the same blue selection edge used by sessions and activities.
+- Volume 1 Lesson 1 and Volume 2 Lesson 28 were visually inspected after the final spacing changes.
+
+#### Pass 9 — blocked
+
+- P2: the full lesson title appeared in the compact navigation, the main lesson heading, and the session-heading line. The repeated context consumed vertical and horizontal space without adding orientation value.
+
+#### Fixes
+
+- The main lesson heading is now the only location containing the full lesson title.
+- Compact navigation now shows only `Volume · Unit · Lesson` identifiers.
+- The redundant `phase · session · session title` line was removed; phase/session remain available in the selected session tab, and the current activity remains identified in the activity heading.
+- The command-row minimum height was reduced from 58 px to 50 px after removing the duplicate line.
+
+#### Pass 10 — passed
+
+- Focused comparison: `tmp/theme-deduplicated-header-comparison.jpg` stacks the supplied repeated-context state above the revised canonical-title state at the same 1600 px normalized width.
+- The full lesson title appears once, the session choice remains clear, and the activity heading follows immediately below the compact command row.
+- Volume 1 Lesson 1 and Volume 2 Lesson 28 were visually inspected after de-duplication.
+
+### Required fidelity surfaces
+
+- Fonts and typography: existing application type family, sizes, weights, line heights, wrapping, and truncation are unchanged.
+- Spacing and layout rhythm: the approved compact lesson shell is unchanged; the theme introduces no new width, height, overflow, radius, or spacing changes.
+- Colors and visual tokens: warm white base; purple-blue portal identity; sunshine Unit badge; sequential pastel session colors; fixed coral/sunshine/mint/lilac workspace colors; matching multicolor activity rails. Dark companion colors preserve readable labels in every state.
+- Image quality and assets: no image, logo, illustration, PDF, or lesson visual was changed.
+- Copy and content: no learner-facing copy or curriculum content was changed.
+
+### Findings
+
+- P0: none.
+- P1: none.
+- P2: none.
+- P3: no dedicated mobile polish was performed; desktop widths remain the project target.
+
+final result: passed

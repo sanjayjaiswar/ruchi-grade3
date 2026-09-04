@@ -34,8 +34,10 @@ requireText(
   "guidedStage: 'try' | 'check' | 'model' | 'solution' = 'solution'",
   'Volume 1 must initialize its teaching stage as a worked visual.'
 );
-requireText(volumeOneTemplate, '>Learn visually</button>', 'Volume 1 needs a primary Learn visually control.');
-requireText(volumeOneTemplate, '>Try one</button>', 'Volume 1 needs a separate short-practice control.');
+requireText(volumeOneTemplate, '<strong>Visual Teaching</strong>', 'Volume 1 needs a primary Visual Teaching tab.');
+requireText(volumeOneTemplate, '<strong>Try It</strong>', 'Volume 1 needs a separate blank-workspace tab.');
+requireText(volumeOneTemplate, '<strong>Student Worktext</strong>', 'Volume 1 needs a top-level Student Worktext tab.');
+requireText(volumeOneTemplate, '<strong>Teacher Guide</strong>', 'Volume 1 needs a top-level Teacher Guide tab.');
 requireText(
   volumeOneTemplate,
   `[spec]="activityMode === 'solution' ? problem.solvedVisual : problem.blankVisual"`,
@@ -71,15 +73,18 @@ requireText(
 
 requireText(
   volumeTwoComponent,
-  "lessonMode: 'learn' | 'teacher' = 'teacher'",
+  "lessonView: 'teaching' | 'try' | 'student' | 'teacher' = 'teaching'",
   'Volume 2 must open in Teacher Guide-backed visual teaching.'
 );
-requireText(volumeTwoTemplate, '>Learn visually</button>', 'Volume 2 needs a primary Learn visually control.');
-requireText(volumeTwoTemplate, '>Try one</button>', 'Volume 2 needs a separate short-practice control.');
+requireText(volumeTwoTemplate, '<strong>Visual Teaching</strong>', 'Volume 2 needs a primary Visual Teaching tab.');
+requireText(volumeTwoTemplate, '<strong>Try It</strong>', 'Volume 2 needs a separate blank-workspace tab.');
+requireText(volumeTwoTemplate, '<strong>Student Worktext</strong>', 'Volume 2 needs a top-level Student Worktext tab.');
+requireText(volumeTwoTemplate, '<strong>Teacher Guide</strong>', 'Volume 2 needs a top-level Teacher Guide tab.');
 forbidText(volumeTwoComponent, 'teachingStage = 1', 'Volume 2 may not mechanically hide verified model parts behind a generic stepper.');
 forbidText(volumeTwoTemplate, '[focusRevealStage]="true"', 'Volume 2 must keep the complete verified mathematical model visible.');
-requireText(volumeTwoTemplate, '>Replay teaching</button>', 'Volume 2 needs a replay control for the complete verified model.');
-requireText(volumeTwoTemplate, 'class="page-tabs evidence-page-tabs"', 'Volume 2 official page navigation must live inside the evidence drawer.');
+requireText(volumeTwoTemplate, '>Replay</button>', 'Volume 2 needs a replay control inside Visual Teaching.');
+requireText(volumeTwoTemplate, 'class="v2-edition-panel"', 'Volume 2 official Student Worktext must open in a top-level edition view.');
+requireText(volumeTwoTemplate, 'class="v2-edition-panel teacher-edition"', 'Volume 2 Teacher Guide must open in a top-level edition view.');
 forbidText(
   volumeTwoTemplate,
   '</header>\n\n        <nav class="page-tabs"',

@@ -105,6 +105,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
 
   ngAfterViewChecked(): void {
     this.updateLibraryClocks();
+    this.updateInlineInputWidths();
     const signature = `${this.mode}|${this.revealStage ?? 'all'}|${this.spec?.title ?? ''}|${this.spec?.sections.map((section) => section.kind).join(',') ?? ''}`;
     if (signature === this.animationSignature) {
       return;
@@ -549,6 +550,14 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
 
   setInlineValue(owner: object, field: string, row: number, column: number, answerIndex: number, value: string): void {
     this.interactiveInlineValues.set(this.inlineKey(owner, field, row, column, answerIndex), value);
+    queueMicrotask(() => this.updateInlineInputWidths());
+  }
+
+  private updateInlineInputWidths(): void {
+    for (const input of this.elementRef.nativeElement.querySelectorAll<HTMLInputElement>('.visual-inline-input, .source-response-lines input')) {
+      const characterCount = input.value.trim().length;
+      input.style.width = characterCount > 8 ? `${Math.min(32, characterCount + 2)}ch` : '';
+    }
   }
 
   inlineValue(owner: object, field: string, row: number, column: number, answerIndex: number): string {

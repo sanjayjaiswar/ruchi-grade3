@@ -5,7 +5,7 @@
       <span><strong>i-Ready Interactive</strong><small>Grade 3 · PDF-verified Student Worktext</small></span>
     </a>
     <nav aria-label="i-Ready Interactive navigation">
-      <a routerLink="/ruchika/grade3/iready-interactive">Volume 1</a>
+      <a class="active" routerLink="/ruchika/grade3/iready-interactive">Volume 1</a>
       <a routerLink="/ruchika/grade3/iready-interactive/volumes/2">Volume 2</a>
       <a routerLink="/ruchika/grade3/iready">i-Ready Math</a>
       <a routerLink="/ruchika/grade3/syllabus-books/books">Book reference</a>
@@ -185,7 +185,7 @@
             </div>
           </div>
           <details class="embedded-source-drawer">
-            <summary><span>Official source evidence</span><strong>Student p. 1 + Teacher Guide pp. {{ supportTeacherPrintedPages(selectedResourceTeacher.teacherPdfPages[0]) }}</strong></summary>
+            <summary><span>Official source evidence</span><strong>Student p. 1 + Teacher Guide reader pp. {{ supportTeacherPrintedPages(selectedResourceTeacher.teacherPdfPages[0]) }}</strong></summary>
             <div class="embedded-source-pages">
               <figure>
                 <img [src]="supportStudentImage(1)" alt="Official Student Worktext Volume 1 printed page 1">
@@ -193,7 +193,7 @@
               </figure>
               <figure>
                 <img [src]="supportTeacherImage(selectedResourceTeacher.teacherPdfPages[0])" [alt]="'Official Teacher Guide Volume 1 PDF page ' + selectedResourceTeacher.teacherPdfPages[0]">
-                <figcaption>Teacher Guide Volume 1 · pp. {{ supportTeacherPrintedPages(selectedResourceTeacher.teacherPdfPages[0]) }}</figcaption>
+                <figcaption>Teacher Guide Volume 1 · reader pp. {{ supportTeacherPrintedPages(selectedResourceTeacher.teacherPdfPages[0]) }}</figcaption>
               </figure>
             </div>
           </details>
@@ -238,7 +238,7 @@
           </aside>
           <figure *ngFor="let page of selectedResourceTeacher.teacherPdfPages">
             <img [src]="supportTeacherImage(page)" [alt]="'Official Teacher Guide Volume 1 PDF page ' + page">
-            <figcaption>Official Teacher Guide Volume 1 · pp. {{ supportTeacherPrintedPages(page) }} · local PDF page {{ page }}</figcaption>
+            <figcaption>Official Teacher Guide Volume 1 · reader pp. {{ supportTeacherPrintedPages(page) }} · local PDF spread {{ page }}</figcaption>
           </figure>
         </section>
 
@@ -258,11 +258,22 @@
       </section>
     </ng-container>
 
-    <nav *ngIf="lessonFocus" class="focus-lesson-nav" aria-label="Current lesson navigation">
+    <nav *ngIf="lessonFocus" class="focus-lesson-nav compact-lesson-navigation" aria-label="Current lesson navigation">
       <a class="all-lessons-link" [routerLink]="['/ruchika/grade3/iready-interactive/units', selectedUnit.number]">Unit {{ selectedUnit.number }} overview</a>
       <div class="focus-current-lesson">
-        <span>Volume 1 · Unit {{ selectedUnit.number }}</span>
-        <strong>Lesson {{ selectedLesson.number }} · {{ selectedLesson.title }}</strong>
+        <strong>Volume 1 · Unit {{ selectedUnit.number }} · Lesson {{ selectedLesson.number }}</strong>
+      </div>
+      <div *ngIf="lessonIsInteractive" class="session-tabs compact-session-tabs" role="group" [attr.aria-label]="'Lesson ' + selectedLesson.number + ' sessions'" [style.--session-count]="activeSessions.length">
+        <button
+          *ngFor="let session of activeSessions"
+          type="button"
+          (click)="selectSession(session.session)"
+          [class.active]="session.session === selectedSessionNumber"
+          [attr.aria-pressed]="session.session === selectedSessionNumber">
+          <span>Session {{ session.session }}</span>
+          <strong>{{ session.phase }}</strong>
+          <small>pp. {{ session.printedPages }}</small>
+        </button>
       </div>
       <div class="focus-lesson-actions">
         <a
@@ -278,50 +289,31 @@
 
     <section *ngIf="lessonFocus" class="learning-workspace focused">
       <section class="lesson-stage" aria-live="polite">
-        <header class="lesson-heading">
-          <div>
-            <span class="lesson-path">Volume 1 · Unit {{ selectedUnit.number }} · Lesson {{ selectedLesson.number }}</span>
-            <h2>{{ selectedLesson.title }}</h2>
-            <p>{{ selectedLesson.standards }} · starts on printed page {{ selectedLesson.printPage }} · {{ selectedLesson.sessions }} sessions</p>
-          </div>
-          <div class="lesson-heading-sources">
-            <a *ngIf="lessonFamilyResource(selectedLesson) as family" [routerLink]="['/ruchika/grade3/iready-interactive/resources', family.key]">Family pages {{ family.printedPages }} →</a>
-            <a [href]="lessonSourceUrl(selectedLesson)" target="_blank" rel="noopener">Open official lesson ↗</a>
-          </div>
-        </header>
-
-        <ng-container *ngIf="lessonIsInteractive; else mappedLesson">
-          <nav class="session-tabs" [attr.aria-label]="'Lesson ' + selectedLesson.number + ' sessions'" [style.--session-count]="activeSessions.length">
-            <button
-              *ngFor="let session of activeSessions"
-              type="button"
-              (click)="selectSession(session.session)"
-              [class.active]="session.session === selectedSessionNumber"
-              [attr.aria-pressed]="session.session === selectedSessionNumber">
-              <span>Session {{ session.session }}</span>
-              <strong>{{ session.phase }}</strong>
-              <small>pp. {{ session.printedPages }}</small>
-            </button>
-          </nav>
-
-          <section class="session-panel">
-            <header class="session-heading">
-              <div><span>{{ selectedSession.phase }} · Session {{ selectedSession.session }}</span><h3>{{ selectedSession.title }}</h3></div>
-              <div class="session-source-actions">
-                <div class="teaching-mode" role="group" aria-label="Activity view">
-                  <button type="button" (click)="openVisualTeaching()" [class.active]="activityMode === 'solution'" [attr.aria-pressed]="activityMode === 'solution'">Learn visually</button>
-                  <button type="button" (click)="returnToTry()" [class.active]="activityMode === 'try'" [attr.aria-pressed]="activityMode === 'try'">Try one</button>
-                  <button *ngIf="selectedSourceProblem && activityMode === 'try'" type="button" (click)="checkGuidedProblem()" [class.active]="guidedStage === 'check'" [attr.aria-pressed]="guidedStage === 'check'">Check</button>
-                </div>
-                <button
-                  *ngIf="visualAnimationIsVerified"
-                  type="button"
-                  (click)="replayVerifiedVisual()">
-                  Replay teaching
-                </button>
-                <a [href]="sessionSourceUrl" target="_blank" rel="noopener">Official pages {{ selectedSession.printedPages }} ↗</a>
+        <div class="compact-lesson-command">
+          <div class="compact-lesson-identity">
+            <header class="lesson-heading">
+              <div>
+                <span class="lesson-path">Volume 1 · Unit {{ selectedUnit.number }} · Lesson {{ selectedLesson.number }}</span>
+                <h2>{{ selectedLesson.title }}</h2>
+                <p>{{ selectedLesson.standards }} · {{ selectedLesson.sessions }} sessions · starts p. {{ selectedLesson.printPage }}</p>
               </div>
             </header>
+          </div>
+
+          <ng-container *ngIf="lessonIsInteractive">
+            <ng-container *ngIf="selectedSourceProblem as commandProblem">
+              <nav class="lesson-view-tabs compact-view-tabs" role="tablist" aria-label="Teaching and exact edition views">
+                <button type="button" role="tab" (click)="openVisualTeaching()" [class.active]="lessonWorkspaceView === 'teaching'" [attr.aria-selected]="lessonWorkspaceView === 'teaching'"><strong>Visual Teaching</strong><small>Solved model</small></button>
+                <button type="button" role="tab" (click)="returnToTry()" [class.active]="lessonWorkspaceView === 'try'" [attr.aria-selected]="lessonWorkspaceView === 'try'"><strong>Try It</strong><small>Blank workspace</small></button>
+                <button type="button" role="tab" (click)="selectSourceEdition('student')" [class.active]="lessonWorkspaceView === 'student'" [attr.aria-selected]="lessonWorkspaceView === 'student'"><strong>Student Worktext</strong><small>Official {{ printedPagesLabel(commandProblem.printedPages) }}</small></button>
+                <button type="button" role="tab" (click)="selectSourceEdition('teacher')" [class.active]="lessonWorkspaceView === 'teacher'" [attr.aria-selected]="lessonWorkspaceView === 'teacher'"><strong>Teacher Guide</strong><small>Reader pp. {{ selectedTeacherGuideReaderPages }}</small></button>
+              </nav>
+            </ng-container>
+          </ng-container>
+        </div>
+
+        <ng-container *ngIf="lessonIsInteractive; else mappedLesson">
+          <section class="session-panel compact-session-content">
 
             <ng-container *ngIf="selectedSourceProblem as problem">
               <nav class="source-problem-tabs" aria-label="Official problems in this session">
@@ -333,66 +325,86 @@
                   [attr.aria-pressed]="problemIndex === selectedSourceProblemIndex">
                   <span>{{ sourceProblem.label }}</span>
                   <strong>{{ sourceProblem.title }}</strong>
-                  <small>p. {{ sourceProblem.printedPages }}</small>
+                  <small>{{ printedPagesLabel(sourceProblem.printedPages) }}</small>
                 </button>
               </nav>
 
               <section class="source-problem-stage">
                 <header>
                   <div>
-                    <span>{{ problem.label }} · Official p. {{ problem.printedPages }}</span>
+                    <span>{{ problem.label }} · Official {{ printedPagesLabel(problem.printedPages) }}</span>
                     <h4>{{ problem.title }}</h4>
                   </div>
-                  <a [href]="selectedSourceProblemUrl" target="_blank" rel="noopener">Verify official page ↗</a>
                 </header>
-                <p class="stage-announcement" aria-live="polite">{{ lessonStageAnnouncement }}</p>
-                <div *ngIf="activityMode === 'solution'" class="visual-teaching-lead">
-                  <strong>Learn visually</strong>
-                  <span>Watch the model build, then choose “Try one.”</span>
-                  <div class="source-teaching-steps" *ngIf="sourceTeachingStepCount > 1">
-                    <button type="button" (click)="previousSourceTeachingStep()" [disabled]="solutionRevealCount <= 1" aria-label="Show previous teaching step">Previous</button>
-                    <span>Step {{ solutionRevealCount }} of {{ sourceTeachingStepCount }}</span>
-                    <button type="button" (click)="nextSourceTeachingStep()" [disabled]="solutionRevealCount >= sourceTeachingStepCount" aria-label="Show next teaching step">Next</button>
-                  </div>
-                </div>
-                <app-problem-visual-workspace
-                  [spec]="activityMode === 'solution' ? problem.solvedVisual : problem.blankVisual"
-                  [mode]="activityMode === 'solution' ? 'solved' : 'blank'"
-                  [showValidation]="activityMode === 'try' && guidedStage === 'check'"
-                  [revealStage]="activityMode === 'solution' ? solutionRevealCount : undefined">
-                </app-problem-visual-workspace>
-                <details class="embedded-source-drawer lesson-source-drawer">
-                  <summary><span>Exact official source</span><strong>Student p. {{ problem.printedPages }} + Teacher Guide</strong></summary>
-                  <div class="source-boundary-copy">
-                    <strong>Source boundary</strong>
-                    <ng-container *ngIf="selectedProblemTraceability as trace; else legacyProblemTrace">
-                      <span>Prompt and values: {{ trace.studentDocument }} and {{ trace.studentSearchableDocument }} · printed p. {{ trace.studentPrintedPages }} · PDF viewer p. {{ trace.studentPdfViewerPages }}.</span>
-                      <span>Solved teaching: {{ trace.teacherDocument }} and {{ trace.teacherSearchableDocument }} · printed pp. {{ trace.teacherPrintedPages }} · local PDF viewer p. {{ trace.teacherPdfViewerPage }}.</span>
-                      <span>Approved model: {{ trace.modelType }} · status: verified against student and teacher sources.</span>
-                    </ng-container>
-                    <ng-template #legacyProblemTrace>
-                      <span>Prompt, values, and page sequence: official Student Worktext Volume 1, p. {{ problem.printedPages }}.</span>
-                      <span *ngIf="selectedTeacherGuideProvenance as teacher">Solved teaching: official Teacher Guide Volume 1, pp. {{ teacher.teacherGuidePages }} (PDF page {{ teacher.teacherPdfPage }}).</span>
-                    </ng-template>
-                    <span>The portal adds the response controls, staged reveal, and animation; it does not add curriculum claims.</span>
-                  </div>
-                  <div *ngIf="selectedProblemHasInlineSourceImages; else sourceLinksOnly" class="embedded-source-pages compact-source-pages">
-                    <figure *ngFor="let page of selectedProblemStudentPages">
-                      <img [src]="supportStudentImage(page)" [alt]="'Official Student Worktext Volume 1 printed page ' + page">
-                      <figcaption>Student Worktext · p. {{ page }}</figcaption>
-                    </figure>
-                    <figure *ngFor="let page of selectedProblemTeacherPages">
-                      <img [src]="supportTeacherImage(page)" [alt]="'Official Teacher Guide Volume 1 PDF page ' + page">
-                      <figcaption>Teacher Guide · pp. {{ supportTeacherPrintedPages(page) }}</figcaption>
-                    </figure>
-                  </div>
-                  <ng-template #sourceLinksOnly>
-                    <div class="source-link-row">
-                      <a [href]="selectedSourceProblemUrl" target="_blank" rel="noopener">Open official Student Worktext page ↗</a>
-                      <a [href]="supportTeacherSourceUrl()" target="_blank" rel="noopener">Open official Teacher Guide ↗</a>
+
+                <ng-container *ngIf="lessonWorkspaceView === 'student' || lessonWorkspaceView === 'teacher'; else activityWorkspace">
+                  <section class="top-edition-panel" role="tabpanel" [attr.aria-label]="lessonWorkspaceView === 'student' ? 'Official Student Worktext page' : 'Official Teacher Guide pages'">
+                    <div class="edition-source-identity">
+                      <strong>{{ lessonWorkspaceView === 'student' ? 'Official Student Worktext' : 'Official Teacher Guide' }}</strong>
+                      <span>{{ lessonWorkspaceView === 'student' ? printedPagesLabel(problem.printedPages) : 'Reader pp. ' + selectedTeacherGuideReaderPages }}</span>
                     </div>
-                  </ng-template>
-                </details>
+
+                    <ng-container *ngIf="selectedProblemHasInlineSourceImages; else sourceUnavailable">
+                      <div *ngIf="lessonWorkspaceView === 'student'" class="embedded-source-pages compact-source-pages edition-page-view">
+                        <figure *ngFor="let page of selectedProblemStudentPages">
+                          <img [src]="supportStudentImage(page)" [alt]="'Official Student Worktext Volume 1 printed page ' + page">
+                          <figcaption>Student Worktext · printed p. {{ page }} · PDF viewer p. {{ studentPdfViewerPage(page) }}</figcaption>
+                        </figure>
+                      </div>
+
+                      <div *ngIf="lessonWorkspaceView === 'teacher'" class="embedded-source-pages teacher-edition-page-view edition-page-view">
+                        <figure *ngFor="let page of selectedProblemTeacherPages">
+                          <img [src]="supportTeacherImage(page)" [alt]="'Official Teacher Guide Volume 1 reader pages ' + selectedTeacherGuideReaderPages">
+                          <figcaption>Teacher Guide · reader pp. {{ selectedTeacherGuideReaderPages }} · local PDF spread {{ page }}</figcaption>
+                        </figure>
+                      </div>
+                    </ng-container>
+
+                    <div class="source-boundary-copy">
+                      <strong>Verified source</strong>
+                      <ng-container *ngIf="selectedProblemTraceability as trace; else legacyProblemTrace">
+                        <span>Student: printed pp. {{ trace.studentPrintedPages }} · PDF viewer pp. {{ trace.studentPdfViewerPages }}.</span>
+                        <span>Teacher: reader pp. {{ trace.teacherPrintedPages }} · local PDF spread {{ trace.teacherPdfViewerPage }}.</span>
+                        <span>Model: {{ trace.modelType }} · verified against both editions.</span>
+                      </ng-container>
+                      <ng-template #legacyProblemTrace>
+                        <span>Student Worktext Volume 1, {{ printedPagesLabel(problem.printedPages) }}.</span>
+                        <span *ngIf="selectedTeacherGuideProvenance as teacher">Teacher Guide reader pp. {{ teacher.teacherGuidePages }}.</span>
+                      </ng-template>
+                    </div>
+
+                    <ng-template #sourceUnavailable>
+                      <p class="edition-unavailable">Exact inline edition pages are not yet prepared for this activity.</p>
+                    </ng-template>
+                  </section>
+                </ng-container>
+
+                <ng-template #activityWorkspace>
+                  <p class="stage-announcement" aria-live="polite">{{ lessonStageAnnouncement }}</p>
+                  <div *ngIf="activityMode === 'solution'" class="visual-teaching-lead">
+                    <strong>Visual Teaching</strong>
+                    <span>Watch the solved model build one step at a time.</span>
+                    <div class="visual-teaching-actions">
+                      <button *ngIf="visualAnimationIsVerified" type="button" (click)="replayVerifiedVisual()">Replay</button>
+                      <div class="source-teaching-steps" *ngIf="sourceTeachingStepCount > 1">
+                        <button type="button" (click)="previousSourceTeachingStep()" [disabled]="solutionRevealCount <= 1" aria-label="Show previous teaching step">Previous</button>
+                        <span>Step {{ solutionRevealCount }} of {{ sourceTeachingStepCount }}</span>
+                        <button type="button" (click)="nextSourceTeachingStep()" [disabled]="solutionRevealCount >= sourceTeachingStepCount" aria-label="Show next teaching step">Next</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div *ngIf="activityMode === 'try'" class="try-workspace-lead">
+                    <strong>Try It</strong>
+                    <span>Use the blank workspace, then check your entries.</span>
+                    <button type="button" (click)="checkGuidedProblem()" [class.active]="guidedStage === 'check'" [attr.aria-pressed]="guidedStage === 'check'">Check</button>
+                  </div>
+                  <app-problem-visual-workspace
+                    [spec]="activityMode === 'solution' ? problem.solvedVisual : problem.blankVisual"
+                    [mode]="activityMode === 'solution' ? 'solved' : 'blank'"
+                    [showValidation]="activityMode === 'try' && guidedStage === 'check'"
+                    [revealStage]="activityMode === 'solution' ? solutionRevealCount : undefined">
+                  </app-problem-visual-workspace>
+                </ng-template>
               </section>
             </ng-container>
 

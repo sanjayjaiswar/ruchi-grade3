@@ -343,7 +343,7 @@ const renderedTeacherAssets = existsSync(teacherCompanionAssetRoot)
   : [];
 const expectedStudentAssetPages = new Set([
   ...supportCoveredPages,
-  ...Array.from({ length: 20 }, (_, index) => index + 9)
+  ...problemCoveredPages
 ]);
 const renderedStudentAssetPages = new Set(renderedStudentAssets.map((name) => Number(name.match(/\d+/)?.[0])));
 const missingStudentAssets = [...expectedStudentAssetPages].filter((page) => !renderedStudentAssetPages.has(page));
@@ -351,7 +351,15 @@ const unexpectedStudentAssets = [...renderedStudentAssetPages].filter((page) => 
 if (missingStudentAssets.length || unexpectedStudentAssets.length) {
   fail(`official Student Worktext assets drifted; missing [${missingStudentAssets.join(', ')}], unexpected [${unexpectedStudentAssets.join(', ')}]`);
 }
-if (renderedTeacherAssets.length < companionTeacherPages.size) fail(`expected at least ${companionTeacherPages.size} official Teacher Guide companion assets; found ${renderedTeacherAssets.length}`);
+const expectedTeacherAssetPages = new Set([
+  ...companionTeacherPages,
+  ...(teacherProvenance.spreads ?? []).map((spread) => spread.teacherPdfPage)
+]);
+const renderedTeacherAssetPages = new Set(renderedTeacherAssets.map((name) => Number(name.match(/\d+/)?.[0])));
+const missingTeacherAssets = [...expectedTeacherAssetPages].filter((page) => !renderedTeacherAssetPages.has(page));
+if (missingTeacherAssets.length) {
+  fail(`official Teacher Guide assets drifted; missing [${missingTeacherAssets.join(', ')}]`);
+}
 
 for (const page of pageInventory.pages ?? []) {
   const inLessonSequence = page.kind === 'lesson-session';
@@ -626,13 +634,25 @@ if (!routes.includes("iready-interactive/resources/:resourceKey")) {
   fail('i-Ready Interactive companion resources have no first-class route');
 }
 if (
-  !template.includes('Official student pages')
-  || !template.includes('Work interactively')
+  !template.includes('Official Student Worktext pages')
+  || !template.includes("resourceMode === 'work'")
   || !template.includes('resourceMode === \'teacher\'')
   || !template.includes('supportStudentImage(page)')
   || !template.includes('supportTeacherImage(page)')
 ) {
   fail('companion resources are not implemented as official-source, interactive, and Teacher Guide views');
+}
+if (
+  !template.includes('lesson-view-tabs')
+  || !template.includes('Visual Teaching')
+  || !template.includes('Student Worktext')
+  || !template.includes('Teacher Guide')
+  || !template.includes("selectSourceEdition('student')")
+  || !template.includes("selectSourceEdition('teacher')")
+  || !component.includes("lessonWorkspaceView: 'teaching' | 'try' | 'student' | 'teacher'")
+  || !component.includes('this.selectedLessonNumber <= 19')
+) {
+  fail('Volume 1 lessons are missing the shared top-level Visual Teaching, Try It, Student Worktext, and Teacher Guide tabs');
 }
 const learnerSupportSource = supportSourceCode.split('export const supportWorkspaceSpec')[1] ?? '';
 if (/eureka|\bmodule\b/i.test(learnerSupportSource)) {
@@ -661,4 +681,4 @@ if (errors.length) {
 }
 
 const sourceCheckCount = interactions.reduce((total, interaction) => total + (interaction.sourceChecks?.length ?? 0), 0);
-console.log(`i-Ready source boundary passed: 1 Student Worktext source, 1 Teacher Guide source, 2 reference-only sources; all 465 official Volume 1 instructional pages implemented (366 lesson-session + 99 companion); ${keys.size} sessions across 3 units and 19 lessons; ${problemKeys.size} exact-page problem groups; 46 companion learning sections with 99 student-page assets and ${companionTeacherPages.size} Teacher Guide assets; ${unitIdeas.length} exact-page Big Ideas; ${sourceCheckCount} page-scoped prompt/model checks; verified inline arithmetic; zero cross-program content fallbacks.`);
+console.log(`i-Ready source boundary passed: 1 Student Worktext source, 1 Teacher Guide source, 2 reference-only sources; all 465 official Volume 1 instructional pages implemented and available inline (366 lesson-session + 99 companion); ${keys.size} sessions across 3 units and 19 lessons; ${problemKeys.size} exact-page problem groups; ${expectedTeacherAssetPages.size} exact Teacher Guide spreads; ${unitIdeas.length} exact-page Big Ideas; ${sourceCheckCount} page-scoped prompt/model checks; verified inline arithmetic; zero cross-program content fallbacks.`);

@@ -82,6 +82,7 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
   hundredsHigh = '';
   sessionOneFeedback = '';
   activityMode: 'try' | 'solution' = 'solution';
+  lessonWorkspaceView: 'teaching' | 'try' | 'student' | 'teacher' = 'teaching';
   guidedStage: 'try' | 'check' | 'model' | 'solution' = 'solution';
   solutionRevealCount = 0;
   lessonStageAnnouncement = 'Source-backed visual teaching is open.';
@@ -242,14 +243,40 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
     return page ? [page] : [];
   }
 
+  get selectedTeacherGuideReaderPages(): string {
+    return this.selectedTeacherGuideProvenance?.teacherGuidePages ?? '';
+  }
+
+  get selectedTeacherGuideSourceUrl(): string {
+    const firstReaderPage = Number(this.selectedTeacherGuideReaderPages.match(/\d+/)?.[0]);
+    return supportTeacherSourceUrl(Number.isFinite(firstReaderPage) ? firstReaderPage : undefined);
+  }
+
+  studentPdfViewerPage(printedPage: number): number {
+    return printedPage + 12;
+  }
+
+  printedPagesLabel(printedPages: string): string {
+    return `${printedPages.includes('–') || printedPages.includes('-') ? 'pp.' : 'p.'} ${printedPages}`;
+  }
+
+  selectSourceEdition(view: 'student' | 'teacher'): void {
+    this.clearSourceRevealTimers();
+    this.lessonWorkspaceView = view;
+    this.lessonStageAnnouncement = view === 'student'
+      ? `Official Student Worktext ${this.printedPagesLabel(this.selectedSourceProblem?.printedPages ?? '')} is open.`
+      : `Official Teacher Guide reader pages ${this.selectedTeacherGuideReaderPages} are open.`;
+  }
+
   get selectedProblemHasInlineSourceImages(): boolean {
     const studentPages = this.selectedProblemStudentPages;
     const teacherPages = this.selectedProblemTeacherPages;
-    return this.selectedLessonNumber === 1
+    return this.selectedLessonNumber >= 1
+      && this.selectedLessonNumber <= 19
       && studentPages.length > 0
-      && studentPages.every((page) => page >= 9 && page <= 28)
+      && studentPages.every((page) => page >= 9 && page <= 452)
       && teacherPages.length > 0
-      && teacherPages.every((page) => page >= 52 && page <= 61);
+      && teacherPages.every((page) => page >= 52 && page <= 339);
   }
 
   get neighborActivity(): NeighborIntervalsActivity | undefined {
@@ -274,7 +301,7 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
 
   get lessonIsInteractive(): boolean {
     const sessions = this.activeSessions;
-    return this.selectedLesson.number <= 11
+    return this.selectedLesson.number <= 13
       && lessonHasCompleteSourceProblemCoverage(this.selectedLesson.number)
       && sessions.length === this.selectedLesson.sessions
       && sessions.every((session) => session.unit === this.selectedUnit.number && session.lesson === this.selectedLesson.number);
@@ -345,7 +372,7 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
   }
 
   lessonIsReady(lesson: Grade3CmcLesson): boolean {
-    return lesson.number <= 6
+    return lesson.number <= 13
       && lessonHasCompleteSourceProblemCoverage(lesson.number)
       && verifiedInteractionsForLesson(lesson.number).length === lesson.sessions;
   }
@@ -388,7 +415,7 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
   checkGuidedProblem(): void {
     if (!this.selectedSourceProblem || this.activityMode === 'solution') return;
     this.guidedStage = 'check';
-    this.lessonStageAnnouncement = 'Check your entries. A source-aligned hint is now available without revealing the answer.';
+    this.lessonStageAnnouncement = 'Check your entries. Correct entries are highlighted; revise any entry that needs another try.';
   }
 
   replayVerifiedVisual(): void {
@@ -459,11 +486,13 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
   }
 
   openVisualTeaching(): void {
+    this.lessonWorkspaceView = 'teaching';
     this.showVerifiedSolution();
   }
 
   returnToTry(): void {
     this.clearSourceRevealTimers();
+    this.lessonWorkspaceView = 'try';
     this.resetActivity();
     this.scheduleVerifiedVisual();
   }
