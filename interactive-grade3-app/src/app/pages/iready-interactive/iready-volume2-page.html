@@ -7,7 +7,6 @@
     <nav aria-label="i-Ready Interactive navigation">
       <a routerLink="/ruchika/grade3/iready-interactive">Volume 1</a>
       <a class="active" routerLink="/ruchika/grade3/iready-interactive/volumes/2">Volume 2</a>
-      <a routerLink="/ruchika/grade3/syllabus-books/books">Book reference</a>
       <a class="home-link" routerLink="/ruchika/grade3" aria-label="Grade 3 home">R</a>
     </nav>
   </header>
@@ -62,7 +61,7 @@
     </section>
   </section>
 
-  <section *ngIf="unitFocus" class="v2-unit-overview">
+  <section *ngIf="unitFocus" class="v2-unit-overview" [attr.data-unit]="selectedUnit.number">
     <nav class="crumb"><a routerLink="/ruchika/grade3/iready-interactive/volumes/2">Volume 2</a><span>/</span><strong>Unit {{ selectedUnit.number }}</strong></nav>
     <header class="unit-heading">
       <b class="unit-number">{{ selectedUnit.number }}</b>

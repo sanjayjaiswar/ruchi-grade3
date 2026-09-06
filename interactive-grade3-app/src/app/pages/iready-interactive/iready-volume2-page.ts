@@ -34,7 +34,7 @@ import {
   selector: 'app-iready-volume2-page',
   imports: [NgFor, NgIf, RouterLink, ProblemVisualWorkspaceComponent],
   templateUrl: './iready-volume2-page.html',
-  styleUrl: './iready-volume2-page.css'
+  styleUrls: ['./iready-volume2-page.css', './iready-consistent-presentation.css']
 })
 export class IReadyVolume2Page implements OnDestroy {
   @ViewChild(ProblemVisualWorkspaceComponent) private visualWorkspace?: ProblemVisualWorkspaceComponent;

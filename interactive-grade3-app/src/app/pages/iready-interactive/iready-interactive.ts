@@ -44,7 +44,7 @@ import {
   selector: 'app-iready-interactive-page',
   imports: [FormsModule, NgFor, NgIf, RouterLink, ProblemVisualWorkspaceComponent, IReadyFamilyRoundingComponent],
   templateUrl: './iready-interactive.html',
-  styleUrl: './iready-interactive.css'
+  styleUrls: ['./iready-interactive.css', './iready-consistent-presentation.css']
 })
 export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
   readonly volumeOneUnits = GRADE3_CMC_UNITS.filter((unit) => unit.volume === 1);

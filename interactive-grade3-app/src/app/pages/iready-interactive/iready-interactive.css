@@ -2633,3 +2633,87 @@
   .lesson-view-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .top-edition-panel .source-boundary-copy { grid-template-columns: 1fr; }
 }
+
+/* Match overview readability in lesson views without changing geometry or teaching states. */
+.interactive-page.lesson-focus {
+  --compact-ink: #172033;
+  --compact-muted: #475569;
+  --compact-line: #b8c9df;
+  --compact-surface: #fff;
+  --lesson-ink: #172033;
+  --lesson-caption: #475569;
+  --iready-meta: #475569;
+}
+
+.interactive-page.lesson-focus .compact-session-tabs button :is(span, small),
+.interactive-page.lesson-focus .compact-view-tabs button small,
+.interactive-page.lesson-focus .source-problem-tabs small {
+  color: #475569;
+  opacity: 1;
+}
+
+.interactive-page.lesson-focus .compact-lesson-command .compact-view-tabs button.active small {
+  color: var(--view-dark) !important;
+  opacity: 1;
+}
+
+.interactive-page.lesson-focus :is(.visual-teaching-lead, .try-workspace-lead) {
+  color: #334155;
+}
+
+.interactive-page.lesson-focus .compact-session-tabs button,
+.interactive-page.lesson-focus .compact-view-tabs button,
+.interactive-page.lesson-focus .source-problem-tabs button {
+  border-color: #a8bcd7 !important;
+}
+
+.interactive-page.lesson-focus .compact-session-tabs button.active,
+.interactive-page.lesson-focus .compact-view-tabs button.active,
+.interactive-page.lesson-focus .source-problem-tabs button.active {
+  border-color: #2f62c9 !important;
+}
+
+.interactive-page.lesson-focus .source-problem-tabs button:not(.active) {
+  border-left-color: var(--activity-color) !important;
+}
+
+/* Homepage palette for the volume overview. */
+.volume-overview .unit-card {
+  --unit-accent: #bc4b3a;
+  --unit-accent-end: #a43d32;
+  --unit-soft: #ffe4de;
+  border-top-color: #e06f5c;
+  background: linear-gradient(115deg, #fff, var(--unit-soft));
+}
+.volume-overview .unit-card:nth-child(2) {
+  --unit-accent: #15803d;
+  --unit-accent-end: #006c50;
+  --unit-soft: #c5efd4;
+  border-top-color: #15803d;
+}
+.volume-overview .unit-card:nth-child(3) {
+  --unit-accent: #7150b8;
+  --unit-accent-end: #513b91;
+  --unit-soft: #e0d3fa;
+  border-top-color: #7150b8;
+}
+.volume-overview .open-unit {
+  background: linear-gradient(115deg, var(--unit-accent), var(--unit-accent-end));
+  box-shadow: 0 2px 4px rgb(23 32 51 / 12%);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.volume-overview .open-unit:hover { filter: brightness(.95); }
+.volume-overview .unit-card dl { background: rgb(255 255 255 / 85%); }
+.volume-overview .unit-card-topline > a { color: #0759c7; }
+.volume-overview .volume-choice a:first-child,
+.volume-overview .volume-heading {
+  background: linear-gradient(115deg, #fff, #ffe4de);
+}
+.volume-overview .volume-choice a:nth-child(2) {
+  background: linear-gradient(115deg, #fff, #e0d3fa);
+}
+.volume-overview .compact-hierarchy li:nth-child(1) { background: linear-gradient(115deg, #fff, #cce9fa); }
+.volume-overview .compact-hierarchy li:nth-child(2) { background: linear-gradient(115deg, #fff, #c5efd4); }
+.volume-overview .compact-hierarchy li:nth-child(3) { background: linear-gradient(115deg, #fff, #e0d3fa); }
+.volume-overview .volume-heading > a { background: linear-gradient(115deg, #fff, #cce9fa); }

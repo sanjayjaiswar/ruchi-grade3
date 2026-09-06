@@ -47,7 +47,7 @@
     <section id="grade3-year-map" class="year-map" aria-labelledby="year-map-title">
       <div class="section-heading curriculum-heading"><div><span class="section-kicker">The complete year</span><h2 id="year-map-title">Choose a curriculum unit</h2><p>These are the ten Grade 3 unit titles in the publisher scope aligned to Moreland’s adopted Benchmark Advance edition.</p></div><a [href]="sources.scope" target="_blank" rel="noopener">Open the complete publisher scope ↗</a></div>
       <div class="unit-grid">
-        <article *ngFor="let option of units" [class]="'unit-card ' + option.accent">
+        <article *ngFor="let option of units" [class]="'unit-card ' + option.accent" [attr.data-unit]="option.number">
           <div class="unit-topline"><span>Unit {{ option.number }} of 10</span><a [href]="scopePage(option)" target="_blank" rel="noopener">PDF pp. {{ scopePrintedPage(option) }}–{{ scopePrintedPage(option) + 1 }} ↗</a></div>
           <h3>{{ option.title }}</h3>
           <p><strong>Begins with</strong> {{ option.weeks[0].selections[0].title }}</p>
@@ -142,7 +142,7 @@
 
   <section *ngIf="pageKind === 'unit'" class="reading-section unit-page">
     <section *ngIf="notice" class="source-gate-notice"><strong>Official-source gate</strong><span>{{ notice }}</span></section>
-    <section [class]="'unit-hero learning-unit-hero ' + unit.accent">
+    <section [class]="'unit-hero learning-unit-hero ' + unit.accent" [attr.data-unit]="unit.number">
       <div>
         <span class="source-badge">Benchmark Advance · Unit {{ unit.number }} of 10</span>
         <h1>{{ unit.title }}</h1>
@@ -251,7 +251,7 @@
   </section>
 
   <section *ngIf="pageKind === 'practice'" class="reading-section evidence-practice-page">
-    <section [class]="'practice-hero ' + unit.accent">
+    <section [class]="'practice-hero ' + unit.accent" [attr.data-unit]="unit.number">
       <div><span class="source-badge">Unit {{ unit.number }} · Week {{ evidenceQuestion.weekNumber }} · Official Question {{ evidenceQuestion.questionNumber }}</span><h1>{{ evidenceQuestion.selectionTitle }}</h1><p>{{ evidenceQuestion.learningGoal }}</p></div>
       <div class="practice-hero-actions"><a [routerLink]="unitRoute(unit)">Unit overview</a><a [href]="questionSourcePage(unit)" target="_blank" rel="noopener">Official question page ↗</a></div>
     </section>
