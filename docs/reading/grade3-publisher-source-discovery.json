@@ -1,0 +1,313 @@
+{
+  "reviewedAt": "2026-09-05",
+  "discoveryUrl": "https://info.benchmarkeducation.com/advancing-language-learning-view-virtual-samples",
+  "documents": [
+    {
+      "key": "language-pacing",
+      "title": "Grade 3 language-development pacing guide",
+      "pageCount": 35,
+      "unit": 0,
+      "viewer": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/index.html",
+      "split": true,
+      "renderIndex": 0,
+      "files": [
+        {
+          "file": "official-0-part1.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_01.pdf",
+          "sha256": "838b559836e973edeb87d7ba54d89a8458a49a206a2ca83fdd2b229cc7b2f82c",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part2.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_02.pdf",
+          "sha256": "9465dbea2da176a65ab8c28f94a4ca928a53aa45e55f3bd0bd7e4d4656ef31ba",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part3.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_03.pdf",
+          "sha256": "8bee4eb774f3267ac49a15760390afa18ce55812c5ee83a6c8746bca040aaca7",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part4.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_04.pdf",
+          "sha256": "caf7a09eac361147ec16c5ce97fc5edc4114f3299c941f1a340a8b2e666bd07a",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part5.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_05.pdf",
+          "sha256": "8505389dbf8c3ed13d4e65b4c8e6cf11a29817bddcc74228c37b380bef468942",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part6.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_06.pdf",
+          "sha256": "f1c03830f720ee202a1d46e5ec79205bd202634ece499783fd11f8581d05da0c",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part7.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_07.pdf",
+          "sha256": "39e0856e2b6992820da42c16e9211fdf272bbe52d9fc7a21175aed542a4232a9",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part8.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_08.pdf",
+          "sha256": "f43fa465e1eb1a5b39c30be054c0822d6a99420e537139c82dc4a0be3a61507e",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part9.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_09.pdf",
+          "sha256": "1be22aaa291c726ddaa4c00b025412efefd851f3f4398d3ca860218ea09fcbc3",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part10.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_10.pdf",
+          "sha256": "5ac52158db8abf9e4831cad111de6addd1fbf08087b597ba9ebad7ffdea2c768",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part11.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_11.pdf",
+          "sha256": "5cd501f6bbf9eefe78210aa04cca7aab41bf5b3888bb154252eee17621be6af7",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part12.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_12.pdf",
+          "sha256": "d844105abd2f4dbe8f9a7eafaa2fda530963cd2ae5ee69a605daccc12d069485",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part13.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_13.pdf",
+          "sha256": "ac8124b93442bc146acab54c1cb2a10009f13186a79eb4804abf7d76ff37c2fd",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part14.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_14.pdf",
+          "sha256": "87a878509b3cb745f62f45217d259380014827c667dd57d1e164e41c3d6581e8",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part15.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_15.pdf",
+          "sha256": "d9bbce70089dd298fcd701e1bff59ebb41eebc455d380038932cf2491b1fd04d",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part16.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_16.pdf",
+          "sha256": "fe9692cc1c6bbf97adbd87db1d7000fe9a314fb440889fe1eb97ab9a3d14ae75",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part17.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_17.pdf",
+          "sha256": "1f66591676d03d1303cb28b67168832903703aa59030839d304952c227cc9250",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part18.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_18.pdf",
+          "sha256": "03d556e0f6e2b38722bf14451126dc9e4b520cebb71f3875a03c87d6d99b5405",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part19.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_19.pdf",
+          "sha256": "bda5afd548debaee5f65c4c87bac27bd6f56a291b2021a693a7d81a4ebc50616",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part20.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_20.pdf",
+          "sha256": "5a1a54f4431873e69eb482fb49271855d36872c74539ff1f0a1464f475bec9ae",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part21.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_21.pdf",
+          "sha256": "cf72e15684b16650571fd13d4c1bf9ea4e51fea08a758d075871c7972506ebee",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part22.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_22.pdf",
+          "sha256": "ccdc3977164d6aa40779a2d998ec41d5b9e240f43de7994b5143247475262d97",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part23.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_23.pdf",
+          "sha256": "55ab12218c8df1f35058395f3facf834727cf79ebcec7c7b7dd86fc409123eb5",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part24.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_24.pdf",
+          "sha256": "7b82502d447fa41784857f1e3c64bd556b693a2b123b00b8e2813f20e11e43ad",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part25.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_25.pdf",
+          "sha256": "9f4d3f68ad16b2023f5c7dabb82e7b42c483b6ca4cdc68e292f4c25e59d261be",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part26.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_26.pdf",
+          "sha256": "f40e0d735949514fedcd14f8c92ab733f6636b615b9c45ea06055718ee6655ab",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part27.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_27.pdf",
+          "sha256": "345ffcdb6059e0640f6ad9f397472c61f968876240e6bc5fa61dc4e994096419",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part28.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_28.pdf",
+          "sha256": "5e8f619f44908d464fb38ae4ef8ae94c8e9eb059710d67fe06caaf9e75591a4a",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part29.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_29.pdf",
+          "sha256": "164154c0964376788b3c6b2feb8b2e68016b8a61f8431cc84826f01bfec1e774",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part30.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_30.pdf",
+          "sha256": "757937a7a980888beea51829479132baa8ea3d06cbb9d21f71571a922d822c8f",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part31.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_31.pdf",
+          "sha256": "ba566e87ed2c81a23e397469279a574ed917ab99d81972c9c4dca7c3c65cd2ec",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part32.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_32.pdf",
+          "sha256": "a0d4bb3b2230aaabe3da80678cc65ec4f27ce192fdf14cc7abb836657642f94c",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part33.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_33.pdf",
+          "sha256": "3edef47a5f153c8a0f32fd41c9398e50c1b839a5fde3ca181e619056fec3914c",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part34.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_34.pdf",
+          "sha256": "81ccd880b73b2e11630b780f99affcc69c572dedb1ca8b8beb634a66e79b315d",
+          "pageCount": 1
+        },
+        {
+          "file": "official-0-part35.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/PacingGuides/Y40507_TR_G3_PacingGuide_BK/docs/Y40507_TR_G3_PacingGuide_BK_REV_35.pdf",
+          "sha256": "de52f4092f01bcf3df65fdc32002efad82767cb135a2e8c1dada34f6f6bde1c9",
+          "pageCount": 1
+        }
+      ]
+    },
+    {
+      "key": "eld-teacher-u4",
+      "title": "Unit 4 \u00b7 English language development teacher guide",
+      "pageCount": 41,
+      "unit": 4,
+      "viewer": "https://onlinepublications.s3.us-east-2.amazonaws.com/Advancing-Language-Learning/G3/GR3_ELD_TRS_Unit_4/index.html",
+      "split": false,
+      "renderIndex": 1,
+      "files": [
+        {
+          "file": "official-1.pdf",
+          "url": "https://onlinepublications.s3.us-east-2.amazonaws.com/Advancing-Language-Learning/G3/GR3_ELD_TRS_Unit_4/docs/GR3_ELD_TRS_Unit_4.pdf",
+          "sha256": "de2d4ce4c5b2c23fc12e090a137fccf108631538421ade4eb44f16e9b853f9ea",
+          "pageCount": 41
+        }
+      ]
+    },
+    {
+      "key": "eld-student-u4",
+      "title": "Unit 4 \u00b7 English language development student text",
+      "pageCount": 23,
+      "unit": 4,
+      "viewer": "https://onlinepublications.s3.us-east-2.amazonaws.com/Advancing-Language-Learning/G3/GR3_ELD_Student_Book_Unit_4/index.html",
+      "split": false,
+      "renderIndex": 2,
+      "files": [
+        {
+          "file": "official-2.pdf",
+          "url": "https://onlinepublications.s3.us-east-2.amazonaws.com/Advancing-Language-Learning/G3/GR3_ELD_Student_Book_Unit_4/docs/GR3_ELD_Student_Book_Unit_4.pdf",
+          "sha256": "bc915ebf34500247bbe3ba6256ac10f2e4545bcb01ee7a7e8f05ca03f879e413",
+          "pageCount": 23
+        }
+      ]
+    },
+    {
+      "key": "student-u4",
+      "title": "Unit 4 \u00b7 Texts for Close Reading",
+      "pageCount": 36,
+      "unit": 4,
+      "viewer": "https://onlinepublications.s3.us-east-2.amazonaws.com/Advancing-Language-Learning/G3/GR3_Texts_for_Close_Reading/index.html",
+      "split": false,
+      "renderIndex": 3,
+      "files": [
+        {
+          "file": "official-3.pdf",
+          "url": "https://onlinepublications.s3.us-east-2.amazonaws.com/Advancing-Language-Learning/G3/GR3_Texts_for_Close_Reading/docs/GR3_Texts_for_Close_Reading.pdf",
+          "sha256": "649ee623eb3a4f1687afac12227a3c0654bdb9b00ed1ab620ed2f5b4e36325ee",
+          "pageCount": 36
+        }
+      ]
+    },
+    {
+      "key": "apply-u1w1",
+      "title": "Unit 1 Week 1 \u00b7 Guide to Apply and Transfer",
+      "pageCount": 4,
+      "unit": 1,
+      "viewer": "https://s3.us-east-2.amazonaws.com/onlinepublications/GuideApplyTransfer/Y40524_TGC_G3U1_W1/index.html",
+      "split": true,
+      "renderIndex": 4,
+      "files": [
+        {
+          "file": "official-4-part1.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/GuideApplyTransfer/Y40524_TGC_G3U1_W1/docs/Y40524_TGC_G3U1_W1-rev_01.pdf",
+          "sha256": "8a655f7bc71efe1a8aa4a29d71fecef7d243ab7a9e36226c448b8d3a2ad9f7d7",
+          "pageCount": 1
+        },
+        {
+          "file": "official-4-part2.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/GuideApplyTransfer/Y40524_TGC_G3U1_W1/docs/Y40524_TGC_G3U1_W1-rev_02.pdf",
+          "sha256": "bd515bca78c26e9adb9e91d105145c278c516674d097136e72298f0985faaad6",
+          "pageCount": 1
+        },
+        {
+          "file": "official-4-part3.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/GuideApplyTransfer/Y40524_TGC_G3U1_W1/docs/Y40524_TGC_G3U1_W1-rev_03.pdf",
+          "sha256": "1b0b188063461da0c2d760df7108b11562d9eed5322403093c0f5575d3df1b4d",
+          "pageCount": 1
+        },
+        {
+          "file": "official-4-part4.pdf",
+          "url": "https://s3.us-east-2.amazonaws.com/onlinepublications/GuideApplyTransfer/Y40524_TGC_G3U1_W1/docs/Y40524_TGC_G3U1_W1-rev_04.pdf",
+          "sha256": "95c322f397380eb5b5e9efa35fad2db4a6361aa5a7e8c4f7dc077d89de6f7a58",
+          "pageCount": 1
+        }
+      ]
+    }
+  ]
+}

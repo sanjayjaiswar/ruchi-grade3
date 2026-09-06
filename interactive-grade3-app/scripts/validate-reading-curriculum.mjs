@@ -3,16 +3,19 @@ import { createHash } from 'node:crypto';
 
 const dataUrl = new URL('../src/app/data/reading-curriculum.data.ts', import.meta.url);
 const templateUrl = new URL('../src/app/pages/reading-home/reading-home.html', import.meta.url);
+const component = await readFile(new URL('../src/app/pages/reading-home/reading-home.ts', import.meta.url), 'utf8');
+const sourceViewer = await readFile(new URL('../src/app/pages/reading-home/reading-source-viewer.html', import.meta.url), 'utf8');
+const sourceViewerStyles = await readFile(new URL('../src/app/pages/reading-home/reading-source-viewer.css', import.meta.url), 'utf8');
 const routesUrl = new URL('../src/app/app.routes.ts', import.meta.url);
 const practiceUrl = new URL('../src/app/data/reading-practice.data.json', import.meta.url);
 const learningSystemUrl = new URL('../src/app/data/reading-learning-system.data.ts', import.meta.url);
 const officialLessonsUrl = new URL('../src/app/data/reading-official-lessons.data.ts', import.meta.url);
 const evidenceQuestionsUrl = new URL('../src/app/data/reading-evidence-questions.data.ts', import.meta.url);
 const strategyExamplesUrl = new URL('../src/app/data/reading-strategy-examples.data.ts', import.meta.url);
-const officialLessonImageUrl = new URL('../public/source-pages/reading/official-samples/grade3-u1-w1-lesson1-guide.png', import.meta.url);
+const officialLessonImageUrl = new URL('../public/source-pages/reading/reviewed/lesson-guide.webp', import.meta.url);
 const sourceAuditUrl = new URL('../../docs/reading/grade3-curriculum-source-audit.md', import.meta.url);
-const sourcePageUrls = Array.from({ length: 10 }, (_, index) => new URL(`../public/source-pages/reading/unit-${index + 1}-scope.png`, import.meta.url));
-const evidenceSourcePageUrls = Array.from({ length: 10 }, (_, index) => new URL(`../public/source-pages/reading/text-evidence/unit-${index + 1}.png`, import.meta.url));
+const sourcePageUrls = Array.from({ length: 10 }, (_, index) => new URL(`../public/source-pages/reading/reviewed/scope-unit-${String(index + 1).padStart(2, '0')}.webp`, import.meta.url));
+const evidenceSourcePageUrls = Array.from({ length: 10 }, (_, index) => new URL(`../public/source-pages/reading/reviewed/questions-unit-${String(index + 1).padStart(2, '0')}.webp`, import.meta.url));
 
 const [data, template, routes, practiceText, learningSystem, officialLessons, evidenceQuestions, strategyExamples, sourceAudit, officialLessonImageStat] = await Promise.all([
   readFile(dataUrl, 'utf8'),
@@ -136,9 +139,9 @@ for (const phrase of [
   'Visual unit path · labels come from the official publisher scope',
   'Official sources for this unit',
   'Open publisher scope · printed pp.',
-  'Official source · PDF p.',
-  'Publisher source visible here',
-  'Open the exact publisher page · PDF p.'
+  'Official source · document p.',
+  'Official sources for this question',
+  'Official lesson source'
 ]) {
   if (!strategyExamples.includes(phrase) && !template.includes(phrase)) failures.push(`Missing visual-teaching contract: ${phrase}`);
 }
@@ -148,8 +151,8 @@ for (const rejectedWorksheetPattern of ['<input', '<textarea', '[(ngModel)]', 'T
 if (template.includes('class="book-stack"')) failures.push('Decorative CSS book-stack art remains instead of source-controlled evidence.');
 if (template.indexOf('class="unit-official-evidence source-first"') > template.indexOf('class="unit-week-nav"')) failures.push('Official unit source proof must appear before the week learning path.');
 if (!template.includes('<article *ngFor="let question of weekQuestions(week)" class="question-launch-card">')) failures.push('Question launches are not structured with adjacent source proof.');
-if (!template.includes('[href]="questionSourcePage(unit)" target="_blank" rel="noopener">Official source · PDF p.')) failures.push('Each Unit question launch must carry its adjacent official publisher-page link.');
-if (!template.includes('class="question-source-thumbnail"')) failures.push('The active practice question does not visibly show its official publisher source page.');
+if (!template.includes('[href]="questionSourcePage(unit)" target="_blank" rel="noopener">Official source · document p.')) failures.push('Each Unit question launch must carry its adjacent official publisher-page link.');
+if (!template.includes('[pages]="practiceSourcePages[evidenceQuestion.id]"')) failures.push('The active practice question does not visibly show its official publisher source page.');
 
 if (Object.keys(practice).join(',') !== expectedPracticeKeys.join(',')) failures.push('Practice registry must contain the ordered keys u1-w1 through u10-w3.');
 if (practiceDays.length !== 150) failures.push(`Expected 150 explicit practice records; found ${practiceDays.length}.`);
@@ -227,7 +230,7 @@ for (let unit = 1; unit <= 10; unit += 1) {
 for (const phrase of ['Original supplemental practice—not a Benchmark, Baker, or Moreland lesson.', 'The public source does not establish Baker’s current pacing.']) {
   if (!sourceAudit.includes(phrase)) failures.push(`Missing source-audit limitation: ${phrase}`);
 }
-for (const phrase of ['100 official text-evidence questions', 'Official sources for this unit', 'the portal does not replace or invent the passage', 'does not invent a passage, answer, or score', 'Baker’s current classroom dates and pacing are not public']) {
+for (const phrase of ['100 official text-evidence questions', 'Official sources for this unit', 'Teaching contains original supplemental visual examples.', 'does not invent a passage, answer, or score', 'Baker’s current classroom dates and pacing are not public']) {
   if (!template.includes(phrase)) failures.push(`Missing public-evidence boundary: ${phrase}`);
 }
 if (template.includes('class="lesson-links"')) failures.push('Supplemental practice links remain published on the active Unit path.');
@@ -238,7 +241,7 @@ for (const phrase of [
   "'elected', 'flooding', 'government', 'officials', 'prepare', 'sandbag', 'team'",
   "sourceFingerprint: 'SHA-256 191111faa89f9e32fc429d4a5ea5ab630c5b509764d45a6498f788f491ca2a84'"
 ]) if (!officialLessons.includes(phrase)) failures.push(`Official Lesson 1 contract drifted: ${phrase}`);
-for (const phrase of ['How did the people in Fargo work together to solve a problem?', 'The portal guides the same lesson; it does not replace or invent the passage.', 'grade3-u1-w1-lesson1-guide.png']) {
+for (const phrase of ['How did the people in Fargo work together to solve a problem?', 'The portal guides the same lesson; it does not replace or invent the passage.']) {
   if (!template.includes(phrase)) failures.push(`Source-faithful Lesson 1 UI is missing: ${phrase}`);
 }
 if (!officialLessonImageStat || officialLessonImageStat.size < 100_000) failures.push('Missing or incomplete official Lesson 1 source thumbnail.');
@@ -251,7 +254,67 @@ for (let index = 0; index < evidenceSourcePageStats.length; index += 1) {
   const sourcePage = evidenceSourcePageStats[index];
   if (!sourcePage || sourcePage.size < 100_000) failures.push(`Missing or incomplete official text-evidence source page for Unit ${index + 1}.`);
 }
-if (!template.includes("'/source-pages/reading/text-evidence/unit-' + unit.number + '.png'")) failures.push('The active unit page does not visibly render its official text-evidence source page.');
+if (!template.includes('[src]="questionSourcePage(unit)"')) failures.push('The active unit page does not visibly render its official text-evidence source page.');
+
+for (const required of ['[href]="current.image"', '[src]="current.image"', 'target="_blank"', 'Open full-size page', 'pages.length > 1', '(click)="select(index, viewport)"', '[href]="current.original"']) {
+  if (!sourceViewer.includes(required)) failures.push(`Source viewer is missing: ${required}`);
+}
+if (sourceViewerStyles.includes('object-fit:cover')) failures.push('Official page viewer must not crop source images.');
+for (const collection of ['scopeSourcePages', 'questionSourcePages', 'programSourcePages', 'lessonSourcePages']) {
+  if (!template.includes(`[pages]="${collection}"`)) failures.push(`Source library is missing ${collection}.`);
+}
+if (!component.includes("'apply-u1w1'")) failures.push('Official publisher teaching card is not mapped.');
+
+if (!component.includes("practiceView: 'teaching' | 'source' = 'teaching'")) failures.push('Interactive guides must open in Teaching.');
+if (!template.includes(`<section *ngIf="practiceView === 'source'" class="practice-reference-panel">`)) failures.push('Full-page practice source must be confined to the optional reference view.');
+if (!template.includes(`<ng-container *ngIf="practiceView === 'teaching'">`)) failures.push('Teaching must retain its own workspace.');
+
+// Every admitted PDF page must have a complete, fingerprinted image reference.
+const pageCatalog = JSON.parse(await readFile(new URL('../src/app/data/reading-source-pages.data.json', import.meta.url), 'utf8'));
+const sourceManifest = JSON.parse(await readFile(new URL('../../docs/reading/grade3-reading-source-manifest.json', import.meta.url), 'utf8'));
+if (pageCatalog.pages.length !== 50) failures.push('Expected 50 complete page/spread/detail assets.');
+for (const document of pageCatalog.documents) {
+  const source = sourceManifest.verifiedSources.find(item => item.id === document.sourceId);
+  if (!source || source.sha256 !== document.sha256 || source.pageCount !== document.pdfPageCount) failures.push(`Source identity mismatch: ${document.key}`);
+  const actual = new Set(pageCatalog.pages.filter(page => page.document === document.key && page.kind !== 'detail').map(page => page.pdfPage));
+  for (let page = 1; page <= document.pdfPageCount; page++) if (!actual.has(page)) failures.push(`Missing full source page: ${document.key}/${page}`);
+}
+for (const page of pageCatalog.pages) {
+  const asset = await readFile(new URL(`../public${page.image}`, import.meta.url)).catch(() => null);
+  if (!asset || createHash('sha256').update(asset).digest('hex') !== page.sha256) failures.push(`Image fingerprint mismatch: ${page.id}`);
+  if (page.width < 1200 || page.height < 1200) failures.push(`Source image too small: ${page.id}`);
+  const document = pageCatalog.documents.find(item => item.key === page.document);
+  if (!document || page.original !== `${document.original}#page=${page.pdfPage}`) failures.push(`Source page link mismatch: ${page.id}`);
+}
+for (let unit = 1; unit <= 10; unit++) {
+  const scopePages = pageCatalog.pages.filter(page => page.document === 'scope' && page.unit === unit && page.kind !== 'spread');
+  if (scopePages.map(page => page.printedPage).join(',') !== `${66 + unit * 2},${67 + unit * 2}`) failures.push(`Incomplete logical scope pages: Unit ${unit}`);
+  const questions = pageCatalog.pages.find(page => page.document === 'questions' && page.unit === unit);
+  if (questions?.questionNumbers.join(',') !== '1,2,3,4,5,6,7,8,9,10') failures.push(`Incomplete question source mapping: Unit ${unit}`);
+}
+if (!component.includes('question.selectionTitle === WORKING_TOGETHER_LESSON.title')) failures.push('Teacher sample must only accompany its verified selection.');
+
+const publisherCatalog = JSON.parse(await readFile(new URL('../src/app/data/reading-publisher-pages.data.json', import.meta.url), 'utf8'));
+const publisherDiscovery = JSON.parse(await readFile(new URL('../../docs/reading/grade3-publisher-source-discovery.json', import.meta.url), 'utf8'));
+if (publisherCatalog.pages.length !== 139) failures.push('Expected all 139 newly reviewed publisher pages.');
+for (const document of publisherDiscovery.documents) {
+  const pages = publisherCatalog.pages.filter(page => page.document === document.key);
+  if (pages.length !== document.pageCount || new Set(pages.map(page => page.viewerPage)).size !== document.pageCount) failures.push(`Incomplete publisher document: ${document.key}`);
+  for (const page of pages) {
+    const file = document.files[document.split ? page.viewerPage - 1 : 0];
+    if (!file || page.sourceSha256 !== file.sha256 || page.sourcePdf !== file.url || page.pdfPage !== (document.split ? 1 : page.viewerPage)) failures.push(`Publisher provenance mismatch: ${page.id}`);
+    if (page.original !== `${document.viewer}#page=${page.viewerPage}`) failures.push(`Publisher viewer link mismatch: ${page.id}`);
+    const asset = await readFile(new URL(`../public${page.image}`, import.meta.url)).catch(() => null);
+    if (!asset || createHash('sha256').update(asset).digest('hex') !== page.sha256) failures.push(`Publisher image fingerprint mismatch: ${page.id}`);
+    if (Math.min(page.width, page.height) < 1500) failures.push(`Publisher image too small: ${page.id}`);
+  }
+}
+for (let unit = 1; unit <= 10; unit++) {
+  const weeks = publisherCatalog.pages.filter(page => page.document === 'language-pacing' && page.unit === unit).map(page => page.week);
+  if (weeks.join(',') !== '1,2,3') failures.push(`Missing publisher language pacing: Unit ${unit}`);
+}
+const readerPages = publisherCatalog.pages.filter(page => page.document === 'student-u4' && page.printedPage !== null);
+if (readerPages.map(page => page.printedPage).join(',') !== Array.from({ length: 32 }, (_, i) => i+1).join(',')) failures.push('Unit 4 reader printed-page mapping is incomplete.');
 
 const expectedStandardsByDomain = {
   RL: ['RL.3.1', 'RL.3.2', 'RL.3.3', 'RL.3.4', 'RL.3.5', 'RL.3.6', 'RL.3.7', 'RL.3.8', 'RL.3.9', 'RL.3.10'],
@@ -285,6 +348,7 @@ const summary = {
   publisherSelectionRegisterVerified: actualSelectionDigest === expectedSelectionDigest,
   officialRenderedSourcePages: sourcePageStats.filter((entry) => entry && entry.size >= 100_000).length,
   officialTextEvidenceQuestions: evidenceRecords.length,
+  additionalPublisherSourcePages: publisherCatalog.pages.length,
   officialTextEvidenceSourcePages: evidenceSourcePageStats.filter((entry) => entry && entry.size >= 100_000).length,
   originalVisualStrategyExamples: expectedStrategies.filter((strategy) => strategyExamples.includes(strategy)).length,
   boundedOfficialLessons: officialLessons.includes("id: 'u1-w1-l1'") ? 1 : 0,

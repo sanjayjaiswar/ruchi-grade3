@@ -607,3 +607,12 @@ p a, li a { font-size: inherit; }
   .standard-visual-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .question-launch-grid { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* Teaching remains the default workspace; source pages are an optional view. */
+.reference-view-nav { display:flex; flex-wrap:wrap; gap:8px; margin:14px 0; }
+.reference-view-nav button, .reference-return, .reference-inline { font:inherit; font-weight:700; padding:10px 15px; border:1px solid #abc0e9; border-radius:8px; color:#155eef; background:#fff; cursor:pointer; }
+.reference-view-nav button.active { background:#155eef; color:#fff; border-color:#155eef; }
+.practice-reference-panel { padding:16px; background:#fff; border:1px solid #cbd8ea; border-radius:12px; }
+.practice-reference-panel > p { margin:0; color:#526079; }
+.reference-inline { margin-top:4px; }
+.reference-view-nav button:focus-visible, .reference-return:focus-visible, .reference-inline:focus-visible { outline:3px solid #155eef; outline-offset:3px; }

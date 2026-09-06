@@ -1,0 +1,26 @@
+<section class="source-viewer" *ngIf="page as current" [attr.aria-label]="title">
+  <header>
+    <div><strong>{{ title }}</strong><p>{{ current.description }}</p></div>
+    <a [href]="current.image" target="_blank" rel="noopener">Open full-size page ↗</a>
+  </header>
+  <nav *ngIf="pages.length > 1 && pages.length <= 8" aria-label="Choose a source page">
+    <button *ngFor="let item of pages; let index = index" type="button"
+      [class.active]="index === selected" [attr.aria-pressed]="index === selected"
+      (click)="select(index, viewport)">{{ item.label }}</button>
+  </nav>
+  <nav *ngIf="pages.length > 8" aria-label="Choose a source page">
+    <button type="button" [disabled]="selected === 0" (click)="select(selected - 1, viewport)">← Previous</button>
+    <label>Page <select #pageChoice [value]="selected" (change)="select(+pageChoice.value, viewport)">
+      <option *ngFor="let item of pages; let index = index" [value]="index">{{ item.label }}</option>
+    </select></label>
+    <span>{{ selected + 1 }} of {{ pages.length }}</span>
+    <button type="button" [disabled]="selected === pages.length - 1" (click)="select(selected + 1, viewport)">Next →</button>
+  </nav>
+  <div class="page-viewport" #viewport tabindex="0" [attr.aria-label]="current.label + ' — scroll to read the complete page'">
+    <a [href]="current.image" target="_blank" rel="noopener" [attr.aria-label]="'Open ' + current.label + ' at full size'">
+      <img [src]="current.image" [alt]="current.description + ' — ' + current.label" decoding="async" loading="lazy" (error)="failed = true" [hidden]="failed" />
+    </a>
+    <p *ngIf="failed" role="status">This page image could not load. Use the original document link below.</p>
+  </div>
+  <footer><span>{{ current.label }} · Click the page to open and zoom</span><a *ngIf="current.fullSpreadImage" [href]="current.fullSpreadImage" target="_blank" rel="noopener">Open both pages together ↗</a><a [href]="current.original" target="_blank" rel="noopener">Original document ↗</a></footer>
+</section>

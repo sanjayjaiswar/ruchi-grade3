@@ -1,3 +1,6 @@
+import readingSourceCatalog from '../../data/reading-source-pages.data.json';
+import publisherCatalog from '../../data/reading-publisher-pages.data.json';
+import { ReadingSourceViewer, ReadingSourcePage } from './reading-source-viewer';
 import { NgFor, NgIf } from '@angular/common';
 import { Component, OnDestroy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
@@ -60,12 +63,54 @@ type StandardsDomainId = 'rl' | 'ri' | 'rf' | 'w' | 'sl' | 'l';
 
 @Component({
   selector: 'app-reading-home-page',
-  imports: [NgFor, NgIf, RouterLink],
+  imports: [NgFor, NgIf, RouterLink, ReadingSourceViewer],
   templateUrl: './reading-home.html',
   styleUrl: './reading-home.css'
 })
 export class ReadingHomePage implements OnDestroy {
   readonly units = READING_UNITS;
+  readonly scopeSourcePages = readingSourceCatalog.pages.filter(page => page.document === 'scope' && page.kind !== 'spread');
+  readonly scopeSpreadPages = readingSourceCatalog.pages.filter(page => page.document === 'scope' && page.kind === 'spread');
+  readonly questionSourcePages = readingSourceCatalog.pages.filter(page => page.document === 'questions');
+  readonly programSourcePages = readingSourceCatalog.pages.filter(page => page.document === 'program-sample' && page.kind === 'document-page');
+  readonly publisherCollections = publisherCatalog.documents.map(document => ({
+    ...document, pages: publisherCatalog.pages.filter(page => page.document === document.key)
+  }));
+  readonly unitPublisherCollections = READING_UNITS.map(unit => this.publisherCollections
+    .filter(collection => collection.unit === unit.number || collection.key === 'language-pacing')
+    .map(collection => ({ ...collection, pages: collection.key === 'language-pacing'
+      ? collection.pages.filter(page => page.unit === unit.number) : collection.pages })));
+  readonly lessonSourcePages = publisherCatalog.pages.filter(page =>
+    (page.document === 'apply-u1w1' && page.viewerPage <= 2) ||
+    (page.document === 'language-pacing' && page.unit === 1 && page.week === 1))
+    .sort((a, b) => Number(a.document === 'language-pacing') - Number(b.document === 'language-pacing'));
+  readonly studentQuestionPages: Record<string, readonly ReadingSourcePage[]> = Object.fromEntries(
+    READING_EVIDENCE_QUESTIONS.filter(question => question.unitNumber === 4).map(question => {
+      // Printed-page ranges verified against the reader contents and each question.
+      // Comparison questions include both complete selections.
+      const ranges: Record<number, number[][]> = {
+        1: [[4, 5]], 2: [[4, 5]], 3: [[4, 9]], 4: [[6, 9]],
+        5: [[12, 19]], 6: [[12, 19]], 7: [[12, 19]], 8: [[22, 29]],
+        9: [[12, 19], [22, 29]], 10: [[12, 19], [22, 29]]
+      };
+      return [question.id, publisherCatalog.pages.filter(page => page.document === 'student-u4' &&
+        page.printedPage !== null && ranges[question.questionNumber].some(([start, end]) =>
+          page.printedPage! >= start && page.printedPage! <= end))];
+    })
+  );
+  readonly unitScopePages = READING_UNITS.map(unit => this.scopeSourcePages.filter(page => page.unit === unit.number));
+  readonly unitQuestionPages = this.questionSourcePages.map(page => [page]);
+  readonly practiceSourcePages: Record<string, readonly ReadingSourcePage[]> = Object.fromEntries(
+    READING_EVIDENCE_QUESTIONS.map(question => [question.id, [
+      this.questionSourcePages[question.unitNumber - 1],
+      ...(this.studentQuestionPages[question.id] ?? []),
+      ...this.unitScopePages[question.unitNumber - 1],
+      ...(question.unitId === WORKING_TOGETHER_LESSON.unitId && question.selectionTitle === WORKING_TOGETHER_LESSON.title
+        ? this.lessonSourcePages : []),
+      ...(question.unitNumber === 1 && question.selectionTitle === 'Election Day'
+        ? publisherCatalog.pages.filter(page => page.document === 'apply-u1w1' && page.viewerPage === 3) : [])
+    ]])
+  );
   readonly pilotLesson = WORKING_TOGETHER_LESSON;
   readonly standardsDomains = GRADE3_ELA_DOMAINS;
   readonly standardsCount = GRADE3_ELA_STANDARD_COUNT;
@@ -102,6 +147,9 @@ export class ReadingHomePage implements OnDestroy {
   strategyGuide: ReadingStrategyGuide = readingStrategyGuide(READING_EVIDENCE_QUESTIONS[0].strategy);
   strategyExample: ReadingStrategyExample = READING_STRATEGY_EXAMPLES[READING_EVIDENCE_QUESTIONS[0].strategy];
   selectedWeekNumber = 1;
+  unitReference: 'scope' | 'questions' | null = null;
+  publisherReference: string | null = null;
+  practiceView: 'teaching' | 'source' = 'teaching';
   selectedPracticeStage: PracticeStage = 'learn';
   selectedLessonStage: LessonStage = 'before';
   selectedStandardDomainId: StandardsDomainId = 'rl';
@@ -161,11 +209,11 @@ export class ReadingHomePage implements OnDestroy {
   }
 
   questionSourcePage(unit: ReadingUnit = this.unit): string {
-    return `${READING_TEXT_EVIDENCE_SOURCE}#page=${unit.number}`;
+    return this.questionSourcePages[unit.number - 1].image;
   }
 
   scopePage(unit: ReadingUnit): string {
-    return `${READING_SCOPE_SOURCE}#page=${unit.number}`;
+    return this.scopeImage(unit);
   }
 
   scopePrintedPage(unit: ReadingUnit): number {
@@ -173,7 +221,7 @@ export class ReadingHomePage implements OnDestroy {
   }
 
   scopeImage(unit: ReadingUnit): string {
-    return `/source-pages/reading/unit-${unit.number}-scope.png`;
+    return this.scopeSpreadPages[unit.number - 1].image;
   }
 
   selectStandardDomain(domainId: StandardsDomainId): void {
@@ -312,6 +360,7 @@ export class ReadingHomePage implements OnDestroy {
       this.strategyExample = readingStrategyExampleFor(routedQuestion.id, routedQuestion.strategy);
       this.readingWeek = routedUnit.weeks[routedQuestion.weekNumber - 1];
       this.selectedPracticeStage = 'learn';
+      this.practiceView = 'teaching';
       this.title.setTitle(`Question ${routedQuestion.questionNumber}: ${routedQuestion.selectionTitle} | Grade 3 Reading`);
     } else if (routedUnit && Number.isInteger(questionValue) && questionValue > 0) {
       void this.router.navigate(this.unitRoute(routedUnit));
@@ -330,6 +379,8 @@ export class ReadingHomePage implements OnDestroy {
       return;
     } else if (routedUnit) {
       this.pageKind = 'unit';
+      this.unitReference = null;
+      this.publisherReference = null;
       this.unit = routedUnit;
       this.lessonNumber = 1;
       this.readingWeek = routedUnit.weeks[0];
