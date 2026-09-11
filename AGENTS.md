@@ -53,7 +53,7 @@
 ## Browser And Screen Privacy Boundary
 
 - Browser, Chrome, debugging, screenshots, and Computer Use screen access are deny-all by default. Full Access does not override this boundary.
-- Use `.codex/skills/browser-profile-validation/SKILL.md` before browser/screen work.
+- Use `.agents/skills/browser-profile-validation/SKILL.md` before browser/screen work.
 - Browser/profile authorization is work-scoped only. It never authorizes inspecting cookies, local storage, session storage, browser history, downloads, saved passwords, extension data, bookmarks, bookmark menus, autocomplete suggestions, page titles/URLs unrelated to the task, local files, other tabs, other profiles, account settings, account switchers, or unrelated screen content.
 - Default allowed Chrome profiles: `Gemini` / `Gemini SJ` for browser/debug/Computer Use work; `EdZilla` / `Sanjay Jaiswar` only for EdZilla Gmail/email workflows.
 - For any Chrome work, use an agent-owned tab or dedicated Chrome session/tab group by default so existing user work is not disrupted. Do not reuse, navigate, reload, or claim the user's current tab unless the user explicitly asks to use that exact tab or a more specific repo skill permits a different approach.
@@ -94,12 +94,12 @@
 
 ## Repo Skills
 
-- For browser, Chrome, debugging, screenshot, or Computer Use work, use `.codex/skills/browser-profile-validation/SKILL.md` first.
-- For any commit-message, checkpoint-message, save-work, commit-discussion, or "what should I commit" request, use `.codex/skills/commit-message-preparation/SKILL.md` before responding.
+- For browser, Chrome, debugging, screenshot, or Computer Use work, use `.agents/skills/browser-profile-validation/SKILL.md` first.
+- For any commit-message, checkpoint-message, save-work, commit-discussion, or "what should I commit" request, use `.agents/skills/commit-message-preparation/SKILL.md` before responding.
 
 ## Commit Message Requests
 
 - Commit execution is barred by default. Never run `git commit`, `git merge`, `git rebase --continue`, `git push`, or any command that creates, finalizes, or publishes a commit unless the user explicitly authorizes that exact git action in the current turn.
-- Do not provide one-line plain-text commit messages for this repository. Commit-message output must follow the required wrapper and Markdown structure in `.codex/skills/commit-message-preparation/SKILL.md`, unless the skill blocks the message.
+- Do not provide one-line plain-text commit messages for this repository. Commit-message output must follow the required wrapper and Markdown structure in `.agents/skills/commit-message-preparation/SKILL.md`, unless the skill blocks the message.
 - When the user wants to save work, provide only the skill-formatted commit message and let the user perform the commit unless they explicitly authorize commit execution in the current turn.
 - Before writing any commit message, review the actual changes being committed and do not guess or summarize from memory.

@@ -189,7 +189,7 @@ Use the repository skill whenever a lesson needs the same source-faithful repair
 Use $fix-eureka-lesson to fix Module 2 Lesson 21.
 ```
 
-The skill is stored at `.codex/skills/fix-eureka-lesson/`. It requires the Teacher Edition as the source of truth, preserves every official problem and mathematical relationship, implements distinct Blank and Solved states, runs the durable source-contract validator and build, and visually checks Concept, Blank, Solved, and Summary in an isolated authorized Chrome tab. Its Lesson 20 baseline is documented in `.codex/skills/fix-eureka-lesson/references/lesson-20-baseline.md`.
+The skill is stored at `.agents/skills/fix-eureka-lesson/`. It requires the Teacher Edition as the source of truth, preserves every official problem and mathematical relationship, implements distinct Blank and Solved states, runs the durable source-contract validator and build, and visually checks Concept, Blank, Solved, and Summary in an isolated authorized Chrome tab. Its Lesson 20 baseline is documented in `.agents/skills/fix-eureka-lesson/references/lesson-20-baseline.md`.
 
 Changing the module and lesson numbers is the only routine input. Do not treat an existing portal lesson, generic component coverage, or a successful build as proof that the lesson is complete.
 
