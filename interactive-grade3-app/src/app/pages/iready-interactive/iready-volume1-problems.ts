@@ -1823,6 +1823,8 @@ const sourceProblems: readonly IReadySourceProblem[] = [
       { lead: 'Model It', prompt: 'Rename 365 so both tens and ones can be subtracted.', equation: '365 = 2 hundreds + 15 tens + 15 ones', answer: '2 hundreds, 15 tens, 15 ones', blanks: ['365 = ___ hundreds + ___ tens + ___ ones'], answers: [['2', '15', '15']] }
     ], 'blank'),
     solvedVisual: subtractionVisual('Regroup 365 and subtract', [
+      { lead: 'Start', prompt: 'Build all 365 before making any trade.', equation: '365 = 3 hundreds + 6 tens + 5 ones', answer: 'No regrouping yet.', model: { hundreds: 3, tens: 6, ones: 5, caption: 'Start with all 3 hundreds, 6 tens, and 5 ones.' } },
+      { lead: 'Trade a ten', prompt: 'Trade one of the six tens for ten ones.', equation: '365 = 3 hundreds + 5 tens + 15 ones', answer: 'The value stays 365.', model: { hundreds: 3, tens: 5, ones: 15, caption: 'One ten becomes ten ones. All three hundreds remain.' } },
       { lead: 'Model It', prompt: 'Regroup one hundred and one ten.', equation: '365 = 2 hundreds + 15 tens + 15 ones', answer: 'Equivalent regrouped form', model: { hundreds: 2, tens: 15, ones: 15, caption: 'The regrouped model still totals 365.' } },
       { lead: 'Subtract', prompt: 'Subtract 186 by place.', equation: '365 − 186 = 179', answer: '15 − 6 = 9 ones; 15 − 8 = 7 tens; 2 − 1 = 1 hundred, so 179 flowers remain.' }
     ], 'solved')
@@ -3449,7 +3451,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
     ]),
     solvedVisual: { title: 'Four twenties make eight tens', sourceNote: supplementalVisualNote, sections: [
       { kind: 'equations', label: 'Skip-count', lines: ['10, 20, 30, 40, 50, 60, 70, 80', '20, 40, 60, 80', 'Four groups of 20 make 8 tens, or 80 books.'] },
-      { kind: 'array', label: '4 × 2 tens', rows: 4, columns: 2, item: 'block', caption: 'Each item represents one ten; 8 tens is 80.' }
+      { kind: 'array', label: '4 × 2 tens', rows: 4, columns: 2, item: 'block', unitModel: 'ten-rod', caption: 'Each item represents one ten; 8 tens is 80.' }
     ] }
   },
   {
@@ -4020,7 +4022,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
       { lead: '5.', prompt: 'Explain how square units measure the area of a shape.', lines: [], openWorkspace: true }
     ]),
     solvedVisual: { title: 'Area is the space covered', sourceNote: supplementalVisualNote, sections: [
-      { kind: 'array', label: 'Correct rug covering', rows: 2, columns: 3, item: 'square', caption: 'Six same-size square units cover the rug with no gaps, overlaps, or tiles past the edge.' },
+      { kind: 'array', label: 'Correct rug covering', rows: 2, columns: 3, item: 'square', unitModel: 'square-unit', caption: 'Six same-size square units cover the rug with no gaps, overlaps, or tiles past the edge.' },
       { kind: 'note', label: 'Teacher Guide explanation', text: 'Length and width measure distances. Area measures how much surface is covered. Count the same-size square units that completely cover the shape.' }
     ] }
   },
@@ -4693,7 +4695,7 @@ const sourceProblems: readonly IReadySourceProblem[] = [
       { lead: 'Try It', prompt: 'Use the 2-point key to find each teammate’s score.', lines: ['Abu = ___', 'Ode = ___', 'Gil = ___', 'Max = ___ points'], answers: [['2'], ['6'], ['10'], ['8']] },
       { lead: 'Look Ahead', prompt: 'State the matching bar-graph scale.', lines: ['scale = ___ points'], answers: [['2']], openWorkspace: true }
     ]),
-    solvedVisual: { title: 'Two graphs, one data set', sourceNote: supplementalVisualNote, sections: [{ kind: 'data-chart', chart: 'bar', label: 'Official scores', values: [{ label: 'Abu', value: 2 }, { label: 'Ode', value: 6 }, { label: 'Gil', value: 10 }, { label: 'Max', value: 8 }], unitSize: 2, scaleLabel: 'points', caption: 'One symbol and one scale interval represent 2 points.' }] }
+    solvedVisual: { title: 'Two graphs, one data set', sourceNote: supplementalVisualNote, sections: [{ kind: 'data-chart', chart: 'picture', label: 'Picture graph · Student p. 427', values: [{ label: 'Abu', value: 2 }, { label: 'Ode', value: 6 }, { label: 'Gil', value: 10 }, { label: 'Max', value: 8 }], unitSize: 2, keyLabel: 'Each symbol represents 2 points.' }, { kind: 'data-chart', chart: 'bar', label: 'Bar graph · Student p. 428', values: [{ label: 'Abu', value: 2 }, { label: 'Ode', value: 6 }, { label: 'Gil', value: 10 }, { label: 'Max', value: 8 }], maxValue: 10, axisTicks: [0, 2, 4, 6, 8, 10], unitSize: 2, scaleLabel: 'Number of points scored · 2 points per interval', caption: 'Both graphs show the same scores.' }] }
   },
   {
     key: 'v1-u3-l19-s1-prepare-practice', unit: 3, lesson: 19, session: 1, order: 2,

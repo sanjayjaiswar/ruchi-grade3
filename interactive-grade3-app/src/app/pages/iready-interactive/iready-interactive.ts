@@ -4,7 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { animate, stagger } from 'animejs';
-import { Subscription } from 'rxjs';
+import { combineLatest, Subscription } from 'rxjs';
+import { FoundationPlayerComponent } from '../../shared/foundation-player/foundation-player';
+import { foundationsForLesson, conceptsForLesson, conceptsForUnit } from './iready-foundations';
 import { ProblemVisualWorkspaceComponent } from '../../shared/problem-visual-workspace/problem-visual-workspace';
 import { Grade3CmcLesson, Grade3CmcUnit, GRADE3_CMC_UNITS } from '../syllabus-books/syllabus-books.data';
 import { IReadyFamilyRoundingComponent } from './iready-family-rounding';
@@ -42,7 +44,7 @@ import {
 
 @Component({
   selector: 'app-iready-interactive-page',
-  imports: [FormsModule, NgFor, NgIf, RouterLink, ProblemVisualWorkspaceComponent, IReadyFamilyRoundingComponent],
+  imports: [FormsModule, NgFor, NgIf, RouterLink, ProblemVisualWorkspaceComponent, IReadyFamilyRoundingComponent, FoundationPlayerComponent],
   templateUrl: './iready-interactive.html',
   styleUrls: ['./iready-interactive.css', './iready-consistent-presentation.css']
 })
@@ -57,6 +59,20 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
   readonly supportTeacherPrintedPages = supportTeacherPrintedPages;
   readonly supportTeacherReaderPages = supportTeacherReaderPages;
   readonly supportTeacherSourceUrl = supportTeacherSourceUrl;
+
+  foundationOpen = false;
+  foundationId = '';
+  unitFoundationsOpen = false;
+  get lessonFoundations() { return foundationsForLesson(this.selectedLessonNumber); }
+  get unitFoundations() { return conceptsForUnit(this.selectedUnitNumber); }
+  get sessionConcepts() { return conceptsForLesson(this.selectedLessonNumber, this.selectedSessionNumber); }
+  get selectedFoundation() { return this.lessonFoundations.find(f => f.id === this.foundationId) ?? this.lessonFoundations[0]; }
+  openFoundation(id?: string): void {
+    this.clearSourceRevealTimers();
+    this.foundationId = id ?? this.selectedFoundation?.id ?? '';
+    this.foundationOpen = !!this.selectedFoundation;
+  }
+  closeFoundation(): void { this.foundationOpen = false; }
 
   selectedLessonNumber = 1;
   selectedSessionNumber = 1;
@@ -108,7 +124,7 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
     private readonly changeDetector: ChangeDetectorRef
   ) {
     this.subscriptions.add(
-      this.route.paramMap.subscribe((params) => {
+      combineLatest([this.route.paramMap, this.route.queryParamMap]).subscribe(([params, query]) => {
         const requestedLesson = Number(params.get('lessonNumber'));
         const requestedUnit = Number(params.get('unitNumber'));
         const requestedResource = params.get('resourceKey');
@@ -131,10 +147,15 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
           this.selectedLessonNumber = 1;
         }
         this.selectedSessionNumber = 1;
-        this.selectedSourceProblemIndex = 0;
+        const requestedSession = Number(query.get('session'));
+        if (this.lessonFocus && sourceProblemsForSession(this.selectedLessonNumber, requestedSession).length) this.selectedSessionNumber = requestedSession;
+        const requestedActivity = this.sourceProblems.findIndex(p => p.key === query.get('activity'));
+        this.selectedSourceProblemIndex = requestedActivity >= 0 ? requestedActivity : 0;
         this.resourceMode = this.resourceFocus && this.selectedResourceKey === 'v1-u1-self-check' ? 'work' : 'student';
         this.resetActivity();
         this.openVisualTeaching();
+        const requestedFoundation = this.lessonFoundations.find(f => f.id === query.get('foundation'));
+        if (requestedFoundation) this.openFoundation(requestedFoundation.id);
         this.updateTitle();
       })
     );
@@ -562,6 +583,8 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
   }
 
   private resetActivity(): void {
+    this.foundationOpen = false;
+    this.foundationId = this.lessonFoundations[0]?.id ?? '';
     this.clearSourceRevealTimers();
     this.activityMode = 'try';
     this.guidedStage = 'try';
@@ -593,6 +616,8 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
     this.guidedStage = 'model';
     this.solutionRevealCount = Math.min(1, problem.solvedVisual.sections.length);
     this.lessonStageAnnouncement = `Worked model step 1 of ${problem.solvedVisual.sections.length}.`;
+    const foundation = this.lessonFoundations.find(f => f.source.activityKey === problem.key);
+    if (foundation) this.openFoundation(foundation.id);
     const sectionCount = problem.solvedVisual.sections.length;
     if (sectionCount <= 1) {
       this.guidedStage = 'solution';
@@ -600,6 +625,8 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
       return;
     }
 
+    // Foundation examples use explicit steps so unit trades remain visible.
+    if (foundation) return;
     this.sourceRevealTimers = Array.from({ length: sectionCount - 1 }, (_, index) => setTimeout(() => {
       this.solutionRevealCount = index + 2;
       this.guidedStage = this.solutionRevealCount === sectionCount ? 'solution' : 'model';

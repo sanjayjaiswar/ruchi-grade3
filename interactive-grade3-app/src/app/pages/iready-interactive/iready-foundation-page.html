@@ -1,0 +1,25 @@
+<main class="interactive-page foundations-page">
+  <header class="interactive-header">
+    <a class="interactive-brand" routerLink="/ruchika/grade3/iready-interactive" aria-label="i-Ready Interactive home">
+      <span aria-hidden="true">iR+</span>
+      <span><strong>i-Ready Interactive</strong><small>Grade 3 · PDF-verified Student Worktext</small></span>
+    </a>
+    <nav aria-label="i-Ready Interactive navigation">
+      <a routerLink="/ruchika/grade3/iready-interactive">Volume 1</a>
+      <a class="active" routerLink="/ruchika/grade3/iready-interactive/foundations">Foundations</a>
+      <a routerLink="/ruchika/grade3/iready-interactive/volumes/2">Volume 2</a>
+      <a class="home-link" routerLink="/ruchika/grade3" aria-label="Grade 3 home">R</a>
+    </nav>
+  </header>
+  <section class="hub-intro" [class.compact]="!!concept"><h1>Math foundations</h1><p>Explore a concept, see it in different book examples, and return to the lessons where it helps.</p></section>
+  <div class="hub-layout" [class.has-concept]="!!concept">
+    <nav class="concepts" aria-label="Foundation concepts"><a *ngFor="let item of concepts" [routerLink]="['/ruchika/grade3/iready-interactive/foundations',item.id]" [attr.aria-current]="item.id === selectedId ? 'page' : null"><strong>{{ item.title }}</strong><span>{{ countLessons(item) }} {{ countLessons(item) === 1 ? 'lesson' : 'lessons' }} · {{ item.examples.length }} {{ item.examples.length === 1 ? 'example' : 'examples' }} →</span></a></nav>
+    <section class="concept-workspace" *ngIf="concept as current">
+      <header class="concept-intro"><h2>{{ current.title }}</h2><p>{{ current.idea }}</p><small>Original supplemental explanation · sources are linked beside each example below.</small><nav class="connection-summary" aria-label="Where this foundation connects"><span>Review across</span><a *ngFor="let connection of connections" [href]="'/ruchika/grade3/iready-interactive/foundations/' + current.id + '#foundation-lesson-' + connection.lesson">Lesson {{ connection.lesson }}</a></nav></header>
+      <nav class="examples" aria-label="Examples of this foundation"><span>Examples of this foundation</span><button *ngFor="let item of current.examples; let i=index" type="button" [attr.aria-pressed]="exampleIndex === i" (click)="chooseExample(i)">{{ item.label }}</button></nav>
+      <app-foundation-player *ngIf="sequence as active" [sequence]="active" [preferredMethod]="example?.method"></app-foundation-player>
+      <section class="connections"><header><h2>Use this foundation across lessons</h2><p>Suggested review connections. Each session links to its official pages.</p></header><div class="connection-grid"><article *ngFor="let connection of connections" [id]="'foundation-lesson-' + connection.lesson"><h3>Lesson {{ connection.lesson }} · {{ connection.title }}</h3><div *ngFor="let session of connection.sessions"><a [routerLink]="['/ruchika/grade3/iready-interactive/lessons',connection.lesson]" [queryParams]="{session:session.session}">Session {{ session.session }} · {{ session.title }} →</a><a class="source" [href]="sourceUrl(session)" target="_blank" rel="noopener">Official pp. {{ session.printedPages }} ↗</a></div></article></div></section>
+    </section>
+  </div>
+  <p class="hub-scope">This library uses verified Volume 1 sources. Supplemental concept groupings and review links are authored for this app.</p>
+</main>

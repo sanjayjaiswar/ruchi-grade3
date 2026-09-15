@@ -1,0 +1,69 @@
+<section class="foundation" aria-label="Understand the idea">
+  <header class="foundation-heading">
+    <div><span class="eyebrow">Understand the idea</span><h3>{{ sequence.title }}</h3></div>
+    <span class="source-context">Example · Lesson {{ sequence.source.lesson }} · Session {{ sequence.source.session }}</span>
+  </header>
+  <p class="foundation-prompt">{{ sequence.prompt }}</p>
+  <nav class="methods" aria-label="Ways to understand">
+    <button *ngFor="let method of sequence.methods; let i = index" type="button" [attr.aria-pressed]="methodIndex === i" (click)="chooseMethod(i)">{{ i + 1 }}. {{ method.label }}</button>
+  </nav>
+  <div class="frame-heading" aria-live="polite" aria-atomic="true"><span>{{ step + 1 }} / {{ method.frames.length }}</span><div><h4>{{ frame.title }}</h4><p>{{ frame.note }}</p></div>  <nav aria-label="Foundation steps" class="player-controls"><button type="button" (click)="back()" [disabled]="step === 0">← Back</button><button type="button" (click)="replay()">Replay from the start</button><button type="button" class="next" (click)="next()" [disabled]="step === method.frames.length - 1">Next →</button></nav>
+</div>
+  <div class="foundation-canvas">
+    <ng-container *ngIf="frame.places as places">
+      <div class="place-board" [class.disks]="method.modelType === 'place-value-chart'">
+        <section *ngFor="let count of places.counts; let place = index" class="place-column" [attr.aria-label]="(count - (places.removed?.[place] || 0)) + ' ' + placeNames[place] + ' remaining'">
+          <header>{{ placeNames[place] }} <b>{{ count - (places.removed?.[place] || 0) }}</b></header>
+          <div class="unit-bank">
+            <span *ngFor="let unit of range(count)" class="unit" [class.hundred]="place === 0" [class.ten]="place === 1" [class.one]="place === 2" [class.removed]="removed(unit, place)" [attr.aria-label]="placeValues[place] + (removed(unit, place) ? ' removed' : '')"><small *ngIf="method.modelType === 'place-value-chart'">{{ placeValues[place] }}</small></span>
+            <span *ngIf="count === 0" class="zero">0 {{ placeNames[place].toLowerCase() }}</span>
+          </div>
+        </section>
+      </div>
+      <div class="trade" *ngIf="places.trade as trade">
+        <div><span *ngFor="let n of range(trade.fromCount)" class="unit" [class.hundred]="trade.from === 0" [class.ten]="trade.from === 1" [class.one]="trade.from === 2"></span></div>
+        <b>↔<small>same value</small></b>
+        <div><span *ngFor="let n of range(trade.toCount)" class="unit" [class.hundred]="trade.to === 0" [class.ten]="trade.to === 1" [class.one]="trade.to === 2"></span></div>
+        <strong>{{ trade.fromCount }} {{ unitName(trade.from, trade.fromCount) }} = {{ trade.toCount }} {{ unitName(trade.to, trade.toCount) }}</strong>
+      </div>
+      <p class="value-check">Value shown: <strong>{{ places.total }}</strong><span *ngIf="places.removed"> · Crossed-out units have been taken away.</span></p>
+    </ng-container>
+    <ng-container *ngIf="frame.line as line">
+      <svg class="number-line" viewBox="0 0 840 205" role="img" [attr.aria-label]="frame.equation">
+        <line x1="35" y1="130" x2="805" y2="130" stroke="currentColor" stroke-width="3" />
+        <g *ngFor="let point of line.points; let i = index">
+          <line [attr.x1]="lineX(i)" y1="124" [attr.x2]="lineX(i)" y2="138" stroke="currentColor" stroke-width="2" />
+          <text [attr.x]="lineX(i)" y="168" text-anchor="middle">{{ point }}</text>
+          <ng-container *ngIf="i < line.reached">
+            <path [attr.d]="arc(i)" fill="none" stroke="var(--iready-blue, #2f68eb)" stroke-width="3" />
+            <text [attr.x]="(lineX(i) + lineX(i + 1)) / 2" y="66" text-anchor="middle" fill="var(--iready-blue, #2f68eb)">+{{ line.points[i + 1] - point }}</text>
+          </ng-container>
+          <circle *ngIf="i === line.reached" [attr.cx]="lineX(i)" cy="130" r="6" fill="var(--iready-blue, #2f68eb)" />
+        </g>
+      </svg>
+      <p class="model-key">{{ line.proportional ? 'Equal distances show equal amounts.' : 'Open number line · jump lengths are not drawn to scale.' }}</p>
+    </ng-container>
+    <ng-container *ngIf="frame.groups as groups">
+      <div class="pool" *ngIf="groups.pool !== undefined"><b>Not yet placed: {{ groups.pool }}</b><span *ngFor="let n of range(groups.pool)" class="counter"></span></div>
+      <div class="group-board">
+        <div *ngFor="let count of groups.counts; let i = index" class="group"><b>{{ groups.label }} {{ i + 1 }}</b><div><span *ngFor="let n of range(count)" [class.counter]="groups.unit === 'one'" [class.unit]="groups.unit === 'ten'" [class.ten]="groups.unit === 'ten'"></span><span *ngIf="count === 0">Empty</span></div><small>{{ count }} {{ groups.unit === 'ten' ? 'tens' : 'in this group' }}</small></div>
+      </div>
+      <p class="model-key">{{ groups.unit === 'ten' ? 'Each rod has 10 ones. Two rods represent 20.' : 'Each counter represents one object.' }}</p>
+    </ng-container>
+    <ng-container *ngIf="frame.array as array">
+      <div class="array-wrap"><span>{{ array.rows }} rows</span><div><p>{{ array.columns }} {{ array.area ? 'squares in each row' : 'in each row' }}</p><div class="foundation-array" [class.area]="array.area" [style.--cell-size]="array.area ? '76px' : '34px'" [style.grid-template-columns]="'repeat(' + array.columns + ', var(--cell-size))'">
+        <span *ngFor="let cell of range(array.rows * array.columns)" [class.second-part]="array.split !== undefined && cell % array.columns >= array.split" [class.split-edge]="array.split !== undefined && cell % array.columns === array.split" [class.unfilled]="array.filled !== undefined && cell >= array.filled">{{ array.area && (array.filled === undefined || cell < array.filled) ? cell + 1 : '' }}</span>
+      </div></div></div>
+      <p class="model-key">{{ array.area ? 'Each square covers 1 square unit. The squares touch without gaps or overlaps.' : 'Each counter is one object. Splitting the array keeps every object.' }}</p>
+    </ng-container>
+    <ng-container *ngIf="frame.graph as graph">
+      <div class="graphs">
+        <section><h4>Picture graph</h4><p class="model-key">Key: <span class="ball"></span> = {{ graph.unit }} {{ graph.unitLabel }}</p><div class="graph-row" *ngFor="let item of graph.values"><b>{{ item.label }}</b><div><span *ngFor="let n of range(item.value / graph.unit)" class="ball"></span></div><strong *ngIf="graph.count">{{ item.value }}</strong></div></section>
+        <section *ngIf="graph.bars"><h4>Bar graph</h4><p class="model-key">Scale: {{ graph.unit }} {{ graph.unitLabel }} per interval</p><div class="graph-row" *ngFor="let item of graph.values"><b>{{ item.label }}</b><div class="bar-track" [style.--intervals]="graph.maxValue / graph.unit"><span [style.width.%]="item.value / graph.maxValue * 100"></span></div><strong>{{ item.value }}</strong></div><div class="graph-axis"><span *ngFor="let n of range(graph.maxValue / graph.unit + 1)">{{ n * graph.unit }}</span></div><p class="model-key">Number of {{ graph.unitLabel }}</p></section>
+      </div>
+    </ng-container>
+    <div *ngIf="frame.flow as flow" class="flow"><div class="flow-parts"><div *ngFor="let part of flow.parts"><span>{{ part.label }}</span><strong>{{ part.value }}</strong></div></div><b>↓</b><div class="flow-result">{{ flow.result }}</div></div>
+  </div>
+  <div class="foundation-equation">{{ frame.equation }}</div>
+  <div class="foundation-source"><span>Original supplemental explanation · based on the official example</span><a *ngFor="let link of sourceLinks" [href]="link.url" target="_blank" rel="noopener">Student p. {{ link.page }} ↗</a><a [href]="sequence.source.teacherUrl" target="_blank" rel="noopener">Teacher pp. {{ sequence.source.teacherPrintedPages }} ↗</a><details><summary>Full reference</summary><p>{{ sequence.source.document }} · Lesson {{ sequence.source.lesson }}, Session {{ sequence.source.session }} · printed pp. {{ sequence.source.printedPages.join(', ') }} · PDF viewer pp. {{ sequence.source.viewerPages.join(', ') }}.</p><p>{{ sequence.source.teacherDocument }} · PDF viewer p. {{ sequence.source.teacherViewerPage }} · Model: {{ method.modelType }}.</p></details></div>
+</section>

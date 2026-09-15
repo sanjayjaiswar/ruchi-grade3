@@ -701,6 +701,8 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
   }
 
   arrayColumns(section: ProblemVisualArraySection): string {
+    if (section.unitModel === 'square-unit') return `repeat(${section.columns}, 32px)`;
+    if (section.unitModel === 'ten-rod') return `repeat(${section.columns}, 9px)`;
     const minimum = section.columns > 16 ? 10 : 18;
     return `repeat(${Math.max(1, section.columns)}, minmax(${minimum}px, 1fr))`;
   }

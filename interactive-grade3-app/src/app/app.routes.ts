@@ -9,6 +9,7 @@ import { CurrentMathHomePage } from './pages/current-math-home/current-math-home
 import { ReadingHomePage } from './pages/reading-home/reading-home';
 import { SearchPage } from './pages/search/search';
 import { SyllabusBooksPage } from './pages/syllabus-books/syllabus-books';
+import { IReadyFoundationPage } from './pages/iready-interactive/iready-foundation-page';
 import { IReadyInteractivePage } from './pages/iready-interactive/iready-interactive';
 import { IReadyVolume2Page } from './pages/iready-interactive/iready-volume2-page';
 
@@ -40,6 +41,8 @@ export const routes: Routes = [
   { path: 'ruchika/grade3/iready/access', component: CurrentMathHomePage },
   { path: 'ruchika/grade3/iready/sources', component: CurrentMathHomePage },
   { path: 'ruchika/grade3/iready-interactive', component: IReadyInteractivePage },
+  { path: 'ruchika/grade3/iready-interactive/foundations', component: IReadyFoundationPage },
+  { path: 'ruchika/grade3/iready-interactive/foundations/:conceptId', component: IReadyFoundationPage },
   { path: 'ruchika/grade3/iready-interactive/units/:unitNumber', component: IReadyInteractivePage },
   { path: 'ruchika/grade3/iready-interactive/resources/:resourceKey', component: IReadyInteractivePage },
   { path: 'ruchika/grade3/iready-interactive/lessons/:lessonNumber', component: IReadyInteractivePage },

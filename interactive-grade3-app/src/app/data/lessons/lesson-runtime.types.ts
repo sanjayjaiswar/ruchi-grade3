@@ -479,6 +479,7 @@ export type ProblemVisualDataChartSection = {
     target?: boolean;
   }>;
   maxValue?: number;
+  axisTicks?: number[];
   unitSize?: number;
   scaleLabel?: string;
   keyLabel?: string;
@@ -509,6 +510,7 @@ export type ProblemVisualGeometryDiagramSection = {
 
 export type ProblemVisualArraySection = {
   kind: 'array';
+  unitModel?: 'square-unit' | 'ten-rod';
   label?: string;
   labelAnswers?: string[];
   rows: number;

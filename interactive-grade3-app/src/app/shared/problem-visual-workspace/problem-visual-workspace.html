@@ -275,7 +275,7 @@
                   (input)="setInlineValue(array, 'label', 0, 0, token.answerIndex || 0, $any($event.target).value)" />
                 <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
               </ng-container></strong>
-              <div class="visual-array" [ngClass]="'is-' + array.item" [class.is-dense]="array.columns > 16" [class.is-tall]="array.rows > 6 && array.columns < 5" [class.is-source-known]="array.mode === 'solved'" [class.is-source-extra]="array.mode === 'blank'" [class.is-selectable]="mode === 'blank' && array.selectableCells" [style.gridTemplateColumns]="arrayColumns(array)">
+              <div class="visual-array" [ngClass]="'is-' + array.item" [class.is-area-covering]="array.unitModel === 'square-unit'" [class.is-ten-rods]="array.unitModel === 'ten-rod'" [class.is-dense]="array.columns > 16" [class.is-tall]="array.rows > 6 && array.columns < 5" [class.is-source-known]="array.mode === 'solved'" [class.is-source-extra]="array.mode === 'blank'" [class.is-selectable]="mode === 'blank' && array.selectableCells" [style.gridTemplateColumns]="arrayColumns(array)">
                 <span
                   *ngFor="let cell of range(array.rows * array.columns); let cellIndex = index"
                   [class.is-after-split]="arrayCellIsAfterSplit(array, cellIndex)"
@@ -623,7 +623,7 @@
           (input)="setInlineValue(array, 'label', 0, 0, token.answerIndex || 0, $any($event.target).value)" />
         <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
       </ng-container></strong>
-      <div class="visual-array" [ngClass]="'is-' + array.item" [class.is-tall]="array.rows > 6 && array.columns < 5" [class.is-source-known]="array.mode === 'solved'" [class.is-source-extra]="array.mode === 'blank'" [class.is-selectable]="mode === 'blank' && array.selectableCells" [style.gridTemplateColumns]="arrayColumns(array)">
+      <div class="visual-array" [ngClass]="'is-' + array.item" [class.is-area-covering]="array.unitModel === 'square-unit'" [class.is-ten-rods]="array.unitModel === 'ten-rod'" [class.is-tall]="array.rows > 6 && array.columns < 5" [class.is-source-known]="array.mode === 'solved'" [class.is-source-extra]="array.mode === 'blank'" [class.is-selectable]="mode === 'blank' && array.selectableCells" [style.gridTemplateColumns]="arrayColumns(array)">
         <span
           *ngFor="let cell of range(array.rows * array.columns); let cellIndex = index"
           [class.is-after-split]="arrayCellIsAfterSplit(array, cellIndex)"
@@ -711,7 +711,7 @@
       <div class="visual-data-chart" [ngClass]="'is-' + chart.chart">
         <div class="visual-data-chart-row" *ngFor="let item of chart.values" [class.is-target]="item.target">
           <b>{{ item.label }}</b>
-          <div class="visual-data-chart-bar" *ngIf="chart.chart === 'bar'">
+          <div class="visual-data-chart-bar" *ngIf="chart.chart === 'bar'" [class.has-numeric-axis]="!!chart.axisTicks" [style.--axis-intervals]="chart.axisTicks ? chart.axisTicks.length - 1 : null">
             <span [style.width]="chartBarWidth(chart, item)"></span>
           </div>
           <div class="visual-data-chart-symbols" *ngIf="chart.chart === 'picture'">
@@ -724,7 +724,9 @@
           </div>
           <em>{{ chartValueLabel(chart, item) }}</em>
         </div>
+        <div *ngIf="chart.chart === 'bar' && chart.axisTicks" class="visual-chart-axis"><span></span><div><span *ngFor="let tick of chart.axisTicks">{{ tick }}</span></div><span></span></div>
         <small>{{ chart.scaleLabel || chart.keyLabel || chart.caption || 'Read the display using the source scale or key.' }}</small>
+        <small *ngIf="chart.axisTicks && chart.caption">{{ chart.caption }}</small>
       </div>
     </ng-container>
 
@@ -1420,12 +1422,12 @@
           </div>
           <div class="visual-pv-addend" [style.gridTemplateColumns]="'minmax(76px, auto) repeat(' + subtraction.columns.length + ', minmax(64px, 1fr))'">
             <strong>before</strong>
-            <span *ngFor="let digit of subtraction.beforeDigits"><i *ngFor="let disk of range(digit, 13)"></i><small>{{ digit }}</small></span>
+            <span *ngFor="let digit of subtraction.beforeDigits"><i *ngFor="let disk of range(digit)"></i><small>{{ digit }}</small></span>
           </div>
           <div class="visual-pv-regroupings"><span *ngFor="let move of subtraction.decompositions">{{ move.label }}</span></div>
           <div class="visual-pv-addend is-decomposed" [style.gridTemplateColumns]="'minmax(76px, auto) repeat(' + subtraction.columns.length + ', minmax(64px, 1fr))'">
             <strong>ready</strong>
-            <span *ngFor="let digit of subtraction.afterDigits"><i *ngFor="let disk of range(digit, 13)"></i><small>{{ digit }}</small></span>
+            <span *ngFor="let digit of subtraction.afterDigits"><i *ngFor="let disk of range(digit)"></i><small>{{ digit }}</small></span>
           </div>
           <div class="visual-pv-addend is-subtrahend" [style.gridTemplateColumns]="'minmax(76px, auto) repeat(' + subtraction.columns.length + ', minmax(64px, 1fr))'">
             <strong>- {{ subtraction.subtrahendLabel }}</strong>
