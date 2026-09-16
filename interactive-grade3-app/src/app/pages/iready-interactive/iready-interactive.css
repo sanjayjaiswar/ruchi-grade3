@@ -2909,3 +2909,84 @@
 .workspace-focus-toggle .restore-view-label { font-size: 16px; font-weight: 700; white-space: nowrap; }
 .learning-workspace.focused .source-problem-stage > header > div > span { display: block; min-height: 44px; padding-right: 180px; }
 .learning-workspace.focused .concept-review-stage ::ng-deep .foundation-heading { padding-right: 200px; }
+
+/* One readable navigation row while the lesson workspace is maximized. */
+.maximized-toolbar {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; align-items: center; gap: 14px;
+  min-height: 56px; margin: 0 12px; padding: 7px 180px 7px 12px;
+  border: 1px solid #c9d5e8; border-radius: 10px;
+  background: #f8faff; color: #172033; font-size: 16px;
+}
+.maximized-toolbar > strong { white-space: nowrap; }
+.maximized-sessions, .maximized-views { display: flex; align-items: center; gap: 6px; }
+.maximized-views { border-left: 1px solid #c9d5e8; padding-left: 14px; }
+.maximized-toolbar button { min-height: 38px; padding: 6px 12px; border: 1px solid #a8bcd7; border-radius: 7px; color: #172033; font: inherit; font-weight: 650; white-space: nowrap; cursor: pointer; }
+.maximized-sessions button { min-width: 38px; padding-inline: 8px; }
+.maximized-sessions button:nth-child(1) { background: #e1f4ff; }
+.maximized-sessions button:nth-child(2), .maximized-views button:nth-child(3) { background: #e1f6e9; }
+.maximized-sessions button:nth-child(3), .maximized-views button:nth-child(2) { background: #fff3cf; }
+.maximized-sessions button:nth-child(4), .maximized-views button:nth-child(1) { background: #ffe6e0; }
+.maximized-sessions button:nth-child(5), .maximized-views button:nth-child(4) { background: #eee7ff; }
+.maximized-toolbar button.active { border: 2px solid #2f62c9; box-shadow: inset 0 0 0 1px #fff; }
+.maximized-toolbar button:focus-visible { outline: 3px solid #b8cdec; outline-offset: 2px; }
+.workspace-maximized .learning-workspace.focused .source-problem-stage > header > div > span { min-height: 0; padding-right: 0; }
+.workspace-maximized .learning-workspace.focused .concept-review-stage ::ng-deep .foundation-heading { padding-right: 20px; }
+/* Keep the breadcrumb, sessions, and lesson arrows distinct without card wrappers. */
+:host .interactive-page.lesson-focus .compact-lesson-navigation:has(.lesson-breadcrumb-group) {
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px !important;
+  padding: 4px 10px !important;
+  border: 0 !important;
+  border-radius: 0;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.lesson-breadcrumb-group { display: flex; align-items: center; gap: 12px; }
+:host .interactive-page.lesson-focus .compact-lesson-navigation .lesson-breadcrumb-group + .compact-session-tabs {
+  display: flex;
+  justify-self: center;
+  width: max-content;
+  max-width: 100%;
+  overflow-x: auto;
+  grid-column: auto;
+  grid-row: auto;
+  padding: 0 !important;
+  border: 0;
+}
+:host .interactive-page.lesson-focus .compact-lesson-navigation .compact-session-tabs button {
+  flex: 0 0 auto;
+  width: max-content;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  min-height: 52px !important;
+  height: auto !important;
+  padding: 4px 10px !important;
+  column-gap: 5px;
+  row-gap: 0;
+}
+:host .interactive-page.lesson-focus .compact-lesson-navigation .compact-session-tabs button small {
+  display: block;
+  grid-column: 1 / -1;
+}
+:host .interactive-page.lesson-focus .compact-lesson-navigation .focus-lesson-actions {
+  justify-self: end;
+  gap: 8px;
+}
+:host .interactive-page.lesson-focus .compact-lesson-navigation .focus-lesson-actions a {
+  width: 42px;
+  min-width: 42px;
+  height: 42px;
+  padding: 0 !important;
+  justify-content: center;
+  border: 1px solid #2f66ed !important;
+  border-radius: 8px;
+  background: #2f66ed !important;
+  color: #fff !important;
+  font-size: 26px;
+  line-height: 1;
+}
+:host .interactive-page.lesson-focus .compact-lesson-navigation .focus-lesson-actions a:hover {
+  background: #2052cb !important;
+}

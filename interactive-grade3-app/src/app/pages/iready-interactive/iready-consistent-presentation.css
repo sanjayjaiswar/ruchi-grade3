@@ -179,7 +179,8 @@
   }
   :host .compact-lesson-navigation .compact-session-tabs button small { grid-column: 1 / -1; }
 }
-:host .grade-home-link { display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; }
+:host .interactive-header nav .grade-home-link,
+:host .grade-home-link { display: inline-flex !important; flex-direction: row !important; align-items: center; justify-content: center; gap: 7px; white-space: nowrap; }
 :host .grade-home-link svg { flex: none; }
 :host .source-info-footer { display: block !important; padding: 8px 16px !important; }
 :host .lesson-source-info > summary { cursor: pointer; color: #475569; font-size: 16px; font-weight: 500; line-height: 24px; }

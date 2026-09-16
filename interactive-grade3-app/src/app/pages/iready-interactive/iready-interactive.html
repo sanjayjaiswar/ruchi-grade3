@@ -8,9 +8,22 @@
       <a class="active" routerLink="/ruchika/grade3/iready-interactive">Volume 1</a>
       <a routerLink="/ruchika/grade3/iready-interactive/volumes/2">Volume 2</a>
       <a routerLink="/ruchika/grade3/iready-interactive/foundations">Foundations</a>
-      <a class="home-link grade-home-link" routerLink="/ruchika/grade3" aria-label="Grade 3 home"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m3 10 9-7 9 7M5 9v12h5v-7h4v7h5V9" /></svg>Grade 3 home</a>
+      <a class="home-link grade-home-link" routerLink="/ruchika/grade3" aria-label="Grade 3 home"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m3 10 9-7 9 7M5 9v12h5v-7h4v7h5V9" /></svg>Home</a>
     </nav>
   </header>
+
+  <nav *ngIf="lessonFocus && workspaceMaximized && lessonIsInteractive" class="maximized-toolbar" aria-label="Compact lesson navigation">
+    <strong>Lesson {{ selectedLesson.number }}</strong>
+    <div class="maximized-sessions" role="group" aria-label="Sessions">
+      <button *ngFor="let session of activeSessions" type="button" (click)="selectSession(session.session)" [class.active]="session.session === selectedSessionNumber" [attr.aria-pressed]="session.session === selectedSessionNumber" [attr.aria-label]="'Session ' + session.session + ' ' + session.phase" [title]="'Session ' + session.session + ' · ' + session.phase">{{ session.session }}</button>
+    </div>
+    <div class="maximized-views" role="tablist" aria-label="Activity views">
+      <button type="button" role="tab" (click)="openVisualTeaching()" [class.active]="!conceptReviewOpen && lessonWorkspaceView === 'teaching'" [attr.aria-selected]="!conceptReviewOpen && lessonWorkspaceView === 'teaching'">Visual Teaching</button>
+      <button type="button" role="tab" (click)="returnToTry()" [class.active]="!conceptReviewOpen && lessonWorkspaceView === 'try'" [attr.aria-selected]="!conceptReviewOpen && lessonWorkspaceView === 'try'">Try It</button>
+      <button type="button" role="tab" (click)="selectSourceEdition('student')" [class.active]="!conceptReviewOpen && lessonWorkspaceView === 'student'" [attr.aria-selected]="!conceptReviewOpen && lessonWorkspaceView === 'student'">Worktext</button>
+      <button type="button" role="tab" (click)="selectSourceEdition('teacher')" [class.active]="!conceptReviewOpen && lessonWorkspaceView === 'teacher'" [attr.aria-selected]="!conceptReviewOpen && lessonWorkspaceView === 'teacher'">Teacher Guide</button>
+    </div>
+  </nav>
 
   <div class="interactive-content" [class.lesson-focus-content]="lessonFocus" [class.unit-focus-content]="unitFocus" [class.resource-focus-content]="resourceFocus">
     <section *ngIf="!lessonFocus && !unitFocus && !resourceFocus" class="volume-overview" aria-labelledby="interactive-title">
@@ -258,9 +271,11 @@
     </ng-container>
 
     <nav *ngIf="lessonFocus" class="focus-lesson-nav compact-lesson-navigation" aria-label="Current lesson navigation">
+      <div class="lesson-breadcrumb-group">
       <a class="all-lessons-link" [routerLink]="['/ruchika/grade3/iready-interactive/units', selectedUnit.number]">Unit {{ selectedUnit.number }} overview</a>
       <div class="focus-current-lesson">
-        <strong>Volume 1 · Unit {{ selectedUnit.number }} · Lesson {{ selectedLesson.number }}</strong>
+        <strong>Lesson {{ selectedLesson.number }}</strong>
+      </div>
       </div>
       <div *ngIf="lessonIsInteractive" class="session-tabs compact-session-tabs" role="group" [attr.aria-label]="'Lesson ' + selectedLesson.number + ' sessions'" [style.--session-count]="activeSessions.length">
         <button
@@ -268,7 +283,9 @@
           type="button"
           (click)="selectSession(session.session)"
           [class.active]="session.session === selectedSessionNumber"
-          [attr.aria-pressed]="session.session === selectedSessionNumber">
+          [attr.aria-pressed]="session.session === selectedSessionNumber"
+          [attr.aria-label]="'Session ' + session.session + ' ' + session.phase + ', pages ' + session.printedPages"
+          [title]="'Session ' + session.session + ' · pp. ' + session.printedPages">
           <span>Session {{ session.session }}</span>
           <strong>{{ session.phase }}</strong>
           <small>pp. {{ session.printedPages }}</small>
@@ -278,11 +295,11 @@
         <a
           *ngIf="previousLesson as lesson"
           [routerLink]="['/ruchika/grade3/iready-interactive/lessons', lesson.number]"
-          [attr.aria-label]="'Previous lesson: ' + lesson.title">Previous</a>
+          [attr.aria-label]="'Previous lesson: ' + lesson.title" [title]="'Previous lesson: ' + lesson.title">←</a>
         <a
           *ngIf="nextLesson as lesson"
           [routerLink]="['/ruchika/grade3/iready-interactive/lessons', lesson.number]"
-          [attr.aria-label]="'Next lesson: ' + lesson.title">Next</a>
+          [attr.aria-label]="'Next lesson: ' + lesson.title" [title]="'Next lesson: ' + lesson.title">→</a>
       </div>
     </nav>
 
