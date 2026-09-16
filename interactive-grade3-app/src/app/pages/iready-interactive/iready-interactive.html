@@ -6,8 +6,8 @@
     </a>
     <nav aria-label="i-Ready Interactive navigation">
       <a class="active" routerLink="/ruchika/grade3/iready-interactive">Volume 1</a>
-      <a routerLink="/ruchika/grade3/iready-interactive/foundations">Foundations</a>
       <a routerLink="/ruchika/grade3/iready-interactive/volumes/2">Volume 2</a>
+      <a routerLink="/ruchika/grade3/iready-interactive/foundations">Foundations</a>
       <a class="home-link" routerLink="/ruchika/grade3" aria-label="Grade 3 home">R</a>
     </nav>
   </header>
@@ -302,10 +302,10 @@
           <ng-container *ngIf="lessonIsInteractive">
             <ng-container *ngIf="selectedSourceProblem as commandProblem">
               <nav class="lesson-view-tabs compact-view-tabs" role="tablist" aria-label="Teaching and exact edition views">
-                <button type="button" role="tab" (click)="openVisualTeaching()" [class.active]="lessonWorkspaceView === 'teaching'" [attr.aria-selected]="lessonWorkspaceView === 'teaching'"><strong>Visual Teaching</strong><small>Solved model</small></button>
-                <button type="button" role="tab" (click)="returnToTry()" [class.active]="lessonWorkspaceView === 'try'" [attr.aria-selected]="lessonWorkspaceView === 'try'"><strong>Try It</strong><small>Blank workspace</small></button>
-                <button type="button" role="tab" (click)="selectSourceEdition('student')" [class.active]="lessonWorkspaceView === 'student'" [attr.aria-selected]="lessonWorkspaceView === 'student'"><strong>Student Worktext</strong><small>Official {{ printedPagesLabel(commandProblem.printedPages) }}</small></button>
-                <button type="button" role="tab" (click)="selectSourceEdition('teacher')" [class.active]="lessonWorkspaceView === 'teacher'" [attr.aria-selected]="lessonWorkspaceView === 'teacher'"><strong>Teacher Guide</strong><small>Reader pp. {{ selectedTeacherGuideReaderPages }}</small></button>
+                <button type="button" role="tab" (click)="openVisualTeaching()" [class.active]="!conceptReviewOpen && lessonWorkspaceView === 'teaching'" [attr.aria-selected]="!conceptReviewOpen && lessonWorkspaceView === 'teaching'"><strong>Visual Teaching</strong><small>Solved model</small></button>
+                <button type="button" role="tab" (click)="returnToTry()" [class.active]="!conceptReviewOpen && lessonWorkspaceView === 'try'" [attr.aria-selected]="!conceptReviewOpen && lessonWorkspaceView === 'try'"><strong>Try It</strong><small>Blank workspace</small></button>
+                <button type="button" role="tab" (click)="selectSourceEdition('student')" [class.active]="!conceptReviewOpen && lessonWorkspaceView === 'student'" [attr.aria-selected]="!conceptReviewOpen && lessonWorkspaceView === 'student'"><strong>Student Worktext</strong><small>Official {{ printedPagesLabel(commandProblem.printedPages) }}</small></button>
+                <button type="button" role="tab" (click)="selectSourceEdition('teacher')" [class.active]="!conceptReviewOpen && lessonWorkspaceView === 'teacher'" [attr.aria-selected]="!conceptReviewOpen && lessonWorkspaceView === 'teacher'"><strong>Teacher Guide</strong><small>Reader pp. {{ selectedTeacherGuideReaderPages }}</small></button>
               </nav>
             </ng-container>
           </ng-container>
@@ -320,27 +320,39 @@
                   *ngFor="let sourceProblem of sourceProblems; let problemIndex = index"
                   type="button"
                   (click)="selectSourceProblem(problemIndex)"
-                  [class.active]="problemIndex === selectedSourceProblemIndex"
-                  [attr.aria-pressed]="problemIndex === selectedSourceProblemIndex">
+                  [class.active]="!conceptReviewOpen && problemIndex === selectedSourceProblemIndex"
+                  [attr.aria-pressed]="!conceptReviewOpen && problemIndex === selectedSourceProblemIndex">
                   <span>{{ sourceProblem.label }}</span>
                   <strong>{{ sourceProblem.title }}</strong>
                   <small>{{ printedPagesLabel(sourceProblem.printedPages) }}</small>
                 </button>
+                <button *ngIf="reviewFoundation" type="button" class="concept-review-nav" [attr.aria-pressed]="conceptReviewOpen" (click)="openConceptReview()" aria-label="Understand the idea">▶ Understand the idea</button>
               </nav>
 
-              <section class="source-problem-stage">
+              <section *ngIf="conceptReviewOpen && reviewFoundation as foundation" class="source-problem-stage concept-review-stage">
+                <app-foundation-player [sequence]="foundation"></app-foundation-player>
+              </section>
+              <section class="source-problem-stage" [hidden]="conceptReviewOpen">
                 <header>
                   <div>
                     <span>{{ problem.label }} · Official {{ printedPagesLabel(problem.printedPages) }}</span>
-                    <h4>{{ problem.title }}</h4>
-                  </div>
-                </header>
-
-                <ng-container *ngIf="lessonWorkspaceView === 'student' || lessonWorkspaceView === 'teacher'; else activityWorkspace">
-                  <section class="top-edition-panel" role="tabpanel" [attr.aria-label]="lessonWorkspaceView === 'student' ? 'Official Student Worktext page' : 'Official Teacher Guide page'">
-                    <div class="edition-source-identity">
-                      <div class="edition-source-heading">
-                        <strong>{{ lessonWorkspaceView === 'student' ? 'Official Student Worktext' : 'Official Teacher Guide' }}</strong>
+                    <div class="activity-title-controls">
+                      <h4>{{ problem.title }}</h4>
+                    <div *ngIf="lessonWorkspaceView === 'teaching'" class="visual-teaching-actions">
+                      <div *ngIf="visualAnimationIsVerified" class="visual-teaching-lead replay-control-group">
+                        <button type="button" (click)="replayVerifiedVisual()">Replay</button>
+                      </div>
+                      <div class="source-teaching-steps visual-teaching-lead" *ngIf="sourceTeachingStepCount > 1">
+                        <button type="button" (click)="previousSourceTeachingStep()" [disabled]="solutionRevealCount <= 1" aria-label="Show previous teaching step">Previous</button>
+                        <span>Step {{ solutionRevealCount }} of {{ sourceTeachingStepCount }}</span>
+                        <button type="button" (click)="nextSourceTeachingStep()" [disabled]="solutionRevealCount >= sourceTeachingStepCount" aria-label="Show next teaching step">Next</button>
+                      </div>
+                    </div>
+                      <div *ngIf="lessonWorkspaceView === 'try'" class="try-workspace-lead" title="Use the blank workspace, then check your entries.">
+                        <strong>Try It</strong>
+                        <button type="button" (click)="checkGuidedProblem()" [class.active]="guidedStage === 'check'" [attr.aria-pressed]="guidedStage === 'check'">Check</button>
+                      </div>
+                      <div *ngIf="lessonWorkspaceView === 'student' || lessonWorkspaceView === 'teacher'" class="activity-edition-controls">
                         <span class="edition-source-actions">
                           <a
                             [href]="lessonWorkspaceView === 'student' ? selectedSourceProblemUrl : selectedTeacherGuideSourceUrl"
@@ -369,12 +381,7 @@
                             </ng-template>
                           </ng-container>
                         </span>
-                      </div>
-                      <span>{{ lessonWorkspaceView === 'student' ? printedPagesLabel(problem.printedPages) : 'Reader pp. ' + selectedTeacherGuideReaderPages }}</span>
-                    </div>
-
-                    <ng-container *ngIf="selectedProblemHasInlineSourceImages; else sourceUnavailable">
-                      <nav class="edition-page-switcher" aria-label="Choose one official page">
+                      <nav *ngIf="selectedProblemHasInlineSourceImages" class="edition-page-switcher" aria-label="Choose one official page">
                         <button
                           *ngFor="let page of (lessonWorkspaceView === 'student' ? selectedProblemStudentPages : selectedProblemTeacherPages); let pageIndex = index"
                           type="button"
@@ -384,7 +391,14 @@
                           {{ lessonWorkspaceView === 'student' ? 'Student p. ' : 'Teacher p. ' }}{{ page }}
                         </button>
                       </nav>
+                      </div>
+                    </div>
+                  </div>
+                </header>
 
+                <ng-container *ngIf="lessonWorkspaceView === 'student' || lessonWorkspaceView === 'teacher'; else activityWorkspace">
+                  <section class="top-edition-panel" role="tabpanel" [attr.aria-label]="lessonWorkspaceView === 'student' ? 'Official Student Worktext page' : 'Official Teacher Guide page'">
+                    <ng-container *ngIf="selectedProblemHasInlineSourceImages; else sourceUnavailable">
                       <div *ngIf="lessonWorkspaceView === 'student'" class="embedded-source-pages compact-source-pages edition-page-view single-logical-page">
                         <figure *ngIf="selectedStudentEditionPage as page">
                           <a class="edition-page-zoom" [href]="supportStudentImage(page)" target="_blank" rel="noopener" [attr.aria-label]="'Open Student Worktext page ' + page + ' at full size'">
@@ -424,35 +438,8 @@
                 </ng-container>
 
                 <ng-template #activityWorkspace>
-                  <nav *ngIf="sessionConcepts.length" class="session-foundations" aria-label="Foundations for this session"><strong>Foundations</strong><a *ngFor="let concept of sessionConcepts" [routerLink]="['/ruchika/grade3/iready-interactive/foundations',concept.id]" target="_blank" rel="noopener" title="Open the shared foundation in a new tab; keep this activity here">{{ concept.title }} ↗</a></nav>
-                  <nav *ngIf="selectedFoundation" class="foundation-switch" aria-label="Teaching view">
-                    <button type="button" [attr.aria-pressed]="foundationOpen" (click)="openFoundation()">{{ activityMode === 'try' ? 'Review the idea' : 'Understand the idea' }}</button>
-                    <button type="button" [attr.aria-pressed]="!foundationOpen" (click)="closeFoundation()">{{ activityMode === 'try' ? 'Return to my work' : 'Worked example' }}</button>
-                  </nav>
-                  <div *ngIf="foundationOpen && selectedFoundation" class="foundation-review">
-                    <nav *ngIf="lessonFoundations.length > 1" class="foundation-topics" aria-label="Related foundation examples"><span>Review an example:</span><button *ngFor="let foundation of lessonFoundations" type="button" [attr.aria-pressed]="selectedFoundation.id === foundation.id" (click)="openFoundation(foundation.id)">{{ foundation.title }}</button></nav>
-                    <p *ngIf="selectedFoundation.source.activityKey !== problem.key" class="foundation-context">Review example from Lesson {{ selectedFoundation.source.lesson }}, Session {{ selectedFoundation.source.session }}, p. {{ selectedFoundation.source.printedPages[0] }}. Your current activity stays selected.</p>
-                    <app-foundation-player [sequence]="selectedFoundation"></app-foundation-player>
-                  </div>
-                  <div [hidden]="foundationOpen">
+                  <div>
                   <p class="stage-announcement" aria-live="polite">{{ lessonStageAnnouncement }}</p>
-                  <div *ngIf="activityMode === 'solution'" class="visual-teaching-lead">
-                    <strong>Visual Teaching</strong>
-                    <span>Use Next to build the solved model one step at a time.</span>
-                    <div class="visual-teaching-actions">
-                      <button *ngIf="visualAnimationIsVerified" type="button" (click)="replayVerifiedVisual()">Replay</button>
-                      <div class="source-teaching-steps" *ngIf="sourceTeachingStepCount > 1">
-                        <button type="button" (click)="previousSourceTeachingStep()" [disabled]="solutionRevealCount <= 1" aria-label="Show previous teaching step">Previous</button>
-                        <span>Step {{ solutionRevealCount }} of {{ sourceTeachingStepCount }}</span>
-                        <button type="button" (click)="nextSourceTeachingStep()" [disabled]="solutionRevealCount >= sourceTeachingStepCount" aria-label="Show next teaching step">Next</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div *ngIf="activityMode === 'try'" class="try-workspace-lead">
-                    <strong>Try It</strong>
-                    <span>Use the blank workspace, then check your entries.</span>
-                    <button type="button" (click)="checkGuidedProblem()" [class.active]="guidedStage === 'check'" [attr.aria-pressed]="guidedStage === 'check'">Check</button>
-                  </div>
                   <app-problem-visual-workspace
                     [class.place-value-overview]="problem.key === 'v1-u1-l1-s1-try-it' && activityMode === 'solution'"
                     [spec]="activityMode === 'solution' ? problem.solvedVisual : problem.blankVisual"

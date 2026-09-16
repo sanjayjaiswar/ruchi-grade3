@@ -1,18 +1,32 @@
 <section class="foundation" aria-label="Understand the idea">
   <header class="foundation-heading">
-    <div><span class="eyebrow">Understand the idea</span><h3>{{ sequence.title }}</h3></div>
+    <div><h3>{{ sequence.title }}</h3></div>
     <span class="source-context">Example · Lesson {{ sequence.source.lesson }} · Session {{ sequence.source.session }}</span>
   </header>
   <p class="foundation-prompt">{{ sequence.prompt }}</p>
   <nav class="methods" aria-label="Ways to understand">
-    <button *ngFor="let method of sequence.methods; let i = index" type="button" [attr.aria-pressed]="methodIndex === i" (click)="chooseMethod(i)">{{ i + 1 }}. {{ method.label }}</button>
+    <button *ngFor="let method of sequence.methods; let i = index" type="button" [attr.aria-pressed]="methodIndex === i" (click)="chooseMethod(i)">{{ method.label }}</button>
   </nav>
-  <div class="frame-heading" aria-live="polite" aria-atomic="true"><span>{{ step + 1 }} / {{ method.frames.length }}</span><div><h4>{{ frame.title }}</h4><p>{{ frame.note }}</p></div>  <nav aria-label="Foundation steps" class="player-controls"><button type="button" (click)="back()" [disabled]="step === 0">← Back</button><button type="button" (click)="replay()">Replay from the start</button><button type="button" class="next" (click)="next()" [disabled]="step === method.frames.length - 1">Next →</button></nav>
-</div>
+  <section class="foundation-model-card" [attr.aria-label]="method.label + ' animation'">
+  <div class="frame-heading" aria-live="polite" aria-atomic="true">
+    <span>{{ step + 1 }} / {{ method.frames.length }}</span>
+    <div><h4>{{ frame.title }}</h4><p>{{ frame.note }}</p></div>
+    <nav aria-label="Foundation steps" class="player-controls">
+      <div class="playback-group" role="group" aria-label="Animation playback">
+        <button type="button" class="next" [attr.aria-pressed]="playing" (click)="togglePlayback()"><span aria-hidden="true">{{ playing ? 'Ⅱ' : '▶' }}</span> {{ playing ? 'Pause' : paused ? 'Resume' : completed ? 'Play again' : 'Play' }}</button>
+        <select class="playback-speed" aria-label="Animation speed" [value]="speed" (change)="setSpeed($any($event.target).value)"><option value="0.75">Slow</option><option value="1">Normal</option><option value="1.5">Fast</option></select>
+      </div>
+      <div class="step-navigation-group" role="group" aria-label="Step navigation">
+        <button type="button" (click)="back()" [disabled]="step === 0">← Back</button>
+        <button type="button" class="next" (click)="next()" [disabled]="step === method.frames.length - 1">Next →</button>
+      </div>
+      <span class="playback-status" role="status">{{ playbackLabel }}</span>
+    </nav>
+  </div>
   <div class="foundation-canvas">
     <ng-container *ngIf="frame.places as places">
       <div class="place-board" [class.disks]="method.modelType === 'place-value-chart'">
-        <section *ngFor="let count of places.counts; let place = index" class="place-column" [attr.aria-label]="(count - (places.removed?.[place] || 0)) + ' ' + placeNames[place] + ' remaining'">
+        <section *ngFor="let count of places.counts; let place = index; trackBy: trackIndex" class="place-column" [attr.aria-label]="(count - (places.removed?.[place] || 0)) + ' ' + placeNames[place] + ' remaining'">
           <header>{{ placeNames[place] }} <b>{{ count - (places.removed?.[place] || 0) }}</b></header>
           <div class="unit-bank">
             <span *ngFor="let unit of range(count)" class="unit" [class.hundred]="place === 0" [class.ten]="place === 1" [class.one]="place === 2" [class.removed]="removed(unit, place)" [attr.aria-label]="placeValues[place] + (removed(unit, place) ? ' removed' : '')"><small *ngIf="method.modelType === 'place-value-chart'">{{ placeValues[place] }}</small></span>
@@ -35,7 +49,7 @@
           <line [attr.x1]="lineX(i)" y1="124" [attr.x2]="lineX(i)" y2="138" stroke="currentColor" stroke-width="2" />
           <text [attr.x]="lineX(i)" y="168" text-anchor="middle">{{ point }}</text>
           <ng-container *ngIf="i < line.reached">
-            <path [attr.d]="arc(i)" fill="none" stroke="var(--iready-blue, #2f68eb)" stroke-width="3" />
+            <path pathLength="1" [attr.d]="arc(i)" fill="none" stroke="var(--iready-blue, #2f68eb)" stroke-width="3" />
             <text [attr.x]="(lineX(i) + lineX(i + 1)) / 2" y="66" text-anchor="middle" fill="var(--iready-blue, #2f68eb)">+{{ line.points[i + 1] - point }}</text>
           </ng-container>
           <circle *ngIf="i === line.reached" [attr.cx]="lineX(i)" cy="130" r="6" fill="var(--iready-blue, #2f68eb)" />
@@ -46,7 +60,7 @@
     <ng-container *ngIf="frame.groups as groups">
       <div class="pool" *ngIf="groups.pool !== undefined"><b>Not yet placed: {{ groups.pool }}</b><span *ngFor="let n of range(groups.pool)" class="counter"></span></div>
       <div class="group-board">
-        <div *ngFor="let count of groups.counts; let i = index" class="group"><b>{{ groups.label }} {{ i + 1 }}</b><div><span *ngFor="let n of range(count)" [class.counter]="groups.unit === 'one'" [class.unit]="groups.unit === 'ten'" [class.ten]="groups.unit === 'ten'"></span><span *ngIf="count === 0">Empty</span></div><small>{{ count }} {{ groups.unit === 'ten' ? 'tens' : 'in this group' }}</small></div>
+        <div *ngFor="let count of groups.counts; let i = index; trackBy: trackIndex" class="group"><b>{{ groups.label }} {{ i + 1 }}</b><div><span *ngFor="let n of range(count)" [class.counter]="groups.unit === 'one'" [class.unit]="groups.unit === 'ten'" [class.ten]="groups.unit === 'ten'"></span><span *ngIf="count === 0">Empty</span></div><small>{{ count }} {{ groups.unit === 'ten' ? 'tens' : 'in this group' }}</small></div>
       </div>
       <p class="model-key">{{ groups.unit === 'ten' ? 'Each rod has 10 ones. Two rods represent 20.' : 'Each counter represents one object.' }}</p>
     </ng-container>
@@ -65,5 +79,6 @@
     <div *ngIf="frame.flow as flow" class="flow"><div class="flow-parts"><div *ngFor="let part of flow.parts"><span>{{ part.label }}</span><strong>{{ part.value }}</strong></div></div><b>↓</b><div class="flow-result">{{ flow.result }}</div></div>
   </div>
   <div class="foundation-equation">{{ frame.equation }}</div>
+  </section>
   <div class="foundation-source"><span>Original supplemental explanation · based on the official example</span><a *ngFor="let link of sourceLinks" [href]="link.url" target="_blank" rel="noopener">Student p. {{ link.page }} ↗</a><a [href]="sequence.source.teacherUrl" target="_blank" rel="noopener">Teacher pp. {{ sequence.source.teacherPrintedPages }} ↗</a><details><summary>Full reference</summary><p>{{ sequence.source.document }} · Lesson {{ sequence.source.lesson }}, Session {{ sequence.source.session }} · printed pp. {{ sequence.source.printedPages.join(', ') }} · PDF viewer pp. {{ sequence.source.viewerPages.join(', ') }}.</p><p>{{ sequence.source.teacherDocument }} · PDF viewer p. {{ sequence.source.teacherViewerPage }} · Model: {{ method.modelType }}.</p></details></div>
 </section>

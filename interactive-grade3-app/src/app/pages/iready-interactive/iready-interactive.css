@@ -2836,3 +2836,53 @@
 .session-foundations{display:flex;align-items:center;flex-wrap:wrap;gap:7px 14px;padding:12px 14px;background:var(--iready-surface-navigation);border:1px solid #d6dcef;border-radius:8px;margin:12px 0}.session-foundations strong{font-size:15px;color:var(--iready-caption);letter-spacing:normal}.session-foundations a{font-size:15px;color:var(--iready-blue-dark);text-decoration:none}.session-foundations a:hover{text-decoration:underline}
 
 .volume-foundations-entry{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 22px;border:1px solid #cad3ea;border-left:4px solid var(--iready-blue);background:var(--iready-surface-navigation);border-radius:10px;margin:16px 0;text-decoration:none;color:var(--iready-ink)}.volume-foundations-entry>div{display:flex;flex-direction:column;gap:7px}.volume-foundations-entry strong{font-size:20px;font-weight:600}.volume-foundations-entry span{font-size:14px;color:var(--iready-caption)}.volume-foundations-entry>b{font-size:14px;white-space:nowrap}
+
+.source-problem-stage[hidden] { display: none !important; }
+.learning-workspace.focused .source-problem-tabs > button.concept-review-nav { display: flex !important; align-items: center; justify-content: center; gap: 9px; min-height: 42px !important; height: 42px; margin-top: 12px; padding: 8px 12px !important; border: 1px solid var(--iready-blue) !important; border-radius: 8px; background: var(--iready-blue) !important; color: #fff !important; box-shadow: none; font-size: 16px; font-weight: 650; }
+.learning-workspace.focused .source-problem-tabs > button.concept-review-nav > span { border: 0; background: transparent; color: #fff; padding: 0; font-size: 13px; }
+.learning-workspace.focused .source-problem-tabs > button.concept-review-nav:hover { filter: brightness(.96); }
+
+/* Move the original teaching controls beside the title; retain their existing theme. */
+.source-problem-stage > header > div:has(.activity-title-controls) { width: 100%; }
+.activity-title-controls { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 24px; }
+.learning-workspace.focused .activity-title-controls .visual-teaching-lead { align-items: center; margin: 0 0 0 auto; }
+.activity-title-controls h4 { margin: 0; }
+.activity-title-controls .visual-teaching-actions { flex: none; }
+
+/* Shared compact chrome for every activity and edition tab. */
+.activity-title-controls .try-workspace-lead { margin: 0 0 0 auto; }
+.activity-edition-controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 8px 14px; margin-left: auto; }
+.activity-edition-controls .edition-page-switcher { padding: 0; border: 0; background: transparent; }
+.activity-edition-controls .edition-source-actions { flex-wrap: wrap; }
+.activity-edition-controls a { color: #0759d9; font-size: 14px; }
+.learning-workspace.focused .source-problem-tabs { gap: 8px; padding: 10px; }
+.learning-workspace.focused .source-problem-tabs::before { padding: 5px 10px; }
+.learning-workspace.focused .source-problem-tabs > button:not(.concept-review-nav) { min-height: 0; grid-template-rows: auto auto; padding: 8px 10px; }
+.learning-workspace.focused .source-problem-tabs > button.concept-review-nav { margin-top: 4px; }
+.interactive-page.lesson-focus .compact-lesson-navigation { padding-block: 4px; }
+.interactive-page.lesson-focus .compact-session-tabs button { padding-block: 4px; min-height: 0; }
+.interactive-page.lesson-focus .compact-lesson-command .compact-view-tabs { padding-block: 4px; }
+.interactive-page.lesson-focus .compact-lesson-command .compact-view-tabs button { padding-block: 4px; min-height: 0; }
+
+/* Correct the small diagram labels and explanatory captions only. */
+.learning-workspace.focused .source-problem-stage app-problem-visual-workspace ::ng-deep :is(.visual-note, .visual-number-line small, .visual-array-caption, .visual-place-value-caption) {
+  font-size: 18px !important;
+}
+.learning-workspace.focused .source-problem-stage app-problem-visual-workspace ::ng-deep :is(.visual-number-line span, .visual-number-line b) {
+  font-size: 18px !important;
+}
+
+/* Separate restart from step navigation without changing the teaching model. */
+.learning-workspace.focused .activity-title-controls .visual-teaching-actions > .visual-teaching-lead { margin: 0; }
+.replay-control-group button {
+  min-height: 38px;
+  padding: 7px 11px;
+  border: 1px solid #9dbbed;
+  border-radius: 8px;
+  background: #fff;
+  color: #0b58d6;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 760;
+  cursor: pointer;
+}

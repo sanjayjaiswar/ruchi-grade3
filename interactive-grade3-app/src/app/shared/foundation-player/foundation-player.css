@@ -1,6 +1,6 @@
 :host{display:block;color:var(--iready-ink, #172033);font:inherit}
 *{box-sizing:border-box}
-.foundation{border:1px solid var(--iready-line, #c9d5e8);border-radius:10px;overflow:hidden;background:#fff}
+.foundation{background:#fff}
 .foundation-heading{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 24px 10px}
 .eyebrow{font-size:15px;color:var(--iready-caption, #475569);font-weight:600}
 h3{font-size:22px;font-weight:600;line-height:1.35;margin:5px 0}
@@ -102,7 +102,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #c4
 .frame-heading .player-controls{padding:0;align-self:center;flex:none}
 .player-controls button{font-size:15px;padding:9px 11px}
 .foundation-heading{padding:14px 20px 6px}
-.foundation-heading h3{font-size:22px}
+.foundation-heading h3{font-size:clamp(25px,1.85vw,31px);font-weight:780;line-height:1.22;letter-spacing:-.018em;color:var(--iready-ink,#172033)}
 .foundation-prompt{padding:6px 20px 12px}
 .methods{padding:0 20px 12px}
 .frame-heading{padding:14px 20px;flex-wrap:wrap}
@@ -115,3 +115,33 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #c4
 .player-controls button{min-height:36px}
 }
 
+
+/* Playback uses the existing controls, type scale, and colors. */
+.playback-speed { font: inherit; font-size: 15px; padding: 7px 10px; border: 1px solid var(--iready-line-strong, #b8cdec); border-radius: 8px; background: #fff; color: inherit; }
+.playback-speed:focus-visible { outline: 3px solid #c4d7ff; outline-offset: 2px; }
+.playback-status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.place-board { overflow: visible; }
+.bar-track > span { transform-origin: left center; }
+
+/* Increase only the small model explanations and labels. */
+.frame-heading p { font-size: 18px; }
+.value-check, .value-check span, .model-key, .trade > strong { font-size: 18px; }
+.trade small, .zero, .group small, .graph-axis { font-size: 16px; }
+.disks .unit { width: 40px; height: 40px; }
+.disks .unit small { font-size: 16px; }
+.number-line text { font-size: 20px; }
+
+.player-controls > [role="group"] { display: flex; align-items: center; gap: 10px; }
+.player-controls .step-navigation-group { margin-left: 6px; padding-left: 16px; border-left: 1px solid var(--iready-line-strong, #b8cdec); }
+
+.foundation-model-card { margin: 14px 20px; border: 1px solid var(--iready-line-strong, #b8cdec); border-radius: 10px; background: #fff; }
+.foundation-model-card > .frame-heading { border-radius: 10px 10px 0 0; }
+.foundation-model-card .foundation-canvas { padding: 16px; min-height: 0; }
+.foundation-model-card .foundation-equation { border-top: 1px solid var(--iready-line, #c9d5e8); border-radius: 0 0 10px 10px; }
+
+/* A hundred remains a 10 × 10 square; a ten is a 10-unit rod. */
+.foundation-model-card { --block-unit: 10px; }
+.foundation-model-card .unit:not(.disks .unit) { background-size: var(--block-unit) var(--block-unit); }
+.foundation-model-card .hundred:not(.disks .unit) { width: calc(10 * var(--block-unit)); height: calc(10 * var(--block-unit)); }
+.foundation-model-card .ten:not(.disks .unit) { width: var(--block-unit); height: calc(10 * var(--block-unit)); }
+.foundation-model-card .one:not(.disks .unit) { width: var(--block-unit); height: var(--block-unit); }
