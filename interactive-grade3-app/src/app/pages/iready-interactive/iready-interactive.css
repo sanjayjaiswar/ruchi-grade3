@@ -2873,7 +2873,7 @@
 }
 
 /* Separate restart from step navigation without changing the teaching model. */
-.learning-workspace.focused .activity-title-controls .visual-teaching-actions > .visual-teaching-lead { margin: 0; }
+.learning-workspace.focused .activity-title-controls .visual-teaching-actions > .visual-teaching-lead { margin: 0; border-left: 1px solid #eed88d; }
 .replay-control-group button {
   min-height: 38px;
   padding: 7px 11px;
@@ -2886,3 +2886,26 @@
   font-weight: 760;
   cursor: pointer;
 }
+
+/* Maximize only the session workspace; keep its mounted content and state. */
+.learning-workspace.focused .compact-session-content { position: relative; }
+.learning-workspace.focused .workspace-focus-toggle {
+  position: absolute; top: 10px; right: 22px; z-index: 50;
+  display: flex; align-items: center; gap: 8px;
+  height: 40px; padding: 8px 12px;
+  border: 1px solid #b42318; border-radius: 6px;
+  background: #b42318; color: #fff;
+  font: inherit; cursor: pointer;
+  box-shadow: 0 2px 8px #b4231826;
+}
+.learning-workspace.focused .workspace-focus-toggle:hover { background: #912018; }
+.learning-workspace.focused .workspace-focus-toggle:focus-visible { outline: 3px solid #f6b5ae; outline-offset: 3px; }
+.interactive-page.workspace-maximized > .interactive-header,
+.interactive-page.workspace-maximized .compact-lesson-navigation,
+.interactive-page.workspace-maximized .compact-lesson-command { display: none; }
+.interactive-page.workspace-maximized .lesson-focus-content { padding-top: 0; }
+.interactive-page.workspace-maximized .learning-workspace.focused { margin-top: 0; }
+.interactive-page.workspace-maximized .workspace-focus-toggle { position: fixed; top: 10px; right: 24px; }
+.workspace-focus-toggle .restore-view-label { font-size: 16px; font-weight: 700; white-space: nowrap; }
+.learning-workspace.focused .source-problem-stage > header > div > span { display: block; min-height: 44px; padding-right: 180px; }
+.learning-workspace.focused .concept-review-stage ::ng-deep .foundation-heading { padding-right: 200px; }

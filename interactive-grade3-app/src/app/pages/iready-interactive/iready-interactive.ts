@@ -62,6 +62,7 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
 
   unitFoundationsOpen = false;
   conceptReviewOpen = false;
+  workspaceMaximized = false;
   openConceptReview(): void {
     this.clearSourceRevealTimers();
     this.conceptReviewOpen = true;

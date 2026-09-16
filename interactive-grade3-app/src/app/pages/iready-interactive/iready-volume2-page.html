@@ -7,7 +7,7 @@
     <nav aria-label="i-Ready Interactive navigation">
       <a routerLink="/ruchika/grade3/iready-interactive">Volume 1</a>
       <a class="active" routerLink="/ruchika/grade3/iready-interactive/volumes/2">Volume 2</a>
-      <a class="home-link" routerLink="/ruchika/grade3" aria-label="Grade 3 home">R</a>
+      <a class="home-link grade-home-link" routerLink="/ruchika/grade3" aria-label="Grade 3 home"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m3 10 9-7 9 7M5 9v12h5v-7h4v7h5V9" /></svg>Grade 3 home</a>
     </nav>
   </header>
 
@@ -209,13 +209,13 @@
 
             <p class="lesson-feedback" aria-live="polite">{{ lessonFeedback }}</p>
 
-            <footer class="iready-source-boundary">
-              <strong class="iready-source-boundary-heading">How this lesson is sourced</strong>
+            <footer class="iready-source-boundary source-info-footer">
+              <details class="lesson-source-info"><summary aria-label="How this lesson is sourced">About this lesson</summary>
               <div class="iready-source-boundary-groups">
                 <section><strong>Official book</strong><span>The official book supplies the lesson structure, task values, answer, and mathematical model. Learner content comes from the Student Worktext Volume 2; guidance comes from the Teacher Guide Volume 2.</span></section>
                 <section><strong>Interactive portal</strong><span>The portal supplies explanatory wording, controls, feedback, and animation without adding curriculum claims. No other curriculum supplies content.</span></section>
               </div>
-            </footer>
+            </details></footer>
           </div>
         </div>
       </section>
