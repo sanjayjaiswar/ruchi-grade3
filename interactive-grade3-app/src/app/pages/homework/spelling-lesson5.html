@@ -1,0 +1,144 @@
+<main class="homework-page">
+  <header class="homework-header">
+    <a class="back-link" routerLink="/ruchika/grade3/homework">← Homework</a>
+    <div><span class="eyebrow">Wednesday + Thursday homework</span><h1>September 16</h1><p>Words with the /ü/ sound</p></div>
+    <div class="mode-switch" aria-label="Choose homework view">
+      @for (view of modes; track view) {
+        <button type="button" [class.is-active]="mode === view" [attr.aria-pressed]="mode === view" (click)="mode = view">{{ view === 'concept' ? 'Concept' : view === 'blank' ? 'Blank' : 'Solved' }}</button>
+      }
+    </div>
+  </header>
+  <aside class="source-strip" aria-label="Homework source">
+    <div><strong>Spectrum Spelling Grade 3 · Lesson 5</strong><span>Transcribed from your supplied worksheets. Solutions and explanations are original supplemental guidance, not a publisher answer key.</span></div>
+    <a href="/ruchika/grade3/homework/2026-09-16#worksheet-sources">Worksheet source details ↓</a>
+  </aside>
+
+  @if (mode === 'concept') {
+    <section class="concept-panel" aria-labelledby="concept-title">
+      <div class="concept-heading"><span>Original supplemental explanation</span><h2 id="concept-title">One sound, several spellings</h2><p>The /ü/ symbol on these worksheets represents the “oo” sound in moon. Say each word aloud, then look carefully at the letters that spell that sound.</p></div>
+      <div class="sound-lab" aria-labelledby="sound-lab-title">
+        <div class="sound-intro"><span class="visual-kicker">Look · say · compare</span><h3 id="sound-lab-title">Spot the sound</h3><div class="sound-bubble">/ü/<span>“oo” as in moon</span></div></div>
+        <div class="sound-explorer">
+          <div class="pattern-buttons" aria-label="Choose a spelling pattern">
+            @for (pattern of soundPatterns; track pattern.pattern; let index = $index) {
+              <button type="button" [attr.aria-pressed]="soundIndex === index" [class.selected]="soundIndex === index" (click)="soundIndex = index">{{ pattern.pattern }}</button>
+            }
+          </div>
+          <div class="pattern-result" aria-live="polite">
+            <div class="pattern-words">@for (word of soundPatterns[soundIndex].words; track word.before) {<span>{{ word.before }}<mark>{{ word.sound }}</mark>{{ word.after }}</span>}</div>
+            <p>{{ soundPatterns[soundIndex].hint }}</p>
+          </div>
+        </div>
+      </div>
+      <ng-container [ngTemplateOutlet]="sciencePictures"/>
+      <div class="concept-grid">
+        <article class="concept-card"><h3>Solve the riddle</h3><ol><li>Read the meaning and find the matching spelling word.</li><li>Count letters from the left, starting at 1.</li><li>Circle only the requested letters.</li><li>Read the circled letters in question order to fill the riddle.</li></ol></article>
+        <article class="concept-card"><h3>Lose or loose?</h3><p><strong>Lose</strong> means you cannot find or keep something; it ends with a /z/ sound. <strong>Loose</strong> means free or not tight; it ends with an /s/ sound.</p><ng-container [ngTemplateOutlet]="loseComparison"/></article>
+      </div>
+      <ng-container [ngTemplateOutlet]="storyPlanner"/>
+    </section>
+  } @else {
+    <section class="worksheet" [class.is-solved]="mode === 'solved'" aria-labelledby="page24-title">
+      <div class="worksheet-title-row"><div><span class="lesson-label">Wednesday · Lesson 5</span><h2 id="page24-title">Fun with Words</h2></div><a class="page-number" href="/ruchika/grade3/homework/2026-09-16#source-page24">Page 24 · source ↓</a></div>
+      <p class="directions">Write the spelling word that fits each meaning. Then, circle the letters to solve the riddle.</p>
+      <div class="clue-list">
+        @for (item of clues; track item.word; let index = $index) {
+          <article class="clue-item">
+            <div class="clue-row"><span>{{ index + 1 }}. {{ item.prompt }}</span><span class="answer-line">
+              @if (mode === 'solved') {
+                @for (letter of item.word.split(''); track $index) {<span [class.circled]="item.positions.includes($index + 1)">{{ letter }}</span>}
+              }
+            </span><span class="circle-instruction">Circle {{ item.positions.length === 1 ? 'letter' : 'letters' }} {{ item.positions.join(' and ') }}.</span></div>
+            @if (mode === 'solved') {<p class="answer-explanation"><strong>Why:</strong> {{ item.why }}</p>}
+          </article>
+        }
+      </div>
+      <aside class="riddle"><h3>What do you call a big bird that’s running free?</h3><p>A <span class="inline-answer">{{ mode === 'solved' ? 'goose' : '' }}</span> on the <span class="inline-answer">{{ mode === 'solved' ? 'loose' : '' }}</span>!</p>
+        @if (mode === 'solved') {<p class="answer-explanation">g + oo + se + l + oo + s + e → <strong>GOOSE LOOSE</strong>. “On the loose” means running free. Goose and loose rhyme!</p>}
+      </aside>
+      @if (mode === 'solved') {
+        <section class="riddle-builder visual-section" aria-labelledby="riddle-builder-title">
+          <div class="visual-heading"><div><span class="visual-kicker">Watch the letters make words</span><h3 id="riddle-builder-title">Build the riddle, one clue at a time</h3></div><span class="step-count">{{ riddleStep }} / 7 clues</span></div>
+          <div class="builder-workspace" aria-live="polite">
+            @if (riddleStep > 0) {
+              <div class="letter-source"><p>Clue {{ riddleStep }}: <strong>{{ clues[riddleStep - 1].prompt }}</strong></p>
+                <div class="numbered-letters">@for (letter of clues[riddleStep - 1].word.split(''); track $index) {<div [class.picked]="clues[riddleStep - 1].positions.includes($index + 1)"><small>{{ $index + 1 }}</small><span>{{ letter }}</span><small>{{ clues[riddleStep - 1].positions.includes($index + 1) ? 'take' : '·' }}</small></div>}</div>
+                <p class="letter-instruction">Take {{ clues[riddleStep - 1].positions.length === 1 ? 'letter' : 'letters' }} {{ clues[riddleStep - 1].positions.join(' and ') }} <span aria-hidden="true">↓</span></p>
+              </div>
+            } @else {<div class="builder-start"><span aria-hidden="true">1 → 2 → 3</span><p>Start with the first clue. Count the letters, then move the circled ones into the riddle.</p></div>}
+            <div class="riddle-output" aria-label="Riddle letters collected so far">
+              <span>A</span><div class="output-word">@for (tile of riddleTiles.slice(0, 5); track $index) {<span class="output-tile" [class.filled]="tile.step <= riddleStep" [class.just-picked]="tile.step === riddleStep">{{ tile.step <= riddleStep ? tile.letter : '·' }}</span>}</div>
+              <span>on the</span><div class="output-word">@for (tile of riddleTiles.slice(5); track $index) {<span class="output-tile" [class.filled]="tile.step <= riddleStep" [class.just-picked]="tile.step === riddleStep">{{ tile.step <= riddleStep ? tile.letter : '·' }}</span>}</div>
+            </div>
+            @if (riddleStep === 7) {<div class="riddle-finish"><app-homework-picture kind="goose" label="A goose running freely across the grass"/><p><strong>A goose on the loose!</strong><br>All ten letters are in place. The goose is running free.</p></div>}
+          </div>
+          <div class="builder-controls"><button type="button" (click)="riddleStep = 0" [disabled]="riddleStep === 0">Start over</button><button type="button" (click)="riddleStep = riddleStep - 1" [disabled]="riddleStep === 0">← Back</button><button type="button" class="primary-control" (click)="riddleStep = riddleStep + 1" [disabled]="riddleStep === 7">{{ riddleStep === 0 ? 'Start with clue 1 →' : riddleStep === 7 ? 'Riddle complete ✓' : 'Next clue →' }}</button></div>
+        </section>
+      }
+      <div class="word-building"><h3>Words Across the Curriculum</h3><p>Say each science word. Then, write the word.</p>
+        @if (mode === 'solved') {<ng-container [ngTemplateOutlet]="sciencePictures"/>}
+        <div class="spelling-grid">@for (word of scienceWords; track word; let index = $index) {<div class="spelling-row"><span>{{ index + 1 }}.</span><span class="prompt-word">{{ word }}</span><span class="answer-line">{{ mode === 'solved' ? word : '' }}</span></div>}</div>
+        <p class="directions">Write the science word next to its meaning.</p>
+        <div class="science-grid">@for (item of science; track item.word; let index = $index) {
+          <article><div class="science-row"><span>{{ index + 1 }}. {{ item.prompt }}</span><span class="answer-line">{{ mode === 'solved' ? item.word : '' }}</span></div>
+            @if (mode === 'solved') {<p class="answer-explanation"><strong>Why:</strong> {{ item.why }}</p>}
+          </article>
+        }</div>
+      </div>
+    </section>
+    <section class="worksheet" [class.is-solved]="mode === 'solved'" aria-labelledby="page25-title">
+      <div class="worksheet-title-row"><div><span class="lesson-label">Thursday · Lesson 5</span><h2 id="page25-title">Words in Writing</h2></div><a class="page-number" href="/ruchika/grade3/homework/2026-09-16#source-page25">Page 25 · source ↓</a></div>
+      <p class="directions">Write a summary of a movie that you like. Use at least four words from the box.</p>
+      <div class="word-bank lesson5-bank" aria-label="Writing word bank">@for (word of wordBank; track word) {<span>{{ word }}</span>}</div>
+      <ng-container [ngTemplateOutlet]="storyPlanner"/>
+      @if (mode === 'solved') {
+        <p class="supplemental-note">Original example — one possible answer. Choose a movie you like for your own summary.</p>
+        <p class="story">In <em>Toy Story</em>, Woody is in a bad <strong class="solved-answer">mood</strong> when Buzz becomes Andy’s new toy. Buzz thinks he is a space hero with <strong class="solved-answer">cool</strong> equipment. After getting lost, Woody and Buzz work together to return to Andy. They become <strong class="solved-answer">true</strong> friends and reunite with him during his family’s <strong class="solved-answer">move</strong>.</p>
+        <p class="answer-explanation"><strong>Why it works:</strong> It names the movie, explains the problem and ending, and uses four distinct words from the box: mood, cool, true, and move.</p>
+      } @else {<div class="writing-lines" aria-label="Six blank lines for your movie summary">@for (line of [1,2,3,4,5,6]; track line) {<div></div>}</div>}
+      <div class="word-building"><h3>Misspelled Words</h3><p>Read the summary. Circle the five misspelled words. Then, write the words correctly.</p>
+        <p class="story">I just saw the movie <em>You Can’t Catch Me!</em> It was a mystery, but it was based on a <span [class.error-word]="mode === 'solved'">trew</span> story. It was about a detective who kept trying to catch a spy. The <span [class.error-word]="mode === 'solved'">mude</span> of the movie was exciting. Every time the detective found a new <span [class.error-word]="mode === 'solved'">clew</span>, the suspense <span [class.error-word]="mode === 'solved'">grue</span>. He would be close to finding the spy, but then he would <span [class.error-word]="mode === 'solved'">loose</span> track of her.</p>
+        <div class="science-grid">@for (item of corrections; track item.wrong; let index = $index) {<article>
+          <div class="science-row"><span>{{ index + 1 }}. @if (mode === 'solved') {{{ item.wrong }} →}</span><span class="answer-line">{{ mode === 'solved' ? item.word : '' }}</span></div>
+          @if (mode === 'solved') {<p class="answer-explanation"><strong>Why:</strong> {{ item.why }}</p>}
+        </article>}</div>
+        @if (mode === 'solved') {<ng-container [ngTemplateOutlet]="loseComparison"/>}
+      </div>
+    </section>
+  }
+  <aside class="source-strip source-details" id="worksheet-sources" aria-label="Worksheet source details">
+    <div id="source-page24"><strong>Page 24 · supplied worksheet</strong><span>Spectrum Spelling Grade 3, Lesson 5, “Words with the /ü/ Sound.” Photo: 20260916_180329.jpg. Source for the seven clues, circle positions, riddle, and science activities above.</span></div>
+    <div id="source-page25"><strong>Page 25 · supplied worksheet</strong><span>Spectrum Spelling Grade 3, Lesson 5, “Words with the /ü/ Sound.” Photo: 20260916_180345.jpg. Source for the movie-writing directions, 14-word bank, and spelling-correction passage above.</span></div>
+  </aside>
+</main>
+
+<ng-template #sciencePictures>
+  <section class="visual-section science-pictures" aria-labelledby="science-pictures-title">
+    <div class="visual-heading"><div><span class="visual-kicker">Original picture guide</span><h3 id="science-pictures-title">See the science word</h3></div><span>Choose a picture</span></div>
+    <div class="picture-choices">@for (picture of pictureWords; track picture.word; let index = $index) {
+      <button type="button" [attr.aria-pressed]="scienceIndex === index" [class.selected]="scienceIndex === index" (click)="scienceIndex = index"><app-homework-picture [kind]="picture.word" [label]="picture.label"/><span>{{ picture.word }}</span></button>
+    }</div>
+    <div class="picture-caption" aria-live="polite"><span class="caption-word">{{ pictureWords[scienceIndex].word }}</span><div><strong>{{ pictureWords[scienceIndex].heading }}</strong><p>{{ pictureWords[scienceIndex].detail }}</p></div></div>
+  </section>
+</ng-template>
+
+<ng-template #storyPlanner>
+  <section class="visual-section story-planner" aria-labelledby="story-planner-title">
+    <div class="visual-heading"><div><span class="visual-kicker">Original writing organizer</span><h3 id="story-planner-title">Three pictures → one summary</h3></div><span>Include 4 words from the box</span></div>
+    <div class="story-frames">@for (frame of storyFrames; track frame.title; let index = $index) {
+      <article><div class="frame-heading"><span>{{ index + 1 }}</span><h4>{{ frame.title }}</h4></div>
+        @if (mode !== 'blank') {<app-homework-picture [kind]="frame.picture" [label]="frame.label"/>} @else {<div class="blank-frame" aria-label="Space to sketch your story idea"><span aria-hidden="true">✎</span><span>Sketch your idea</span></div>}
+        <p>{{ mode === 'solved' ? frame.example : frame.prompt }}</p>
+        @if (mode === 'solved') {<div class="frame-word"><strong>{{ frame.word }}</strong><span>{{ frame.use }}</span></div>}
+      </article>
+    }</div>
+    @if (mode === 'solved') {<div class="word-checks" aria-label="Four spelling words used">@for (word of ['mood', 'cool', 'true', 'move']; track word) {<span>✓ {{ word }}</span>}<strong>4 / 4 words</strong></div>}
+  </section>
+</ng-template>
+
+<ng-template #loseComparison>
+  <div class="lose-comparison" aria-label="Compare lose and loose">
+    <figure><app-homework-picture kind="lose" label="A child looking for a missing toy"/><figcaption><strong>l<mark>o</mark>se</strong><span>Where is my toy?</span><small>One o · ends with /z/</small></figcaption></figure>
+    <figure><app-homework-picture kind="loose" label="A shoe with untied, loose laces"/><figcaption><strong>l<mark>oo</mark>se</strong><span>My laces are untied.</span><small>Two o’s · ends with /s/</small></figcaption></figure>
+  </div>
+</ng-template>

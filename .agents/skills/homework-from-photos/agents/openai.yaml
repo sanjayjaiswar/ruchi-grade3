@@ -1,0 +1,6 @@
+interface:
+  display_name: "Homework from Photos"
+  short_description: "Photo homework with solutions, visuals, and full-width layout"
+  default_prompt: "Use $homework-from-photos to turn these homework photos into a complete assignment in the existing Homework area, with solutions, relevant visual explanations, and full-width desktop layout."
+policy:
+  allow_implicit_invocation: true

@@ -216,6 +216,25 @@
   font-weight: 900;
 }
 
+.homework-intro { position: relative; }
+.homework-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; }
+.prompt-actions { display: inline-flex; align-items: stretch; border: 1px solid #d8cbea; border-radius: 8px; background: #f7f3ff; }
+.copy-prompt { min-width: 113px; border: 0; border-radius: 7px 0 0 7px; padding: 9px 13px; background: transparent; color: #5b21b6; font: inherit; font-size: 14px; font-weight: 750; cursor: pointer; }
+.copy-prompt:hover { background: #ede9fe; }
+.copy-prompt:disabled { cursor: wait; opacity: .6; }
+.homework-guide { font-size: 13px; color: #596579; }
+.homework-guide summary { display: flex; align-items: center; gap: 9px; height: 100%; padding: 9px 13px; border-left: 1px solid #d8cbea; border-radius: 0 7px 7px 0; color: #5b21b6; font-size: 14px; font-weight: 650; list-style: none; cursor: pointer; }
+.homework-guide summary::-webkit-details-marker { display: none; }
+.homework-guide summary:hover, .homework-guide[open] summary { background: #ede9fe; }
+.guide-panel { position: absolute; z-index: 20; right: 20px; top: calc(100% + 8px); width: min(620px, calc(100vw - 64px)); max-height: 65vh; overflow: auto; padding: 18px; border: 1px solid #d8ddea; border-radius: 12px; background: #fff; box-shadow: 0 12px 36px #17203324; }
+.guide-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; color: #253650; font-size: 16px; }
+.guide-heading button { width: 28px; height: 28px; border: 0; border-radius: 6px; background: #f1f3f8; color: #536177; font-size: 22px; cursor: pointer; }
+.homework-guide p { margin: 10px 0; line-height: 1.5; }
+.homework-guide pre { margin: 10px 0; padding: 14px; border: 1px solid #d9e0eb; border-radius: 8px; background: #fff; color: #253650; white-space: pre-wrap; overflow-wrap: anywhere; user-select: all; font: 13px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; }
+.homework-guide code { font: inherit; }
+.copy-feedback { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.homework-guide summary:focus-visible, .homework-guide pre:focus-visible, .copy-prompt:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; }
+
 @media (max-width: 760px) {
   .homework-content {
     padding: 12px;

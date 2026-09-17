@@ -12,7 +12,22 @@
         <h1 id="homework-title">Homework</h1>
         <p>Daily assignments from every subject for the latest school month.</p>
       </div>
-      <a class="back-link" routerLink="/ruchika/grade3">← All learning areas</a>
+      <div class="homework-actions">
+        <div class="prompt-actions">
+          <button class="copy-prompt" type="button" (click)="copyHomeworkPrompt()" [disabled]="copyState() === 'copying'">{{ copyState() === 'copied' ? 'Copied ✓' : copyState() === 'copying' ? 'Copying…' : 'Copy prompt' }}</button>
+          <details #instructions class="homework-guide" [open]="copyState() === 'manual'" (keydown.escape)="instructions.open = false">
+            <summary>Instructions <span aria-hidden="true">⌄</span></summary>
+            <div class="guide-panel">
+              <div class="guide-heading"><strong>Homework from Photos</strong><button type="button" aria-label="Close instructions" (click)="instructions.open = false">×</button></div>
+              <p>Paste the prompt into this project’s Codex conversation with your photos or image paths. The skill adds the homework here with explanations, relevant visuals, and Concept, Blank, and Solved views.</p>
+              <pre tabindex="0" aria-label="Homework prompt"><code>{{ homeworkPrompt }}</code></pre>
+              @if (copyState() === 'manual') {<p>Select the prompt above and copy it manually.</p>}
+            </div>
+          </details>
+        </div>
+        <a class="back-link" routerLink="/ruchika/grade3">← All learning areas</a>
+      </div>
+      <span class="copy-feedback" role="status" aria-live="polite">{{ copyState() === 'manual' ? 'Instructions opened. Select the prompt and copy it manually.' : copyState() === 'copied' ? 'Prompt copied.' : '' }}</span>
     </section>
 
     <section class="assignment-section" aria-labelledby="assignments-title">

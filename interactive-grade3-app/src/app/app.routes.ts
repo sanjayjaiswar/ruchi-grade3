@@ -33,6 +33,7 @@ export const routes: Routes = [
   { path: 'ruchika/grade3/syllabus-books/sources', component: SyllabusBooksPage },
   { path: 'ruchika/grade3/homework', component: HomeworkHomePage },
   { path: 'ruchika/grade3/homework/2026-08-17', component: HomeworkPage },
+  { path: 'ruchika/grade3/homework/2026-09-16', loadComponent: () => import('./pages/homework/spelling-lesson5').then(m => m.SpellingLesson5Page) },
   { path: 'ruchika/grade3/iready', component: CurrentMathHomePage },
   { path: 'ruchika/grade3/iready/curriculum', component: CurrentMathHomePage },
   { path: 'ruchika/grade3/iready/syllabus', component: CurrentMathHomePage },

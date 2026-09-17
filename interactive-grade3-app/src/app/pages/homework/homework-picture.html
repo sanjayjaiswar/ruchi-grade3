@@ -1,0 +1,88 @@
+<svg viewBox="0 0 280 180" role="img" [attr.aria-label]="label()" xmlns="http://www.w3.org/2000/svg">
+  <rect x="2" y="2" width="276" height="176" rx="24" fill="#eef6ff"/>
+  @switch (kind()) {
+    @case ('dew') {
+      <circle cx="234" cy="39" r="19" fill="#f6cc65"/>
+      <path d="M15 159 Q90 133 265 154" fill="none" stroke="#c1dfbb" stroke-width="30"/>
+      <path d="M48 147 Q56 52 212 53 Q199 130 48 147Z" fill="#78ba83"/>
+      <path d="M47 149 Q111 96 203 60" fill="none" stroke="#28724d" stroke-width="4"/>
+      <path d="M103 116 L93 90 M136 98 L138 75 M151 90 L177 102" fill="none" stroke="#43875c" stroke-width="3"/>
+      <g fill="#56bde4" stroke="#176e9b" stroke-width="2">
+        <path d="M95 57 Q76 81 95 87 Q114 81 95 57Z"/>
+        <path d="M151 41 Q132 65 151 71 Q170 65 151 41Z"/>
+        <path d="M178 100 Q161 122 178 128 Q195 122 178 100Z"/>
+      </g>
+      <g fill="#fff"><circle cx="92" cy="77" r="3"/><circle cx="148" cy="61" r="3"/><circle cx="175" cy="118" r="3"/></g>
+    }
+    @case ('dune') {
+      <circle cx="220" cy="39" r="21" fill="#f7cf71"/>
+      <path d="M3 129 Q49 72 109 112 Q158 154 277 103 L277 157 Q277 178 255 178 H26 Q3 178 3 155Z" fill="#f4d49c"/>
+      <path d="M3 147 Q109 159 173 80 Q209 125 277 130 L277 157 Q277 178 255 178 H26 Q3 178 3 155Z" fill="#deb16e"/>
+      <path d="M173 80 Q168 132 94 157 Q201 132 245 151" fill="#edc58a"/>
+      <g fill="none" stroke="#81b6cc" stroke-width="3" stroke-linecap="round"><path d="M35 39 H120 Q137 39 130 28"/><path d="M55 54 H141"/><path d="M32 68 H95"/></g>
+      <g fill="#b9874f"><circle cx="48" cy="158" r="2"/><circle cx="63" cy="151" r="2"/><circle cx="218" cy="160" r="2"/></g>
+    }
+    @case ('root') {
+      <path d="M3 96 H277 V156 Q277 178 255 178 H25 Q3 178 3 156Z" fill="#e8cba7"/>
+      <path d="M4 96 H276" stroke="#76a26a" stroke-width="5"/>
+      <path d="M140 96 V37" stroke="#36794b" stroke-width="7" stroke-linecap="round"/>
+      <path d="M137 65 Q85 64 98 31 Q138 32 137 65 M144 78 Q188 76 190 40 Q148 39 144 78" fill="#75b878"/>
+      <g fill="none" stroke="#955d39" stroke-width="5" stroke-linecap="round"><path d="M140 98 V157 M140 110 L113 131 L98 137 M140 119 L169 138 L183 140 M140 138 L123 157"/><path d="M113 131 L111 151 M169 138 L166 159" stroke-width="3"/></g>
+      <path d="M224 129 H190 L196 123 M190 129 L196 135" fill="none" stroke="#794928" stroke-width="3"/>
+    }
+    @case ('pollute') {
+      <path d="M3 112 Q52 95 104 115 T277 110 V155 Q277 178 255 178 H25 Q3 178 3 155Z" fill="#91cbdc"/>
+      <path d="M4 101 Q32 88 59 111 V139 Q37 126 4 143Z" fill="#b4cfaa"/>
+      <path d="M277 97 Q238 100 219 122 L277 142Z" fill="#b4cfaa"/>
+      <g fill="none" stroke="#5d9bac" stroke-width="3"><path d="M64 148 Q98 140 121 149 M161 158 Q195 150 223 158"/></g>
+      <g transform="translate(109 112) rotate(-22)"><rect x="0" y="0" width="42" height="23" rx="4" fill="#e5edef" stroke="#678794" stroke-width="2"/><rect x="14" y="0" width="14" height="23" fill="#d17f65"/><rect x="42" y="6" width="8" height="10" rx="2" fill="#678794"/></g>
+      <path d="M188 124 L207 120 L210 138 L189 141Z" fill="#e3b87a" stroke="#9f7950" stroke-width="2"/>
+      <circle cx="141" cy="48" r="26" fill="#fff3e7" stroke="#ba6549" stroke-width="3"/>
+      <path d="M141 33 V51" stroke="#9c4931" stroke-width="5" stroke-linecap="round"/><circle cx="141" cy="61" r="3" fill="#9c4931"/>
+    }
+    @case ('goose') {
+      <path d="M20 154 Q126 138 260 154" fill="none" stroke="#c7dfb7" stroke-width="20" stroke-linecap="round"/>
+      <g fill="none" stroke="#d49638" stroke-width="5" stroke-linecap="round"><path d="M124 131 L114 155 H131 M149 132 L169 148 L181 145"/></g>
+      <path d="M56 98 L40 79 L88 88 Q113 69 144 89 Q169 91 167 60 Q162 34 188 33 Q209 33 207 54 Q208 76 194 88 Q186 133 133 136 Q77 144 56 98Z" fill="#fff" stroke="#748b9d" stroke-width="3"/>
+      <path d="M82 101 Q124 80 150 105 Q126 125 97 119" fill="#e2ebf2" stroke="#aabac5" stroke-width="2"/>
+      <path d="M205 45 L231 56 L204 61Z" fill="#edb252"/><circle cx="194" cy="46" r="3" fill="#293b49"/>
+      <g stroke="#89acbe" stroke-width="3" stroke-linecap="round"><path d="M31 64 H62 M24 80 H34 M29 115 H51"/></g>
+    }
+    @case ('lose') {
+      <rect x="41" y="94" width="120" height="18" rx="4" fill="#bb9775"/><path d="M52 112 V153 M150 112 V153" stroke="#98704e" stroke-width="8"/>
+      <circle cx="109" cy="60" r="22" fill="#f0c5a0"/><path d="M77 94 Q80 75 108 76 Q138 77 141 94" fill="#8b94cf"/>
+      <path d="M100 59 L103 58 M118 59 L121 60 M106 70 Q112 65 118 70" fill="none" stroke="#5b463a" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="220" cy="59" r="25" fill="#fff" stroke="#a4b4c6" stroke-width="2"/><text x="220" y="69" text-anchor="middle" font-family="sans-serif" font-size="30" fill="#60558a">?</text>
+      <path d="M185 146 Q188 126 201 132 L216 148Z" fill="none" stroke="#7b8ba1" stroke-width="3" stroke-dasharray="4 4"/>
+    }
+    @case ('loose') {
+      <path d="M49 121 L77 69 L125 78 Q131 108 190 113 Q231 113 238 137 H46Z" fill="#8ba0d2" stroke="#56688c" stroke-width="3"/>
+      <path d="M47 137 H238 V148 H45Z" fill="#fff" stroke="#56688c" stroke-width="3"/>
+      <g stroke="#fff" stroke-width="4" stroke-linecap="round"><path d="M99 89 L115 85 M108 99 L128 95 M122 108 L139 104"/></g>
+      <path d="M115 97 Q156 68 162 101 Q165 125 196 91 M116 96 Q154 98 151 131 Q149 164 198 159" fill="none" stroke="#c86e44" stroke-width="4" stroke-linecap="round"/>
+      <path d="M203 59 L193 77 M225 84 L209 89" stroke="#c86e44" stroke-width="3" stroke-linecap="round"/>
+    }
+    @case ('characters') {
+      <circle cx="94" cy="58" r="23" fill="#edc39c"/><path d="M62 54 H126 M72 51 L78 30 H111 L117 51" stroke="#a77b4e" stroke-width="8" stroke-linejoin="round"/>
+      <path d="M66 130 V99 Q66 82 94 82 Q122 82 122 99 V130" fill="#e6b853"/>
+      <path d="M78 131 V157 M110 131 V157" stroke="#5d84b1" stroke-width="13"/>
+      <rect x="166" y="32" width="51" height="53" rx="19" fill="#f5f8fa" stroke="#8b95aa" stroke-width="3"/><circle cx="191" cy="59" r="16" fill="#cde3dc"/>
+      <rect x="160" y="86" width="63" height="47" rx="13" fill="#9ac3a4"/><rect x="177" y="98" width="30" height="14" rx="3" fill="#7b74a5"/>
+      <path d="M174 135 V157 M207 135 V157" stroke="#8b95aa" stroke-width="13"/>
+      <g fill="#425166"><circle cx="87" cy="61" r="2"/><circle cx="101" cy="61" r="2"/><circle cx="186" cy="58" r="2"/><circle cx="198" cy="58" r="2"/></g>
+    }
+    @case ('problem') {
+      <g fill="none" stroke="#b4c8d7" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><path d="M41 49 H136 V84 H189 V48 H238 V137 H175 M41 49 V136 H91 V106 H136 V137"/></g>
+      <path d="M40 158 H114 V91 H74 V70" fill="none" stroke="#bd7652" stroke-width="4" stroke-dasharray="7 5"/>
+      <circle cx="42" cy="158" r="8" fill="#bd7652"/>
+      <text x="142" y="48" text-anchor="middle" font-family="sans-serif" font-size="30" fill="#786194">?</text>
+    }
+    @case ('ending') {
+      <path d="M42 98 L104 43 L166 98" fill="#d99b78" stroke="#9f735e" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M54 98 V149 H151 V98" fill="#f7e7cc" stroke="#aa9279" stroke-width="3"/><rect x="90" y="108" width="29" height="41" rx="3" fill="#94b5b9"/>
+      <rect x="67" y="100" width="14" height="18" fill="#c5dee7"/>
+      <circle cx="207" cy="94" r="34" fill="#d5e8cf"/><path d="M190 94 L203 107 L226 80" fill="none" stroke="#487c51" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M157 148 Q194 151 218 134" fill="none" stroke="#ddc7a7" stroke-width="9" stroke-linecap="round"/>
+    }
+  }
+</svg>
