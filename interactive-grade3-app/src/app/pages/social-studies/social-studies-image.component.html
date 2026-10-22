@@ -1,0 +1,18 @@
+<figure>
+  <div class="label">Look closely</div>
+  @if (failedUrl() !== picture().url) {
+    <button class="open-image" type="button" (click)="viewer.showModal()" [attr.aria-label]="'Enlarge: ' + picture().alt">
+      <img [src]="picture().url" [alt]="picture().alt" (error)="failedUrl.set(picture().url)" referrerpolicy="no-referrer">
+      <span>Enlarge image ⤢</span>
+    </button>
+  } @else {
+    <p class="unavailable">This image is unavailable from its source. {{ picture().alt }}</p>
+  }
+  <figcaption><p>{{ picture().caption }}</p><span>{{ picture().credit }}</span><a [href]="picture().source.url" target="_blank" rel="noopener">Original image and source ↗</a></figcaption>
+</figure>
+<dialog #viewer aria-label="Enlarged teaching image">
+  <button class="close-image" type="button" autofocus (click)="viewer.close()">Close image ×</button>
+  <img [src]="picture().url" [alt]="picture().alt" referrerpolicy="no-referrer">
+  <p>{{ picture().caption }}</p><p>{{ picture().credit }}</p>
+  <a [href]="picture().source.url" target="_blank" rel="noopener">Original image and source ↗</a>
+</dialog>

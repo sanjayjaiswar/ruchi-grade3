@@ -25,6 +25,8 @@ const grade3Routes: Routes = [
 export const routes: Routes = [
   { path: '', redirectTo: 'ruchika/grade3', pathMatch: 'full' },
   { path: 'ruchika/grade3', component: PortalHomePage },
+  { path: 'ruchika/grade3/social-studies', title: 'Social Studies · Grade 3', loadComponent: () => import('./pages/social-studies/social-studies').then(m => m.SocialStudiesPage) },
+  { path: 'ruchika/grade3/social-studies/chapters/:chapterId', title: 'Social Studies chapter · Grade 3', loadComponent: () => import('./pages/social-studies/social-studies').then(m => m.SocialStudiesPage) },
   { path: 'ruchika/grade3/syllabus-books', component: SyllabusBooksPage },
   { path: 'ruchika/grade3/syllabus-books/books', component: SyllabusBooksPage },
   { path: 'ruchika/grade3/syllabus-books/curriculum', component: SyllabusBooksPage },

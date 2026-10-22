@@ -70,6 +70,8 @@
 }
 .interactive-math-card { --accent: #e06f5c; --accent-end: #8f3c30; --soft: #ffe4de; }
 .reading-card { --accent: #15803d; --accent-end: #006c50; --soft: #c5efd4; }
+.social-studies-card { --accent: #17685b; --accent-end: #164b45; --soft: #e5f3ed; }
+.social-studies-card .subject-action { align-self: flex-start; min-width: 260px; }
 .homework-card { --accent: #7150b8; --accent-end: #513b91; --soft: #e0d3fa; }
 .iready-card { --accent: #24658d; --accent-end: #205176; --soft: #cce9fa; }
 .syllabus-card { --accent: #a63570; --accent-end: #802553; --soft: #f5d5e7; }

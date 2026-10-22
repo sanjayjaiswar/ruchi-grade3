@@ -1,0 +1,151 @@
+<div class="social-page">
+  <header class="portal-header social-header">
+    <div class="portal-brand">
+      <a class="portal-brand-mark" routerLink="/ruchika/grade3" aria-label="Ruchika Learning Portal home">R</a>
+      <strong>Ruchika Learning Portal — Grade 3</strong>
+    </div>
+    <a routerLink="/ruchika/grade3">← All subjects</a>
+  </header>
+
+  <main>
+    @if (chapter(); as selected) {
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a [routerLink]="base">Social Studies overview</a><span aria-hidden="true">/</span><span>{{ selected.title }}</span>
+      </nav>
+      <section class="chapter-heading" [style.--accent]="selected.color" [style.--soft]="selected.soft">
+        <span class="eyebrow">California Grade 3 · Area {{ selected.standard }}</span>
+        <h1>{{ selected.title }}</h1>
+        <p>{{ selected.question }}</p>
+        <div class="source-links">
+          <a [href]="selected.source" target="_blank" rel="noopener">California standard {{ selected.standard }} ↗</a>
+          <a [href]="selected.frameworkSource" target="_blank" rel="noopener">Teaching framework ↗</a>
+        </div>
+      </section>
+      <section class="standards-explorer" [style.--accent]="selected.color" [style.--soft]="selected.soft" aria-label="California chapter scope">
+        <nav class="expectation-nav" aria-label="Standards in this chapter">
+          <h2>In this chapter</h2>
+          @for (item of selected.expectations; track item.code) {
+            <button type="button" (click)="selectTopic(item.code)" [attr.aria-pressed]="expectation()?.code === item.code" aria-controls="expectation-detail">
+              <span>{{ item.code }}</span><strong>{{ item.title }}</strong><span aria-hidden="true">→</span>
+            </button>
+          }
+        </nav>
+        @if (expectation(); as item) {
+          @if (lesson(); as teaching) {
+            <article class="expectation-detail" id="expectation-detail">
+              <header class="lesson-heading">
+                <div><span class="eyebrow">{{ item.title }}</span><h2>{{ teaching.question }}</h2></div>
+                <a [href]="selected.source" target="_blank" rel="noopener">CA {{ item.code }} ↗</a>
+              </header>
+              <p class="authorship">Supplemental learning · written for this portal</p>
+              <p class="lesson-introduction">{{ teaching.introduction }}</p>
+              <div class="teaching-layout" [class.with-image]="!!teaching.image || !!teaching.connections">
+                <div class="teaching-copy">
+                  @for (section of teaching.sections; track section.title) {
+                    <section class="teaching-section">
+                      <h3>{{ section.title }}</h3>
+                      <p>{{ section.text }}</p>
+                      @if (section.source; as source) {
+                        <details class="passage-source"><summary>Source</summary><a class="citation" [href]="source.url" target="_blank" rel="noopener">{{ source.label }} ↗</a></details>
+                      }
+                    </section>
+                  }
+                </div>
+                @if (teaching.image; as picture) {
+                  <app-social-studies-image [picture]="picture" />
+                } @else if (teaching.connections; as connections) {
+                <section class="connections" [class.timeline]="item.code === '3.3.3' || item.code === '3.2.4'" aria-label="Connected ideas">
+                  <h3>{{ teaching.connectionLabel }}</h3>
+                  <div class="connection-grid" [style.--columns]="connections.length">
+                    @for (connection of connections; track connection.title; let index = $index) {
+                      <div>
+                        @if (item.code === '3.5.1') {
+                          <svg class="resource-icon" viewBox="0 0 80 70" aria-hidden="true">
+                            @if (index === 0) { <path d="M40 5 C34 20 18 33 18 46 A22 22 0 0 0 62 46 C62 33 46 20 40 5Z" fill="#d3eafe" stroke="#337da8" stroke-width="3"/><path d="M28 44 Q24 54 36 59" fill="none" stroke="white" stroke-width="4" stroke-linecap="round"/> }
+                            @if (index === 1) { <circle cx="40" cy="23" r="12" fill="#f0cfa9" stroke="#8c6016" stroke-width="2"/><path d="M26 17 Q18 5 31 6 Q40 -3 49 6 Q61 5 54 17Z" fill="white" stroke="#8c6016" stroke-width="2"/><path d="M16 65 V53 Q17 37 30 37 H50 Q63 37 64 53 V65Z" fill="#fff0bd" stroke="#8c6016" stroke-width="2"/><path d="M29 39 L29 64 M51 39 L51 64" stroke="#8c6016" stroke-width="2"/> }
+                            @if (index === 2) { <rect x="13" y="8" width="54" height="56" rx="6" fill="#e5ebf2" stroke="#52647a" stroke-width="3"/><circle cx="25" cy="18" r="3" fill="#52647a"/><circle cx="40" cy="18" r="3" fill="#52647a"/><circle cx="55" cy="18" r="3" fill="#52647a"/><rect x="21" y="29" width="38" height="26" rx="3" fill="#fff5d8" stroke="#52647a" stroke-width="2"/><path d="M27 43 Q28 33 40 33 Q53 33 54 43Z" fill="#dcad5e" stroke="#8c6016" stroke-width="2"/> }
+                          </svg>
+                        }
+                        <h4>{{ connection.title }}</h4><p>{{ connection.text }}</p>
+                      </div>
+                    }
+                  </div>
+                </section>
+                }
+              </div>
+              @if (teaching.image && teaching.connections; as connections) {
+                <section class="connections image-connections" aria-label="Picture connections">
+                  <h3>{{ teaching.connectionLabel }}</h3>
+                  <div class="connection-grid" [style.--columns]="connections.length">
+                    @for (connection of connections; track connection.title) { <div><h4>{{ connection.title }}</h4><p>{{ connection.text }}</p></div> }
+                  </div>
+                </section>
+              }
+              @if (exploration(); as more) {
+                <section class="deeper-learning" aria-label="Explore the idea further">
+                  <h3 class="deeper-title">{{ more.title }}</h3>
+                  <div class="deeper-grid">
+                    @for (section of more.sections; track section.title) {
+                      <section><h4>{{ section.title }}</h4><p>{{ section.text }}</p>
+                        @if (section.source; as source) { <a class="citation" [href]="source.url" target="_blank" rel="noopener">{{ source.label }} ↗</a> }
+                      </section>
+                    }
+                  </div>
+                  @for (picture of extraImages(); track picture.url) { <div class="additional-picture"><app-social-studies-image [picture]="picture" /></div> }
+                </section>
+              }
+              <section class="explained-example">
+                <h3>{{ teaching.example.title }}</h3><p>{{ teaching.example.text }}</p>
+                @if (teaching.example.source; as source) {
+                  <a class="citation" [href]="source.url" target="_blank" rel="noopener">{{ source.label }} ↗</a>
+                }
+              </section>
+              <p class="takeaway"><strong>The idea to keep</strong>{{ teaching.takeaway }}</p>
+              @if (teaching.reading; as reading) {
+                <aside class="further-reading"><strong>{{ reading.title }}</strong><p>{{ reading.note }}</p><a class="citation" [href]="reading.source.url" target="_blank" rel="noopener">{{ reading.source.label }} ↗</a></aside>
+              }
+              <footer class="lesson-footer">
+                <details><summary>Standard {{ item.code }} · scope</summary><p>{{ item.scope }}</p><a [href]="selected.source" target="_blank" rel="noopener">Read California’s complete expectation ↗</a></details>
+                @if (nextTopic(); as next) { <button type="button" (click)="selectTopic(next.code)">Next: {{ next.title }} →</button> }
+              </footer>
+            </article>
+          }
+        }
+      </section>
+      <nav class="chapter-nav" aria-label="Other chapters">
+        @for (item of chapters; track item.id) {
+          <a [routerLink]="[base, 'chapters', item.id]" [attr.aria-current]="item.id === selected.id ? 'page' : null">{{ item.number }}. {{ item.title }}</a>
+        }
+      </nav>
+    } @else if (chapterId()) {
+      <h1>Chapter not found</h1>
+      <a [routerLink]="base">Return to the Social Studies overview</a>
+    } @else {
+      <section class="overview-intro" aria-labelledby="social-title">
+        <span class="eyebrow">The big picture</span>
+        <h1 id="social-title">Social Studies</h1>
+        <p>Explore our place, our people, and our community.</p>
+        <div class="overview-meta">
+          <span>Five areas to explore</span>
+          <a href="https://www.cde.ca.gov/ci/hs/cf/documents/hssfwchapter6.pdf#page=2" target="_blank" rel="noopener">California Grade 3: Continuity and Change ↗</a>
+        </div>
+      </section>
+      <section class="topic-grid" aria-label="Social studies topics">
+        @for (item of chapters; track item.id) {
+          <article class="subject-card topic-card" [style.--accent]="item.color" [style.--accent-end]="item.color" [style.--soft]="item.soft">
+            <a class="topic-link" [routerLink]="[base, 'chapters', item.id]">
+              <img class="chapter-preview" [src]="chapterImage(item.id).url" [alt]="chapterImage(item.id).alt" referrerpolicy="no-referrer">
+              <span class="subject-kicker">California {{ item.standard }}</span>
+              <h2 class="subject-title-link">{{ item.title }}</h2>
+              <p>{{ item.question }}</p>
+              <span class="subject-action"><span class="subject-action-label">Explore chapter</span><span aria-hidden="true">→</span></span>
+            </a>
+            <a class="image-credit" [href]="chapterImage(item.id).source.url" target="_blank" rel="noopener">{{ chapterImage(item.id).credit }} ↗</a>
+            <a class="topic-source" [href]="item.source" target="_blank" rel="noopener">California {{ item.standard }} ↗</a>
+          </article>
+        }
+      </section>
+      <p class="overview-note">Portal chapters follow California’s five areas. Inside: original supplemental explanations, source images, and examples organized by the state’s substandards.</p>
+    }
+  </main>
+</div>
