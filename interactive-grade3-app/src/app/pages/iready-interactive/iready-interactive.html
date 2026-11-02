@@ -44,6 +44,7 @@
             <div class="unit-card-topline"><span>{{ prep.role }} - Lesson {{ prep.lesson }}</span><a [href]="prep.studentSourceUrl" target="_blank" rel="noopener">Official student pp. {{ prep.studentPages }} ↗</a></div>
             <h3>{{ prep.title }}</h3>
             <p>{{ prep.goal }}</p>
+            <p><strong>Official session task (paraphrased):</strong> {{ prep.sourceAnchor }}</p>
             <a class="open-unit" [routerLink]="[prep.lessonUrl]" [queryParams]="{ session: prep.session }">Open interactive Session {{ prep.session }} →</a>
             <details class="overview-details volume-details">
               <summary>Show teaching plan, practice and answer key</summary>
@@ -329,6 +330,21 @@
           [attr.aria-label]="'Next lesson: ' + lesson.title" [title]="'Next lesson: ' + lesson.title">→</a>
       </div>
     </nav>
+
+    <details *ngIf="lessonFocus && selectedDailyMathPrep as prep" class="overview-details volume-details daily-prep-inline">
+      <summary>Evening teaching preparation: Lesson {{ prep.lesson }} ({{ prep.role }}) - official task, visual explanation, practice and answers</summary>
+      <p><strong>Official session task (paraphrased):</strong> {{ prep.sourceAnchor }}</p>
+      <p><strong>Goal:</strong> {{ prep.goal }}</p>
+      <p><strong>5-minute warm-up:</strong> {{ prep.warmup }}</p>
+      <p><strong>Visual demonstration:</strong> {{ prep.visual }}</p>
+      <p><strong>Explain:</strong> {{ prep.explain }}</p>
+      <p><strong>Alternate method:</strong> {{ prep.alternate }}</p>
+      <p><strong>Guided question:</strong> {{ prep.guided }} <strong>Answer:</strong> {{ prep.guidedAnswer }}</p>
+      <p><strong>Independent practice:</strong> {{ prep.practice }} <strong>Answer:</strong> {{ prep.practiceAnswer }}</p>
+      <p><strong>Common mistake:</strong> {{ prep.misconception }}</p>
+      <p><strong>Mastery check:</strong> {{ prep.mastery }} <strong>Answer:</strong> {{ prep.masteryAnswer }}</p>
+      <p>Official sources: <a [href]="prep.studentSourceUrl" target="_blank" rel="noopener">Student Worktext pp. {{ prep.studentPages }}</a> and <a [href]="prep.teacherSourceUrl" target="_blank" rel="noopener">Teacher Guide reader pp. {{ prep.teacherPages }}</a>. Apart from the paraphrased official task, the explanations and practice are original supplemental teaching content.</p>
+    </details>
 
     <section *ngIf="lessonFocus" class="learning-workspace focused">
       <section class="lesson-stage" aria-live="polite">
