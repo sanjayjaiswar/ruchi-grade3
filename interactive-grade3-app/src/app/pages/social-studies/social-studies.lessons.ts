@@ -255,11 +255,11 @@ export const SOCIAL_STUDIES_LESSONS: Record<string, TeachingLesson> = {
     question:'Where do the things in our community come from?',
     introduction:'An item can be sold nearby even when it was produced far away. To understand where goods originate, distinguish where something was made from where someone bought it.',
     sections:[
-      {title:'Three useful distances',text:'California’s standard distinguishes goods produced locally, elsewhere in the United States, and overseas. “Local” depends on the community we are describing. A shop’s location alone does not tell us where its goods were produced.',source:{label:'California standard 3.5.2',url:'https://www.cde.ca.gov/be/st/SS/documents/histsocscistnd.pdf#page=18'}},
+      {title:'Three useful distances',text:'California’s standard distinguishes goods produced locally, elsewhere in the United States, and abroad. “Local” depends on the community we are describing. A shop’s location alone does not tell us where its goods were produced.',source:{label:'California standard 3.5.2',url:'https://www.cde.ca.gov/be/st/SS/documents/histsocscistnd.pdf#page=18'}},
       {title:'Follow the information',text:'In an imagined example, a shop sells apples from a nearby farm, a chair made in another state, and a toy made in another country. All three are sold locally. Their production locations are different.'},
       {title:'One object can connect several places',text:'A product’s materials and assembly may come from different places. A “made in” label is a useful clue, but it does not describe every material’s journey. Be clear about which part of the journey your evidence describes.'}
     ],connectionLabel:'Same shop, different origins · imagined examples',
-    connections:[{title:'Nearby farm',text:'Apples grown in the local area.'},{title:'Another U.S. state',text:'A chair made elsewhere in the country.'},{title:'Another country',text:'A toy produced overseas.'}],
+    connections:[{title:'Nearby farm',text:'Apples grown in the local area.'},{title:'Another U.S. state',text:'A chair made elsewhere in the country.'},{title:'Another country',text:'A toy produced abroad.'}],
     example:{title:'Sold here does not mean made here',text:'The shop is the destination in this example. The farm or factory is a production location. Those are two different facts about the same object.'},
     takeaway:'Trace a good’s origin using evidence; do not infer it from the store where it is sold.'
   },
