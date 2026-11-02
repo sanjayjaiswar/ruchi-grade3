@@ -38,6 +38,7 @@
                 <a [href]="selected.source" target="_blank" rel="noopener">CA {{ item.code }} ↗</a>
               </header>
               <p class="authorship">Supplemental learning · written for this portal</p>
+              <app-social-studies-teaching [standard]="item.code" />
               <p class="lesson-introduction">{{ teaching.introduction }}</p>
               <div class="teaching-layout" [class.with-image]="!!teaching.image || !!teaching.connections">
                 <div class="teaching-copy">
@@ -127,6 +128,7 @@
                     <h4>1. Observe the evidence</h4>
                     <p>{{ task.observe }}</p>
                     <a [href]="task.source.url" target="_blank" rel="noopener">Supporting source: {{ task.source.label }} ↗</a>
+                    @for (source of task.additionalSources ?? []; track source.url) { <a class="additional-activity-source" [href]="source.url" target="_blank" rel="noopener">{{ source.label }} ↗</a> }
                     <details><summary>Show the evidence discussion</summary><p>{{ task.observeAnswer }}</p></details>
                   </section>
                   <section class="lab-try">
@@ -152,9 +154,9 @@
                     <h4>3. Explain with evidence</h4>
                     <label for="social-reflection">{{ task.independent }}</label>
                     <textarea id="social-reflection" rows="4" [value]="responseText()" (input)="updateResponse($event)" placeholder="My claim... The evidence... This shows..."></textarea>
-                    <p class="lab-privacy">Practice stays on this page during your visit; it is not submitted or saved.</p>
+                    <p class="lab-privacy">Practice stays in memory during topic switches in this visit. Reloading or leaving Social Studies clears it; nothing is submitted or saved.</p>
                     <button class="lab-example-toggle" type="button" [attr.aria-expanded]="isSampleVisible()" (click)="toggleSample()">{{ isSampleVisible() ? 'Hide' : 'Show' }} a possible answer</button>
-                    @if (isSampleVisible()) { <p class="lab-sample"><strong>One example:</strong> {{ task.sample }}</p> }
+                    @if (isSampleVisible()) { <p class="lab-sample"><strong>One example:</strong> {{ task.sample }}</p><div class="activity-answer-sources"><a [href]="task.source.url" target="_blank" rel="noopener">{{ task.source.label }} ↗</a>@for (source of task.additionalSources ?? []; track source.url) { <a [href]="source.url" target="_blank" rel="noopener">{{ source.label }} ↗</a> }</div> }
                   </section>
                   <details class="social-teacher-guide">
                     <summary>Teacher workspace · teaching plan, answer key, and misconceptions</summary>
@@ -169,6 +171,7 @@
                     <p><strong>Quick-check answer:</strong> {{ task.options[task.correctIndex] }}. {{ task.explanation }}</p>
                     <p><strong>Watch for:</strong> {{ task.misconception }}</p>
                     <p><strong>Response guide:</strong> {{ task.sample }}</p>
+                    <div class="activity-answer-sources"><a [href]="task.source.url" target="_blank" rel="noopener">{{ task.source.label }} ↗</a>@for (source of task.additionalSources ?? []; track source.url) { <a [href]="source.url" target="_blank" rel="noopener">{{ source.label }} ↗</a> }</div>
                     <p class="lab-teacher-note">This is a formative teaching aid, not a verified publisher answer key or proof of mastery. Check historical claims using the cited source.</p>
                   </details>
                 </section>
@@ -203,6 +206,16 @@
           <a href="https://www.cde.ca.gov/ci/hs/cf/documents/hssfwchapter6.pdf#page=2" target="_blank" rel="noopener">California Grade 3: Continuity and Change ↗</a>
         </div>
       </section>
+      <section class="daily-teaching-plan" aria-labelledby="daily-teaching-title">
+        <h2 id="daily-teaching-title">Prepare your next teaching session</h2>
+        <p>A suggested starting sequence: two recaps, a current focus, and four future sessions. It does not record what has been taught or understood. Adjust after checking the learner's explanation.</p>
+        <div class="daily-topic-grid">
+          @for (topic of dailyPlan; track topic.code) {
+            <a [routerLink]="topic.href.split('?')[0]" [queryParams]="{ standard: topic.code }" [class.current-topic]="topic.role === 'current'"><span>{{ topic.role === 'recap' ? 'Recap suggestion' : topic.role === 'current' ? 'Suggested current focus' : 'Prepare next' }}</span><strong>{{ topic.code }}</strong><p>{{ readiness[topic.code].objective }}</p></a>
+          }
+        </div>
+        <p class="daily-agenda"><strong>Suggested 30-minute agenda:</strong> warm-up 5 minutes; evidence 5; model 4; guided practice 4; differentiated practice 5; checks 4; independent explanation and wrap-up 3.</p>
+      </section>
       <section class="topic-grid" aria-label="Social studies topics">
         @for (item of chapters; track item.id) {
           <article class="subject-card topic-card" [style.--accent]="item.color" [style.--accent-end]="item.color" [style.--soft]="item.soft">
@@ -219,6 +232,12 @@
         }
       </section>
       <p class="overview-note">Portal chapters follow California’s five areas. Inside: original supplemental explanations, source images, and examples organized by the state’s substandards.</p>
+      <details class="standards-matrix"><summary>All 19 standards: curriculum-to-lesson matrix</summary>
+        <p>Each linked standard has its original full lesson plus a student sequence, teacher answers, evidence, guided and independent practice, and understanding checks. This is an original supplement; a content mapping does not establish learner mastery.</p>
+        <div class="matrix-scroll"><table><thead><tr><th scope="col">Standard</th><th scope="col">Official requirement, paraphrased</th><th scope="col">Teaching objective and evidence</th></tr></thead><tbody>
+          @for (item of scopeMatrix; track item.code) { <tr><th scope="row"><a [routerLink]="[base, 'chapters', item.chapterId]" [queryParams]="{ standard: item.code }">{{ item.code }} · {{ item.title }}</a></th><td>{{ readiness[item.code].requirement }} <a [href]="item.source" target="_blank" rel="noopener">CDE ↗</a></td><td>{{ readiness[item.code].objective }}<br><span>Open the lesson for its attributed evidence, worked answers and assessment criteria.</span></td></tr> }
+        </tbody></table></div>
+      </details>
     }
   </main>
 </div>

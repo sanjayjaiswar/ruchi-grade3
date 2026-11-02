@@ -16,6 +16,7 @@ export interface SocialStudiesActivity {
   independent: string;
   sample: string;
   source: { label: string; url: string };
+  additionalSources?: { label: string; url: string }[];
 }
 export interface SocialStudiesTimelineEvent {
   year: string;
@@ -33,6 +34,11 @@ const bia = 'https://www.bia.gov/faqs/what-does-tribal-sovereignty-mean-american
 const npsTubman = 'https://www.nps.gov/people/harriet-tubman.htm';
 const constitution = 'https://www.archives.gov/founding-docs/constitution';
 const sanJoseCity = 'https://www.sanjoseca.gov/your-government/departments-offices/office-of-the-city-manager';
+const muwekma = 'https://muwekma.org/historical-overview.html';
+const gratonCouncil = 'https://gratonrancheria.com/government/tribal-council/';
+const welcomingPlan = 'https://www.sanjoseca.gov/your-government/departments-offices/office-of-the-city-manager/racial-equity/immigrant-affairs/about-us';
+const declaration = 'https://www.archives.gov/founding-docs/declaration';
+const founding = 'https://www.sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2521/1396';
 export const SOCIAL_STUDIES_ACTIVITIES: Record<string, SocialStudiesActivity> = {
   '3.1.1': {
     objective: 'Use a map title, legend, and features to describe a regional place.',
@@ -66,15 +72,16 @@ export const SOCIAL_STUDIES_ACTIVITIES: Record<string, SocialStudiesActivity> = 
     objective: 'Describe local Native communities by their own names and recognize traditions and continuing lives today.',
     vocabulary: [{term:'identity',meaning:'how a person or community describes who they are'},{term:'tradition',meaning:'a practice or knowledge shared across generations'}],
     observe: 'Examine the credited Native-history source. Which community does it identify, and who tells the story?',
-    observeAnswer: 'Use the exact community name and the source author; do not treat all Ohlone communities as one identical group.',
+    observeAnswer: 'The Muwekma Ohlone Tribe tells its own history. Its account identifies a Bay Area homeland including much of Santa Clara County and living member families connected to earlier generations. This is a named community account, not a description of every Ohlone community.',
     question: 'Which is the most respectful way to learn about a Native community?',
     options: ['Invent a story about its ceremonies.', 'Assume its people existed only in the past.', 'Use its name and community-authored account.'],
     correctIndex: 2,
     explanation: 'Named communities and their own accounts help avoid stereotypes and show continuity.',
     misconception: 'Native cultures are living and diverse, not one vanished group.',
     independent: 'Write two facts from a named, attributed Native-community source. Include one fact about the community today.',
-    sample: 'I would name the community, link to its own account, and distinguish a documented present-day fact from a historical one.',
-    source: {label:'California standard 3.2.1',url:cde+'#page=16'}
+    sample: 'The Muwekma Ohlone Tribe identifies a homeland that includes much of Santa Clara County. Its members today trace family connections to earlier Bay Area generations. These two facts come from the tribe’s own historical overview and show a living community.',
+    source: {label:'California standard 3.2.1',url:cde+'#page=16'},
+    additionalSources: [{label:'Muwekma Ohlone Tribe · Historical overview',url:muwekma}]
   },
   '3.2.2': {
     objective: 'Connect a local environment with documented food, clothing, or toolmaking methods.',
@@ -87,50 +94,53 @@ export const SOCIAL_STUDIES_ACTIVITIES: Record<string, SocialStudiesActivity> = 
     explanation: 'A useful object depends on materials available in a place and people’s expertise.',
     misconception: 'Do not assume every named Native group made objects in the same way.',
     independent: 'Choose one sourced local object. Explain its material, purpose, and evidence.',
-    sample: 'A tule boat uses wetland reeds. I would cite the NPS caption for how it was used.',
+    sample: 'A tule boat uses reeds that grow in wetlands. The NPS account describes Ohlone people using tule boats for travel, fishing, and hunting. The reeds supplied material, and people supplied boatmaking knowledge.',
     source: {label:'National Park Service · Ohlone and Coast Miwok history',url:'https://www.nps.gov/places/000/6-heritage-of-a-bayshore-culture.htm'}
   },
   '3.2.3': {
     objective: 'Distinguish tribal sovereignty and government from city government, with evidence.',
     vocabulary: [{term:'sovereignty',meaning:'a government’s authority to govern itself'},{term:'constitution',meaning:'a written system of basic governing principles'}],
     observe: 'Read the attributed tribal-governance example in the lesson. What decisions does that government make?',
-    observeAnswer: 'Identify the particular government and its documented responsibilities. The arrangement varies by tribe.',
+    observeAnswer: 'The Federated Indians of Graton Rancheria has a Tribal Council. Its published council biographies describe work in education, culture, environmental protection, and economic development. These are examples from this tribe, not a single arrangement shared by all tribes.',
     question: 'Which statement about tribal government is accurate?',
     options: ['Every tribe is a department of its nearest city.', 'Tribal governments exercise their own governmental authority.', 'All tribes use exactly the same constitution.'],
     correctIndex: 1,
     explanation: 'Tribal nations are governments, and their authority is not the same as a city department.',
     misconception: 'Tribal identity, sovereign authority, and federal-recognition status must not be treated as synonyms.',
     independent: 'Describe one documented responsibility of a named tribal government and cite its own source.',
-    sample: 'Name the tribal government, one published governing responsibility, and the source. Avoid guessing its legal status.',
-    source: {label:'Bureau of Indian Affairs · Tribal sovereignty',url:bia}
+    sample: 'The Federated Indians of Graton Rancheria has its own Tribal Council. The tribe’s council biographies describe work on education and environmental protection. That source gives examples of government work connected to community needs.',
+    source: {label:'Bureau of Indian Affairs · Tribal sovereignty',url:bia},
+    additionalSources: [{label:'Federated Indians of Graton Rancheria · Tribal Council',url:gratonCouncil}]
   },
   '3.2.4': {
     objective: 'Describe an encounter from more than one perspective, including effects on Native communities.',
     vocabulary: [{term:'colonization',meaning:'outsiders taking control and creating settlements in a place'},{term:'continuity',meaning:'what carries on through change'}],
     observe: 'Find evidence of newcomers’ arrival and Native people’s lives in the sources already linked. Whose perspective is visible?',
-    observeAnswer: 'Record who made each account and what it can tell us; look for Native perspectives and communities today.',
+    observeAnswer: 'The NPS account describes Spanish missions and harm from disease and forced labor. The Muwekma Ohlone Tribe’s own account describes its history and living member families. A government history and a tribal self-account have different authors and add different evidence.',
     question: 'Which question makes a more complete account of colonization?',
     options: ['What did newcomers build, and how were Native people affected?', 'What did settlers wear?', 'How can we skip Native people from the story?'],
     correctIndex: 0,
     explanation: 'A balanced historical account includes newcomers’ actions, Native experiences, and lasting effects.',
     misconception: 'Settlement did not begin human history in California, and Native people are still here.',
     independent: 'Make two evidence notes: a documented newcomer action and a documented Native experience or response.',
-    sample: 'I would date both events, identify the sources and explain the effect without assuming every community had the same experience.',
-    source: {label:'California standard 3.2.4',url:cde+'#page=16'}
+    sample: 'Newcomer action: Spanish settlers established missions in the Bay Area. Native experience: the NPS history describes introduced disease and forced labor harming Native communities. Continuity: the Muwekma Ohlone Tribe describes living descendants today. These accounts do not mean every community had an identical experience.',
+    source: {label:'California standard 3.2.4',url:cde+'#page=16'},
+    additionalSources: [{label:'National Park Service · Ohlone and Coast Miwok history',url:npsOhlone},{label:'Muwekma Ohlone Tribe · Historical overview',url:muwekma}]
   },
   '3.3.1': {
-    objective: 'Research a regional explorer, later newcomers, and documented cultural or religious contributions.',
+    objective: 'Research a regional explorer, later and continuing migration, and documented cultural and religious contributions.',
     vocabulary: [{term:'expedition',meaning:'a planned journey for a purpose'},{term:'migration',meaning:'movement of people from one place to another'},{term:'contribution',meaning:'something people bring or do that shapes a community'}],
-    observe: 'Compare the Anza Trail account with the local history of the 1888 Ng Shing Gung. Who moved or acted, and what evidence of community life remains?',
-    observeAnswer: 'NPS documents Anza’s 1776 exploratory passage through Santa Clara County. The local museum documents Ng Shing Gung as an 1888 Chinese community cultural and religious center. These are different stories, not one group.',
+    observe: 'Compare the Anza Trail account, the history of the 1888 Ng Shing Gung, and San José’s 2025-2030 Welcoming Plan. Which evidence concerns an explorer, community contributions, or welcoming people today?',
+    observeAnswer: 'NPS documents Anza’s 1776 exploratory passage through Santa Clara County. The local museum documents Ng Shing Gung as an 1888 Chinese community cultural and religious center. San José’s 2025-2030 Welcoming Plan describes current efforts to welcome immigrants. The plan is evidence of a present civic response, not proof of an individual’s reason for moving.',
     question: 'Which pair is supported by the two history sources?',
     options: ['Anza explored through Santa Clara County; Ng Shing Gung served as a community center.', 'Anza built Ng Shing Gung in 1776.', 'All newcomers shared one reason to move and one religion.'],
     correctIndex: 0,
     explanation: 'The sources identify different people, periods, and contributions. Research needs those distinctions.',
     misconception: 'The Spanish pueblo’s founding is not the beginning of Native history; cultural or religious traditions cannot be guessed from identity.',
-    independent: 'Make a two-row arrival-and-contribution card with names, dates, one supported action, and one question still unanswered.',
-    sample: '1776: Anza’s exploratory group traveled through Santa Clara County (NPS). 1888: Ng Shing Gung served Chinese residents as a religious and cultural center (History San José). I still need a family account to know an individual motive.',
-    source: {label:'NPS · Anza Trail in Santa Clara County',url:npsAnza}
+    independent: 'Make a three-row evidence card: an explorer, a community’s cultural and religious contributions, and a present response to continuing migration. Name the source and one question still unanswered.',
+    sample: '1776: Anza’s exploratory group traveled through Santa Clara County (NPS). 1888: Ng Shing Gung served Chinese residents as a religious and cultural center (History San José). 2025-2030: San José’s Welcoming Plan describes efforts to welcome immigrants today (City of San José). These sources do not tell every individual’s reason for moving.',
+    source: {label:'NPS · Anza Trail in Santa Clara County',url:npsAnza},
+    additionalSources: [{label:'History San José · Ng Shing Gung museum',url:historyNgShing},{label:'City of San José · 2025-2030 Welcoming Plan',url:welcomingPlan}]
   },
   '3.3.2': {
     objective: 'Explain how a local historical business used property and entrepreneurship and influenced later work.',
@@ -158,7 +168,8 @@ export const SOCIAL_STUDIES_ACTIVITIES: Record<string, SocialStudiesActivity> = 
     misconception: 'A later museum interpretation is not the same source type as an image made in 1869; a bird’s-eye drawing is not to scale.',
     independent: 'Put the 1777 pueblo, 1869 map and 1962 park donation in order. Make one then-and-now claim and cite two sources.',
     sample: '1777 → 1869 → 1962. San José grew from its Spanish pueblo period into a mapped city, and later some former farm land was protected as Emma Prusch Farm Park. A historical map and city park history support separate parts of that statement.',
-    source: {label:'Library of Congress · San José, 1869',url:map1869}
+    source: {label:'Library of Congress · San José, 1869',url:map1869},
+    additionalSources: [{label:'NPS · San José pueblo founding',url:npsAnza},{label:'City of San José · Emma Prusch Farm Park',url:prusch}]
   },
   '3.4.1': {
     objective: 'Explain why rules, laws, and the Constitution exist and how people help improve rules.',
@@ -199,8 +210,9 @@ export const SOCIAL_STUDIES_ACTIVITIES: Record<string, SocialStudiesActivity> = 
     explanation: 'Their dates, purposes, and legal roles differ, even though both matter in U.S. history.',
     misconception: 'Recognizing an image is not enough; connect it to the source’s date and meaning.',
     independent: 'Choose one real landmark or symbol, and make a history-and-meaning card with its source.',
-    sample: 'I would name the object, verify when and why it was made, then explain what idea it represents.',
-    source: {label:'U.S. National Archives · Constitution',url:constitution}
+    sample: 'San José’s pueblo founding memorial was made in 1997 to commemorate the Spanish pueblo founded in 1777. The object and the event have different dates. The City’s memorial account supplies both dates; the memorial does not mark the beginning of Native history.',
+    source: {label:'U.S. National Archives · Constitution',url:constitution},
+    additionalSources: [{label:'U.S. National Archives · Declaration of Independence',url:declaration},{label:'City of San José · Pueblo founding memorial',url:founding}]
   },
   '3.4.4': {
     objective: 'Distinguish making, carrying out, and interpreting laws, including local-government examples.',
@@ -227,8 +239,9 @@ export const SOCIAL_STUDIES_ACTIVITIES: Record<string, SocialStudiesActivity> = 
     explanation: 'Tribal governments are distinct from state and municipal departments.',
     misconception: 'A sovereign tribal nation cannot be reduced to a city or county agency.',
     independent: 'Draw a labeled comparison of California, the United States, and a named tribal government; do not invent authority claims.',
-    sample: 'I would place each government in a separate labeled box and cite the appropriate government source for its role.',
-    source: {label:'Bureau of Indian Affairs · Tribal sovereignty',url:bia}
+    sample: 'United States: the national government established by the Constitution. California: a state in the federal union. Federated Indians of Graton Rancheria: a tribal government with its own Tribal Council. The Constitution, BIA explanation, and tribe’s council page support these labels. The three boxes are not a chain of command.',
+    source: {label:'Bureau of Indian Affairs · Tribal sovereignty',url:bia},
+    additionalSources: [{label:'National Archives · Constitution',url:constitution},{label:'Federated Indians of Graton Rancheria · Tribal Council',url:gratonCouncil}]
   },
   '3.4.6': {
     objective: 'Use biography evidence to connect an individual’s courageous action, risk, and contribution to freedom.',
@@ -261,15 +274,15 @@ export const SOCIAL_STUDIES_ACTIVITIES: Record<string, SocialStudiesActivity> = 
   '3.5.2': {
     objective: 'Use product labels to distinguish local, other U.S., and overseas origins.',
     vocabulary: [{term:'origin',meaning:'where something came from'},{term:'evidence',meaning:'information supporting a claim'}],
-    observe: 'Find the country-of-origin statement on a real product package, or use the sourced example in the lesson.',
-    observeAnswer: 'A country-of-origin label is useful evidence; a store or brand name alone cannot establish where something was made.',
+    observe: 'Use these original practice labels inside the portal: “Apples grown in San José”; “Chair made in Oregon”; “Toy made in Japan”; “Notebook sold in San José.” Which label tells only where an item was sold? These are fictional teaching labels, not claims about real products.',
+    observeAnswer: 'The notebook label tells where it was sold, not where it was made. The other fictional labels state production places: local San José, another U.S. state, and another country. A store or brand name alone cannot establish origin.',
     question: 'A product is sold in San José. What is the best evidence of where it was produced?',
     options: ['The seller’s favorite color.', 'A verified country-of-origin label.', 'The location of the store.'],
     correctIndex: 1,
     explanation: 'Where a product is sold is not necessarily where it was made.',
     misconception: 'A company’s name or headquarters does not prove a specific item’s manufacturing origin.',
-    independent: 'Make an origin chart with one verified local, U.S., or overseas item, and an “unknown” option.',
-    sample: 'Product: [name]. Label says: [place]. Evidence: [packaging detail]. If no label exists, I write unknown.',
+    independent: 'Classify all four fictional labels above as local, elsewhere in the United States, abroad, or origin unknown. Explain why the notebook belongs in its group. A real package is optional, not required.',
+    sample: 'Apples grown in San José: local. Chair made in Oregon: elsewhere in the United States. Toy made in Japan: abroad. Notebook sold in San José: origin unknown, because a sale location is not a production location. These classifications use the supplied fictional labels.',
     source: {label:'California standard 3.5.2',url:cde+'#page=18'}
   },
   '3.5.3': {
@@ -306,7 +319,8 @@ export const SOCIAL_STUDIES_HISTORY_TIMELINES: Record<string, SocialStudiesTimel
   '3.3.1': [
     {year:'1776',description:'Anza’s exploratory group passes through Santa Clara County; Indigenous communities already live along the route.',source:{label:'NPS · Anza Trail',url:npsAnza}},
     {year:'1777',description:'Moraga and settlers establish the Spanish pueblo of San José near the Guadalupe River.',source:{label:'NPS · Santa Clara sites',url:npsAnza}},
-    {year:'1888',description:'Ng Shing Gung is built as a religious and cultural center in San José’s Chinese community.',source:{label:'History San José · Chinese American museum',url:historyNgShing}}
+    {year:'1888',description:'Ng Shing Gung is built as a religious and cultural center in San José’s Chinese community.',source:{label:'History San José · Chinese American museum',url:historyNgShing}},
+    {year:'2025-2030',description:'San José’s Welcoming Plan describes current efforts to welcome immigrants. Its planning period is not an individual arrival date.',source:{label:'City of San José · Welcoming Plan',url:welcomingPlan}}
   ],
   '3.3.2': [
     {year:'1871',description:'The Dawson family processes an early successful commercial pack of fruit.',source:{label:'History San José · Cannery Life',url:historyCanning}},

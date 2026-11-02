@@ -181,3 +181,13 @@ button:focus-visible, summary:focus-visible { outline: 3px solid #2563eb; outlin
 .social-teacher-guide li { margin: 0 0 9px; line-height: 1.5; }
 .social-teacher-guide p { margin: 9px 0; }
 @media (max-width: 760px) { .social-learning-lab { padding: 14px; } .social-history-timeline li { grid-template-columns: 60px 1fr; gap: 8px; } }
+.additional-activity-source { display:block; margin-top:6px; }
+.activity-answer-sources { display:flex; flex-wrap:wrap; gap:8px 14px; font-size:12px; margin:10px 0; }
+.daily-teaching-plan { margin:24px 0 32px; padding:22px; border:1px solid #cbd7e5; border-radius:12px; background:#fafbfd; }
+.daily-teaching-plan h2 { margin:0 0 10px; font-size:23px; }.daily-teaching-plan>p { line-height:1.6; max-width:100ch; }
+.daily-topic-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin:18px 0; }
+.daily-topic-grid>a { display:block; border:1px solid #ccd5e2; border-radius:9px; padding:14px; color:#26374e; background:white; text-decoration:none; }
+.daily-topic-grid>a.current-topic { border-color:#7354a0; background:#f4effa; }.daily-topic-grid span { display:block; font-size:11px; color:#586b84; margin-bottom:5px; }.daily-topic-grid strong { font-size:19px; }.daily-topic-grid p { font-size:14px; line-height:1.5; margin:6px 0 0; }.daily-agenda { font-size:14px; }
+.standards-matrix { margin:28px 0; padding:20px; border:1px solid #cbd7e5; border-radius:11px; }.standards-matrix summary { cursor:pointer; font-weight:750; }.standards-matrix>p { line-height:1.6; }.matrix-scroll { overflow-x:auto; }.standards-matrix table { border-collapse:collapse; width:100%; font-size:14px; }.standards-matrix th,.standards-matrix td { padding:12px; text-align:left; border-bottom:1px solid #dbe3ed; vertical-align:top; line-height:1.6; }.standards-matrix thead { background:#f1f5fa; }.standards-matrix td span { font-size:12px; color:#53657c; }
+@media(max-width:760px) { .daily-topic-grid { grid-template-columns:1fr; }.daily-teaching-plan,.standards-matrix { padding:15px; } }
+.standards-matrix th > a { display:block; }

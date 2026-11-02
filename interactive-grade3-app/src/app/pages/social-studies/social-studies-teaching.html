@@ -1,0 +1,177 @@
+@if (plan(); as teaching) {
+<section class="teaching-workspace" aria-label="Complete teaching workspace" [attr.data-standard]="standard()">
+  <header class="workspace-heading">
+    <div><span class="workspace-kicker">Original California-aligned supplemental teaching</span><h3>Learn it, try it, explain it</h3></div>
+    <span class="time-label">Suggested 30 minutes</span>
+  </header>
+  <p class="learning-objective"><strong>Learning objective:</strong> {{ teaching.objective }}</p>
+  <p class="source-boundary">An original teaching plan, not a Savvas Teacher Edition or district pacing guide. The full lesson and source images remain below.</p>
+  <div class="workspace-tabs" role="group" aria-label="Choose a teaching workspace">
+    <button type="button" [attr.aria-pressed]="visit().workspace === 'student'" (click)="setWorkspace('student')">Student workspace</button>
+    <button type="button" [attr.aria-pressed]="visit().workspace === 'teacher'" (click)="setWorkspace('teacher')">Teacher workspace</button>
+  </div>
+  @if (visit().workspace === 'student') {
+    <nav class="step-nav" aria-label="Teaching steps">
+      @for (step of steps; track step.title; let i = $index) {
+        <button type="button" [attr.aria-current]="visit().step === i ? 'step' : null" [attr.aria-pressed]="visit().step === i" (click)="setStep(i)"><span>{{ i + 1 }}</span>{{ step.title }}<small>{{ step.minutes }} min</small></button>
+      }
+    </nav>
+    <section class="step-content" [attr.aria-label]="steps[visit().step].title">
+      @switch (visit().step) {
+        @case (0) {
+          <h4>Start with what you know</h4>
+          <p><strong>Before this lesson:</strong> {{ teaching.prerequisite }}</p>
+          <label [attr.for]="'warmup-' + standard()">{{ teaching.warmup.prompt }}</label>
+          <textarea [id]="'warmup-' + standard()" rows="3" [value]="visit().responses['warmup'] || ''" (input)="respond('warmup', $event)" placeholder="Say your idea aloud or type it here."></textarea>
+          <button class="reveal-button" type="button" [attr.aria-expanded]="isRevealed('warmup')" (click)="toggle('warmup')">{{ isRevealed('warmup') ? 'Hide' : 'Show' }} warm-up answer</button>
+          @if (isRevealed('warmup')) { <p class="model-answer">{{ teaching.warmup.answer }}</p> }
+        }
+        @case (1) {
+          <h4>Explore evidence and ideas</h4>
+          <div class="evidence-grid">
+            @for (card of teaching.evidence; track card.title) {
+              <article class="evidence-card"><h5>{{ card.title }}</h5><p>{{ card.text }}</p>
+                @if (card.source; as source) { <a [href]="source.url" target="_blank" rel="noopener">{{ source.label }} ↗</a><small class="source-kind">{{ source.kind }}</small> }
+                @else { <small class="source-kind">Original supplemental explanation or fictional scenario</small> }
+              </article>
+            }
+          </div>
+          <section class="interactive-evidence" aria-label="Interactive visual investigation">
+            <h5>{{ teaching.visual.title }}</h5><p>{{ teaching.visual.caption }}</p>
+            @if (teaching.visual.kind === 'map') {
+              @if (standard() === '3.1.1') {
+              <svg class="local-geography-diagram" viewBox="0 0 600 270" role="img" aria-label="Relationship diagram: Santa Cruz Mountains west, Santa Clara Valley between, Diablo Range east, and Guadalupe River flowing north through San Jose to San Francisco Bay">
+                <rect x="0" y="0" width="600" height="270" rx="10" fill="#f6faf1"/>
+                <path d="M212 0 L388 0 Q405 34 355 57 Q297 79 245 53 Q201 38 212 0Z" [attr.fill]="visit().visualChoice === 'bay' ? '#2588a6' : '#b5deeb'"/>
+                <path d="M15 250 L72 70 L112 156 L150 98 L198 250Z" [attr.fill]="visit().visualChoice === 'west' ? '#719650' : '#cfdfb5'" stroke="#62834e" stroke-width="2"/>
+                <path d="M405 250 L448 108 L485 150 L523 73 L586 250Z" [attr.fill]="visit().visualChoice === 'east' ? '#719650' : '#cfdfb5'" stroke="#62834e" stroke-width="2"/>
+                <ellipse cx="299" cy="174" rx="80" ry="76" [attr.fill]="visit().visualChoice === 'valley' ? '#e7d18b' : '#f0e4ba'"/>
+                <path d="M169 218 Q248 232 293 190 Q322 154 306 124 Q295 94 301 62" fill="none" [attr.stroke]="visit().visualChoice === 'river' ? '#0a5276' : '#2588a6'" stroke-width="5"/>
+                <path d="M293 75 L301 61 L309 75" fill="none" stroke="#2588a6" stroke-width="3"/>
+                <circle cx="304" cy="159" r="5" fill="#805e39"/>
+                <text x="235" y="25">San Francisco Bay</text><text x="215" y="91">Alviso Slough → bay</text>
+                <text x="25" y="48">West</text><text x="24" y="266">Santa Cruz Mountains</text><text x="438" y="48">East</text><text x="439" y="266">Diablo Range</text>
+                <text x="240" y="211">Santa Clara Valley</text><text x="318" y="162">San Jose</text><text x="209" y="141">River ↑</text>
+                <path d="M563 54 L563 18 M557 26 L563 18 L569 26" stroke="#45576d" stroke-width="2" fill="none"/><text x="550" y="69">N</text>
+              </svg>
+              } @else {
+              <svg class="landscape-diagram" viewBox="0 0 600 120" role="img" aria-label="Schematic showing high land, lower land and water; use the labeled evidence buttons for the places in this lesson">
+                <path d="M0 113 L0 92 L74 19 L133 93 L202 75 L276 88 L333 44 L396 96 L472 83 L600 100 L600 120 L0 120Z" fill="#dbe9cf" stroke="#56704d" stroke-width="2"/>
+                <path d="M227 75 Q262 83 245 93 T279 113" fill="none" stroke="#2588a6" stroke-width="6"/>
+                <path d="M0 111 Q100 104 200 114 T400 109 T600 114 L600 120 L0 120Z" fill="#addbe8"/>
+                <text x="48" y="112">high land</text><text x="181" y="62">lower land</text><text x="433" y="113">water</text>
+              </svg>
+              }
+              <p class="diagram-note">Concept diagram only. It does not show exact locations, boundaries or distances. Read the attributed geographic evidence below.</p>
+            }
+            <div class="visual-nodes" [class.is-process]="teaching.visual.kind === 'process'" [class.is-timeline]="teaching.visual.kind === 'timeline'">
+              @for (node of teaching.visual.nodes; track node.id) {
+                <button type="button" [attr.aria-pressed]="visit().visualChoice === node.id" [disabled]="!!teaching.visual.correctOrder && visit().timeline.includes(node.id)" (click)="inspectNode(node.id)">{{ node.label }}</button>
+              }
+            </div>
+            @if (selectedVisual(); as node) {
+              <div class="visual-detail" role="status"><strong>{{ node.label }}</strong><p>{{ node.detail }}</p>
+                @if (node.source; as source) { <a [href]="source.url" target="_blank" rel="noopener">{{ source.label }} ↗</a> }
+              </div>
+            }
+            @if (teaching.visual.correctOrder) {
+              <p class="diagram-note">Choose one card at a time, in the sequence supported by the evidence.</p>
+              <ol class="chosen-timeline" aria-label="Your sequence">@for (id of visit().timeline; track id) { <li>{{ nodeLabel(id) }}</li> }</ol>
+              <div class="action-row"><button type="button" (click)="resetTimeline()">Reset sequence</button><button type="button" [disabled]="visit().timeline.length !== teaching.visual.nodes.length" (click)="checkTimeline()">Check sequence</button></div>
+              @if (visit().timelineChecked) { <p class="feedback" [class.correct]="timelineCorrect()" role="status">{{ timelineCorrect() ? 'The events or stages are in the supported order. Explain the evidence for your sequence.' : 'Not yet. Review the dates or sequence evidence, then reset and try again.' }}</p> }
+            }
+          </section>
+        }
+        @case (2) {
+          <h4>Watch a worked example</h4><p>{{ teaching.model.prompt }}</p>
+          <p class="model-answer"><strong>Model answer:</strong> {{ teaching.model.answer }}</p>
+          <ol class="reasoning-list">@for (reason of teaching.model.reasoning; track reason) { <li>{{ reason }}</li> }</ol>
+          <p class="learning-note">Explain why each part is supported. A model is help for learning, not your independent answer.</p>
+        }
+        @case (3) {
+          <h4>Try together</h4><label [attr.for]="'guided-' + standard()">{{ teaching.guided.prompt }}</label>
+          <textarea [id]="'guided-' + standard()" rows="3" [value]="visit().responses['guided'] || ''" (input)="respond('guided', $event)" placeholder="Explain your thinking."></textarea>
+          <button type="button" class="reveal-button" [attr.aria-expanded]="isRevealed('hint')" (click)="toggle('hint')">{{ isRevealed('hint') ? 'Hide' : 'Show' }} a hint</button>
+          @if (isRevealed('hint')) { <p class="hint">{{ teaching.guided.hint }}</p> }
+          <button type="button" class="reveal-button" [attr.aria-expanded]="isRevealed('guided')" (click)="toggle('guided')">{{ isRevealed('guided') ? 'Hide' : 'Show' }} guided answer</button>
+          @if (isRevealed('guided')) { <p class="model-answer">{{ teaching.guided.answer }}</p> }
+        }
+        @case (4) {
+          <h4>Choose your practice</h4><p>Start with support, try the core task, or extend your reasoning with the challenge. All information you need is in this lesson.</p>
+          @for (level of levels; track level) {
+            <section class="practice-level"><h5>{{ level === 'support' ? 'Support - build confidence' : level === 'core' ? 'Core - apply the idea' : 'Challenge - explain further' }}</h5>
+              <label [attr.for]="level + '-' + standard()">{{ teaching.practice[level].prompt }}</label>
+              <textarea [id]="level + '-' + standard()" rows="3" [value]="visit().responses[level] || ''" (input)="respond(level, $event)" placeholder="Say or type your answer."></textarea>
+              <button type="button" class="reveal-button" [attr.aria-expanded]="isRevealed(level)" (click)="toggle(level)">{{ isRevealed(level) ? 'Hide' : 'Show' }} {{ level }} answer</button>
+              @if (isRevealed(level)) { <p class="model-answer">{{ teaching.practice[level].answer }}</p> }
+            </section>
+          }
+        }
+        @case (5) {
+          <h4>Check your understanding</h4><p>Try each question, explain your choice, then check. You can revise and try again.</p>
+          @for (checkItem of teaching.checks; track checkItem.id; let q = $index) {
+            <fieldset class="understanding-check"><legend>{{ q + 1 }}. {{ checkItem.prompt }}</legend>
+              @for (option of checkItem.options; track $index; let i = $index) {
+                <button type="button" class="choice-button" [attr.aria-pressed]="visit().answers[checkItem.id] === i" (click)="choose(checkItem.id, i)">{{ option }}</button>
+              }
+              <button type="button" class="check-button" [disabled]="visit().answers[checkItem.id] === undefined" (click)="check(checkItem.id)">Check question {{ q + 1 }}</button>
+              @if (visit().checked.includes(checkItem.id)) {
+                <p class="feedback" [class.correct]="visit().answers[checkItem.id] === checkItem.correctIndex" role="status"><strong>{{ visit().answers[checkItem.id] === checkItem.correctIndex ? 'Supported:' : 'Try again:' }}</strong> {{ visit().answers[checkItem.id] === checkItem.correctIndex ? checkItem.explanation : checkItem.retry }}</p>
+              }
+            </fieldset>
+          }
+          @if (visit().checked.length === teaching.checks.length) { <p class="learning-note">{{ correctCount() }} of {{ teaching.checks.length }} answers currently supported. Continue to an independent explanation; a score alone does not establish mastery.</p> }
+        }
+        @case (6) {
+          <h4>Explain independently, then review</h4>
+          <label [attr.for]="'independent-' + standard()">{{ teaching.independent.prompt }}</label>
+          <textarea [id]="'independent-' + standard()" rows="5" [value]="visit().responses['independent'] || ''" (input)="respond('independent', $event)" placeholder="My claim... My evidence... This shows..."></textarea>
+          <h5>Evidence to look for</h5><ul>@for (criterion of teaching.independent.criteria; track criterion) { <li>{{ criterion }}</li> }</ul>
+          <button class="reveal-button" type="button" [attr.aria-expanded]="isRevealed('independent')" (click)="toggle('independent')">{{ isRevealed('independent') ? 'Hide' : 'Show' }} an example after your attempt</button>
+          @if (isRevealed('independent')) { <p class="model-answer">{{ teaching.independent.answer }}</p> }
+          <button class="review-button" type="button" [attr.aria-pressed]="visit().reviewed" (click)="review()">{{ visit().reviewed ? 'Review noted for this visit' : 'Note that an adult reviewed this explanation' }}</button>
+          <p class="learning-note">Adult review is a conversation, not automatic mastery or permission to advance. If evidence is missing, revisit the relevant step and explain again.</p>
+          <p><strong>Wrap-up:</strong> Say one idea you can support with evidence and one question you still have.</p>
+          <p><strong>Prepare next:</strong> {{ teaching.nextPreparation }}</p>
+        }
+      }
+    </section>
+    <nav class="step-footer" aria-label="Move through the teaching sequence"><button type="button" [disabled]="visit().step === 0" (click)="setStep(visit().step - 1)">Previous step</button><span>{{ visit().step + 1 }} / {{ steps.length }}</span><button type="button" [disabled]="visit().step === steps.length - 1" (click)="setStep(visit().step + 1)">Next step</button></nav>
+  } @else {
+    <section class="teacher-plan" aria-label="Complete teacher preparation">
+      <h4>Teaching preparation and answer key</h4>
+      <p><strong>Standard scope:</strong> {{ teaching.requirement }}</p>
+      <p><strong>Prerequisite:</strong> {{ teaching.prerequisite }}</p>
+      <ol class="teacher-sequence">
+        <li><strong>5 minutes - warm-up:</strong> {{ teaching.warmup.prompt }}<p><strong>Answer:</strong> {{ teaching.warmup.answer }}</p></li>
+        <li><strong>5 minutes - explain and investigate:</strong> Read the evidence cards, name each source type, and use the visual controls. Ask the learner which detail supports the objective. Distinguish fact, inference, and an invented example.</li>
+        <li><strong>4 minutes - model:</strong> {{ teaching.model.prompt }}<p><strong>Answer:</strong> {{ teaching.model.answer }}</p><ul>@for (reason of teaching.model.reasoning; track reason) { <li>{{ reason }}</li> }</ul></li>
+        <li><strong>4 minutes - guide:</strong> {{ teaching.guided.prompt }}<p><strong>Hint:</strong> {{ teaching.guided.hint }}</p><p><strong>Answer:</strong> {{ teaching.guided.answer }}</p></li>
+        <li><strong>5 minutes - differentiate:</strong> Use the support task to scaffold vocabulary, core for application, and challenge for transfer. Accept a spoken explanation or typing.</li>
+        <li><strong>4 minutes - check:</strong> Use all {{ teaching.checks.length }} questions below. Ask for reasons, not just a selected choice. Revisit the cited evidence after an error.</li>
+        <li><strong>3 minutes - independent response and wrap-up:</strong> {{ teaching.independent.prompt }}<p><strong>Possible answer:</strong> {{ teaching.independent.answer }}</p></li>
+      </ol>
+      <h5>Practice prompts and worked answers</h5>
+      @for (level of levels; track level) { <div class="teacher-answer"><strong>{{ level }}</strong><p>{{ teaching.practice[level].prompt }}</p><p><strong>Answer:</strong> {{ teaching.practice[level].answer }}</p></div> }
+      <h5>Understanding-check answer key</h5>
+      @for (checkItem of teaching.checks; track checkItem.id; let q = $index) { <div class="teacher-answer"><strong>{{ q + 1 }}. {{ checkItem.prompt }}</strong><p>{{ checkItem.options[checkItem.correctIndex] }}</p><p>{{ checkItem.explanation }}</p><p><strong>If confused:</strong> {{ checkItem.retry }}</p></div> }
+      <h5>Misconceptions to address</h5><ul>@for (misconception of teaching.misconceptions; track misconception) { <li>{{ misconception }}</li> }</ul>
+      <h5>Review the independent explanation</h5><ul>@for (criterion of teaching.independent.criteria; track criterion) { <li>{{ criterion }}</li> }</ul>
+      <p class="learning-note">Use these criteria with the learner's own explanation. Do not grade historical prose by exact wording. A revealed answer, coached response, or review marker does not demonstrate independent mastery.</p>
+      <p><strong>Next preparation:</strong> {{ teaching.nextPreparation }}</p>
+    </section>
+  }
+  <details class="workspace-sources"><summary>Source evidence and curriculum boundary</summary>
+    <p><strong>State requirement, paraphrased:</strong> {{ teaching.requirement }}</p>
+    <p><a [href]="standardSource()" target="_blank" rel="noopener">California standard {{ standard() }} ↗</a> · <a href="https://www.cde.ca.gov/ci/hs/cf/documents/hssfwchapter6.pdf" target="_blank" rel="noopener">California teaching framework, Chapter 6 ↗</a></p>
+    <ul>@for (source of teaching.sources; track source.url) { <li><a [href]="source.url" target="_blank" rel="noopener">{{ source.label }} ↗</a><span> - {{ source.kind }}</span></li> }</ul>
+    <p>Source pages support the evidence; this plan's questions, answers, pacing, diagrams, and differentiation are original supplemental teaching. Core learning does not require printing, a PDF download, a publisher login, or supplies.</p>
+  </details>
+  @if (visit().step !== 1 || visit().workspace === 'teacher') {
+    <div class="answer-evidence" aria-label="Sources for the worked answers">Sources for this lesson:
+      @for (source of teaching.sources; track source.url) { <a [href]="source.url" target="_blank" rel="noopener">{{ source.label }} ↗</a> }
+    </div>
+  }
+  <p class="visit-note">Answers stay in memory for this lesson view, including topic switches. Reloading or leaving Social Studies clears them. Nothing is submitted or saved as student progress.</p>
+</section>
+}
