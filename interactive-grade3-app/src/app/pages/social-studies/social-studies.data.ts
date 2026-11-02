@@ -76,7 +76,7 @@ export const SOCIAL_STUDIES_CHAPTERS: SocialStudiesChapter[] = [
     color: '#8c6016', soft: '#faf1d6',
     expectations: [
       { code: '3.5.1', title: 'Resources and production', scope: 'Compare local production using natural, human, and capital resources, past and present.' },
-      { code: '3.5.2', title: 'Where goods originate', scope: 'Distinguish local, other U.S., and overseas production.' },
+      { code: '3.5.2', title: 'Where goods originate', scope: 'Distinguish goods produced locally, elsewhere in the United States, and abroad.' },
       { code: '3.5.3', title: 'Choices and trade-offs', scope: 'Weigh costs and benefits when making economic choices.' },
       { code: '3.5.4', title: 'Education and human capital', scope: 'Connect schoolwork with developing personal capabilities.' }
     ]

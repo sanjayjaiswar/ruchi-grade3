@@ -156,7 +156,7 @@ const clauseGuards = {
   '3.4.5': [/California/i, /state/i, /tribal|tribe/i, /federal|national/i, /particip|represent|contribut|Senat|Congress/i],
   '3.4.6': [/Tubman/i, /King|Douglass|Lincoln|Hutchinson|Franklin|Jefferson|Madison/i, /risk|danger|arrest|capture/i, /freedom|rights|liberty/i],
   '3.5.1': [/natural/i, /human|labor|worker/i, /capital|equipment/i, /goods?|bread|fruit/i, /service/i, /past|histor|earlier/i, /present|today|now/i],
-  '3.5.2': [/local/i, /United States|U\.S\.|Oregon/i, /abroad|overseas|Japan|another country/i, /made|produced|grown|origin/i],
+  '3.5.2': [/local/i, /United States|U\.S\.|Oregon/i, /abroad|Japan|another country/i, /made|produced|grown|origin/i],
   '3.5.3': [/cost/i, /benefit/i, /choice|choose/i, /next-best|next best|alternative/i],
   '3.5.4': [/human capital|knowledge|skill/i, /school|educat|learn/i, /work|job|capabil|practice/i]
 };
@@ -214,6 +214,19 @@ function validateBundle(bundle) {
     if (JSON.stringify(chapter.expectations?.map(item => item.code)) !== JSON.stringify(codes)) fail(id, 'chapter contains wrong, missing, or reordered standards');
     source({label:'CDE standards',url:chapter.source}, `${id}.source`);
     source({label:'CDE framework',url:chapter.frameworkSource}, `${id}.frameworkSource`);
+  }
+
+  // Abroad includes countries across land borders. Each published scope label
+  // must preserve that breadth, not silently limit foreign origins to overseas.
+  const originScope = chapters.flatMap(chapter => chapter.expectations ?? []).find(item => item.code === '3.5.2')?.scope;
+  for (const [label, value] of [
+    ['chapter.scope', originScope],
+    ['activity.objective', bundle.activities?.['3.5.2']?.objective],
+    ['plan.requirement', bundle.plans?.['3.5.2']?.requirement]
+  ]) {
+    if (typeof value !== 'string' || !/\babroad\b|\bforeign\b|another countr|other countries|countries outside (?:the )?(?:United States|U\.S\.)/i.test(value)) {
+      fail(`3.5.2.${label}`, 'origin scope must include countries across land borders as well as across oceans');
+    }
   }
 
   for (const code of expectedCodes) {
@@ -376,6 +389,9 @@ function selfTest(bundle) {
     ['changed readiness answer', copy => { copy.plans['3.1.1'].checks[0].correctIndex = 0; }],
     ['wrong chronological answer', copy => { copy.plans['3.3.3'].visual.correctOrder.reverse(); }],
     ['wrong process answer', copy => { copy.plans['3.1.2'].visual.correctOrder.reverse(); }],
+    ['narrowed chapter origin scope', copy => { copy.chapters.find(item => item.id === 'economics').expectations.find(item => item.code === '3.5.2').scope = 'Distinguish local, other U.S., and overseas production.'; }],
+    ['narrowed activity origin scope', copy => { copy.activities['3.5.2'].objective = 'Use product labels to distinguish local, other U.S., and overseas origins.'; }],
+    ['narrowed teaching origin scope', copy => { copy.plans['3.5.2'].requirement = 'Distinguish goods produced locally, elsewhere in the United States, and overseas.'; }],
     ['removed documented later influence', copy => {
       const plan = copy.plans['3.3.2'];
       plan.evidence = plan.evidence.filter(item => !/Monte Vista/i.test(item.text));

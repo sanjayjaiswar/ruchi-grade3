@@ -272,7 +272,7 @@ export const SOCIAL_STUDIES_ACTIVITIES: Record<string, SocialStudiesActivity> = 
     source: {label:'California standard 3.5.1',url:cde+'#page=18'}
   },
   '3.5.2': {
-    objective: 'Use product labels to distinguish local, other U.S., and overseas origins.',
+    objective: 'Use product labels to distinguish goods produced locally, elsewhere in the United States, and abroad.',
     vocabulary: [{term:'origin',meaning:'where something came from'},{term:'evidence',meaning:'information supporting a claim'}],
     observe: 'Use these original practice labels inside the portal: “Apples grown in San José”; “Chair made in Oregon”; “Toy made in Japan”; “Notebook sold in San José.” Which label tells only where an item was sold? These are fictional teaching labels, not claims about real products.',
     observeAnswer: 'The notebook label tells where it was sold, not where it was made. The other fictional labels state production places: local San José, another U.S. state, and another country. A store or brand name alone cannot establish origin.',
