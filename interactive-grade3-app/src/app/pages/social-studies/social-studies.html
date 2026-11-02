@@ -100,6 +100,79 @@
                   <a class="citation" [href]="source.url" target="_blank" rel="noopener">{{ source.label }} ↗</a>
                 }
               </section>
+              @if (activity(); as task) {
+                <section class="social-learning-lab" aria-label="Learn, try, and explain">
+                  <header class="lab-header">
+                    <span class="lab-kicker">Original supplemental activity · inside this portal</span>
+                    <h3>Look closely. Try it. Explain it.</h3>
+                    <p><strong>Learning goal:</strong> {{ task.objective }}</p>
+                  </header>
+                  <div class="lab-vocabulary" aria-label="Words to know">
+                    <h4>Words to know</h4>
+                    @for (word of task.vocabulary; track word.term) {
+                      <p><strong>{{ word.term }}</strong> — {{ word.meaning }}</p>
+                    }
+                  </div>
+                  @if (historyTimeline().length) {
+                    <section class="social-history-timeline" aria-label="Local history timeline">
+                      <h4>Build the timeline from real evidence</h4>
+                      <ol>
+                        @for (event of historyTimeline(); track event.year) {
+                          <li><span class="timeline-year">{{ event.year }}</span><div><p>{{ event.description }}</p><a [href]="event.source.url" target="_blank" rel="noopener">{{ event.source.label }} ↗</a></div></li>
+                        }
+                      </ol>
+                    </section>
+                  }
+                  <section class="lab-observe">
+                    <h4>1. Observe the evidence</h4>
+                    <p>{{ task.observe }}</p>
+                    <a [href]="task.source.url" target="_blank" rel="noopener">Supporting source: {{ task.source.label }} ↗</a>
+                    <details><summary>Show the evidence discussion</summary><p>{{ task.observeAnswer }}</p></details>
+                  </section>
+                  <section class="lab-try">
+                    <h4>2. Try it yourself</h4>
+                    <fieldset>
+                      <legend>{{ task.question }}</legend>
+                      @for (option of task.options; track $index; let i = $index) {
+                        <button type="button" class="lab-option" [class.is-selected]="choice() === i" [attr.aria-pressed]="choice() === i" (click)="chooseOption(i)">
+                          <span class="lab-option-number">{{ i + 1 }}</span>{{ option }}
+                        </button>
+                      }
+                    </fieldset>
+                    <button class="lab-check" type="button" [disabled]="choice() === null" (click)="checkChoice()">Check my answer</button>
+                    @if (isChecked()) {
+                      <div class="lab-feedback" [class.is-correct]="choice() === task.correctIndex" role="status">
+                        <strong>{{ choice() === task.correctIndex ? 'Yes, and here is why:' : 'Not yet. Think again:' }}</strong>
+                        <p>{{ choice() === task.correctIndex ? task.explanation : task.misconception }}</p>
+                        @if (choice() !== task.correctIndex) { <p>Choose a different answer, then check again.</p> }
+                      </div>
+                    }
+                  </section>
+                  <section class="lab-reflect">
+                    <h4>3. Explain with evidence</h4>
+                    <label for="social-reflection">{{ task.independent }}</label>
+                    <textarea id="social-reflection" rows="4" [value]="responseText()" (input)="updateResponse($event)" placeholder="My claim... The evidence... This shows..."></textarea>
+                    <p class="lab-privacy">Practice stays on this page during your visit; it is not submitted or saved.</p>
+                    <button class="lab-example-toggle" type="button" [attr.aria-expanded]="isSampleVisible()" (click)="toggleSample()">{{ isSampleVisible() ? 'Hide' : 'Show' }} a possible answer</button>
+                    @if (isSampleVisible()) { <p class="lab-sample"><strong>One example:</strong> {{ task.sample }}</p> }
+                  </section>
+                  <details class="social-teacher-guide">
+                    <summary>Teacher workspace · teaching plan, answer key, and misconceptions</summary>
+                    <h4>Teaching sequence</h4>
+                    <ol>
+                      <li><strong>Activate prior knowledge:</strong> Ask the lesson’s big question. Invite a short, specific answer.</li>
+                      <li><strong>Model evidence:</strong> Show the existing source image, diagram, or text. Read the attribution; ask {{ task.observe }}</li>
+                      <li><strong>Guide practice:</strong> Discuss the three choices. Have the student explain why one is better supported.</li>
+                      <li><strong>Assess independently:</strong> Use the written response to check claim, evidence, and explanation before moving on.</li>
+                    </ol>
+                    <p><strong>Objective:</strong> {{ task.objective }}</p>
+                    <p><strong>Quick-check answer:</strong> {{ task.options[task.correctIndex] }}. {{ task.explanation }}</p>
+                    <p><strong>Watch for:</strong> {{ task.misconception }}</p>
+                    <p><strong>Response guide:</strong> {{ task.sample }}</p>
+                    <p class="lab-teacher-note">This is a formative teaching aid, not a verified publisher answer key or proof of mastery. Check historical claims using the cited source.</p>
+                  </details>
+                </section>
+              }
               <p class="takeaway"><strong>The idea to keep</strong>{{ teaching.takeaway }}</p>
               @if (teaching.reading; as reading) {
                 <aside class="further-reading"><strong>{{ reading.title }}</strong><p>{{ reading.note }}</p><a class="citation" [href]="reading.source.url" target="_blank" rel="noopener">{{ reading.source.label }} ↗</a></aside>
