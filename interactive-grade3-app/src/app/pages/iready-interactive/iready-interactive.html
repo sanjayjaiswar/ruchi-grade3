@@ -36,6 +36,33 @@
       </header>
 
       <a class="volume-foundations-entry" routerLink="/ruchika/grade3/iready-interactive/foundations"><div><strong>Math foundations</strong><span>Place value, number lines, equal groups, arrays, division, area, connected steps, and graph scales.</span></div><b>Explore shared concepts →</b></a>
+      <section class="volume-units" aria-labelledby="daily-math-prep-title">
+        <header><div><span>Parent and teacher preparation - original supplemental instruction</span><h2 id="daily-math-prep-title">Six lessons ready to review</h2></div></header>
+        <p>Recap Lessons 6 and 7, continue Lesson 8 Session 4, and preview Lessons 9-11. Lesson 8 Session 5 is not marked complete. Start with the visual teaching in each lesson; use official book links for provenance.</p>
+        <div class="unit-card-grid">
+          <article *ngFor="let prep of dailyMathPrep" class="unit-card">
+            <div class="unit-card-topline"><span>{{ prep.role }} - Lesson {{ prep.lesson }}</span><a [href]="prep.studentSourceUrl" target="_blank" rel="noopener">Official student pp. {{ prep.studentPages }} ↗</a></div>
+            <h3>{{ prep.title }}</h3>
+            <p>{{ prep.goal }}</p>
+            <a class="open-unit" [routerLink]="[prep.lessonUrl]" [queryParams]="{ session: prep.session }">Open interactive Session {{ prep.session }} →</a>
+            <details class="overview-details volume-details">
+              <summary>Show teaching plan, practice and answer key</summary>
+              <p><strong>5-minute warm-up:</strong> {{ prep.warmup }}</p>
+              <p><strong>Visual demonstration:</strong> {{ prep.visual }}</p>
+              <p><strong>Explain:</strong> {{ prep.explain }}</p>
+              <p><strong>Alternate method:</strong> {{ prep.alternate }}</p>
+              <p><strong>Guided question:</strong> {{ prep.guided }}</p>
+              <p><strong>Guided answer:</strong> {{ prep.guidedAnswer }}</p>
+              <p><strong>Independent practice:</strong> {{ prep.practice }}</p>
+              <p><strong>Practice answer:</strong> {{ prep.practiceAnswer }}</p>
+              <p><strong>Misconception check:</strong> {{ prep.misconception }}</p>
+              <p><strong>Quick mastery check:</strong> {{ prep.mastery }}</p>
+              <p><strong>Mastery answer:</strong> {{ prep.masteryAnswer }}</p>
+              <p>Source cross-check: <a [href]="prep.studentSourceUrl" target="_blank" rel="noopener">Student Worktext pp. {{ prep.studentPages }}</a> and <a [href]="prep.teacherSourceUrl" target="_blank" rel="noopener">Teacher Guide reader pp. {{ prep.teacherPages }}</a>. All teaching prompts in this card are original supplemental examples, not official textbook exercises.</p>
+            </details>
+          </article>
+        </div>
+      </section>
       <section class="volume-units" aria-labelledby="volume-units-title">
         <header>
           <div><span>Official table of contents</span><h2 id="volume-units-title">Choose a unit</h2></div>

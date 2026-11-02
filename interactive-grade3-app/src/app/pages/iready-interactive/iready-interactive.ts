@@ -6,6 +6,7 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { animate, stagger } from 'animejs';
 import { combineLatest, Subscription } from 'rxjs';
 import { conceptsForLesson, conceptsForUnit, foundationsForLesson } from './iready-foundations';
+import { DAILY_MATH_TEACHING_PREP } from './iready-daily-teaching-prep';
 import { FoundationPlayerComponent } from '../../shared/foundation-player/foundation-player';
 import { ProblemVisualWorkspaceComponent } from '../../shared/problem-visual-workspace/problem-visual-workspace';
 import { Grade3CmcLesson, Grade3CmcUnit, GRADE3_CMC_UNITS } from '../syllabus-books/syllabus-books.data';
@@ -51,6 +52,8 @@ import {
 export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
   readonly volumeOneUnits = GRADE3_CMC_UNITS.filter((unit) => unit.volume === 1);
   readonly volumeOneLessons = this.volumeOneUnits.flatMap((unit) => unit.lessons);
+  readonly dailyMathPrep = DAILY_MATH_TEACHING_PREP;
+  get selectedDailyMathPrep() { return this.dailyMathPrep.find((prep) => prep.lesson === this.selectedLessonNumber); }
   readonly placeLabels = ['Hundreds', 'Tens', 'Ones'];
   readonly unitIdeaSourceUrl = sourceUrlForUnitIdea;
   readonly supportResourceUrl = supportResourceUrl;
