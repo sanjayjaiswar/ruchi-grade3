@@ -1628,13 +1628,11 @@
               *ngIf="mode === 'blank'; else organizerAnswer"
               rows="5"
               [attr.aria-label]="field.ariaLabel"
-              [class.is-correct]="inlineState(field, 'organizer', fieldIndex, 0, 0, field.answer) === 'correct'"
-              [class.is-incorrect]="inlineState(field, 'organizer', fieldIndex, 0, 0, field.answer) === 'incorrect'"
               (input)="setInlineValue(field, 'organizer', fieldIndex, 0, 0, $any($event.target).value)"></textarea>
             <ng-template #organizerAnswer><b>{{ field.answer }}</b></ng-template>
           </label>
         </div>
-        <figcaption *ngIf="organizer.caption">{{ organizer.caption }}</figcaption>
+        <figcaption *ngIf="organizer.caption">{{ organizer.caption }} <span *ngIf="mode === 'blank'">Responses can use different valid words, numbers, or drawings. Discuss them with a teacher; these open responses are not automatically graded.</span></figcaption>
       </figure>
     </ng-container>
 

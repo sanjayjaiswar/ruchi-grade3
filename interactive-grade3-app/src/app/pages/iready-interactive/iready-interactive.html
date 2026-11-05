@@ -89,8 +89,8 @@
       <details class="overview-details volume-details">
         <summary>About this volume</summary>
         <aside class="coverage-complete" role="status">
-          <strong>Volume 1 complete</strong>
-          <span>All 19 lessons and 77 sessions have passed source, teaching, interaction, edition-page, and browser validation.</span>
+          <strong>Volume 1 lesson library</strong>
+          <span>Explore the lesson and session materials, official page links, and original supplemental visual teaching. Individual activities and source fidelity are checked separately.</span>
         </aside>
       </details>
     </section>
@@ -331,20 +331,53 @@
       </div>
     </nav>
 
-    <details *ngIf="lessonFocus && selectedDailyMathPrep as prep" class="overview-details volume-details daily-prep-inline">
-      <summary>Evening teaching preparation: Lesson {{ prep.lesson }} ({{ prep.role }}) - official task, visual explanation, practice and answers</summary>
+    <details *ngIf="lessonFocus && selectedDailyMathPrep as prep" [open]="prep.lesson === 10 && prep.session === 1" class="overview-details volume-details daily-prep-inline">
+      <summary>Teaching preparation: Lesson {{ prep.lesson }}, Session {{ prep.session }} ({{ prep.role }}) - official task, visual explanation and interactive check</summary>
       <p><strong>Official session task (paraphrased):</strong> {{ prep.sourceAnchor }}</p>
       <p><strong>Goal:</strong> {{ prep.goal }}</p>
       <p><strong>5-minute warm-up:</strong> {{ prep.warmup }}</p>
+      <div *ngIf="prep.lesson === 10 && prep.session === 1" class="division-mini-lab" aria-label="Division model: compare sharing and grouping">
+        <h3>Explore the two meanings of division</h3>
+        <p>Use these original supplemental counter models alongside the official halloumi story.</p>
+        <div class="division-mini-switch" role="group" aria-label="Choose division interpretation">
+          <button type="button" [class.active]="divisionModel === 'sharing'" [attr.aria-pressed]="divisionModel === 'sharing'" (click)="divisionModel = 'sharing'">Share 8 slices among 2 plates</button>
+          <button type="button" [class.active]="divisionModel === 'grouping'" [attr.aria-pressed]="divisionModel === 'grouping'" (click)="divisionModel = 'grouping'">Put 10 slices in groups of 2</button>
+        </div>
+        <div class="division-mini-plates">
+          <div *ngFor="let plate of divisionModel === 'sharing' ? divisionSharingPlates : divisionGroupingPlates" class="division-mini-plate" [attr.aria-label]="'Plate ' + plate">
+            <strong>Plate {{ plate }}</strong>
+            <div class="division-mini-counters"><span *ngFor="let counter of divisionModelCounters.slice(0, divisionModel === 'sharing' ? 4 : 2)" class="division-mini-counter" aria-hidden="true"></span></div>
+          </div>
+        </div>
+        <p class="division-mini-equation" *ngIf="divisionModel === 'sharing'"><strong>8 ÷ 2 = 4</strong> - 2 plates are known; find 4 slices <em>on each plate</em>.</p>
+        <p class="division-mini-equation" *ngIf="divisionModel === 'grouping'"><strong>10 ÷ 2 = 5</strong> - 2 slices <em>per plate</em> are known; find 5 plates.</p>
+        <p><strong>Ask before showing the answer:</strong> What does the 2 mean in each story? Does the answer count slices or plates?</p>
+      </div>
       <p><strong>Visual demonstration:</strong> {{ prep.visual }}</p>
       <p><strong>Explain:</strong> {{ prep.explain }}</p>
       <p><strong>Alternate method:</strong> {{ prep.alternate }}</p>
       <p><strong>Guided question:</strong> {{ prep.guided }} <strong>Answer:</strong> {{ prep.guidedAnswer }}</p>
       <p><strong>Independent practice:</strong> {{ prep.practice }} <strong>Answer:</strong> {{ prep.practiceAnswer }}</p>
       <p><strong>Common mistake:</strong> {{ prep.misconception }}</p>
-      <p><strong>Mastery check:</strong> {{ prep.mastery }} <strong>Answer:</strong> {{ prep.masteryAnswer }}</p>
+      <p *ngIf="prep.teacherMove"><strong>Teacher move:</strong> {{ prep.teacherMove }}</p>
+      <p *ngIf="prep.studentTalk"><strong>Ask the student to explain:</strong> {{ prep.studentTalk }}</p>
+      <div class="prep-mastery-lab">
+        <strong>Independent check:</strong> {{ prep.mastery }}
+        <div *ngIf="prep.masteryNumericAnswer !== undefined" class="prep-mastery-controls">
+          <label>Student answer <input type="text" inputmode="numeric" [(ngModel)]="prepStudentResponse" (ngModelChange)="prepFeedback = ''" aria-label="Independent mastery answer" /></label>
+          <button type="button" (click)="checkPrepResponse(prep.masteryNumericAnswer)">Check answer</button>
+          <span role="status" aria-live="polite">{{ prepFeedback }}</span>
+        </div>
+        <button type="button" class="prep-reveal-button" (click)="prepShowAnswer = !prepShowAnswer" [attr.aria-expanded]="prepShowAnswer">{{ prepShowAnswer ? 'Hide teacher answer' : 'Show teacher answer' }}</button>
+        <p *ngIf="prepShowAnswer"><strong>Teacher answer:</strong> {{ prep.masteryAnswer }}</p>
+      </div>
       <p>Official sources: <a [href]="prep.studentSourceUrl" target="_blank" rel="noopener">Student Worktext pp. {{ prep.studentPages }}</a> and <a [href]="prep.teacherSourceUrl" target="_blank" rel="noopener">Teacher Guide reader pp. {{ prep.teacherPages }}</a>. Apart from the paraphrased official task, the explanations and practice are original supplemental teaching content.</p>
     </details>
+
+    <app-iready-math-teaching-studio
+      *ngIf="lessonFocus && selectedLessonNumber >= 11 && selectedLessonNumber <= 14 && selectedSessionNumber === 1"
+      [lessonNumber]="selectedLessonNumber">
+    </app-iready-math-teaching-studio>
 
     <section *ngIf="lessonFocus" class="learning-workspace focused">
       <section class="lesson-stage" aria-live="polite">

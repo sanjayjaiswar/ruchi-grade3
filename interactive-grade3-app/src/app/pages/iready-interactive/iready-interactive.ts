@@ -7,6 +7,7 @@ import { animate, stagger } from 'animejs';
 import { combineLatest, Subscription } from 'rxjs';
 import { conceptsForLesson, conceptsForUnit, foundationsForLesson } from './iready-foundations';
 import { DAILY_MATH_TEACHING_PREP } from './iready-daily-teaching-prep';
+import { IReadyMathTeachingStudioComponent } from './iready-math-teaching-studio';
 import { FoundationPlayerComponent } from '../../shared/foundation-player/foundation-player';
 import { ProblemVisualWorkspaceComponent } from '../../shared/problem-visual-workspace/problem-visual-workspace';
 import { Grade3CmcLesson, Grade3CmcUnit, GRADE3_CMC_UNITS } from '../syllabus-books/syllabus-books.data';
@@ -45,7 +46,7 @@ import {
 
 @Component({
   selector: 'app-iready-interactive-page',
-  imports: [FormsModule, NgFor, NgIf, RouterLink, ProblemVisualWorkspaceComponent, IReadyFamilyRoundingComponent, FoundationPlayerComponent],
+  imports: [FormsModule, NgFor, NgIf, RouterLink, ProblemVisualWorkspaceComponent, IReadyFamilyRoundingComponent, FoundationPlayerComponent, IReadyMathTeachingStudioComponent],
   templateUrl: './iready-interactive.html',
   styleUrls: ['./iready-interactive.css', './iready-consistent-presentation.css']
 })
@@ -53,7 +54,27 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
   readonly volumeOneUnits = GRADE3_CMC_UNITS.filter((unit) => unit.volume === 1);
   readonly volumeOneLessons = this.volumeOneUnits.flatMap((unit) => unit.lessons);
   readonly dailyMathPrep = DAILY_MATH_TEACHING_PREP;
-  get selectedDailyMathPrep() { return this.dailyMathPrep.find((prep) => prep.lesson === this.selectedLessonNumber); }
+  get selectedDailyMathPrep() {
+    return this.dailyMathPrep.find((prep) => prep.lesson === this.selectedLessonNumber && prep.session === this.selectedSessionNumber);
+  }
+  readonly divisionModelCounters = [1, 2, 3, 4];
+  readonly divisionSharingPlates = [1, 2];
+  readonly divisionGroupingPlates = [1, 2, 3, 4, 5];
+  divisionModel: 'sharing' | 'grouping' = 'sharing';
+  prepStudentResponse = '';
+  prepFeedback = '';
+  prepShowAnswer = false;
+
+  checkPrepResponse(expected: number): void {
+    const rawAnswer = this.prepStudentResponse.trim();
+    if (!/^\d+$/.test(rawAnswer)) {
+      this.prepFeedback = 'Enter a whole number, then explain your model.';
+      return;
+    }
+    this.prepFeedback = Number(rawAnswer) === expected
+      ? 'Correct! Now explain the equal groups or visual pattern that proves your answer.'
+      : 'Try again. Draw the groups and use multiplication to check your thinking.';
+  }
   readonly placeLabels = ['Hundreds', 'Tens', 'Ones'];
   readonly unitIdeaSourceUrl = sourceUrlForUnitIdea;
   readonly supportResourceUrl = supportResourceUrl;
@@ -155,6 +176,10 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
         this.selectedSessionNumber = 1;
         const requestedSession = Number(query.get('session'));
         if (this.lessonFocus && sourceProblemsForSession(this.selectedLessonNumber, requestedSession).length) this.selectedSessionNumber = requestedSession;
+        this.prepStudentResponse = '';
+        this.prepFeedback = '';
+        this.prepShowAnswer = false;
+        this.divisionModel = 'sharing';
         const requestedActivity = this.sourceProblems.findIndex(p => p.key === query.get('activity'));
         this.selectedSourceProblemIndex = requestedActivity >= 0 ? requestedActivity : 0;
         this.resourceMode = this.resourceFocus && this.selectedResourceKey === 'v1-u1-self-check' ? 'work' : 'student';
@@ -454,6 +479,10 @@ export class IReadyInteractivePage implements AfterViewInit, OnDestroy {
     this.selectedSessionNumber = sessionNumber;
     this.selectedSourceProblemIndex = 0;
     this.selectedEditionPageIndex = 0;
+    this.prepStudentResponse = '';
+    this.prepFeedback = '';
+    this.prepShowAnswer = false;
+    this.divisionModel = 'sharing';
     this.resetActivity();
     this.openVisualTeaching();
   }

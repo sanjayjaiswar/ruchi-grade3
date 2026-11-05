@@ -1,0 +1,117 @@
+<section class="math-studio" aria-labelledby="math-studio-title" [attr.data-lesson]="lesson.lesson">
+  <header class="math-studio-header">
+    <div>
+      <span class="math-studio-kicker">Interactive teaching lab · Lesson {{ lesson.lesson }}, Session 1</span>
+      <h3 id="math-studio-title">{{ lesson.title }}</h3>
+      <p>{{ lesson.source }}</p>
+    </div>
+    <span class="math-studio-original">Original supplemental model</span>
+  </header>
+
+  <nav class="math-studio-scenes" aria-label="Choose an official story model">
+    <button type="button" *ngFor="let choice of lesson.models; let modelNumber = index"
+      (click)="showModel(modelNumber)" [class.is-selected]="modelNumber === modelIndex"
+      [attr.aria-pressed]="modelNumber === modelIndex">
+      {{ choice.label }}
+    </button>
+  </nav>
+
+  <div class="math-studio-steps" aria-label="Teaching steps">
+    <span [class.is-current]="stage === 1" [class.is-done]="stage > 1">1 · Build one group</span>
+    <span [class.is-current]="stage === 2" [class.is-done]="stage > 2">2 · Connect all groups</span>
+    <span [class.is-current]="stage === 3">3 · Try independently</span>
+  </div>
+
+  <div class="math-studio-body">
+    <div class="math-studio-model">
+      <p class="math-studio-situation">{{ model.situation }}</p>
+      <div class="math-studio-groups" [class.is-area]="model.kind === 'tiles'" [class.is-pattern]="model.kind === 'pattern'" [class.is-number-pattern]="model.kind === 'number-pattern'" [attr.aria-label]="model.label">
+        <div class="math-studio-group" *ngFor="let group of groups; let groupIndex = index"
+          [class.not-built]="groupIndex >= shownGroupCount"
+          [style.animationDelay.ms]="groupIndex * 105"
+          [attr.aria-label]="'Group ' + (groupIndex + 1)">
+          <small *ngIf="model.kind !== 'tiles' && model.kind !== 'pattern' && model.kind !== 'number-pattern'">{{ model.kind === 'stickers' ? 'Page' : modelIndex === 0 && lesson.lesson === 12 ? 'Bag' : 'Row' }} {{ groupIndex + 1 }}</small>
+          <div class="math-studio-cells">
+            <span *ngFor="let cell of cells; let cellIndex = index"
+              class="math-studio-cell"
+              [class.is-bead]="model.kind === 'pattern' && token(groupIndex, cellIndex) === 'bead'"
+              [class.is-tile]="model.kind === 'tiles'"
+              [class.is-broken-tile]="model.kind === 'tiles' && showInvalidArea && groupIndex === 0 && cellIndex === 1"
+              [class.is-penny]="model.kind === 'counters'"
+              [class.is-sticker]="model.kind === 'stickers'"
+              [class.is-pattern-token]="model.kind === 'pattern'"
+              [class.is-number]="model.kind === 'number-pattern'"
+              [style.animationDelay.ms]="groupIndex * 105 + cellIndex * 45"
+              [attr.aria-label]="token(groupIndex, cellIndex)">{{ model.kind === 'pattern' ? (token(groupIndex, cellIndex) === 'bead' ? '●' : '▰') : token(groupIndex, cellIndex) }}</span>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="stage === 1" class="math-studio-build-controls">
+        <strong>Build the picture: {{ builtGroups }} of {{ model.rows }} groups</strong>
+        <div class="math-studio-build-row">
+          <button type="button" (click)="removeGroup()" [disabled]="builtGroups <= 1">Remove last group</button>
+          <button type="button" class="math-studio-next" (click)="addGroup()" [disabled]="builtGroups >= model.rows">+ Add next group</button>
+        </div>
+        <label for="math-studio-prediction">{{ model.predictionPrompt }}</label>
+        <div class="math-studio-answer-row">
+          <input id="math-studio-prediction" type="text" inputmode="numeric" autocomplete="off" [(ngModel)]="prediction" (ngModelChange)="predictionFeedback = ''" />
+          <button type="button" (click)="checkPrediction()">Check prediction</button>
+        </div>
+        <p *ngIf="predictionFeedback" role="status" aria-live="polite">{{ predictionFeedback }}</p>
+        <p class="math-studio-step-hint">Use <strong>Add next group</strong> to build one group at a time. Finish all groups to unlock the connected equations.</p>
+      </div>
+      <div *ngIf="stage >= 2" class="math-studio-equations" aria-live="polite">
+        <strong>Connect the picture to the math</strong>
+        <p>{{ model.equation }}</p>
+        <span>{{ model.inference }}</span>
+      </div>
+      <div *ngIf="lesson.lesson === 13 && stage >= 2" class="math-studio-pattern-chart">
+        <strong>Discover overlapping number patterns · positions 1-40</strong>
+        <div class="math-studio-pattern-toggles">
+          <button type="button" [attr.aria-pressed]="showMultiplesOfThree" [class.is-selected]="showMultiplesOfThree" (click)="showMultiplesOfThree = !showMultiplesOfThree">Highlight +3</button>
+          <button type="button" [attr.aria-pressed]="showMultiplesOfNine" [class.is-selected]="showMultiplesOfNine" (click)="showMultiplesOfNine = !showMultiplesOfNine">Highlight +9</button>
+        </div>
+        <div class="math-studio-pattern-grid" aria-label="Number chart 1 through 40">
+          <span *ngFor="let value of chartNumbers" [class.highlight-three]="showMultiplesOfThree && value % 3 === 0" [class.highlight-nine]="showMultiplesOfNine && value % 9 === 0" [class.highlight-both]="showMultiplesOfThree && showMultiplesOfNine && value % 9 === 0">{{ value }}</span>
+        </div>
+        <p>Every +9 number also occurs in the +3 pattern because 9 = 3 × 3. Try both highlights and find the shared positions.</p>
+      </div>
+      <div *ngIf="lesson.lesson === 14 && stage >= 2" class="math-studio-area-contrast">
+        <button type="button" [attr.aria-pressed]="showInvalidArea" (click)="showInvalidArea = !showInvalidArea">{{ showInvalidArea ? 'Restore equal square tiles' : 'Compare an invalid covering' }}</button>
+        <p *ngIf="showInvalidArea">One tile has been enlarged and moved: the squares no longer fit equally without a gap or overlap. <strong>This is not a valid area count.</strong> Identify the mismatch, then restore the equal-square covering.</p>
+        <p *ngIf="!showInvalidArea">A valid area model uses the same-size square units, with no gaps, overlaps, or overhang. A length measures one edge; an area measures the entire covered surface.</p>
+        <p><strong>Additional official task, p. 317:</strong> The recycled-cloth rug covers 15 floor-tile square units. That is a different rug from the six-unit and ten-unit drawings.</p>
+      </div>
+    </div>
+
+    <aside class="math-studio-coach">
+      <h4>Teacher-led reasoning</h4>
+      <p><strong>Ask:</strong> {{ model.talk }}</p>
+      <div *ngIf="stage === 3" class="math-studio-challenge">
+        <h4>Independent transfer check</h4>
+        <p>{{ lesson.challenge }}</p>
+        <label for="math-studio-response">Your answer</label>
+        <div class="math-studio-answer-row">
+          <input id="math-studio-response" type="text" inputmode="numeric" [(ngModel)]="studentAnswer" (ngModelChange)="feedback = ''" autocomplete="off" />
+          <button type="button" (click)="check()">Check my answer</button>
+        </div>
+        <p *ngIf="feedback" role="status" aria-live="polite" [class.is-success]="correct">{{ feedback }}</p>
+      </div>
+      <p *ngIf="stage < 3" class="math-studio-preview">When ready, reveal the connected equations, then solve a new official practice question without its answer showing.</p>
+      <button type="button" class="math-studio-teacher-reveal" (click)="showTeacher = !showTeacher" [attr.aria-expanded]="showTeacher">{{ showTeacher ? 'Hide' : 'Show' }} teacher reasoning and common mistake</button>
+      <div *ngIf="showTeacher" class="math-studio-teacher-notes">
+        <p><strong>Reasoning:</strong> {{ lesson.why }}</p>
+        <p><strong>Watch for:</strong> {{ lesson.error }}</p>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="math-studio-footer">
+    <div class="math-studio-navigation">
+      <button type="button" (click)="previous()" [disabled]="stage === 1">Previous step</button>
+      <button type="button" class="math-studio-next" (click)="next()" [disabled]="stage === 3 || (stage === 1 && builtGroups < model.rows)">{{ stage === 1 ? 'Reveal connected equations' : 'Try the new problem' }}</button>
+      <button type="button" (click)="showModel(modelIndex)">Replay model</button>
+    </div>
+    <p><strong>Official sources:</strong> <a [href]="lesson.student" target="_blank" rel="noopener">Student Worktext</a> · <a [href]="lesson.teacher" target="_blank" rel="noopener">Teacher Guide</a>. Models, sequencing, feedback and teacher prompts are original supplemental teaching.</p>
+  </footer>
+</section>
