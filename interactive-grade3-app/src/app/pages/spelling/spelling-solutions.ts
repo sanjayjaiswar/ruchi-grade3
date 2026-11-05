@@ -1,5 +1,5 @@
 import { SPELLING_LESSONS } from './spelling-data';
-import { TEACHING_NOTES } from './spelling-teaching';
+import { PUBLISHER_LESSONS } from './spelling-publisher-lessons';
 import { SOLUTIONS_01_10 } from './spelling-solutions-01-10';
 import { SOLUTIONS_11_20 } from './spelling-solutions-11-20';
 import { SOLUTIONS_21_30 } from './spelling-solutions-21-30';
@@ -23,7 +23,7 @@ const DETAILS = { ...SOLUTIONS_01_10, ...SOLUTIONS_11_20, ...SOLUTIONS_21_30 };
 // This mapping uses printed page numbers, never lesson number / key-sheet index.
 export const SPELLING_SOLUTIONS: Readonly<Record<number, readonly SolvedSpellingPage[]>> =
   Object.fromEntries(SPELLING_LESSONS.map(lesson => {
-    const wordPage = ordered('Spelling Words', 'Say each word, then write it on its matching line.', lesson.words.join(' / '), TEACHING_NOTES[lesson.number - 1]);
+    const wordPage = ordered('Spelling Words', PUBLISHER_LESSONS[lesson.number].direction, lesson.words.join(' / '), PUBLISHER_LESSONS[lesson.number].tip);
     const sections = [[wordPage], ...DETAILS[lesson.number]];
     return [lesson.number, sections.map((pageSections, offset) => {
       const page = lesson.page + offset;

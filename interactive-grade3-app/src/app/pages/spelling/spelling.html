@@ -1,98 +1,46 @@
-<main class="spelling-page" [class.focused]="maximized">
+<main class="spelling-page" [class.focused]="maximized" [class.lesson-open]="!!lesson" [class.page-reading]="view === 'workbook' || view === 'answers'" [class.page-zoomed]="pageZoomed">
   <header class="app-header">
-    <a class="brand" routerLink="/ruchika/grade3/spelling"><span class="brand-mark" aria-hidden="true">ABC</span><span><strong>Spelling Studio</strong><small>Grade 3 · Study, build, remember</small></span></a>
+    <a class="brand" routerLink="/ruchika/grade3/spelling"><span class="brand-mark" aria-hidden="true">ABC</span><span><strong>Spelling Studio</strong><small>Grade 3 · Spectrum Spelling</small></span></a>
     <nav aria-label="Spelling navigation"><a routerLink="/ruchika/grade3/spelling">All lessons</a><a routerLink="/ruchika/grade3">Main Learning</a></nav>
   </header>
 
   @if (lesson; as selected) {
-    <section class="lesson-heading">
-      <div><p class="eyebrow">Lesson {{ selected.number }}</p><h1>{{ selected.title }}</h1><p class="source-line">{{ selected.words.length }} source words · <a [href]="sourceImage(selected.page)" target="_blank" rel="noopener">Spectrum workbook p. {{ selected.page }} ↗</a></p></div>
-      <div class="lesson-arrows">
-        @if (selected.number > 1) {<a [routerLink]="['/ruchika/grade3/spelling/lessons', selected.number - 1]" aria-label="Previous lesson">← Lesson {{ selected.number - 1 }}</a>}
-        @if (selected.number < lessons.length) {<a [routerLink]="['/ruchika/grade3/spelling/lessons', selected.number + 1]" aria-label="Next lesson">Lesson {{ selected.number + 1 }} →</a>}
-      </div>
-    </section>
-    <nav class="view-tabs" aria-label="Lesson views">
-      <button type="button" [class.active]="view === 'study'" [attr.aria-pressed]="view === 'study'" (click)="selectView('study')"><strong>Study the words</strong><small>Look · notice · remember</small></button>
-      <button type="button" [class.active]="view === 'practice'" [attr.aria-pressed]="view === 'practice'" (click)="selectView('practice')"><strong>Practice</strong><small>Letter tiles &amp; recall</small></button>
-      <button type="button" [class.active]="view === 'workbook'" [attr.aria-pressed]="view === 'workbook'" (click)="selectView('workbook')"><strong>Workbook</strong><small>Source pp. {{ selected.page }}–{{ selected.page + 3 }}</small></button>
-      <button type="button" [class.active]="view === 'answers'" [attr.aria-pressed]="view === 'answers'" (click)="selectView('answers')"><strong>Answers &amp; Solutions</strong><small>Solved pp. {{ selected.page }}–{{ selected.page + 3 }}</small></button>
-    </nav>
-
-    <div class="workspace" [class.source-workspace]="view === 'workbook' || view === 'answers'">
-      @if (view === 'study' || view === 'practice') {
-        <aside class="word-sidebar" aria-label="Lesson words">
-          <div class="sidebar-heading"><h2>{{ retryOnly ? 'Retry words' : 'Word list' }}</h2><span>{{ wordIndices.length }} words</span></div>
-          <div class="word-buttons">
-            @for (index of wordIndices; track index) {
-              <button type="button" (click)="selectWord(index)" [class.current]="wordIndex === index" [attr.aria-current]="wordIndex === index ? 'step' : null">
-                <span class="word-order">{{ index + 1 }}</span><span>{{ view === 'practice' && activity === 'recall' ? 'Word ' + (index + 1) : selected.words[index] }}</span>
-                @if (attempts[index].feedback === 'correct') {<span class="check-mark" aria-label="Recall correct">✓</span>}
-              </button>
-            }
-          </div>
-          @if (retryOnly) {<button type="button" class="text-button" (click)="allWords()">Return to all words</button>}
-          <p class="sidebar-note">Word list: <a [href]="sourceImage(selected.page)" target="_blank" rel="noopener">source p. {{ selected.page }} ↗</a></p>
-        </aside>
-      }
+    <div class="lesson-bar">
+      <section class="lesson-heading">
+        <h1>{{ selected.title }}</h1>
+        <p>Lesson {{ selected.number }} · {{ selected.words.length }} words · <a [href]="sourceImage(selected.page)" target="_blank" rel="noopener">Workbook pp. {{ selected.page }}–{{ selected.page + 3 }} ↗</a></p>
+      </section>
+      <nav class="view-tabs" aria-label="Lesson views">
+        <button type="button" [class.active]="view === 'study'" [attr.aria-pressed]="view === 'study'" (click)="selectView('study')"><strong>Study</strong><small>Spelling tip &amp; all words</small></button>
+        <button type="button" [class.active]="view === 'workbook'" [attr.aria-pressed]="view === 'workbook'" (click)="view === 'study' ? startWorkbook() : selectView('workbook')"><strong>Workbook</strong><small>Blank exercises</small></button>
+        <button type="button" [class.active]="view === 'answers'" [attr.aria-pressed]="view === 'answers'" (click)="selectView('answers')"><strong>Answers</strong><small>Publisher key &amp; help</small></button>
+      </nav>
+    </div>
+    <div class="workspace">
       <section class="stage" aria-label="Spelling workspace">
-        <div class="stage-toolbar">
-          <span>{{ view === 'study' ? 'Word workshop' : view === 'practice' ? 'Practice workspace' : view === 'workbook' ? 'Original workbook pages' : 'Publisher answers · one page at a time' }}</span>
-          <button type="button" (click)="maximized = !maximized" [attr.aria-pressed]="maximized">{{ maximized ? 'Restore view' : 'Expand workspace' }}</button>
-        </div>
-
         @if (view === 'study') {
-          <div class="study-progress"><span>Word {{ wordPosition + 1 }} of {{ wordIndices.length }}</span><span>Step {{ step + 1 }} of 3</span></div>
-          <h2>{{ step === 0 ? 'Look at the whole word' : step === 1 ? 'Notice its spelling' : 'Picture the word in your mind' }}</h2>
-          <p class="stage-intro">{{ step === 0 ? 'Read the word aloud. Move your eyes from the first letter to the last.' : step === 1 ? teachingNote : 'Say the letters in order. Then open Practice to build the word or spell it from memory.' }}</p>
-          <div class="word-display" [attr.aria-label]="word">
-            @for (part of parts; track $index) {<span [class.highlight]="step > 0 && part.highlight" [class.compound-part]="selected.number >= 29">{{ part.text === ' ' ? '·' : part.text }}</span>}
-          </div>
-          @if (selected.number >= 29 && step > 0) {<p class="word-caption">Two smaller words joined together, with no space.</p>}
-          @if (selected.number === 14 || selected.number === 22) {<p class="word-caption">Keep every capital, apostrophe, and space.</p>}
-          <div class="step-dots" aria-label="Teaching step">@for (label of ['Look', 'Notice', 'Remember']; track label) {<button type="button" (click)="step = $index" [class.active]="step === $index" [attr.aria-pressed]="step === $index">{{ $index + 1 }}. {{ label }}</button>}</div>
-          <div class="actions"><button type="button" (click)="step = 0">Replay</button><button type="button" [disabled]="step === 0" (click)="step = step - 1">Previous step</button>@if (step < 2) {<button type="button" class="primary" (click)="step = step + 1">Next step →</button>} @else {<button type="button" class="primary" (click)="selectView('practice')">Practice this word →</button>}</div>
-        }
-
-        @if (view === 'practice') {
-          <div class="practice-options" aria-label="Practice activity"><button type="button" [class.active]="activity === 'build'" [attr.aria-pressed]="activity === 'build'" (click)="selectActivity('build')">1. Build the word</button><button type="button" [class.active]="activity === 'recall'" [attr.aria-pressed]="activity === 'recall'" (click)="selectActivity('recall')">2. Hide &amp; spell</button></div>
-          @if (activity === 'build') {
-            <h2>Put the letters in order</h2><p class="stage-intro">Build <strong>{{ word }}</strong>. Select a tile to add it; select a placed tile to put it back.</p>
-            <div class="built-word" aria-label="Your assembled word">
-              @for (id of selectedTiles; track id) {<button type="button" (click)="removeTile($index)" [attr.aria-label]="'Remove ' + (builtWord[$index] === ' ' ? 'space' : builtWord[$index])">{{ builtWord[$index] === ' ' ? '␣' : builtWord[$index] }}</button>}
-              @if (!selectedTiles.length) {<span class="placeholder">Your word goes here</span>}
+          @if (publisherLesson; as official) {
+            <header class="study-heading"><h2>Spelling lesson</h2><a [href]="sourceImage(official.page)" target="_blank" rel="noopener">Spectrum Spelling · p. {{ official.page }} ↗</a></header>
+            <p class="publisher-direction">{{ official.direction }}</p>
+            <div class="study-overview">
+              <section class="publisher-tip" aria-labelledby="publisher-tip-heading"><h3 id="publisher-tip-heading">Spelling tip</h3><p>{{ official.tip }}</p>
+                @if (selected.number === 22) {<small>As printed: this holiday lesson’s tip refers to months.</small>}
+              </section>
+              <section class="publisher-words" aria-labelledby="publisher-words-heading"><h3 id="publisher-words-heading">Spelling words &amp; meanings</h3><p class="dictionary-label">Workbook dictionary entries, as printed.</p><ol>@for (word of selected.words; track $index) {<li><span>{{ word }}</span>@if (definition(word); as entry) {<p class="word-meaning">@if (entry.headword.toLowerCase() !== word.toLowerCase()) {<b>{{ entry.headword }}: </b>}{{ entry.text }} <a [href]="sourceImage(entry.page)" target="_blank" rel="noopener" [attr.aria-label]="'Dictionary source for ' + word + ', page ' + entry.page">p. {{ entry.page }} ↗</a></p>} @else {<p class="word-meaning">No dictionary entry in this workbook. <a [href]="sourceImage(selected.page + 1)" target="_blank" rel="noopener">Read it in context ↗</a></p>}</li>}</ol></section>
             </div>
-            <div class="tile-bank" aria-label="Available letter tiles">@for (tile of tiles; track tile.id) {<button type="button" [disabled]="selectedTiles.includes(tile.id)" (click)="useTile(tile.id)" [attr.aria-label]="tile.letter === ' ' ? 'Space' : 'Letter ' + tile.letter">{{ tile.letter === ' ' ? '␣' : tile.letter }}</button>}</div>
-            <div class="actions"><button type="button" class="primary" [disabled]="!selectedTiles.length" (click)="checkBuild()">Check word</button><button type="button" (click)="resetWord()">Start again</button><button type="button" (click)="revealBuild()">Show solution</button></div>
-            <div class="feedback" role="status" [class.success]="buildFeedback === 'correct'">@if (buildFeedback === 'correct') {✓ You built {{ word }}. Ready to try it from memory? <button type="button" (click)="selectActivity('recall')">Hide &amp; spell →</button>} @else if (buildFeedback === 'again') {Check the order. Include every letter, space, and apostrophe.} @else if (buildFeedback === 'revealed') {The tiles show {{ word }}. Select Start again to build it yourself.}</div>
-          } @else {
-            <div class="recall-heading"><h2>Look. Cover. Spell.</h2><span>{{ correctCount }} / {{ selected.words.length }} recalled correctly</span></div>
-            <p class="stage-intro">Remember the word, hide it, then type it. Capitals and apostrophes count.</p>
-            @if (!covered) {
-              <div class="recall-preview">{{ word }}</div><button type="button" class="primary cover-button" (click)="coverWord()">I’m ready — hide the word</button>
-            } @else {
-              <div class="covered-word">Word {{ wordIndex + 1 }} is covered</div>
-              <form (submit)="$event.preventDefault(); checkRecall()">
-                <label for="spelling-answer">Spell word {{ wordIndex + 1 }}</label>
-                <input id="spelling-answer" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" [spellcheck]="false" [value]="attempt.value" (input)="updateAnswer($any($event.target).value)" aria-describedby="recall-feedback">
-                <div class="actions"><button type="submit" class="primary" [disabled]="!attempt.value.trim()">Check spelling</button><button type="button" (click)="covered = false">Look again</button><button type="button" (click)="revealRecall()">Show answer</button></div>
-              </form>
-              <div id="recall-feedback" class="feedback" role="status" [class.success]="attempt.feedback === 'correct'">@if (attempt.feedback === 'correct') {✓ Correct: {{ word }}.} @else if (attempt.feedback === 'again') {Try again. Check the letters, capitals, spaces, and apostrophes. Use Look again if you need a reminder.} @else if (attempt.feedback === 'revealed') {Answer: <strong>{{ word }}</strong>. Look again, then hide the word to give it another try.}</div>
-            }
-            @if (correctCount === selected.words.length) {<div class="completion" role="status"><strong>Every word recalled correctly!</strong><p>You completed this word list. You can practice again whenever you like.</p><button type="button" (click)="restartRecall()">Practice again</button></div>}
-            <div class="recall-tools"><button type="button" [disabled]="correctCount === selected.words.length" (click)="retryMissed()">Practice words still to learn</button><span>Progress stays in this lesson while it is open.</span></div>
+            <div class="study-footer"><span>Directions, spelling tip, words, and dictionary entries from the workbook. <a [href]="sourceImage(152)" target="_blank" rel="noopener">Dictionary abbreviations ↗</a></span><button type="button" class="primary" (click)="startWorkbook()">Start workbook · page {{ selected.page + 1 }} →</button></div>
           }
-        }
-
-        @if (view === 'study' || view === 'practice') {
-          <nav class="word-navigation" aria-label="Move between words"><button type="button" [disabled]="wordPosition === 0" (click)="moveWord(-1)">← Previous word</button><span>{{ wordPosition + 1 }} / {{ wordIndices.length }}</span><button type="button" [disabled]="wordPosition === wordIndices.length - 1" (click)="moveWord(1)">Next word →</button></nav>
-          <p class="supplemental-note">Original supplemental teaching and practice, using the word list from <a [href]="sourceImage(selected.page)" target="_blank" rel="noopener">Spectrum Spelling p. {{ selected.page }} ↗</a>. The workbook’s other exercises and published answers are available in the source tabs.</p>
         } @else {
           <nav class="page-navigation" aria-label="Workbook pages">
             @for (page of sourcePages; track page) {
-              <button type="button" (click)="sourceIndex = $index" [class.active]="sourceIndex === $index" [attr.aria-pressed]="sourceIndex === $index" [attr.aria-controls]="view === 'answers' ? 'solved-page' : 'workbook-page'">Page {{ page }}</button>
+              <button type="button" (click)="selectPage($index)" [class.active]="sourceIndex === $index" [attr.aria-pressed]="sourceIndex === $index" [attr.aria-controls]="view === 'answers' ? 'solved-page' : 'workbook-page'">Page {{ page }}</button>
             }
-            <a [href]="view === 'answers' ? answerPdf(sourcePage) : pdfPage(sourcePage)" target="_blank" rel="noopener">Print page {{ sourcePage }} · one-page PDF ↗</a>
+            <div class="page-tools">
+              <button type="button" (click)="pageZoomed = !pageZoomed" [attr.aria-pressed]="pageZoomed">{{ pageZoomed ? 'Fit page' : 'Enlarge page' }}</button>
+              <button type="button" (click)="selectView(view === 'answers' ? 'workbook' : 'answers')">{{ view === 'answers' ? 'Questions' : 'Answers' }}</button>
+              <button type="button" (click)="maximized = !maximized" [attr.aria-pressed]="maximized">{{ maximized ? 'Restore view' : 'Focus' }}</button>
+            <a [href]="view === 'answers' ? answerPdf(sourcePage) : pdfPage(sourcePage)" target="_blank" rel="noopener">Print page ↗</a>
+            </div>
           </nav>
           @if (view === 'answers') {
             @if (solvedPage; as solved) {
@@ -100,18 +48,22 @@
                 <div class="solution-layout">
                   <figure class="source-figure answer-figure">
                     <a [href]="answerImage(solved.page)" target="_blank" rel="noopener" [attr.aria-label]="'Enlarge publisher answers for page ' + solved.page"><img [src]="answerImage(solved.page)" [alt]="'Publisher answers for workbook page ' + solved.page" width="1400" height="1811"></a>
-                    <figcaption>Spectrum Spelling · answers for p. {{ solved.page }} · <a [href]="answerPdf(solved.page)" target="_blank" rel="noopener">One-page PDF ↗</a></figcaption>
+                    <figcaption>Publisher answers · p. {{ solved.page }} · Select image for full size.</figcaption>
                   </figure>
                   <div class="worked-solutions">
-                    <header class="worked-heading"><h2>Worked solutions</h2><p>Original supplemental explanations and sample writing.</p><button type="button" (click)="selectView('workbook')">See questions · page {{ solved.page }}</button></header>
+                    <header class="worked-heading"><h2>Worked solutions</h2><p>Original supplemental explanations and samples.</p></header>
+                    @if (solved.sections.length > 1) {
+                    <div class="solution-section-picker"><label for="solution-section">Section</label><select id="solution-section" [value]="solutionSectionIndex" (change)="solutionSectionIndex = +$any($event.target).value">@for (part of solved.sections; track $index) {<option [value]="$index">{{ $index + 1 }}. {{ part.title }}</option>}</select></div>
+                    }
                     @for (part of solved.sections; track $index) {
-                      <section class="solution-section" [class.writing-solution]="part.sample" [attr.aria-labelledby]="'solution-heading-' + $index">
+                      @if (solutionSectionIndex === $index) {
+                      <section class="solution-section" tabindex="0" [class.writing-solution]="part.sample" [attr.aria-labelledby]="'solution-heading-' + $index">
                         <div class="solution-section-heading">
                           <h3 [id]="'solution-heading-' + $index">{{ part.title }}</h3>
                           @if (part.sample) {<span class="sample-badge">Sample response</span>}
                         </div>
                         <p class="solution-instruction">{{ part.instruction }}</p>
-                        <dl class="solution-items" [class.long-response]="part.sample">
+                        <dl class="solution-items" [class.long-response]="part.sample" [class.compact-answers]="!part.sample && part.items.length >= 4">
                           @for (item of part.items; track $index) {
                             <div class="solution-item">
                               <dt>{{ item.prompt }}</dt>
@@ -122,18 +74,17 @@
                         </dl>
                         @if (part.explanation) {<p class="solution-explanation" [class.source-discrepancy]="part.explanation.startsWith('Source')">{{ part.explanation }}</p>}
                       </section>
+                      }
+                    }
+                    @if (solved.sections.length > 1) {
+                      <nav class="section-navigation" aria-label="Solution sections"><button type="button" [disabled]="solutionSectionIndex === 0" (click)="solutionSectionIndex = solutionSectionIndex - 1">← Previous section</button><span>{{ solutionSectionIndex + 1 }} / {{ solved.sections.length }}</span><button type="button" [disabled]="solutionSectionIndex === solved.sections.length - 1" (click)="solutionSectionIndex = solutionSectionIndex + 1">Next section →</button></nav>
                     }
                   </div>
                 </div>
-                <nav class="solution-page-navigation" aria-label="Move between solved workbook pages">
-                  <button type="button" [disabled]="sourceIndex === 0" (click)="sourceIndex = sourceIndex - 1">← Previous page</button>
-                  <span>Workbook page {{ solved.page }} · {{ sourceIndex + 1 }} of 4</span>
-                  <button type="button" [disabled]="sourceIndex === 3" (click)="sourceIndex = sourceIndex + 1">Next page →</button>
-                </nav>
+
               </div>
             } @else {<p class="invalid" role="alert">Verified solutions are not available for this page.</p>}
           } @else {
-            <div class="workbook-answer-link"><span>Questions on page {{ sourcePage }}</span><button type="button" (click)="selectView('answers')">See answers for page {{ sourcePage }} →</button></div>
             <figure id="workbook-page" class="source-figure"><a [href]="sourceImage(sourcePage)" target="_blank" rel="noopener" aria-label="Open source page at full size"><img [src]="sourceImage(sourcePage)" [alt]="'Spectrum Spelling Grade 3 workbook, printed page ' + sourcePage"></a><figcaption>Spectrum Spelling Grade 3 · printed p. {{ sourcePage }} · Select the page to enlarge.</figcaption></figure>
           }
         }
@@ -141,14 +92,13 @@
     </div>
   } @else {
     @if (invalidLesson) {<p class="invalid" role="alert">That lesson is not available. Choose a lesson below.</p>}
-    <section class="hero"><div><p class="eyebrow">A little practice, one word at a time</p><h1>Make spelling stick.</h1><p class="intro">Study a word. Build it with letter tiles. Cover it and try it from memory.</p><p class="source-line">Word lists from Spectrum Spelling Grade 3 · <a [href]="sourceImage(3)" target="_blank" rel="noopener">Source contents ↗</a></p></div><div class="hero-tiles" aria-hidden="true"><span>A</span><span>B</span><span>C</span></div></section>
-    <div class="how-it-works"><div><b>01</b><strong>Study</strong><span>Spot the letters and patterns.</span></div><div><b>02</b><strong>Build</strong><span>Put every letter in its place.</span></div><div><b>03</b><strong>Remember</strong><span>Hide, spell, check, and retry.</span></div></div>
+    <section class="hero"><div><p class="eyebrow">Spectrum Spelling · Grade 3</p><h1>Spelling lessons</h1><p class="intro">Read the spelling tip and word list, work through the workbook pages, and check answers when you need help.</p><p class="source-line">Word lists from Spectrum Spelling Grade 3 · <a [href]="sourceImage(3)" target="_blank" rel="noopener">Source contents ↗</a></p></div><div class="hero-tiles" aria-hidden="true"><span>A</span><span>B</span><span>C</span></div></section>
     <section aria-labelledby="lessons-heading">
-      <div class="section-heading"><div><h2 id="lessons-heading">Choose your spelling lesson</h2><p>Interactive word practice for every lesson in the supplied workbook.</p></div><div class="search"><label for="lesson-search">Find a number or topic</label><input id="lesson-search" type="search" placeholder="Try 5, short, or compound" [value]="query" (input)="query = $any($event.target).value"></div></div>
+      <div class="section-heading"><div><h2 id="lessons-heading">Choose your spelling lesson</h2><p>All 30 lessons from the supplied workbook.</p></div><div class="search"><label for="lesson-search">Find a number or topic</label><input id="lesson-search" type="search" placeholder="Try 5, short, or compound" [value]="query" (input)="query = $any($event.target).value"></div></div>
       <p class="result-count" role="status">{{ filteredLessons.length }} of {{ lessons.length }} lessons</p>
-      <div class="lesson-grid">@for (item of filteredLessons; track item.number) {<a class="lesson-card" [routerLink]="['/ruchika/grade3/spelling/lessons', item.number]"><span class="lesson-number">{{ item.number }}</span><span class="lesson-copy"><strong>{{ item.title }}</strong><span>{{ item.words.length }} words · Study + practice</span><span class="lesson-action">Start lesson →</span></span></a>} @empty {<p class="empty">No matching lessons. Try a number from 1 to 30 or another topic.</p>}</div>
+      <div class="lesson-grid">@for (item of filteredLessons; track item.number) {<a class="lesson-card" [routerLink]="['/ruchika/grade3/spelling/lessons', item.number]"><span class="lesson-number">{{ item.number }}</span><span class="lesson-copy"><strong>{{ item.title }}</strong><span>{{ item.words.length }} words · Spelling tip + workbook</span><span class="lesson-action">Start lesson →</span></span></a>} @empty {<p class="empty">No matching lessons. Try a number from 1 to 30 or another topic.</p>}</div>
     </section>
     <aside class="saved-practice"><div><h2>More Lesson 5 practice</h2><p>The saved homework activity includes a word riddle, science words, writing, and spelling corrections.</p></div><a routerLink="/ruchika/grade3/homework/2026-09-16">Open saved activity →</a></aside>
-    <details class="reference-details"><summary>Workbook &amp; source reference</summary><p>Lesson names and word lists come from the supplied Spectrum Spelling Grade 3, Carson-Dellosa, © 2015. Each lesson has four workbook pages with matching solutions. The activities, explanations, and sample writing are original supplemental material. Links beside the solutions open the exact question and publisher-key pages.</p><div class="reference-links"><a [href]="sourceImage(5)" target="_blank" rel="noopener">Sounds &amp; spellings ↗</a><a [href]="sourceImage(142)" target="_blank" rel="noopener">Dictionary ↗</a><a [href]="answerImage(6)" target="_blank" rel="noopener">First answer page ↗</a><a [href]="sourceImage(2)" target="_blank" rel="noopener">Publication details ↗</a></div></details>
+    <details class="reference-details"><summary>Workbook &amp; source reference</summary><p>Lesson names and word lists come from the supplied Spectrum Spelling Grade 3, Carson-Dellosa, © 2015. Each lesson has four workbook pages with matching solutions. Study directions and spelling tips are transcribed from the workbook. Worked explanations and clearly labeled sample writing are supplemental help. Links beside the solutions open the exact question and publisher-key pages.</p><div class="reference-links"><a [href]="sourceImage(5)" target="_blank" rel="noopener">Sounds &amp; spellings ↗</a><a [href]="sourceImage(142)" target="_blank" rel="noopener">Dictionary ↗</a><a [href]="answerImage(6)" target="_blank" rel="noopener">First answer page ↗</a><a [href]="sourceImage(2)" target="_blank" rel="noopener">Publication details ↗</a></div></details>
   }
 </main>

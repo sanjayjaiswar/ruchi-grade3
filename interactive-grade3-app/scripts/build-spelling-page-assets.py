@@ -6,6 +6,7 @@ contain four consecutive workbook pages, starting with 6–9.
 """
 import json
 import subprocess
+import sys
 from pathlib import Path
 
 from pypdf import PdfReader, PdfWriter
@@ -24,7 +25,8 @@ ANSWERS.mkdir(exist_ok=True)
 data = (APP / 'src/app/pages/spelling/spelling-data.ts').read_text()
 lessons = json.loads(data.split('export const SPELLING_LESSONS = ', 1)[1].rsplit(' as const;', 1)[0].rstrip(';\n '))
 workbook_pages = [lesson['page'] + offset for lesson in lessons for offset in range(4)]
-references = [2, 3, 5, 142, 153]
+references = [2, 3, 5, *range(142, 154)]
+dictionary_only = '--dictionary-only' in sys.argv
 reader = PdfReader(ASSETS / 'spelling-grade-3.pdf')
 
 def write_page(source_index, destination, crop=None):
@@ -48,11 +50,15 @@ def render(pdf, destination):
                     '-o', str(destination)], check=True)
 
 # Exact source page links never use a fragment on the complete workbook.
-for page in sorted(set(workbook_pages + references)):
+for page in (range(142, 153) if dictionary_only else sorted(set(workbook_pages + references))):
     pdf = PDFS / f'page-{page}.pdf'
     write_page(page + 1, pdf)
     if not (ASSETS / 'pages' / f'page-{page}.webp').exists():
         render(pdf, ASSETS / 'pages' / f'page-{page}.webp')
+
+if dictionary_only:
+    print('Dictionary pp. 142–152 available as individual images and one-page PDFs.')
+    raise SystemExit
 
 # Coordinates in the supplied PDF's 657 × 837 point media box, bottom-up.
 # Outer margins preserve all four panel borders and page labels. Even-numbered
