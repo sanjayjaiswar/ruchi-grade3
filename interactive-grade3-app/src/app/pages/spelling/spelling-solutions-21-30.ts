@@ -1,0 +1,76 @@
+import { LessonSolutions, section, ordered, context, challenge, copyWords, writing, corrections } from './spelling-solutions.types';
+
+// Spectrum Spelling Grade 3, printed pp. 96–139; key pp. 175–186.
+export const SOLUTIONS_21_30: Record<number, LessonSolutions> = {
+  21: [
+    [ordered('Words in Writing — Seasons', 'Complete the source passage’s twelve blanks in reading order.', 'December / January / February / March / April / May / June / July / August / September / October / November', 'Follow the year from December through November. These answers complete the supplied passage’s seasonal setting; seasons and weather are not the same everywhere.'),
+      section('Word Building', 'Write the three-letter abbreviations, including the period.', ['1. January | Jan.', '2. October | Oct.', '3. December | Dec.', '4. August | Aug.', '5. February | Feb.', '6. November | Nov.'])],
+    [section('Fun with Words', 'Complete the rhyming sentences. Keep both blanks together where present.', ['1. arch | March', '2. showers / day | April, May', '3. ember | November, December', '4. very | January, February', '5. soon / truly | June, July', '6. remember | September']),
+      copyWords('season / calendar / winter / autumn'), ordered('Words Across the Curriculum — paragraph', 'Fill the four blanks in the supplied passage.', 'calendar / season / winter / autumn')],
+    [writing('Describe your favorite season. Use at least four words from the box.', 'My favorite season is autumn. I enjoy watching the leaves in September and October. In November, I like to collect fallen leaves and draw their shapes before winter arrives.', 'The description uses season, autumn, September, October, November, and winter. It is one possible personal response.'), corrections(['autumm | autumn', 'Septembar | September', 'Ocober | October', 'wintur | winter', 'seson | season'])]
+  ],
+  22: [
+    [ordered('Words in Context — Holidays', 'Fill the ten blanks in the supplied passage.', 'New Year’s Day / Valentine’s Day / Mother’s Day / Memorial Day / Father’s Day / Independence Day / Labor Day / Columbus Day / Halloween / Thanksgiving', 'Preserve capitals, spaces, and apostrophes. The key prints Thanksgiving Day in the last blank; Thanksgiving is the spelling-list form and also completes the sentence. These are answers to the supplied workbook, not a current school holiday calendar.')],
+    [section('Fun with Words', 'Match the numbered pictures to the holiday names.', ['1. Flag and fireworks | Independence Day', '2. Card for Mom | Mother’s Day', '3. Turkey | Thanksgiving', '4. Heart card | Valentine’s Day', '5. Pumpkin | Halloween', '6. Ships | Columbus Day']),
+      copyWords('Christmas / Martin Luther King Day / Hanukkah / Ramadan'), ordered('Words Across the Curriculum — sentences', 'Use the holiday names in the source exercise.', 'Hanukkah / Ramadan / Martin Luther King Day / Christmas')],
+    [writing('Describe what you do on holidays. Use at least four holiday names from the box.', 'On Mother’s Day, I make a card. On Father’s Day, I help prepare breakfast. On Halloween, I decorate a pumpkin. On New Year’s Day, I plan something new to learn.', 'This fictional personal example uses four holiday names with their capitals and apostrophes. Your family’s traditions may be different.'), corrections(['Haloween | Halloween', 'Independense Day | Independence Day', 'Chrismas | Christmas', 'Mother Day | Mother’s Day'])]
+  ],
+  23: [
+    [context('Movie Review', 'gift / wild / world / sold / drift / swift / raft / held / After / left'),
+      section('Word Building', 'Add -ness and write the complete word.', ['1. wild + ness | wildness', '2. soft + ness | softness', '3. swift + ness | swiftness', '4. mild + ness | mildness', '5. cold + ness | coldness'], 'The ending names the state or quality described by the base word.')],
+    [section('Fun with Words', 'Write the antonym.', ['1. slow | swift', '2. bought | sold', '3. right | left', '4. before | after', '5. dropped | held', '6. tame | wild']),
+      copyWords('gold / mold / craft / tuft'), ordered('Words Across the Curriculum — sentences', 'Complete the art sentences.', 'mold / gold / tuft / craft')],
+    [writing('Summarize a movie or book. Use at least four words from the box.', 'In an imaginary adventure book, a child receives a map as a gift. After finding an old raft, the child and a friend drift down a river. They discover a wild island and return home with a story to tell.', 'This fictional summary uses gift, after, raft, drift, and wild. Replace it with a summary of a movie or book you know.'),
+      section('Dictionary Practice', 'Identify the common part of speech requested by the workbook.', ['1. gift | noun', '2. wild | adjective', '3. raft | noun', '4. held | verb', '5. swift | adjective', '6. sold | verb', '7. world | noun', '8. drift | verb'], 'A noun names, an adjective describes, and a verb shows an action or state. Some of these words can have another role in a different sentence.')]
+  ],
+  24: [
+    [context('Stella Finally Sleeps', 'queen / quite / quilt / squeeze / quiet / quack / squeak / squirrel / question / quick'), challenge('queer, squeal, squirt, squid, squirm, quit')],
+    [ordered('Fun with Words', 'Choose the word that belongs with each pair.', 'quiet / quick / queen / quilt / question / quite / quack / squirrel', 'Quiet means little or no sound; quite means very or to a considerable degree. Check the order of their last two letters.'),
+      copyWords('quart / quarter / quotient / quiz'), ordered('Words Across the Curriculum — sentences', 'Complete the four source sentences.', 'quarter / quiz / quart / quotient')],
+    [writing('Make up a fairy tale or short story. Use at least four words from the box.', 'A queen found a squirrel asleep on her quilt. When she asked a question, it gave a tiny squeak. The queen smiled and made a quiet nest for her new friend.', 'This invented story has characters and a small event. It uses queen, squirrel, quilt, question, squeak, and quiet.'),
+      section('Dictionary Practice', 'Write the vowel symbol for the first or only syllable.', ['1. squeeze | /ē/ — long e', '2. quack | /a/ — short a', '3. quite | /ī/ — long i', '4. question | /e/ — short e', '5. quick | /i/ — short i', '6. squeak | /ē/ — long e', '7. quiet | /ī/ — long i', '8. quilt | /i/ — short i'], 'A line over a vowel is the workbook’s long-vowel mark. Listen to the first syllable of quiet.')]
+  ],
+  25: [
+    [context('Sir Lancelot', 'wrote / knight / wrong / knock / knob / wren / knife / wrist / knee / know'),
+      section('Challenge', 'Find additional words with silent k or silent w.', ['Key’s circled words | well-known, known, who, sword, knot, wrapped, kneeled', 'Additional word in the passage | writer | Writer also begins with a silent w.'], 'Source discrepancy: the key circles who, whose w is pronounced, and misses writer. Supplemental correction: circle well-known, writer, known, sword, knot, wrapped, and kneeled; do not circle who. Publisher correction unverified.')],
+    [ordered('Fun with Words', 'Solve the six clues.', 'knob / knight / knee / wrong / knock / knife'),
+      copyWords('written / writing / known / knew'), ordered('Words Across the Curriculum — sentences', 'Choose the language arts word for each blank.', 'Writing / known / knew / written')],
+    [writing('Imagine being a knight long ago. Write a journal entry with at least four box words.', 'Dear Journal,\nToday I rode out as a knight to help a traveler. I heard a knock at a cottage door and turned the knob. Later, I wrote about the journey. I know I will remember this day.', 'This is an imaginary journal entry, not a historical account. It uses knight, knock, knob, wrote, and know.'),
+      ordered('Dictionary Practice', 'Match pronunciations 1–8 to the words in the box.', 'know / written / knight / knee / knock / writing / wrote / knife', 'The initial k or w remains in the spelling even when you do not hear it.')]
+  ],
+  26: [
+    [context('Making Cookies', 'climb / shelf / myself / half / scratch / thumb / kitchen / pitcher / match / crumb'), challenge('switches, watches, batch')],
+    [ordered('Fun with Words', 'Answer the eight questions.', 'shelf / half / kitchen / climb / scratch / crumb / match / thumb'),
+      copyWords('lamb / hatch / calf / switch'), ordered('Words Across the Curriculum — sentences', 'Complete the four sentences.', 'calf / hatch / switch / lamb')],
+    [writing('Explain how to make a snack or meal. Use at least four words from the box.', 'In the kitchen, I take a bowl from the shelf. I put half a banana in the bowl and add yogurt. I pour water from a pitcher into my cup. Then I enjoy the snack I made myself.', 'The steps are in order and use kitchen, shelf, half, pitcher, and myself.'), corrections(['kichen | kitchen', 'haf | half', 'picher | pitcher', 'crum | crumb'])]
+  ],
+  27: [
+    [context('Fun for Everyone', 'fair / share / wear / dare / chair / bear / care / hair / stare / pear'), challenge('aware, There, very, glare, rare, pair, beware, their')],
+    [section('Fun with Words', 'Complete each sentence with the matching homophone.', ['1. pare | pear', '2. bare | bear', '3. fare | fair', '4. hare | hair', '5. Where | wear', '6. stair | stare']),
+      copyWords('air / hare / mare / lair'), ordered('Words Across the Curriculum — sentences', 'Complete the science sentences.', 'mare / hare / air / lair')],
+    [writing('Write an advertisement for a place or event. Use at least four words from the box.', 'COME TO OUR GARDEN FAIR!\nEnjoy the fresh air and share a picnic with a friend. Bring a chair and wear a sun hat. Try a juicy pear at the fruit stand!', 'The ad invites readers to an imagined event and uses fair, air, share, chair, wear, and pear.'),
+      ordered('Dictionary Practice', 'Circle the word between each pair of guide words.', 'black / all / stare / city / smack / wear', 'Compare letters from left to right. A matching first letter means you must compare the next letter.')]
+  ],
+  28: [
+    [context('Ouch!', 'worst / score / order / hurry / dirt / hurt / before / door / nurse / sport'), challenge('turn, first, corner, for'),
+      section('Word Building', 'Add re- and write the new word.', ['1. re + order | reorder', '2. re + fill | refill', '3. re + pay | repay', '4. re + read | reread', '5. re + heat | reheat', '6. re + start | restart', '7. re + write | rewrite', '8. re + view | review'], 'In this exercise, re- means to do something again.')],
+    [section('Fun with Words — word search', 'Count rows from the top and columns from the left, starting at 1. Circle these ten words.', ['order | Row 1, columns 3–7 →', 'hurt | Column 8, rows 2–5 ↓', 'before | Column 11, rows 2–7 ↓', 'sport | Column 13, rows 2–6 ↓', 'nurse | Column 3, rows 3–7 ↓', 'dirt | Row 4, columns 4–7 →', 'door | Row 5, columns 10–13 →', 'hurry | Row 6, columns 5–9 →', 'score | Row 7, columns 7–11 →', 'worst | Row 8, columns 1–5 →'], 'Trace every letter from the listed start to the end. All words run right or down.'),
+      copyWords('fur / storm / herd / forest'), ordered('Words Across the Curriculum — sentences', 'Complete the science sentences.', 'herd / forest / fur / storm')],
+    [writing('Describe a time you played a sport. Use at least four words from the box.', 'Before our soccer game, I tied my shoes carefully. I tried to score, but the ball rolled into the dirt. I did not hurry my next kick. I passed to a teammate and enjoyed playing my favorite sport.', 'This fictional personal example uses before, score, dirt, hurry, and sport. Replace its details with your experience.'), corrections(['sporte | sport', 'befor | before', 'scor | score', 'durt | dirt'])]
+  ],
+  29: [
+    [context('A Great Weekend Trip', 'birthday / airplane / barefoot / sandcastle / seashell / sailboat / cookout / popcorn / moonlight / Everything'), challenge('Weekend, grandparents, weekend, afternoon, cheeseburgers, seagull, seashore'),
+      section('Word Building', 'Add the missing word part and write the compound word.', ['1. ___ + shore | sea + shore = seashore', '2. ___ + box | sand + box = sandbox', '3. ___ + ball | foot + ball = football', '4. sun + ___ | sun + light = sunlight', '5. ___ + book | cook + book = cookbook'])],
+    [section('Fun with Words', 'Combine the two words in each sentence.', ['1. sand + castle | sandcastle', '2. moon + light | moonlight', '3. pop + corn | popcorn', '4. birth + day | birthday', '5. bare + foot | barefoot', '6. sail + boat | sailboat', '7. sea + shell | seashell', '8. cook + out | cookout']),
+      copyWords('eardrum / rainbow / snowflake / backbone'), ordered('Words Across the Curriculum — sentences', 'Complete the science sentences.', 'snowflake / backbone / eardrum / rainbow')],
+    [writing('Describe a natural habitat you like to visit. Use at least four words from the box.', 'I like the beach, where tiny animals live near the shore. I can walk barefoot and look at a seashell without taking it home. A sailboat moves far out on the water. After rain, a rainbow may brighten the sky.', 'This describes a beach habitat and uses barefoot, seashell, sailboat, and rainbow.'),
+      section('Dictionary Practice', 'Group the words by vowel sound. A word may appear in more than one column.', ['Long a /ā/ | snowflake, birthday, rainbow, airplane, sailboat', 'Long e /ē/ | seashell, everything', 'Long o /ō/ | backbone, rainbow, sailboat, snowflake'], 'Listen to both parts of a compound word. Sailboat contains long a in sail and long o in boat.')]
+  ],
+  30: [
+    [context('For Sale', 'farmhouse / hillside / sidewalk / springtime / driveway / cornfield / horseback / inside / downstairs / hallway'), challenge('flowerbed, backyard, Upstairs, bedrooms, bathroom, anyone'),
+      section('Word Building', 'Add a word part and write the compound word.', ['1. ___ + town | down + town = downtown', '2. any + ___ | any + way = anyway', '3. ___ + pack | back + pack = backpack'])],
+    [section('Fun with Words', 'Combine word parts to make the eight answers shown in the key. Any order works.', ['1. hall + way | hallway', '2. corn + field | cornfield', '3. down + stairs | downstairs', '4. spring + time | springtime', '5. drive + way | driveway', '6. side + walk | sidewalk', '7. farm + house | farmhouse', '8. horse + back | horseback'], 'Source discrepancy: the printed box omits side, but the key includes sidewalk. Seven of these spelling words can be made from the box as printed. Side + walk shows the missing part; a publisher correction is unverified.'),
+      copyWords('railroad / stoplight / firefighter / crosswalk'), ordered('Words Across the Curriculum — meanings', 'Match the four definitions.', 'stoplight / railroad / firefighter / crosswalk')],
+    [writing('Describe where you live. Use at least four words from the box.', 'In my imaginary neighborhood, a sidewalk runs past each driveway. Inside my house, a hallway leads to the kitchen. From the downstairs window, I can see flowers in springtime.', 'This fictional model uses sidewalk, driveway, inside, hallway, downstairs, and springtime. Describe your own home without including an address.'), corrections(['railrode | railroad', 'sidewak | sidewalk', 'cornfeld | cornfield', 'sprigtime | springtime', 'horsback | horseback'])]
+  ],
+};

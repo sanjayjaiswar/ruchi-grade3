@@ -346,6 +346,8 @@
   display: none;
 }
 
+.app-shell:has(app-spelling-page) .topbar,
+.app-shell:has(app-spelling-page) .curriculum-drawer,
 .app-shell:has(app-social-studies-page) .topbar,
 .app-shell:has(app-social-studies-page) .curriculum-drawer,
 .app-shell:has(app-portal-home-page) .topbar,
@@ -371,6 +373,8 @@
   display: none;
 }
 
+.app-shell:has(app-spelling-page) .app-layout,
+.app-shell.drawer-is-collapsed:has(app-spelling-page) .app-layout,
 .app-shell:has(app-social-studies-page) .app-layout,
 .app-shell.drawer-is-collapsed:has(app-social-studies-page) .app-layout,
 .app-shell:has(app-portal-home-page) .app-layout,
@@ -397,6 +401,7 @@
   min-height: 100vh;
 }
 
+.app-shell:has(app-spelling-page) .app-content,
 .app-shell:has(app-social-studies-page) .app-content,
 .app-shell:has(app-portal-home-page) .app-content,
 .app-shell:has(app-reading-home-page) .app-content,

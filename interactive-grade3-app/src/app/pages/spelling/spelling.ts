@@ -4,6 +4,7 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { SPELLING_LESSONS } from './spelling-data';
 import { TEACHING_NOTES, wordParts } from './spelling-teaching';
+import { SPELLING_SOLUTIONS } from './spelling-solutions';
 
 type View = 'study' | 'practice' | 'workbook' | 'answers';
 type Feedback = 'correct' | 'again' | 'revealed' | '';
@@ -16,7 +17,6 @@ interface Attempt { value: string; feedback: Feedback; }
   styleUrl: './spelling.css'
 })
 export class SpellingPage {
-  readonly source = '/assets/spelling/spelling-grade-3.pdf';
   readonly lessons = SPELLING_LESSONS;
   lesson: (typeof SPELLING_LESSONS)[number] | undefined;
   invalidLesson = false;
@@ -67,15 +67,17 @@ export class SpellingPage {
   get builtWord() { return this.selectedTiles.map(id => this.tiles.find(tile => tile.id === id)!.letter).join(''); }
   get sourcePages(): readonly number[] {
     if (!this.lesson) return [];
-    return this.view === 'answers' ? this.lesson.answerPages : [0, 1, 2, 3].map(offset => this.lesson!.page + offset);
+    return [0, 1, 2, 3].map(offset => this.lesson!.page + offset);
   }
   get sourcePage() { return this.sourcePages[this.sourceIndex] ?? this.sourcePages[0]; }
-  pdfPage(page: number) { return `${this.source}#page=${page + 2}`; }
+  get solvedPage() { return this.lesson ? SPELLING_SOLUTIONS[this.lesson.number]?.[this.sourceIndex] : undefined; }
+  pdfPage(page: number) { return `/assets/spelling/page-pdfs/page-${page}.pdf`; }
+  answerPdf(page: number) { return `/assets/spelling/answers/page-${page}.pdf`; }
+  answerImage(page: number) { return `/assets/spelling/answers/page-${page}.webp`; }
   sourceImage(page: number) { return `/assets/spelling/pages/page-${page}.webp`; }
 
   selectView(view: View) {
     this.view = view;
-    this.sourceIndex = 0;
     this.covered = false;
     this.step = 0;
   }
