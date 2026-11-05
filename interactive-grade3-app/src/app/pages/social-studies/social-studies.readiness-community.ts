@@ -4,7 +4,7 @@ const anza: StudySource = { label: 'National Park Service: Anza Trail in Santa C
 const temple: StudySource = { label: 'History San Jose and CHCP: Ng Shing Gung', url: 'https://chinesemuseum.historysanjose.org/ng-shing-gung/', kind: 'institutional history' };
 const welcome: StudySource = { label: 'City of San Jose: Welcoming Plan 2025-2030', url: 'https://www.sanjoseca.gov/your-government/departments-offices/office-of-the-city-manager/racial-equity/immigrant-affairs/about-us', kind: 'official guidance' };
 const cannery: StudySource = { label: 'History San Jose: Cannery Life', url: 'https://historysanjose.org/plan-your-visit/exhibits-activities/online-exhibits/cannery-life-del-monte-in-the-santa-clara-valley/', kind: 'institutional history' };
-const city: StudySource = { label: 'City of San Jose: City Manager and community history', url: 'https://www.sanjoseca.gov/your-government/departments-offices/office-of-the-city-manager', kind: 'official guidance' };
+const valleyShift: StudySource = { label: 'History San Jose: Dairy Hill and the valley economy', url: 'https://historysanjose.org/plan-your-visit/exhibits-activities/online-exhibits/dairy-hill-san-jose-california/', kind: 'institutional history' };
 const pueblo: StudySource = { label: 'History San Jose: Pueblo Papers background', url: 'https://sites.google.com/historysanjose.org/spanishmexicanarchives/background', kind: 'institutional history' };
 const adobe: StudySource = { label: 'History San Jose: Gonzales/Peralta Adobe timeline', url: 'https://historysanjose.org/plan-your-visit/peralta-fallon-historic-site/luis-maria-peralta-adobe/', kind: 'institutional history' };
 const map: StudySource = { label: 'Library of Congress: San Jose bird\'s-eye view, 1869', url: 'https://www.loc.gov/item/75693107/', kind: 'primary evidence' };
@@ -62,7 +62,7 @@ export const SOCIAL_STUDIES_COMMUNITY_PLANS: Record<string, SocialStudiesPlan> =
       { title: 'Production changes local work', text: 'Preserving fruit allowed it to reach distant markets. Canneries connected orchards with factory jobs and transport. Plant Number 3 operated from 1893 to 1999; the museum documents its changing machinery and work.', source: cannery },
       { title: 'A documented influence on the later community', text: 'The museum documents Monte Vista housing on the former Plant Number 3 site, with patterned wall fragments and the water tower retained. Earlier industrial land and structures helped shape a later residential landscape. This is the museum\'s documented account, not a new inspection of the site.', source: cannery },
       { title: 'Property and risk: an original application', text: 'An entrepreneur organizes resources for a business and accepts uncertainty. Buildings and equipment can be privately owned. This explains the concept; it does not prove who legally owned a particular historical parcel. A deed would provide that evidence.' },
-      { title: 'Compare with the city today', text: 'The city describes San Jose\'s change from an orchard-centered community toward technology industries. Producing for customers and organizing skilled work connect the periods. The sources do not prove that the Dawson cannery caused today\'s technology companies.', source: city }
+      { title: 'Compare two documented kinds of change', text: 'History San Jose\'s Dairy Hill exhibit describes agricultural land giving way to high-technology industries, housing and infrastructure in the valley. Compare that regional change with the separately documented reuse of Plant Number 3 for housing. Neither account shows that the Dawson cannery caused today\'s technology companies.', source: valleyShift }
     ],
     model: { prompt: 'How did canning connect the farm economy with other work?', answer: 'Fruit growers supplied harvests. Skilled workers and equipment preserved fruit. Packing and transport carried it to distant markets. This created connections among farms, factories, and transportation.', reasoning: ['Identify the problem: fresh fruit can spoil before it reaches customers.', 'Identify the enterprise: organize skills and equipment to preserve it.', 'Explain the documented connections without inventing a single cause for all later industries.'] },
     guided: { prompt: 'Fictional cannery: its owner buys a sealing machine. A poor harvest leaves less fruit to can. Which part is property, and which is business risk?', hint: 'Property is something owned. Risk is an uncertain result that may cause a loss.', answer: 'The sealing machine is the owner\'s property. A smaller harvest could leave the business with too little fruit to earn enough income; that is a risk.' },
@@ -88,7 +88,7 @@ export const SOCIAL_STUDIES_COMMUNITY_PLANS: Record<string, SocialStudiesPlan> =
         { id: 'compare', label: 'Later community influence', detail: 'The museum documents housing on the old cannery site with patterned wall fragments and the water tower retained.', source: cannery }
       ]
     },
-    sources: [cannery, city]
+    sources: [cannery, valleyShift]
   },
   '3.3.3': {
     objective: 'Use a period image and separate historical accounts to explain community founding, named family contributions, and change over time.',
